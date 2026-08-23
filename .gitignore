@@ -1,0 +1,29 @@
+# --- secrets: never commit API keys ---
+.env
+.env.*
+*.key
+
+# --- python ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+
+# --- model outputs: regenerable, can be large ---
+results/raw_responses/
+*.cache
+
+# --- os / editor ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# --- claude code local state ---
+.claude/settings.local.json
+
+# NOTE: data/gold/, data/raw/ and results/ summaries ARE committed on purpose.
+# The dataset is the deliverable.
