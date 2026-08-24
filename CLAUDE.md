@@ -43,6 +43,11 @@ Never infer, never fill from context, never carry a value over from another docu
 - `pytest` for tests, `ruff` for linting
 - No database. JSON files on disk.
 - Dependencies live in `requirements.txt`. Ask before adding one.
+- The project virtualenv lives at .venv/. On Windows the interpreter is
+  .venv\Scripts\python.exe. ALWAYS use it — never the system Python,
+  never `py`, never a global pip install.
+- Never install a package outside .venv/, not even temporarily to run tests.
+  If a dependency is missing, stop and ask.
 
 ## Layout
 
@@ -61,6 +66,14 @@ GLOSSARY.md              German legal-registry vocabulary
 annotation_log.md        running log of ambiguous cases
 CHANGELOG.md             schema version history
 ```
+
+## Harness requirements
+
+- `run_eval.py` must persist every raw model response and emit a per-field
+  failure listing, not just aggregate scores. Failure analysis requires
+  inspecting individual cases.
+- No claim about *why* a model fails goes into the README without having
+  inspected at least 5 real failures for that field.
 
 ## Conventions
 

@@ -25,5 +25,11 @@ Thumbs.db
 # --- claude code local state ---
 .claude/settings.local.json
 
+# R
+
+.Rhistory
+.RData
+.Rproj.user/
+
 # NOTE: data/gold/, data/raw/ and results/ summaries ARE committed on purpose.
 # The dataset is the deliverable.
