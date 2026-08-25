@@ -1,0 +1,262 @@
+{
+  "metadata": {
+    "source_html": "listing_2026-08-10.html",
+    "population_size": 85,
+    "site_reported_total": 85,
+    "sample_size": 25,
+    "seed": 42,
+    "run_date": "2026-08-25"
+  },
+  "records": [
+    {
+      "position": 4,
+      "doc_id": "0004",
+      "id": "31652a9c-fdaf-4894-a588-76439f0067ae",
+      "publication_number": "HR02-1006727325",
+      "date": "10.08.2026",
+      "source": "SHAB - Handelsregistereintragungen",
+      "title": "Mutation Asemblis GmbH, Bern",
+      "url": "https://www.shab.ch/#!/search/publications/detail/31652a9c-fdaf-4894-a588-76439f0067ae"
+    },
+    {
+      "position": 5,
+      "doc_id": "0005",
+      "id": "d101380a-daaa-4a18-8aeb-a3f1b72c9b0f",
+      "publication_number": "HR02-1006727327",
+      "date": "10.08.2026",
+      "source": "SHAB - Handelsregistereintragungen",
+      "title": "Mutation BLUE-art Roggegratbad AG, Wyssachen",
+      "url": "https://www.shab.ch/#!/search/publications/detail/d101380a-daaa-4a18-8aeb-a3f1b72c9b0f"
+    },
+    {
+      "position": 12,
+      "doc_id": "0006",
+      "id": "37db9527-a3ca-4483-86f2-00ed4d39b750",
+      "publication_number": "HR02-1006727376",
+      "date": "10.08.2026",
+      "source": "SHAB - Handelsregistereintragungen",
+      "title": "Mutation Stiftung Vinetum, Biel/Bienne",
+      "url": "https://www.shab.ch/#!/search/publications/detail/37db9527-a3ca-4483-86f2-00ed4d39b750"
+    },
+    {
+      "position": 14,
+      "doc_id": "0007",
+      "id": "76e6d07e-1448-4824-8e26-f8c5dfe5d83b",
+      "publication_number": "HR02-1006727343",
+      "date": "10.08.2026",
+      "source": "SHAB - Handelsregistereintragungen",
+      "title": "Mutation Fontaris AG, Bern",
+      "url": "https://www.shab.ch/#!/search/publications/detail/76e6d07e-1448-4824-8e26-f8c5dfe5d83b"
+    },
+    {
+      "position": 15,
+      "doc_id": "0008",
+      "id": "dd0f1e7b-10e5-4bad-b9ee-30baa0cfc11b",
+      "publication_number": "HR02-1006727340",
+      "date": "10.08.2026",
+      "source": "SHAB - Handelsregistereintragungen",
+      "title": "Mutation Ergotherapie NeuTakt GmbH, Belp",
+      "url": "https://www.shab.ch/#!/search/publications/detail/dd0f1e7b-10e5-4bad-b9ee-30baa0cfc11b"
+    },
+    {
+      "position": 18,
+      "doc_id": "0009",
+      "id": "e450ef21-8b5a-4d68-8506-697919649065",
+      "publication_number": "HR02-1006727355",
+      "date": "10.08.2026",
+      "source": "SHAB - Handelsregistereintragungen",
+      "title": "Mutation Liyame Gastro GmbH, Herzogenbuchsee, neu Burgdorf",
+      "url": "https://www.shab.ch/#!/search/publications/detail/e450ef21-8b5a-4d68-8506-697919649065"
+    },
+    {
+      "position": 26,
+      "doc_id": "0010",
+      "id": "48d36e7d-88a3-4425-9d91-16912b7f5877",
+      "publication_number": "HR02-1006727381",
+      "date": "10.08.2026",
+      "source": "SHAB - Handelsregistereintragungen",
+      "title": "Mutation Wiesener Design Manufaktur, Burgdorf",
+      "url": "https://www.shab.ch/#!/search/publications/detail/48d36e7d-88a3-4425-9d91-16912b7f5877"
+    },
+    {
+      "position": 28,
+      "doc_id": "0011",
+      "id": "cacda54b-9b5f-42f3-89a2-305bdf1eb325",
+      "publication_number": "HR03-1006727387",
+      "date": "10.08.2026",
+      "source": "SHAB - Handelsregistereintragungen",
+      "title": "Löschung Autosattlerei T. Probst, Münsingen",
+      "url": "https://www.shab.ch/#!/search/publications/detail/cacda54b-9b5f-42f3-89a2-305bdf1eb325"
+    },
+    {
+      "position": 29,
+      "doc_id": "0012",
+      "id": "ca074224-d5e0-4475-a9f0-00b7338581f2",
+      "publication_number": "HR01-1006727310",
+      "date": "10.08.2026",
+      "source": "SHAB - Handelsregistereintragungen",
+      "title": "Neueintragung Chez India KLG, Biel/Bienne",
+      "url": "https://www.shab.ch/#!/search/publications/detail/ca074224-d5e0-4475-a9f0-00b7338581f2"
+    },
+    {
+      "position": 30,
+      "doc_id": "0013",
+      "id": "726cc21b-719a-4b57-bd7b-5d9c3c450ba9",
+      "publication_number": "HR01-1006727317",
+      "date": "10.08.2026",
+      "source": "SHAB - Handelsregistereintragungen",
+      "title": "Neueintragung STuBI Fleisch AG, Eggiwil",
+      "url": "https://www.shab.ch/#!/search/publications/detail/726cc21b-719a-4b57-bd7b-5d9c3c450ba9"
+    },
+    {
+      "position": 32,
+      "doc_id": "0014",
+      "id": "33f41bf0-9a74-4be3-bb07-d4eef01c02c9",
+      "publication_number": "HR01-1006727318",
+      "date": "10.08.2026",
+      "source": "SHAB - Handelsregistereintragungen",
+      "title": "Neueintragung Studio MO Gfeller Architektur, Bern",
+      "url": "https://www.shab.ch/#!/search/publications/detail/33f41bf0-9a74-4be3-bb07-d4eef01c02c9"
+    },
+    {
+      "position": 36,
+      "doc_id": "0015",
+      "id": "3bda3149-900e-4b95-bac1-9b0e42ac5cf1",
+      "publication_number": "HR02-1006727337",
+      "date": "10.08.2026",
+      "source": "SHAB - Handelsregistereintragungen",
+      "title": "Mutation Elim Stiftung für Eltern und Kind, Sumiswald",
+      "url": "https://www.shab.ch/#!/search/publications/detail/3bda3149-900e-4b95-bac1-9b0e42ac5cf1"
+    },
+    {
+      "position": 38,
+      "doc_id": "0016",
+      "id": "0ab0993b-6da9-415b-bd42-8073d087e359",
+      "publication_number": "HR02-1006727347",
+      "date": "10.08.2026",
+      "source": "SHAB - Handelsregistereintragungen",
+      "title": "Mutation Helios Solar Energie GmbH (Helios Solar Energie Sàrl) (Helios Solar Energie Sagl) (Helios Solar Energie Ltd liab Co), Rüdtligen-Alchenflüh, neu Moosseedorf",
+      "url": "https://www.shab.ch/#!/search/publications/detail/0ab0993b-6da9-415b-bd42-8073d087e359"
+    },
+    {
+      "position": 52,
+      "doc_id": "0017",
+      "id": "e3c102ec-7e98-4f7f-98e2-bc983d0ddcdc",
+      "publication_number": "HR02-1006727321",
+      "date": "10.08.2026",
+      "source": "SHAB - Handelsregistereintragungen",
+      "title": "Mutation acoalex GmbH, Brügg",
+      "url": "https://www.shab.ch/#!/search/publications/detail/e3c102ec-7e98-4f7f-98e2-bc983d0ddcdc"
+    },
+    {
+      "position": 54,
+      "doc_id": "0018",
+      "id": "15eafb65-a94e-4ec5-accc-7da104724977",
+      "publication_number": "HR02-1006727339",
+      "date": "10.08.2026",
+      "source": "SHAB - Handelsregistereintragungen",
+      "title": "Mutation Equimode Pieper, Neuendorf, neu Roggwil (BE)",
+      "url": "https://www.shab.ch/#!/search/publications/detail/15eafb65-a94e-4ec5-accc-7da104724977"
+    },
+    {
+      "position": 55,
+      "doc_id": "0019",
+      "id": "33a3e3ca-1890-4c2a-aa5e-24f90b0e8f41",
+      "publication_number": "HR02-1006727370",
+      "date": "10.08.2026",
+      "source": "SHAB - Handelsregistereintragungen",
+      "title": "Mutation Schenk Manfred GmbH, Sumiswald, neu Schenk Bedachungen GmbH",
+      "url": "https://www.shab.ch/#!/search/publications/detail/33a3e3ca-1890-4c2a-aa5e-24f90b0e8f41"
+    },
+    {
+      "position": 58,
+      "doc_id": "0020",
+      "id": "0044ac81-581f-4bcd-8fd3-b7813c1582e2",
+      "publication_number": "HR03-1006727386",
+      "date": "10.08.2026",
+      "source": "SHAB - Handelsregistereintragungen",
+      "title": "Löschung ATC Zhang, Wohlen bei Bern",
+      "url": "https://www.shab.ch/#!/search/publications/detail/0044ac81-581f-4bcd-8fd3-b7813c1582e2"
+    },
+    {
+      "position": 65,
+      "doc_id": "0021",
+      "id": "500ca81e-5f97-4ce3-9ec5-de77acf3a73b",
+      "publication_number": "HR02-1006727354",
+      "date": "10.08.2026",
+      "source": "SHAB - Handelsregistereintragungen",
+      "title": "Mutation Linder Immobilien AG, Aeschi (SO), neu Lyss",
+      "url": "https://www.shab.ch/#!/search/publications/detail/500ca81e-5f97-4ce3-9ec5-de77acf3a73b"
+    },
+    {
+      "position": 70,
+      "doc_id": "0022",
+      "id": "271fafb8-261d-4e36-a131-731d551b11d8",
+      "publication_number": "HR02-1006727364",
+      "date": "10.08.2026",
+      "source": "SHAB - Handelsregistereintragungen",
+      "title": "Mutation Operaio GmbH, Stettlen, neu Operaio AG",
+      "url": "https://www.shab.ch/#!/search/publications/detail/271fafb8-261d-4e36-a131-731d551b11d8"
+    },
+    {
+      "position": 73,
+      "doc_id": "0023",
+      "id": "55b56cc2-f081-436f-9701-181f8c9b6df5",
+      "publication_number": "HR02-1006727341",
+      "date": "10.08.2026",
+      "source": "SHAB - Handelsregistereintragungen",
+      "title": "Mutation F. Zaugg AG Kälte + Klima, Thun",
+      "url": "https://www.shab.ch/#!/search/publications/detail/55b56cc2-f081-436f-9701-181f8c9b6df5"
+    },
+    {
+      "position": 76,
+      "doc_id": "0024",
+      "id": "55ab0b84-338d-4367-9adc-53954b29d8d4",
+      "publication_number": "HR02-1006727323",
+      "date": "10.08.2026",
+      "source": "SHAB - Handelsregistereintragungen",
+      "title": "Mutation Allfinanz Hügli GmbH, Heimberg",
+      "url": "https://www.shab.ch/#!/search/publications/detail/55ab0b84-338d-4367-9adc-53954b29d8d4"
+    },
+    {
+      "position": 79,
+      "doc_id": "0025",
+      "id": "3e5ee379-5307-40a8-86e1-f6b157c1e6ae",
+      "publication_number": "HR01-1006727309",
+      "date": "10.08.2026",
+      "source": "SHAB - Handelsregistereintragungen",
+      "title": "Neueintragung Baker Coiffeur GmbH, Bern",
+      "url": "https://www.shab.ch/#!/search/publications/detail/3e5ee379-5307-40a8-86e1-f6b157c1e6ae"
+    },
+    {
+      "position": 80,
+      "doc_id": "0026",
+      "id": "c710235a-df1e-4b6f-b725-1fa4ecb28767",
+      "publication_number": "HR01-1006727313",
+      "date": "10.08.2026",
+      "source": "SHAB - Handelsregistereintragungen",
+      "title": "Neueintragung modellbau-seeland Weber, Péry-La Heutte",
+      "url": "https://www.shab.ch/#!/search/publications/detail/c710235a-df1e-4b6f-b725-1fa4ecb28767"
+    },
+    {
+      "position": 82,
+      "doc_id": "0027",
+      "id": "d994838c-6376-4977-9c17-12a26714f760",
+      "publication_number": "HR02-1006727368",
+      "date": "10.08.2026",
+      "source": "SHAB - Handelsregistereintragungen",
+      "title": "Mutation ProBau Brienz Immobilien GmbH, Brienz (BE)",
+      "url": "https://www.shab.ch/#!/search/publications/detail/d994838c-6376-4977-9c17-12a26714f760"
+    },
+    {
+      "position": 83,
+      "doc_id": "0028",
+      "id": "5ea17e3a-fd76-4e1d-93fc-1ee0318443e6",
+      "publication_number": "HR02-1006727365",
+      "date": "10.08.2026",
+      "source": "SHAB - Handelsregistereintragungen",
+      "title": "Mutation Personalvorsorgestiftung der Haag-Streit Gruppe Köniz, Köniz",
+      "url": "https://www.shab.ch/#!/search/publications/detail/5ea17e3a-fd76-4e1d-93fc-1ee0318443e6"
+    }
+  ]
+}
