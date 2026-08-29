@@ -345,3 +345,22 @@ def test_0016_helios_solar_alt_names_same_line():
     # this record as a "schweizerische Zweigniederlassung" of a company
     # named "... GmbH" — which of the two belongs in forma_juridica is a
     # domain judgement call outside the scope of this regression test.
+
+
+# --- 0021.txt: Linder Immobilien AG, intercantonal move Aeschi (SO) -> Lyss
+#     (BE), body reads "bisher in Aeschi (SO)" ---
+
+
+def test_0021_linder_immobilien_bisher_in_leaves_sede_null():
+    record = prefill_file(DATA_RAW / "0021.txt")
+
+    assert record["doc_id"] == "0021"
+    assert record["uid"] == "CHE-376.960.112"
+
+    # Kontaktstelle is "Handelsregisteramt des Kantons Bern" — the NEW
+    # canton (Lyss), not the pre-act seat (Aeschi SO). SCHEMA.md defines
+    # sede_* as the seat *before* the act, so deriving it from autoridad
+    # here would silently produce the wrong canton. Left null instead.
+    assert record["autoridad"] == "Handelsregisteramt des Kantons Bern"
+    assert record["sede_canton"] is None
+    assert record["sede_localidad"] is None

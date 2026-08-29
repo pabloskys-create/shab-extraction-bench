@@ -10,8 +10,10 @@ Fields extracted here:
     uid, forma_juridica, tagesregister_nr, tagesregister_fecha,
     publicacion_anterior_shab_nr, publicacion_anterior_fecha,
     publicacion_anterior_publ_id, autoridad, sede_canton (derived from
-    autoridad), sede_localidad (from "in <Ort>," right before the UID),
-    tipo_acto, empresa_nombre_completo, empresa_nombre_base,
+    autoridad), sede_localidad (from "in <Ort>," right before the UID —
+    both left null when the body reads "bisher in <Ort>", since the
+    authority then names the post-move seat, not the pre-act one SCHEMA.md
+    wants; see BISHER_IN_RE), tipo_acto, empresa_nombre_completo, empresa_nombre_base,
     direccion_co, direccion_calle, direccion_cp, direccion_localidad,
     sufijo_estado, nombres_alternativos, idioma (constant "de" — see
     SCHEMA.md "Scope decisions": this module only ever sees
@@ -106,6 +108,14 @@ FORMA_JURIDICA_RE = re.compile(
 # the legal seat, which may differ from the postal address (direccion_*),
 # e.g. after a Sitzverlegung the two point at different towns.
 SEDE_LOCALIDAD_RE = re.compile(r",\s*in\s+([^,]+),\s*CHE-\d{3}\.\d{3}\.\d{3}")
+# "<Firma>, bisher in <Ort>, CHE-..." marks a relocation: the seat named here
+# is the one *before* the act, but `Kontaktstelle` always names the
+# authority for the seat *after* it (on an intercantonal move, the new
+# canton's registry). SCHEMA.md defines sede_* as the pre-act seat, so
+# neither the Kontaktstelle-derived canton nor a locality parsed from this
+# sentence can be trusted — see prefill_text, which nulls both out when this
+# matches.
+BISHER_IN_RE = re.compile(r"\bbisher in\b")
 TAGESREGISTER_RE = re.compile(r"Tagesregister-Nr\.\s*(\S+)\s*vom\s*(\d{2}\.\d{2}\.\d{4})")
 PRIOR_PUB_RE = re.compile(
     r"Vorangehende Publikation im SHAB:\s*Nr\.\s*(\d+),\s*Datum:\s*(\d{2}\.\d{2}\.\d{4})"
@@ -340,6 +350,13 @@ def prefill_text(text: str, doc_id: str | None = None) -> dict:
         autoridad = kontaktstelle_match.group(1).strip()
         record["autoridad"] = autoridad
         record["sede_canton"] = _derive_canton(autoridad)
+
+    # "bisher in <Ort>" means the Kontaktstelle authority (and any locality
+    # parsed near the UID) reflects the post-move seat, not the pre-act one
+    # SCHEMA.md wants — see BISHER_IN_RE above.
+    if BISHER_IN_RE.search(text):
+        record["sede_localidad"] = None
+        record["sede_canton"] = None
 
     return record
 
