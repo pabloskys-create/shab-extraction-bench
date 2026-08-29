@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.2",
+  "schema_version": "1.0",
   "doc_id": "0013",
   "idioma": "de",
   "tipo_acto": "neueintragung",
@@ -8,6 +8,8 @@
   "empresa_nombre_base": "STuBI Fleisch AG",
   "sufijo_estado": null,
   "nombres_alternativos": [],
+  "empresa_nombre_nuevo": null,
+  "empresa_nombre_anterior": null,
   "uid": "CHE-295.332.571",
   "forma_juridica": "AG",
   "sede_localidad": "Eggiwil",
@@ -25,7 +27,7 @@
   "autoridad": "Handelsregisteramt des Kantons Bern",
   "canton_anterior": null,
   "canton_nuevo": null,
-  "capital_nuevo_chf": 100000.00,
+  "capital_nuevo_chf": 100000.0,
   "capital_anterior_chf": null,
   "domicilio_nuevo": null,
   "domicilio_anterior": null,
@@ -36,7 +38,9 @@
       "heimatort": "Röthenbach im Emmental",
       "domicilio": "Heimenschwand (Buchholterberg)",
       "cargo": "Mitglied des Verwaltungsrates",
-      "firma": "Einzelunterschrift"
+      "firma": "Einzelunterschrift",
+      "uid": null,
+      "stammanteile": null
     },
     {
       "nombre": "Bieri, Karin",
@@ -44,7 +48,9 @@
       "heimatort": "Schangnau",
       "domicilio": "Heimenschwand (Buchholterberg)",
       "cargo": null,
-      "firma": "Einzelunterschrift"
+      "firma": "Einzelunterschrift",
+      "uid": null,
+      "stammanteile": null
     }
   ],
   "personas_salientes": [],
@@ -52,9 +58,9 @@
   "extras": {
     "zweck": "Die Gesellschaft bezweckt das Halten von Beteiligungen an fleischverarbeitenden und mit Fleisch handelnden Unternehmen im In- und Ausland, die Durchführung von Finanzierungsgeschäften…",
     "acciones_nuevas": 100,
-    "valor_nominal_chf": 1000.00,
+    "valor_nominal_chf": 1000.0,
     "clases_acciones": "Namenaktien",
-    "liberierung_nuevo_chf": 100000.00,
+    "liberierung_nuevo_chf": 100000.0,
     "vinkulierung": true,
     "revision": "opting-out"
   },

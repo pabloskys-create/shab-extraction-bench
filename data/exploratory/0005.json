@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.2",
+  "schema_version": "1.0",
   "doc_id": "0005",
   "idioma": "de",
   "tipo_acto": "mutation",
@@ -11,6 +11,8 @@
     "BLUE-art Roggegratbad S.A.",
     "BLUE-art Roggegratbad Ltd."
   ],
+  "empresa_nombre_nuevo": null,
+  "empresa_nombre_anterior": null,
   "uid": "CHE-247.035.455",
   "forma_juridica": "AG",
   "sede_localidad": "Wyssachen",

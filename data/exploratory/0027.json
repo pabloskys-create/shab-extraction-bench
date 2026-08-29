@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.2",
+  "schema_version": "1.0",
   "doc_id": "0027",
   "idioma": "de",
   "tipo_acto": "mutation",
@@ -11,6 +11,8 @@
   "empresa_nombre_base": "ProBau Brienz Immobilien GmbH",
   "sufijo_estado": null,
   "nombres_alternativos": [],
+  "empresa_nombre_nuevo": null,
+  "empresa_nombre_anterior": null,
   "uid": "CHE-340.139.918",
   "forma_juridica": "GmbH",
   "sede_localidad": "Brienz (BE)",
@@ -39,7 +41,9 @@
       "heimatort": null,
       "domicilio": "Brienz BE",
       "cargo": "Geschäftsführer",
-      "firma": "Einzelunterschrift"
+      "firma": "Einzelunterschrift",
+      "uid": null,
+      "stammanteile": null
     }
   ],
   "personas_salientes": [],
@@ -47,10 +51,16 @@
     {
       "nombre_nuevo": "Eftodii, Valeriu",
       "nombre_anterior": null,
+      "domicilio_nuevo": null,
+      "domicilio_anterior": null,
+      "cargo_nuevo": "Gesellschafter und Vorsitzender der Geschäftsführung",
+      "cargo_anterior": null,
+      "firma_nueva": "Einzelunterschrift",
+      "firma_anterior": null,
+      "nacionalidad_nueva": null,
       "nacionalidad_anterior": null,
-      "heimatort": null,
-      "cargo": "Gesellschafter und Vorsitzender der Geschäftsführung",
-      "firma": "Einzelunterschrift"
+      "heimatort_nuevo": null,
+      "heimatort_anterior": null
     }
   ],
   "extras": {},

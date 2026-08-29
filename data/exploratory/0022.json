@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.2",
+  "schema_version": "1.0",
   "doc_id": "0022",
   "idioma": "de",
   "tipo_acto": "mutation",
@@ -10,6 +10,8 @@
   "empresa_nombre_base": "Operaio GmbH",
   "sufijo_estado": null,
   "nombres_alternativos": [],
+  "empresa_nombre_nuevo": null,
+  "empresa_nombre_anterior": null,
   "uid": "CHE-227.620.863",
   "forma_juridica": "Zweigniederlassung",
   "sede_localidad": "Stettlen",

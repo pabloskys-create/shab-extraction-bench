@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.2",
+  "schema_version": "1.0",
   "doc_id": "0023",
   "idioma": "de",
   "tipo_acto": "mutation",
@@ -10,6 +10,8 @@
   "empresa_nombre_base": "F. Zaugg AG Kälte + Klima",
   "sufijo_estado": null,
   "nombres_alternativos": [],
+  "empresa_nombre_nuevo": null,
+  "empresa_nombre_anterior": null,
   "uid": "CHE-114.589.249",
   "forma_juridica": "AG",
   "sede_localidad": "Thun",
@@ -38,7 +40,9 @@
       "heimatort": "Lützelflüh",
       "domicilio": "Zwieselberg (Reutigen)",
       "cargo": "Geschäftsführer",
-      "firma": "Kollektivprokura zu zweien"
+      "firma": "Kollektivprokura zu zweien",
+      "uid": null,
+      "stammanteile": null
     },
     {
       "nombre": "Keller, Guido",
@@ -46,7 +50,9 @@
       "heimatort": "Oberthal",
       "domicilio": "Gwatt (Thun)",
       "cargo": "Mitglied der Geschäftsleitung",
-      "firma": "Kollektivprokura zu zweien"
+      "firma": "Kollektivprokura zu zweien",
+      "uid": null,
+      "stammanteile": null
     },
     {
       "nombre": "Rosser, Nils",
@@ -54,7 +60,9 @@
       "heimatort": "Frutigen",
       "domicilio": "Steffisburg",
       "cargo": "Mitglied der Geschäftsleitung",
-      "firma": "Kollektivprokura zu zweien"
+      "firma": "Kollektivprokura zu zweien",
+      "uid": null,
+      "stammanteile": null
     }
   ],
   "personas_salientes": [],
@@ -62,10 +70,16 @@
     {
       "nombre_nuevo": "Reichle, Michael",
       "nombre_anterior": null,
+      "domicilio_nuevo": null,
+      "domicilio_anterior": null,
+      "cargo_nuevo": "Mitglied des Verwaltungsrates",
+      "cargo_anterior": null,
+      "firma_nueva": "Einzelunterschrift",
+      "firma_anterior": null,
+      "nacionalidad_nueva": null,
       "nacionalidad_anterior": null,
-      "heimatort": "Thun",
-      "cargo": "Mitglied des Verwaltungsrates",
-      "firma": "Einzelunterschrift"
+      "heimatort_nuevo": "Thun",
+      "heimatort_anterior": null
     }
   ],
   "extras": {},
