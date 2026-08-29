@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.2",
+  "schema_version": "1.0",
   "doc_id": "valid_mutation",
   "idioma": "de",
   "tipo_acto": "mutation",
@@ -8,6 +8,8 @@
   "empresa_nombre_base": "Zermatt Kollektiv AG",
   "sufijo_estado": "in Liquidation",
   "nombres_alternativos": [],
+  "empresa_nombre_nuevo": null,
+  "empresa_nombre_anterior": null,
   "uid": "CHE-390.336.674",
   "forma_juridica": "AG",
   "sede_localidad": "Zermatt",

@@ -1,6 +1,7 @@
-# SCHEMA.md — v0.2 (exploratory, not frozen)
+# SCHEMA.md — v1.0 (frozen)
 
-Status: **exploratory**. Freeze to v1.0 after ~25 randomly sampled documents.
+Status: **frozen**. Converged after 28 exploratory documents (0001-0028;
+see `annotation_log.md`) and re-annotated to v1.0 in full.
 
 Scope: German-language Handelsregister publications only (`Neueintragung`,
 `Mutation`, `Löschung`). French (FOSC) and Italian (FUSC) excluded — see
@@ -16,7 +17,7 @@ scored against a model and turns the field into noise.
 
 | Field | Type | Notes |
 |---|---|---|
-| `schema_version` | string | e.g. `"0.2"` |
+| `schema_version` | string | e.g. `"1.0"` |
 | `doc_id` | string | matches filename, e.g. `"0001"` |
 | `idioma` | string | always `"de"` in this corpus |
 | `tipo_acto` | enum | `neueintragung` \| `mutation` \| `loeschung` |
@@ -25,6 +26,8 @@ scored against a model and turns the field into noise.
 | `empresa_nombre_base` | string | **includes legal form** (`... AG`), excludes status suffix |
 | `sufijo_estado` | string\|null | `in Liquidation`, `in Liq.`, else `null` |
 | `nombres_alternativos` | list[string] | other-language registered names |
+| `empresa_nombre_nuevo` | string\|null | company name change pair, see below |
+| `empresa_nombre_anterior` | string\|null | company name change pair, see below |
 | `uid` | string | `CHE-XXX.XXX.XXX` |
 | `forma_juridica` | enum | `AG` \| `GmbH` \| `Einzelunternehmen` \| `Genossenschaft` \| `Stiftung` \| `Verein` \| `Kollektivgesellschaft` \| `Kommanditgesellschaft` \| `Zweigniederlassung` |
 | `sede_localidad` | string | **town only**, never the street |
@@ -58,14 +61,20 @@ scored against a model and turns the field into noise.
 
 ```json
 { "nombre": null, "nacionalidad": null, "heimatort": null,
-  "domicilio": null, "cargo": null, "firma": null }
+  "domicilio": null, "cargo": null, "firma": null,
+  "uid": null, "stammanteile": null }
 ```
 
 ### PersonChange
 
 ```json
-{ "nombre_nuevo": null, "nombre_anterior": null, "heimatort": null,
-  "nacionalidad_anterior": null, "cargo": null, "firma": null }
+{ "nombre_nuevo": null, "nombre_anterior": null,
+  "domicilio_nuevo": null, "domicilio_anterior": null,
+  "cargo_nuevo": null, "cargo_anterior": null,
+  "firma_nueva": null, "firma_anterior": null,
+  "nacionalidad_nueva": null, "nacionalidad_anterior": null,
+  "heimatort_nuevo": null, "heimatort_anterior": null,
+  "stammanteile_nuevo": null, "stammanteile_anterior": null }
 ```
 
 ---
@@ -131,6 +140,22 @@ models that transcribe correctly.
 Academic and professional titles stay inside `nombre`
 (`Böckli, Peter Prof. Dr.`).
 
+**`Person.uid` / `Person.stammanteile`** — `uid` records a legal person
+acting as an officer or partner (e.g. OBT AG in 0028, or the company itself
+as a partner in 0004); `nacionalidad`/`heimatort` stay `null` for it, since
+neither applies to a company. `stammanteile` is the number of GmbH
+participations the person holds (`mit N Stammanteilen`), not their nominal
+value — nominal value per participation belongs to the company, not the
+partner, and stays in `extras.valor_nominal_chf`. Seen in 0004, 0025, 0027.
+
+**`PersonChange` — one pair per attribute.** Each attribute that can change
+(`nombre`, `domicilio`, `cargo`, `firma`, `nacionalidad`, `heimatort`,
+`stammanteile`) has its own `_nuevo`/`_nueva` and `_anterior` half. Rule: an
+attribute that does not change is filled only in its `_nuevo` half; the
+matching `_anterior` stays `null`. This is scored per half, not as a unit —
+a model that gets the new value right but omits `_anterior` (or invents
+one) is wrong on exactly that field, not the whole person.
+
 **Toponyms** — place names are transcribed exactly as the source writes
 them, parenthesised canton or municipality included: `Aeschi (SO)`,
 `Brienz (BE)`, `Wasen im Emmental (Sumiswald)`. The same place can appear in
@@ -150,11 +175,6 @@ field, and a judgement-based rule ("only when it adds something") would
 not be scoreable — a model cannot know when the annotator considered it
 worth recording.
 
-**Place names** are transcribed exactly as the source writes them,
-including parenthesised canton hints and disambiguators
-(`Aeschi (SO)`, `Brienz (BE)`, `Wasen im Emmental (Sumiswald)`).
-The same place may appear in two forms in one notice; each field takes
-the form used in the sentence it comes from.
 ---
 
 ## `subtipos` — controlled vocabulary
@@ -238,60 +258,21 @@ excluded at the filtering stage, not at annotation time.
 
 ---
 
-## v1.0 draft — not yet in effect
-
-Schema changes proposed from exploratory annotation but not yet applied to
-`data/gold/`, `src/validate.py`'s `FIELD_SPECS`, or `src/prefill.py`. Do not
-annotate against these fields until the schema is actually bumped to v1.0.
-
-**`PersonChange` — redesigned.** Replaces the current shape (a single
-generic `nombre_nuevo`/`nombre_anterior` pair plus flat `heimatort`,
-`nacionalidad_anterior`, `cargo`, `firma`) with one `_nuevo`/`_anterior` pair
-per attribute:
-
-```json
-{ "nombre_nuevo": null, "nombre_anterior": null,
-  "domicilio_nuevo": null, "domicilio_anterior": null,
-  "cargo_nuevo": null, "cargo_anterior": null,
-  "firma_nueva": null, "firma_anterior": null,
-  "nacionalidad_nueva": null, "nacionalidad_anterior": null,
-  "heimatort_nuevo": null, "heimatort_anterior": null,
-  "stammanteile_nuevo": null, "stammanteile_anterior": null }
-```
-
-Rule: an attribute that does not change is filled only in its `_nuevo` (or
-`_nueva`) half; the matching `_anterior` stays `null`. This closes the
-`PersonChange.cargo_anterior`, `PersonChange.domicilio`,
-`PersonChange.firma_anterior` and `PersonChange.stammanteile` gaps logged
-repeatedly in `annotation_log.md` (0003, 0004, 0006, 0015, 0017-0019, 0023).
-
-`stammanteile_nuevo` / `stammanteile_anterior` — int|null, the *number* of
-GmbH participations the person holds (`mit N Stammanteilen`), not their
-nominal value. A mutating person's participation count can itself change
-(0004: 170; 0027: 20) with nowhere to record it before this pair existed.
-The nominal value per participation belongs to the company, not the
-partner, and stays in `extras.valor_nominal_chf`.
-
-**`Person` — two new keys.**
-
-- `uid` — for a legal person acting as an officer or partner (e.g. OBT AG in
-  0028, or the company itself as a partner in 0004).
-- `stammanteile` — GmbH participation share, seen in 0004, 0025, 0027.
-
-**New top-level fields: `empresa_nombre_nuevo` / `empresa_nombre_anterior`.**
-A change pair, same style as `domicilio_nuevo`/`domicilio_anterior`, for a
-company name change. Trigger: `Firma neu:` (seen in 0019, 0022).
-
----
-
 ## Changelog
 
-- **Unreleased** — registered nine `extras` keys already in use:
-  `zweck`, `hauptsitz`, `liberierung_nuevo_chf`, `liberierung_anterior_chf`,
-  `vinkulierung`, `revision`, `tipo_kapitalerhoehung`,
-  `weitere_adressen_nueva`, `weitere_adressen_anterior`. See the "v1.0 draft"
-  section for schema changes still pending (`PersonChange` redesign, etc.) —
-  the freeze itself has not happened yet.
+- **v1.0** — froze the schema after 28 exploratory documents (0001-0028;
+  see `annotation_log.md`), all re-annotated to this version. Redesigned
+  `PersonChange` to one `_nuevo`/`_anterior` pair per attribute (`nombre`,
+  `domicilio`, `cargo`, `firma`, `nacionalidad`, `heimatort`,
+  `stammanteile`), replacing the single generic `nombre_nuevo`/`nombre_anterior`
+  pair plus flat `heimatort`/`nacionalidad_anterior`/`cargo`/`firma`. Added
+  `Person.uid` and `Person.stammanteile`; new top-level
+  `empresa_nombre_nuevo`/`empresa_nombre_anterior` pair; the toponym
+  transcription rule; the Kontaktstelle/`bisher in <Ort>` sede_canton rule.
+  Registered nine `extras` keys already in use: `zweck`, `hauptsitz`,
+  `liberierung_nuevo_chf`, `liberierung_anterior_chf`, `vinkulierung`,
+  `revision`, `tipo_kapitalerhoehung`, `weitere_adressen_nueva`,
+  `weitere_adressen_anterior`.
 - **v0.2** — added `idioma`, `nombres_alternativos`, `direccion_*`, `canton_nuevo`,
   `canton_anterior`, `tagesregister_fecha`, `publicacion_anterior_publ_id`,
   `personas_mutantes`, `incierto`, `_verified`. Fixed `fecha_acto` rule.

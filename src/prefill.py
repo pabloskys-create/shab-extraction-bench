@@ -37,7 +37,7 @@ import json
 import re
 from pathlib import Path
 
-SCHEMA_VERSION = "0.2"
+SCHEMA_VERSION = "1.0"
 
 # --- German legal form -> SCHEMA.md `forma_juridica` enum ---
 FORM_MAP = {
@@ -304,7 +304,17 @@ def _parse_header_block(lines: list[str]) -> dict:
 
 
 def _empty_record() -> dict:
-    """The full SCHEMA.md v0.2 shape, every field null/empty/false."""
+    """The full SCHEMA.md v1.0 shape, every field null/empty/false.
+
+    `empresa_nombre_nuevo` / `empresa_nombre_anterior` are always null here:
+    filling them requires reading a `Firma neu:` change against the rest of
+    the notice, which is judgement, not regex extraction (see CLAUDE.md
+    rule 4). Same reasoning as `personas_mutantes` below staying `[]` —
+    prefill.py never emits a `Person` or `PersonChange` object; it isn't
+    that their v1.0 shape (with `uid`/`stammanteile`, and PersonChange's
+    fourteen `_nuevo`/`_anterior` keys) is unsupported, there's simply
+    nothing here that constructs one.
+    """
     return {
         "schema_version": SCHEMA_VERSION,
         "doc_id": None,
@@ -315,6 +325,8 @@ def _empty_record() -> dict:
         "empresa_nombre_base": None,
         "sufijo_estado": None,
         "nombres_alternativos": [],
+        "empresa_nombre_nuevo": None,
+        "empresa_nombre_anterior": None,
         "uid": None,
         "forma_juridica": None,
         "sede_localidad": None,
