@@ -31,5 +31,6 @@ Thumbs.db
 .RData
 .Rproj.user/
 
+pr_body.md
 # NOTE: data/gold/, data/raw/ and results/ summaries ARE committed on purpose.
 # The dataset is the deliverable.
