@@ -92,3 +92,24 @@ warm-up phase, before the sampling frame was defined.
 - `weitere_adressen_*` — seen in 0008
 - atribución matriz vs sucursal — schema can't attribute parent-level
   changes to a branch (Zweigniederlassung) record — seen in 0016, 0022
+
+## Pending after v1.0
+
+empresa_nombre_completo  → company_name_full
+empresa_nombre_base      → company_name_base
+sufijo_estado            → status_suffix
+nombres_alternativos     → alternative_names
+forma_juridica           → legal_form
+sede_localidad/canton    → seat_municipality / seat_canton
+direccion_*              → address_*
+fecha_acto               → act_date
+publicacion_anterior_*   → prior_publication_*
+autoridad                → authority
+canton_anterior/nuevo    → canton_previous / canton_new
+capital_*                → capital_new_chf / capital_previous_chf
+domicilio_*              → domicile_new / domicile_previous
+personas_entrantes       → persons_added
+personas_salientes       → persons_removed
+personas_mutantes        → persons_changed
+tipo_acto / subtipos     → act_type / act_subtypes
+incierto / notas         → uncertain / notes
