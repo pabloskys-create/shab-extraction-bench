@@ -17,7 +17,8 @@ Transformations:
       their values; `nombre_nuevo`, `nombre_anterior` and
       `nacionalidad_anterior` are kept as-is; adds `domicilio_nuevo`,
       `domicilio_anterior`, `cargo_anterior`, `firma_anterior`,
-      `nacionalidad_nueva`, `heimatort_anterior`, all null.
+      `nacionalidad_nueva`, `heimatort_anterior`, `stammanteile_nuevo`,
+      `stammanteile_anterior`, all null.
 
 CLI usage — always review a diff before overwriting the real corpus:
 
@@ -55,23 +56,28 @@ PERSON_CHANGE_KEY_ORDER = [
     "nacionalidad_anterior",
     "heimatort_nuevo",
     "heimatort_anterior",
+    "stammanteile_nuevo",
+    "stammanteile_anterior",
 ]
 
 
 def _migrate_person(person: dict) -> dict:
-    """Person gains `uid` and `stammanteile`, both null. Existing keys and
-    values are untouched.
+    """Person gains `uid` and `stammanteile` if it doesn't already have
+    them, both null. Never overwrites a value already present -- running
+    this on an already-migrated (or partially hand-annotated) record must
+    not clobber what's there.
     """
     migrated = dict(person)
-    migrated["uid"] = None
-    migrated["stammanteile"] = None
+    migrated.setdefault("uid", None)
+    migrated.setdefault("stammanteile", None)
     return migrated
 
 
 def _migrate_person_change(change: dict) -> dict:
     """Rename cargo/firma/heimatort to their _nuevo form (keeping the
     value), keep nombre_nuevo/nombre_anterior/nacionalidad_anterior as-is,
-    and add the six new null fields the v0.2 shape didn't have.
+    and add the eight new null fields the v0.2 shape didn't have (including
+    stammanteile_nuevo/stammanteile_anterior).
     """
     renamed = {PERSON_CHANGE_RENAMES.get(key, key): value for key, value in change.items()}
 

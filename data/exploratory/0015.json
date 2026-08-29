@@ -50,8 +50,8 @@
     {
       "nombre_nuevo": "Frauchiger, Claudia",
       "nombre_anterior": "Minder, Claudia",
-      "domicilio_nuevo": null,
-      "domicilio_anterior": null,
+      "domicilio_nuevo": "St. Gallen",
+      "domicilio_anterior": "Oberburg",
       "cargo_nuevo": "Mitglied des Stiftungsrates",
       "cargo_anterior": null,
       "firma_nueva": "Kollektivunterschrift zu zweien",
@@ -59,11 +59,13 @@
       "nacionalidad_nueva": null,
       "nacionalidad_anterior": null,
       "heimatort_nuevo": "Auswil",
-      "heimatort_anterior": null
+      "heimatort_anterior": null,
+      "stammanteile_nuevo": null,
+      "stammanteile_anterior": null
     }
   ],
   "extras": {},
   "incierto": [],
-  "notas": "Frauchiger changed surname (Minder → Frauchiger) and domicile (Oberburg → St. Gallen). PersonChange has no domicilio field, so the previous domicile is recorded here.",
+  "notas": null,
   "_verified": true
 }

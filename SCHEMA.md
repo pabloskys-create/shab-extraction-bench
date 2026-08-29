@@ -8,6 +8,10 @@ Scope: German-language Handelsregister publications only (`Neueintragung`,
 
 ---
 
+**Scoreability** — every annotation rule must be applicable from the
+source text alone, without knowing what the annotator considered
+interesting. A rule that depends on judgement about relevance cannot be
+scored against a model and turns the field into noise.
 ## Core fields — scored in the benchmark
 
 | Field | Type | Notes |
@@ -105,10 +109,13 @@ the UID is the seat *before* the act, but `Kontaktstelle` (→ `autoridad`)
 always names the authority for the seat *after* it — on an inter-cantonal
 move, the new canton's registry office. Since `sede_canton` must be the
 pre-act canton, it must never be derived from `autoridad` in this case.
-`prefill.py` already implements this: on a `bisher in <Ort>` match it nulls
-out both `sede_localidad` and `sede_canton` rather than deriving them from
-the wrong token, leaving them for the annotator to fill by hand. Found at
-0021 (Aeschi SO → Lyss BE); this entry documents that existing behaviour.
+`prefill.py` implements this: on a `bisher in <Ort>` match, `sede_localidad`
+comes from `<Ort>` itself, and `sede_canton` from the postal code in the
+header's `Bisher` sub-block (street + `<CP> <Ort>`, repeated there for the
+pre-act address) via a small, hand-verified PLZ-prefix table — not from
+`autoridad`. An unmapped prefix resolves to `null` rather than a guess, left
+for the annotator. Found at 0018 (Neuendorf, 4623 → SO) and 0021 (Aeschi SO,
+4556 → SO); this entry documents that existing behaviour.
 
 **Gendered forms** — `nacionalidad` is normalised to the base adjective
 (`französische` → `französisch`, `brasilianischer` → `brasilianisch`),
@@ -124,9 +131,30 @@ models that transcribe correctly.
 Academic and professional titles stay inside `nombre`
 (`Böckli, Peter Prof. Dr.`).
 
+**Toponyms** — place names are transcribed exactly as the source writes
+them, parenthesised canton or municipality included: `Aeschi (SO)`,
+`Brienz (BE)`, `Wasen im Emmental (Sumiswald)`. The same place can appear in
+two forms within one notice (e.g. the seat sentence vs. a `bisher`
+clause) — each field takes the form of the phrase it was read from, never
+normalised to match another field.
+
 **`incierto`** — top-level field names only. Nested keys (e.g. a person's
 `heimatort`) are flagged by naming their containing field
 (`personas_mutantes`) and describing the specifics in `notas`.
+
+**`empresa_nombre_nuevo` / `empresa_nombre_anterior`** — filled as a pair
+whenever the act changes the company name (`Firma neu:`). Both null
+otherwise. `empresa_nombre_anterior` duplicates `empresa_nombre_completo`
+by design: the pair must be readable without cross-referencing another
+field, and a judgement-based rule ("only when it adds something") would
+not be scoreable — a model cannot know when the annotator considered it
+worth recording.
+
+**Place names** are transcribed exactly as the source writes them,
+including parenthesised canton hints and disambiguators
+(`Aeschi (SO)`, `Brienz (BE)`, `Wasen im Emmental (Sumiswald)`).
+The same place may appear in two forms in one notice; each field takes
+the form used in the sentence it comes from.
 ---
 
 ## `subtipos` — controlled vocabulary
@@ -165,6 +193,7 @@ Keys already in use. **Check this list before inventing a new key.**
 - `revision` — audit regime, e.g. `opting-out`
 - `tipo_kapitalerhoehung` — e.g. `Ordentliche Kapitalerhöhung innerhalb Kapitalband`
 - `weitere_adressen_nueva` / `weitere_adressen_anterior` — secondary addresses
+- `mitteilungen` — how the company notifies its shareholders/partners
 
 **Promotion rule:** an `extras` key appearing in ≥5% of documents is promoted to
 a core field in the next schema version, and previously annotated documents are
@@ -226,14 +255,22 @@ per attribute:
   "cargo_nuevo": null, "cargo_anterior": null,
   "firma_nueva": null, "firma_anterior": null,
   "nacionalidad_nueva": null, "nacionalidad_anterior": null,
-  "heimatort_nuevo": null, "heimatort_anterior": null }
+  "heimatort_nuevo": null, "heimatort_anterior": null,
+  "stammanteile_nuevo": null, "stammanteile_anterior": null }
 ```
 
 Rule: an attribute that does not change is filled only in its `_nuevo` (or
 `_nueva`) half; the matching `_anterior` stays `null`. This closes the
-`PersonChange.cargo_anterior`, `PersonChange.domicilio` and
-`PersonChange.firma_anterior` gaps logged repeatedly in `annotation_log.md`
-(0003, 0004, 0006, 0015, 0017-0019, 0023).
+`PersonChange.cargo_anterior`, `PersonChange.domicilio`,
+`PersonChange.firma_anterior` and `PersonChange.stammanteile` gaps logged
+repeatedly in `annotation_log.md` (0003, 0004, 0006, 0015, 0017-0019, 0023).
+
+`stammanteile_nuevo` / `stammanteile_anterior` — int|null, the *number* of
+GmbH participations the person holds (`mit N Stammanteilen`), not their
+nominal value. A mutating person's participation count can itself change
+(0004: 170; 0027: 20) with nowhere to record it before this pair existed.
+The nominal value per participation belongs to the company, not the
+partner, and stays in `extras.valor_nominal_chf`.
 
 **`Person` — two new keys.**
 

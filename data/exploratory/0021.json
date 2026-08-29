@@ -17,8 +17,8 @@
   "empresa_nombre_anterior": null,
   "uid": "CHE-376.960.112",
   "forma_juridica": "AG",
-  "sede_localidad": "Lyss",
-  "sede_canton": "BE",
+  "sede_localidad": "Aeschi (SO)",
+  "sede_canton": "SO",
   "direccion_co": null,
   "direccion_calle": "Jungfrauweg 23",
   "direccion_cp": "3250",
@@ -42,8 +42,8 @@
     {
       "nombre_nuevo": "Linder, Sandro",
       "nombre_anterior": null,
-      "domicilio_nuevo": null,
-      "domicilio_anterior": null,
+      "domicilio_nuevo": "Lyss",
+      "domicilio_anterior": "Aeschi SO",
       "cargo_nuevo": "Mitglied des Verwaltungsrates",
       "cargo_anterior": null,
       "firma_nueva": "Einzelunterschrift",
@@ -51,11 +51,13 @@
       "nacionalidad_nueva": null,
       "nacionalidad_anterior": null,
       "heimatort_nuevo": "Herzogenbuchsee",
-      "heimatort_anterior": null
+      "heimatort_anterior": null,
+      "stammanteile_nuevo": null,
+      "stammanteile_anterior": null
     }
   ],
   "extras": {},
   "incierto": [],
-  "notas": "Linder Sandro's Domozil (Aeschi SO → Lyss)",
+  "notas": null,
   "_verified": true
 }

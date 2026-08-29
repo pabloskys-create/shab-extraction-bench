@@ -4,7 +4,9 @@
   "idioma": "de",
   "tipo_acto": "mutation",
   "subtipos": [
-    "sitzverlegung"
+    "sitzverlegung",
+    "kantonswechsel",
+    "zweckaenderung"
   ],
   "empresa_nombre_completo": "Equimode Pieper",
   "empresa_nombre_base": "Equimode Pieper",
@@ -14,8 +16,8 @@
   "empresa_nombre_anterior": null,
   "uid": "CHE-257.978.269",
   "forma_juridica": "Einzelunternehmen",
-  "sede_localidad": "Roggwil",
-  "sede_canton": "BE",
+  "sede_localidad": "Neuendorf",
+  "sede_canton": "SO",
   "direccion_co": null,
   "direccion_calle": "St. Urbanstrasse 37",
   "direccion_cp": "4914",
@@ -27,8 +29,8 @@
   "publicacion_anterior_fecha": "2023-04-13",
   "publicacion_anterior_publ_id": "1005722818",
   "autoridad": "Handelsregisteramt des Kantons Bern",
-  "canton_anterior": null,
-  "canton_nuevo": null,
+  "canton_anterior": "SO",
+  "canton_nuevo": "BE",
   "capital_nuevo_chf": null,
   "capital_anterior_chf": null,
   "domicilio_nuevo": "St. Urbanstrasse 37, 4914 Roggwil BE",
@@ -39,24 +41,25 @@
     {
       "nombre_nuevo": "Pieper, Stéphane",
       "nombre_anterior": null,
-      "domicilio_nuevo": null,
-      "domicilio_anterior": null,
+      "domicilio_nuevo": "Roggwil BE",
+      "domicilio_anterior": "Neuendorf",
       "cargo_nuevo": "Inhaber",
       "cargo_anterior": null,
       "firma_nueva": "Einzelunterschrift",
       "firma_anterior": null,
-      "nacionalidad_nueva": null,
-      "nacionalidad_anterior": "französisch",
-      "heimatort_nuevo": "Riehen",
-      "heimatort_anterior": null
+      "nacionalidad_nueva": "französisch",
+      "nacionalidad_anterior": null,
+      "heimatort_nuevo": null,
+      "heimatort_anterior": null,
+      "stammanteile_nuevo": null,
+      "stammanteile_anterior": null
     }
   ],
   "extras": {
-    "zweck": "Betrieb eines Reitsportgeschäfts. Stahl-, Metallbaumontage und Revision, Schreinerarbeiten, allgemeine Montagearbeiten, handwerkliche Dienstleistungen, Transportdienstleistungen."
+    "zweck": "Betrieb eines Reitsportgeschäfts. Stahl-, Metallbaumontage und Revision, Schreinerarbeiten, allgemeine Montagearbeiten, handwerkliche Dienstleistungen, Transportdienstleistungen.",
+    "weitere_adressen_suprimida": "Gartenstrasse 13, 4537 Wiedlisbach"
   },
-  "incierto": [
-    "personas_mutantes"
-  ],
-  "notas": "Only the domicile changed (Neuendorf → Roggwil). PersonChange has no domicilio field.",
+  "incierto": [],
+  "notas": null,
   "_verified": true
 }
