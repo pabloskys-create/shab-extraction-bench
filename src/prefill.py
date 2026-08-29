@@ -10,10 +10,13 @@ Fields extracted here:
     uid, forma_juridica, tagesregister_nr, tagesregister_fecha,
     publicacion_anterior_shab_nr, publicacion_anterior_fecha,
     publicacion_anterior_publ_id, autoridad, sede_canton (derived from
-    autoridad), sede_localidad (from "in <Ort>," right before the UID —
-    both left null when the body reads "bisher in <Ort>", since the
-    authority then names the post-move seat, not the pre-act one SCHEMA.md
-    wants; see BISHER_IN_RE), tipo_acto, empresa_nombre_completo, empresa_nombre_base,
+    autoridad — or, when the body reads "bisher in <Ort>", from the postal
+    code in the header's "Bisher" sub-block via a small PLZ-prefix table,
+    since the authority then names the post-move canton, not the pre-act
+    one SCHEMA.md wants; see BISHER_IN_RE, PLZ_PREFIX_TO_CANTON),
+    sede_localidad (from "in <Ort>," right before the UID, or from the
+    "bisher in <Ort>" phrase itself on a relocation), tipo_acto,
+    empresa_nombre_completo, empresa_nombre_base,
     direccion_co, direccion_calle, direccion_cp, direccion_localidad,
     sufijo_estado, nombres_alternativos, idioma (constant "de" — see
     SCHEMA.md "Scope decisions": this module only ever sees
@@ -34,7 +37,7 @@ import json
 import re
 from pathlib import Path
 
-SCHEMA_VERSION = "0.2"
+SCHEMA_VERSION = "1.0"
 
 # --- German legal form -> SCHEMA.md `forma_juridica` enum ---
 FORM_MAP = {
@@ -111,11 +114,22 @@ SEDE_LOCALIDAD_RE = re.compile(r",\s*in\s+([^,]+),\s*CHE-\d{3}\.\d{3}\.\d{3}")
 # "<Firma>, bisher in <Ort>, CHE-..." marks a relocation: the seat named here
 # is the one *before* the act, but `Kontaktstelle` always names the
 # authority for the seat *after* it (on an intercantonal move, the new
-# canton's registry). SCHEMA.md defines sede_* as the pre-act seat, so
-# neither the Kontaktstelle-derived canton nor a locality parsed from this
-# sentence can be trusted — see prefill_text, which nulls both out when this
-# matches.
-BISHER_IN_RE = re.compile(r"\bbisher in\b")
+# canton's registry) — see prefill_text, which never trusts autoridad for
+# sede_canton when this matches. The captured group IS the pre-act
+# sede_localidad, though; sede_canton comes separately from the postal code
+# in the header's "Bisher" sub-block (see _bisher_header_cp below).
+BISHER_IN_RE = re.compile(r"\bbisher in\s+([^,]+)")
+
+# Swiss postal codes are geographic but not aligned to canton borders (a
+# given 3-digit prefix can straddle two cantons), so this table is built
+# incrementally against "bisher in <Ort>" cases actually seen in the corpus
+# — same approach as CANTON_ALIASES above — rather than guessed for the
+# whole country. A wrong canton is worse than none, so an unmapped prefix
+# resolves to None (left for the annotator), never a guess.
+PLZ_PREFIX_TO_CANTON = {
+    "455": "SO",  # Bucheggberg, e.g. 4556 Aeschi (SO) -- data/raw/0021.txt
+    "462": "SO",  # Gäu, e.g. 4623 Neuendorf -- data/raw/0018.txt
+}
 TAGESREGISTER_RE = re.compile(r"Tagesregister-Nr\.\s*(\S+)\s*vom\s*(\d{2}\.\d{2}\.\d{4})")
 PRIOR_PUB_RE = re.compile(
     r"Vorangehende Publikation im SHAB:\s*Nr\.\s*(\d+),\s*Datum:\s*(\d{2}\.\d{2}\.\d{4})"
@@ -167,6 +181,39 @@ def _derive_canton(autoridad: str | None) -> str | None:
         if name in autoridad:
             return code
     return None
+
+
+def _bisher_header_cp(lines: list[str]) -> str | None:
+    """Return the postal code from the header's "Bisher" sub-block, if any.
+
+    On a relocation the header repeats the pre-act address after a literal
+    "Bisher" line (street, then "<CP> <Ort>"). `_parse_header_block` stops
+    parsing there because that block is the *old* address, not
+    `direccion_*` — this reads only the piece prefill_text needs from it:
+    the postal code, to derive the pre-act sede_canton (see
+    PLZ_PREFIX_TO_CANTON) on a "bisher in <Ort>" relocation.
+    """
+    try:
+        bisher_index = next(i for i, line in enumerate(lines) if line.strip().lower() == "bisher")
+    except StopIteration:
+        return None
+    for line in lines[bisher_index + 1 :]:
+        match = PLZ_ORT_RE.match(line.strip())
+        if match:
+            return match.group(1)
+    return None
+
+
+def _canton_from_plz(plz: str | None) -> str | None:
+    """Look up a canton from a postal code's prefix.
+
+    Only the 3-digit prefixes in PLZ_PREFIX_TO_CANTON are trusted; anything
+    else returns None rather than guess at a boundary this module hasn't
+    verified.
+    """
+    if not plz or len(plz) < 3:
+        return None
+    return PLZ_PREFIX_TO_CANTON.get(plz[:3])
 
 
 def _parse_header_block(lines: list[str]) -> dict:
@@ -257,7 +304,17 @@ def _parse_header_block(lines: list[str]) -> dict:
 
 
 def _empty_record() -> dict:
-    """The full SCHEMA.md v0.2 shape, every field null/empty/false."""
+    """The full SCHEMA.md v1.0 shape, every field null/empty/false.
+
+    `empresa_nombre_nuevo` / `empresa_nombre_anterior` are always null here:
+    filling them requires reading a `Firma neu:` change against the rest of
+    the notice, which is judgement, not regex extraction (see CLAUDE.md
+    rule 4). Same reasoning as `personas_mutantes` below staying `[]` —
+    prefill.py never emits a `Person` or `PersonChange` object; it isn't
+    that their v1.0 shape (with `uid`/`stammanteile`, and PersonChange's
+    fourteen `_nuevo`/`_anterior` keys) is unsupported, there's simply
+    nothing here that constructs one.
+    """
     return {
         "schema_version": SCHEMA_VERSION,
         "doc_id": None,
@@ -268,6 +325,8 @@ def _empty_record() -> dict:
         "empresa_nombre_base": None,
         "sufijo_estado": None,
         "nombres_alternativos": [],
+        "empresa_nombre_nuevo": None,
+        "empresa_nombre_anterior": None,
         "uid": None,
         "forma_juridica": None,
         "sede_localidad": None,
@@ -353,10 +412,14 @@ def prefill_text(text: str, doc_id: str | None = None) -> dict:
 
     # "bisher in <Ort>" means the Kontaktstelle authority (and any locality
     # parsed near the UID) reflects the post-move seat, not the pre-act one
-    # SCHEMA.md wants — see BISHER_IN_RE above.
-    if BISHER_IN_RE.search(text):
-        record["sede_localidad"] = None
-        record["sede_canton"] = None
+    # SCHEMA.md wants — see BISHER_IN_RE above. The pre-act seat is
+    # recoverable from elsewhere in the document instead: <Ort> itself for
+    # sede_localidad, and the postal code in the header's "Bisher" block
+    # (via PLZ_PREFIX_TO_CANTON) for sede_canton.
+    bisher_in_match = BISHER_IN_RE.search(text)
+    if bisher_in_match:
+        record["sede_localidad"] = bisher_in_match.group(1).strip()
+        record["sede_canton"] = _canton_from_plz(_bisher_header_cp(header))
 
     return record
 

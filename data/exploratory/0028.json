@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.2",
+  "schema_version": "1.0",
   "doc_id": "0028",
   "idioma": "de",
   "tipo_acto": "mutation",
@@ -10,6 +10,8 @@
   "empresa_nombre_base": "Personalvorsorgestiftung der Haag-Streit Gruppe Köniz",
   "sufijo_estado": null,
   "nombres_alternativos": [],
+  "empresa_nombre_nuevo": null,
+  "empresa_nombre_anterior": null,
   "uid": "CHE-109.772.612",
   "forma_juridica": "Stiftung",
   "sede_localidad": "Köniz",
@@ -33,22 +35,26 @@
   "domicilio_anterior": null,
   "personas_entrantes": [
     {
-      "nombre": "BDO AG (CHE-430.259.378)",
+      "nombre": "BDO AG",
       "nacionalidad": null,
       "heimatort": null,
       "domicilio": "Bern",
       "cargo": "Revisionsstelle",
-      "firma": null
+      "firma": null,
+      "uid": "CHE-430.259.378",
+      "stammanteile": null
     }
   ],
   "personas_salientes": [
     {
-      "nombre": "OBT AG (CHE-323.201.462)",
+      "nombre": "OBT AG",
       "nacionalidad": null,
       "heimatort": null,
       "domicilio": "Köniz",
       "cargo": "Revisionsstelle",
-      "firma": null
+      "firma": null,
+      "uid": "CHE-323.201.462",
+      "stammanteile": null
     }
   ],
   "personas_mutantes": [],

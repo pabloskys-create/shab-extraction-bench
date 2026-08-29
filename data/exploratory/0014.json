@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.2",
+  "schema_version": "1.0",
   "doc_id": "0014",
   "idioma": "de",
   "tipo_acto": "neueintragung",
@@ -8,6 +8,8 @@
   "empresa_nombre_base": "Studio MO Gfeller Architektur",
   "sufijo_estado": null,
   "nombres_alternativos": [],
+  "empresa_nombre_nuevo": null,
+  "empresa_nombre_anterior": null,
   "uid": "CHE-247.993.988",
   "forma_juridica": "Einzelunternehmen",
   "sede_localidad": "Bern",
@@ -36,7 +38,9 @@
       "heimatort": "Bern",
       "domicilio": "Bern",
       "cargo": "Inhaber",
-      "firma": "Einzelunterschrift"
+      "firma": "Einzelunterschrift",
+      "uid": null,
+      "stammanteile": null
     }
   ],
   "personas_salientes": [],

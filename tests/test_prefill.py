@@ -22,7 +22,7 @@ from pathlib import Path
 
 import pytest
 
-from src.prefill import _derive_canton, _to_iso, prefill_file, prefill_text
+from src.prefill import _canton_from_plz, _derive_canton, _to_iso, prefill_file, prefill_text
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 DATA_RAW = REPO_ROOT / "data" / "raw"
@@ -83,7 +83,7 @@ def test_unrequested_fields_stay_null_and_record_is_unverified():
     assert record["capital_nuevo_chf"] is None
     assert record["personas_entrantes"] == []
     assert record["extras"] == {}
-    assert record["schema_version"] == "0.2"
+    assert record["schema_version"] == "1.0"
     assert record["doc_id"] == "9999"
 
 
@@ -347,20 +347,46 @@ def test_0016_helios_solar_alt_names_same_line():
     # domain judgement call outside the scope of this regression test.
 
 
-# --- 0021.txt: Linder Immobilien AG, intercantonal move Aeschi (SO) -> Lyss
-#     (BE), body reads "bisher in Aeschi (SO)" ---
+# --- 0018.txt / 0021.txt: relocations where the body reads "bisher in
+#     <Ort>" — the pre-act seat must come from <Ort> and the header's
+#     "Bisher" postal code, never from Kontaktstelle ---
 
 
-def test_0021_linder_immobilien_bisher_in_leaves_sede_null():
+def test_0018_equimode_bisher_in_derives_sede_from_bisher_cp():
+    record = prefill_file(DATA_RAW / "0018.txt")
+
+    assert record["doc_id"] == "0018"
+    assert record["uid"] == "CHE-257.978.269"
+
+    # Kontaktstelle is "Handelsregisteramt des Kantons Bern" — the NEW
+    # canton (Roggwil BE), not the pre-act seat (Neuendorf, in Solothurn).
+    # sede_localidad comes from "bisher in <Ort>" itself; sede_canton from
+    # the postal code in the header's "Bisher" block (4623 -> SO).
+    assert record["autoridad"] == "Handelsregisteramt des Kantons Bern"
+    assert record["sede_localidad"] == "Neuendorf"
+    assert record["sede_canton"] == "SO"
+
+
+def test_0021_linder_immobilien_bisher_in_derives_sede_from_bisher_cp():
     record = prefill_file(DATA_RAW / "0021.txt")
 
     assert record["doc_id"] == "0021"
     assert record["uid"] == "CHE-376.960.112"
 
     # Kontaktstelle is "Handelsregisteramt des Kantons Bern" — the NEW
-    # canton (Lyss), not the pre-act seat (Aeschi SO). SCHEMA.md defines
-    # sede_* as the seat *before* the act, so deriving it from autoridad
-    # here would silently produce the wrong canton. Left null instead.
+    # canton (Lyss), not the pre-act seat (Aeschi SO). sede_localidad comes
+    # from "bisher in <Ort>" itself (parenthesised canton hint and all, same
+    # style as an already-annotated sede_localidad like "Brienz (BE)");
+    # sede_canton from the header's "Bisher" postal code (4556 -> SO), never
+    # from autoridad, which would silently produce the wrong canton here.
     assert record["autoridad"] == "Handelsregisteramt des Kantons Bern"
-    assert record["sede_canton"] is None
-    assert record["sede_localidad"] is None
+    assert record["sede_localidad"] == "Aeschi (SO)"
+    assert record["sede_canton"] == "SO"
+
+
+def test_canton_from_plz_unmapped_prefix_returns_none_not_a_guess():
+    # A prefix this module hasn't verified must never resolve to a canton —
+    # see PLZ_PREFIX_TO_CANTON's comment: a wrong canton is worse than none.
+    assert _canton_from_plz("8001") is None
+    assert _canton_from_plz(None) is None
+    assert _canton_from_plz("12") is None  # too short to be a real PLZ prefix

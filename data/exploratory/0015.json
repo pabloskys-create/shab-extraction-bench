@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.2",
+  "schema_version": "1.0",
   "doc_id": "0015",
   "idioma": "de",
   "tipo_acto": "mutation",
@@ -10,6 +10,8 @@
   "empresa_nombre_base": "Elim Stiftung für Eltern und Kind",
   "sufijo_estado": null,
   "nombres_alternativos": [],
+  "empresa_nombre_nuevo": null,
+  "empresa_nombre_anterior": null,
   "uid": "CHE-110.634.974",
   "forma_juridica": "Stiftung",
   "sede_localidad": "Sumiswald",
@@ -39,21 +41,31 @@
       "heimatort": "Kölliken",
       "domicilio": "Oftringen",
       "cargo": "Mitglied des Stiftungsrates",
-      "firma": "Kollektivunterschrift zu zweien"
+      "firma": "Kollektivunterschrift zu zweien",
+      "uid": null,
+      "stammanteile": null
     }
   ],
   "personas_mutantes": [
     {
       "nombre_nuevo": "Frauchiger, Claudia",
       "nombre_anterior": "Minder, Claudia",
+      "domicilio_nuevo": "St. Gallen",
+      "domicilio_anterior": "Oberburg",
+      "cargo_nuevo": "Mitglied des Stiftungsrates",
+      "cargo_anterior": null,
+      "firma_nueva": "Kollektivunterschrift zu zweien",
+      "firma_anterior": null,
+      "nacionalidad_nueva": null,
       "nacionalidad_anterior": null,
-      "heimatort": "Auswil",
-      "cargo": "Mitglied des Stiftungsrates",
-      "firma": "Kollektivunterschrift zu zweien"
+      "heimatort_nuevo": "Auswil",
+      "heimatort_anterior": null,
+      "stammanteile_nuevo": null,
+      "stammanteile_anterior": null
     }
   ],
   "extras": {},
   "incierto": [],
-  "notas": "Frauchiger changed surname (Minder → Frauchiger) and domicile (Oberburg → St. Gallen). PersonChange has no domicilio field, so the previous domicile is recorded here.",
+  "notas": null,
   "_verified": true
 }
