@@ -54,6 +54,7 @@ SUBTIPOS_VALUES = [
     "kantonswechsel",
     "firmenaenderung",
     "zweckaenderung",
+    "rechtsformaenderung",
     "liquidationseroeffnung",
     "liquidation_beendet",
     "fusion",
@@ -68,6 +69,23 @@ PERSON_CHANGE_KEYS = frozenset(
 )
 
 DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
+
+# SCHEMA.md's header reads "# SCHEMA.md — v0.2 (exploratory, not frozen)".
+SCHEMA_MD_PATH = Path(__file__).resolve().parent.parent / "SCHEMA.md"
+SCHEMA_VERSION_RE = re.compile(r"^#\s*SCHEMA\.md\s*—\s*v(\d+\.\d+)", re.MULTILINE)
+
+
+def _schema_declared_version() -> str | None:
+    """Return the version declared in SCHEMA.md's header (e.g. "0.2"), or
+    None if SCHEMA.md is missing or its header doesn't match the expected
+    "# SCHEMA.md — vX.Y ..." shape.
+    """
+    try:
+        text = SCHEMA_MD_PATH.read_text(encoding="utf-8")
+    except OSError:
+        return None
+    match = SCHEMA_VERSION_RE.search(text)
+    return match.group(1) if match else None
 
 # --- record shape: field name -> {kind, nullable, enum} ---
 #
@@ -312,6 +330,22 @@ def _check_coherence(record: dict) -> list[ValidationError]:
                     ValidationError(f"incierto[{i}]", f"{name!r} is not a field defined in SCHEMA.md")
                 )
 
+    # Both are list[string], so a subtipos value pasted into
+    # nombres_alternativos by mistake (or vice versa) passes the plain type
+    # check silently — see tests/test_validate.py for the regression this
+    # guards (data/exploratory/0027.json had subtipos values glued in here).
+    nombres_alternativos = record.get("nombres_alternativos")
+    if isinstance(nombres_alternativos, list):
+        for i, name in enumerate(nombres_alternativos):
+            if isinstance(name, str) and name in SUBTIPOS_VALUES:
+                errors.append(
+                    ValidationError(
+                        f"nombres_alternativos[{i}]",
+                        f"{name!r} is a subtipos value, not an alternative company name "
+                        "— looks like subtipos leaked into nombres_alternativos",
+                    )
+                )
+
     return errors
 
 
@@ -340,6 +374,17 @@ def validate_record(record: Any, *, require_verified: bool = False) -> list[Vali
         errors.extend(_KIND_CHECKS[spec["kind"]](record[field], field, spec))
 
     errors.extend(_check_coherence(record))
+
+    schema_version = record.get("schema_version")
+    if isinstance(schema_version, str):
+        declared = _schema_declared_version()
+        if declared is not None and schema_version != declared:
+            errors.append(
+                ValidationError(
+                    "schema_version",
+                    f"record declares {schema_version!r} but SCHEMA.md's header declares {declared!r}",
+                )
+            )
 
     if require_verified and record.get("_verified") is not True:
         errors.append(

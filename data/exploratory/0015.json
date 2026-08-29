@@ -1,0 +1,59 @@
+{
+  "schema_version": "0.2",
+  "doc_id": "0015",
+  "idioma": "de",
+  "tipo_acto": "mutation",
+  "subtipos": [
+    "organaenderung"
+  ],
+  "empresa_nombre_completo": "Elim Stiftung für Eltern und Kind",
+  "empresa_nombre_base": "Elim Stiftung für Eltern und Kind",
+  "sufijo_estado": null,
+  "nombres_alternativos": [],
+  "uid": "CHE-110.634.974",
+  "forma_juridica": "Stiftung",
+  "sede_localidad": "Sumiswald",
+  "sede_canton": "BE",
+  "direccion_co": null,
+  "direccion_calle": "Lempigenstrasse 19",
+  "direccion_cp": "3457",
+  "direccion_localidad": "Wasen im Emmental",
+  "fecha_acto": null,
+  "tagesregister_nr": "14868",
+  "tagesregister_fecha": "2026-08-05",
+  "publicacion_anterior_shab_nr": 11,
+  "publicacion_anterior_fecha": "2026-01-19",
+  "publicacion_anterior_publ_id": "1006542126",
+  "autoridad": "Handelsregisteramt des Kantons Bern",
+  "canton_anterior": null,
+  "canton_nuevo": null,
+  "capital_nuevo_chf": null,
+  "capital_anterior_chf": null,
+  "domicilio_nuevo": null,
+  "domicilio_anterior": null,
+  "personas_entrantes": [],
+  "personas_salientes": [
+    {
+      "nombre": "Kümmerli, Thomas",
+      "nacionalidad": null,
+      "heimatort": "Kölliken",
+      "domicilio": "Oftringen",
+      "cargo": "Mitglied des Stiftungsrates",
+      "firma": "Kollektivunterschrift zu zweien"
+    }
+  ],
+  "personas_mutantes": [
+    {
+      "nombre_nuevo": "Frauchiger, Claudia",
+      "nombre_anterior": "Minder, Claudia",
+      "nacionalidad_anterior": null,
+      "heimatort": "Auswil",
+      "cargo": "Mitglied des Stiftungsrates",
+      "firma": "Kollektivunterschrift zu zweien"
+    }
+  ],
+  "extras": {},
+  "incierto": [],
+  "notas": "Frauchiger changed surname (Minder → Frauchiger) and domicile (Oberburg → St. Gallen). PersonChange has no domicilio field, so the previous domicile is recorded here.",
+  "_verified": true
+}

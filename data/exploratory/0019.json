@@ -1,0 +1,109 @@
+{
+  "schema_version": "0.2",
+  "doc_id": "0019",
+  "idioma": "de",
+  "tipo_acto": "mutation",
+  "subtipos": [
+    "statutenaenderung",
+    "firmenaenderung",
+    "zweckaenderung",
+    "organaenderung"
+  ],
+  "empresa_nombre_completo": "Schenk Manfred GmbH",
+  "empresa_nombre_base": "Schenk Manfred GmbH",
+  "sufijo_estado": null,
+  "nombres_alternativos": [],
+  "uid": "CHE-106.449.959",
+  "forma_juridica": "GmbH",
+  "sede_localidad": "Sumiswald",
+  "sede_canton": "BE",
+  "direccion_co": null,
+  "direccion_calle": "Dorfstrasse 51",
+  "direccion_cp": "3457",
+  "direccion_localidad": "Wasen im Emmental",
+  "fecha_acto": "2026-07-31",
+  "tagesregister_nr": "14901",
+  "tagesregister_fecha": "2026-08-05",
+  "publicacion_anterior_shab_nr": 140,
+  "publicacion_anterior_fecha": "2025-07-23",
+  "publicacion_anterior_publ_id": "1006391936",
+  "autoridad": "Handelsregisteramt des Kantons Bern",
+  "canton_anterior": null,
+  "canton_nuevo": null,
+  "capital_nuevo_chf": null,
+  "capital_anterior_chf": null,
+  "domicilio_nuevo": "Dorfstrasse 51, 3457 Wasen im Emmental",
+  "domicilio_anterior": "ober Bärhegen null, 3457 Wasen im Emmental",
+  "personas_entrantes": [
+    {
+      "nombre": "Gerber, Sven",
+      "nacionalidad": null,
+      "heimatort": "Langnau im Emmental",
+      "domicilio": "Sumiswald",
+      "cargo": null,
+      "firma": "Kollektivunterschrift zu zweien"
+    },
+    {
+      "nombre": "Grossen, Thomas",
+      "nacionalidad": null,
+      "heimatort": "Kandergrund",
+      "domicilio": "Wasen im Emmental (Sumiswald)",
+      "cargo": null,
+      "firma": "Kollektivunterschrift zu zweien"
+    },
+    {
+      "nombre": "Heiniger, Michael",
+      "nacionalidad": null,
+      "heimatort": "Eriswil",
+      "domicilio": "Grünen (Sumiswald)",
+      "cargo": null,
+      "firma": "Kollektivunterschrift zu zweien"
+    },
+    {
+      "nombre": "Moser, Paul",
+      "nacionalidad": null,
+      "heimatort": "Röthenbach im Emmental",
+      "domicilio": "Bowil",
+      "cargo": null,
+      "firma": "Kollektivunterschrift zu zweien"
+    }
+  ],
+  "personas_salientes": [
+    {
+      "nombre": "Schenk, Karin",
+      "nacionalidad": null,
+      "heimatort": "Eggiwil",
+      "domicilio": "Bern",
+      "cargo": null,
+      "firma": "Kollektivunterschrift zu zweien"
+    }
+  ],
+  "personas_mutantes": [
+    {
+      "nombre_nuevo": "Reber, Elias",
+      "nombre_anterior": null,
+      "nacionalidad_anterior": null,
+      "heimatort": "Schangnau",
+      "cargo": "Vorsitzender der Geschäftsführung",
+      "firma": "Einzelunterschrift"
+    },
+    {
+      "nombre_nuevo": "Reber, Joschua",
+      "nombre_anterior": null,
+      "nacionalidad_anterior": null,
+      "heimatort": "Schangnau",
+      "cargo": "Geschäftsführer",
+      "firma": "Einzelunterschrift"
+    }
+  ],
+  "extras": {
+    "zweck": "Zweck der Gesellschaft ist der Betrieb eines Dachdeckergeschäftes und insbesondere die Ausführung von Bedachungen, Kamin- und Fassadenverkleidungen, Dach- und Fassadenisolationen, Dach- und ...",
+    "firma_nueva": "Schenk Bedachungen GmbH"
+  },
+  "incierto": [
+    "personas_mutantes",
+    "empresa_nombre_completo"
+  ],
+  "notas": "Company renamed (Schenk Manfred GmbH → Schenk Bedachungen GmbH); no schema field for the name pair, recorded in extras. Both Reber brothers moved from 'ohne eingetragene Funktion' to a management role and from joint to sole signature — PersonChange has neither cargo_anterior nor firma_anterior, nor domicilio (both live in Wasen im Emmental). Statutory clauses on Nebenleistungspflichten and pre-emption rights were struck. Source data error in the Bisher block: the street reads 'ober Bärhegen null'.",
+  "_verified": true
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": "0.2",
+  "doc_id": "0021",
+  "idioma": "de",
+  "tipo_acto": "mutation",
+  "subtipos": [
+    "sitzverlegung",
+    "kantonswechsel",
+    "organaenderung",
+    "statutenaenderung"
+  ],
+  "empresa_nombre_completo": "Linder Immobilien AG",
+  "empresa_nombre_base": "Linder Immobilien AG",
+  "sufijo_estado": null,
+  "nombres_alternativos": [],
+  "uid": "CHE-376.960.112",
+  "forma_juridica": "AG",
+  "sede_localidad": "Lyss",
+  "sede_canton": "BE",
+  "direccion_co": null,
+  "direccion_calle": "Jungfrauweg 23",
+  "direccion_cp": "3250",
+  "direccion_localidad": "Lyss",
+  "fecha_acto": "2026-07-27",
+  "tagesregister_nr": "14885",
+  "tagesregister_fecha": "2026-08-05",
+  "publicacion_anterior_shab_nr": 120,
+  "publicacion_anterior_fecha": "2026-06-25",
+  "publicacion_anterior_publ_id": "1006688184",
+  "autoridad": "Handelsregisteramt des Kantons Bern",
+  "canton_anterior": "SO",
+  "canton_nuevo": "BE",
+  "capital_nuevo_chf": null,
+  "capital_anterior_chf": null,
+  "domicilio_nuevo": "Jungfrauweg 23, 3250 Lyss",
+  "domicilio_anterior": "Stöckermattweg 4a, 4556 Aeschi SO",
+  "personas_entrantes": [],
+  "personas_salientes": [],
+  "personas_mutantes": [
+    {
+      "nombre_nuevo": "Linder, Sandro",
+      "nombre_anterior": null,
+      "nacionalidad_anterior": null,
+      "heimatort": "Herzogenbuchsee",
+      "cargo": "Mitglied des Verwaltungsrates",
+      "firma": "Einzelunterschrift"
+    }
+  ],
+  "extras": {},
+  "incierto": [],
+  "notas": "Linder Sandro's Domozil (Aeschi SO → Lyss)",
+  "_verified": true
+}

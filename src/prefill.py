@@ -10,11 +10,14 @@ Fields extracted here:
     uid, forma_juridica, tagesregister_nr, tagesregister_fecha,
     publicacion_anterior_shab_nr, publicacion_anterior_fecha,
     publicacion_anterior_publ_id, autoridad, sede_canton (derived from
-    autoridad), sede_localidad (from "in <Ort>," right before the UID),
-    tipo_acto, direccion_co, direccion_calle, direccion_cp,
-    direccion_localidad, sufijo_estado, nombres_alternativos, idioma
-    (constant "de" — see SCHEMA.md "Scope decisions": this module only
-    ever sees German-language notices)
+    autoridad), sede_localidad (from "in <Ort>," right before the UID —
+    both left null when the body reads "bisher in <Ort>", since the
+    authority then names the post-move seat, not the pre-act one SCHEMA.md
+    wants; see BISHER_IN_RE), tipo_acto, empresa_nombre_completo, empresa_nombre_base,
+    direccion_co, direccion_calle, direccion_cp, direccion_localidad,
+    sufijo_estado, nombres_alternativos, idioma (constant "de" — see
+    SCHEMA.md "Scope decisions": this module only ever sees
+    German-language notices)
 
 `doc_id` (from the filename) and `schema_version` (the version this module
 targets) are also filled in — they are mechanical bookkeeping, not
@@ -91,11 +94,28 @@ CANTON_ALIASES = {
 }
 
 UID_RE = re.compile(r"CHE-\d{3}\.\d{3}\.\d{3}")
-FORMA_JURIDICA_RE = re.compile(r"CHE-\d{3}\.\d{3}\.\d{3},\s*([^(]+?)\s*\(SHAB")
+# The parenthetical after the legal form is "(SHAB Nr. ... vom ..., Publ. ...)"
+# when a prior publication exists, or plain "(Neueintragung)" on a first-time
+# registration — either can close the sentence. On a Neueintragung the body
+# also repeats the postal address between the UID and the legal form (e.g.
+# "..., CHE-295.332.571, Heidbühl 475, 3537 Eggiwil, Aktiengesellschaft
+# (Neueintragung)"), so the legal form is the *last* comma-separated segment
+# before the parenthesis, not the first one after the UID.
+FORMA_JURIDICA_RE = re.compile(
+    r"CHE-\d{3}\.\d{3}\.\d{3},\s*([^(]+?)\s*\((?:SHAB|Neueintragung)"
+)
 # The registered seat, e.g. "..., in Aarau, CHE-450.093.916, ..." — this is
 # the legal seat, which may differ from the postal address (direccion_*),
 # e.g. after a Sitzverlegung the two point at different towns.
 SEDE_LOCALIDAD_RE = re.compile(r",\s*in\s+([^,]+),\s*CHE-\d{3}\.\d{3}\.\d{3}")
+# "<Firma>, bisher in <Ort>, CHE-..." marks a relocation: the seat named here
+# is the one *before* the act, but `Kontaktstelle` always names the
+# authority for the seat *after* it (on an intercantonal move, the new
+# canton's registry). SCHEMA.md defines sede_* as the pre-act seat, so
+# neither the Kontaktstelle-derived canton nor a locality parsed from this
+# sentence can be trusted — see prefill_text, which nulls both out when this
+# matches.
+BISHER_IN_RE = re.compile(r"\bbisher in\b")
 TAGESREGISTER_RE = re.compile(r"Tagesregister-Nr\.\s*(\S+)\s*vom\s*(\d{2}\.\d{2}\.\d{4})")
 PRIOR_PUB_RE = re.compile(
     r"Vorangehende Publikation im SHAB:\s*Nr\.\s*(\d+),\s*Datum:\s*(\d{2}\.\d{2}\.\d{4})"
@@ -105,6 +125,10 @@ KONTAKTSTELLE_RE = re.compile(r"Kontaktstelle:\s*(.+)")
 STATE_SUFFIX_RE = re.compile(r"in Liquidation|in Liq\.")
 
 ALT_NAME_LINE_RE = re.compile(r"^(?:\([^()]+\)\s*)+$")
+# Same alt-name groups as ALT_NAME_LINE_RE, but trailing on the name line
+# itself instead of getting their own line (e.g. "Foo GmbH (Foo Sàrl) (Foo
+# Sagl)" all on one line — see data/raw/0016.txt).
+TRAILING_ALT_NAMES_RE = re.compile(r"\s*(?:\([^()]+\)\s*)+$")
 ALT_NAME_GROUP_RE = re.compile(r"\(([^()]+)\)")
 CO_LINE_RE = re.compile(r"^c/o\s+(.+)$", re.IGNORECASE)
 PLZ_ORT_RE = re.compile(r"^(\d{4})\s+(.+)$")
@@ -158,6 +182,8 @@ def _parse_header_block(lines: list[str]) -> dict:
         "tipo_acto": None,
         "sufijo_estado": None,
         "nombres_alternativos": [],
+        "empresa_nombre_completo": None,
+        "empresa_nombre_base": None,
         "direccion_co": None,
         "direccion_calle": None,
         "direccion_cp": None,
@@ -176,7 +202,35 @@ def _parse_header_block(lines: list[str]) -> dict:
     if state_match:
         result["sufijo_estado"] = state_match.group(0)
 
-    for line in lines[1:]:
+    body_lines = lines[1:]
+
+    # `body_lines[0]`, if present, is the portal's repeated full company name
+    # (every sampled document repeats it right after the headline). This is
+    # the one header line this module locates positionally rather than by
+    # pattern, so guard against it actually being an address/alt-name line in
+    # case some document skips the repeat.
+    if body_lines:
+        candidate = body_lines[0].strip()
+        looks_like_something_else = (
+            CO_LINE_RE.match(candidate)
+            or PLZ_ORT_RE.match(candidate)
+            or ALT_NAME_LINE_RE.fullmatch(candidate)
+            or STREET_RE.match(candidate)
+        )
+        if candidate and not looks_like_something_else:
+            # Alternative-language names sometimes trail on this same line as
+            # "(...)" groups instead of getting their own line below.
+            trailing_match = TRAILING_ALT_NAMES_RE.search(candidate)
+            if trailing_match:
+                result["nombres_alternativos"].extend(
+                    ALT_NAME_GROUP_RE.findall(trailing_match.group(0))
+                )
+                candidate = candidate[: trailing_match.start()].rstrip()
+            result["empresa_nombre_completo"] = candidate
+            result["empresa_nombre_base"] = STATE_SUFFIX_RE.sub("", candidate).strip()
+            body_lines = body_lines[1:]
+
+    for line in body_lines:
         stripped = line.strip()
         if not stripped:
             continue
@@ -197,7 +251,7 @@ def _parse_header_block(lines: list[str]) -> dict:
         if result["direccion_calle"] is None and STREET_RE.match(stripped):
             result["direccion_calle"] = stripped
             continue
-        # Anything else here is a repeated company-name line — not extracted.
+        # Anything else here is an unhandled line — not extracted.
 
     return result
 
@@ -271,7 +325,11 @@ def prefill_text(text: str, doc_id: str | None = None) -> dict:
 
     forma_match = FORMA_JURIDICA_RE.search(text)
     if forma_match:
-        record["forma_juridica"] = FORM_MAP.get(forma_match.group(1).strip())
+        # On a Neueintragung the captured group also contains the repeated
+        # address (see FORMA_JURIDICA_RE comment); the legal form is always
+        # the last comma-separated segment, address or not.
+        last_segment = forma_match.group(1).split(",")[-1].strip()
+        record["forma_juridica"] = FORM_MAP.get(last_segment)
 
     tagesregister_match = TAGESREGISTER_RE.search(text)
     if tagesregister_match:
@@ -292,6 +350,13 @@ def prefill_text(text: str, doc_id: str | None = None) -> dict:
         autoridad = kontaktstelle_match.group(1).strip()
         record["autoridad"] = autoridad
         record["sede_canton"] = _derive_canton(autoridad)
+
+    # "bisher in <Ort>" means the Kontaktstelle authority (and any locality
+    # parsed near the UID) reflects the post-move seat, not the pre-act one
+    # SCHEMA.md wants — see BISHER_IN_RE above.
+    if BISHER_IN_RE.search(text):
+        record["sede_localidad"] = None
+        record["sede_canton"] = None
 
     return record
 

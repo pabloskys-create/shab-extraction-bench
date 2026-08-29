@@ -131,6 +131,16 @@ def test_subtipos_values_must_be_in_controlled_vocabulary():
     assert _errors_on(errors, "subtipos[0]")
 
 
+# --- schema_version must match SCHEMA.md's header ---
+
+
+def test_schema_version_must_match_schema_md_header():
+    record = _load_fixture("valid_mutation.json")
+    record["schema_version"] = "0.1"  # SCHEMA.md's header currently declares "0.2"
+    errors = validate_record(record)
+    assert _errors_on(errors, "schema_version")
+
+
 # --- structural: absent scalar must be null, never "" ---
 
 
@@ -207,6 +217,18 @@ def test_incierto_field_name_must_exist_in_schema():
     record["incierto"] = ["campo_inexistente"]
     errors = validate_record(record)
     assert _errors_on(errors, "incierto[0]")
+
+
+def test_nombres_alternativos_rejects_subtipos_value():
+    # Regression for data/exploratory/0027.json: subtipos values ended up
+    # glued into nombres_alternativos, and validation passed silently
+    # because both fields are plain list[string] — no enum on this field
+    # would catch a value pulled from a *different* field's vocabulary.
+    record = _load_fixture("valid_mutation.json")
+    record["nombres_alternativos"] = ["organaenderung", "sitzverlegung"]
+    errors = validate_record(record)
+    assert _errors_on(errors, "nombres_alternativos[0]")
+    assert _errors_on(errors, "nombres_alternativos[1]")
 
 
 # --- doc_id must match the filename ---

@@ -1,0 +1,49 @@
+{
+  "schema_version": "0.2",
+  "doc_id": "0016",
+  "idioma": "de",
+  "tipo_acto": "mutation",
+  "subtipos": [
+    "sitzverlegung"
+  ],
+  "empresa_nombre_completo": "Helios Solar Energie GmbH",
+  "empresa_nombre_base": "Helios Solar Energie GmbH",
+  "sufijo_estado": null,
+  "nombres_alternativos": [
+    "Helios Solar Energie Sàrl",
+    "Helios Solar Energie Sagl",
+    "Helios Solar Energie Ltd liab Co"
+  ],
+  "uid": "CHE-300.591.146",
+  "forma_juridica": "Zweigniederlassung",
+  "sede_localidad": "Rüdtligen-Alchenflüh",
+  "sede_canton": "BE",
+  "direccion_co": null,
+  "direccion_calle": "Kirchgasse 5",
+  "direccion_cp": "3302",
+  "direccion_localidad": "Moosseedorf",
+  "fecha_acto": null,
+  "tagesregister_nr": "14878",
+  "tagesregister_fecha": "2026-08-05",
+  "publicacion_anterior_shab_nr": 83,
+  "publicacion_anterior_fecha": "2026-05-01",
+  "publicacion_anterior_publ_id": "1006639929",
+  "autoridad": "Handelsregisteramt des Kantons Bern",
+  "canton_anterior": null,
+  "canton_nuevo": null,
+  "capital_nuevo_chf": null,
+  "capital_anterior_chf": null,
+  "domicilio_nuevo": "Kirchgasse 5, 3302 Moosseedorf",
+  "domicilio_anterior": "Heimstrasse 54, 3422 Alchenflüh",
+  "personas_entrantes": [],
+  "personas_salientes": [],
+  "personas_mutantes": [],
+  "extras": {
+    "hauptsitz": "Muttenz"
+  },
+  "incierto": [
+    "forma_juridica"
+  ],
+  "notas": "Swiss branch (Zweigniederlassung) of a GmbH headquartered in Muttenz. forma_juridica records the registered entity (branch), not the parent's legal form.",
+  "_verified": true
+}

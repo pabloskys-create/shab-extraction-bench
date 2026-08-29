@@ -1,0 +1,50 @@
+{
+  "schema_version": "0.2",
+  "doc_id": "0025",
+  "idioma": "de",
+  "tipo_acto": "neueintragung",
+  "subtipos": [],
+  "empresa_nombre_completo": "Baker Coiffeur GmbH",
+  "empresa_nombre_base": "Baker Coiffeur GmbH",
+  "sufijo_estado": null,
+  "nombres_alternativos": [],
+  "uid": "CHE-393.678.326",
+  "forma_juridica": "GmbH",
+  "sede_localidad": "Bern",
+  "sede_canton": "BE",
+  "direccion_co": null,
+  "direccion_calle": "Kramgasse 78",
+  "direccion_cp": "3011",
+  "direccion_localidad": "Bern",
+  "fecha_acto": "2026-08-03",
+  "tagesregister_nr": "14840",
+  "tagesregister_fecha": "2026-08-05",
+  "publicacion_anterior_shab_nr": null,
+  "publicacion_anterior_fecha": null,
+  "publicacion_anterior_publ_id": null,
+  "autoridad": "Handelsregisteramt des Kantons Bern",
+  "canton_anterior": null,
+  "canton_nuevo": null,
+  "capital_nuevo_chf": 20000.00,
+  "capital_anterior_chf": null,
+  "domicilio_nuevo": null,
+  "domicilio_anterior": null,
+  "personas_entrantes": [
+    {
+      "nombre": "Daud, Mohammed",
+      "nacionalidad": "syrisch",
+      "heimatort": null,
+      "domicilio": "Kehrsatz",
+      "cargo": "Gesellschafter und Geschäftsführer",
+      "firma": "Einzelunterschrift"
+    }
+  ],
+  "personas_salientes": [],
+  "personas_mutantes": [],
+  "extras": {
+    "zweck": "Die Gesellschaft bezweckt den Betrieb von Coiffeur- und Barbershops sowie die Erbringung von Dienstleistungen in den Bereichen Haar-, Bart- und Schönheitspflege. Sie kann Produkte der Beauty- ..."
+  },
+  "incierto": [],
+  "notas": "Mitteilungen an die Gesellschafter: per Brief oder E-Mail. Gemäss Erklärung bei der Gründung der Gesellschaft wird auf eine eingeschränkte Revision verzichtet. Stammanteile: 200 x CHF100",
+  "_verified": true
+}

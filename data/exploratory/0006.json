@@ -1,0 +1,87 @@
+{
+  "schema_version": "0.2",
+  "doc_id": "0006",
+  "idioma": "de",
+  "tipo_acto": "mutation",
+  "subtipos": [
+    "organaenderung"
+  ],
+  "empresa_nombre_completo": "Stiftung Vinetum",
+  "empresa_nombre_base": "Stiftung Vinetum",
+  "sufijo_estado": null,
+  "nombres_alternativos": [
+    "Fondation Vinetum"
+  ],
+  "uid": "CHE-100.641.323",
+  "forma_juridica": "Stiftung",
+  "sede_localidad": "Biel/Bienne",
+  "sede_canton": "BE",
+  "direccion_co": "Geocent AG",
+  "direccion_calle": "Sydebusweg 9",
+  "direccion_cp": "2500",
+  "direccion_localidad": "Biel/Bienne 3",
+  "fecha_acto": null,
+  "tagesregister_nr": "14907",
+  "tagesregister_fecha": "2026-08-05",
+  "publicacion_anterior_shab_nr": 56,
+  "publicacion_anterior_fecha": "2015-03-23",
+  "publicacion_anterior_publ_id": "2057397",
+  "autoridad": "Handelsregisteramt des Kantons Bern",
+  "canton_anterior": null,
+  "canton_nuevo": null,
+  "capital_nuevo_chf": null,
+  "capital_anterior_chf": null,
+  "domicilio_nuevo": null,
+  "domicilio_anterior": null,
+  "personas_entrantes": [
+    {
+      "nombre": "Winzenried, Jasmin Beatrice",
+      "nacionalidad": null,
+      "heimatort": "Burgdorf",
+      "domicilio": "Lyss",
+      "cargo": "Geschäftsführerin",
+      "firma": "Kollektivunterschrift zu zweien"
+    }
+  ],
+  "personas_salientes": [],
+  "personas_mutantes": [
+    {
+      "nombre_nuevo": "Böckli, Peter Prof. Dr.",
+      "nombre_anterior": null,
+      "heimatort": "Frauenfeld",
+      "nacionalidad_anterior": null,
+      "cargo": "Vizepräsident des Stiftungsrates",
+      "firma": "Kollektivunterschrift zu zweien"
+    },
+    {
+      "nombre_nuevo": "Borer Winzenried, Franziska Marlis",
+      "nombre_anterior": null,
+      "heimatort": "Grindel und Burgdorf",
+      "nacionalidad_anterior": null,
+      "cargo": "Präsidentin des Stiftungsrates",
+      "firma": "Kollektivunterschrift zu zweien"
+    },
+    {
+      "nombre_nuevo": "Borer, Daniel Emil Charles",
+      "nombre_anterior": null,
+      "heimatort": "Grindel",
+      "nacionalidad_anterior": null,
+      "cargo": "Mitglied des Stiftungsrates",
+      "firma": "Kollektivunterschrift zu zweien"
+    },
+    {
+      "nombre_nuevo": "Borer-Christen, Rosmarie",
+      "nombre_anterior": null,
+      "heimatort": "Grindel",
+      "nacionalidad_anterior": null,
+      "cargo": "Mitglied des Stiftungsrates",
+      "firma": "Kollektivunterschrift zu zweien"
+    }
+  ],
+  "extras": {},
+  "incierto": [
+    "personas_mutantes"
+  ],
+  "notas": "Four board members had their role title made more specific (e.g. 'Vizepräsident' → 'Vizepräsident des Stiftungsrates'); no substantive change. PersonChange has no cargo_anterior field. Borer Winzenried has two Heimatorte ('Grindel und Burgdorf'); the schema allows only one string.",
+  "_verified": true
+}

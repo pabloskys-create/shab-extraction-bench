@@ -1,0 +1,66 @@
+{
+  "schema_version": "0.2",
+  "doc_id": "0012",
+  "idioma": "de",
+  "tipo_acto": "neueintragung",
+  "subtipos": [],
+  "empresa_nombre_completo": "Chez India KLG",
+  "empresa_nombre_base": "Chez India KLG",
+  "sufijo_estado": null,
+  "nombres_alternativos": [],
+  "uid": "CHE-358.426.607",
+  "forma_juridica": "Kollektivgesellschaft",
+  "sede_localidad": "Biel/Bienne",
+  "sede_canton": "BE",
+  "direccion_co": null,
+  "direccion_calle": "General-Dufour-Strasse 31",
+  "direccion_cp": "2502",
+  "direccion_localidad": "Biel/Bienne",
+  "fecha_acto": "2026-08-03",
+  "tagesregister_nr": "14841",
+  "tagesregister_fecha": "2026-08-05",
+  "publicacion_anterior_shab_nr": null,
+  "publicacion_anterior_fecha": null,
+  "publicacion_anterior_publ_id": null,
+  "autoridad": "Handelsregisteramt des Kantons Bern",
+  "canton_anterior": null,
+  "canton_nuevo": null,
+  "capital_nuevo_chf": null,
+  "capital_anterior_chf": null,
+  "domicilio_nuevo": null,
+  "domicilio_anterior": null,
+  "personas_entrantes": [
+    {
+      "nombre": "Singh, Gurbachan",
+      "nacionalidad": null,
+      "heimatort": "Vechigen",
+      "domicilio": "Boll (Vechigen)",
+      "cargo": "Gesellschafter",
+      "firma": "Einzelunterschrift"
+    },
+    {
+      "nombre": "Khan, Resabul",
+      "nacionalidad": "indisch",
+      "heimatort": null,
+      "domicilio": "Biel/Bienne",
+      "cargo": "Gesellschafter",
+      "firma": "Kollektivunterschrift zu zweien"
+    },
+    {
+      "nombre": "Singh, Biramandeep",
+      "nacionalidad": null,
+      "heimatort": "Vechigen",
+      "domicilio": "Boll (Vechigen)",
+      "cargo": null,
+      "firma": "Einzelunterschrift"
+    }
+  ],
+  "personas_salientes": [],
+  "personas_mutantes": [],
+  "extras": {
+    "zweck": "Gastronomiebetrieb"
+  },
+  "incierto": [],
+  "notas": null,
+  "_verified": true
+}
