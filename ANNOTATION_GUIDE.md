@@ -14,7 +14,7 @@ A single notice can contain four different dates. Keep them apart.
 
 | Field | Trigger phrase in the source | If the phrase is absent |
 |---|---|---|
-| `fecha_acto` | `Statutenänderung: …` · `Löschungsdatum: …` · `Sitzverlegung vom …` | **`null`** — never substitute another date |
+| `fecha_acto` | `Statutenänderung: …` · `Statutendatum: …` · `Beginn: …` · `Löschungsdatum: …` | **`null`** — never substitute another date |
 | `tagesregister_fecha` | `Tagesregister-Nr. NNNN vom …` | always present |
 | `publicacion_anterior_fecha` | `Vorangehende Publikation im SHAB: Nr. N, Datum: …` | `null` |
 
@@ -70,6 +70,9 @@ Same for `capital_nuevo_chf` / `capital_anterior_chf`. Trigger:
 
 Capital as a JSON **number**: `189123.50`, not `"189'123.50"`.
 
+Capital on a `Neueintragung` (`Aktienkapital: CHF X`, no `bisher` pair) goes
+in `capital_nuevo_chf`, with `capital_anterior_chf` null.
+
 ---
 
 ## People — three lists, pick carefully
@@ -78,7 +81,11 @@ Capital as a JSON **number**: `189123.50`, not `"189'123.50"`.
 |---|---|
 | `personas_salientes` | `Ausgeschiedene Personen und erloschene Unterschriften:` |
 | `personas_entrantes` | `Eingetragene Personen neu:` (genuinely new) |
-| `personas_mutantes` | `Eingetragene Personen neu oder mutierend:` **with** a `[bisher: …]` |
+| `personas_mutantes` | an entry under `Eingetragene Personen neu oder mutierend:` that carries its own `[bisher: …]` |
+
+⚠️ That heading covers BOTH new and changed people. Entries are separated
+by `;` — split on the semicolon and judge each one independently. An entry
+without `[bisher: …]` is a new person, not a changed one.
 
 The third is the one people get wrong. `Navarro Carpentieri, Iker, von Riehen
 … [bisher: Navarro, Iker, amerikanischer Staatsangehöriger]` is **one person
@@ -110,16 +117,20 @@ Multi-label. Assign every one that applies. Controlled vocabulary only.
 | `kapitalerhoehung` | capital goes up |
 | `kapitalherabsetzung` | capital goes down |
 | `organaenderung` | **any** person enters, leaves or changes |
-| `sitzverlegung` | `Verlegung des Sitzes` / `neu <Town>` in the headline |
+| `sitzverlegung` | `Sitz neu: <Ort>` — the legal seat moves to another municipality. A `Domizil neu:` alone is an address change, NOT a Sitzverlegung |
 | `kantonswechsel` | the move crosses a canton border |
 | `firmenaenderung` | `neu <new company name>` |
 | `zweckaenderung` | `Zweck neu:` |
+| `rechtsformaenderung` | `Rechtsform … neu: … [bisher: …]` — the legal form itself changes |
 | `liquidationseroeffnung` | company enters liquidation |
 | `liquidation_beendet` | `Die Liquidation ist beendet` |
 | `revisionsstelle` | auditor appointed or removed |
 | `fusion` | merger |
 
 Most common mistake: forgetting `organaenderung` when someone leaves.
+
+`subtipos` is always `[]` on `neueintragung` and `loeschung`. Nothing changes
+on a registration or a deletion — the act type says it all.
 
 ---
 
@@ -132,6 +143,13 @@ Most common mistake: forgetting `organaenderung` when someone leaves.
 | `notas` | prose: ambiguities, oddities, why you decided something |
 
 `extras` is an object: `{"clave": "valor"}`, never a bare string.
+
+`extras.zweck` is truncated to the first sentence or ~200 characters, with
+`…`. It is scored by prefix match, not exact equality.
+
+`extras` vs `notas`: if it is a datum that will recur across documents with
+comparable values, it goes in `extras` under a registered key. If it is your
+observation about this document, it goes in `notas`.
 
 `_verified`: `true` only after you have read the whole document.
 
