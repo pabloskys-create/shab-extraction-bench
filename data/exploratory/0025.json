@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.2",
+  "schema_version": "1.0",
   "doc_id": "0025",
   "idioma": "de",
   "tipo_acto": "neueintragung",
@@ -8,6 +8,8 @@
   "empresa_nombre_base": "Baker Coiffeur GmbH",
   "sufijo_estado": null,
   "nombres_alternativos": [],
+  "empresa_nombre_nuevo": null,
+  "empresa_nombre_anterior": null,
   "uid": "CHE-393.678.326",
   "forma_juridica": "GmbH",
   "sede_localidad": "Bern",
@@ -25,7 +27,7 @@
   "autoridad": "Handelsregisteramt des Kantons Bern",
   "canton_anterior": null,
   "canton_nuevo": null,
-  "capital_nuevo_chf": 20000.00,
+  "capital_nuevo_chf": 20000.0,
   "capital_anterior_chf": null,
   "domicilio_nuevo": null,
   "domicilio_anterior": null,
@@ -36,7 +38,9 @@
       "heimatort": null,
       "domicilio": "Kehrsatz",
       "cargo": "Gesellschafter und Geschäftsführer",
-      "firma": "Einzelunterschrift"
+      "firma": "Einzelunterschrift",
+      "uid": null,
+      "stammanteile": null
     }
   ],
   "personas_salientes": [],

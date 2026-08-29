@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.2",
+  "schema_version": "1.0",
   "doc_id": "0001",
   "idioma": "de",
   "tipo_acto": "mutation",
@@ -10,6 +10,8 @@
   "empresa_nombre_base": "The Zermatt Kollektiv AG",
   "sufijo_estado": "in Liquidation",
   "nombres_alternativos": [],
+  "empresa_nombre_nuevo": null,
+  "empresa_nombre_anterior": null,
   "uid": "CHE-390.336.674",
   "forma_juridica": "AG",
   "sede_localidad": "Zermatt",
@@ -39,7 +41,9 @@
       "heimatort": null,
       "domicilio": "Zermatt",
       "cargo": "einziges Mitglied",
-      "firma": "Kollektivunterschrift zu zweien"
+      "firma": "Kollektivunterschrift zu zweien",
+      "uid": null,
+      "stammanteile": null
     }
   ],
   "personas_mutantes": [],

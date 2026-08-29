@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.2",
+  "schema_version": "1.0",
   "doc_id": "0003",
   "idioma": "de",
   "tipo_acto": "mutation",
@@ -15,6 +15,8 @@
     "Noorik Biopharmaceuticals SA",
     "Noorik Biopharmaceuticals Ltd"
   ],
+  "empresa_nombre_nuevo": null,
+  "empresa_nombre_anterior": null,
   "uid": "CHE-115.986.883",
   "forma_juridica": "AG",
   "sede_localidad": "Basel",
@@ -32,8 +34,8 @@
   "autoridad": "Handelsregisteramt des Kantons Basel-Stadt",
   "canton_anterior": null,
   "canton_nuevo": null,
-  "capital_nuevo_chf": 189123.50,
-  "capital_anterior_chf": 188123.50,
+  "capital_nuevo_chf": 189123.5,
+  "capital_anterior_chf": 188123.5,
   "domicilio_nuevo": null,
   "domicilio_anterior": null,
   "personas_entrantes": [],
@@ -42,19 +44,25 @@
     {
       "nombre_nuevo": "Navarro Carpentieri, Iker",
       "nombre_anterior": "Navarro, Iker",
+      "domicilio_nuevo": null,
+      "domicilio_anterior": null,
+      "cargo_nuevo": "Mitglied des Verwaltungsrates",
+      "cargo_anterior": null,
+      "firma_nueva": "Einzelunterschrift",
+      "firma_anterior": null,
+      "nacionalidad_nueva": null,
       "nacionalidad_anterior": "amerikanisch",
-      "heimatort": "Riehen",
-      "cargo": "Mitglied des Verwaltungsrates",
-      "firma": "Einzelunterschrift"
+      "heimatort_nuevo": "Riehen",
+      "heimatort_anterior": null
     }
   ],
   "extras": {
     "acciones_nuevas": 378247,
     "acciones_anteriores": 376247,
-    "valor_nominal_chf": 0.50,
+    "valor_nominal_chf": 0.5,
     "clases_acciones": "Namenaktien",
-    "liberierung_nuevo_chf": 189123.50,
-    "liberierung_anterior_chf": 188123.50,
+    "liberierung_nuevo_chf": 189123.5,
+    "liberierung_anterior_chf": 188123.5,
     "tipo_kapitalerhoehung": "Ordentliche Kapitalerhöhung innerhalb Kapitalband"
   },
   "incierto": [],

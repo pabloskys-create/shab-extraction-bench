@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.2",
+  "schema_version": "1.0",
   "doc_id": "0006",
   "idioma": "de",
   "tipo_acto": "mutation",
@@ -12,6 +12,8 @@
   "nombres_alternativos": [
     "Fondation Vinetum"
   ],
+  "empresa_nombre_nuevo": null,
+  "empresa_nombre_anterior": null,
   "uid": "CHE-100.641.323",
   "forma_juridica": "Stiftung",
   "sede_localidad": "Biel/Bienne",
@@ -40,7 +42,9 @@
       "heimatort": "Burgdorf",
       "domicilio": "Lyss",
       "cargo": "Geschäftsführerin",
-      "firma": "Kollektivunterschrift zu zweien"
+      "firma": "Kollektivunterschrift zu zweien",
+      "uid": null,
+      "stammanteile": null
     }
   ],
   "personas_salientes": [],
@@ -48,34 +52,58 @@
     {
       "nombre_nuevo": "Böckli, Peter Prof. Dr.",
       "nombre_anterior": null,
-      "heimatort": "Frauenfeld",
+      "domicilio_nuevo": null,
+      "domicilio_anterior": null,
+      "cargo_nuevo": "Vizepräsident des Stiftungsrates",
+      "cargo_anterior": null,
+      "firma_nueva": "Kollektivunterschrift zu zweien",
+      "firma_anterior": null,
+      "nacionalidad_nueva": null,
       "nacionalidad_anterior": null,
-      "cargo": "Vizepräsident des Stiftungsrates",
-      "firma": "Kollektivunterschrift zu zweien"
+      "heimatort_nuevo": "Frauenfeld",
+      "heimatort_anterior": null
     },
     {
       "nombre_nuevo": "Borer Winzenried, Franziska Marlis",
       "nombre_anterior": null,
-      "heimatort": "Grindel und Burgdorf",
+      "domicilio_nuevo": null,
+      "domicilio_anterior": null,
+      "cargo_nuevo": "Präsidentin des Stiftungsrates",
+      "cargo_anterior": null,
+      "firma_nueva": "Kollektivunterschrift zu zweien",
+      "firma_anterior": null,
+      "nacionalidad_nueva": null,
       "nacionalidad_anterior": null,
-      "cargo": "Präsidentin des Stiftungsrates",
-      "firma": "Kollektivunterschrift zu zweien"
+      "heimatort_nuevo": "Grindel und Burgdorf",
+      "heimatort_anterior": null
     },
     {
       "nombre_nuevo": "Borer, Daniel Emil Charles",
       "nombre_anterior": null,
-      "heimatort": "Grindel",
+      "domicilio_nuevo": null,
+      "domicilio_anterior": null,
+      "cargo_nuevo": "Mitglied des Stiftungsrates",
+      "cargo_anterior": null,
+      "firma_nueva": "Kollektivunterschrift zu zweien",
+      "firma_anterior": null,
+      "nacionalidad_nueva": null,
       "nacionalidad_anterior": null,
-      "cargo": "Mitglied des Stiftungsrates",
-      "firma": "Kollektivunterschrift zu zweien"
+      "heimatort_nuevo": "Grindel",
+      "heimatort_anterior": null
     },
     {
       "nombre_nuevo": "Borer-Christen, Rosmarie",
       "nombre_anterior": null,
-      "heimatort": "Grindel",
+      "domicilio_nuevo": null,
+      "domicilio_anterior": null,
+      "cargo_nuevo": "Mitglied des Stiftungsrates",
+      "cargo_anterior": null,
+      "firma_nueva": "Kollektivunterschrift zu zweien",
+      "firma_anterior": null,
+      "nacionalidad_nueva": null,
       "nacionalidad_anterior": null,
-      "cargo": "Mitglied des Stiftungsrates",
-      "firma": "Kollektivunterschrift zu zweien"
+      "heimatort_nuevo": "Grindel",
+      "heimatort_anterior": null
     }
   ],
   "extras": {},

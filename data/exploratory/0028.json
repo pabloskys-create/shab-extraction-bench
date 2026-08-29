@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.2",
+  "schema_version": "1.0",
   "doc_id": "0028",
   "idioma": "de",
   "tipo_acto": "mutation",
@@ -10,6 +10,8 @@
   "empresa_nombre_base": "Personalvorsorgestiftung der Haag-Streit Gruppe Köniz",
   "sufijo_estado": null,
   "nombres_alternativos": [],
+  "empresa_nombre_nuevo": null,
+  "empresa_nombre_anterior": null,
   "uid": "CHE-109.772.612",
   "forma_juridica": "Stiftung",
   "sede_localidad": "Köniz",
@@ -38,7 +40,9 @@
       "heimatort": null,
       "domicilio": "Bern",
       "cargo": "Revisionsstelle",
-      "firma": null
+      "firma": null,
+      "uid": null,
+      "stammanteile": null
     }
   ],
   "personas_salientes": [
@@ -48,7 +52,9 @@
       "heimatort": null,
       "domicilio": "Köniz",
       "cargo": "Revisionsstelle",
-      "firma": null
+      "firma": null,
+      "uid": null,
+      "stammanteile": null
     }
   ],
   "personas_mutantes": [],

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.2",
+  "schema_version": "1.0",
   "doc_id": "0004",
   "idioma": "de",
   "tipo_acto": "mutation",
@@ -12,6 +12,8 @@
   "nombres_alternativos": [
     "Asemblis LLC"
   ],
+  "empresa_nombre_nuevo": null,
+  "empresa_nombre_anterior": null,
   "uid": "CHE-185.214.900",
   "forma_juridica": "GmbH",
   "sede_localidad": "Bern",
@@ -40,7 +42,9 @@
       "heimatort": null,
       "domicilio": "Bern",
       "cargo": "Gesellschafterin",
-      "firma": null
+      "firma": null,
+      "uid": null,
+      "stammanteile": null
     }
   ],
   "personas_salientes": [
@@ -50,17 +54,25 @@
       "heimatort": null,
       "domicilio": "Chavannes-près-Renens",
       "cargo": "Gesellschafterin und Geschäftsführerin",
-      "firma": "Einzelunterschrift"
+      "firma": "Einzelunterschrift",
+      "uid": null,
+      "stammanteile": null
     }
   ],
   "personas_mutantes": [
     {
       "nombre_nuevo": "Souza Valeriano, Caio Felipe",
       "nombre_anterior": null,
-      "heimatort": null,
+      "domicilio_nuevo": null,
+      "domicilio_anterior": null,
+      "cargo_nuevo": "Gesellschafter und Geschäftsführer",
+      "cargo_anterior": null,
+      "firma_nueva": "Einzelunterschrift",
+      "firma_anterior": null,
+      "nacionalidad_nueva": null,
       "nacionalidad_anterior": null,
-      "cargo": "Gesellschafter und Geschäftsführer",
-      "firma": "Einzelunterschrift"
+      "heimatort_nuevo": null,
+      "heimatort_anterior": null
     }
   ],
   "extras": {},

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.2",
+  "schema_version": "1.0",
   "doc_id": "0021",
   "idioma": "de",
   "tipo_acto": "mutation",
@@ -13,6 +13,8 @@
   "empresa_nombre_base": "Linder Immobilien AG",
   "sufijo_estado": null,
   "nombres_alternativos": [],
+  "empresa_nombre_nuevo": null,
+  "empresa_nombre_anterior": null,
   "uid": "CHE-376.960.112",
   "forma_juridica": "AG",
   "sede_localidad": "Lyss",
@@ -40,10 +42,16 @@
     {
       "nombre_nuevo": "Linder, Sandro",
       "nombre_anterior": null,
+      "domicilio_nuevo": null,
+      "domicilio_anterior": null,
+      "cargo_nuevo": "Mitglied des Verwaltungsrates",
+      "cargo_anterior": null,
+      "firma_nueva": "Einzelunterschrift",
+      "firma_anterior": null,
+      "nacionalidad_nueva": null,
       "nacionalidad_anterior": null,
-      "heimatort": "Herzogenbuchsee",
-      "cargo": "Mitglied des Verwaltungsrates",
-      "firma": "Einzelunterschrift"
+      "heimatort_nuevo": "Herzogenbuchsee",
+      "heimatort_anterior": null
     }
   ],
   "extras": {},
