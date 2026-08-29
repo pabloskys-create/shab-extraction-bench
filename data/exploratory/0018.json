@@ -1,0 +1,54 @@
+{
+  "schema_version": "0.2",
+  "doc_id": "0018",
+  "idioma": "de",
+  "tipo_acto": "mutation",
+  "subtipos": [
+    "sitzverlegung"
+  ],
+  "empresa_nombre_completo": "Equimode Pieper",
+  "empresa_nombre_base": "Equimode Pieper",
+  "sufijo_estado": null,
+  "nombres_alternativos": [],
+  "uid": "CHE-257.978.269",
+  "forma_juridica": "Einzelunternehmen",
+  "sede_localidad": "Roggwil",
+  "sede_canton": "BE",
+  "direccion_co": null,
+  "direccion_calle": "St. Urbanstrasse 37",
+  "direccion_cp": "4914",
+  "direccion_localidad": "Roggwil BE",
+  "fecha_acto": null,
+  "tagesregister_nr": "14870",
+  "tagesregister_fecha": "2026-08-05",
+  "publicacion_anterior_shab_nr": 71,
+  "publicacion_anterior_fecha": "2023-04-13",
+  "publicacion_anterior_publ_id": "1005722818",
+  "autoridad": "Handelsregisteramt des Kantons Bern",
+  "canton_anterior": null,
+  "canton_nuevo": null,
+  "capital_nuevo_chf": null,
+  "capital_anterior_chf": null,
+  "domicilio_nuevo": "St. Urbanstrasse 37, 4914 Roggwil BE",
+  "domicilio_anterior": "Dorfstrasse 17, 4623 Neuendorf",
+  "personas_entrantes": [],
+  "personas_salientes": [],
+  "personas_mutantes": [
+    {
+      "nombre_nuevo": "Pieper, Stéphane",
+      "nombre_anterior": null,
+      "nacionalidad_anterior": "französisch",
+      "heimatort": "Riehen",
+      "cargo": "Inhaber",
+      "firma": "Einzelunterschrift"
+    }
+  ],
+  "extras": {
+    "zweck": "Betrieb eines Reitsportgeschäfts. Stahl-, Metallbaumontage und Revision, Schreinerarbeiten, allgemeine Montagearbeiten, handwerkliche Dienstleistungen, Transportdienstleistungen."
+  },
+  "incierto": [
+    "personas_mutantes"
+  ],
+  "notas": "Only the domicile changed (Neuendorf → Roggwil). PersonChange has no domicilio field.",
+  "_verified": true
+}

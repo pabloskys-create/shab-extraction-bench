@@ -1,0 +1,50 @@
+{
+  "schema_version": "0.2",
+  "doc_id": "0026",
+  "idioma": "de",
+  "tipo_acto": "neueintragung",
+  "subtipos": [],
+  "empresa_nombre_completo": "modellbau-seeland Weber",
+  "empresa_nombre_base": "modellbau-seeland Weber",
+  "sufijo_estado": null,
+  "nombres_alternativos": [],
+  "uid": "CHE-253.649.631",
+  "forma_juridica": "Einzelunternehmen",
+  "sede_localidad": "Péry-La Heutte",
+  "sede_canton": "BE",
+  "direccion_co": null,
+  "direccion_calle": "Rue du Perset 3",
+  "direccion_cp": "2603",
+  "direccion_localidad": "Péry",
+  "fecha_acto": null,
+  "tagesregister_nr": "14844",
+  "tagesregister_fecha": "2026-08-05",
+  "publicacion_anterior_shab_nr": null,
+  "publicacion_anterior_fecha": null,
+  "publicacion_anterior_publ_id": null,
+  "autoridad": "Handelsregisteramt des Kantons Bern",
+  "canton_anterior": null,
+  "canton_nuevo": null,
+  "capital_nuevo_chf": null,
+  "capital_anterior_chf": null,
+  "domicilio_nuevo": null,
+  "domicilio_anterior": null,
+  "personas_entrantes": [
+    {
+      "nombre": "Weber, Adrian",
+      "nacionalidad": null,
+      "heimatort": "Kaisten",
+      "domicilio": "Péry (Péry-La Heutte)",
+      "cargo": "Inhaber",
+      "firma": "Einzelunterschrift"
+    }
+  ],
+  "personas_salientes": [],
+  "personas_mutantes": [],
+  "extras": {
+    "zweck": "Fachhandel und Beratung für RC-Modellbau. Organisation von Events, Messereisen sowie Baukursen und Schulungen im Bereich Modellbau."
+  },
+  "incierto": [],
+  "notas": null,
+  "_verified": true
+}

@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.2",
+  "doc_id": "0004",
+  "idioma": "de",
+  "tipo_acto": "mutation",
+  "subtipos": [
+    "organaenderung"
+  ],
+  "empresa_nombre_completo": "Asemblis GmbH",
+  "empresa_nombre_base": "Asemblis GmbH",
+  "sufijo_estado": null,
+  "nombres_alternativos": [
+    "Asemblis LLC"
+  ],
+  "uid": "CHE-185.214.900",
+  "forma_juridica": "GmbH",
+  "sede_localidad": "Bern",
+  "sede_canton": "BE",
+  "direccion_co": null,
+  "direccion_calle": "Weyermannsstrasse 36",
+  "direccion_cp": "3008",
+  "direccion_localidad": "Bern",
+  "fecha_acto": null,
+  "tagesregister_nr": "14856",
+  "tagesregister_fecha": "2026-08-05",
+  "publicacion_anterior_shab_nr": 216,
+  "publicacion_anterior_fecha": "2025-11-07",
+  "publicacion_anterior_publ_id": "1006478448",
+  "autoridad": "Handelsregisteramt des Kantons Bern",
+  "canton_anterior": null,
+  "canton_nuevo": null,
+  "capital_nuevo_chf": null,
+  "capital_anterior_chf": null,
+  "domicilio_nuevo": null,
+  "domicilio_anterior": null,
+  "personas_entrantes": [
+    {
+      "nombre": "Asemblis GmbH (CHE-185.214.900)",
+      "nacionalidad": null,
+      "heimatort": null,
+      "domicilio": "Bern",
+      "cargo": "Gesellschafterin",
+      "firma": null
+    }
+  ],
+  "personas_salientes": [
+    {
+      "nombre": "Stienne, Leoni",
+      "nacionalidad": "französisch",
+      "heimatort": null,
+      "domicilio": "Chavannes-près-Renens",
+      "cargo": "Gesellschafterin und Geschäftsführerin",
+      "firma": "Einzelunterschrift"
+    }
+  ],
+  "personas_mutantes": [
+    {
+      "nombre_nuevo": "Souza Valeriano, Caio Felipe",
+      "nombre_anterior": null,
+      "heimatort": null,
+      "nacionalidad_anterior": null,
+      "cargo": "Gesellschafter und Geschäftsführer",
+      "firma": "Einzelunterschrift"
+    }
+  ],
+  "extras": {},
+  "incierto": [
+    "personas_entrantes",
+    "personas_mutantes"
+  ],
+  "notas": "Souza Valeriano changed role: 'Vorsitzender der Geschäftsführung' → 'Geschäftsführer'. PersonChange has no cargo_anterior field, so the previous role is recorded here. GmbH shares (Stammanteile) also have no field: 170 for Souza, 30 for the company. The company enters as its own partner with its own UID.",
+  "_verified": true
+}

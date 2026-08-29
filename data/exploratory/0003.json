@@ -1,0 +1,63 @@
+{
+  "schema_version": "0.2",
+  "doc_id": "0003",
+  "idioma": "de",
+  "tipo_acto": "mutation",
+  "subtipos": [
+    "statutenaenderung",
+    "kapitalerhoehung",
+    "organaenderung"
+  ],
+  "empresa_nombre_completo": "Noorik Biopharmaceuticals AG",
+  "empresa_nombre_base": "Noorik Biopharmaceuticals AG",
+  "sufijo_estado": null,
+  "nombres_alternativos": [
+    "Noorik Biopharmaceuticals SA",
+    "Noorik Biopharmaceuticals Ltd"
+  ],
+  "uid": "CHE-115.986.883",
+  "forma_juridica": "AG",
+  "sede_localidad": "Basel",
+  "sede_canton": "BS",
+  "direccion_co": null,
+  "direccion_calle": "Lange Gasse 15",
+  "direccion_cp": "4052",
+  "direccion_localidad": "Basel",
+  "fecha_acto": "2026-08-14",
+  "tagesregister_nr": "5762",
+  "tagesregister_fecha": "2026-08-18",
+  "publicacion_anterior_shab_nr": 129,
+  "publicacion_anterior_fecha": "2024-07-05",
+  "publicacion_anterior_publ_id": "1006077090",
+  "autoridad": "Handelsregisteramt des Kantons Basel-Stadt",
+  "canton_anterior": null,
+  "canton_nuevo": null,
+  "capital_nuevo_chf": 189123.50,
+  "capital_anterior_chf": 188123.50,
+  "domicilio_nuevo": null,
+  "domicilio_anterior": null,
+  "personas_entrantes": [],
+  "personas_salientes": [],
+  "personas_mutantes": [
+    {
+      "nombre_nuevo": "Navarro Carpentieri, Iker",
+      "nombre_anterior": "Navarro, Iker",
+      "nacionalidad_anterior": "amerikanisch",
+      "heimatort": "Riehen",
+      "cargo": "Mitglied des Verwaltungsrates",
+      "firma": "Einzelunterschrift"
+    }
+  ],
+  "extras": {
+    "acciones_nuevas": 378247,
+    "acciones_anteriores": 376247,
+    "valor_nominal_chf": 0.50,
+    "clases_acciones": "Namenaktien",
+    "liberierung_nuevo_chf": 189123.50,
+    "liberierung_anterior_chf": 188123.50,
+    "tipo_kapitalerhoehung": "Ordentliche Kapitalerhöhung innerhalb Kapitalband"
+  },
+  "incierto": [],
+  "notas": "Naturalisation: previously 'amerikanischer Staatsangehöriger', now 'von Riehen' (Swiss Heimatort). Surname also changed from Navarro to Navarro Carpentieri. Same person, not an entry plus an exit.",
+  "_verified": true
+}

@@ -1,0 +1,50 @@
+{
+  "schema_version": "0.2",
+  "doc_id": "0014",
+  "idioma": "de",
+  "tipo_acto": "neueintragung",
+  "subtipos": [],
+  "empresa_nombre_completo": "Studio MO Gfeller Architektur",
+  "empresa_nombre_base": "Studio MO Gfeller Architektur",
+  "sufijo_estado": null,
+  "nombres_alternativos": [],
+  "uid": "CHE-247.993.988",
+  "forma_juridica": "Einzelunternehmen",
+  "sede_localidad": "Bern",
+  "sede_canton": "BE",
+  "direccion_co": null,
+  "direccion_calle": "Sulgenbachstrasse 21",
+  "direccion_cp": "3007",
+  "direccion_localidad": "Bern",
+  "fecha_acto": null,
+  "tagesregister_nr": "14849",
+  "tagesregister_fecha": "2026-08-05",
+  "publicacion_anterior_shab_nr": null,
+  "publicacion_anterior_fecha": null,
+  "publicacion_anterior_publ_id": null,
+  "autoridad": "Handelsregisteramt des Kantons Bern",
+  "canton_anterior": null,
+  "canton_nuevo": null,
+  "capital_nuevo_chf": null,
+  "capital_anterior_chf": null,
+  "domicilio_nuevo": null,
+  "domicilio_anterior": null,
+  "personas_entrantes": [
+    {
+      "nombre": "Gfeller, Marc Oliver",
+      "nacionalidad": null,
+      "heimatort": "Bern",
+      "domicilio": "Bern",
+      "cargo": "Inhaber",
+      "firma": "Einzelunterschrift"
+    }
+  ],
+  "personas_salientes": [],
+  "personas_mutantes": [],
+  "extras": {
+    "zweck": "Das Aufgabenfeld des Unternehmens umfasst das Begleiten, Organisieren und Planen von komplexen Bauaufgaben im Bereich Neubau, Bauen im Bestand, Umnutzung, Innenraumgestaltung sowie verwandte Gestaltungsbereiche."
+  },
+  "incierto": [],
+  "notas": null,
+  "_verified": true
+}

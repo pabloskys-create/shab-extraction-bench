@@ -1,0 +1,59 @@
+{
+  "schema_version": "0.2",
+  "doc_id": "0028",
+  "idioma": "de",
+  "tipo_acto": "mutation",
+  "subtipos": [
+    "revisionsstelle"
+  ],
+  "empresa_nombre_completo": "Personalvorsorgestiftung der Haag-Streit Gruppe Köniz",
+  "empresa_nombre_base": "Personalvorsorgestiftung der Haag-Streit Gruppe Köniz",
+  "sufijo_estado": null,
+  "nombres_alternativos": [],
+  "uid": "CHE-109.772.612",
+  "forma_juridica": "Stiftung",
+  "sede_localidad": "Köniz",
+  "sede_canton": "BE",
+  "direccion_co": "Haag-Streit AG",
+  "direccion_calle": "Gartenstadtstrasse 10",
+  "direccion_cp": "3098",
+  "direccion_localidad": "Köniz",
+  "fecha_acto": null,
+  "tagesregister_nr": "14896",
+  "tagesregister_fecha": "2026-08-05",
+  "publicacion_anterior_shab_nr": 46,
+  "publicacion_anterior_fecha": "2025-03-07",
+  "publicacion_anterior_publ_id": "1006275993",
+  "autoridad": "Handelsregisteramt des Kantons Bern",
+  "canton_anterior": null,
+  "canton_nuevo": null,
+  "capital_nuevo_chf": null,
+  "capital_anterior_chf": null,
+  "domicilio_nuevo": null,
+  "domicilio_anterior": null,
+  "personas_entrantes": [
+    {
+      "nombre": "BDO AG (CHE-430.259.378)",
+      "nacionalidad": null,
+      "heimatort": null,
+      "domicilio": "Bern",
+      "cargo": "Revisionsstelle",
+      "firma": null
+    }
+  ],
+  "personas_salientes": [
+    {
+      "nombre": "OBT AG (CHE-323.201.462)",
+      "nacionalidad": null,
+      "heimatort": null,
+      "domicilio": "Köniz",
+      "cargo": "Revisionsstelle",
+      "firma": null
+    }
+  ],
+  "personas_mutantes": [],
+  "extras": {},
+  "incierto": [],
+  "notas": null,
+  "_verified": true
+}

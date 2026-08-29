@@ -1,0 +1,50 @@
+{
+  "schema_version": "0.2",
+  "doc_id": "0007",
+  "idioma": "de",
+  "tipo_acto": "mutation",
+  "subtipos": [
+    "organaenderung"
+  ],
+  "empresa_nombre_completo": "Fontaris AG",
+  "empresa_nombre_base": "Fontaris AG",
+  "sufijo_estado": null,
+  "nombres_alternativos": [],
+  "uid": "CHE-110.631.378",
+  "forma_juridica": "AG",
+  "sede_localidad": "Bern",
+  "sede_canton": "BE",
+  "direccion_co": null,
+  "direccion_calle": "Jungfraustrasse 1",
+  "direccion_cp": "3005",
+  "direccion_localidad": "Bern",
+  "fecha_acto": null,
+  "tagesregister_nr": "14874",
+  "tagesregister_fecha": "2026-08-05",
+  "publicacion_anterior_shab_nr": 137,
+  "publicacion_anterior_fecha": "2026-07-20",
+  "publicacion_anterior_publ_id": "1006710740",
+  "autoridad": "Handelsregisteramt des Kantons Bern",
+  "canton_anterior": null,
+  "canton_nuevo": null,
+  "capital_nuevo_chf": null,
+  "capital_anterior_chf": null,
+  "domicilio_nuevo": null,
+  "domicilio_anterior": null,
+  "personas_entrantes": [
+    {
+      "nombre": "Glutz, Urs",
+      "nacionalidad": null,
+      "heimatort": "Lohn-Ammannsegg",
+      "domicilio": "Bern",
+      "cargo": null,
+      "firma": "Kollektivunterschrift zu zweien"
+    }
+  ],
+  "personas_salientes": [],
+  "personas_mutantes": [],
+  "extras": {},
+  "incierto": [],
+  "notas": null,
+  "_verified": true
+}
