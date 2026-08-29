@@ -37,14 +37,14 @@
   "domicilio_anterior": null,
   "personas_entrantes": [
     {
-      "nombre": "Asemblis GmbH (CHE-185.214.900)",
+      "nombre": "Asemblis GmbH",
       "nacionalidad": null,
       "heimatort": null,
       "domicilio": "Bern",
       "cargo": "Gesellschafterin",
       "firma": null,
-      "uid": null,
-      "stammanteile": null
+      "uid": "CHE-185.214.900",
+      "stammanteile": 30
     }
   ],
   "personas_salientes": [
@@ -56,30 +56,31 @@
       "cargo": "Gesellschafterin und Geschäftsführerin",
       "firma": "Einzelunterschrift",
       "uid": null,
-      "stammanteile": null
+      "stammanteile": 30
     }
   ],
   "personas_mutantes": [
     {
       "nombre_nuevo": "Souza Valeriano, Caio Felipe",
       "nombre_anterior": null,
-      "domicilio_nuevo": null,
+      "domicilio_nuevo": "Bern",
       "domicilio_anterior": null,
       "cargo_nuevo": "Gesellschafter und Geschäftsführer",
-      "cargo_anterior": null,
+      "cargo_anterior": "Gesellschafter und Vorsitzender der Geschäftsführung",
       "firma_nueva": "Einzelunterschrift",
       "firma_anterior": null,
-      "nacionalidad_nueva": null,
+      "nacionalidad_nueva": "brasilianisch",
       "nacionalidad_anterior": null,
       "heimatort_nuevo": null,
-      "heimatort_anterior": null
+      "heimatort_anterior": null,
+      "stammanteile_nuevo": 170,
+      "stammanteile_anterior": null
     }
   ],
   "extras": {},
   "incierto": [
-    "personas_entrantes",
-    "personas_mutantes"
+    "personas_entrantes"
   ],
-  "notas": "Souza Valeriano changed role: 'Vorsitzender der Geschäftsführung' → 'Geschäftsführer'. PersonChange has no cargo_anterior field, so the previous role is recorded here. GmbH shares (Stammanteile) also have no field: 170 for Souza, 30 for the company. The company enters as its own partner with its own UID.",
+  "notas": "The company itself is registered as one of its own partners, holding 30 of the 200 Stammanteile. Person.uid records the identifier but not that this is a legal, rather than natural, person — nor that it is the same entity as the subject of the notice.",
   "_verified": true
 }

@@ -70,22 +70,22 @@
     {
       "nombre_nuevo": "Reichle, Michael",
       "nombre_anterior": null,
-      "domicilio_nuevo": null,
+      "domicilio_nuevo": "Thun",
       "domicilio_anterior": null,
       "cargo_nuevo": "Mitglied des Verwaltungsrates",
-      "cargo_anterior": null,
+      "cargo_anterior": "Mitglied",
       "firma_nueva": "Einzelunterschrift",
       "firma_anterior": null,
       "nacionalidad_nueva": null,
       "nacionalidad_anterior": null,
       "heimatort_nuevo": "Thun",
-      "heimatort_anterior": null
+      "heimatort_anterior": null,
+      "stammanteile_nuevo": null,
+      "stammanteile_anterior": null
     }
   ],
   "extras": {},
-  "incierto": [
-    "personas_mutantes"
-  ],
-  "notas": "PersonChange has no cargo_anterior field.",
+  "incierto": [],
+  "notas": null,
   "_verified": true
 }

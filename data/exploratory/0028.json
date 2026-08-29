@@ -35,25 +35,25 @@
   "domicilio_anterior": null,
   "personas_entrantes": [
     {
-      "nombre": "BDO AG (CHE-430.259.378)",
+      "nombre": "BDO AG",
       "nacionalidad": null,
       "heimatort": null,
       "domicilio": "Bern",
       "cargo": "Revisionsstelle",
       "firma": null,
-      "uid": null,
+      "uid": "CHE-430.259.378",
       "stammanteile": null
     }
   ],
   "personas_salientes": [
     {
-      "nombre": "OBT AG (CHE-323.201.462)",
+      "nombre": "OBT AG",
       "nacionalidad": null,
       "heimatort": null,
       "domicilio": "Köniz",
       "cargo": "Revisionsstelle",
       "firma": null,
-      "uid": null,
+      "uid": "CHE-323.201.462",
       "stammanteile": null
     }
   ],

@@ -40,15 +40,17 @@
       "cargo": "Gesellschafter und Geschäftsführer",
       "firma": "Einzelunterschrift",
       "uid": null,
-      "stammanteile": null
+      "stammanteile": 200
     }
   ],
   "personas_salientes": [],
   "personas_mutantes": [],
   "extras": {
-    "zweck": "Die Gesellschaft bezweckt den Betrieb von Coiffeur- und Barbershops sowie die Erbringung von Dienstleistungen in den Bereichen Haar-, Bart- und Schönheitspflege. Sie kann Produkte der Beauty- ..."
+    "zweck": "Die Gesellschaft bezweckt den Betrieb von Coiffeur- und Barbershops sowie die Erbringung von Dienstleistungen in den Bereichen Haar-, Bart- und Schönheitspflege. Sie kann Produkte der Beauty- ...",
+    "mitteilungen": "per Brief oder E-Mail",
+    "revision": "opting-out"
   },
   "incierto": [],
-  "notas": "Mitteilungen an die Gesellschafter: per Brief oder E-Mail. Gemäss Erklärung bei der Gründung der Gesellschaft wird auf eine eingeschränkte Revision verzichtet. Stammanteile: 200 x CHF100",
+  "notas": null,
   "_verified": true
 }

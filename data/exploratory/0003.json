@@ -44,7 +44,7 @@
     {
       "nombre_nuevo": "Navarro Carpentieri, Iker",
       "nombre_anterior": "Navarro, Iker",
-      "domicilio_nuevo": null,
+      "domicilio_nuevo": "Riehen",
       "domicilio_anterior": null,
       "cargo_nuevo": "Mitglied des Verwaltungsrates",
       "cargo_anterior": null,
@@ -53,7 +53,9 @@
       "nacionalidad_nueva": null,
       "nacionalidad_anterior": "amerikanisch",
       "heimatort_nuevo": "Riehen",
-      "heimatort_anterior": null
+      "heimatort_anterior": null,
+      "stammanteile_nuevo": null,
+      "stammanteile_anterior": null
     }
   ],
   "extras": {
