@@ -73,6 +73,9 @@ Capital as a JSON **number**: `189123.50`, not `"189'123.50"`.
 Capital on a `Neueintragung` (`Aktienkapital: CHF X`, no `bisher` pair) goes
 in `capital_nuevo_chf`, with `capital_anterior_chf` null.
 
+`empresa_nombre_nuevo` / `empresa_nombre_anterior` — both or neither.
+Trigger: `Firma neu:`. Always fill both, even though `_anterior` repeats
+`empresa_nombre_completo`.
 ---
 
 ## People — three lists, pick carefully

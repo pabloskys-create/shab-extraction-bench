@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.2",
+  "schema_version": "1.0",
   "doc_id": "0016",
   "idioma": "de",
   "tipo_acto": "mutation",
@@ -14,6 +14,8 @@
     "Helios Solar Energie Sagl",
     "Helios Solar Energie Ltd liab Co"
   ],
+  "empresa_nombre_nuevo": null,
+  "empresa_nombre_anterior": null,
   "uid": "CHE-300.591.146",
   "forma_juridica": "Zweigniederlassung",
   "sede_localidad": "Rüdtligen-Alchenflüh",

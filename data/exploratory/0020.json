@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.2",
+  "schema_version": "1.0",
   "doc_id": "0020",
   "idioma": "de",
   "tipo_acto": "loeschung",
@@ -8,6 +8,8 @@
   "empresa_nombre_base": "ATC Zhang",
   "sufijo_estado": null,
   "nombres_alternativos": [],
+  "empresa_nombre_nuevo": null,
+  "empresa_nombre_anterior": null,
   "uid": "CHE-204.629.669",
   "forma_juridica": "Einzelunternehmen",
   "sede_localidad": "Wohlen bei Bern",

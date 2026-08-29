@@ -1,15 +1,18 @@
 {
-  "schema_version": "0.2",
+  "schema_version": "1.0",
   "doc_id": "0022",
   "idioma": "de",
   "tipo_acto": "mutation",
   "subtipos": [
-    "firmenaenderung"
+    "firmenaenderung",
+    "rechtsformaenderung"
   ],
   "empresa_nombre_completo": "Operaio GmbH",
   "empresa_nombre_base": "Operaio GmbH",
   "sufijo_estado": null,
   "nombres_alternativos": [],
+  "empresa_nombre_nuevo": "Operaio AG",
+  "empresa_nombre_anterior": "Operaio GmbH",
   "uid": "CHE-227.620.863",
   "forma_juridica": "Zweigniederlassung",
   "sede_localidad": "Stettlen",
@@ -35,10 +38,9 @@
   "personas_salientes": [],
   "personas_mutantes": [],
   "extras": {
-    "hauptsitz": "Kloten",
-    "firma_nueva": "Operaio AG"
+    "hauptsitz": "Kloten"
   },
   "incierto": [],
-  "notas": "Swiss branch of a company headquartered in Kloten. Three changes, but only the first belongs to the registered entity: the branch is renamed to Operaio AG, while the parent is separately renamed (Operaio AG, with alternative names Operaio Ltd. and Operaio SA) and changes legal form from GmbH to AG. The schema has no way to mark an attribute as belonging to the parent rather than the branch, so parent data is kept in extras.",
+  "notas": "Swiss branch of a company headquartered in Kloten. The schema has no way to mark an attribute as belonging to the parent rather than the branch, so parent data is kept in extras.",
   "_verified": true
 }

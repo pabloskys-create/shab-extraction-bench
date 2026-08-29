@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.2",
+  "schema_version": "1.0",
   "doc_id": "0021",
   "idioma": "de",
   "tipo_acto": "mutation",
@@ -13,10 +13,12 @@
   "empresa_nombre_base": "Linder Immobilien AG",
   "sufijo_estado": null,
   "nombres_alternativos": [],
+  "empresa_nombre_nuevo": null,
+  "empresa_nombre_anterior": null,
   "uid": "CHE-376.960.112",
   "forma_juridica": "AG",
-  "sede_localidad": "Lyss",
-  "sede_canton": "BE",
+  "sede_localidad": "Aeschi (SO)",
+  "sede_canton": "SO",
   "direccion_co": null,
   "direccion_calle": "Jungfrauweg 23",
   "direccion_cp": "3250",
@@ -40,14 +42,22 @@
     {
       "nombre_nuevo": "Linder, Sandro",
       "nombre_anterior": null,
+      "domicilio_nuevo": "Lyss",
+      "domicilio_anterior": "Aeschi SO",
+      "cargo_nuevo": "Mitglied des Verwaltungsrates",
+      "cargo_anterior": null,
+      "firma_nueva": "Einzelunterschrift",
+      "firma_anterior": null,
+      "nacionalidad_nueva": null,
       "nacionalidad_anterior": null,
-      "heimatort": "Herzogenbuchsee",
-      "cargo": "Mitglied des Verwaltungsrates",
-      "firma": "Einzelunterschrift"
+      "heimatort_nuevo": "Herzogenbuchsee",
+      "heimatort_anterior": null,
+      "stammanteile_nuevo": null,
+      "stammanteile_anterior": null
     }
   ],
   "extras": {},
   "incierto": [],
-  "notas": "Linder Sandro's Domozil (Aeschi SO → Lyss)",
+  "notas": null,
   "_verified": true
 }
