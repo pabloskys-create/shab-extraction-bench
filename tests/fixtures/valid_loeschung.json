@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.2",
+  "schema_version": "1.0",
   "doc_id": "valid_loeschung",
   "idioma": "de",
   "tipo_acto": "loeschung",
@@ -8,6 +8,8 @@
   "empresa_nombre_base": "Alpin Handel GmbH",
   "sufijo_estado": null,
   "nombres_alternativos": [],
+  "empresa_nombre_nuevo": null,
+  "empresa_nombre_anterior": null,
   "uid": "CHE-100.000.001",
   "forma_juridica": "GmbH",
   "sede_localidad": "Chur",
@@ -37,7 +39,9 @@
       "heimatort": "Chur",
       "domicilio": "Chur",
       "cargo": "Gesellschafter",
-      "firma": null
+      "firma": null,
+      "uid": null,
+      "stammanteile": null
     }
   ],
   "personas_mutantes": [],

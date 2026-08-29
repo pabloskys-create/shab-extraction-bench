@@ -62,21 +62,41 @@ SUBTIPOS_VALUES = [
 ]
 
 PERSON_KEYS = frozenset(
-    {"nombre", "nacionalidad", "heimatort", "domicilio", "cargo", "firma"}
+    {"nombre", "nacionalidad", "heimatort", "domicilio", "cargo", "firma", "uid", "stammanteile"}
 )
+# stammanteile is a count (int|null), not a transcribed string like the rest
+# of Person's fields -- see PERSON_INT_KEYS below.
+PERSON_INT_KEYS = frozenset({"stammanteile"})
+
 PERSON_CHANGE_KEYS = frozenset(
-    {"nombre_nuevo", "nombre_anterior", "heimatort", "nacionalidad_anterior", "cargo", "firma"}
+    {
+        "nombre_nuevo",
+        "nombre_anterior",
+        "domicilio_nuevo",
+        "domicilio_anterior",
+        "cargo_nuevo",
+        "cargo_anterior",
+        "firma_nueva",
+        "firma_anterior",
+        "nacionalidad_nueva",
+        "nacionalidad_anterior",
+        "heimatort_nuevo",
+        "heimatort_anterior",
+        "stammanteile_nuevo",
+        "stammanteile_anterior",
+    }
 )
+PERSON_CHANGE_INT_KEYS = frozenset({"stammanteile_nuevo", "stammanteile_anterior"})
 
 DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 
-# SCHEMA.md's header reads "# SCHEMA.md — v0.2 (exploratory, not frozen)".
+# SCHEMA.md's header reads "# SCHEMA.md — v1.0 (frozen)".
 SCHEMA_MD_PATH = Path(__file__).resolve().parent.parent / "SCHEMA.md"
 SCHEMA_VERSION_RE = re.compile(r"^#\s*SCHEMA\.md\s*—\s*v(\d+\.\d+)", re.MULTILINE)
 
 
 def _schema_declared_version() -> str | None:
-    """Return the version declared in SCHEMA.md's header (e.g. "0.2"), or
+    """Return the version declared in SCHEMA.md's header (e.g. "1.0"), or
     None if SCHEMA.md is missing or its header doesn't match the expected
     "# SCHEMA.md — vX.Y ..." shape.
     """
@@ -101,6 +121,8 @@ FIELD_SPECS: dict[str, dict[str, Any]] = {
     "empresa_nombre_base": {"kind": "str", "nullable": False},
     "sufijo_estado": {"kind": "str", "nullable": True},
     "nombres_alternativos": {"kind": "list_str", "nullable": False},
+    "empresa_nombre_nuevo": {"kind": "str", "nullable": True},
+    "empresa_nombre_anterior": {"kind": "str", "nullable": True},
     "uid": {"kind": "str", "nullable": False},
     "forma_juridica": {"kind": "str", "nullable": False, "enum": FORMA_JURIDICA_VALUES},
     "sede_localidad": {"kind": "str", "nullable": False},
@@ -233,7 +255,18 @@ def _check_list_str(value: Any, field: str, enum: list[str] | None) -> list[Vali
     return errors
 
 
-def _check_list_of_objects(value: Any, field: str, allowed_keys: frozenset[str]) -> list[ValidationError]:
+def _check_list_of_objects(
+    value: Any,
+    field: str,
+    allowed_keys: frozenset[str],
+    int_keys: frozenset[str] = frozenset(),
+) -> list[ValidationError]:
+    """Validate a list of Person/PersonChange-shaped objects.
+
+    Every key in `allowed_keys` is string-or-null by default (transcribed
+    text); keys listed in `int_keys` (e.g. `stammanteile`, a count) are
+    integer-or-null instead.
+    """
     if not isinstance(value, list):
         return [ValidationError(field, f"expected a list, got {type(value).__name__}")]
     errors: list[ValidationError] = []
@@ -252,6 +285,12 @@ def _check_list_of_objects(value: Any, field: str, allowed_keys: frozenset[str])
             if key not in allowed_keys:
                 continue
             sub_field = f"{item_field}.{key}"
+            if key in int_keys:
+                if val is not None and (isinstance(val, bool) or not isinstance(val, int)):
+                    errors.append(
+                        ValidationError(sub_field, f"expected an integer or null, got {type(val).__name__}")
+                    )
+                continue
             if val == "":
                 errors.append(ValidationError(sub_field, 'is an empty string; use null for a missing value, never ""'))
             elif val is not None and not isinstance(val, str):
@@ -267,8 +306,12 @@ _KIND_CHECKS = {
     "bool": lambda value, field, _spec: _check_bool(value, field),
     "dict": lambda value, field, _spec: _check_dict(value, field),
     "list_str": lambda value, field, spec: _check_list_str(value, field, spec.get("enum")),
-    "list_person": lambda value, field, _spec: _check_list_of_objects(value, field, PERSON_KEYS),
-    "list_person_change": lambda value, field, _spec: _check_list_of_objects(value, field, PERSON_CHANGE_KEYS),
+    "list_person": lambda value, field, _spec: _check_list_of_objects(
+        value, field, PERSON_KEYS, PERSON_INT_KEYS
+    ),
+    "list_person_change": lambda value, field, _spec: _check_list_of_objects(
+        value, field, PERSON_CHANGE_KEYS, PERSON_CHANGE_INT_KEYS
+    ),
 }
 
 

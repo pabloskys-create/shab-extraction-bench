@@ -83,7 +83,7 @@ def test_unrequested_fields_stay_null_and_record_is_unverified():
     assert record["capital_nuevo_chf"] is None
     assert record["personas_entrantes"] == []
     assert record["extras"] == {}
-    assert record["schema_version"] == "0.2"
+    assert record["schema_version"] == "1.0"
     assert record["doc_id"] == "9999"
 
 
