@@ -1,6 +1,20 @@
-"""Tests for src/prefill.py against the three German-language documents in
-data/raw/ (0001–0003). 0000.txt is a French FOSC notice and is out of scope
-per SCHEMA.md ("Scope decisions" — German only), so it is not used here.
+"""Tests for src/prefill.py against the German-language documents in
+data/raw/ (0001–0003, 0012–0016). 0000.txt is a French FOSC notice and is
+out of scope per SCHEMA.md ("Scope decisions" — German only), so it is not
+used here.
+
+0012–0016 are regression cases for a set of bugs specific to
+`Neueintragung` (first-time registration) notices and to names containing
+parentheses:
+
+- `forma_juridica` regexes anchored on the "(SHAB Nr. ... )" parenthetical,
+  which only exists when there is a prior publication. A Neueintragung
+  closes with "(Neueintragung)" instead.
+- On a Neueintragung the body repeats the postal address between the UID
+  and the legal form, so the legal form is the *last* comma-separated
+  segment before the parenthesis, not the first one after the UID.
+- `nombres_alternativos` was only extracted when the "(...)" groups sat on
+  their own line; 0016 has them trailing on the same line as the name.
 """
 
 import re
@@ -29,7 +43,9 @@ def _schema_core_field_names() -> set[str]:
 # --- record shape must match SCHEMA.md exactly ---
 
 
-@pytest.mark.parametrize("doc_id", ["0001", "0002", "0003"])
+@pytest.mark.parametrize(
+    "doc_id", ["0001", "0002", "0003", "0012", "0013", "0014", "0015", "0016"]
+)
 def test_record_keys_match_schema_exactly(doc_id):
     record = prefill_file(DATA_RAW / f"{doc_id}.txt")
     expected = _schema_core_field_names()
@@ -63,7 +79,6 @@ def test_derive_canton(autoridad, expected):
 def test_unrequested_fields_stay_null_and_record_is_unverified():
     record = prefill_text("Mutation Foo AG, Bern\nFoo AG\n", doc_id="9999")
     assert record["_verified"] is False
-    assert record["empresa_nombre_completo"] is None
     assert record["fecha_acto"] is None
     assert record["capital_nuevo_chf"] is None
     assert record["personas_entrantes"] == []
@@ -86,6 +101,10 @@ def test_0001_zermatt_kollektiv():
     assert record["tipo_acto"] == "mutation"
     assert record["sufijo_estado"] == "in Liquidation"
     assert record["nombres_alternativos"] == []
+
+    # completo keeps the status suffix, base drops it
+    assert record["empresa_nombre_completo"] == "The Zermatt Kollektiv AG in Liquidation"
+    assert record["empresa_nombre_base"] == "The Zermatt Kollektiv AG"
 
     assert record["direccion_co"] is None
     assert record["direccion_calle"] == "Spissstrasse 67"
@@ -120,6 +139,9 @@ def test_0002_denkarbeit_gmbh():
     assert record["tipo_acto"] == "mutation"
     assert record["sufijo_estado"] is None
     assert record["nombres_alternativos"] == []
+
+    assert record["empresa_nombre_completo"] == "denkarbeit GmbH"
+    assert record["empresa_nombre_base"] == "denkarbeit GmbH"
 
     # current (new) address only — "Bisher" block must not leak in.
     assert record["direccion_co"] == "Roland Hunziker"
@@ -161,6 +183,11 @@ def test_0003_noorik_biopharmaceuticals():
         "Noorik Biopharmaceuticals SA",
         "Noorik Biopharmaceuticals Ltd",
     ]
+
+    # alt names have their own line below the name — must not end up glued
+    # onto empresa_nombre_completo.
+    assert record["empresa_nombre_completo"] == "Noorik Biopharmaceuticals AG"
+    assert record["empresa_nombre_base"] == "Noorik Biopharmaceuticals AG"
 
     assert record["direccion_co"] is None
     assert record["direccion_calle"] == "Lange Gasse 15"
@@ -211,3 +238,129 @@ def test_reads_source_files_as_utf8(tmp_path):
     assert record["direccion_localidad"] == "Zürich"
     assert record["forma_juridica"] == "GmbH"
     assert record["sede_canton"] == "ZH"
+
+
+# --- 0012.txt: Chez India KLG, Neueintragung, no prior publication ---
+
+
+def test_0012_chez_india_neueintragung():
+    record = prefill_file(DATA_RAW / "0012.txt")
+
+    assert record["doc_id"] == "0012"
+    assert record["tipo_acto"] == "neueintragung"
+    assert record["uid"] == "CHE-358.426.607"
+
+    # "(Neueintragung)" closes the sentence instead of "(SHAB Nr. ...)" —
+    # forma_juridica must still resolve.
+    assert record["forma_juridica"] == "Kollektivgesellschaft"
+    assert record["empresa_nombre_completo"] == "Chez India KLG"
+    assert record["empresa_nombre_base"] == "Chez India KLG"
+
+    assert record["sede_localidad"] == "Biel/Bienne"
+    assert record["publicacion_anterior_shab_nr"] is None
+    assert record["publicacion_anterior_fecha"] is None
+    assert record["publicacion_anterior_publ_id"] is None
+
+
+# --- 0013.txt: STuBI Fleisch AG, Neueintragung, address repeated before the
+#     legal form ("..., CHE-295.332.571, Heidbühl 475, 3537 Eggiwil,
+#     Aktiengesellschaft (Neueintragung)") ---
+
+
+def test_0013_stubi_fleisch_neueintragung():
+    record = prefill_file(DATA_RAW / "0013.txt")
+
+    assert record["doc_id"] == "0013"
+    assert record["tipo_acto"] == "neueintragung"
+    assert record["uid"] == "CHE-295.332.571"
+
+    # forma_juridica is the *last* comma-separated segment before the
+    # parenthesis (Aktiengesellschaft), not the first one after the UID
+    # (the repeated street address).
+    assert record["forma_juridica"] == "AG"
+    assert record["empresa_nombre_completo"] == "STuBI Fleisch AG"
+    assert record["empresa_nombre_base"] == "STuBI Fleisch AG"
+
+    assert record["direccion_calle"] == "Heidbühl 475"
+    assert record["direccion_cp"] == "3537"
+    assert record["direccion_localidad"] == "Eggiwil"
+
+
+# --- 0014.txt: Studio MO Gfeller Architektur, Neueintragung, Einzelunternehmen ---
+
+
+def test_0014_studio_gfeller_neueintragung():
+    record = prefill_file(DATA_RAW / "0014.txt")
+
+    assert record["doc_id"] == "0014"
+    assert record["tipo_acto"] == "neueintragung"
+    assert record["uid"] == "CHE-247.993.988"
+
+    assert record["forma_juridica"] == "Einzelunternehmen"
+    assert record["empresa_nombre_completo"] == "Studio MO Gfeller Architektur"
+    assert record["empresa_nombre_base"] == "Studio MO Gfeller Architektur"
+
+
+# --- 0015.txt: Elim Stiftung für Eltern und Kind, Mutation with prior
+#     publication — regression check that the "(SHAB Nr. ...)" case still
+#     works after the "(Neueintragung)" alternation was added ---
+
+
+def test_0015_elim_stiftung_mutation():
+    record = prefill_file(DATA_RAW / "0015.txt")
+
+    assert record["doc_id"] == "0015"
+    assert record["tipo_acto"] == "mutation"
+    assert record["uid"] == "CHE-110.634.974"
+
+    assert record["forma_juridica"] == "Stiftung"
+    assert record["empresa_nombre_completo"] == "Elim Stiftung für Eltern und Kind"
+    assert record["empresa_nombre_base"] == "Elim Stiftung für Eltern und Kind"
+
+    assert record["publicacion_anterior_shab_nr"] == 11
+    assert record["publicacion_anterior_fecha"] == "2026-01-19"
+    assert record["publicacion_anterior_publ_id"] == "1006542126"
+
+
+# --- 0016.txt: Helios Solar Energie GmbH, alt names trail on the *same*
+#     line as the name instead of getting their own line below it ---
+
+
+def test_0016_helios_solar_alt_names_same_line():
+    record = prefill_file(DATA_RAW / "0016.txt")
+
+    assert record["doc_id"] == "0016"
+    assert record["uid"] == "CHE-300.591.146"
+
+    assert record["nombres_alternativos"] == [
+        "Helios Solar Energie Sàrl",
+        "Helios Solar Energie Sagl",
+        "Helios Solar Energie Ltd liab Co",
+    ]
+    # the "(...)" alt names must be stripped off, not left glued onto the name
+    assert record["empresa_nombre_completo"] == "Helios Solar Energie GmbH"
+    assert record["empresa_nombre_base"] == "Helios Solar Energie GmbH"
+
+    # forma_juridica is deliberately not asserted here: the body describes
+    # this record as a "schweizerische Zweigniederlassung" of a company
+    # named "... GmbH" — which of the two belongs in forma_juridica is a
+    # domain judgement call outside the scope of this regression test.
+
+
+# --- 0021.txt: Linder Immobilien AG, intercantonal move Aeschi (SO) -> Lyss
+#     (BE), body reads "bisher in Aeschi (SO)" ---
+
+
+def test_0021_linder_immobilien_bisher_in_leaves_sede_null():
+    record = prefill_file(DATA_RAW / "0021.txt")
+
+    assert record["doc_id"] == "0021"
+    assert record["uid"] == "CHE-376.960.112"
+
+    # Kontaktstelle is "Handelsregisteramt des Kantons Bern" — the NEW
+    # canton (Lyss), not the pre-act seat (Aeschi SO). SCHEMA.md defines
+    # sede_* as the seat *before* the act, so deriving it from autoridad
+    # here would silently produce the wrong canton. Left null instead.
+    assert record["autoridad"] == "Handelsregisteramt des Kantons Bern"
+    assert record["sede_canton"] is None
+    assert record["sede_localidad"] is None

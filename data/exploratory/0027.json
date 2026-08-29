@@ -1,0 +1,60 @@
+{
+  "schema_version": "0.2",
+  "doc_id": "0027",
+  "idioma": "de",
+  "tipo_acto": "mutation",
+  "subtipos": [
+    "organaenderung",
+    "sitzverlegung"
+  ],
+  "empresa_nombre_completo": "ProBau Brienz Immobilien GmbH",
+  "empresa_nombre_base": "ProBau Brienz Immobilien GmbH",
+  "sufijo_estado": null,
+  "nombres_alternativos": [],
+  "uid": "CHE-340.139.918",
+  "forma_juridica": "GmbH",
+  "sede_localidad": "Brienz (BE)",
+  "sede_canton": "BE",
+  "direccion_co": "Valeriu Eftodii",
+  "direccion_calle": "Talstrasse 16",
+  "direccion_cp": "3855",
+  "direccion_localidad": "Brienz BE",
+  "fecha_acto": null,
+  "tagesregister_nr": "14899",
+  "tagesregister_fecha": "2026-08-05",
+  "publicacion_anterior_shab_nr": 53,
+  "publicacion_anterior_fecha": "2025-03-18",
+  "publicacion_anterior_publ_id": "1006284477",
+  "autoridad": "Handelsregisteramt des Kantons Bern",
+  "canton_anterior": null,
+  "canton_nuevo": null,
+  "capital_nuevo_chf": null,
+  "capital_anterior_chf": null,
+  "domicilio_nuevo": "Talstrasse 16, 3855 Brienz BE",
+  "domicilio_anterior": "Zwischenbächen 19, 3855 Brienz BE",
+  "personas_entrantes": [
+    {
+      "nombre": "Eftodii, Victor",
+      "nacionalidad": "rumänisch",
+      "heimatort": null,
+      "domicilio": "Brienz BE",
+      "cargo": "Geschäftsführer",
+      "firma": "Einzelunterschrift"
+    }
+  ],
+  "personas_salientes": [],
+  "personas_mutantes": [
+    {
+      "nombre_nuevo": "Eftodii, Valeriu",
+      "nombre_anterior": null,
+      "nacionalidad_anterior": null,
+      "heimatort": null,
+      "cargo": "Gesellschafter und Vorsitzender der Geschäftsführung",
+      "firma": "Einzelunterschrift"
+    }
+  ],
+  "extras": {},
+  "incierto": [],
+  "notas": "mit 20 Stammanteilen zu je CHF 1'000.00. [bisher: Gesellschafter und Geschäftsführer, mit Einzelunterschrift]",
+  "_verified": true
+}

@@ -1,0 +1,52 @@
+{
+  "schema_version": "0.2",
+  "doc_id": "0009",
+  "idioma": "de",
+  "tipo_acto": "mutation",
+  "subtipos": [
+    "organaenderung",
+    "statutenaenderung",
+    "sitzverlegung"
+  ],
+  "empresa_nombre_completo": "Liyame Gastro GmbH",
+  "empresa_nombre_base": "Liyame Gastro GmbH",
+  "sufijo_estado": null,
+  "nombres_alternativos": [],
+  "uid": "CHE-475.831.257",
+  "forma_juridica": "GmbH",
+  "sede_localidad": "Herzogenbuchsee",
+  "sede_canton": "BE",
+  "direccion_co": null,
+  "direccion_calle": "Gyrischachenstrasse 38",
+  "direccion_cp": "3400",
+  "direccion_localidad": "Burgdorf",
+  "fecha_acto": "2026-07-27",
+  "tagesregister_nr": "14886",
+  "tagesregister_fecha": "2026-08-05",
+  "publicacion_anterior_shab_nr": 124,
+  "publicacion_anterior_fecha": "2025-07-01",
+  "publicacion_anterior_publ_id": "1006370829",
+  "autoridad": "Handelsregisteramt des Kantons Bern",
+  "canton_anterior": null,
+  "canton_nuevo": null,
+  "capital_nuevo_chf": null,
+  "capital_anterior_chf": null,
+  "domicilio_nuevo": "Gyrischachenstrasse 38, 3400 Burgdorf",
+  "domicilio_anterior": "Zürichstrasse 11, 3360 Herzogenbuchsee",
+  "personas_entrantes": [],
+  "personas_salientes": [
+    {
+      "nombre": "Bindal, Edip",
+      "nacionalidad": null,
+      "heimatort": "Burgdorf",
+      "domicilio": "Burgdorf",
+      "cargo": null,
+      "firma": "Einzelunterschrift"
+    }
+  ],
+  "personas_mutantes": [],
+  "extras": {},
+  "incierto": [],
+  "notas": "Mitteilungen neu: Mitteilungen an die Gesellschafter: per Brief oder E-Mail.",
+  "_verified": true
+}

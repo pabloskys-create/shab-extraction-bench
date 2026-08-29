@@ -1,0 +1,50 @@
+{
+  "schema_version": "0.2",
+  "doc_id": "0001",
+  "idioma": "de",
+  "tipo_acto": "mutation",
+  "subtipos": [
+    "organaenderung"
+  ],
+  "empresa_nombre_completo": "The Zermatt Kollektiv AG in Liquidation",
+  "empresa_nombre_base": "The Zermatt Kollektiv AG",
+  "sufijo_estado": "in Liquidation",
+  "nombres_alternativos": [],
+  "uid": "CHE-390.336.674",
+  "forma_juridica": "AG",
+  "sede_localidad": "Zermatt",
+  "sede_canton": "VS",
+  "direccion_co": null,
+  "direccion_calle": "Spissstrasse 67",
+  "direccion_cp": "3920",
+  "direccion_localidad": "Zermatt",
+  "fecha_acto": null,
+  "tagesregister_nr": "1526",
+  "tagesregister_fecha": "2026-08-18",
+  "publicacion_anterior_shab_nr": 223,
+  "publicacion_anterior_fecha": "2025-11-18",
+  "publicacion_anterior_publ_id": "1006488017",
+  "autoridad": "Handelsregisteramt Oberwallis",
+  "canton_anterior": null,
+  "canton_nuevo": null,
+  "capital_nuevo_chf": null,
+  "capital_anterior_chf": null,
+  "domicilio_nuevo": null,
+  "domicilio_anterior": null,
+  "personas_entrantes": [],
+  "personas_salientes": [
+    {
+      "nombre": "Beswick, Graham",
+      "nacionalidad": "britisch",
+      "heimatort": null,
+      "domicilio": "Zermatt",
+      "cargo": "einziges Mitglied",
+      "firma": "Kollektivunterschrift zu zweien"
+    }
+  ],
+  "personas_mutantes": [],
+  "extras": {},
+  "incierto": [],
+  "notas": "Sole board member with joint signature requiring two — functionally unable to sign alone. Typical of companies in liquidation.",
+  "_verified": true
+}
