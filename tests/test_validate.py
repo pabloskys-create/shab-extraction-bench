@@ -81,23 +81,23 @@ def test_missing_key_is_rejected():
 
 def test_date_field_must_be_iso_string_not_source_format():
     record = _load_fixture("valid_mutation.json")
-    record["tagesregister_fecha"] = "18.08.2026"  # DD.MM.YYYY source format
+    record["tagesregister_date"] = "18.08.2026"  # DD.MM.YYYY source format
     errors = validate_record(record)
-    assert _errors_on(errors, "tagesregister_fecha")
+    assert _errors_on(errors, "tagesregister_date")
 
 
 def test_capital_must_be_a_number_not_a_string():
     record = _load_fixture("valid_mutation.json")
-    record["capital_nuevo_chf"] = "189'123.50"  # Swiss source format
+    record["capital_new_chf"] = "189'123.50"  # Swiss source format
     errors = validate_record(record)
-    assert _errors_on(errors, "capital_nuevo_chf")
+    assert _errors_on(errors, "capital_new_chf")
 
 
 def test_list_field_must_be_a_list():
     record = _load_fixture("valid_mutation.json")
-    record["subtipos"] = "liquidationseroeffnung"
+    record["act_subtypes"] = "liquidationseroeffnung"
     errors = validate_record(record)
-    assert _errors_on(errors, "subtipos")
+    assert _errors_on(errors, "act_subtypes")
 
 
 def test_extras_must_be_an_object():
@@ -110,25 +110,25 @@ def test_extras_must_be_an_object():
 # --- structural: controlled vocabularies ---
 
 
-def test_forma_juridica_must_be_in_controlled_vocabulary():
+def test_legal_form_must_be_in_controlled_vocabulary():
     record = _load_fixture("valid_mutation.json")
-    record["forma_juridica"] = "SA"  # not a SCHEMA.md value
+    record["legal_form"] = "SA"  # not a SCHEMA.md value
     errors = validate_record(record)
-    assert _errors_on(errors, "forma_juridica")
+    assert _errors_on(errors, "legal_form")
 
 
-def test_tipo_acto_must_be_in_controlled_vocabulary():
+def test_act_type_must_be_in_controlled_vocabulary():
     record = _load_fixture("valid_mutation.json")
-    record["tipo_acto"] = "eintragung"  # not a SCHEMA.md value
+    record["act_type"] = "eintragung"  # not a SCHEMA.md value
     errors = validate_record(record)
-    assert _errors_on(errors, "tipo_acto")
+    assert _errors_on(errors, "act_type")
 
 
-def test_subtipos_values_must_be_in_controlled_vocabulary():
+def test_act_subtypes_values_must_be_in_controlled_vocabulary():
     record = _load_fixture("valid_mutation.json")
-    record["subtipos"] = ["not_a_real_subtipo"]
+    record["act_subtypes"] = ["not_a_real_subtipo"]
     errors = validate_record(record)
-    assert _errors_on(errors, "subtipos[0]")
+    assert _errors_on(errors, "act_subtypes[0]")
 
 
 # --- schema_version must match SCHEMA.md's header ---
@@ -146,89 +146,89 @@ def test_schema_version_must_match_schema_md_header():
 
 def test_absent_scalar_must_be_null_not_empty_string():
     record = _load_fixture("valid_mutation.json")
-    record["direccion_calle"] = ""
+    record["address_street"] = ""
     errors = validate_record(record)
-    assert _errors_on(errors, "direccion_calle")
+    assert _errors_on(errors, "address_street")
 
 
 # --- coherence ---
 
 
-def test_publicacion_anterior_fecha_must_precede_tagesregister_fecha():
+def test_prior_publication_date_must_precede_tagesregister_date():
     record = _load_fixture("valid_mutation.json")
-    record["publicacion_anterior_fecha"] = record["tagesregister_fecha"]  # same day
+    record["prior_publication_date"] = record["tagesregister_date"]  # same day
     errors = validate_record(record)
-    assert _errors_on(errors, "publicacion_anterior_fecha")
+    assert _errors_on(errors, "prior_publication_date")
 
 
-def test_fecha_acto_must_not_be_after_tagesregister_fecha():
+def test_act_date_must_not_be_after_tagesregister_date():
     record = _load_fixture("valid_mutation.json")
-    record["fecha_acto"] = "2026-09-01"  # after tagesregister_fecha (2026-08-18)
+    record["act_date"] = "2026-09-01"  # after tagesregister_date (2026-08-18)
     errors = validate_record(record)
-    assert _errors_on(errors, "fecha_acto")
+    assert _errors_on(errors, "act_date")
 
 
-def test_loeschung_forbids_personas_entrantes():
+def test_loeschung_forbids_persons_added():
     record = _load_fixture("valid_loeschung.json")
-    record["personas_entrantes"] = [
+    record["persons_added"] = [
         {
-            "nombre": "Neu Person",
-            "nacionalidad": None,
+            "name": "Neu Person",
+            "nationality": None,
             "heimatort": None,
-            "domicilio": None,
-            "cargo": None,
-            "firma": None,
+            "domicile": None,
+            "role": None,
+            "signature": None,
         }
     ]
     errors = validate_record(record)
-    assert _errors_on(errors, "personas_entrantes")
+    assert _errors_on(errors, "persons_added")
 
 
-def test_canton_anterior_requires_canton_nuevo():
+def test_canton_previous_requires_canton_new():
     record = _load_fixture("valid_intercantonal.json")
-    record["canton_nuevo"] = None
+    record["canton_new"] = None
     errors = validate_record(record)
-    assert _errors_on(errors, "canton_nuevo")
+    assert _errors_on(errors, "canton_new")
 
 
-def test_canton_nuevo_requires_canton_anterior():
+def test_canton_new_requires_canton_previous():
     record = _load_fixture("valid_intercantonal.json")
-    record["canton_anterior"] = None
+    record["canton_previous"] = None
     errors = validate_record(record)
-    assert _errors_on(errors, "canton_anterior")
+    assert _errors_on(errors, "canton_previous")
 
 
-def test_domicilio_nuevo_requires_domicilio_anterior():
+def test_domicile_new_requires_domicile_previous():
     record = _load_fixture("valid_intercantonal.json")
-    record["domicilio_anterior"] = None
+    record["domicile_previous"] = None
     errors = validate_record(record)
-    assert _errors_on(errors, "domicilio_anterior")
+    assert _errors_on(errors, "domicile_previous")
 
 
-def test_domicilio_anterior_requires_domicilio_nuevo():
+def test_domicile_previous_requires_domicile_new():
     record = _load_fixture("valid_intercantonal.json")
-    record["domicilio_nuevo"] = None
+    record["domicile_new"] = None
     errors = validate_record(record)
-    assert _errors_on(errors, "domicilio_nuevo")
+    assert _errors_on(errors, "domicile_new")
 
 
-def test_incierto_field_name_must_exist_in_schema():
+def test_uncertain_field_name_must_exist_in_schema():
     record = _load_fixture("valid_mutation.json")
-    record["incierto"] = ["campo_inexistente"]
+    record["uncertain"] = ["campo_inexistente"]
     errors = validate_record(record)
-    assert _errors_on(errors, "incierto[0]")
+    assert _errors_on(errors, "uncertain[0]")
 
 
-def test_nombres_alternativos_rejects_subtipos_value():
-    # Regression for data/exploratory/0027.json: subtipos values ended up
-    # glued into nombres_alternativos, and validation passed silently
+def test_alternative_names_rejects_act_subtypes_value():
+    # Regression for data/exploratory/0027.json: act_subtypes values ended up
+    # glued into alternative_names, and validation passed silently
     # because both fields are plain list[string] — no enum on this field
     # would catch a value pulled from a *different* field's vocabulary.
     record = _load_fixture("valid_mutation.json")
-    record["nombres_alternativos"] = ["organaenderung", "sitzverlegung"]
+    record["alternative_names"] = ["organaenderung", "sitzverlegung"]
     errors = validate_record(record)
-    assert _errors_on(errors, "nombres_alternativos[0]")
-    assert _errors_on(errors, "nombres_alternativos[1]")
+    assert _errors_on(errors, "alternative_names[0]")
+    assert _errors_on(errors, "alternative_names[1]")
 
 
 # --- doc_id must match the filename ---
@@ -315,7 +315,7 @@ def test_cli_exits_zero_for_a_valid_file(monkeypatch):
 
 def test_cli_exits_nonzero_for_an_invalid_file(tmp_path, monkeypatch):
     record = _load_fixture("valid_mutation.json")
-    record["tipo_acto"] = "invalid_type"
+    record["act_type"] = "invalid_type"
     broken = tmp_path / "broken.json"
     broken.write_text(json.dumps(record), encoding="utf-8")
 

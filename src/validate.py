@@ -9,7 +9,7 @@ This module never writes anything. Per CLAUDE.md rule 1, gold-standard JSON
 is hand-annotated ground truth and is read-only for tooling.
 
 Design note: SCHEMA.md marks most-but-not-all optional scalars `string|null`
-in its Type column. `notas` is documented as plain `string`, but SCHEMA.md's
+in its Type column. `notes` is documented as plain `string`, but SCHEMA.md's
 own "Missing vs empty" rule ("absent scalar -> null, never \"\"") leaves no
 way to represent "no notes" under a required-non-null reading, so it is
 treated as nullable here. Flag in SCHEMA.md if that should be tightened.
@@ -27,11 +27,11 @@ from pathlib import Path
 from typing import Any
 
 # --- controlled vocabularies (mirrors SCHEMA.md; keep in sync by hand,
-# like src/prefill.py's FORM_MAP / TIPO_ACTO_MAP) ---
+# like src/prefill.py's FORM_MAP / ACT_TYPE_MAP) ---
 
-TIPO_ACTO_VALUES = ["neueintragung", "mutation", "loeschung"]
+ACT_TYPE_VALUES = ["neueintragung", "mutation", "loeschung"]
 
-FORMA_JURIDICA_VALUES = [
+LEGAL_FORM_VALUES = [
     "AG",
     "GmbH",
     "Einzelunternehmen",
@@ -43,7 +43,7 @@ FORMA_JURIDICA_VALUES = [
     "Zweigniederlassung",
 ]
 
-SUBTIPOS_VALUES = [
+ACT_SUBTYPES_VALUES = [
     "statutenaenderung",
     "kapitalerhoehung",
     "kapitalherabsetzung",
@@ -62,7 +62,7 @@ SUBTIPOS_VALUES = [
 ]
 
 PERSON_KEYS = frozenset(
-    {"nombre", "nacionalidad", "heimatort", "domicilio", "cargo", "firma", "uid", "stammanteile"}
+    {"name", "nationality", "heimatort", "domicile", "role", "signature", "uid", "stammanteile"}
 )
 # stammanteile is a count (int|null), not a transcribed string like the rest
 # of Person's fields -- see PERSON_INT_KEYS below.
@@ -70,23 +70,23 @@ PERSON_INT_KEYS = frozenset({"stammanteile"})
 
 PERSON_CHANGE_KEYS = frozenset(
     {
-        "nombre_nuevo",
-        "nombre_anterior",
-        "domicilio_nuevo",
-        "domicilio_anterior",
-        "cargo_nuevo",
-        "cargo_anterior",
-        "firma_nueva",
-        "firma_anterior",
-        "nacionalidad_nueva",
-        "nacionalidad_anterior",
-        "heimatort_nuevo",
-        "heimatort_anterior",
-        "stammanteile_nuevo",
-        "stammanteile_anterior",
+        "name_new",
+        "name_previous",
+        "domicile_new",
+        "domicile_previous",
+        "role_new",
+        "role_previous",
+        "signature_new",
+        "signature_previous",
+        "nationality_new",
+        "nationality_previous",
+        "heimatort_new",
+        "heimatort_previous",
+        "stammanteile_new",
+        "stammanteile_previous",
     }
 )
-PERSON_CHANGE_INT_KEYS = frozenset({"stammanteile_nuevo", "stammanteile_anterior"})
+PERSON_CHANGE_INT_KEYS = frozenset({"stammanteile_new", "stammanteile_previous"})
 
 DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 
@@ -114,42 +114,42 @@ def _schema_declared_version() -> str | None:
 FIELD_SPECS: dict[str, dict[str, Any]] = {
     "schema_version": {"kind": "str", "nullable": False},
     "doc_id": {"kind": "str", "nullable": False},
-    "idioma": {"kind": "str", "nullable": False},
-    "tipo_acto": {"kind": "str", "nullable": False, "enum": TIPO_ACTO_VALUES},
-    "subtipos": {"kind": "list_str", "nullable": False, "enum": SUBTIPOS_VALUES},
-    "empresa_nombre_completo": {"kind": "str", "nullable": False},
-    "empresa_nombre_base": {"kind": "str", "nullable": False},
-    "sufijo_estado": {"kind": "str", "nullable": True},
-    "nombres_alternativos": {"kind": "list_str", "nullable": False},
-    "empresa_nombre_nuevo": {"kind": "str", "nullable": True},
-    "empresa_nombre_anterior": {"kind": "str", "nullable": True},
+    "language": {"kind": "str", "nullable": False},
+    "act_type": {"kind": "str", "nullable": False, "enum": ACT_TYPE_VALUES},
+    "act_subtypes": {"kind": "list_str", "nullable": False, "enum": ACT_SUBTYPES_VALUES},
+    "company_name_full": {"kind": "str", "nullable": False},
+    "company_name_base": {"kind": "str", "nullable": False},
+    "status_suffix": {"kind": "str", "nullable": True},
+    "alternative_names": {"kind": "list_str", "nullable": False},
+    "company_name_new": {"kind": "str", "nullable": True},
+    "company_name_previous": {"kind": "str", "nullable": True},
     "uid": {"kind": "str", "nullable": False},
-    "forma_juridica": {"kind": "str", "nullable": False, "enum": FORMA_JURIDICA_VALUES},
-    "sede_localidad": {"kind": "str", "nullable": False},
-    "sede_canton": {"kind": "str", "nullable": False},
-    "direccion_co": {"kind": "str", "nullable": True},
-    "direccion_calle": {"kind": "str", "nullable": True},
-    "direccion_cp": {"kind": "str", "nullable": True},
-    "direccion_localidad": {"kind": "str", "nullable": True},
-    "fecha_acto": {"kind": "date", "nullable": True},
+    "legal_form": {"kind": "str", "nullable": False, "enum": LEGAL_FORM_VALUES},
+    "seat_municipality": {"kind": "str", "nullable": False},
+    "seat_canton": {"kind": "str", "nullable": False},
+    "address_care_of": {"kind": "str", "nullable": True},
+    "address_street": {"kind": "str", "nullable": True},
+    "address_postcode": {"kind": "str", "nullable": True},
+    "address_municipality": {"kind": "str", "nullable": True},
+    "act_date": {"kind": "date", "nullable": True},
     "tagesregister_nr": {"kind": "str", "nullable": False},
-    "tagesregister_fecha": {"kind": "date", "nullable": False},
-    "publicacion_anterior_shab_nr": {"kind": "int", "nullable": True},
-    "publicacion_anterior_fecha": {"kind": "date", "nullable": True},
-    "publicacion_anterior_publ_id": {"kind": "str", "nullable": True},
-    "autoridad": {"kind": "str", "nullable": False},
-    "canton_anterior": {"kind": "str", "nullable": True},
-    "canton_nuevo": {"kind": "str", "nullable": True},
-    "capital_nuevo_chf": {"kind": "number", "nullable": True},
-    "capital_anterior_chf": {"kind": "number", "nullable": True},
-    "domicilio_nuevo": {"kind": "str", "nullable": True},
-    "domicilio_anterior": {"kind": "str", "nullable": True},
-    "personas_entrantes": {"kind": "list_person", "nullable": False},
-    "personas_salientes": {"kind": "list_person", "nullable": False},
-    "personas_mutantes": {"kind": "list_person_change", "nullable": False},
+    "tagesregister_date": {"kind": "date", "nullable": False},
+    "prior_publication_shab_nr": {"kind": "int", "nullable": True},
+    "prior_publication_date": {"kind": "date", "nullable": True},
+    "prior_publication_id": {"kind": "str", "nullable": True},
+    "authority": {"kind": "str", "nullable": False},
+    "canton_previous": {"kind": "str", "nullable": True},
+    "canton_new": {"kind": "str", "nullable": True},
+    "capital_new_chf": {"kind": "number", "nullable": True},
+    "capital_previous_chf": {"kind": "number", "nullable": True},
+    "domicile_new": {"kind": "str", "nullable": True},
+    "domicile_previous": {"kind": "str", "nullable": True},
+    "persons_added": {"kind": "list_person", "nullable": False},
+    "persons_removed": {"kind": "list_person", "nullable": False},
+    "persons_changed": {"kind": "list_person_change", "nullable": False},
     "extras": {"kind": "dict", "nullable": False},
-    "incierto": {"kind": "list_str", "nullable": False},
-    "notas": {"kind": "str", "nullable": True},
+    "uncertain": {"kind": "list_str", "nullable": False},
+    "notes": {"kind": "str", "nullable": True},
     "_verified": {"kind": "bool", "nullable": False},
 }
 
@@ -318,74 +318,74 @@ _KIND_CHECKS = {
 def _check_coherence(record: dict) -> list[ValidationError]:
     errors: list[ValidationError] = []
 
-    tagesregister_date = _parse_iso_date(record.get("tagesregister_fecha"))
+    tagesregister_date = _parse_iso_date(record.get("tagesregister_date"))
 
-    prior_pub_date = _parse_iso_date(record.get("publicacion_anterior_fecha"))
+    prior_pub_date = _parse_iso_date(record.get("prior_publication_date"))
     if (
         prior_pub_date is not None
         and tagesregister_date is not None
         and not prior_pub_date < tagesregister_date
     ):
         errors.append(
-            ValidationError("publicacion_anterior_fecha", "must be before tagesregister_fecha")
+            ValidationError("prior_publication_date", "must be before tagesregister_date")
         )
 
-    fecha_acto_date = _parse_iso_date(record.get("fecha_acto"))
+    act_date_date = _parse_iso_date(record.get("act_date"))
     if (
-        fecha_acto_date is not None
+        act_date_date is not None
         and tagesregister_date is not None
-        and not fecha_acto_date <= tagesregister_date
+        and not act_date_date <= tagesregister_date
     ):
         errors.append(
-            ValidationError("fecha_acto", "must be before or equal to tagesregister_fecha")
+            ValidationError("act_date", "must be before or equal to tagesregister_date")
         )
 
-    if record.get("tipo_acto") == "loeschung":
-        entrantes = record.get("personas_entrantes")
-        if isinstance(entrantes, list) and len(entrantes) > 0:
+    if record.get("act_type") == "loeschung":
+        added = record.get("persons_added")
+        if isinstance(added, list) and len(added) > 0:
             errors.append(
-                ValidationError("personas_entrantes", 'must be empty when tipo_acto is "loeschung"')
+                ValidationError("persons_added", 'must be empty when act_type is "loeschung"')
             )
 
-    canton_anterior = record.get("canton_anterior")
-    canton_nuevo = record.get("canton_nuevo")
-    if canton_anterior is not None and canton_nuevo is None:
-        errors.append(ValidationError("canton_nuevo", "must not be null when canton_anterior is set"))
-    if canton_nuevo is not None and canton_anterior is None:
-        errors.append(ValidationError("canton_anterior", "must not be null when canton_nuevo is set"))
+    canton_previous = record.get("canton_previous")
+    canton_new = record.get("canton_new")
+    if canton_previous is not None and canton_new is None:
+        errors.append(ValidationError("canton_new", "must not be null when canton_previous is set"))
+    if canton_new is not None and canton_previous is None:
+        errors.append(ValidationError("canton_previous", "must not be null when canton_new is set"))
 
-    domicilio_nuevo = record.get("domicilio_nuevo")
-    domicilio_anterior = record.get("domicilio_anterior")
-    if domicilio_nuevo is not None and domicilio_anterior is None:
+    domicile_new = record.get("domicile_new")
+    domicile_previous = record.get("domicile_previous")
+    if domicile_new is not None and domicile_previous is None:
         errors.append(
-            ValidationError("domicilio_anterior", "must not be null when domicilio_nuevo is set")
+            ValidationError("domicile_previous", "must not be null when domicile_new is set")
         )
-    if domicilio_anterior is not None and domicilio_nuevo is None:
+    if domicile_previous is not None and domicile_new is None:
         errors.append(
-            ValidationError("domicilio_nuevo", "must not be null when domicilio_anterior is set")
+            ValidationError("domicile_new", "must not be null when domicile_previous is set")
         )
 
-    incierto = record.get("incierto")
-    if isinstance(incierto, list):
-        for i, name in enumerate(incierto):
+    uncertain = record.get("uncertain")
+    if isinstance(uncertain, list):
+        for i, name in enumerate(uncertain):
             if isinstance(name, str) and name not in FIELD_SPECS:
                 errors.append(
-                    ValidationError(f"incierto[{i}]", f"{name!r} is not a field defined in SCHEMA.md")
+                    ValidationError(f"uncertain[{i}]", f"{name!r} is not a field defined in SCHEMA.md")
                 )
 
-    # Both are list[string], so a subtipos value pasted into
-    # nombres_alternativos by mistake (or vice versa) passes the plain type
+    # Both are list[string], so a act_subtypes value pasted into
+    # alternative_names by mistake (or vice versa) passes the plain type
     # check silently — see tests/test_validate.py for the regression this
-    # guards (data/exploratory/0027.json had subtipos values glued in here).
-    nombres_alternativos = record.get("nombres_alternativos")
-    if isinstance(nombres_alternativos, list):
-        for i, name in enumerate(nombres_alternativos):
-            if isinstance(name, str) and name in SUBTIPOS_VALUES:
+    # guards (data/exploratory/0027.json had act_subtypes values glued in here).
+    alternative_names = record.get("alternative_names")
+    if isinstance(alternative_names, list):
+        for i, name in enumerate(alternative_names):
+            if isinstance(name, str) and name in ACT_SUBTYPES_VALUES:
                 errors.append(
                     ValidationError(
-                        f"nombres_alternativos[{i}]",
-                        f"{name!r} is a subtipos value, not an alternative company name "
-                        "— looks like subtipos leaked into nombres_alternativos",
+                        f"alternative_names[{i}]",
+                        f"{name!r} is a act_subtypes value, not an alternative company name "
+                        "— looks like act_subtypes leaked into alternative_names",
                     )
                 )
 

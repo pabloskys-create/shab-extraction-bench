@@ -7,18 +7,18 @@ the whole record is marked `"_verified": false` so a human annotator knows
 it still needs to be checked.
 
 Fields extracted here:
-    uid, forma_juridica, tagesregister_nr, tagesregister_fecha,
-    publicacion_anterior_shab_nr, publicacion_anterior_fecha,
-    publicacion_anterior_publ_id, autoridad, sede_canton (derived from
-    autoridad — or, when the body reads "bisher in <Ort>", from the postal
+    uid, legal_form, tagesregister_nr, tagesregister_date,
+    prior_publication_shab_nr, prior_publication_date,
+    prior_publication_id, authority, seat_canton (derived from
+    authority — or, when the body reads "bisher in <Ort>", from the postal
     code in the header's "Bisher" sub-block via a small PLZ-prefix table,
     since the authority then names the post-move canton, not the pre-act
     one SCHEMA.md wants; see BISHER_IN_RE, PLZ_PREFIX_TO_CANTON),
-    sede_localidad (from "in <Ort>," right before the UID, or from the
-    "bisher in <Ort>" phrase itself on a relocation), tipo_acto,
-    empresa_nombre_completo, empresa_nombre_base,
-    direccion_co, direccion_calle, direccion_cp, direccion_localidad,
-    sufijo_estado, nombres_alternativos, idioma (constant "de" — see
+    seat_municipality (from "in <Ort>," right before the UID, or from the
+    "bisher in <Ort>" phrase itself on a relocation), act_type,
+    company_name_full, company_name_base,
+    address_care_of, address_street, address_postcode, address_municipality,
+    status_suffix, alternative_names, language (constant "de" — see
     SCHEMA.md "Scope decisions": this module only ever sees
     German-language notices)
 
@@ -39,7 +39,7 @@ from pathlib import Path
 
 SCHEMA_VERSION = "1.0"
 
-# --- German legal form -> SCHEMA.md `forma_juridica` enum ---
+# --- German legal form -> SCHEMA.md `legal_form` enum ---
 FORM_MAP = {
     "Aktiengesellschaft": "AG",
     "Gesellschaft mit beschränkter Haftung": "GmbH",
@@ -52,8 +52,8 @@ FORM_MAP = {
     "Zweigniederlassung": "Zweigniederlassung",
 }
 
-# --- first word of the headline -> SCHEMA.md `tipo_acto` enum ---
-TIPO_ACTO_MAP = {
+# --- first word of the headline -> SCHEMA.md `act_type` enum ---
+ACT_TYPE_MAP = {
     "mutation": "mutation",
     "neueintragung": "neueintragung",
     "löschung": "loeschung",
@@ -104,20 +104,20 @@ UID_RE = re.compile(r"CHE-\d{3}\.\d{3}\.\d{3}")
 # "..., CHE-295.332.571, Heidbühl 475, 3537 Eggiwil, Aktiengesellschaft
 # (Neueintragung)"), so the legal form is the *last* comma-separated segment
 # before the parenthesis, not the first one after the UID.
-FORMA_JURIDICA_RE = re.compile(
+LEGAL_FORM_RE = re.compile(
     r"CHE-\d{3}\.\d{3}\.\d{3},\s*([^(]+?)\s*\((?:SHAB|Neueintragung)"
 )
 # The registered seat, e.g. "..., in Aarau, CHE-450.093.916, ..." — this is
-# the legal seat, which may differ from the postal address (direccion_*),
+# the legal seat, which may differ from the postal address (address_*),
 # e.g. after a Sitzverlegung the two point at different towns.
-SEDE_LOCALIDAD_RE = re.compile(r",\s*in\s+([^,]+),\s*CHE-\d{3}\.\d{3}\.\d{3}")
+SEAT_MUNICIPALITY_RE = re.compile(r",\s*in\s+([^,]+),\s*CHE-\d{3}\.\d{3}\.\d{3}")
 # "<Firma>, bisher in <Ort>, CHE-..." marks a relocation: the seat named here
 # is the one *before* the act, but `Kontaktstelle` always names the
 # authority for the seat *after* it (on an intercantonal move, the new
-# canton's registry) — see prefill_text, which never trusts autoridad for
-# sede_canton when this matches. The captured group IS the pre-act
-# sede_localidad, though; sede_canton comes separately from the postal code
-# in the header's "Bisher" sub-block (see _bisher_header_cp below).
+# canton's registry) — see prefill_text, which never trusts authority for
+# seat_canton when this matches. The captured group IS the pre-act
+# seat_municipality, though; seat_canton comes separately from the postal code
+# in the header's "Bisher" sub-block (see _bisher_header_postcode below).
 BISHER_IN_RE = re.compile(r"\bbisher in\s+([^,]+)")
 
 # Swiss postal codes are geographic but not aligned to canton borders (a
@@ -171,26 +171,26 @@ def _blocks(text: str) -> list[list[str]]:
     return blocks
 
 
-def _derive_canton(autoridad: str | None) -> str | None:
-    if not autoridad:
+def _derive_canton(authority: str | None) -> str | None:
+    if not authority:
         return None
     for alias, code in CANTON_ALIASES.items():
-        if alias in autoridad:
+        if alias in authority:
             return code
     for name, code in CANTON_NAMES.items():
-        if name in autoridad:
+        if name in authority:
             return code
     return None
 
 
-def _bisher_header_cp(lines: list[str]) -> str | None:
+def _bisher_header_postcode(lines: list[str]) -> str | None:
     """Return the postal code from the header's "Bisher" sub-block, if any.
 
     On a relocation the header repeats the pre-act address after a literal
     "Bisher" line (street, then "<CP> <Ort>"). `_parse_header_block` stops
     parsing there because that block is the *old* address, not
-    `direccion_*` — this reads only the piece prefill_text needs from it:
-    the postal code, to derive the pre-act sede_canton (see
+    `address_*` — this reads only the piece prefill_text needs from it:
+    the postal code, to derive the pre-act seat_canton (see
     PLZ_PREFIX_TO_CANTON) on a "bisher in <Ort>" relocation.
     """
     try:
@@ -217,24 +217,24 @@ def _canton_from_plz(plz: str | None) -> str | None:
 
 
 def _parse_header_block(lines: list[str]) -> dict:
-    """Parse the headline block: tipo_acto, sufijo_estado, alt names, address.
+    """Parse the headline block: act_type, status_suffix, alt names, address.
 
     `lines[0]` is the portal headline (e.g. "Mutation Foo AG, Basel") — it is
     portal chrome per SCHEMA.md and only its first word (the act type) is used.
     Parsing of the address stops at a "Bisher" line: everything after it is
-    the *previous* address (`domicilio_anterior` territory), which this
+    the *previous* address (`domicile_previous` territory), which this
     module does not fill in.
     """
     result = {
-        "tipo_acto": None,
-        "sufijo_estado": None,
-        "nombres_alternativos": [],
-        "empresa_nombre_completo": None,
-        "empresa_nombre_base": None,
-        "direccion_co": None,
-        "direccion_calle": None,
-        "direccion_cp": None,
-        "direccion_localidad": None,
+        "act_type": None,
+        "status_suffix": None,
+        "alternative_names": [],
+        "company_name_full": None,
+        "company_name_base": None,
+        "address_care_of": None,
+        "address_street": None,
+        "address_postcode": None,
+        "address_municipality": None,
     }
 
     if not lines:
@@ -242,12 +242,12 @@ def _parse_header_block(lines: list[str]) -> dict:
 
     first_word = re.match(r"^(\S+)", lines[0])
     if first_word:
-        result["tipo_acto"] = TIPO_ACTO_MAP.get(first_word.group(1).lower())
+        result["act_type"] = ACT_TYPE_MAP.get(first_word.group(1).lower())
 
     header_text = "\n".join(lines)
     state_match = STATE_SUFFIX_RE.search(header_text)
     if state_match:
-        result["sufijo_estado"] = state_match.group(0)
+        result["status_suffix"] = state_match.group(0)
 
     body_lines = lines[1:]
 
@@ -269,12 +269,12 @@ def _parse_header_block(lines: list[str]) -> dict:
             # "(...)" groups instead of getting their own line below.
             trailing_match = TRAILING_ALT_NAMES_RE.search(candidate)
             if trailing_match:
-                result["nombres_alternativos"].extend(
+                result["alternative_names"].extend(
                     ALT_NAME_GROUP_RE.findall(trailing_match.group(0))
                 )
                 candidate = candidate[: trailing_match.start()].rstrip()
-            result["empresa_nombre_completo"] = candidate
-            result["empresa_nombre_base"] = STATE_SUFFIX_RE.sub("", candidate).strip()
+            result["company_name_full"] = candidate
+            result["company_name_base"] = STATE_SUFFIX_RE.sub("", candidate).strip()
             body_lines = body_lines[1:]
 
     for line in body_lines:
@@ -284,19 +284,19 @@ def _parse_header_block(lines: list[str]) -> dict:
         if stripped.lower() == "bisher":
             break
         if ALT_NAME_LINE_RE.fullmatch(stripped):
-            result["nombres_alternativos"].extend(ALT_NAME_GROUP_RE.findall(stripped))
+            result["alternative_names"].extend(ALT_NAME_GROUP_RE.findall(stripped))
             continue
         co_match = CO_LINE_RE.match(stripped)
         if co_match:
-            result["direccion_co"] = co_match.group(1).strip()
+            result["address_care_of"] = co_match.group(1).strip()
             continue
         plz_match = PLZ_ORT_RE.match(stripped)
         if plz_match:
-            result["direccion_cp"] = plz_match.group(1)
-            result["direccion_localidad"] = plz_match.group(2).strip()
+            result["address_postcode"] = plz_match.group(1)
+            result["address_municipality"] = plz_match.group(2).strip()
             continue
-        if result["direccion_calle"] is None and STREET_RE.match(stripped):
-            result["direccion_calle"] = stripped
+        if result["address_street"] is None and STREET_RE.match(stripped):
+            result["address_street"] = stripped
             continue
         # Anything else here is an unhandled line — not extracted.
 
@@ -306,54 +306,54 @@ def _parse_header_block(lines: list[str]) -> dict:
 def _empty_record() -> dict:
     """The full SCHEMA.md v1.0 shape, every field null/empty/false.
 
-    `empresa_nombre_nuevo` / `empresa_nombre_anterior` are always null here:
+    `company_name_new` / `company_name_previous` are always null here:
     filling them requires reading a `Firma neu:` change against the rest of
     the notice, which is judgement, not regex extraction (see CLAUDE.md
-    rule 4). Same reasoning as `personas_mutantes` below staying `[]` —
+    rule 4). Same reasoning as `persons_changed` below staying `[]` —
     prefill.py never emits a `Person` or `PersonChange` object; it isn't
     that their v1.0 shape (with `uid`/`stammanteile`, and PersonChange's
-    fourteen `_nuevo`/`_anterior` keys) is unsupported, there's simply
+    fourteen `_new`/`_previous` keys) is unsupported, there's simply
     nothing here that constructs one.
     """
     return {
         "schema_version": SCHEMA_VERSION,
         "doc_id": None,
-        "idioma": None,
-        "tipo_acto": None,
-        "subtipos": [],
-        "empresa_nombre_completo": None,
-        "empresa_nombre_base": None,
-        "sufijo_estado": None,
-        "nombres_alternativos": [],
-        "empresa_nombre_nuevo": None,
-        "empresa_nombre_anterior": None,
+        "language": None,
+        "act_type": None,
+        "act_subtypes": [],
+        "company_name_full": None,
+        "company_name_base": None,
+        "status_suffix": None,
+        "alternative_names": [],
+        "company_name_new": None,
+        "company_name_previous": None,
         "uid": None,
-        "forma_juridica": None,
-        "sede_localidad": None,
-        "sede_canton": None,
-        "direccion_co": None,
-        "direccion_calle": None,
-        "direccion_cp": None,
-        "direccion_localidad": None,
-        "fecha_acto": None,
+        "legal_form": None,
+        "seat_municipality": None,
+        "seat_canton": None,
+        "address_care_of": None,
+        "address_street": None,
+        "address_postcode": None,
+        "address_municipality": None,
+        "act_date": None,
         "tagesregister_nr": None,
-        "tagesregister_fecha": None,
-        "publicacion_anterior_shab_nr": None,
-        "publicacion_anterior_fecha": None,
-        "publicacion_anterior_publ_id": None,
-        "autoridad": None,
-        "canton_anterior": None,
-        "canton_nuevo": None,
-        "capital_nuevo_chf": None,
-        "capital_anterior_chf": None,
-        "domicilio_nuevo": None,
-        "domicilio_anterior": None,
-        "personas_entrantes": [],
-        "personas_salientes": [],
-        "personas_mutantes": [],
+        "tagesregister_date": None,
+        "prior_publication_shab_nr": None,
+        "prior_publication_date": None,
+        "prior_publication_id": None,
+        "authority": None,
+        "canton_previous": None,
+        "canton_new": None,
+        "capital_new_chf": None,
+        "capital_previous_chf": None,
+        "domicile_new": None,
+        "domicile_previous": None,
+        "persons_added": [],
+        "persons_removed": [],
+        "persons_changed": [],
         "extras": {},
-        "incierto": [],
-        "notas": None,
+        "uncertain": [],
+        "notes": None,
         "_verified": False,
     }
 
@@ -368,7 +368,7 @@ def prefill_text(text: str, doc_id: str | None = None) -> dict:
     record["doc_id"] = doc_id
     # Corpus-level constant, not a per-document extraction: see SCHEMA.md
     # "Scope decisions" — this module only ever runs on German notices.
-    record["idioma"] = "de"
+    record["language"] = "de"
 
     blocks = _blocks(text)
     header = blocks[0] if blocks else []
@@ -378,48 +378,48 @@ def prefill_text(text: str, doc_id: str | None = None) -> dict:
     if uid_match:
         record["uid"] = uid_match.group(0)
 
-    sede_localidad_match = SEDE_LOCALIDAD_RE.search(text)
-    if sede_localidad_match:
-        record["sede_localidad"] = sede_localidad_match.group(1).strip()
+    seat_municipality_match = SEAT_MUNICIPALITY_RE.search(text)
+    if seat_municipality_match:
+        record["seat_municipality"] = seat_municipality_match.group(1).strip()
 
-    forma_match = FORMA_JURIDICA_RE.search(text)
-    if forma_match:
+    legal_form_match = LEGAL_FORM_RE.search(text)
+    if legal_form_match:
         # On a Neueintragung the captured group also contains the repeated
-        # address (see FORMA_JURIDICA_RE comment); the legal form is always
+        # address (see LEGAL_FORM_RE comment); the legal form is always
         # the last comma-separated segment, address or not.
-        last_segment = forma_match.group(1).split(",")[-1].strip()
-        record["forma_juridica"] = FORM_MAP.get(last_segment)
+        last_segment = legal_form_match.group(1).split(",")[-1].strip()
+        record["legal_form"] = FORM_MAP.get(last_segment)
 
     tagesregister_match = TAGESREGISTER_RE.search(text)
     if tagesregister_match:
         record["tagesregister_nr"] = tagesregister_match.group(1)
-        record["tagesregister_fecha"] = _to_iso(tagesregister_match.group(2))
+        record["tagesregister_date"] = _to_iso(tagesregister_match.group(2))
 
     prior_pub_match = PRIOR_PUB_RE.search(text)
     if prior_pub_match:
-        record["publicacion_anterior_shab_nr"] = int(prior_pub_match.group(1))
-        record["publicacion_anterior_fecha"] = _to_iso(prior_pub_match.group(2))
+        record["prior_publication_shab_nr"] = int(prior_pub_match.group(1))
+        record["prior_publication_date"] = _to_iso(prior_pub_match.group(2))
 
     publ_id_match = PUBL_ID_RE.search(text)
     if publ_id_match:
-        record["publicacion_anterior_publ_id"] = publ_id_match.group(1)
+        record["prior_publication_id"] = publ_id_match.group(1)
 
     kontaktstelle_match = KONTAKTSTELLE_RE.search(text)
     if kontaktstelle_match:
-        autoridad = kontaktstelle_match.group(1).strip()
-        record["autoridad"] = autoridad
-        record["sede_canton"] = _derive_canton(autoridad)
+        authority = kontaktstelle_match.group(1).strip()
+        record["authority"] = authority
+        record["seat_canton"] = _derive_canton(authority)
 
     # "bisher in <Ort>" means the Kontaktstelle authority (and any locality
     # parsed near the UID) reflects the post-move seat, not the pre-act one
     # SCHEMA.md wants — see BISHER_IN_RE above. The pre-act seat is
     # recoverable from elsewhere in the document instead: <Ort> itself for
-    # sede_localidad, and the postal code in the header's "Bisher" block
-    # (via PLZ_PREFIX_TO_CANTON) for sede_canton.
+    # seat_municipality, and the postal code in the header's "Bisher" block
+    # (via PLZ_PREFIX_TO_CANTON) for seat_canton.
     bisher_in_match = BISHER_IN_RE.search(text)
     if bisher_in_match:
-        record["sede_localidad"] = bisher_in_match.group(1).strip()
-        record["sede_canton"] = _canton_from_plz(_bisher_header_cp(header))
+        record["seat_municipality"] = bisher_in_match.group(1).strip()
+        record["seat_canton"] = _canton_from_plz(_bisher_header_postcode(header))
 
     return record
 
