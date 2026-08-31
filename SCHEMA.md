@@ -19,86 +19,86 @@ scored against a model and turns the field into noise.
 |---|---|---|
 | `schema_version` | string | e.g. `"1.0"` |
 | `doc_id` | string | matches filename, e.g. `"0001"` |
-| `idioma` | string | always `"de"` in this corpus |
-| `tipo_acto` | enum | `neueintragung` \| `mutation` \| `loeschung` |
-| `subtipos` | list[string] | derived labels, see below |
-| `empresa_nombre_completo` | string | includes legal-status suffix |
-| `empresa_nombre_base` | string | **includes legal form** (`... AG`), excludes status suffix |
-| `sufijo_estado` | string\|null | `in Liquidation`, `in Liq.`, else `null` |
-| `nombres_alternativos` | list[string] | other-language registered names |
-| `empresa_nombre_nuevo` | string\|null | company name change pair, see below |
-| `empresa_nombre_anterior` | string\|null | company name change pair, see below |
+| `language` | string | always `"de"` in this corpus |
+| `act_type` | enum | `neueintragung` \| `mutation` \| `loeschung` |
+| `act_subtypes` | list[string] | derived labels, see below |
+| `company_name_full` | string | includes legal-status suffix |
+| `company_name_base` | string | **includes legal form** (`... AG`), excludes status suffix |
+| `status_suffix` | string\|null | `in Liquidation`, `in Liq.`, else `null` |
+| `alternative_names` | list[string] | other-language registered names |
+| `company_name_new` | string\|null | company name change pair, see below |
+| `company_name_previous` | string\|null | company name change pair, see below |
 | `uid` | string | `CHE-XXX.XXX.XXX` |
-| `forma_juridica` | enum | `AG` \| `GmbH` \| `Einzelunternehmen` \| `Genossenschaft` \| `Stiftung` \| `Verein` \| `Kollektivgesellschaft` \| `Kommanditgesellschaft` \| `Zweigniederlassung` |
-| `sede_localidad` | string | **town only**, never the street |
-| `sede_canton` | string | 2-letter code |
-| `direccion_co` | string\|null | the `c/o` party |
-| `direccion_calle` | string\|null | |
-| `direccion_cp` | string\|null | keep as string (leading zeros) |
-| `direccion_localidad` | string\|null | |
-| `fecha_acto` | date\|null | **only if explicit** — see rule below |
+| `legal_form` | enum | `AG` \| `GmbH` \| `Einzelunternehmen` \| `Genossenschaft` \| `Stiftung` \| `Verein` \| `Kollektivgesellschaft` \| `Kommanditgesellschaft` \| `Zweigniederlassung` |
+| `seat_municipality` | string | **town only**, never the street |
+| `seat_canton` | string | 2-letter code |
+| `address_care_of` | string\|null | the `c/o` party |
+| `address_street` | string\|null | |
+| `address_postcode` | string\|null | keep as string (leading zeros) |
+| `address_municipality` | string\|null | |
+| `act_date` | date\|null | **only if explicit** — see rule below |
 | `tagesregister_nr` | string | |
-| `tagesregister_fecha` | date | |
-| `publicacion_anterior_shab_nr` | int\|null | |
-| `publicacion_anterior_fecha` | date\|null | |
-| `publicacion_anterior_publ_id` | string\|null | |
-| `autoridad` | string | the `Kontaktstelle` |
-| `canton_anterior` | string\|null | only on inter-cantonal moves |
-| `canton_nuevo` | string\|null | only on inter-cantonal moves |
-| `capital_nuevo_chf` | number\|null | |
-| `capital_anterior_chf` | number\|null | |
-| `domicilio_nuevo` | string\|null | **only if the address changes** |
-| `domicilio_anterior` | string\|null | **only if the address changes** |
-| `personas_entrantes` | list[Person] | |
-| `personas_salientes` | list[Person] | |
-| `personas_mutantes` | list[PersonChange] | same person, changed attributes |
+| `tagesregister_date` | date | |
+| `prior_publication_shab_nr` | int\|null | |
+| `prior_publication_date` | date\|null | |
+| `prior_publication_id` | string\|null | |
+| `authority` | string | the `Kontaktstelle` |
+| `canton_previous` | string\|null | only on inter-cantonal moves |
+| `canton_new` | string\|null | only on inter-cantonal moves |
+| `capital_new_chf` | number\|null | |
+| `capital_previous_chf` | number\|null | |
+| `domicile_new` | string\|null | **only if the address changes** |
+| `domicile_previous` | string\|null | **only if the address changes** |
+| `persons_added` | list[Person] | |
+| `persons_removed` | list[Person] | |
+| `persons_changed` | list[PersonChange] | same person, changed attributes |
 | `extras` | object | see key registry below |
-| `incierto` | list[string] | field names the annotator was unsure about |
-| `notas` | string | free prose |
+| `uncertain` | list[string] | field names the annotator was unsure about |
+| `notes` | string | free prose |
 | `_verified` | bool | `false` until a human has eyeballed prefilled fields |
 
 ### Person
 
 ```json
-{ "nombre": null, "nacionalidad": null, "heimatort": null,
-  "domicilio": null, "cargo": null, "firma": null,
+{ "name": null, "nationality": null, "heimatort": null,
+  "domicile": null, "role": null, "signature": null,
   "uid": null, "stammanteile": null }
 ```
 
 ### PersonChange
 
 ```json
-{ "nombre_nuevo": null, "nombre_anterior": null,
-  "domicilio_nuevo": null, "domicilio_anterior": null,
-  "cargo_nuevo": null, "cargo_anterior": null,
-  "firma_nueva": null, "firma_anterior": null,
-  "nacionalidad_nueva": null, "nacionalidad_anterior": null,
-  "heimatort_nuevo": null, "heimatort_anterior": null,
-  "stammanteile_nuevo": null, "stammanteile_anterior": null }
+{ "name_new": null, "name_previous": null,
+  "domicile_new": null, "domicile_previous": null,
+  "role_new": null, "role_previous": null,
+  "signature_new": null, "signature_previous": null,
+  "nationality_new": null, "nationality_previous": null,
+  "heimatort_new": null, "heimatort_previous": null,
+  "stammanteile_new": null, "stammanteile_previous": null }
 ```
 
 ---
 
 ## Annotation decisions
 
-**`fecha_acto`** — the date of the legal act being published. Use only when the
+**`act_date`** — the date of the legal act being published. Use only when the
 source states it explicitly (`Statutenänderung: 14.08.2026`, `Löschungsdatum: ...`).
-If absent → `null`. Never substitute `tagesregister_fecha`. Never use the date
+If absent → `null`. Never substitute `tagesregister_date`. Never use the date
 inside the parenthetical reference to the *previous* publication.
 
 **The parenthetical trap** — `(SHAB Nr. 223 vom 18.11.2025, Publ. 1006488017)`
 refers to the **previous** publication, not this one. It maps to
-`publicacion_anterior_*`, never to `fecha_acto`.
+`prior_publication_*`, never to `act_date`.
 
-**Names** — `empresa_nombre_base` keeps the legal form (`Noorik Biopharmaceuticals AG`)
-because it is part of the official registered name. `forma_juridica` is stored
-separately anyway. `empresa_nombre_completo` additionally keeps the status suffix.
+**Names** — `company_name_base` keeps the legal form (`Noorik Biopharmaceuticals AG`)
+because it is part of the official registered name. `legal_form` is stored
+separately anyway. `company_name_full` additionally keeps the status suffix.
 
 **The page headline is not data.** `Mutation Foo AG, Basel` is portal navigation
-chrome. Only `Mutation` is used (→ `tipo_acto`).
+chrome. Only `Mutation` is used (→ `act_type`).
 
-**`domicilio_*` vs `direccion_*`** — `direccion_*` is the address as printed.
-`domicilio_nuevo` / `domicilio_anterior` are populated **only when the act
+**`domicile_*` vs `address_*`** — `address_*` is the address as printed.
+`domicile_new` / `domicile_previous` are populated **only when the act
 changes the address** (source shows `Bisher` / `bisher`).
 
 **Nationality convention** — `von <Ort>` marks a Swiss citizen (Heimatort);
@@ -107,53 +107,53 @@ former indicates naturalisation.
 
 **Missing vs empty** — absent scalar → `null`; absent list → `[]`. Never `""`.
 
-**`sede_localidad` / `sede_canton`** — the seat as stated in the body
+**`seat_municipality` / `seat_canton`** — the seat as stated in the body
 (`… , in <Town>, CHE-…`), i.e. the seat *before* the act. On relocations
 this differs from the post-act seat, which is captured by
-`canton_anterior`/`canton_nuevo` and `domicilio_*`.
+`canton_previous`/`canton_new` and `domicile_*`.
 
 **The Kontaktstelle trap (inter-cantonal moves)** — when the body reads
 `bisher in <Ort>`, that phrasing marks a relocation: the seat named next to
-the UID is the seat *before* the act, but `Kontaktstelle` (→ `autoridad`)
+the UID is the seat *before* the act, but `Kontaktstelle` (→ `authority`)
 always names the authority for the seat *after* it — on an inter-cantonal
-move, the new canton's registry office. Since `sede_canton` must be the
-pre-act canton, it must never be derived from `autoridad` in this case.
-`prefill.py` implements this: on a `bisher in <Ort>` match, `sede_localidad`
-comes from `<Ort>` itself, and `sede_canton` from the postal code in the
+move, the new canton's registry office. Since `seat_canton` must be the
+pre-act canton, it must never be derived from `authority` in this case.
+`prefill.py` implements this: on a `bisher in <Ort>` match, `seat_municipality`
+comes from `<Ort>` itself, and `seat_canton` from the postal code in the
 header's `Bisher` sub-block (street + `<CP> <Ort>`, repeated there for the
 pre-act address) via a small, hand-verified PLZ-prefix table — not from
-`autoridad`. An unmapped prefix resolves to `null` rather than a guess, left
+`authority`. An unmapped prefix resolves to `null` rather than a guess, left
 for the annotator. Found at 0018 (Neuendorf, 4623 → SO) and 0021 (Aeschi SO,
 4556 → SO); this entry documents that existing behaviour.
 
-**Gendered forms** — `nacionalidad` is normalised to the base adjective
+**Gendered forms** — `nationality` is normalised to the base adjective
 (`französische` → `französisch`, `brasilianischer` → `brasilianisch`),
 since it is a category rather than a transcribed value.
 
-`cargo`, `nombre` and all other person attributes are transcribed
+`role`, `name` and all other person attributes are transcribed
 verbatim from the source, gendered forms included
 (`Präsidentin des Stiftungsrates`, `Geschäftsführerin`). These are
 register data, and normalising them would produce values that do not
 appear in the source text — breaking crosscheck and unfairly penalising
 models that transcribe correctly.
 
-Academic and professional titles stay inside `nombre`
+Academic and professional titles stay inside `name`
 (`Böckli, Peter Prof. Dr.`).
 
 **`Person.uid` / `Person.stammanteile`** — `uid` records a legal person
 acting as an officer or partner (e.g. OBT AG in 0028, or the company itself
-as a partner in 0004); `nacionalidad`/`heimatort` stay `null` for it, since
+as a partner in 0004); `nationality`/`heimatort` stay `null` for it, since
 neither applies to a company. `stammanteile` is the number of GmbH
 participations the person holds (`mit N Stammanteilen`), not their nominal
 value — nominal value per participation belongs to the company, not the
 partner, and stays in `extras.valor_nominal_chf`. Seen in 0004, 0025, 0027.
 
 **`PersonChange` — one pair per attribute.** Each attribute that can change
-(`nombre`, `domicilio`, `cargo`, `firma`, `nacionalidad`, `heimatort`,
-`stammanteile`) has its own `_nuevo`/`_nueva` and `_anterior` half. Rule: an
-attribute that does not change is filled only in its `_nuevo` half; the
-matching `_anterior` stays `null`. This is scored per half, not as a unit —
-a model that gets the new value right but omits `_anterior` (or invents
+(`name`, `domicile`, `role`, `signature`, `nationality`, `heimatort`,
+`stammanteile`) has its own `_new` and `_previous` half. Rule: an
+attribute that does not change is filled only in its `_new` half; the
+matching `_previous` stays `null`. This is scored per half, not as a unit —
+a model that gets the new value right but omits `_previous` (or invents
 one) is wrong on exactly that field, not the whole person.
 
 **Toponyms** — place names are transcribed exactly as the source writes
@@ -163,13 +163,13 @@ two forms within one notice (e.g. the seat sentence vs. a `bisher`
 clause) — each field takes the form of the phrase it was read from, never
 normalised to match another field.
 
-**`incierto`** — top-level field names only. Nested keys (e.g. a person's
+**`uncertain`** — top-level field names only. Nested keys (e.g. a person's
 `heimatort`) are flagged by naming their containing field
-(`personas_mutantes`) and describing the specifics in `notas`.
+(`persons_changed`) and describing the specifics in `notes`.
 
-**`empresa_nombre_nuevo` / `empresa_nombre_anterior`** — filled as a pair
+**`company_name_new` / `company_name_previous`** — filled as a pair
 whenever the act changes the company name (`Firma neu:`). Both null
-otherwise. `empresa_nombre_anterior` duplicates `empresa_nombre_completo`
+otherwise. `company_name_previous` duplicates `company_name_full`
 by design: the pair must be readable without cross-referencing another
 field, and a judgement-based rule ("only when it adds something") would
 not be scoreable — a model cannot know when the annotator considered it
@@ -177,7 +177,7 @@ worth recording.
 
 ---
 
-## `subtipos` — controlled vocabulary
+## `act_subtypes` — controlled vocabulary
 
 `statutenaenderung`, `kapitalerhoehung`, `kapitalherabsetzung`,
 `bedingte_kapitalerhoehung`, `kapitalband_aufhebung`, `organaenderung`,
@@ -262,19 +262,19 @@ excluded at the filtering stage, not at annotation time.
 
 - **v1.0** — froze the schema after 28 exploratory documents (0001-0028;
   see `annotation_log.md`), all re-annotated to this version. Redesigned
-  `PersonChange` to one `_nuevo`/`_anterior` pair per attribute (`nombre`,
-  `domicilio`, `cargo`, `firma`, `nacionalidad`, `heimatort`,
-  `stammanteile`), replacing the single generic `nombre_nuevo`/`nombre_anterior`
-  pair plus flat `heimatort`/`nacionalidad_anterior`/`cargo`/`firma`. Added
+  `PersonChange` to one `_new`/`_previous` pair per attribute (`name`,
+  `domicile`, `role`, `signature`, `nationality`, `heimatort`,
+  `stammanteile`), replacing the single generic `name_new`/`name_previous`
+  pair plus flat `heimatort`/`nationality_previous`/`role`/`signature`. Added
   `Person.uid` and `Person.stammanteile`; new top-level
-  `empresa_nombre_nuevo`/`empresa_nombre_anterior` pair; the toponym
-  transcription rule; the Kontaktstelle/`bisher in <Ort>` sede_canton rule.
+  `company_name_new`/`company_name_previous` pair; the toponym
+  transcription rule; the Kontaktstelle/`bisher in <Ort>` seat_canton rule.
   Registered nine `extras` keys already in use: `zweck`, `hauptsitz`,
   `liberierung_nuevo_chf`, `liberierung_anterior_chf`, `vinkulierung`,
   `revision`, `tipo_kapitalerhoehung`, `weitere_adressen_nueva`,
   `weitere_adressen_anterior`.
-- **v0.2** — added `idioma`, `nombres_alternativos`, `direccion_*`, `canton_nuevo`,
-  `canton_anterior`, `tagesregister_fecha`, `publicacion_anterior_publ_id`,
-  `personas_mutantes`, `incierto`, `_verified`. Fixed `fecha_acto` rule.
+- **v0.2** — added `language`, `alternative_names`, `address_*`, `canton_new`,
+  `canton_previous`, `tagesregister_date`, `prior_publication_id`,
+  `persons_changed`, `uncertain`, `_verified`. Fixed `act_date` rule.
   Derived from 4 exploratory documents.
 - **v0.1** — initial sketch.

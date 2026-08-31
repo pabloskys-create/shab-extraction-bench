@@ -39,15 +39,15 @@ def test_string_value_found_once_is_unique():
 
 
 def test_string_value_found_several_times_is_ambiguous():
-    result = crosscheck_record("Basel Basel Basel", {"sede_localidad": "Basel"})
-    assert _field_names(result.ambiguous) == ["sede_localidad"]
+    result = crosscheck_record("Basel Basel Basel", {"seat_municipality": "Basel"})
+    assert _field_names(result.ambiguous) == ["seat_municipality"]
     assert result.ambiguous[0].count == 3
 
 
 def test_string_value_absent_is_missing():
     # e.g. a value copied in from a different document — the tool's stated purpose.
-    result = crosscheck_record("nothing relevant here", {"autoridad": "Handelsregisteramt X"})
-    assert _field_names(result.missing) == ["autoridad"]
+    result = crosscheck_record("nothing relevant here", {"authority": "Handelsregisteramt X"})
+    assert _field_names(result.missing) == ["authority"]
     assert result.missing[0].count == 0
 
 
@@ -56,17 +56,17 @@ def test_string_value_absent_is_missing():
 
 def test_date_field_matches_via_swiss_format():
     result = crosscheck_record(
-        "Tagesregister-Nr. 123 vom 18.08.2026", {"tagesregister_fecha": "2026-08-18"}
+        "Tagesregister-Nr. 123 vom 18.08.2026", {"tagesregister_date": "2026-08-18"}
     )
-    assert _field_names(result.unique) == ["tagesregister_fecha"]
+    assert _field_names(result.unique) == ["tagesregister_date"]
     check = result.unique[0]
     assert check.count == 1
     assert check.searched == ["2026-08-18", "18.08.2026"]
 
 
 def test_date_field_missing_entirely():
-    result = crosscheck_record("no dates here", {"fecha_acto": "2026-01-01"})
-    assert _field_names(result.missing) == ["fecha_acto"]
+    result = crosscheck_record("no dates here", {"act_date": "2026-01-01"})
+    assert _field_names(result.missing) == ["act_date"]
 
 
 # --- int fields: Swiss apostrophe grouping ---
@@ -74,9 +74,9 @@ def test_date_field_missing_entirely():
 
 def test_int_field_matches_via_swiss_grouping():
     result = crosscheck_record(
-        "SHAB Nr. 1'234 was cited.", {"publicacion_anterior_shab_nr": 1234}
+        "SHAB Nr. 1'234 was cited.", {"prior_publication_shab_nr": 1234}
     )
-    assert _field_names(result.unique) == ["publicacion_anterior_shab_nr"]
+    assert _field_names(result.unique) == ["prior_publication_shab_nr"]
     check = result.unique[0]
     assert check.count == 1
     assert check.searched == ["1234", "1'234"]
@@ -86,7 +86,7 @@ def test_small_int_does_not_double_count_identical_candidates():
     # str(223) and the Swiss-grouped form are the same string ("223", no
     # grouping below 1000) — must be deduplicated, not counted twice per hit.
     text = "223 first, 223 second, 223 third."
-    result = crosscheck_record(text, {"publicacion_anterior_shab_nr": 223})
+    result = crosscheck_record(text, {"prior_publication_shab_nr": 223})
     check = result.ambiguous[0]
     assert check.searched == ["223"]
     assert check.count == 3
@@ -97,47 +97,47 @@ def test_small_int_does_not_double_count_identical_candidates():
 
 def test_number_field_matches_via_swiss_money_format():
     result = crosscheck_record(
-        "Aktienkapital neu: CHF 189'123.50.", {"capital_nuevo_chf": 189123.5}
+        "Aktienkapital neu: CHF 189'123.50.", {"capital_new_chf": 189123.5}
     )
-    assert _field_names(result.unique) == ["capital_nuevo_chf"]
+    assert _field_names(result.unique) == ["capital_new_chf"]
     check = result.unique[0]
     assert check.count == 1
     assert "189'123.50" in check.searched
 
 
 def test_number_field_missing():
-    result = crosscheck_record("no money mentioned", {"capital_anterior_chf": 50000.0})
-    assert _field_names(result.missing) == ["capital_anterior_chf"]
+    result = crosscheck_record("no money mentioned", {"capital_previous_chf": 50000.0})
+    assert _field_names(result.missing) == ["capital_previous_chf"]
 
 
 # --- fields that must never appear in any list ---
 
 
 def test_null_fields_are_skipped_entirely():
-    result = crosscheck_record("some text", {"notas": None})
-    assert "notas" not in _result_field_names(result)
+    result = crosscheck_record("some text", {"notes": None})
+    assert "notes" not in _result_field_names(result)
 
 
 def test_bookkeeping_fields_are_always_skipped():
-    # doc_id/schema_version would always land in "missing", and idioma's
+    # doc_id/schema_version would always land in "missing", and language's
     # 2-character value ("de") spuriously substring-matches inside ordinary
     # German words — see src/crosscheck.py _SKIPPED_FIELDS.
     text = "Gesellschafterin und Geschäftsführerin, in Bern"  # full of "de"
-    record = {"doc_id": "0001", "schema_version": "0.2", "idioma": "de"}
+    record = {"doc_id": "0001", "schema_version": "0.2", "language": "de"}
     result = crosscheck_record(text, record)
     assert _result_field_names(result) == set()
 
 
 def test_composite_kind_fields_are_skipped():
     record = {
-        "nombres_alternativos": ["Foo Bar SA"],
+        "alternative_names": ["Foo Bar SA"],
         "extras": {"x": True},
         "_verified": True,
-        "personas_entrantes": [{"nombre": "X"}],
-        "subtipos": ["fusion"],
-        "incierto": ["notas"],
+        "persons_added": [{"name": "X"}],
+        "act_subtypes": ["fusion"],
+        "uncertain": ["notes"],
     }
-    result = crosscheck_record("Foo Bar SA fusion X notas", record)
+    result = crosscheck_record("Foo Bar SA fusion X notes", record)
     assert _result_field_names(result) == set()
 
 
@@ -153,22 +153,22 @@ def test_crosscheck_doc_reads_both_files(monkeypatch):
     assert _field_names(result.unique) == [
         "uid",
         "tagesregister_nr",
-        "tagesregister_fecha",
-        "publicacion_anterior_publ_id",
-        "autoridad",
-        "capital_nuevo_chf",
+        "tagesregister_date",
+        "prior_publication_id",
+        "authority",
+        "capital_new_chf",
     ]
     assert _field_names(result.ambiguous) == [
-        "forma_juridica",
-        "publicacion_anterior_shab_nr",
-        "publicacion_anterior_fecha",
+        "legal_form",
+        "prior_publication_shab_nr",
+        "prior_publication_date",
     ]
-    # sede_localidad ("Bern") is deliberately wrong in the fixture — the text
+    # seat_municipality ("Bern") is deliberately wrong in the fixture — the text
     # says Zürich — this is exactly the contamination case the tool targets.
-    assert "sede_localidad" in _field_names(result.missing)
-    assert "capital_anterior_chf" in _field_names(result.missing)
+    assert "seat_municipality" in _field_names(result.missing)
+    assert "capital_previous_chf" in _field_names(result.missing)
     # bookkeeping fields never appear even though the fixture sets them
-    assert _result_field_names(result).isdisjoint({"doc_id", "schema_version", "idioma"})
+    assert _result_field_names(result).isdisjoint({"doc_id", "schema_version", "language"})
 
 
 def test_crosscheck_doc_raises_for_missing_doc(monkeypatch):
