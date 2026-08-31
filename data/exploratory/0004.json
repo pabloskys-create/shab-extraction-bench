@@ -1,86 +1,86 @@
 {
   "schema_version": "1.0",
   "doc_id": "0004",
-  "idioma": "de",
-  "tipo_acto": "mutation",
-  "subtipos": [
+  "language": "de",
+  "act_type": "mutation",
+  "act_subtypes": [
     "organaenderung"
   ],
-  "empresa_nombre_completo": "Asemblis GmbH",
-  "empresa_nombre_base": "Asemblis GmbH",
-  "sufijo_estado": null,
-  "nombres_alternativos": [
+  "company_name_full": "Asemblis GmbH",
+  "company_name_base": "Asemblis GmbH",
+  "status_suffix": null,
+  "alternative_names": [
     "Asemblis LLC"
   ],
-  "empresa_nombre_nuevo": null,
-  "empresa_nombre_anterior": null,
+  "company_name_new": null,
+  "company_name_previous": null,
   "uid": "CHE-185.214.900",
-  "forma_juridica": "GmbH",
-  "sede_localidad": "Bern",
-  "sede_canton": "BE",
-  "direccion_co": null,
-  "direccion_calle": "Weyermannsstrasse 36",
-  "direccion_cp": "3008",
-  "direccion_localidad": "Bern",
-  "fecha_acto": null,
+  "legal_form": "GmbH",
+  "seat_municipality": "Bern",
+  "seat_canton": "BE",
+  "address_care_of": null,
+  "address_street": "Weyermannsstrasse 36",
+  "address_postcode": "3008",
+  "address_municipality": "Bern",
+  "act_date": null,
   "tagesregister_nr": "14856",
-  "tagesregister_fecha": "2026-08-05",
-  "publicacion_anterior_shab_nr": 216,
-  "publicacion_anterior_fecha": "2025-11-07",
-  "publicacion_anterior_publ_id": "1006478448",
-  "autoridad": "Handelsregisteramt des Kantons Bern",
-  "canton_anterior": null,
-  "canton_nuevo": null,
-  "capital_nuevo_chf": null,
-  "capital_anterior_chf": null,
-  "domicilio_nuevo": null,
-  "domicilio_anterior": null,
-  "personas_entrantes": [
+  "tagesregister_date": "2026-08-05",
+  "prior_publication_shab_nr": 216,
+  "prior_publication_date": "2025-11-07",
+  "prior_publication_id": "1006478448",
+  "authority": "Handelsregisteramt des Kantons Bern",
+  "canton_previous": null,
+  "canton_new": null,
+  "capital_new_chf": null,
+  "capital_previous_chf": null,
+  "domicile_new": null,
+  "domicile_previous": null,
+  "persons_added": [
     {
-      "nombre": "Asemblis GmbH",
-      "nacionalidad": null,
+      "name": "Asemblis GmbH",
+      "nationality": null,
       "heimatort": null,
-      "domicilio": "Bern",
-      "cargo": "Gesellschafterin",
-      "firma": null,
+      "domicile": "Bern",
+      "role": "Gesellschafterin",
+      "signature": null,
       "uid": "CHE-185.214.900",
       "stammanteile": 30
     }
   ],
-  "personas_salientes": [
+  "persons_removed": [
     {
-      "nombre": "Stienne, Leoni",
-      "nacionalidad": "französisch",
+      "name": "Stienne, Leoni",
+      "nationality": "französisch",
       "heimatort": null,
-      "domicilio": "Chavannes-près-Renens",
-      "cargo": "Gesellschafterin und Geschäftsführerin",
-      "firma": "Einzelunterschrift",
+      "domicile": "Chavannes-près-Renens",
+      "role": "Gesellschafterin und Geschäftsführerin",
+      "signature": "Einzelunterschrift",
       "uid": null,
       "stammanteile": 30
     }
   ],
-  "personas_mutantes": [
+  "persons_changed": [
     {
-      "nombre_nuevo": "Souza Valeriano, Caio Felipe",
-      "nombre_anterior": null,
-      "domicilio_nuevo": "Bern",
-      "domicilio_anterior": null,
-      "cargo_nuevo": "Gesellschafter und Geschäftsführer",
-      "cargo_anterior": "Gesellschafter und Vorsitzender der Geschäftsführung",
-      "firma_nueva": "Einzelunterschrift",
-      "firma_anterior": null,
-      "nacionalidad_nueva": "brasilianisch",
-      "nacionalidad_anterior": null,
-      "heimatort_nuevo": null,
-      "heimatort_anterior": null,
-      "stammanteile_nuevo": 170,
-      "stammanteile_anterior": null
+      "name_new": "Souza Valeriano, Caio Felipe",
+      "name_previous": null,
+      "domicile_new": "Bern",
+      "domicile_previous": null,
+      "role_new": "Gesellschafter und Geschäftsführer",
+      "role_previous": "Gesellschafter und Vorsitzender der Geschäftsführung",
+      "signature_new": "Einzelunterschrift",
+      "signature_previous": null,
+      "nationality_new": "brasilianisch",
+      "nationality_previous": null,
+      "heimatort_new": null,
+      "heimatort_previous": null,
+      "stammanteile_new": 170,
+      "stammanteile_previous": null
     }
   ],
   "extras": {},
-  "incierto": [
-    "personas_entrantes"
+  "uncertain": [
+    "persons_added"
   ],
-  "notas": "The company itself is registered as one of its own partners, holding 30 of the 200 Stammanteile. Person.uid records the identifier but not that this is a legal, rather than natural, person — nor that it is the same entity as the subject of the notice.",
+  "notes": "The company itself is registered as one of its own partners, holding 30 of the 200 Stammanteile. Person.uid records the identifier but not that this is a legal, rather than natural, person — nor that it is the same entity as the subject of the notice.",
   "_verified": true
 }
