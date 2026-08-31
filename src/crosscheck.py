@@ -21,14 +21,14 @@ error needs a human, not a substring search). It only flags values that
 don't exist in the source at all, which is almost always either a
 transcription slip or contamination copied in from another document.
 
-`doc_id`, `schema_version` and `idioma` are skipped entirely: they are
+`doc_id`, `schema_version` and `language` are skipped entirely: they are
 bookkeeping, never derived by reading the source text (see
 `_SKIPPED_FIELDS` below), so checking them can only ever produce noise.
 
-A few remaining fields are still expected to show up as "no aparece" even
+A few remaining fields are still expected to show up as "not found" even
 on a correct annotation, because they are normalized rather than
-transcribed verbatim: `tipo_acto` (lowercased), `forma_juridica` and
-`sede_canton` (mapped to a code, e.g. "Aktiengesellschaft" -> "AG" -> "VS").
+transcribed verbatim: `act_type` (lowercased), `legal_form` and
+`seat_canton` (mapped to a code, e.g. "Aktiengesellschaft" -> "AG" -> "VS").
 That's expected, not a bug in this tool.
 
 This module only reads `data/raw/` and `data/exploratory/`. It never writes
@@ -62,10 +62,10 @@ _CHECKED_KINDS = frozenset({"str", "date", "int", "number"})
 # Bookkeeping fields that are never derived by reading the source text, so
 # checking them is pure noise either way: `doc_id` comes from the filename
 # and `schema_version` is a hardcoded constant (see src/prefill.py), always
-# landing in "missing"; `idioma` is a corpus-wide constant ("de" — see
+# landing in "missing"; `language` is a corpus-wide constant ("de" — see
 # SCHEMA.md "Scope decisions") whose 2-character value spuriously substring-
 # matches inside ordinary German words, always landing in "ambiguous".
-_SKIPPED_FIELDS = frozenset({"doc_id", "schema_version", "idioma"})
+_SKIPPED_FIELDS = frozenset({"doc_id", "schema_version", "language"})
 
 
 @dataclass
@@ -171,8 +171,8 @@ def _format_check(check: FieldCheck) -> str:
     extra = ""
     if len(check.searched) > 1:
         others = ", ".join(repr(s) for s in check.searched[1:])
-        extra = f" (buscado también como {others})"
-    times = "vez" if check.count == 1 else "veces"
+        extra = f" (also searched as {others})"
+    times = "time" if check.count == 1 else "times"
     return f"  {check.field}: {check.value!r}{extra} — {check.count} {times}"
 
 
@@ -201,9 +201,9 @@ def main() -> None:
         print(f"error: invalid JSON in exploratory record: {exc}", file=sys.stderr)
         sys.exit(1)
 
-    _print_section("Aparece exactamente una vez", result.unique)
-    _print_section("Aparece varias veces (ambiguo)", result.ambiguous)
-    _print_section("NO aparece en el texto", result.missing)
+    _print_section("Found exactly once", result.unique)
+    _print_section("Found several times (ambiguous)", result.ambiguous)
+    _print_section("NOT found in the text", result.missing)
 
 
 if __name__ == "__main__":

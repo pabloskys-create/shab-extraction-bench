@@ -177,8 +177,8 @@ def build_metadata(
     }
     if site_total is not None and site_total != population_size:
         metadata["population_note"] = (
-            f"HTML capturado con infinite-scroll incompleto: contiene {population_size} "
-            f"de {site_total} publicaciones reportadas por el sitio para este día."
+            f"HTML captured with incomplete infinite-scroll: contains {population_size} "
+            f"of the {site_total} publications the site reports for this day."
         )
     return metadata
 
@@ -230,7 +230,7 @@ def main() -> None:
     full_manifest, sample_manifest = build_manifests(
         args.html_path, args.n, args.seed, args.start_id
     )
-    print(f"{len(full_manifest['records'])} registros encontrados")
+    print(f"{len(full_manifest['records'])} records found")
 
     out_dir = args.html_path.parent
     (out_dir / "manifest_full.json").write_text(

@@ -14,13 +14,13 @@ A single notice can contain four different dates. Keep them apart.
 
 | Field | Trigger phrase in the source | If the phrase is absent |
 |---|---|---|
-| `fecha_acto` | `Statutenänderung: …` · `Statutendatum: …` · `Beginn: …` · `Löschungsdatum: …` | **`null`** — never substitute another date |
-| `tagesregister_fecha` | `Tagesregister-Nr. NNNN vom …` | always present |
-| `publicacion_anterior_fecha` | `Vorangehende Publikation im SHAB: Nr. N, Datum: …` | `null` |
+| `act_date` | `Statutenänderung: …` · `Statutendatum: …` · `Beginn: …` · `Löschungsdatum: …` | **`null`** — never substitute another date |
+| `tagesregister_date` | `Tagesregister-Nr. NNNN vom …` | always present |
+| `prior_publication_date` | `Vorangehende Publikation im SHAB: Nr. N, Datum: …` | `null` |
 
 ⚠️ The date inside the parenthesis — `(SHAB Nr. 223 vom 18.11.2025, Publ. …)` —
 is the **previous** publication, not this one. It duplicates
-`publicacion_anterior_*`. It is never `fecha_acto`.
+`prior_publication_*`. It is never `act_date`.
 
 All dates as ISO `YYYY-MM-DD`. Source uses `DD.MM.YYYY`.
 
@@ -30,10 +30,10 @@ All dates as ISO `YYYY-MM-DD`. Source uses `DD.MM.YYYY`.
 
 | Field | Contents | Example |
 |---|---|---|
-| `empresa_nombre_completo` | **with** status suffix | `Zermatt Kollektiv AG in Liquidation` |
-| `empresa_nombre_base` | **without** suffix, **with** legal form | `Zermatt Kollektiv AG` |
-| `sufijo_estado` | `in Liquidation` / `in Liq.` only, else `null` | `in Liquidation` |
-| `nombres_alternativos` | parenthesised other-language names | `["… SA", "… Ltd"]` |
+| `company_name_full` | **with** status suffix | `Zermatt Kollektiv AG in Liquidation` |
+| `company_name_base` | **without** suffix, **with** legal form | `Zermatt Kollektiv AG` |
+| `status_suffix` | `in Liquidation` / `in Liq.` only, else `null` | `in Liquidation` |
+| `alternative_names` | parenthesised other-language names | `["… SA", "… Ltd"]` |
 
 Watch for names containing commas: `CHALLENGE FIRST LIMITED, LONDON,
 SUCCURSALE DI LUGANO`. The name ends at `, in <Town>, CHE-`, not at the
@@ -44,16 +44,16 @@ first comma.
 ## Location — four fields, two different things
 
 **Legal seat** (from the body, `… , in <Town>, CHE-…`):
-- `sede_localidad`, `sede_canton`
+- `seat_municipality`, `seat_canton`
 
 **Postal address** (from the header block):
-- `direccion_co` (only if a `c/o` line exists), `direccion_calle`,
-  `direccion_cp` (string, not number), `direccion_localidad`
+- `address_care_of` (only if a `c/o` line exists), `address_street`,
+  `address_postcode` (string, not number), `address_municipality`
 
 These usually match — but not always. A relocated company can have its
 legal seat in the old town and its address in the new one. Read both.
 
-`canton_anterior` / `canton_nuevo`: **only** for moves between cantons
+`canton_previous` / `canton_new`: **only** for moves between cantons
 (look for the company being registered in one canton's register and deleted
 from another's). Both `null` or both filled — never one alone.
 
@@ -61,30 +61,30 @@ from another's). Both `null` or both filled — never one alone.
 
 ## Change pairs — always both or neither
 
-`domicilio_nuevo` / `domicilio_anterior` — only when the act **changes** the
+`domicile_new` / `domicile_previous` — only when the act **changes** the
 address. Trigger: a `Bisher` block, or `[bisher: …]` inline. An address that
-merely appears without changing goes in `direccion_*` only.
+merely appears without changing goes in `address_*` only.
 
-Same for `capital_nuevo_chf` / `capital_anterior_chf`. Trigger:
+Same for `capital_new_chf` / `capital_previous_chf`. Trigger:
 `Aktienkapital neu: … [bisher: …]`.
 
 Capital as a JSON **number**: `189123.50`, not `"189'123.50"`.
 
 Capital on a `Neueintragung` (`Aktienkapital: CHF X`, no `bisher` pair) goes
-in `capital_nuevo_chf`, with `capital_anterior_chf` null.
+in `capital_new_chf`, with `capital_previous_chf` null.
 
-`empresa_nombre_nuevo` / `empresa_nombre_anterior` — both or neither.
-Trigger: `Firma neu:`. Always fill both, even though `_anterior` repeats
-`empresa_nombre_completo`.
+`company_name_new` / `company_name_previous` — both or neither.
+Trigger: `Firma neu:`. Always fill both, even though `_previous` repeats
+`company_name_full`.
 ---
 
 ## People — three lists, pick carefully
 
 | List | Trigger phrase |
 |---|---|
-| `personas_salientes` | `Ausgeschiedene Personen und erloschene Unterschriften:` |
-| `personas_entrantes` | `Eingetragene Personen neu:` (genuinely new) |
-| `personas_mutantes` | an entry under `Eingetragene Personen neu oder mutierend:` that carries its own `[bisher: …]` |
+| `persons_removed` | `Ausgeschiedene Personen und erloschene Unterschriften:` |
+| `persons_added` | `Eingetragene Personen neu:` (genuinely new) |
+| `persons_changed` | an entry under `Eingetragene Personen neu oder mutierend:` that carries its own `[bisher: …]` |
 
 ⚠️ That heading covers BOTH new and changed people. Entries are separated
 by `;` — split on the semicolon and judge each one independently. An entry
@@ -97,20 +97,20 @@ whose attributes changed**, not one leaving and one arriving.
 Each person is an object, never a string:
 
 ```json
-{ "nombre": "Beswick, Graham", "nacionalidad": "britisch",
-  "heimatort": null, "domicilio": "Zermatt",
-  "cargo": "einziges Mitglied", "firma": "Kollektivunterschrift zu zweien" }
+{ "name": "Beswick, Graham", "nationality": "britisch",
+  "heimatort": null, "domicile": "Zermatt",
+  "role": "einziges Mitglied", "signature": "Kollektivunterschrift zu zweien" }
 ```
 
-- Keep `nombre` in source order: `Surname, Firstname`.
-- `von <Ort>` → Swiss citizen; that town is `heimatort`, `nacionalidad` stays `null`.
-- `<Land> Staatsangehörige(r)` → foreigner; `nacionalidad` filled, `heimatort` `null`.
+- Keep `name` in source order: `Surname, Firstname`.
+- `von <Ort>` → Swiss citizen; that town is `heimatort`, `nationality` stays `null`.
+- `<Land> Staatsangehörige(r)` → foreigner; `nationality` filled, `heimatort` `null`.
 - A shift from the second form to the first means naturalisation. Note it.
-- `firma` belongs to the person, not to `extras`.
+- `signature` belongs to the person, not to `extras`.
 
 ---
 
-## `subtipos` — read the verbs, not the nouns
+## `act_subtypes` — read the verbs, not the nouns
 
 Multi-label. Assign every one that applies. Controlled vocabulary only.
 
@@ -132,27 +132,27 @@ Multi-label. Assign every one that applies. Controlled vocabulary only.
 
 Most common mistake: forgetting `organaenderung` when someone leaves.
 
-`subtipos` is always `[]` on `neueintragung` and `loeschung`. Nothing changes
+`act_subtypes` is always `[]` on `neueintragung` and `loeschung`. Nothing changes
 on a registration or a deletion — the act type says it all.
 
 ---
 
-## `extras`, `incierto`, `notas` — what goes where
+## `extras`, `uncertain`, `notes` — what goes where
 
 | Field | Use for |
 |---|---|
 | `extras` | real data with no field of its own — share counts, nominal value, resolution dates. Reuse existing keys, check `SCHEMA.md` first. |
-| `incierto` | field **names** you weren't sure about, e.g. `["subtipos"]` |
-| `notas` | prose: ambiguities, oddities, why you decided something |
+| `uncertain` | field **names** you weren't sure about, e.g. `["act_subtypes"]` |
+| `notes` | prose: ambiguities, oddities, why you decided something |
 
 `extras` is an object: `{"clave": "valor"}`, never a bare string.
 
 `extras.zweck` is truncated to the first sentence or ~200 characters, with
 `…`. It is scored by prefix match, not exact equality.
 
-`extras` vs `notas`: if it is a datum that will recur across documents with
+`extras` vs `notes`: if it is a datum that will recur across documents with
 comparable values, it goes in `extras` under a registered key. If it is your
-observation about this document, it goes in `notas`.
+observation about this document, it goes in `notes`.
 
 `_verified`: `true` only after you have read the whole document.
 
@@ -166,5 +166,5 @@ observation about this document, it goes in `notas`.
 4. `python src/validate.py data/exploratory/NNNN.json`
 5. One line in `annotation_log.md`: time, new fields, doubts
 
-Stuck on a field? Put its name in `incierto`, a sentence in `notas`, and move
+Stuck on a field? Put its name in `uncertain`, a sentence in `notes`, and move
 on. Don't spend twenty minutes on one case.
