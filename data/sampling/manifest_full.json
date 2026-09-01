@@ -1,777 +1,795 @@
 {
   "metadata": {
-    "source_html": "listing_2026-08-10.html",
-    "population_size": 85,
-    "site_reported_total": 85,
+    "source_html": "listing_lu_2026-08-25.html",
+    "population_size": 87,
+    "site_reported_total": null,
     "sample_size": 25,
     "seed": 42,
-    "run_date": "2026-08-25"
+    "run_date": "2026-09-01"
   },
   "records": [
     {
       "position": 1,
-      "id": "85720f3d-3bf3-43bc-85d1-2a983ca5fe18",
-      "publication_number": "HR03-1006727393",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Löschung Jan Röthlisberger Mandate Beratung Verkauf, Belp",
-      "url": "https://www.shab.ch/#!/search/publications/detail/85720f3d-3bf3-43bc-85d1-2a983ca5fe18"
+      "id": "104f4d60-fc2f-48ef-8bff-794abd932002",
+      "publication_number": "HR01-1006738773",
+      "date": "25.08.2026",
+      "source": "SOGC - Commercial Registry entries",
+      "title": "New entries P. Galore Holding AG, Luzern",
+      "url": "https://www.shab.ch/#!/search/publications/detail/104f4d60-fc2f-48ef-8bff-794abd932002"
     },
     {
       "position": 2,
-      "id": "fe6a3982-7787-4f24-98b7-acc32d9e10a0",
-      "publication_number": "HR03-1006727389",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Löschung Cool Umzug, Abohanan, Niederbipp",
-      "url": "https://www.shab.ch/#!/search/publications/detail/fe6a3982-7787-4f24-98b7-acc32d9e10a0"
+      "id": "55f58d85-de2f-4862-97ee-249e288ecc6d",
+      "publication_number": "HR01-1006738768",
+      "date": "25.08.2026",
+      "source": "SOGC - Commercial Registry entries",
+      "title": "New entries Büroscuro KlG, Luzern",
+      "url": "https://www.shab.ch/#!/search/publications/detail/55f58d85-de2f-4862-97ee-249e288ecc6d"
     },
     {
       "position": 3,
-      "id": "120301f6-0cee-467b-83a9-634bb484eb9a",
-      "publication_number": "HR02-1006727345",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Mutation Gibag Schüpbach Gewerbe-, Immobilien-, Bau-AG, Signau",
-      "url": "https://www.shab.ch/#!/search/publications/detail/120301f6-0cee-467b-83a9-634bb484eb9a"
+      "id": "14580d9c-fbf0-4c5f-b22b-a2682a33ef16",
+      "publication_number": "HR01-1006738770",
+      "date": "25.08.2026",
+      "source": "SOGC - Commercial Registry entries",
+      "title": "New entries EK ISOL - Kane Eggenschwiler, Emmen",
+      "url": "https://www.shab.ch/#!/search/publications/detail/14580d9c-fbf0-4c5f-b22b-a2682a33ef16"
     },
     {
       "position": 4,
-      "id": "31652a9c-fdaf-4894-a588-76439f0067ae",
-      "publication_number": "HR02-1006727325",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Mutation Asemblis GmbH, Bern",
-      "url": "https://www.shab.ch/#!/search/publications/detail/31652a9c-fdaf-4894-a588-76439f0067ae"
+      "id": "eafefc01-83ef-49bb-852e-b7dfcbbd7d2a",
+      "publication_number": "HR01-1006738775",
+      "date": "25.08.2026",
+      "source": "SOGC - Commercial Registry entries",
+      "title": "New entries Veloxon Engineering GmbH, Buchrain",
+      "url": "https://www.shab.ch/#!/search/publications/detail/eafefc01-83ef-49bb-852e-b7dfcbbd7d2a"
     },
     {
       "position": 5,
-      "id": "d101380a-daaa-4a18-8aeb-a3f1b72c9b0f",
-      "publication_number": "HR02-1006727327",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Mutation BLUE-art Roggegratbad AG, Wyssachen",
-      "url": "https://www.shab.ch/#!/search/publications/detail/d101380a-daaa-4a18-8aeb-a3f1b72c9b0f"
+      "id": "2b64fb16-e0e6-4002-8442-d5bb6fa8fbb3",
+      "publication_number": "HR02-1006738804",
+      "date": "25.08.2026",
+      "source": "SOGC - Commercial Registry entries",
+      "title": "Change MAWEB Consulting GmbH, Luzern",
+      "url": "https://www.shab.ch/#!/search/publications/detail/2b64fb16-e0e6-4002-8442-d5bb6fa8fbb3"
     },
     {
       "position": 6,
-      "id": "07ef1bd0-97af-4daa-8241-acf489856da6",
-      "publication_number": "HR02-1006727367",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Mutation Prapp GmbH, Sutz-Lattrigen",
-      "url": "https://www.shab.ch/#!/search/publications/detail/07ef1bd0-97af-4daa-8241-acf489856da6"
+      "id": "871a3e5f-d240-4516-9743-2e5e399803e4",
+      "publication_number": "HR02-1006738783",
+      "date": "25.08.2026",
+      "source": "SOGC - Commercial Registry entries",
+      "title": "Change Baumeler Reisen AG, Luzern",
+      "url": "https://www.shab.ch/#!/search/publications/detail/871a3e5f-d240-4516-9743-2e5e399803e4"
     },
     {
       "position": 7,
-      "id": "35c0aad2-4472-47ed-8cdf-df21b5140696",
-      "publication_number": "HR01-1006727311",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Neueintragung Enerprice Partners AG, Münchenbuchsee",
-      "url": "https://www.shab.ch/#!/search/publications/detail/35c0aad2-4472-47ed-8cdf-df21b5140696"
+      "id": "e349cc6e-5ef1-40ee-b8df-7e8ffacf7224",
+      "publication_number": "HR02-1006738785",
+      "date": "25.08.2026",
+      "source": "SOGC - Commercial Registry entries",
+      "title": "Change BE Netz AG, Luzern",
+      "url": "https://www.shab.ch/#!/search/publications/detail/e349cc6e-5ef1-40ee-b8df-7e8ffacf7224"
     },
     {
       "position": 8,
-      "id": "175bb882-c212-43ad-b04c-fed781612061",
-      "publication_number": "HR01-1006727314",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Neueintragung Modellspielwelt im Emmental Wyttenbach, Biglen",
-      "url": "https://www.shab.ch/#!/search/publications/detail/175bb882-c212-43ad-b04c-fed781612061"
+      "id": "10e1f64f-82c3-4c74-a249-c0ca30252a87",
+      "publication_number": "HR02-1006738786",
+      "date": "25.08.2026",
+      "source": "SOGC - Commercial Registry entries",
+      "title": "Change beplus Architekten AG, Altishofen",
+      "url": "https://www.shab.ch/#!/search/publications/detail/10e1f64f-82c3-4c74-a249-c0ca30252a87"
     },
     {
       "position": 9,
-      "id": "bd4ae28f-fa3e-425b-8e17-86e2b37a3520",
-      "publication_number": "HR01-1006727312",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Neueintragung Mindmattermotion Bauer, Bern",
-      "url": "https://www.shab.ch/#!/search/publications/detail/bd4ae28f-fa3e-425b-8e17-86e2b37a3520"
+      "id": "a6860cc9-97ae-404d-a65d-49859c5d0b8f",
+      "publication_number": "HR02-1006738830",
+      "date": "25.08.2026",
+      "source": "SOGC - Commercial Registry entries",
+      "title": "Change Tourismus Forum Luzern, Luzern",
+      "url": "https://www.shab.ch/#!/search/publications/detail/a6860cc9-97ae-404d-a65d-49859c5d0b8f"
     },
     {
       "position": 10,
-      "id": "c6c80c4b-2f25-436a-b42b-de102a055290",
-      "publication_number": "HR02-1006727382",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Mutation Wohnbaugenossenschaft Sunneschyn, Biel/Bienne",
-      "url": "https://www.shab.ch/#!/search/publications/detail/c6c80c4b-2f25-436a-b42b-de102a055290"
+      "id": "c30fefdb-ad0b-4f87-be82-f291199b8c31",
+      "publication_number": "HR02-1006738820",
+      "date": "25.08.2026",
+      "source": "SOGC - Commercial Registry entries",
+      "title": "Change Rossi Aregger AG, Luzern",
+      "url": "https://www.shab.ch/#!/search/publications/detail/c30fefdb-ad0b-4f87-be82-f291199b8c31"
     },
     {
       "position": 11,
-      "id": "523cd094-d15c-43b8-b8a9-0ab1ab1a2eee",
-      "publication_number": "HR02-1006727384",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Mutation Yeap GmbH, Köniz, neu Yeap GmbH in Liquidation",
-      "url": "https://www.shab.ch/#!/search/publications/detail/523cd094-d15c-43b8-b8a9-0ab1ab1a2eee"
+      "id": "23b5388a-e9b8-4bb6-acc0-4ad3fb2d551f",
+      "publication_number": "HR02-1006738803",
+      "date": "25.08.2026",
+      "source": "SOGC - Commercial Registry entries",
+      "title": "Change Margot und Jost Limmacher-Leo Stiftung, Adligenswil",
+      "url": "https://www.shab.ch/#!/search/publications/detail/23b5388a-e9b8-4bb6-acc0-4ad3fb2d551f"
     },
     {
       "position": 12,
-      "id": "37db9527-a3ca-4483-86f2-00ed4d39b750",
-      "publication_number": "HR02-1006727376",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Mutation Stiftung Vinetum, Biel/Bienne",
-      "url": "https://www.shab.ch/#!/search/publications/detail/37db9527-a3ca-4483-86f2-00ed4d39b750"
+      "id": "8baa07a9-5769-4f16-bce9-4dee5307eec3",
+      "publication_number": "HR02-1006738791",
+      "date": "25.08.2026",
+      "source": "SOGC - Commercial Registry entries",
+      "title": "Change Colotec AG, Mauensee, new Sursee",
+      "url": "https://www.shab.ch/#!/search/publications/detail/8baa07a9-5769-4f16-bce9-4dee5307eec3"
     },
     {
       "position": 13,
-      "id": "bcc981a6-c08c-48d0-8d5d-14b8d9e0ee57",
-      "publication_number": "HR02-1006727352",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Mutation Jemaily Nguyen & Partner, Bern",
-      "url": "https://www.shab.ch/#!/search/publications/detail/bcc981a6-c08c-48d0-8d5d-14b8d9e0ee57"
+      "id": "6b461926-e410-4cd3-97c5-412184fb6021",
+      "publication_number": "HR02-1006738823",
+      "date": "25.08.2026",
+      "source": "SOGC - Commercial Registry entries",
+      "title": "Change SCHERLER AG, Luzern",
+      "url": "https://www.shab.ch/#!/search/publications/detail/6b461926-e410-4cd3-97c5-412184fb6021"
     },
     {
       "position": 14,
-      "id": "76e6d07e-1448-4824-8e26-f8c5dfe5d83b",
-      "publication_number": "HR02-1006727343",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Mutation Fontaris AG, Bern",
-      "url": "https://www.shab.ch/#!/search/publications/detail/76e6d07e-1448-4824-8e26-f8c5dfe5d83b"
+      "id": "ae39db19-bf56-4634-887b-8901c11534c0",
+      "publication_number": "HR02-1006738802",
+      "date": "25.08.2026",
+      "source": "SOGC - Commercial Registry entries",
+      "title": "Change KUFIMA Holding AG, Meggen",
+      "url": "https://www.shab.ch/#!/search/publications/detail/ae39db19-bf56-4634-887b-8901c11534c0"
     },
     {
       "position": 15,
-      "id": "dd0f1e7b-10e5-4bad-b9ee-30baa0cfc11b",
-      "publication_number": "HR02-1006727340",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Mutation Ergotherapie NeuTakt GmbH, Belp",
-      "url": "https://www.shab.ch/#!/search/publications/detail/dd0f1e7b-10e5-4bad-b9ee-30baa0cfc11b"
+      "id": "97b7563c-e906-4a76-b273-fd7866aff3d1",
+      "publication_number": "HR02-1006738822",
+      "date": "25.08.2026",
+      "source": "SOGC - Commercial Registry entries",
+      "title": "Change Schaller-Zemp-Stiftung, Geuensee",
+      "url": "https://www.shab.ch/#!/search/publications/detail/97b7563c-e906-4a76-b273-fd7866aff3d1"
     },
     {
       "position": 16,
-      "id": "6bde1bdd-a37e-4594-83b4-6afc042cc6ef",
-      "publication_number": "HR02-1006727338",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Mutation ELIZA AG, Bern",
-      "url": "https://www.shab.ch/#!/search/publications/detail/6bde1bdd-a37e-4594-83b4-6afc042cc6ef"
+      "id": "5321b5aa-59ca-436d-84a4-cc702e7ae755",
+      "publication_number": "HR02-1006738799",
+      "date": "25.08.2026",
+      "source": "SOGC - Commercial Registry entries",
+      "title": "Change HEISPA AG, Emmen",
+      "url": "https://www.shab.ch/#!/search/publications/detail/5321b5aa-59ca-436d-84a4-cc702e7ae755"
     },
     {
       "position": 17,
-      "id": "b47b47db-c3b1-45e2-8d02-82653d0b0238",
-      "publication_number": "HR02-1006727377",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Mutation Tina Leuenberger, Bern",
-      "url": "https://www.shab.ch/#!/search/publications/detail/b47b47db-c3b1-45e2-8d02-82653d0b0238"
+      "id": "4dc39865-e54f-4bf1-a68f-51fa4ebc3bf9",
+      "publication_number": "HR02-1006738800",
+      "date": "25.08.2026",
+      "source": "SOGC - Commercial Registry entries",
+      "title": "Change IBeFix GmbH, Kriens, new IBeFix GmbH in Liquidation",
+      "url": "https://www.shab.ch/#!/search/publications/detail/4dc39865-e54f-4bf1-a68f-51fa4ebc3bf9"
     },
     {
       "position": 18,
-      "id": "e450ef21-8b5a-4d68-8506-697919649065",
-      "publication_number": "HR02-1006727355",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Mutation Liyame Gastro GmbH, Herzogenbuchsee, neu Burgdorf",
-      "url": "https://www.shab.ch/#!/search/publications/detail/e450ef21-8b5a-4d68-8506-697919649065"
+      "id": "843539bf-fd3a-4e07-b3d2-2a78ae3f2a3e",
+      "publication_number": "HR02-1006738831",
+      "date": "25.08.2026",
+      "source": "SOGC - Commercial Registry entries",
+      "title": "Change Truecolour Finger & Walker, Horw, new Luzern",
+      "url": "https://www.shab.ch/#!/search/publications/detail/843539bf-fd3a-4e07-b3d2-2a78ae3f2a3e"
     },
     {
       "position": 19,
-      "id": "fc2d4822-e0cc-440b-baab-5c16b5391fe7",
-      "publication_number": "HR02-1006727348",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Mutation HEROS-DOGSPORT Heiko Frey, Biel/Bienne, neu Péry-La Heutte",
-      "url": "https://www.shab.ch/#!/search/publications/detail/fc2d4822-e0cc-440b-baab-5c16b5391fe7"
+      "id": "dd62a510-8e16-4f48-81c2-ee418bd30fb8",
+      "publication_number": "HR01-1006738772",
+      "date": "25.08.2026",
+      "source": "SOGC - Commercial Registry entries",
+      "title": "New entries KYN DACH GmbH, Buchrain",
+      "url": "https://www.shab.ch/#!/search/publications/detail/dd62a510-8e16-4f48-81c2-ee418bd30fb8"
     },
     {
       "position": 20,
-      "id": "461ed049-3bb9-4ed1-b9c2-f2b80866aef2",
-      "publication_number": "HR02-1006727371",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Mutation Seniorenzentrum Schweizerhof AG, Kandersteg",
-      "url": "https://www.shab.ch/#!/search/publications/detail/461ed049-3bb9-4ed1-b9c2-f2b80866aef2"
+      "id": "42577921-41b1-49a2-bd66-5a64db43b318",
+      "publication_number": "HR01-1006738767",
+      "date": "25.08.2026",
+      "source": "SOGC - Commercial Registry entries",
+      "title": "New entries Bonaterra AG, Malters",
+      "url": "https://www.shab.ch/#!/search/publications/detail/42577921-41b1-49a2-bd66-5a64db43b318"
     },
     {
       "position": 21,
-      "id": "dd2c348b-6d6b-4be0-ae1d-6a1b1af8b32c",
-      "publication_number": "HR02-1006727373",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Mutation Spital Emmental AG, Burgdorf",
-      "url": "https://www.shab.ch/#!/search/publications/detail/dd2c348b-6d6b-4be0-ae1d-6a1b1af8b32c"
+      "id": "69c3030e-2927-486a-a3e5-72c78e3e8f23",
+      "publication_number": "HR02-1006738835",
+      "date": "25.08.2026",
+      "source": "SOGC - Commercial Registry entries",
+      "title": "Change WIK Switzerland GmbH, Luzern",
+      "url": "https://www.shab.ch/#!/search/publications/detail/69c3030e-2927-486a-a3e5-72c78e3e8f23"
     },
     {
       "position": 22,
-      "id": "d6beb9d8-838a-48b4-83f3-c102a8f1cfd9",
-      "publication_number": "HR02-1006727383",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Mutation Woodkit Khamso, Neuenegg",
-      "url": "https://www.shab.ch/#!/search/publications/detail/d6beb9d8-838a-48b4-83f3-c102a8f1cfd9"
+      "id": "d0c1a80d-f7ef-43d3-a2f9-5df1f22297bb",
+      "publication_number": "HR02-1006738837",
+      "date": "25.08.2026",
+      "source": "SOGC - Commercial Registry entries",
+      "title": "Change BLT Group Thaler, Ebikon, new Schmiedrued",
+      "url": "https://www.shab.ch/#!/search/publications/detail/d0c1a80d-f7ef-43d3-a2f9-5df1f22297bb"
     },
     {
       "position": 23,
-      "id": "efcea8b3-3a1a-4bfa-a1e9-626118da9740",
-      "publication_number": "HR02-1006727331",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Mutation Della Neve Baumontage, Madiswil, neu Della Neve Gastro",
-      "url": "https://www.shab.ch/#!/search/publications/detail/efcea8b3-3a1a-4bfa-a1e9-626118da9740"
+      "id": "b2fcb9ab-5dc7-468b-a35c-e5658bac97d9",
+      "publication_number": "HR02-1006738814",
+      "date": "25.08.2026",
+      "source": "SOGC - Commercial Registry entries",
+      "title": "Change PMpartners AG Portfolio Management Services, Luzern",
+      "url": "https://www.shab.ch/#!/search/publications/detail/b2fcb9ab-5dc7-468b-a35c-e5658bac97d9"
     },
     {
       "position": 24,
-      "id": "38c26a1e-6e8d-4bf6-bdd9-1401d3647ae4",
-      "publication_number": "HR02-1006727328",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Mutation Central-Garage Grünen AG, Sumiswald",
-      "url": "https://www.shab.ch/#!/search/publications/detail/38c26a1e-6e8d-4bf6-bdd9-1401d3647ae4"
+      "id": "264789b5-b17b-4bfb-80a5-cee7cee14753",
+      "publication_number": "HR02-1006738801",
+      "date": "25.08.2026",
+      "source": "SOGC - Commercial Registry entries",
+      "title": "Change Koller Kanal GmbH, Malters",
+      "url": "https://www.shab.ch/#!/search/publications/detail/264789b5-b17b-4bfb-80a5-cee7cee14753"
     },
     {
       "position": 25,
-      "id": "c4fc573a-6b0d-4835-a82e-92bea0462738",
-      "publication_number": "HR02-1006727335",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Mutation Dr. Gurtner Med AG, Köniz",
-      "url": "https://www.shab.ch/#!/search/publications/detail/c4fc573a-6b0d-4835-a82e-92bea0462738"
+      "id": "45533776-bc40-48ca-82bd-db85f8419872",
+      "publication_number": "HR02-1006738806",
+      "date": "25.08.2026",
+      "source": "SOGC - Commercial Registry entries",
+      "title": "Change Max Geiser GmbH, Luzern",
+      "url": "https://www.shab.ch/#!/search/publications/detail/45533776-bc40-48ca-82bd-db85f8419872"
     },
     {
       "position": 26,
-      "id": "48d36e7d-88a3-4425-9d91-16912b7f5877",
-      "publication_number": "HR02-1006727381",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Mutation Wiesener Design Manufaktur, Burgdorf",
-      "url": "https://www.shab.ch/#!/search/publications/detail/48d36e7d-88a3-4425-9d91-16912b7f5877"
+      "id": "920acd71-3ddc-46c1-8a86-c260212663e0",
+      "publication_number": "HR02-1006738827",
+      "date": "25.08.2026",
+      "source": "SOGC - Commercial Registry entries",
+      "title": "Change Stiftung zur Unterstützung des Hilfswerkes von Schwester Consolata Graber, Emmen",
+      "url": "https://www.shab.ch/#!/search/publications/detail/920acd71-3ddc-46c1-8a86-c260212663e0"
     },
     {
       "position": 27,
-      "id": "ddb94425-cfc1-4f04-b011-d0c5a60377f2",
-      "publication_number": "HR03-1006727388",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Löschung BETON24 BERISHA, Ostermundigen",
-      "url": "https://www.shab.ch/#!/search/publications/detail/ddb94425-cfc1-4f04-b011-d0c5a60377f2"
+      "id": "9327b586-456b-4f9b-8de9-980de0dbdb41",
+      "publication_number": "HR02-1006738818",
+      "date": "25.08.2026",
+      "source": "SOGC - Commercial Registry entries",
+      "title": "Change RIMO Holding AG, Reiden",
+      "url": "https://www.shab.ch/#!/search/publications/detail/9327b586-456b-4f9b-8de9-980de0dbdb41"
     },
     {
       "position": 28,
-      "id": "cacda54b-9b5f-42f3-89a2-305bdf1eb325",
-      "publication_number": "HR03-1006727387",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Löschung Autosattlerei T. Probst, Münsingen",
-      "url": "https://www.shab.ch/#!/search/publications/detail/cacda54b-9b5f-42f3-89a2-305bdf1eb325"
+      "id": "e7b2a0a7-9b98-47d0-9654-8dd04b94053e",
+      "publication_number": "HR02-1006738828",
+      "date": "25.08.2026",
+      "source": "SOGC - Commercial Registry entries",
+      "title": "Change Studio B 47 AG, Horw",
+      "url": "https://www.shab.ch/#!/search/publications/detail/e7b2a0a7-9b98-47d0-9654-8dd04b94053e"
     },
     {
       "position": 29,
-      "id": "ca074224-d5e0-4475-a9f0-00b7338581f2",
-      "publication_number": "HR01-1006727310",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Neueintragung Chez India KLG, Biel/Bienne",
-      "url": "https://www.shab.ch/#!/search/publications/detail/ca074224-d5e0-4475-a9f0-00b7338581f2"
+      "id": "6182a8c3-4ec0-4404-a549-f8894f89b144",
+      "publication_number": "HR02-1006738781",
+      "date": "25.08.2026",
+      "source": "SOGC - Commercial Registry entries",
+      "title": "Change Alpha Privat Investment GmbH, Geuensee, new Wauwil",
+      "url": "https://www.shab.ch/#!/search/publications/detail/6182a8c3-4ec0-4404-a549-f8894f89b144"
     },
     {
       "position": 30,
-      "id": "726cc21b-719a-4b57-bd7b-5d9c3c450ba9",
-      "publication_number": "HR01-1006727317",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Neueintragung STuBI Fleisch AG, Eggiwil",
-      "url": "https://www.shab.ch/#!/search/publications/detail/726cc21b-719a-4b57-bd7b-5d9c3c450ba9"
+      "id": "a2fc3dfc-f910-45c3-a32a-b9c3280aaf93",
+      "publication_number": "HR02-1006738789",
+      "date": "25.08.2026",
+      "source": "SOGC - Commercial Registry entries",
+      "title": "Change BK LAC IP GmbH, Luzern",
+      "url": "https://www.shab.ch/#!/search/publications/detail/a2fc3dfc-f910-45c3-a32a-b9c3280aaf93"
     },
     {
       "position": 31,
-      "id": "89f79328-8ba5-45e5-be94-55fabd7e0358",
-      "publication_number": "HR01-1006727315",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Neueintragung Pettinaro Cleaning Services, Köniz",
-      "url": "https://www.shab.ch/#!/search/publications/detail/89f79328-8ba5-45e5-be94-55fabd7e0358"
+      "id": "42fba15d-2dc4-43ab-b630-3fb23963e58a",
+      "publication_number": "HR03-1006738836",
+      "date": "25.08.2026",
+      "source": "SOGC - Commercial Registry entries",
+      "title": "Deletion Agro Lötscher, Escholzmatt-Marbach",
+      "url": "https://www.shab.ch/#!/search/publications/detail/42fba15d-2dc4-43ab-b630-3fb23963e58a"
     },
     {
       "position": 32,
-      "id": "33f41bf0-9a74-4be3-bb07-d4eef01c02c9",
-      "publication_number": "HR01-1006727318",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Neueintragung Studio MO Gfeller Architektur, Bern",
-      "url": "https://www.shab.ch/#!/search/publications/detail/33f41bf0-9a74-4be3-bb07-d4eef01c02c9"
+      "id": "b6616e14-fec7-4867-a683-1d773fce9540",
+      "publication_number": "HR02-1006738778",
+      "date": "25.08.2026",
+      "source": "SOGC - Commercial Registry entries",
+      "title": "Change adidas International Trading AG, Root",
+      "url": "https://www.shab.ch/#!/search/publications/detail/b6616e14-fec7-4867-a683-1d773fce9540"
     },
     {
       "position": 33,
-      "id": "18784e82-fbba-4058-a7a5-858839072006",
-      "publication_number": "HR02-1006727333",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Mutation Die neue Küche GmbH, Köniz",
-      "url": "https://www.shab.ch/#!/search/publications/detail/18784e82-fbba-4058-a7a5-858839072006"
+      "id": "7241721e-8902-45bb-a9a9-fc1be01afd1a",
+      "publication_number": "HR02-1006738798",
+      "date": "25.08.2026",
+      "source": "SOGC - Commercial Registry entries",
+      "title": "Change Hausarztzentrum Altstadt AG, Luzern",
+      "url": "https://www.shab.ch/#!/search/publications/detail/7241721e-8902-45bb-a9a9-fc1be01afd1a"
     },
     {
       "position": 34,
-      "id": "a66e04ba-d2e5-418d-af14-84a4f7b07393",
-      "publication_number": "HR02-1006727332",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Mutation Dentomobil Thun GmbH in Liquidation, Thun",
-      "url": "https://www.shab.ch/#!/search/publications/detail/a66e04ba-d2e5-418d-af14-84a4f7b07393"
+      "id": "f4bd1d6c-bcbd-4e52-bb88-b2f9f287ae34",
+      "publication_number": "HR02-1006738787",
+      "date": "25.08.2026",
+      "source": "SOGC - Commercial Registry entries",
+      "title": "Change Bill Stiftung, Adligenswil",
+      "url": "https://www.shab.ch/#!/search/publications/detail/f4bd1d6c-bcbd-4e52-bb88-b2f9f287ae34"
     },
     {
       "position": 35,
-      "id": "ef0f9a1f-b439-4db5-8a51-8a7d0f9d49a8",
-      "publication_number": "HR02-1006727344",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Mutation Gesundheit Emmental Service AG, Burgdorf",
-      "url": "https://www.shab.ch/#!/search/publications/detail/ef0f9a1f-b439-4db5-8a51-8a7d0f9d49a8"
+      "id": "bbb306ed-795e-4cee-a120-3c348576f074",
+      "publication_number": "HR02-1006738797",
+      "date": "25.08.2026",
+      "source": "SOGC - Commercial Registry entries",
+      "title": "Change F. Wicki Immobilien AG, Flühli, new F. Wicki Immobilien AG in Liquidation",
+      "url": "https://www.shab.ch/#!/search/publications/detail/bbb306ed-795e-4cee-a120-3c348576f074"
     },
     {
       "position": 36,
-      "id": "3bda3149-900e-4b95-bac1-9b0e42ac5cf1",
-      "publication_number": "HR02-1006727337",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Mutation Elim Stiftung für Eltern und Kind, Sumiswald",
-      "url": "https://www.shab.ch/#!/search/publications/detail/3bda3149-900e-4b95-bac1-9b0e42ac5cf1"
+      "id": "a8c1d1e5-7f00-42a7-893d-1b49f46180a4",
+      "publication_number": "HR02-1006738782",
+      "date": "25.08.2026",
+      "source": "SOGC - Commercial Registry entries",
+      "title": "Change Baugenossenschaft Buttisholz, Buttisholz",
+      "url": "https://www.shab.ch/#!/search/publications/detail/a8c1d1e5-7f00-42a7-893d-1b49f46180a4"
     },
     {
       "position": 37,
-      "id": "ec1f3068-c9b4-4b86-aaf9-62c96bc1931c",
-      "publication_number": "HR02-1006727346",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Mutation Haushalt-Elektro GmbH, Bern, neu Haushalt-Elektro GmbH in Liquidation",
-      "url": "https://www.shab.ch/#!/search/publications/detail/ec1f3068-c9b4-4b86-aaf9-62c96bc1931c"
+      "id": "58afea7b-7219-4f4e-90b1-649b39151af0",
+      "publication_number": "HR02-1006738807",
+      "date": "25.08.2026",
+      "source": "SOGC - Commercial Registry entries",
+      "title": "Change Meyer Bau GmbH, Ufhusen, new Meyer Bau GmbH in Liquidation",
+      "url": "https://www.shab.ch/#!/search/publications/detail/58afea7b-7219-4f4e-90b1-649b39151af0"
     },
     {
       "position": 38,
-      "id": "0ab0993b-6da9-415b-bd42-8073d087e359",
-      "publication_number": "HR02-1006727347",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Mutation Helios Solar Energie GmbH (Helios Solar Energie Sàrl) (Helios Solar Energie Sagl) (Helios Solar Energie Ltd liab Co), Rüdtligen-Alchenflüh, neu Moosseedorf",
-      "url": "https://www.shab.ch/#!/search/publications/detail/0ab0993b-6da9-415b-bd42-8073d087e359"
+      "id": "c2ee612f-0ad0-4139-a297-90897d5d5c64",
+      "publication_number": "HR03-1006738839",
+      "date": "25.08.2026",
+      "source": "SOGC - Commercial Registry entries",
+      "title": "Deletion M. Pfluger Arlesheim GmbH, mit Sitz in Luzern in Liquidation, Luzern",
+      "url": "https://www.shab.ch/#!/search/publications/detail/c2ee612f-0ad0-4139-a297-90897d5d5c64"
     },
     {
       "position": 39,
-      "id": "f6c49f7e-c5a7-415f-ab1c-e637da539c9e",
-      "publication_number": "HR02-1006727378",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Mutation Töff Outlet Seeland GmbH, Biel/Bienne, neu Töff Outlet Seeland GmbH in Liquidation",
-      "url": "https://www.shab.ch/#!/search/publications/detail/f6c49f7e-c5a7-415f-ab1c-e637da539c9e"
+      "id": "ae79dc5e-4ab5-417c-8935-83bb6d0525e4",
+      "publication_number": "HR02-1006738825",
+      "date": "25.08.2026",
+      "source": "SOGC - Commercial Registry entries",
+      "title": "Change Schwanenplatz AG, Luzern",
+      "url": "https://www.shab.ch/#!/search/publications/detail/ae79dc5e-4ab5-417c-8935-83bb6d0525e4"
     },
     {
       "position": 40,
-      "id": "cd51115f-ce0c-43a2-aa26-201af1d73c91",
-      "publication_number": "HR02-1006727379",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Mutation Vinetum Services AG, Biel/Bienne",
-      "url": "https://www.shab.ch/#!/search/publications/detail/cd51115f-ce0c-43a2-aa26-201af1d73c91"
+      "id": "b0453e09-8493-40a2-9ff6-6ff55726b56b",
+      "publication_number": "HR02-1006738816",
+      "date": "25.08.2026",
+      "source": "SOGC - Commercial Registry entries",
+      "title": "Change R. Steffen Garage AG, Nottwil",
+      "url": "https://www.shab.ch/#!/search/publications/detail/b0453e09-8493-40a2-9ff6-6ff55726b56b"
     },
     {
       "position": 41,
-      "id": "9a5c2a65-1254-4001-9b95-a67ed39fa265",
-      "publication_number": "HR02-1006727375",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Mutation Stiftung Edition Nehemia, Steffisburg",
-      "url": "https://www.shab.ch/#!/search/publications/detail/9a5c2a65-1254-4001-9b95-a67ed39fa265"
+      "id": "828ef43b-24a8-4228-8a89-7d29f69389ad",
+      "publication_number": "HR02-1006738811",
+      "date": "25.08.2026",
+      "source": "SOGC - Commercial Registry entries",
+      "title": "Change Personalfürsorgestiftung der ANDRITZ HYDRO AG, Kriens",
+      "url": "https://www.shab.ch/#!/search/publications/detail/828ef43b-24a8-4228-8a89-7d29f69389ad"
     },
     {
       "position": 42,
-      "id": "76cde6d2-792d-4d41-9b38-909952ba195c",
-      "publication_number": "HR02-1006727366",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Mutation petcenter.ch AG, Niederbipp",
-      "url": "https://www.shab.ch/#!/search/publications/detail/76cde6d2-792d-4d41-9b38-909952ba195c"
+      "id": "64f8d3b4-6203-4e26-9ada-02a8de5f39d9",
+      "publication_number": "HR02-1006738817",
+      "date": "25.08.2026",
+      "source": "SOGC - Commercial Registry entries",
+      "title": "Change Raumfluss AG, Luzern",
+      "url": "https://www.shab.ch/#!/search/publications/detail/64f8d3b4-6203-4e26-9ada-02a8de5f39d9"
     },
     {
       "position": 43,
-      "id": "1e2c48cc-1727-4b5d-8bc8-de60cefddbab",
-      "publication_number": "HR02-1006727359",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Mutation Mecamould Handels AG, Dotzigen",
-      "url": "https://www.shab.ch/#!/search/publications/detail/1e2c48cc-1727-4b5d-8bc8-de60cefddbab"
+      "id": "c7916762-14dd-4781-ac62-0b4fe7e6719b",
+      "publication_number": "HR02-1006738819",
+      "date": "25.08.2026",
+      "source": "SOGC - Commercial Registry entries",
+      "title": "Change RIWAG Präzisionswerkzeuge AG, Adligenswil",
+      "url": "https://www.shab.ch/#!/search/publications/detail/c7916762-14dd-4781-ac62-0b4fe7e6719b"
     },
     {
       "position": 44,
-      "id": "6ec1330e-c0f4-4375-8b88-59ef748c5576",
-      "publication_number": "HR02-1006727358",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Mutation Marfurt AG für Immobilien-Dienstleistungen, Biel/Bienne",
-      "url": "https://www.shab.ch/#!/search/publications/detail/6ec1330e-c0f4-4375-8b88-59ef748c5576"
+      "id": "c07f8a9e-b3c3-4c4e-8dd3-f2c71ca04544",
+      "publication_number": "HR03-1006738838",
+      "date": "25.08.2026",
+      "source": "SOGC - Commercial Registry entries",
+      "title": "Deletion Localsale Idris Mahmoud, Luzern",
+      "url": "https://www.shab.ch/#!/search/publications/detail/c07f8a9e-b3c3-4c4e-8dd3-f2c71ca04544"
     },
     {
       "position": 45,
-      "id": "fac7e227-2f8a-4b56-9efa-f690f1de7619",
-      "publication_number": "HR02-1006727361",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Mutation NAMAMEN BERN AG, Bern, neu NAMAMEN BERN AG in Liquidation",
-      "url": "https://www.shab.ch/#!/search/publications/detail/fac7e227-2f8a-4b56-9efa-f690f1de7619"
+      "id": "d2901b84-d660-40ec-b422-16aa47f890f5",
+      "publication_number": "HR02-1006738813",
+      "date": "25.08.2026",
+      "source": "SOGC - Commercial Registry entries",
+      "title": "Change PLEMAG Immobilien AG, Dierikon, new Adligenswil",
+      "url": "https://www.shab.ch/#!/search/publications/detail/d2901b84-d660-40ec-b422-16aa47f890f5"
     },
     {
       "position": 46,
-      "id": "1edc4bc6-be20-405b-a06c-f81bc3db8609",
-      "publication_number": "HR02-1006727360",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Mutation Meister Coaching, Thun, neu Steffisburg",
-      "url": "https://www.shab.ch/#!/search/publications/detail/1edc4bc6-be20-405b-a06c-f81bc3db8609"
+      "id": "1d94de25-79b2-4441-85d2-9b7922065deb",
+      "publication_number": "HR02-1006738812",
+      "date": "25.08.2026",
+      "source": "SOGC - Commercial Registry entries",
+      "title": "Change Picture Story GmbH in Liquidation, Meggen",
+      "url": "https://www.shab.ch/#!/search/publications/detail/1d94de25-79b2-4441-85d2-9b7922065deb"
     },
     {
       "position": 47,
-      "id": "dad36f59-e71c-4ae4-b903-93ebb4d905c8",
-      "publication_number": "HR02-1006727362",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Mutation Niesen Gärten GmbH, Sigriswil",
-      "url": "https://www.shab.ch/#!/search/publications/detail/dad36f59-e71c-4ae4-b903-93ebb4d905c8"
+      "id": "62653448-1b7a-4116-aa37-02850d4a6983",
+      "publication_number": "HR02-1006738815",
+      "date": "25.08.2026",
+      "source": "SOGC - Commercial Registry entries",
+      "title": "Change PSE AG in Liquidation, Emmen",
+      "url": "https://www.shab.ch/#!/search/publications/detail/62653448-1b7a-4116-aa37-02850d4a6983"
     },
     {
       "position": 48,
-      "id": "78415e2a-8e55-4d73-b210-712f09d478d0",
-      "publication_number": "HR02-1006727356",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Mutation M. Arslan GmbH in Liquidation, Langnau im Emmental",
-      "url": "https://www.shab.ch/#!/search/publications/detail/78415e2a-8e55-4d73-b210-712f09d478d0"
+      "id": "c36c7877-d116-4edf-b2bc-d53f86185bce",
+      "publication_number": "HR02-1006738834",
+      "date": "25.08.2026",
+      "source": "SOGC - Commercial Registry entries",
+      "title": "Change WIK FAR EAST LIMITED, Hongkong, Zweigniederlassung Luzern, Luzern",
+      "url": "https://www.shab.ch/#!/search/publications/detail/c36c7877-d116-4edf-b2bc-d53f86185bce"
     },
     {
       "position": 49,
-      "id": "544c2c64-f5bd-4635-b4bc-6c45527fb5bd",
-      "publication_number": "HR02-1006727369",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Mutation Restaurant Christina, Inhaberin Antunes Rainho, Wilderswil",
-      "url": "https://www.shab.ch/#!/search/publications/detail/544c2c64-f5bd-4635-b4bc-6c45527fb5bd"
+      "id": "8600e2ae-649b-4b8f-818c-5c71f40de882",
+      "publication_number": "HR02-1006738821",
+      "date": "25.08.2026",
+      "source": "SOGC - Commercial Registry entries",
+      "title": "Change Scalepoint Technologies Switzerland GmbH, Luzern",
+      "url": "https://www.shab.ch/#!/search/publications/detail/8600e2ae-649b-4b8f-818c-5c71f40de882"
     },
     {
       "position": 50,
-      "id": "a8d5f450-9adc-4e48-b01a-ae0d5c1c676c",
-      "publication_number": "HR02-1006727322",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Mutation Alexandra Herren Businesscoaching GmbH, Neuenegg",
-      "url": "https://www.shab.ch/#!/search/publications/detail/a8d5f450-9adc-4e48-b01a-ae0d5c1c676c"
+      "id": "4c63e524-96ea-459a-acab-1926bdc247e8",
+      "publication_number": "HR02-1006738833",
+      "date": "25.08.2026",
+      "source": "SOGC - Commercial Registry entries",
+      "title": "Change Waldstätter Swiss Invest AG, Luzern",
+      "url": "https://www.shab.ch/#!/search/publications/detail/4c63e524-96ea-459a-acab-1926bdc247e8"
     },
     {
       "position": 51,
-      "id": "c03d80e6-dc89-48e8-8a2f-5395fc3f5f32",
-      "publication_number": "HR02-1006727320",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Mutation A&M Estate AG, Bern, neu Ittigen",
-      "url": "https://www.shab.ch/#!/search/publications/detail/c03d80e6-dc89-48e8-8a2f-5395fc3f5f32"
+      "id": "1b206f6d-594a-4c7d-9434-b46a01a8e976",
+      "publication_number": "HR02-1006738829",
+      "date": "25.08.2026",
+      "source": "SOGC - Commercial Registry entries",
+      "title": "Change Sun Fung Offset Binding (Europe) GmbH, Luzern",
+      "url": "https://www.shab.ch/#!/search/publications/detail/1b206f6d-594a-4c7d-9434-b46a01a8e976"
     },
     {
       "position": 52,
-      "id": "e3c102ec-7e98-4f7f-98e2-bc983d0ddcdc",
-      "publication_number": "HR02-1006727321",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Mutation acoalex GmbH, Brügg",
-      "url": "https://www.shab.ch/#!/search/publications/detail/e3c102ec-7e98-4f7f-98e2-bc983d0ddcdc"
+      "id": "7b56f7b1-bd50-4346-871b-c667dd81de7c",
+      "publication_number": "HR02-1006738826",
+      "date": "25.08.2026",
+      "source": "SOGC - Commercial Registry entries",
+      "title": "Change SHORP GmbH, Luzern",
+      "url": "https://www.shab.ch/#!/search/publications/detail/7b56f7b1-bd50-4346-871b-c667dd81de7c"
     },
     {
       "position": 53,
-      "id": "e7a9aaa7-0618-49f3-a366-54b2dda2c506",
-      "publication_number": "HR02-1006727334",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Mutation Digital Nexus Flückiger, Bern, neu DIGNEX Flückiger",
-      "url": "https://www.shab.ch/#!/search/publications/detail/e7a9aaa7-0618-49f3-a366-54b2dda2c506"
+      "id": "a747a590-5614-4112-bcda-f5fc268882b8",
+      "publication_number": "HR02-1006738824",
+      "date": "25.08.2026",
+      "source": "SOGC - Commercial Registry entries",
+      "title": "Change Schneiter Gastro, Hergiswil (NW), new Ebikon",
+      "url": "https://www.shab.ch/#!/search/publications/detail/a747a590-5614-4112-bcda-f5fc268882b8"
     },
     {
       "position": 54,
-      "id": "15eafb65-a94e-4ec5-accc-7da104724977",
-      "publication_number": "HR02-1006727339",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Mutation Equimode Pieper, Neuendorf, neu Roggwil (BE)",
-      "url": "https://www.shab.ch/#!/search/publications/detail/15eafb65-a94e-4ec5-accc-7da104724977"
+      "id": "d4d3331a-476b-4f97-98f9-4d9986a9eb26",
+      "publication_number": "HR02-1006738793",
+      "date": "25.08.2026",
+      "source": "SOGC - Commercial Registry entries",
+      "title": "Change Epic Games Commerce GmbH, Root",
+      "url": "https://www.shab.ch/#!/search/publications/detail/d4d3331a-476b-4f97-98f9-4d9986a9eb26"
     },
     {
       "position": 55,
-      "id": "33a3e3ca-1890-4c2a-aa5e-24f90b0e8f41",
-      "publication_number": "HR02-1006727370",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Mutation Schenk Manfred GmbH, Sumiswald, neu Schenk Bedachungen GmbH",
-      "url": "https://www.shab.ch/#!/search/publications/detail/33a3e3ca-1890-4c2a-aa5e-24f90b0e8f41"
+      "id": "72d17f49-795a-4f48-a72f-a2cc41b703d6",
+      "publication_number": "HR02-1006738794",
+      "date": "25.08.2026",
+      "source": "SOGC - Commercial Registry entries",
+      "title": "Change Epic Games Entertainment International GmbH, Root",
+      "url": "https://www.shab.ch/#!/search/publications/detail/72d17f49-795a-4f48-a72f-a2cc41b703d6"
     },
     {
       "position": 56,
-      "id": "5c8333bd-191f-4db4-a46e-028cfc546d4c",
-      "publication_number": "HR02-1006727380",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Mutation Weibel AG, Bern",
-      "url": "https://www.shab.ch/#!/search/publications/detail/5c8333bd-191f-4db4-a46e-028cfc546d4c"
+      "id": "8cb05c53-3d17-4db7-9ebf-130f177e73e4",
+      "publication_number": "HR02-1006738788",
+      "date": "25.08.2026",
+      "source": "SOGC - Commercial Registry entries",
+      "title": "Change BK APAC IP GmbH, Luzern",
+      "url": "https://www.shab.ch/#!/search/publications/detail/8cb05c53-3d17-4db7-9ebf-130f177e73e4"
     },
     {
       "position": 57,
-      "id": "edaeb060-c6c8-4f57-8988-8393601f8879",
-      "publication_number": "HR02-1006727374",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Mutation Stiftung Bieler Theater, Biel/Bienne",
-      "url": "https://www.shab.ch/#!/search/publications/detail/edaeb060-c6c8-4f57-8988-8393601f8879"
+      "id": "69169db3-9017-4cf9-92f2-4eaa1b61c593",
+      "publication_number": "HR02-1006738784",
+      "date": "25.08.2026",
+      "source": "SOGC - Commercial Registry entries",
+      "title": "Change beck konzept ag, Buttisholz",
+      "url": "https://www.shab.ch/#!/search/publications/detail/69169db3-9017-4cf9-92f2-4eaa1b61c593"
     },
     {
       "position": 58,
-      "id": "0044ac81-581f-4bcd-8fd3-b7813c1582e2",
-      "publication_number": "HR03-1006727386",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Löschung ATC Zhang, Wohlen bei Bern",
-      "url": "https://www.shab.ch/#!/search/publications/detail/0044ac81-581f-4bcd-8fd3-b7813c1582e2"
+      "id": "dcf3447f-5b5f-454a-98f5-ef67c994a3b9",
+      "publication_number": "HR02-1006738792",
+      "date": "25.08.2026",
+      "source": "SOGC - Commercial Registry entries",
+      "title": "Change dislingua AG, Luzern",
+      "url": "https://www.shab.ch/#!/search/publications/detail/dcf3447f-5b5f-454a-98f5-ef67c994a3b9"
     },
     {
       "position": 59,
-      "id": "48925c28-b0e3-44bb-a1d0-3c1942f5a03a",
-      "publication_number": "HR03-1006727392",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Löschung hpohl.com Holger Pohl Consulting, Aeschi bei Spiez",
-      "url": "https://www.shab.ch/#!/search/publications/detail/48925c28-b0e3-44bb-a1d0-3c1942f5a03a"
+      "id": "61f36a1d-60af-4b0c-aa77-f350ff752413",
+      "publication_number": "HR02-1006738790",
+      "date": "25.08.2026",
+      "source": "SOGC - Commercial Registry entries",
+      "title": "Change byebyecar Osmani, Sursee",
+      "url": "https://www.shab.ch/#!/search/publications/detail/61f36a1d-60af-4b0c-aa77-f350ff752413"
     },
     {
       "position": 60,
-      "id": "8ecb746d-f0fb-4851-ac25-2b80846ff88f",
-      "publication_number": "HR03-1006727390",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Löschung Curphills, Inh. Philipp Mollet, Bern",
-      "url": "https://www.shab.ch/#!/search/publications/detail/8ecb746d-f0fb-4851-ac25-2b80846ff88f"
+      "id": "b17c1786-69ff-4807-a112-009a2f620274",
+      "publication_number": "HR02-1006738840",
+      "date": "25.08.2026",
+      "source": "SOGC - Commercial Registry entries",
+      "title": "Change Network of Arts AG, Luzern, new Sarnen",
+      "url": "https://www.shab.ch/#!/search/publications/detail/b17c1786-69ff-4807-a112-009a2f620274"
     },
     {
       "position": 61,
-      "id": "f15ced92-730f-4c2f-adff-c176402cb0bb",
-      "publication_number": "HR03-1006727391",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Löschung HORIZONT-Versicherungstreuhand Robert Koch, Muri bei Bern",
-      "url": "https://www.shab.ch/#!/search/publications/detail/f15ced92-730f-4c2f-adff-c176402cb0bb"
+      "id": "58a76bf0-7e77-4230-a05f-a0eec049b24e",
+      "publication_number": "HR02-1006738780",
+      "date": "25.08.2026",
+      "source": "SOGC - Commercial Registry entries",
+      "title": "Change ait Schweiz AG, Egolzwil",
+      "url": "https://www.shab.ch/#!/search/publications/detail/58a76bf0-7e77-4230-a05f-a0eec049b24e"
     },
     {
       "position": 62,
-      "id": "5931071b-0958-49d3-bd41-26e7b894fe10",
-      "publication_number": "HR03-1006727385",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Löschung Ari Clean & Facility Services Inh. Ismani, Bern",
-      "url": "https://www.shab.ch/#!/search/publications/detail/5931071b-0958-49d3-bd41-26e7b894fe10"
+      "id": "75ce71f1-d810-488a-91aa-dd77d0599b4b",
+      "publication_number": "HR02-1006738779",
+      "date": "25.08.2026",
+      "source": "SOGC - Commercial Registry entries",
+      "title": "Change aeB Schweiz - Akademie für Erwachsenenbildung, Luzern",
+      "url": "https://www.shab.ch/#!/search/publications/detail/75ce71f1-d810-488a-91aa-dd77d0599b4b"
     },
     {
       "position": 63,
-      "id": "6357fe05-283a-432c-a77c-ae8d4d55b9d5",
-      "publication_number": "HR02-1006727350",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Mutation IDEXX Technologies GmbH, Köniz",
-      "url": "https://www.shab.ch/#!/search/publications/detail/6357fe05-283a-432c-a77c-ae8d4d55b9d5"
+      "id": "5804f8db-5049-4f45-8fb1-5454d4fd6ad9",
+      "publication_number": "HR01-1006738769",
+      "date": "25.08.2026",
+      "source": "SOGC - Commercial Registry entries",
+      "title": "New entries CLYMA GmbH, Luzern",
+      "url": "https://www.shab.ch/#!/search/publications/detail/5804f8db-5049-4f45-8fb1-5454d4fd6ad9"
     },
     {
       "position": 64,
-      "id": "9aa2c088-01e7-447b-ad4b-69483e93a3dd",
-      "publication_number": "HR02-1006727351",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Mutation Immobiliengesellschaft Altes Tramdepot AG, Bern",
-      "url": "https://www.shab.ch/#!/search/publications/detail/9aa2c088-01e7-447b-ad4b-69483e93a3dd"
+      "id": "edbb538b-139e-4a49-8823-e8bfd0bd0d67",
+      "publication_number": "HR01-1006738771",
+      "date": "25.08.2026",
+      "source": "SOGC - Commercial Registry entries",
+      "title": "New entries Gasthaus Rössli GmbH, Dagmersellen, Dagmersellen",
+      "url": "https://www.shab.ch/#!/search/publications/detail/edbb538b-139e-4a49-8823-e8bfd0bd0d67"
     },
     {
       "position": 65,
-      "id": "500ca81e-5f97-4ce3-9ec5-de77acf3a73b",
-      "publication_number": "HR02-1006727354",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Mutation Linder Immobilien AG, Aeschi (SO), neu Lyss",
-      "url": "https://www.shab.ch/#!/search/publications/detail/500ca81e-5f97-4ce3-9ec5-de77acf3a73b"
+      "id": "65ee0c5a-0e94-4812-8a9c-2d00f0268263",
+      "publication_number": "HR01-1006738774",
+      "date": "25.08.2026",
+      "source": "SOGC - Commercial Registry entries",
+      "title": "New entries SaenaX Aneas Fernandez, Eich",
+      "url": "https://www.shab.ch/#!/search/publications/detail/65ee0c5a-0e94-4812-8a9c-2d00f0268263"
     },
     {
       "position": 66,
-      "id": "2837dee7-7eb8-4f02-9b2c-04a18a3be709",
-      "publication_number": "HR02-1006727342",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Mutation F+F Bildhaueratelier GmbH, Safnern, neu F+F Bildhaueratelier GmbH in Liquidation",
-      "url": "https://www.shab.ch/#!/search/publications/detail/2837dee7-7eb8-4f02-9b2c-04a18a3be709"
+      "id": "b564295e-cfd1-4814-848d-41b578752981",
+      "publication_number": "HR02-1006738810",
+      "date": "25.08.2026",
+      "source": "SOGC - Commercial Registry entries",
+      "title": "Change Pensionskasse der Luzerner Kantonalbank, Luzern",
+      "url": "https://www.shab.ch/#!/search/publications/detail/b564295e-cfd1-4814-848d-41b578752981"
     },
     {
       "position": 67,
-      "id": "56e98f09-e1c3-4c58-a441-f8ef5c80b053",
-      "publication_number": "HR02-1006727357",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Mutation Maison Affairs AG, Bern",
-      "url": "https://www.shab.ch/#!/search/publications/detail/56e98f09-e1c3-4c58-a441-f8ef5c80b053"
+      "id": "71cf442f-10b9-4509-ad6b-43eed29914ce",
+      "publication_number": "HR02-1006738777",
+      "date": "25.08.2026",
+      "source": "SOGC - Commercial Registry entries",
+      "title": "Change 1a hunkeler holzbau AG, Ebikon",
+      "url": "https://www.shab.ch/#!/search/publications/detail/71cf442f-10b9-4509-ad6b-43eed29914ce"
     },
     {
       "position": 68,
-      "id": "ff33bc98-3d94-4dd6-9ac1-57f63edbbb62",
-      "publication_number": "HR02-1006727363",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Mutation NOSS Genossenschaft, Spiez",
-      "url": "https://www.shab.ch/#!/search/publications/detail/ff33bc98-3d94-4dd6-9ac1-57f63edbbb62"
+      "id": "3c7b5037-5e65-4d66-a204-37879540d6eb",
+      "publication_number": "HR02-1006738776",
+      "date": "25.08.2026",
+      "source": "SOGC - Commercial Registry entries",
+      "title": "Change 1a hunkeler fenster AG, Ebikon",
+      "url": "https://www.shab.ch/#!/search/publications/detail/3c7b5037-5e65-4d66-a204-37879540d6eb"
     },
     {
       "position": 69,
-      "id": "14716ee1-04bd-496b-830b-83abc2c2d39d",
-      "publication_number": "HR02-1006727349",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Mutation Hertig Handarbeiten GmbH, Münsingen",
-      "url": "https://www.shab.ch/#!/search/publications/detail/14716ee1-04bd-496b-830b-83abc2c2d39d"
+      "id": "68584f85-92e3-4bab-a10a-65dfe0bc5877",
+      "publication_number": "HR02-1006738832",
+      "date": "25.08.2026",
+      "source": "SOGC - Commercial Registry entries",
+      "title": "Change Vonwyl AG Kanaltechnik in Liquidation, Sursee",
+      "url": "https://www.shab.ch/#!/search/publications/detail/68584f85-92e3-4bab-a10a-65dfe0bc5877"
     },
     {
       "position": 70,
-      "id": "271fafb8-261d-4e36-a131-731d551b11d8",
-      "publication_number": "HR02-1006727364",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Mutation Operaio GmbH, Stettlen, neu Operaio AG",
-      "url": "https://www.shab.ch/#!/search/publications/detail/271fafb8-261d-4e36-a131-731d551b11d8"
+      "id": "4169f0c9-f5fa-4bbb-8b61-ed3cf267c70c",
+      "publication_number": "HR02-1006738796",
+      "date": "25.08.2026",
+      "source": "SOGC - Commercial Registry entries",
+      "title": "Change Ersotech AG, Luzern",
+      "url": "https://www.shab.ch/#!/search/publications/detail/4169f0c9-f5fa-4bbb-8b61-ed3cf267c70c"
     },
     {
       "position": 71,
-      "id": "25c8dc99-4492-429f-968e-24e7f03a01ee",
-      "publication_number": "HR02-1006727353",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Mutation Kröner Consulting, Bolligen, neu Kröner Design",
-      "url": "https://www.shab.ch/#!/search/publications/detail/25c8dc99-4492-429f-968e-24e7f03a01ee"
+      "id": "cf78cf99-112b-4640-bc85-71def4315338",
+      "publication_number": "HR02-1006738795",
+      "date": "25.08.2026",
+      "source": "SOGC - Commercial Registry entries",
+      "title": "Change ER Enterprises AG, Luzern",
+      "url": "https://www.shab.ch/#!/search/publications/detail/cf78cf99-112b-4640-bc85-71def4315338"
     },
     {
       "position": 72,
-      "id": "2a8d94d6-f66b-4048-a1f1-961e405ee781",
-      "publication_number": "HR02-1006727336",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Mutation Elepress Bau AG, Bern",
-      "url": "https://www.shab.ch/#!/search/publications/detail/2a8d94d6-f66b-4048-a1f1-961e405ee781"
+      "id": "b204ae86-6731-45b4-b295-f3c8f79fba99",
+      "publication_number": "HR02-1006738809",
+      "date": "25.08.2026",
+      "source": "SOGC - Commercial Registry entries",
+      "title": "Change Partner Beratungs AG, Luzern",
+      "url": "https://www.shab.ch/#!/search/publications/detail/b204ae86-6731-45b4-b295-f3c8f79fba99"
     },
     {
       "position": 73,
-      "id": "55b56cc2-f081-436f-9701-181f8c9b6df5",
-      "publication_number": "HR02-1006727341",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Mutation F. Zaugg AG Kälte + Klima, Thun",
-      "url": "https://www.shab.ch/#!/search/publications/detail/55b56cc2-f081-436f-9701-181f8c9b6df5"
+      "id": "d78eafb8-c6ba-4672-a94f-2e52fd51a19e",
+      "publication_number": "HR02-1006738808",
+      "date": "25.08.2026",
+      "source": "SOGC - Commercial Registry entries",
+      "title": "Change MisSpelling GmbH, Schenkon",
+      "url": "https://www.shab.ch/#!/search/publications/detail/d78eafb8-c6ba-4672-a94f-2e52fd51a19e"
     },
     {
       "position": 74,
-      "id": "be3b7b5e-c77f-476d-af3a-219ead20552b",
-      "publication_number": "HR02-1006727326",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Mutation Bigler Samen AG, Steffisburg",
-      "url": "https://www.shab.ch/#!/search/publications/detail/be3b7b5e-c77f-476d-af3a-219ead20552b"
+      "id": "0b340ded-efd0-471e-91ed-e731f4f9bddb",
+      "publication_number": "HR02-1006738805",
+      "date": "25.08.2026",
+      "source": "SOGC - Commercial Registry entries",
+      "title": "Change Max, Binia und Jakob Bill Stiftung, Adligenswil",
+      "url": "https://www.shab.ch/#!/search/publications/detail/0b340ded-efd0-471e-91ed-e731f4f9bddb"
     },
     {
       "position": 75,
-      "id": "ad719d75-6185-4c5c-8ec0-94ea697d8f5c",
-      "publication_number": "HR02-1006727324",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Mutation Alpine Rams American Football GmbH, Stans, neu Biel/Bienne",
-      "url": "https://www.shab.ch/#!/search/publications/detail/ad719d75-6185-4c5c-8ec0-94ea697d8f5c"
+      "id": "c2c99825-801f-47de-a13f-22287197be9a",
+      "publication_number": "LS02-0000081094",
+      "date": "25.08.2026",
+      "source": "SOGC - Calls to creditors following liquidation",
+      "title": "Call to creditors following the liquidation B. Sherifi Kirchberg SG GmbH, mit Sitz in Luzern in Liquidation",
+      "url": "https://www.shab.ch/#!/search/publications/detail/c2c99825-801f-47de-a13f-22287197be9a"
     },
     {
       "position": 76,
-      "id": "55ab0b84-338d-4367-9adc-53954b29d8d4",
-      "publication_number": "HR02-1006727323",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Mutation Allfinanz Hügli GmbH, Heimberg",
-      "url": "https://www.shab.ch/#!/search/publications/detail/55ab0b84-338d-4367-9adc-53954b29d8d4"
+      "id": "ead94c20-b227-45a5-82f3-f514d0f76307",
+      "publication_number": "SR01-0000017911",
+      "date": "25.08.2026",
+      "source": "SOGC - Other calls to creditors issued under company law",
+      "title": "Call to creditors following the merger of companies limited by shares acc. MerA GC Europe AG with GC International AG",
+      "url": "https://www.shab.ch/#!/search/publications/detail/ead94c20-b227-45a5-82f3-f514d0f76307"
     },
     {
       "position": 77,
-      "id": "e4e84032-4fb4-4c4d-9a39-893e3de49c70",
-      "publication_number": "HR02-1006727329",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Mutation Comanis Foundation, Bern, neu Wohlen bei Bern",
-      "url": "https://www.shab.ch/#!/search/publications/detail/e4e84032-4fb4-4c4d-9a39-893e3de49c70"
+      "id": "c4ebb597-ac02-48a6-a87b-efba3e5f71e3",
+      "publication_number": "KK01-0000069210",
+      "date": "25.08.2026",
+      "source": "SOGC - Bankruptcies",
+      "title": "Provisional announcement of bankruptcy SM Regio Print GmbH",
+      "url": "https://www.shab.ch/#!/search/publications/detail/c4ebb597-ac02-48a6-a87b-efba3e5f71e3"
     },
     {
       "position": 78,
-      "id": "9eba4c44-329d-4dd7-a9b7-1dc7f504d556",
-      "publication_number": "HR02-1006727330",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Mutation David Dauwalder Hypnosetherapie, Bern",
-      "url": "https://www.shab.ch/#!/search/publications/detail/9eba4c44-329d-4dd7-a9b7-1dc7f504d556"
+      "id": "d00c8b6d-2933-483e-9c3b-53a5d169047c",
+      "publication_number": "KK01-0000069224",
+      "date": "25.08.2026",
+      "source": "SOGC - Bankruptcies",
+      "title": "Provisional announcement of bankruptcy northdirection GmbH",
+      "url": "https://www.shab.ch/#!/search/publications/detail/d00c8b6d-2933-483e-9c3b-53a5d169047c"
     },
     {
       "position": 79,
-      "id": "3e5ee379-5307-40a8-86e1-f6b157c1e6ae",
-      "publication_number": "HR01-1006727309",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Neueintragung Baker Coiffeur GmbH, Bern",
-      "url": "https://www.shab.ch/#!/search/publications/detail/3e5ee379-5307-40a8-86e1-f6b157c1e6ae"
+      "id": "b5dcefaf-2d3f-44b7-ab1c-6e59e6f8802a",
+      "publication_number": "KK01-0000069206",
+      "date": "25.08.2026",
+      "source": "SOGC - Bankruptcies",
+      "title": "Provisional announcement of bankruptcy TransMech GmbH",
+      "url": "https://www.shab.ch/#!/search/publications/detail/b5dcefaf-2d3f-44b7-ab1c-6e59e6f8802a"
     },
     {
       "position": 80,
-      "id": "c710235a-df1e-4b6f-b725-1fa4ecb28767",
-      "publication_number": "HR01-1006727313",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Neueintragung modellbau-seeland Weber, Péry-La Heutte",
-      "url": "https://www.shab.ch/#!/search/publications/detail/c710235a-df1e-4b6f-b725-1fa4ecb28767"
+      "id": "e5b2f1c4-99c9-4965-8e46-df64df923c1a",
+      "publication_number": "KK01-0000069208",
+      "date": "25.08.2026",
+      "source": "SOGC - Bankruptcies",
+      "title": "Provisional announcement of bankruptcy Status Energy AG",
+      "url": "https://www.shab.ch/#!/search/publications/detail/e5b2f1c4-99c9-4965-8e46-df64df923c1a"
     },
     {
       "position": 81,
-      "id": "a8d12567-1c7c-4304-aace-f6f667d46ad3",
-      "publication_number": "HR01-1006727316",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Neueintragung Physio Bantiger Inhaber Stevo Pavlovic, Ostermundigen",
-      "url": "https://www.shab.ch/#!/search/publications/detail/a8d12567-1c7c-4304-aace-f6f667d46ad3"
+      "id": "e0f88eb2-129b-4aa0-9831-cb78d208c4ae",
+      "publication_number": "KK01-0000069214",
+      "date": "25.08.2026",
+      "source": "SOGC - Bankruptcies",
+      "title": "Provisional announcement of bankruptcy UNLEASH GmbH",
+      "url": "https://www.shab.ch/#!/search/publications/detail/e0f88eb2-129b-4aa0-9831-cb78d208c4ae"
     },
     {
       "position": 82,
-      "id": "d994838c-6376-4977-9c17-12a26714f760",
-      "publication_number": "HR02-1006727368",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Mutation ProBau Brienz Immobilien GmbH, Brienz (BE)",
-      "url": "https://www.shab.ch/#!/search/publications/detail/d994838c-6376-4977-9c17-12a26714f760"
+      "id": "87210a52-d1bc-40c6-860c-de3b7e737162",
+      "publication_number": "KK01-0000069216",
+      "date": "25.08.2026",
+      "source": "SOGC - Bankruptcies",
+      "title": "Provisional announcement of bankruptcy Ihre kluge Wahl GmbH",
+      "url": "https://www.shab.ch/#!/search/publications/detail/87210a52-d1bc-40c6-860c-de3b7e737162"
     },
     {
       "position": 83,
-      "id": "5ea17e3a-fd76-4e1d-93fc-1ee0318443e6",
-      "publication_number": "HR02-1006727365",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Mutation Personalvorsorgestiftung der Haag-Streit Gruppe Köniz, Köniz",
-      "url": "https://www.shab.ch/#!/search/publications/detail/5ea17e3a-fd76-4e1d-93fc-1ee0318443e6"
+      "id": "9d12b9ec-2a54-4d35-bbbd-88db61dba40a",
+      "publication_number": "KK01-0000069234",
+      "date": "25.08.2026",
+      "source": "SOGC - Bankruptcies",
+      "title": "Provisional announcement of bankruptcy EOPTI SOLUTIONS AG",
+      "url": "https://www.shab.ch/#!/search/publications/detail/9d12b9ec-2a54-4d35-bbbd-88db61dba40a"
     },
     {
       "position": 84,
-      "id": "fc71017a-4ecf-46ac-b2b2-e72d100695af",
-      "publication_number": "HR02-1006727372",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Mutation SKEMA Energie und Kampfkunst Binggeli, Ostermundigen, neu SKEMA Kampfkunstschule Bern-Ostermundigen Adrian Binggeli",
-      "url": "https://www.shab.ch/#!/search/publications/detail/fc71017a-4ecf-46ac-b2b2-e72d100695af"
+      "id": "a2ab86c1-3599-4dbe-aa17-ad60f78e20dd",
+      "publication_number": "AW01-0000064845",
+      "date": "25.08.2026",
+      "source": "SOGC - Lost securities and other titles",
+      "title": "Call Papier-Inhaberschuldbriefe, charged to Grundstück Nr. 394 und den mitverpfändeten Grundstücken Nrn. 367, 412 und 555, alle GB Ufhusen",
+      "url": "https://www.shab.ch/#!/search/publications/detail/a2ab86c1-3599-4dbe-aa17-ad60f78e20dd"
     },
     {
       "position": 85,
-      "id": "ca663f9a-dedf-4618-b6d4-c0933281fbaf",
-      "publication_number": "HR02-1006727395",
-      "date": "10.08.2026",
-      "source": "SHAB - Handelsregistereintragungen",
-      "title": "Mutation Nour Kamhieh Auto Carrosserie, Lyss, neu Muntelier",
-      "url": "https://www.shab.ch/#!/search/publications/detail/ca663f9a-dedf-4618-b6d4-c0933281fbaf"
+      "id": "09692852-26ed-4742-ab8c-c772c9e588b3",
+      "publication_number": "AB02-0000021851",
+      "date": "25.08.2026",
+      "source": "SOGC - Employment",
+      "title": "Work-time permit granted RUAG AG",
+      "url": "https://www.shab.ch/#!/search/publications/detail/09692852-26ed-4742-ab8c-c772c9e588b3"
+    },
+    {
+      "position": 86,
+      "id": "3ca725d7-c744-4bc6-9215-777180112b77",
+      "publication_number": "AB01-0000023180",
+      "date": "25.08.2026",
+      "source": "SOGC - Employment",
+      "title": "Request for work-time permit Connect Com AG",
+      "url": "https://www.shab.ch/#!/search/publications/detail/3ca725d7-c744-4bc6-9215-777180112b77"
+    },
+    {
+      "position": 87,
+      "id": "1e99dbac-abb3-4cc5-bd1a-403de12342c9",
+      "publication_number": "AB02-0000021846",
+      "date": "25.08.2026",
+      "source": "SOGC - Employment",
+      "title": "Work-time permit granted Securiton AG",
+      "url": "https://www.shab.ch/#!/search/publications/detail/1e99dbac-abb3-4cc5-bd1a-403de12342c9"
     }
   ]
 }
