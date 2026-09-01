@@ -1,0 +1,176 @@
+{
+  "description": "Publications already annotated in data/exploratory/, excluded from the sampling frame so no document is annotated twice. The listing HTML carries no UID and no Tagesregister number, so the exclusion key is publication_number; the values for 0004-0028 are the provenance recorded in data/sampling/manifest_sample.json at commit e7f894e, the run that assigned those doc_ids. `title` is the first line of data/raw/<doc_id>.txt and is used by src/sample.py only as an independent cross-check on that key.",
+  "records": [
+    {
+      "doc_id": "0001",
+      "publication_number": null,
+      "source_html": null,
+      "title": "Mutation The Zermatt Kollektiv AG in Liquidation, Zermatt",
+      "note": "Hand-picked before the sampling frame existed; not present in any listing in data/sampling/, so it removes nothing from the population."
+    },
+    {
+      "doc_id": "0002",
+      "publication_number": null,
+      "source_html": null,
+      "title": "Mutation denkarbeit GmbH, Aarau, neu Speicher",
+      "note": "Hand-picked before the sampling frame existed; not present in any listing in data/sampling/, so it removes nothing from the population."
+    },
+    {
+      "doc_id": "0003",
+      "publication_number": null,
+      "source_html": null,
+      "title": "Mutation Noorik Biopharmaceuticals AG, Basel",
+      "note": "Hand-picked before the sampling frame existed; not present in any listing in data/sampling/, so it removes nothing from the population."
+    },
+    {
+      "doc_id": "0004",
+      "publication_number": "HR02-1006727325",
+      "source_html": "listing_be_2026-08-10.html",
+      "title": "Mutation Asemblis GmbH, Bern"
+    },
+    {
+      "doc_id": "0005",
+      "publication_number": "HR02-1006727327",
+      "source_html": "listing_be_2026-08-10.html",
+      "title": "Mutation BLUE-art Roggegratbad AG, Wyssachen"
+    },
+    {
+      "doc_id": "0006",
+      "publication_number": "HR02-1006727376",
+      "source_html": "listing_be_2026-08-10.html",
+      "title": "Mutation Stiftung Vinetum, Biel/Bienne"
+    },
+    {
+      "doc_id": "0007",
+      "publication_number": "HR02-1006727343",
+      "source_html": "listing_be_2026-08-10.html",
+      "title": "Mutation Fontaris AG, Bern"
+    },
+    {
+      "doc_id": "0008",
+      "publication_number": "HR02-1006727340",
+      "source_html": "listing_be_2026-08-10.html",
+      "title": "Mutation Ergotherapie NeuTakt GmbH, Belp"
+    },
+    {
+      "doc_id": "0009",
+      "publication_number": "HR02-1006727355",
+      "source_html": "listing_be_2026-08-10.html",
+      "title": "Mutation Liyame Gastro GmbH, Herzogenbuchsee, neu Burgdorf"
+    },
+    {
+      "doc_id": "0010",
+      "publication_number": "HR02-1006727381",
+      "source_html": "listing_be_2026-08-10.html",
+      "title": "Mutation Wiesener Design Manufaktur, Burgdorf"
+    },
+    {
+      "doc_id": "0011",
+      "publication_number": "HR03-1006727387",
+      "source_html": "listing_be_2026-08-10.html",
+      "title": "Löschung Autosattlerei T. Probst, Münsingen"
+    },
+    {
+      "doc_id": "0012",
+      "publication_number": "HR01-1006727310",
+      "source_html": "listing_be_2026-08-10.html",
+      "title": "Neueintragung Chez India KLG, Biel/Bienne"
+    },
+    {
+      "doc_id": "0013",
+      "publication_number": "HR01-1006727317",
+      "source_html": "listing_be_2026-08-10.html",
+      "title": "Neueintragung STuBI Fleisch AG, Eggiwil"
+    },
+    {
+      "doc_id": "0014",
+      "publication_number": "HR01-1006727318",
+      "source_html": "listing_be_2026-08-10.html",
+      "title": "Neueintragung Studio MO Gfeller Architektur, Bern"
+    },
+    {
+      "doc_id": "0015",
+      "publication_number": "HR02-1006727337",
+      "source_html": "listing_be_2026-08-10.html",
+      "title": "Mutation Elim Stiftung für Eltern und Kind, Sumiswald"
+    },
+    {
+      "doc_id": "0016",
+      "publication_number": "HR02-1006727347",
+      "source_html": "listing_be_2026-08-10.html",
+      "title": "Mutation Helios Solar Energie GmbH (Helios Solar Energie Sàrl) (Helios Solar Energie Sagl) (Helios Solar Energie Ltd liab Co), Rüdtligen-Alchenflüh, neu Moosseedorf"
+    },
+    {
+      "doc_id": "0017",
+      "publication_number": "HR02-1006727321",
+      "source_html": "listing_be_2026-08-10.html",
+      "title": "Mutation acoalex GmbH, Brügg"
+    },
+    {
+      "doc_id": "0018",
+      "publication_number": "HR02-1006727339",
+      "source_html": "listing_be_2026-08-10.html",
+      "title": "Mutation Equimode Pieper, Neuendorf, neu Roggwil (BE)"
+    },
+    {
+      "doc_id": "0019",
+      "publication_number": "HR02-1006727370",
+      "source_html": "listing_be_2026-08-10.html",
+      "title": "Mutation Schenk Manfred GmbH, Sumiswald, neu Schenk Bedachungen GmbH"
+    },
+    {
+      "doc_id": "0020",
+      "publication_number": "HR03-1006727386",
+      "source_html": "listing_be_2026-08-10.html",
+      "title": "Löschung ATC Zhang, Wohlen bei Bern"
+    },
+    {
+      "doc_id": "0021",
+      "publication_number": "HR02-1006727354",
+      "source_html": "listing_be_2026-08-10.html",
+      "title": "Mutation Linder Immobilien AG, Aeschi (SO), neu Lyss"
+    },
+    {
+      "doc_id": "0022",
+      "publication_number": "HR02-1006727364",
+      "source_html": "listing_be_2026-08-10.html",
+      "title": "Mutation Operaio GmbH, Stettlen, neu Operaio AG"
+    },
+    {
+      "doc_id": "0023",
+      "publication_number": "HR02-1006727341",
+      "source_html": "listing_be_2026-08-10.html",
+      "title": "Mutation F. Zaugg AG Kälte + Klima, Thun"
+    },
+    {
+      "doc_id": "0024",
+      "publication_number": "HR02-1006727323",
+      "source_html": "listing_be_2026-08-10.html",
+      "title": "Mutation Allfinanz Hügli GmbH, Heimberg"
+    },
+    {
+      "doc_id": "0025",
+      "publication_number": "HR01-1006727309",
+      "source_html": "listing_be_2026-08-10.html",
+      "title": "Neueintragung Baker Coiffeur GmbH, Bern"
+    },
+    {
+      "doc_id": "0026",
+      "publication_number": "HR01-1006727313",
+      "source_html": "listing_be_2026-08-10.html",
+      "title": "Neueintragung modellbau-seeland Weber, Péry-La Heutte"
+    },
+    {
+      "doc_id": "0027",
+      "publication_number": "HR02-1006727368",
+      "source_html": "listing_be_2026-08-10.html",
+      "title": "Mutation ProBau Brienz Immobilien GmbH, Brienz (BE)"
+    },
+    {
+      "doc_id": "0028",
+      "publication_number": "HR02-1006727365",
+      "source_html": "listing_be_2026-08-10.html",
+      "title": "Mutation Personalvorsorgestiftung der Haag-Streit Gruppe Köniz, Köniz"
+    }
+  ]
+}
