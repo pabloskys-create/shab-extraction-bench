@@ -4,13 +4,16 @@ tests/fixtures/listing_snippet.html is a hand-trimmed excerpt of the real
 saved page: 12 `list-entry` records with the exact same markup shape, and a
 "15 Treffer" counter that does not match them.
 
-The four `listing_<canton>_<date>.html` fixtures are built from those same
+The five `listing_<canton>_<date>.html` fixtures are built from those same
 12 records and cover the frame checks:
-    aa (07.07)  8 records, counter agrees          — valid
+    aa (07.07)  6 records, counter agrees, every
+                headline an act type               — valid
     bb (08.07)  5 records, counter agrees, the last
                 one repeating aa's HR02-0000001    — valid, exercises dedup
-    cc (09.07)  8 records but a counter of 9       — partial capture
-    dd (10.07)  8 records, English "Results"       — wrong-language capture
+    cc (09.07)  6 records but a counter of 7       — partial capture
+    dd (10.07)  6 records, English "Results"       — wrong-language capture
+    ee (11.07)  aa plus the snippet's Schuldenruf
+                and Vorläufige Konkursanzeige      — rubric filter not applied
 """
 
 from pathlib import Path
@@ -18,10 +21,13 @@ from pathlib import Path
 import pytest
 
 from src.sample import (
+    ACT_TYPE_FIRST_WORDS,
     FrameError,
     apply_exclusions,
     build_manifests,
     build_population,
+    check_rubric,
+    foreign_rubric_counts,
     load_exclusions,
     load_listing,
     load_listings,
@@ -40,12 +46,13 @@ LISTING_AA = FIXTURES / "listing_aa_2026-07-07.html"
 LISTING_BB = FIXTURES / "listing_bb_2026-07-08.html"
 LISTING_CC = FIXTURES / "listing_cc_2026-07-09.html"
 LISTING_DD = FIXTURES / "listing_dd_2026-07-10.html"
+LISTING_EE = FIXTURES / "listing_ee_2026-07-11.html"
 EXCLUSIONS = FIXTURES / "annotated_exclusions.json"
 
-# aa (8) + bb (5), minus bb's repeat of HR02-0000001, minus the two records
+# aa (6) + bb (5), minus bb's repeat of HR02-0000001, minus the two records
 # named in the exclusions fixture.
-UNION_SIZE = 13
-ELIGIBLE_SIZE = 10
+UNION_SIZE = 11
+ELIGIBLE_SIZE = 8
 
 
 # --- parsing ---
@@ -121,8 +128,8 @@ def test_load_listing_labels_the_listing_from_its_filename():
     listing = load_listing(LISTING_AA)
     assert listing["canton"] == "AA"
     assert listing["date"] == "2026-07-07"
-    assert listing["population"] == 8
-    assert listing["site_reported_total"] == 8
+    assert listing["population"] == 6
+    assert listing["site_reported_total"] == 6
 
 
 def test_load_listing_aborts_when_records_do_not_match_the_counter():
@@ -133,6 +140,44 @@ def test_load_listing_aborts_when_records_do_not_match_the_counter():
 def test_load_listing_aborts_on_a_wrong_language_capture():
     with pytest.raises(FrameError, match="Treffer"):
         load_listing(LISTING_DD)
+
+
+def test_load_listing_aborts_when_the_rubric_filter_was_not_applied():
+    with pytest.raises(FrameError, match="Handelsregister rubric filter"):
+        load_listing(LISTING_EE)
+
+
+def test_the_rubric_error_names_every_offending_first_word_with_its_count():
+    with pytest.raises(FrameError) as error:
+        load_listing(LISTING_EE)
+    message = str(error.value)
+    assert "2 of 8 headlines" in message
+    assert "Schuldenruf (1)" in message
+    assert "Vorläufige (1)" in message
+
+
+def test_foreign_rubric_counts_is_empty_for_a_filtered_listing():
+    records = parse_html(LISTING_AA.read_text(encoding="utf-8"))
+    assert foreign_rubric_counts(records) == {}
+
+
+def test_foreign_rubric_counts_orders_by_frequency():
+    records = [
+        {"title": "Mutation Alpha AG, Bern"},
+        {"title": "Vorläufige Konkursanzeige Beta AG, Bern"},
+        {"title": "Vorläufige Konkursanzeige Gamma AG, Bern"},
+        {"title": "Schuldenruf Delta AG, Bern"},
+    ]
+    assert list(foreign_rubric_counts(records)) == ["Vorläufige", "Schuldenruf"]
+
+
+def test_foreign_rubric_counts_accepts_every_act_type():
+    records = [{"title": f"{word} Alpha AG, Bern"} for word in ACT_TYPE_FIRST_WORDS]
+    assert foreign_rubric_counts(records) == {}
+
+
+def test_check_rubric_passes_a_clean_listing():
+    check_rubric("listing_aa_2026-07-07.html", parse_html(LISTING_AA.read_text(encoding="utf-8")))
 
 
 def test_load_listings_orders_by_date_and_canton_not_by_argument_order():
@@ -155,7 +200,7 @@ def test_build_population_labels_each_record_with_its_origin():
 
 def test_build_population_positions_restart_within_each_listing():
     population, _ = build_population(load_listings([LISTING_AA, LISTING_BB]))
-    for canton, expected in (("AA", 8), ("BB", 4)):
+    for canton, expected in (("AA", 6), ("BB", 4)):
         positions = [r["listing_position"] for r in population if r["canton"] == canton]
         assert positions == list(range(1, expected + 1))
 
@@ -280,8 +325,8 @@ def test_build_manifests_metadata_records_the_source_listing_table():
             "source_html": "listing_aa_2026-07-07.html",
             "canton": "AA",
             "date": "2026-07-07",
-            "population": 8,
-            "site_reported_total": 8,
+            "population": 6,
+            "site_reported_total": 6,
         },
         {
             "source_html": "listing_bb_2026-07-08.html",
