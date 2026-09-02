@@ -100,13 +100,17 @@ warm-up phase, before the sampling frame was defined.
   alternative_names and validate.py passed: both are lists of strings and
   alternative_names had no controlled vocabulary. Fixed by forbidding
   act_subtypes values there.
-  - **A verification pass is only as good as its boundaries.** The
+- **A verification pass is only as good as its boundaries.** The
   Spanish→English field rename was verified clean and the suite passed,
   but word-boundary matching never sees a field name embedded inside a
   longer identifier. Twelve test function names and every wildcard
   reference in prose were still Spanish afterwards, and tests do not
   check their own names. Found only by re-sweeping without boundaries
   for an unrelated reason.
+- **A test that skips a check looks the same as one that passes it.**
+  The 0016 test had a comment declining to assert legal_form. It sat
+  green among 170 tests, so when 0107 failed the same way, "why does
+  0016 work?" seemed like the obvious question. It had never worked.
 
 ## Schema candidates for v1.0
 

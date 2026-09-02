@@ -107,6 +107,15 @@ UID_RE = re.compile(r"CHE-\d{3}\.\d{3}\.\d{3}")
 LEGAL_FORM_RE = re.compile(
     r"CHE-\d{3}\.\d{3}\.\d{3},\s*([^(]+?)\s*\((?:SHAB|Neueintragung)"
 )
+# A branch is written with a qualifier saying where its parent sits:
+# "schweizerische Zweigniederlassung" (parent in Switzerland, e.g.
+# data/raw/0016.txt, 0107.txt) or "ausländische Zweigniederlassung" (foreign
+# parent, e.g. data/raw/0054.txt). SCHEMA.md's `legal_form` enum has a single
+# `Zweigniederlassung` value and draws no such distinction, so the qualifier
+# is stripped before the FORM_MAP lookup. Nothing is lost: the parent's
+# location is carried by the body's "Hauptsitz in: <Ort>" phrase, which is
+# `extras.hauptsitz` territory and not this field's job.
+FORM_QUALIFIER_RE = re.compile(r"^(?:schweizerische|ausländische)\s+")
 # The registered seat, e.g. "..., in Aarau, CHE-450.093.916, ..." — this is
 # the legal seat, which may differ from the postal address (address_*),
 # e.g. after a Sitzverlegung the two point at different towns.
@@ -126,9 +135,18 @@ BISHER_IN_RE = re.compile(r"\bbisher in\s+([^,]+)")
 # — same approach as CANTON_ALIASES above — rather than guessed for the
 # whole country. A wrong canton is worse than none, so an unmapped prefix
 # resolves to None (left for the annotator), never a guess.
+#
+# Keys are either a full 4-digit postal code or a 3-digit prefix; the full
+# code wins (see _canton_from_plz). A 3-digit key is only used where the
+# whole prefix is known to sit in one canton — where it straddles a border,
+# the single verified code goes in instead of a guess about its neighbours.
 PLZ_PREFIX_TO_CANTON = {
     "455": "SO",  # Bucheggberg, e.g. 4556 Aeschi (SO) -- data/raw/0021.txt
     "462": "SO",  # Gäu, e.g. 4623 Neuendorf -- data/raw/0018.txt
+    # 6052 Hergiswil NW -- data/raw/0057.txt. Full code, not the "605"
+    # prefix: 6053/6055/6056 (Alpnach, Kägiswil) are Obwalden, so "605"
+    # would be exactly the straddling guess this table refuses to make.
+    "6052": "NW",
 }
 TAGESREGISTER_RE = re.compile(r"Tagesregister-Nr\.\s*(\S+)\s*vom\s*(\d{2}\.\d{2}\.\d{4})")
 PRIOR_PUB_RE = re.compile(
@@ -205,15 +223,17 @@ def _bisher_header_postcode(lines: list[str]) -> str | None:
 
 
 def _canton_from_plz(plz: str | None) -> str | None:
-    """Look up a canton from a postal code's prefix.
+    """Look up a canton from a postal code.
 
-    Only the 3-digit prefixes in PLZ_PREFIX_TO_CANTON are trusted; anything
-    else returns None rather than guess at a boundary this module hasn't
-    verified.
+    A full-code entry in PLZ_PREFIX_TO_CANTON wins over a 3-digit prefix
+    entry, so a single verified code can be mapped without claiming
+    anything about the rest of its prefix. Only entries in that table are
+    trusted; anything else returns None rather than guess at a boundary
+    this module hasn't verified.
     """
     if not plz or len(plz) < 3:
         return None
-    return PLZ_PREFIX_TO_CANTON.get(plz[:3])
+    return PLZ_PREFIX_TO_CANTON.get(plz) or PLZ_PREFIX_TO_CANTON.get(plz[:3])
 
 
 def _parse_header_block(lines: list[str]) -> dict:
@@ -388,6 +408,7 @@ def prefill_text(text: str, doc_id: str | None = None) -> dict:
         # address (see LEGAL_FORM_RE comment); the legal form is always
         # the last comma-separated segment, address or not.
         last_segment = legal_form_match.group(1).split(",")[-1].strip()
+        last_segment = FORM_QUALIFIER_RE.sub("", last_segment)
         record["legal_form"] = FORM_MAP.get(last_segment)
 
     tagesregister_match = TAGESREGISTER_RE.search(text)

@@ -341,10 +341,59 @@ def test_0016_helios_solar_alt_names_same_line():
     assert record["company_name_full"] == "Helios Solar Energie GmbH"
     assert record["company_name_base"] == "Helios Solar Energie GmbH"
 
-    # legal_form is deliberately not asserted here: the body describes
-    # this record as a "schweizerische Zweigniederlassung" of a company
-    # named "... GmbH" — which of the two belongs in legal_form is a
-    # domain judgement call outside the scope of this regression test.
+    # The body describes this record as a "schweizerische
+    # Zweigniederlassung" of a company named "... GmbH". The branch, not
+    # the parent's form, is what belongs in legal_form: the annotated
+    # data/exploratory/0016.json settles it with "Zweigniederlassung",
+    # _verified true.
+    assert record["legal_form"] == "Zweigniederlassung"
+
+
+# --- 0054.txt / 0107.txt: branch records, where the body writes the legal
+#     form with a parent-location qualifier in front of it ---
+
+
+def test_0107_burckhardt_schweizerische_zweigniederlassung():
+    record = prefill_file(DATA_RAW / "0107.txt")
+
+    assert record["doc_id"] == "0107"
+    assert record["uid"] == "CHE-335.665.029"
+
+    # Body reads "schweizerische Zweigniederlassung". The qualifier says
+    # where the parent sits (here "Hauptsitz in: Basel"); SCHEMA.md's enum
+    # has one flat `Zweigniederlassung` value, so it must not block the
+    # FORM_MAP lookup.
+    assert record["legal_form"] == "Zweigniederlassung"
+    assert record["company_name_full"] == "Burckhardt Architektur AG"
+
+
+def test_0054_wik_far_east_auslaendische_zweigniederlassung():
+    record = prefill_file(DATA_RAW / "0054.txt")
+
+    assert record["doc_id"] == "0054"
+    assert record["uid"] == "CHE-227.108.275"
+
+    # Foreign parent ("Hauptsitz in: Hongkong (CN)"), so the body reads
+    # "ausländische Zweigniederlassung" — same qualifier problem, other
+    # adjective. The legal form still comes from the standard slot after
+    # the UID, NOT from the "Zweigniederlassung Luzern" inside the name.
+    assert record["legal_form"] == "Zweigniederlassung"
+
+    # The company name carries commas of its own; it comes from the header
+    # name line whole, and must not be cut at the first comma.
+    assert (
+        record["company_name_full"]
+        == "WIK FAR EAST LIMITED, Hongkong, Zweigniederlassung Luzern"
+    )
+
+
+def test_legal_form_qualifier_stripped_only_from_the_front():
+    # The qualifier is removed as a prefix, so an unrelated form is
+    # unaffected and a bare "Zweigniederlassung" still resolves.
+    assert prefill_text("x, CHE-111.111.111, Zweigniederlassung (SHAB")["legal_form"] == (
+        "Zweigniederlassung"
+    )
+    assert prefill_text("x, CHE-111.111.111, Aktiengesellschaft (SHAB")["legal_form"] == "AG"
 
 
 # --- 0018.txt / 0021.txt: relocations where the body reads "bisher in
@@ -382,6 +431,30 @@ def test_0021_linder_immobilien_bisher_in_derives_seat_from_bisher_cp():
     assert record["authority"] == "Handelsregisteramt des Kantons Bern"
     assert record["seat_municipality"] == "Aeschi (SO)"
     assert record["seat_canton"] == "SO"
+
+
+def test_0057_schneiter_gastro_bisher_in_derives_seat_from_bisher_cp():
+    record = prefill_file(DATA_RAW / "0057.txt")
+
+    assert record["doc_id"] == "0057"
+    assert record["uid"] == "CHE-464.687.482"
+
+    # Kontaktstelle is "Handelsregisteramt des Kantons Luzern" — the NEW
+    # canton (Ebikon LU), not the pre-act seat (Hergiswil NW).
+    # seat_municipality comes from "bisher in <Ort>"; seat_canton from the
+    # header's "Bisher" postal code (6052 -> NW).
+    assert record["authority"] == "Handelsregisteramt des Kantons Luzern"
+    assert record["seat_municipality"] == "Hergiswil (NW)"
+    assert record["seat_canton"] == "NW"
+
+
+def test_canton_from_plz_prefers_full_code_over_straddling_prefix():
+    # 6052 Hergiswil is NW, but the surrounding "605" prefix reaches into
+    # Obwalden (6053 Alpnachstad, 6055 Alpnach Dorf), so only the verified
+    # full code resolves — its neighbours stay unmapped.
+    assert _canton_from_plz("6052") == "NW"
+    assert _canton_from_plz("6053") is None
+    assert _canton_from_plz("6055") is None
 
 
 def test_canton_from_plz_unmapped_prefix_returns_none_not_a_guess():
