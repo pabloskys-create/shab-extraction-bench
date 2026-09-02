@@ -41,7 +41,10 @@ rather than continuing when:
     has its titles and rubrics translated, which breaks act-type extraction
     downstream, so a missing counter is treated as a wrong-language capture;
   * the number of parsed records differs from that counter (an
-    infinite-scroll page that was not fully scrolled before saving).
+    infinite-scroll page that was not fully scrolled before saving);
+  * any headline starts with a word outside ACT_TYPE_FIRST_WORDS, which
+    means the page was saved without the Handelsregister rubric filter and
+    the listing mixes in publications the benchmark is not about.
 
 Publications already annotated in data/exploratory/ are then removed, so no
 document is annotated twice. The listing markup carries neither the UID nor
@@ -64,6 +67,7 @@ import json
 import random
 import re
 import sys
+from collections import Counter
 from datetime import datetime, timezone
 from html.parser import HTMLParser
 from pathlib import Path
@@ -87,6 +91,24 @@ META_RE = re.compile(r"^(\d{2}\.\d{2}\.\d{4}) - (\S+) - (.+)$")
 
 # "listing_be_2026-08-10.html"
 FILENAME_RE = re.compile(r"^listing_([a-z]{2})_(\d{4}-\d{2}-\d{2})\.html$")
+
+# Every Handelsregister headline opens with its act type, and the rubric has
+# exactly these three. Anything else — "Vorläufige Konkursanzeige",
+# "Liquidationsschuldenruf", "Gesuch um Erteilung ...", "Kraftloserklärung"
+# — belongs to another rubric of the gazette and can only appear in a page
+# saved without the Handelsregister filter. That is a capture mistake, not a
+# corpus decision: see annotation_log.md, "Rubric mixing", where the first
+# occurrence was resolved by filtering at source rather than dropping the
+# records afterwards, so that the population and the frame stay the same
+# thing.
+#
+# Checked against the 405 records of the three listings in data/sampling/:
+# this first-word test partitions them identically to the rubric label in
+# the record's own `source` field, with no disagreement in either direction.
+# The first word is used rather than `source` because `source` also carries
+# cantonal gazette variants ("SHAB, Amtsblatt ZH - ...") whose exact set is
+# not known in advance, while the act type is fixed by the register.
+ACT_TYPE_FIRST_WORDS = frozenset({"Neueintragung", "Mutation", "Löschung"})
 
 
 class FrameError(Exception):
@@ -235,6 +257,8 @@ def load_listing(html_path: Path) -> dict:
             "incomplete listing invalidates the frame. Re-save it fully scrolled."
         )
 
+    check_rubric(html_path.name, records)
+
     return {
         "source_html": html_path.name,
         "canton": canton,
@@ -243,6 +267,39 @@ def load_listing(html_path: Path) -> dict:
         "site_reported_total": total,
         "records": records,
     }
+
+
+def _first_word(title: str | None) -> str:
+    words = (title or "").split()
+    return words[0] if words else ""
+
+
+def foreign_rubric_counts(records: list[dict]) -> dict[str, int]:
+    """How many headlines open with each word outside ACT_TYPE_FIRST_WORDS,
+    commonest first. Empty when the listing is pure Handelsregister."""
+    counts = Counter(
+        word
+        for word in (_first_word(record["title"]) for record in records)
+        if word not in ACT_TYPE_FIRST_WORDS
+    )
+    return dict(counts.most_common())
+
+
+def check_rubric(source_html: str, records: list[dict]) -> None:
+    """Abort unless every headline opens with an act type. See
+    ACT_TYPE_FIRST_WORDS."""
+    counts = foreign_rubric_counts(records)
+    if not counts:
+        return
+
+    breakdown = ", ".join(f"{word} ({count})" for word, count in counts.items())
+    raise FrameError(
+        f"{source_html}: {sum(counts.values())} of {len(records)} headlines start with a "
+        f"word that is not an act type — {breakdown}. The page was saved without the "
+        "Handelsregister rubric filter, so the listing mixes in publications from other "
+        "rubrics of the gazette. Re-save it with the filter applied; do not drop the "
+        "records afterwards (annotation_log.md, 'Rubric mixing')."
+    )
 
 
 def build_population(listings: list[dict]) -> tuple[list[dict], list[dict]]:

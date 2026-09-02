@@ -240,17 +240,40 @@ hand-picked, so the corpus reflects the real distribution of act types.
 
 ## Corpus sampling
 
-- Frame: SHAB Handelsregister publications, German, Bern, 2026-08-10
-- Population: 85 — verified equal to the site's reported hit count,
-  so the frame is fully enumerated (see `data/sampling/manifest_full.json`:
-  `population_size` == `site_reported_total` == `len(records)` == 85).
-- Method: simple random sample, seed 42, n=25, no replacement
+Frame: the union of per-day, per-canton SHAB Handelsregister listings,
+German language filter. Each listing was saved separately and verified
+to contain its full population before sampling:
+
+| Canton | Date | Population |
+|---|---|---|
+| BE | 2026-08-10 | 85 |
+| ZH | 2026-08-31 | 233 |
+| LU | 2026-08-25 | 87 |
+| **Total** | | **405** |
+
+Method: simple random sample from the union, seed 42, no replacement.
+Documents 0001-0028 were drawn from the Bern listing during the
+exploratory phase, before the frame was widened; the remaining 92 are
+drawn from the union, Bern included. Bern therefore accounts for a
+larger share of the corpus than its position in the frame alone would
+suggest.
+
+The cantonal mix reflects which days were captured, not each canton's
+real share of SHAB output.
+
+Resulting corpus: BE 42 (17 sampled + 25 exploratory), LU 23, ZH 52,
+plus 3 warm-up documents outside any frame. Total 120.
+
 - Note: the SHAB listing uses virtual DOM scrolling and recycles nodes.
   Saved listings of ~1050 and ~220 results were both incomplete
-  (1050 of 1169; 210 of 220). The frame was narrowed until the saved
-  page provably contained the entire population.
+  (1050 of 1169; 210 of 220). Each frame was narrowed until the saved
+  page provably contained its entire population.
 - Out-of-scope documents are excluded and NOT replaced.
 
+The cantonal mix reflects which days were captured, not each canton's
+real share of SHAB output. 28 documents were sampled from the Bern
+frame during the exploratory phase; the rest are drawn at random from
+the union.
 Scope: Handelsregister publications only (Neueintragung, Mutation,
 Löschung). Other SHAB rubrics — Schuldenruf, Testamentseröffnung,
 Kraftloserklärung, Gesuch and similar — are out of scope and are

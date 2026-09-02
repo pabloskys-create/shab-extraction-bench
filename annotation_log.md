@@ -60,6 +60,21 @@ warm-up phase, before the sampling frame was defined.
 - **Rubric mixing.** The initial listing contained 10 non-Handelsregister
   publications (Schuldenruf, Testamentseröffnung, Kraftloserklärung).
   Filtered at source rather than excluded at annotation time.
+- **Rubric mixing, second occurrence.** The same filter was missing again when
+  the Zurich and Lucerne listings were saved, this time unnoticed until after
+  92 documents had been pasted. ZH held 40 foreign publications in 233
+  (17% of the captured listing), LU 13 in 87 (15%); Bern was clean. It
+  surfaced only indirectly: `check_raw.py` reported four sampled notices
+  carrying no UID, which is normal for Konkurse or Arbeitszeitbewilligungen
+  and impossible for a Handelsregister entry. `sample.py` now aborts when a
+  headline starts with anything but Neueintragung, Mutation or Löschung —
+  a test that partitions the 405 records exactly as the rubric label does.
+  Cost: the corrected frame dropped from 380 to 327 eligible, the resample
+  kept only 45 of the 92 pastes, and 47 had to be redone. Lesson: the two
+  checks that existed (record count against the site's own counter, page
+  language) both passed on a listing that was wrong, because neither looked
+  at what the records *were*. A frame check has to test the content, not
+  just the size and shape of the capture.
 - **Browser translation.** One document was captured through automatic
   Spanish translation and had to be recaptured. Source text must be German.
 - **Divergent environments.** The agent ran tests in the global Python while

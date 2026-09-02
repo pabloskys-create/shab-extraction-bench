@@ -12,21 +12,21 @@
         "source_html": "listing_lu_2026-08-25.html",
         "canton": "LU",
         "date": "2026-08-25",
-        "population": 87,
-        "site_reported_total": 87
+        "population": 74,
+        "site_reported_total": 74
       },
       {
         "source_html": "listing_zh_2026-08-31.html",
         "canton": "ZH",
         "date": "2026-08-31",
-        "population": 233,
-        "site_reported_total": 233
+        "population": 193,
+        "site_reported_total": 193
       }
     ],
-    "population_size": 405,
+    "population_size": 352,
     "duplicates_dropped": 0,
     "excluded_already_annotated": 25,
-    "eligible_population_size": 380,
+    "eligible_population_size": 327,
     "sample_size": 92,
     "seed": 42,
     "run_date": "2026-09-01"
@@ -1776,175 +1776,6 @@
     },
     {
       "position": 135,
-      "source_html": "listing_lu_2026-08-25.html",
-      "canton": "LU",
-      "listing_date": "2026-08-25",
-      "listing_position": 75,
-      "id": "c2c99825-801f-47de-a13f-22287197be9a",
-      "publication_number": "LS02-0000081094",
-      "date": "25.08.2026",
-      "source": "SHAB - Liquidationsschuldenrufe",
-      "title": "Liquidationsschuldenruf B. Sherifi Kirchberg SG GmbH, mit Sitz in Luzern in Liquidation",
-      "url": "https://www.shab.ch/#!/search/publications/detail/c2c99825-801f-47de-a13f-22287197be9a"
-    },
-    {
-      "position": 136,
-      "source_html": "listing_lu_2026-08-25.html",
-      "canton": "LU",
-      "listing_date": "2026-08-25",
-      "listing_position": 76,
-      "id": "ead94c20-b227-45a5-82f3-f514d0f76307",
-      "publication_number": "SR01-0000017911",
-      "date": "25.08.2026",
-      "source": "SHAB - Weitere gesellschaftsrechtliche Schuldenrufe",
-      "title": "Schuldenruf infolge Fusion nach FusG GC Europe AG mit GC International AG",
-      "url": "https://www.shab.ch/#!/search/publications/detail/ead94c20-b227-45a5-82f3-f514d0f76307"
-    },
-    {
-      "position": 137,
-      "source_html": "listing_lu_2026-08-25.html",
-      "canton": "LU",
-      "listing_date": "2026-08-25",
-      "listing_position": 77,
-      "id": "c4ebb597-ac02-48a6-a87b-efba3e5f71e3",
-      "publication_number": "KK01-0000069210",
-      "date": "25.08.2026",
-      "source": "SHAB - Konkurse",
-      "title": "Vorläufige Konkursanzeige SM Regio Print GmbH",
-      "url": "https://www.shab.ch/#!/search/publications/detail/c4ebb597-ac02-48a6-a87b-efba3e5f71e3"
-    },
-    {
-      "position": 138,
-      "source_html": "listing_lu_2026-08-25.html",
-      "canton": "LU",
-      "listing_date": "2026-08-25",
-      "listing_position": 78,
-      "id": "d00c8b6d-2933-483e-9c3b-53a5d169047c",
-      "publication_number": "KK01-0000069224",
-      "date": "25.08.2026",
-      "source": "SHAB - Konkurse",
-      "title": "Vorläufige Konkursanzeige northdirection GmbH",
-      "url": "https://www.shab.ch/#!/search/publications/detail/d00c8b6d-2933-483e-9c3b-53a5d169047c"
-    },
-    {
-      "position": 139,
-      "source_html": "listing_lu_2026-08-25.html",
-      "canton": "LU",
-      "listing_date": "2026-08-25",
-      "listing_position": 79,
-      "id": "b5dcefaf-2d3f-44b7-ab1c-6e59e6f8802a",
-      "publication_number": "KK01-0000069206",
-      "date": "25.08.2026",
-      "source": "SHAB - Konkurse",
-      "title": "Vorläufige Konkursanzeige TransMech GmbH",
-      "url": "https://www.shab.ch/#!/search/publications/detail/b5dcefaf-2d3f-44b7-ab1c-6e59e6f8802a"
-    },
-    {
-      "position": 140,
-      "source_html": "listing_lu_2026-08-25.html",
-      "canton": "LU",
-      "listing_date": "2026-08-25",
-      "listing_position": 80,
-      "id": "e5b2f1c4-99c9-4965-8e46-df64df923c1a",
-      "publication_number": "KK01-0000069208",
-      "date": "25.08.2026",
-      "source": "SHAB - Konkurse",
-      "title": "Vorläufige Konkursanzeige Status Energy AG",
-      "url": "https://www.shab.ch/#!/search/publications/detail/e5b2f1c4-99c9-4965-8e46-df64df923c1a"
-    },
-    {
-      "position": 141,
-      "source_html": "listing_lu_2026-08-25.html",
-      "canton": "LU",
-      "listing_date": "2026-08-25",
-      "listing_position": 81,
-      "id": "e0f88eb2-129b-4aa0-9831-cb78d208c4ae",
-      "publication_number": "KK01-0000069214",
-      "date": "25.08.2026",
-      "source": "SHAB - Konkurse",
-      "title": "Vorläufige Konkursanzeige UNLEASH GmbH",
-      "url": "https://www.shab.ch/#!/search/publications/detail/e0f88eb2-129b-4aa0-9831-cb78d208c4ae"
-    },
-    {
-      "position": 142,
-      "source_html": "listing_lu_2026-08-25.html",
-      "canton": "LU",
-      "listing_date": "2026-08-25",
-      "listing_position": 82,
-      "id": "87210a52-d1bc-40c6-860c-de3b7e737162",
-      "publication_number": "KK01-0000069216",
-      "date": "25.08.2026",
-      "source": "SHAB - Konkurse",
-      "title": "Vorläufige Konkursanzeige Ihre kluge Wahl GmbH",
-      "url": "https://www.shab.ch/#!/search/publications/detail/87210a52-d1bc-40c6-860c-de3b7e737162"
-    },
-    {
-      "position": 143,
-      "source_html": "listing_lu_2026-08-25.html",
-      "canton": "LU",
-      "listing_date": "2026-08-25",
-      "listing_position": 83,
-      "id": "9d12b9ec-2a54-4d35-bbbd-88db61dba40a",
-      "publication_number": "KK01-0000069234",
-      "date": "25.08.2026",
-      "source": "SHAB - Konkurse",
-      "title": "Vorläufige Konkursanzeige EOPTI SOLUTIONS AG",
-      "url": "https://www.shab.ch/#!/search/publications/detail/9d12b9ec-2a54-4d35-bbbd-88db61dba40a"
-    },
-    {
-      "position": 144,
-      "source_html": "listing_lu_2026-08-25.html",
-      "canton": "LU",
-      "listing_date": "2026-08-25",
-      "listing_position": 84,
-      "id": "a2ab86c1-3599-4dbe-aa17-ad60f78e20dd",
-      "publication_number": "AW01-0000064845",
-      "date": "25.08.2026",
-      "source": "SHAB - Abhandengekommene Wertpapiere und andere Titel",
-      "title": "Aufruf Papier-Inhaberschuldbriefe, lastend auf Grundstück Nr. 394 und den mitverpfändeten Grundstücken Nrn. 367, 412 und 555, alle GB Ufhusen",
-      "url": "https://www.shab.ch/#!/search/publications/detail/a2ab86c1-3599-4dbe-aa17-ad60f78e20dd"
-    },
-    {
-      "position": 145,
-      "source_html": "listing_lu_2026-08-25.html",
-      "canton": "LU",
-      "listing_date": "2026-08-25",
-      "listing_position": 85,
-      "id": "09692852-26ed-4742-ab8c-c772c9e588b3",
-      "publication_number": "AB02-0000021851",
-      "date": "25.08.2026",
-      "source": "SHAB - Arbeit",
-      "title": "Erteilte Arbeitszeitbewilligung RUAG AG",
-      "url": "https://www.shab.ch/#!/search/publications/detail/09692852-26ed-4742-ab8c-c772c9e588b3"
-    },
-    {
-      "position": 146,
-      "source_html": "listing_lu_2026-08-25.html",
-      "canton": "LU",
-      "listing_date": "2026-08-25",
-      "listing_position": 86,
-      "id": "3ca725d7-c744-4bc6-9215-777180112b77",
-      "publication_number": "AB01-0000023180",
-      "date": "25.08.2026",
-      "source": "SHAB - Arbeit",
-      "title": "Gesuch um Erteilung von Arbeitszeitbewilligung Connect Com AG",
-      "url": "https://www.shab.ch/#!/search/publications/detail/3ca725d7-c744-4bc6-9215-777180112b77"
-    },
-    {
-      "position": 147,
-      "source_html": "listing_lu_2026-08-25.html",
-      "canton": "LU",
-      "listing_date": "2026-08-25",
-      "listing_position": 87,
-      "id": "1e99dbac-abb3-4cc5-bd1a-403de12342c9",
-      "publication_number": "AB02-0000021846",
-      "date": "25.08.2026",
-      "source": "SHAB - Arbeit",
-      "title": "Erteilte Arbeitszeitbewilligung Securiton AG",
-      "url": "https://www.shab.ch/#!/search/publications/detail/1e99dbac-abb3-4cc5-bd1a-403de12342c9"
-    },
-    {
-      "position": 148,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -1957,7 +1788,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/40f4c51c-ff25-4d91-a2f3-2845dc227677"
     },
     {
-      "position": 149,
+      "position": 136,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -1970,7 +1801,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/d4d41351-f90e-49ae-bee6-ac7eb2c85fd6"
     },
     {
-      "position": 150,
+      "position": 137,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -1983,7 +1814,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/ae574bf4-e399-4462-b07b-807307eb1180"
     },
     {
-      "position": 151,
+      "position": 138,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -1996,7 +1827,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/5795ff6f-a560-4f3b-932d-bad7d87309f8"
     },
     {
-      "position": 152,
+      "position": 139,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -2009,7 +1840,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/4f4193df-2487-441e-bf39-26a81ab83d30"
     },
     {
-      "position": 153,
+      "position": 140,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -2022,7 +1853,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/40821705-8342-465d-b8dd-8dcbc195cc97"
     },
     {
-      "position": 154,
+      "position": 141,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -2035,7 +1866,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/707b576c-7fc6-4d0e-b3d3-4314dcdd22de"
     },
     {
-      "position": 155,
+      "position": 142,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -2048,7 +1879,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/6b437125-2d15-42eb-a598-b37cb7952a01"
     },
     {
-      "position": 156,
+      "position": 143,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -2061,7 +1892,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/3f787c65-2ec6-46f5-8441-3a3d20248173"
     },
     {
-      "position": 157,
+      "position": 144,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -2074,7 +1905,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/7b0a90eb-14fd-4358-a70c-a373d06609d4"
     },
     {
-      "position": 158,
+      "position": 145,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -2087,7 +1918,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/d190e777-ace9-4ca1-a9ed-314e0fd50baf"
     },
     {
-      "position": 159,
+      "position": 146,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -2100,7 +1931,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/913f7b4d-f16c-4a54-b7c0-1b82d01bce41"
     },
     {
-      "position": 160,
+      "position": 147,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -2113,7 +1944,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/11bdb118-6e33-4d93-bebb-a546f6195039"
     },
     {
-      "position": 161,
+      "position": 148,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -2126,7 +1957,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/7bb205dc-9292-4cca-b380-a4ec13a6be42"
     },
     {
-      "position": 162,
+      "position": 149,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -2139,7 +1970,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/2148b3e7-1e00-4282-b1b8-b2cfe1acdd43"
     },
     {
-      "position": 163,
+      "position": 150,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -2152,7 +1983,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/cd96b83d-f0eb-4afd-a603-c03f2842d2ad"
     },
     {
-      "position": 164,
+      "position": 151,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -2165,7 +1996,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/1bc356c4-9a7a-4a7e-95a5-696c0481d10f"
     },
     {
-      "position": 165,
+      "position": 152,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -2178,7 +2009,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/509d5556-c836-46ee-a399-5f1d45d4e85f"
     },
     {
-      "position": 166,
+      "position": 153,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -2191,7 +2022,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/d8dccebc-b104-425a-ad5f-d328d3341afd"
     },
     {
-      "position": 167,
+      "position": 154,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -2204,7 +2035,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/c8defc3b-4608-4870-8cd5-5daaf4db5846"
     },
     {
-      "position": 168,
+      "position": 155,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -2217,7 +2048,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/4913e363-0b49-4be6-96a3-5146abc369f8"
     },
     {
-      "position": 169,
+      "position": 156,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -2230,7 +2061,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/2e3d4bda-f3df-4a4c-ab84-dc073eb8d6ec"
     },
     {
-      "position": 170,
+      "position": 157,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -2243,7 +2074,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/8994f86f-3b51-4bb9-a464-1e56b4ca9f9d"
     },
     {
-      "position": 171,
+      "position": 158,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -2256,7 +2087,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/5b44c1d3-9f08-4f63-8f32-733f246b8c4a"
     },
     {
-      "position": 172,
+      "position": 159,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -2269,7 +2100,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/aaaad626-53af-4de0-9cf6-5c1ff4a2c78a"
     },
     {
-      "position": 173,
+      "position": 160,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -2282,7 +2113,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/b9581002-3624-4ec1-9b8b-627639e5d05d"
     },
     {
-      "position": 174,
+      "position": 161,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -2295,7 +2126,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/c8a1fa71-cccb-459f-a991-ffdc212b1569"
     },
     {
-      "position": 175,
+      "position": 162,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -2308,7 +2139,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/d5f4d8a4-bfe9-42da-a2cf-24bf1e07004d"
     },
     {
-      "position": 176,
+      "position": 163,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -2321,7 +2152,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/f6de52e5-44ce-4fdf-b1ea-4179ac8091db"
     },
     {
-      "position": 177,
+      "position": 164,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -2334,7 +2165,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/3b8a8854-3de9-4f56-a570-34f5ed039578"
     },
     {
-      "position": 178,
+      "position": 165,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -2347,7 +2178,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/fa668082-88c3-469a-8eac-a039d84a7106"
     },
     {
-      "position": 179,
+      "position": 166,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -2360,7 +2191,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/e1b77ba0-cac5-4ac9-9c6e-1855e7474cfa"
     },
     {
-      "position": 180,
+      "position": 167,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -2373,7 +2204,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/ae9ef334-02e7-4296-aaa8-21c262a37c3d"
     },
     {
-      "position": 181,
+      "position": 168,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -2386,7 +2217,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/77430316-19f7-4dfe-8a9b-079c0510c3d5"
     },
     {
-      "position": 182,
+      "position": 169,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -2399,7 +2230,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/9e42aa42-a549-4a9e-b18a-83fba33ab500"
     },
     {
-      "position": 183,
+      "position": 170,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -2412,7 +2243,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/87afc96a-51df-41c8-ab8e-eb563963a366"
     },
     {
-      "position": 184,
+      "position": 171,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -2425,7 +2256,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/0b127b69-1d97-4ced-8959-72b41f2183cc"
     },
     {
-      "position": 185,
+      "position": 172,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -2438,7 +2269,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/41d8004c-6e6c-4af4-a05c-36d7e32849ab"
     },
     {
-      "position": 186,
+      "position": 173,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -2451,7 +2282,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/ff0d0bd2-5622-4245-90e4-58da51c7aa29"
     },
     {
-      "position": 187,
+      "position": 174,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -2464,7 +2295,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/48a84d80-cc1e-4016-8ab5-c706509ee442"
     },
     {
-      "position": 188,
+      "position": 175,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -2477,7 +2308,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/88fdcb60-8503-4f4e-b50e-c5cc6305ee22"
     },
     {
-      "position": 189,
+      "position": 176,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -2490,7 +2321,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/1f39fdc2-5c7d-4d18-85f7-dcbeb5b0023f"
     },
     {
-      "position": 190,
+      "position": 177,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -2503,7 +2334,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/c3f67458-b0cc-4dbf-be4c-a4a331278e54"
     },
     {
-      "position": 191,
+      "position": 178,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -2516,7 +2347,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/0c7bf65a-235f-428a-80af-30e402f61e71"
     },
     {
-      "position": 192,
+      "position": 179,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -2529,7 +2360,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/bc94ba3b-3a1f-4cc2-95c4-42471d14fe34"
     },
     {
-      "position": 193,
+      "position": 180,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -2542,7 +2373,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/78c6f513-b579-4bab-b185-f8a17f51951d"
     },
     {
-      "position": 194,
+      "position": 181,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -2555,7 +2386,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/6c8b2c1e-6fdb-4581-9fc4-90cf51ff326b"
     },
     {
-      "position": 195,
+      "position": 182,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -2568,7 +2399,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/5378940c-3e6a-4313-b00a-57eec8c945ba"
     },
     {
-      "position": 196,
+      "position": 183,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -2581,7 +2412,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/5dcb00a4-d0c0-4b84-adf2-a272c8c13109"
     },
     {
-      "position": 197,
+      "position": 184,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -2594,7 +2425,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/38405fea-8280-4c1d-8bf2-4739f5195518"
     },
     {
-      "position": 198,
+      "position": 185,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -2607,7 +2438,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/22bc19cc-a835-41f5-b496-f031e1e253a3"
     },
     {
-      "position": 199,
+      "position": 186,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -2620,7 +2451,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/bc6219d7-a98e-4b17-9287-a3448d3e42f1"
     },
     {
-      "position": 200,
+      "position": 187,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -2633,7 +2464,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/3197f424-5475-4b8a-80ce-dac1e6613506"
     },
     {
-      "position": 201,
+      "position": 188,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -2646,7 +2477,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/75d6b9b2-9953-4721-b685-953512ef7041"
     },
     {
-      "position": 202,
+      "position": 189,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -2659,7 +2490,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/05a4a6c5-ce56-4037-8d87-9d6234c11e9e"
     },
     {
-      "position": 203,
+      "position": 190,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -2672,7 +2503,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/39452e7c-ed46-478a-adf5-f3d0358aabea"
     },
     {
-      "position": 204,
+      "position": 191,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -2685,7 +2516,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/3f9abaea-0746-4e10-a1d5-d5b4ccf82c46"
     },
     {
-      "position": 205,
+      "position": 192,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -2698,7 +2529,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/cb5e52e5-5aa8-424c-bb38-4cd17eabc59b"
     },
     {
-      "position": 206,
+      "position": 193,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -2711,7 +2542,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/4482edb4-b3ce-4efd-8561-110ac77c81e2"
     },
     {
-      "position": 207,
+      "position": 194,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -2724,7 +2555,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/81ac2d45-be20-416a-a592-8064a0c39e6b"
     },
     {
-      "position": 208,
+      "position": 195,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -2737,7 +2568,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/5ec2721d-7299-4f19-94e6-7f6b325fe19f"
     },
     {
-      "position": 209,
+      "position": 196,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -2750,7 +2581,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/93f57ef0-b384-450c-8abb-630ce0659aea"
     },
     {
-      "position": 210,
+      "position": 197,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -2763,7 +2594,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/200d9ee8-b02d-4cfd-9461-cbace07a6a16"
     },
     {
-      "position": 211,
+      "position": 198,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -2776,7 +2607,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/8b10083d-d6f1-462b-bf0b-29448163cc38"
     },
     {
-      "position": 212,
+      "position": 199,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -2789,7 +2620,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/f4654090-7f43-480f-94aa-a63ca0865356"
     },
     {
-      "position": 213,
+      "position": 200,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -2802,7 +2633,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/78cba6b9-ef34-4a24-b579-b5d0aad025a4"
     },
     {
-      "position": 214,
+      "position": 201,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -2815,7 +2646,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/0e3948fa-7dd4-4fa4-87d4-97caaf303c42"
     },
     {
-      "position": 215,
+      "position": 202,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -2828,7 +2659,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/015f03ff-6580-4220-8a27-3d14d66017f1"
     },
     {
-      "position": 216,
+      "position": 203,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -2841,7 +2672,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/0cdfd77f-7b18-4b76-ba1d-a0aac5992d34"
     },
     {
-      "position": 217,
+      "position": 204,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -2854,7 +2685,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/9ac402c9-ea7a-4d6c-bf81-b47706b6414a"
     },
     {
-      "position": 218,
+      "position": 205,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -2867,7 +2698,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/2ef65739-7a5e-4b69-8f8a-e5ad8ddedfd0"
     },
     {
-      "position": 219,
+      "position": 206,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -2880,7 +2711,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/ba88849f-1286-40c7-b68b-70045490c1c1"
     },
     {
-      "position": 220,
+      "position": 207,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -2893,7 +2724,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/0c2a8b24-c119-45ec-be52-e147761aeded"
     },
     {
-      "position": 221,
+      "position": 208,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -2906,7 +2737,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/ec51b7b2-b269-43cd-aee7-325d2a1d5f73"
     },
     {
-      "position": 222,
+      "position": 209,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -2919,7 +2750,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/8b0a7c6a-bcaf-4536-bb04-d47fff4dfddd"
     },
     {
-      "position": 223,
+      "position": 210,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -2932,7 +2763,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/07d5c58c-e217-4876-855a-aca29238930e"
     },
     {
-      "position": 224,
+      "position": 211,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -2945,7 +2776,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/9c208c6d-cffe-483a-b8d3-8212e208f93a"
     },
     {
-      "position": 225,
+      "position": 212,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -2958,7 +2789,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/276e348a-a457-447a-947c-8477621c2067"
     },
     {
-      "position": 226,
+      "position": 213,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -2971,7 +2802,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/d10d3cab-2b2b-4b73-b763-8fa8b710adc7"
     },
     {
-      "position": 227,
+      "position": 214,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -2984,7 +2815,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/e0dea098-9467-4898-9aac-89fc08d3edff"
     },
     {
-      "position": 228,
+      "position": 215,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -2997,7 +2828,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/fd2aa7b8-d51b-48f4-8b0c-ccc6a2e0cf34"
     },
     {
-      "position": 229,
+      "position": 216,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -3010,7 +2841,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/ec00644c-c6e5-4718-981b-de51a2b2e6f8"
     },
     {
-      "position": 230,
+      "position": 217,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -3023,7 +2854,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/65ecf1b7-3df1-482b-8d63-7f06d39dac92"
     },
     {
-      "position": 231,
+      "position": 218,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -3036,7 +2867,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/176c0051-8a92-4284-bab6-adc7779b0060"
     },
     {
-      "position": 232,
+      "position": 219,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -3049,7 +2880,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/fa4a7610-d893-4390-98b9-ad6dcb0edd57"
     },
     {
-      "position": 233,
+      "position": 220,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -3062,7 +2893,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/9ffbd217-cabb-4e6d-9a8e-0ea1c80ab537"
     },
     {
-      "position": 234,
+      "position": 221,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -3075,7 +2906,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/1c886ea5-b9bd-4efa-98e1-16ec93c347a2"
     },
     {
-      "position": 235,
+      "position": 222,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -3088,7 +2919,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/0a0282b8-835e-4837-8b3e-db67b934925e"
     },
     {
-      "position": 236,
+      "position": 223,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -3101,7 +2932,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/5f41e653-d202-4888-82c8-63127fac338c"
     },
     {
-      "position": 237,
+      "position": 224,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -3114,7 +2945,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/60ed1a75-e97d-4029-9930-303d4724281b"
     },
     {
-      "position": 238,
+      "position": 225,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -3127,7 +2958,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/948000cd-2bc1-4fd4-8b69-f5fe723ffe31"
     },
     {
-      "position": 239,
+      "position": 226,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -3140,7 +2971,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/5e5e9e13-60b3-4a93-9f45-583955c76a03"
     },
     {
-      "position": 240,
+      "position": 227,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -3153,7 +2984,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/e55f383f-8a83-4a70-943a-1305535ed0bf"
     },
     {
-      "position": 241,
+      "position": 228,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -3166,7 +2997,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/bd97b78f-44a2-4794-8059-945c747c36a8"
     },
     {
-      "position": 242,
+      "position": 229,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -3179,7 +3010,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/6000d9f5-e78c-4d4e-a8aa-3131b55a680e"
     },
     {
-      "position": 243,
+      "position": 230,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -3192,7 +3023,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/f13bc1fc-e1d1-4756-af3a-97a03f6e38e5"
     },
     {
-      "position": 244,
+      "position": 231,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -3205,7 +3036,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/b96910e6-1b7b-4235-bfd6-d66e21011721"
     },
     {
-      "position": 245,
+      "position": 232,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -3218,7 +3049,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/48034682-64ed-4e44-a7c4-e1255b3196e9"
     },
     {
-      "position": 246,
+      "position": 233,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -3231,7 +3062,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/192191b8-1f68-4102-9832-d6cbdab49dbf"
     },
     {
-      "position": 247,
+      "position": 234,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -3244,7 +3075,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/64c5ddf1-8b4e-468c-8e2d-cc1fc1b0cc9a"
     },
     {
-      "position": 248,
+      "position": 235,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -3257,7 +3088,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/10f2fa38-ea0f-4632-bb2b-0039138e5f2a"
     },
     {
-      "position": 249,
+      "position": 236,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -3270,7 +3101,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/a868b4f8-c654-4c8e-b1a4-dee2040b3f5b"
     },
     {
-      "position": 250,
+      "position": 237,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -3283,7 +3114,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/f9dd97c3-5203-4cf1-b062-b79b9b961752"
     },
     {
-      "position": 251,
+      "position": 238,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -3296,7 +3127,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/63874186-5fd9-4a77-a695-f0a6705ed5bb"
     },
     {
-      "position": 252,
+      "position": 239,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -3309,7 +3140,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/0a3500a3-da6d-4b30-920c-2db34fe56327"
     },
     {
-      "position": 253,
+      "position": 240,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -3322,7 +3153,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/d00ed3d6-452f-47ac-a58b-28db26c65452"
     },
     {
-      "position": 254,
+      "position": 241,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -3335,7 +3166,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/3fc27ad8-55fd-47b1-baf1-5720ca26951e"
     },
     {
-      "position": 255,
+      "position": 242,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -3348,7 +3179,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/52b4a7d3-c6e4-4886-929f-5c3a3f52d38f"
     },
     {
-      "position": 256,
+      "position": 243,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -3361,7 +3192,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/b1683783-bbe4-411f-a9d1-999755b49537"
     },
     {
-      "position": 257,
+      "position": 244,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -3374,7 +3205,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/1b4e7683-e1c4-443f-8439-263976711dab"
     },
     {
-      "position": 258,
+      "position": 245,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -3387,7 +3218,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/83028f6e-6ab5-4cb0-b6f4-a9a336d852d0"
     },
     {
-      "position": 259,
+      "position": 246,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -3400,7 +3231,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/29100b74-b047-4fe8-8d57-4b4ef7a799e8"
     },
     {
-      "position": 260,
+      "position": 247,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -3413,7 +3244,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/974b0377-eda4-45cc-80ac-6c41814155b6"
     },
     {
-      "position": 261,
+      "position": 248,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -3426,7 +3257,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/6a7c4896-2e3c-4d7e-b6c4-dc076abd2d12"
     },
     {
-      "position": 262,
+      "position": 249,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -3439,7 +3270,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/e6078ecf-4111-4322-825c-8408b68c5821"
     },
     {
-      "position": 263,
+      "position": 250,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -3452,7 +3283,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/773429ed-7c18-4da3-8cd6-69792c6ab3dd"
     },
     {
-      "position": 264,
+      "position": 251,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -3465,7 +3296,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/ab5ace52-9825-4dc1-8676-d6aea663ffb4"
     },
     {
-      "position": 265,
+      "position": 252,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -3478,7 +3309,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/fc684d49-6165-40a8-b296-687cc1205720"
     },
     {
-      "position": 266,
+      "position": 253,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -3491,7 +3322,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/15c72ad9-02af-47b5-abd0-4fe665209b18"
     },
     {
-      "position": 267,
+      "position": 254,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -3504,7 +3335,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/80ccdfbd-eb2b-41d8-b212-54c5ceebbdad"
     },
     {
-      "position": 268,
+      "position": 255,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -3517,7 +3348,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/6e5e65a4-f05f-49b7-9be2-12925e1e7821"
     },
     {
-      "position": 269,
+      "position": 256,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -3530,7 +3361,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/9219f1f4-c848-40b3-b25e-4a14de352eb3"
     },
     {
-      "position": 270,
+      "position": 257,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -3543,7 +3374,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/210b633e-678a-4c09-8150-2045caf13a49"
     },
     {
-      "position": 271,
+      "position": 258,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -3556,7 +3387,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/5197a846-6db8-47a6-aadf-0794d1b2aefc"
     },
     {
-      "position": 272,
+      "position": 259,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -3569,7 +3400,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/b904b30b-9642-45c8-8022-0e7e91564aa1"
     },
     {
-      "position": 273,
+      "position": 260,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -3582,7 +3413,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/306ba340-ca25-4f41-bf1e-09c81884e9fa"
     },
     {
-      "position": 274,
+      "position": 261,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -3595,7 +3426,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/ca1d03fa-f567-4620-96a7-8fd37a27cea4"
     },
     {
-      "position": 275,
+      "position": 262,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -3608,7 +3439,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/6968ec7c-1982-416b-ba77-42cc75e89f01"
     },
     {
-      "position": 276,
+      "position": 263,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -3621,7 +3452,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/6ff690e9-5b0b-4a05-aacf-7f87b94fb190"
     },
     {
-      "position": 277,
+      "position": 264,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -3634,7 +3465,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/c319ee8d-a6a1-4b98-8d0b-b6fca3b7a618"
     },
     {
-      "position": 278,
+      "position": 265,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -3647,7 +3478,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/0f75e559-627c-4916-a223-0fc9a29ff556"
     },
     {
-      "position": 279,
+      "position": 266,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -3660,7 +3491,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/24dcb64d-ad9c-46db-8d8e-3792285f2d9e"
     },
     {
-      "position": 280,
+      "position": 267,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -3673,7 +3504,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/8b2994f8-32d3-4e73-9858-600539d21576"
     },
     {
-      "position": 281,
+      "position": 268,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -3686,7 +3517,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/1902ef8a-779f-46ac-84c5-4ad6361bc2e2"
     },
     {
-      "position": 282,
+      "position": 269,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -3699,7 +3530,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/4e8dfbea-52a6-4c02-af99-05e3c58597cd"
     },
     {
-      "position": 283,
+      "position": 270,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -3712,7 +3543,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/9b1f4a5b-0570-4e59-a882-85a0b4f0a71a"
     },
     {
-      "position": 284,
+      "position": 271,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -3725,7 +3556,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/54702d21-6876-4e10-bb6e-4ddbf5f938e6"
     },
     {
-      "position": 285,
+      "position": 272,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -3738,7 +3569,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/f458225d-83c3-43d0-ae4b-ecd3466732ac"
     },
     {
-      "position": 286,
+      "position": 273,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -3751,7 +3582,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/26ae6856-d2c0-4697-bd9b-192fa440ee3f"
     },
     {
-      "position": 287,
+      "position": 274,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -3764,7 +3595,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/a6f8b694-d578-44e0-ae90-27fa3d8b9c14"
     },
     {
-      "position": 288,
+      "position": 275,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -3777,7 +3608,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/f0e93693-a5e4-46c5-a53a-634e1fc3727c"
     },
     {
-      "position": 289,
+      "position": 276,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -3790,7 +3621,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/e1caefc3-8da5-4363-a7e9-002ac5f356c8"
     },
     {
-      "position": 290,
+      "position": 277,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -3803,7 +3634,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/370cfc6d-c021-41ee-a80d-c3c4a1a2a8f2"
     },
     {
-      "position": 291,
+      "position": 278,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -3816,7 +3647,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/f074645d-af14-49f2-9924-37fe4907e444"
     },
     {
-      "position": 292,
+      "position": 279,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -3829,7 +3660,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/46cde487-66df-40c8-b097-ecdf72b5a524"
     },
     {
-      "position": 293,
+      "position": 280,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -3842,7 +3673,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/8f17297b-4148-4a31-bd06-52f19ff95ce8"
     },
     {
-      "position": 294,
+      "position": 281,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -3855,7 +3686,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/ee73d498-c264-486d-946d-49b8f8ce67df"
     },
     {
-      "position": 295,
+      "position": 282,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -3868,7 +3699,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/8e9ecdb0-85b4-4959-a2ca-9a9a90ba11cb"
     },
     {
-      "position": 296,
+      "position": 283,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -3881,7 +3712,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/f18ead50-6254-4435-8aa8-68d7ce84c065"
     },
     {
-      "position": 297,
+      "position": 284,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -3894,7 +3725,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/93f96691-63e0-472e-82d7-ad11114da7d1"
     },
     {
-      "position": 298,
+      "position": 285,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -3907,7 +3738,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/d6af2433-04d0-473c-b28d-559587e53b6d"
     },
     {
-      "position": 299,
+      "position": 286,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -3920,7 +3751,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/455af589-7d49-47b8-b810-0f8e2d1d7e73"
     },
     {
-      "position": 300,
+      "position": 287,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -3933,7 +3764,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/c56821f9-4781-41eb-af44-bbe0d32d5825"
     },
     {
-      "position": 301,
+      "position": 288,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -3946,7 +3777,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/9a54a328-1725-4825-b979-8e030f11a7f9"
     },
     {
-      "position": 302,
+      "position": 289,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -3959,7 +3790,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/02cc15e4-6e39-4732-a1eb-279940c2883f"
     },
     {
-      "position": 303,
+      "position": 290,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -3972,7 +3803,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/4bb83181-2f55-4301-94d5-3c6e0720928b"
     },
     {
-      "position": 304,
+      "position": 291,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -3985,7 +3816,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/c64eeb95-4b3e-49d1-92c8-ead0dea33cca"
     },
     {
-      "position": 305,
+      "position": 292,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -3998,7 +3829,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/33508f11-8ae0-4e55-a5bd-731d0aed20b2"
     },
     {
-      "position": 306,
+      "position": 293,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -4011,7 +3842,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/a974389e-614c-4ea4-bb56-1874843d0d08"
     },
     {
-      "position": 307,
+      "position": 294,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -4024,7 +3855,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/f05ea9e8-8a91-4653-8461-c839199fcdf7"
     },
     {
-      "position": 308,
+      "position": 295,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -4037,7 +3868,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/115b6a85-6be6-4497-a977-79f67bcbe46e"
     },
     {
-      "position": 309,
+      "position": 296,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -4050,7 +3881,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/b2050d46-a82b-4d6f-8d11-9d7b4018f3cd"
     },
     {
-      "position": 310,
+      "position": 297,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -4063,7 +3894,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/41873d53-f427-4c60-95a6-53d64dc82e26"
     },
     {
-      "position": 311,
+      "position": 298,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -4076,7 +3907,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/c0b4e15a-4a8c-42f4-9dd0-80ddfbd96843"
     },
     {
-      "position": 312,
+      "position": 299,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -4089,7 +3920,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/00c884f4-bf2d-4167-bfba-bfe3a19d5951"
     },
     {
-      "position": 313,
+      "position": 300,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -4102,7 +3933,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/975b3b90-f257-4cfa-94ae-a6180b1a78c0"
     },
     {
-      "position": 314,
+      "position": 301,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -4115,7 +3946,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/1d1d7517-00c0-4e91-9f30-198c6531fc25"
     },
     {
-      "position": 315,
+      "position": 302,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -4128,7 +3959,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/d613aeeb-097b-48cc-90f4-cfee487a89f4"
     },
     {
-      "position": 316,
+      "position": 303,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -4141,7 +3972,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/4a165849-f31c-438f-a7d0-32f58aa8705a"
     },
     {
-      "position": 317,
+      "position": 304,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -4154,7 +3985,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/fd11c0ef-cf23-4a8d-a3dc-70bd0c34f6eb"
     },
     {
-      "position": 318,
+      "position": 305,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -4167,7 +3998,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/a8212965-6f79-42e2-8dbf-5e566fa60366"
     },
     {
-      "position": 319,
+      "position": 306,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -4180,7 +4011,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/d73f57da-a214-4d37-a69b-63ba201a9379"
     },
     {
-      "position": 320,
+      "position": 307,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -4193,7 +4024,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/c7accc00-5c7a-498b-9459-edded26c3e87"
     },
     {
-      "position": 321,
+      "position": 308,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -4206,7 +4037,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/907ee665-afec-4e64-bee0-35088111ac9e"
     },
     {
-      "position": 322,
+      "position": 309,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -4219,7 +4050,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/2b8ba503-7869-4539-b573-2958cdb6428d"
     },
     {
-      "position": 323,
+      "position": 310,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -4232,7 +4063,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/f4878a8c-4874-46b5-b3c8-3b2b2dcd1f61"
     },
     {
-      "position": 324,
+      "position": 311,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -4245,7 +4076,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/561a967a-b3de-47b0-a33c-1f8270e61694"
     },
     {
-      "position": 325,
+      "position": 312,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -4258,7 +4089,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/4204d266-4ad5-44d2-9c99-e2925a12a77f"
     },
     {
-      "position": 326,
+      "position": 313,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -4271,7 +4102,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/351c3ca6-1df4-438a-91c3-f4952953026c"
     },
     {
-      "position": 327,
+      "position": 314,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -4284,7 +4115,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/4b31f672-3632-4348-847a-81346f5f58db"
     },
     {
-      "position": 328,
+      "position": 315,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -4297,7 +4128,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/5033301d-f7d0-47f5-883f-ff1d4d6be579"
     },
     {
-      "position": 329,
+      "position": 316,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -4310,7 +4141,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/87a1727a-1964-46ab-8423-cc6c34c19a9d"
     },
     {
-      "position": 330,
+      "position": 317,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -4323,7 +4154,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/2f232f3a-d500-4411-8344-c3b46cf4a8f2"
     },
     {
-      "position": 331,
+      "position": 318,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -4336,7 +4167,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/b4b844dc-d4fa-44c7-8477-0bebaf178e2c"
     },
     {
-      "position": 332,
+      "position": 319,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -4349,7 +4180,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/cf950eaa-ca8f-4549-9718-fcd48133f1ec"
     },
     {
-      "position": 333,
+      "position": 320,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -4362,7 +4193,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/30b5af70-070b-401c-994d-b689f0256651"
     },
     {
-      "position": 334,
+      "position": 321,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -4375,7 +4206,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/43e4ccc1-c7b3-4adf-a7ab-1e4deb7649b5"
     },
     {
-      "position": 335,
+      "position": 322,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -4388,7 +4219,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/9566cf29-28f2-418a-b551-54324cd35234"
     },
     {
-      "position": 336,
+      "position": 323,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -4401,7 +4232,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/0caaa064-3f85-438e-b091-27198e38afb0"
     },
     {
-      "position": 337,
+      "position": 324,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -4414,7 +4245,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/fbb05a49-fd0a-4a1c-bc8d-2907302de94b"
     },
     {
-      "position": 338,
+      "position": 325,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -4427,7 +4258,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/5a44fdf2-811a-4520-87c3-a68439d6c0cf"
     },
     {
-      "position": 339,
+      "position": 326,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -4440,7 +4271,7 @@
       "url": "https://www.shab.ch/#!/search/publications/detail/f695c94e-8606-47ee-952f-05974eae7d2f"
     },
     {
-      "position": 340,
+      "position": 327,
       "source_html": "listing_zh_2026-08-31.html",
       "canton": "ZH",
       "listing_date": "2026-08-31",
@@ -4451,526 +4282,6 @@
       "source": "SHAB - Handelsregistereintragungen",
       "title": "Löschung Widmer & Cantz Partners GmbH in Liquidation, Stäfa",
       "url": "https://www.shab.ch/#!/search/publications/detail/db800a66-d742-4f3c-9e18-49bed5986def"
-    },
-    {
-      "position": 341,
-      "source_html": "listing_zh_2026-08-31.html",
-      "canton": "ZH",
-      "listing_date": "2026-08-31",
-      "listing_position": 194,
-      "id": "b00ad038-a7f3-457e-a2d4-86c945050e86",
-      "publication_number": "LS02-0000081184",
-      "date": "31.08.2026",
-      "source": "SHAB - Liquidationsschuldenrufe",
-      "title": "Liquidationsschuldenruf MUOR IT Solutions GmbH in Liquidation",
-      "url": "https://www.shab.ch/#!/search/publications/detail/b00ad038-a7f3-457e-a2d4-86c945050e86"
-    },
-    {
-      "position": 342,
-      "source_html": "listing_zh_2026-08-31.html",
-      "canton": "ZH",
-      "listing_date": "2026-08-31",
-      "listing_position": 195,
-      "id": "689cf113-045c-44a1-a30e-e35c798e52f4",
-      "publication_number": "LS01-0000057383",
-      "date": "31.08.2026",
-      "source": "SHAB - Liquidationsschuldenrufe",
-      "title": "Liquidationsschuldenruf LASRAG Inducoll AG in Liquidation",
-      "url": "https://www.shab.ch/#!/search/publications/detail/689cf113-045c-44a1-a30e-e35c798e52f4"
-    },
-    {
-      "position": 343,
-      "source_html": "listing_zh_2026-08-31.html",
-      "canton": "ZH",
-      "listing_date": "2026-08-31",
-      "listing_position": 196,
-      "id": "22dbf5b6-b2e7-4d2e-b575-74cd34b069a0",
-      "publication_number": "LS02-0000081179",
-      "date": "31.08.2026",
-      "source": "SHAB - Liquidationsschuldenrufe",
-      "title": "Liquidationsschuldenruf Capital Advantage Systems GmbH in Liquidation",
-      "url": "https://www.shab.ch/#!/search/publications/detail/22dbf5b6-b2e7-4d2e-b575-74cd34b069a0"
-    },
-    {
-      "position": 344,
-      "source_html": "listing_zh_2026-08-31.html",
-      "canton": "ZH",
-      "listing_date": "2026-08-31",
-      "listing_position": 197,
-      "id": "d94e83e9-59c0-4da9-9881-c66b129f7358",
-      "publication_number": "LS02-0000081174",
-      "date": "31.08.2026",
-      "source": "SHAB - Liquidationsschuldenrufe",
-      "title": "Liquidationsschuldenruf AloxX GmbH in Liquidation",
-      "url": "https://www.shab.ch/#!/search/publications/detail/d94e83e9-59c0-4da9-9881-c66b129f7358"
-    },
-    {
-      "position": 345,
-      "source_html": "listing_zh_2026-08-31.html",
-      "canton": "ZH",
-      "listing_date": "2026-08-31",
-      "listing_position": 198,
-      "id": "925dc4d3-cc0e-4350-8820-f6e57036179d",
-      "publication_number": "LS02-0000081177",
-      "date": "31.08.2026",
-      "source": "SHAB - Liquidationsschuldenrufe",
-      "title": "Liquidationsschuldenruf troistrom GmbH in Liquidation",
-      "url": "https://www.shab.ch/#!/search/publications/detail/925dc4d3-cc0e-4350-8820-f6e57036179d"
-    },
-    {
-      "position": 346,
-      "source_html": "listing_zh_2026-08-31.html",
-      "canton": "ZH",
-      "listing_date": "2026-08-31",
-      "listing_position": 199,
-      "id": "56e68737-05ef-4e8d-814a-5fb22edc48ea",
-      "publication_number": "SB02-0000101778",
-      "date": "31.08.2026",
-      "source": "SHAB, Amtsblatt ZH - Schuldbetreibungen",
-      "title": "Zahlungsbefehl Rampf - Elektronik AG",
-      "url": "https://www.shab.ch/#!/search/publications/detail/56e68737-05ef-4e8d-814a-5fb22edc48ea"
-    },
-    {
-      "position": 347,
-      "source_html": "listing_zh_2026-08-31.html",
-      "canton": "ZH",
-      "listing_date": "2026-08-31",
-      "listing_position": 200,
-      "id": "2f0fb367-5a36-403d-bb24-5ff3484e1ca4",
-      "publication_number": "SB07-0000002798",
-      "date": "31.08.2026",
-      "source": "SHAB, Amtsblatt ZH - Schuldbetreibungen",
-      "title": "Konkursandrohung R Cooper AG",
-      "url": "https://www.shab.ch/#!/search/publications/detail/2f0fb367-5a36-403d-bb24-5ff3484e1ca4"
-    },
-    {
-      "position": 348,
-      "source_html": "listing_zh_2026-08-31.html",
-      "canton": "ZH",
-      "listing_date": "2026-08-31",
-      "listing_position": 201,
-      "id": "4106854c-0ee3-4bde-8c55-adc8d71bf355",
-      "publication_number": "SB02-0000101873",
-      "date": "31.08.2026",
-      "source": "SHAB, Amtsblatt ZH - Schuldbetreibungen",
-      "title": "Zahlungsbefehl Jaime BERGER",
-      "url": "https://www.shab.ch/#!/search/publications/detail/4106854c-0ee3-4bde-8c55-adc8d71bf355"
-    },
-    {
-      "position": 349,
-      "source_html": "listing_zh_2026-08-31.html",
-      "canton": "ZH",
-      "listing_date": "2026-08-31",
-      "listing_position": 202,
-      "id": "d6530e33-ebe1-48dc-82d3-13aaa80c231c",
-      "publication_number": "KK01-0000069507",
-      "date": "31.08.2026",
-      "source": "SHAB, Amtsblatt ZH - Konkurse",
-      "title": "Vorläufige Konkursanzeige Alarco AG",
-      "url": "https://www.shab.ch/#!/search/publications/detail/d6530e33-ebe1-48dc-82d3-13aaa80c231c"
-    },
-    {
-      "position": 350,
-      "source_html": "listing_zh_2026-08-31.html",
-      "canton": "ZH",
-      "listing_date": "2026-08-31",
-      "listing_position": 203,
-      "id": "2db4c874-d88e-4934-88e8-6870361058df",
-      "publication_number": "KK04-0000059786",
-      "date": "31.08.2026",
-      "source": "SHAB, Amtsblatt ZH - Konkurse",
-      "title": "Kollokationsplan und Inventar WASSEY Gastro AG",
-      "url": "https://www.shab.ch/#!/search/publications/detail/2db4c874-d88e-4934-88e8-6870361058df"
-    },
-    {
-      "position": 351,
-      "source_html": "listing_zh_2026-08-31.html",
-      "canton": "ZH",
-      "listing_date": "2026-08-31",
-      "listing_position": 204,
-      "id": "0969229f-4006-4a1c-8d84-2e41827c54a6",
-      "publication_number": "KK04-0000059919",
-      "date": "31.08.2026",
-      "source": "SHAB, Amtsblatt ZH - Konkurse",
-      "title": "Kollokationsplan Schmidlin Energy Technologies GmbH in Liquidation",
-      "url": "https://www.shab.ch/#!/search/publications/detail/0969229f-4006-4a1c-8d84-2e41827c54a6"
-    },
-    {
-      "position": 352,
-      "source_html": "listing_zh_2026-08-31.html",
-      "canton": "ZH",
-      "listing_date": "2026-08-31",
-      "listing_position": 205,
-      "id": "54c2b758-84a7-40df-b07b-f3064818652d",
-      "publication_number": "KK01-0000069541",
-      "date": "31.08.2026",
-      "source": "SHAB, Amtsblatt ZH - Konkurse",
-      "title": "Vorläufige Konkursanzeige Teresa Maria Del Gaudio-Krzymowska, ausgeschlagene Erbschaft",
-      "url": "https://www.shab.ch/#!/search/publications/detail/54c2b758-84a7-40df-b07b-f3064818652d"
-    },
-    {
-      "position": 353,
-      "source_html": "listing_zh_2026-08-31.html",
-      "canton": "ZH",
-      "listing_date": "2026-08-31",
-      "listing_position": 206,
-      "id": "ae35f2b5-f017-42ec-a486-e1ce2f5d0a49",
-      "publication_number": "KK01-0000069557",
-      "date": "31.08.2026",
-      "source": "SHAB, Amtsblatt ZH - Konkurse",
-      "title": "Vorläufige Konkursanzeige Hoflädeli24.ch GmbH",
-      "url": "https://www.shab.ch/#!/search/publications/detail/ae35f2b5-f017-42ec-a486-e1ce2f5d0a49"
-    },
-    {
-      "position": 354,
-      "source_html": "listing_zh_2026-08-31.html",
-      "canton": "ZH",
-      "listing_date": "2026-08-31",
-      "listing_position": 207,
-      "id": "1b533615-01c7-4f25-91f9-2b34c5cc824e",
-      "publication_number": "KK01-0000069561",
-      "date": "31.08.2026",
-      "source": "SHAB, Amtsblatt ZH - Konkurse",
-      "title": "Vorläufige Konkursanzeige Marcel Neuhaus, ausgeschlagene Erbschaft",
-      "url": "https://www.shab.ch/#!/search/publications/detail/1b533615-01c7-4f25-91f9-2b34c5cc824e"
-    },
-    {
-      "position": 355,
-      "source_html": "listing_zh_2026-08-31.html",
-      "canton": "ZH",
-      "listing_date": "2026-08-31",
-      "listing_position": 208,
-      "id": "179019a9-d20d-4dac-ad18-5386541ab471",
-      "publication_number": "KK01-0000069567",
-      "date": "31.08.2026",
-      "source": "SHAB, Amtsblatt ZH - Konkurse",
-      "title": "Vorläufige Konkursanzeige Soma RANI",
-      "url": "https://www.shab.ch/#!/search/publications/detail/179019a9-d20d-4dac-ad18-5386541ab471"
-    },
-    {
-      "position": 356,
-      "source_html": "listing_zh_2026-08-31.html",
-      "canton": "ZH",
-      "listing_date": "2026-08-31",
-      "listing_position": 209,
-      "id": "82d2c688-3d89-4df1-bc3b-c8e7f96be685",
-      "publication_number": "KK01-0000069526",
-      "date": "31.08.2026",
-      "source": "SHAB, Amtsblatt AR, Amtsblatt ZH - Konkurse",
-      "title": "Vorläufige Konkursanzeige Neda Group AG",
-      "url": "https://www.shab.ch/#!/search/publications/detail/82d2c688-3d89-4df1-bc3b-c8e7f96be685"
-    },
-    {
-      "position": 357,
-      "source_html": "listing_zh_2026-08-31.html",
-      "canton": "ZH",
-      "listing_date": "2026-08-31",
-      "listing_position": 210,
-      "id": "9987f4c1-8bc7-49ed-8a85-17574774c6c9",
-      "publication_number": "KK01-0000069552",
-      "date": "31.08.2026",
-      "source": "SHAB, Amtsblatt ZH - Konkurse",
-      "title": "Vorläufige Konkursanzeige 1Trend GmbH",
-      "url": "https://www.shab.ch/#!/search/publications/detail/9987f4c1-8bc7-49ed-8a85-17574774c6c9"
-    },
-    {
-      "position": 358,
-      "source_html": "listing_zh_2026-08-31.html",
-      "canton": "ZH",
-      "listing_date": "2026-08-31",
-      "listing_position": 211,
-      "id": "c57a917d-4cb9-4964-ab69-7dac01ddecc4",
-      "publication_number": "KK03-0000081612",
-      "date": "31.08.2026",
-      "source": "SHAB, Amtsblatt ZH - Konkurse",
-      "title": "Einstellung des Konkursverfahrens Paul Hugo Loepfe, ausgeschlagene Erbschaft",
-      "url": "https://www.shab.ch/#!/search/publications/detail/c57a917d-4cb9-4964-ab69-7dac01ddecc4"
-    },
-    {
-      "position": 359,
-      "source_html": "listing_zh_2026-08-31.html",
-      "canton": "ZH",
-      "listing_date": "2026-08-31",
-      "listing_position": 212,
-      "id": "fb4a5909-910c-4f06-9633-4d4aa6b36bf2",
-      "publication_number": "KK01-0000069562",
-      "date": "31.08.2026",
-      "source": "SHAB, Amtsblatt ZH - Konkurse",
-      "title": "Vorläufige Konkursanzeige BDM Group GmbH",
-      "url": "https://www.shab.ch/#!/search/publications/detail/fb4a5909-910c-4f06-9633-4d4aa6b36bf2"
-    },
-    {
-      "position": 360,
-      "source_html": "listing_zh_2026-08-31.html",
-      "canton": "ZH",
-      "listing_date": "2026-08-31",
-      "listing_position": 213,
-      "id": "3ddf04d6-2030-4d4e-a724-d72993470e7e",
-      "publication_number": "KK03-0000081601",
-      "date": "31.08.2026",
-      "source": "SHAB, Amtsblatt ZH - Konkurse",
-      "title": "Einstellung des Konkursverfahrens finvero group GmbH",
-      "url": "https://www.shab.ch/#!/search/publications/detail/3ddf04d6-2030-4d4e-a724-d72993470e7e"
-    },
-    {
-      "position": 361,
-      "source_html": "listing_zh_2026-08-31.html",
-      "canton": "ZH",
-      "listing_date": "2026-08-31",
-      "listing_position": 214,
-      "id": "b7e8e013-23b7-42e9-a4ab-eb6fec420b47",
-      "publication_number": "KK03-0000081589",
-      "date": "31.08.2026",
-      "source": "SHAB, Amtsblatt ZH - Konkurse",
-      "title": "Einstellung des Konkursverfahrens FreyAres Logistik GmbH in Liquidation",
-      "url": "https://www.shab.ch/#!/search/publications/detail/b7e8e013-23b7-42e9-a4ab-eb6fec420b47"
-    },
-    {
-      "position": 362,
-      "source_html": "listing_zh_2026-08-31.html",
-      "canton": "ZH",
-      "listing_date": "2026-08-31",
-      "listing_position": 215,
-      "id": "f4e52280-7a6a-4d8c-8a5f-fd6ed0183e65",
-      "publication_number": "KK01-0000069543",
-      "date": "31.08.2026",
-      "source": "SHAB, Amtsblatt ZH - Konkurse",
-      "title": "Vorläufige Konkursanzeige Retter Helmut Arthur, ausgeschlagene Erbschaft",
-      "url": "https://www.shab.ch/#!/search/publications/detail/f4e52280-7a6a-4d8c-8a5f-fd6ed0183e65"
-    },
-    {
-      "position": 363,
-      "source_html": "listing_zh_2026-08-31.html",
-      "canton": "ZH",
-      "listing_date": "2026-08-31",
-      "listing_position": 216,
-      "id": "c187e890-04f0-4637-a63c-fc478b08018b",
-      "publication_number": "KK01-0000069573",
-      "date": "31.08.2026",
-      "source": "SHAB, Amtsblatt ZH - Konkurse",
-      "title": "Vorläufige Konkursanzeige Susanne Renate Düsel-Strebel, ausgeschlagene Erbschaft",
-      "url": "https://www.shab.ch/#!/search/publications/detail/c187e890-04f0-4637-a63c-fc478b08018b"
-    },
-    {
-      "position": 364,
-      "source_html": "listing_zh_2026-08-31.html",
-      "canton": "ZH",
-      "listing_date": "2026-08-31",
-      "listing_position": 217,
-      "id": "8b76aade-a863-4821-9ad2-046e14c6d576",
-      "publication_number": "KK01-0000069575",
-      "date": "31.08.2026",
-      "source": "SHAB, Amtsblatt ZH - Konkurse",
-      "title": "Vorläufige Konkursanzeige Werner Erwin Meyer, ausgeschlagene Erbschaft",
-      "url": "https://www.shab.ch/#!/search/publications/detail/8b76aade-a863-4821-9ad2-046e14c6d576"
-    },
-    {
-      "position": 365,
-      "source_html": "listing_zh_2026-08-31.html",
-      "canton": "ZH",
-      "listing_date": "2026-08-31",
-      "listing_position": 218,
-      "id": "05e6ffd5-db0a-4851-9077-71d76cf8e7f9",
-      "publication_number": "KK01-0000069560",
-      "date": "31.08.2026",
-      "source": "SHAB, Amtsblatt ZH - Konkurse",
-      "title": "Vorläufige Konkursanzeige Symmetra Technologies GmbH",
-      "url": "https://www.shab.ch/#!/search/publications/detail/05e6ffd5-db0a-4851-9077-71d76cf8e7f9"
-    },
-    {
-      "position": 366,
-      "source_html": "listing_zh_2026-08-31.html",
-      "canton": "ZH",
-      "listing_date": "2026-08-31",
-      "listing_position": 219,
-      "id": "3d75059c-a7ef-49db-82cd-5d5624773cfc",
-      "publication_number": "KK01-0000069457",
-      "date": "31.08.2026",
-      "source": "SHAB, Amtsblatt ZH - Konkurse",
-      "title": "Vorläufige Konkursanzeige FM Group GmbH",
-      "url": "https://www.shab.ch/#!/search/publications/detail/3d75059c-a7ef-49db-82cd-5d5624773cfc"
-    },
-    {
-      "position": 367,
-      "source_html": "listing_zh_2026-08-31.html",
-      "canton": "ZH",
-      "listing_date": "2026-08-31",
-      "listing_position": 220,
-      "id": "bae41201-0bc7-47a4-bba9-54e30834f2fa",
-      "publication_number": "AW01-0000064893",
-      "date": "31.08.2026",
-      "source": "SHAB, Amtsblatt ZH - Abhandengekommene Wertpapiere und andere Titel",
-      "title": "Kraftloserklärung Papier-Namenschuldbriefe, lastend auf Grundstück Kat.-Nr. 5757, Plan 27, GBBI 1253, Gemeinde Dietlikon, EGRID CH899877774441, 3. Pfandstelle, Maximalzinsfuss 6 %, Grundstück Kat.-Nr. 5757, Plan 27, GBBI 1253, Gemeinde Dietlikon, EGRID CH899877774441, 4. Pfandstelle, Maximalzinsfuss 6 %., lautend auf Werner Meier, geb. 14. Mai 1938, von Rümlang ZH, Obholzerstrasse 22, 8309 Nürensdorf",
-      "url": "https://www.shab.ch/#!/search/publications/detail/bae41201-0bc7-47a4-bba9-54e30834f2fa"
-    },
-    {
-      "position": 368,
-      "source_html": "listing_zh_2026-08-31.html",
-      "canton": "ZH",
-      "listing_date": "2026-08-31",
-      "listing_position": 221,
-      "id": "542cb738-c86b-484e-b817-4db656b67c2d",
-      "publication_number": "AW01-0000064956",
-      "date": "31.08.2026",
-      "source": "SHAB, Amtsblatt ZH - Abhandengekommene Wertpapiere und andere Titel",
-      "title": "Kraftloserklärung Namen-Papier-Schuldbrief, lastend auf 3. Pfandstelle auf der Liegenschaft Grundbuch Blatt 696, Kataster 1252, EGRID CH832277277777, Schwerzenbach",
-      "url": "https://www.shab.ch/#!/search/publications/detail/542cb738-c86b-484e-b817-4db656b67c2d"
-    },
-    {
-      "position": 369,
-      "source_html": "listing_zh_2026-08-31.html",
-      "canton": "ZH",
-      "listing_date": "2026-08-31",
-      "listing_position": 222,
-      "id": "2f1239f6-991c-478a-9840-78dfd7918efc",
-      "publication_number": "AB01-0000023241",
-      "date": "31.08.2026",
-      "source": "SHAB - Arbeit",
-      "title": "Gesuch um Erteilung von Arbeitszeitbewilligung Schmid Hutter AG",
-      "url": "https://www.shab.ch/#!/search/publications/detail/2f1239f6-991c-478a-9840-78dfd7918efc"
-    },
-    {
-      "position": 370,
-      "source_html": "listing_zh_2026-08-31.html",
-      "canton": "ZH",
-      "listing_date": "2026-08-31",
-      "listing_position": 223,
-      "id": "65d977ba-96e0-4719-a3f4-d704be59b709",
-      "publication_number": "AB01-0000023229",
-      "date": "31.08.2026",
-      "source": "SHAB - Arbeit",
-      "title": "Gesuch um Erteilung von Arbeitszeitbewilligung Sensirion AG",
-      "url": "https://www.shab.ch/#!/search/publications/detail/65d977ba-96e0-4719-a3f4-d704be59b709"
-    },
-    {
-      "position": 371,
-      "source_html": "listing_zh_2026-08-31.html",
-      "canton": "ZH",
-      "listing_date": "2026-08-31",
-      "listing_position": 224,
-      "id": "99fd447e-947a-48de-bfa9-f191b8634b4c",
-      "publication_number": "AB01-0000023236",
-      "date": "31.08.2026",
-      "source": "SHAB - Arbeit",
-      "title": "Gesuch um Erteilung von Arbeitszeitbewilligung AQIPTECH AG",
-      "url": "https://www.shab.ch/#!/search/publications/detail/99fd447e-947a-48de-bfa9-f191b8634b4c"
-    },
-    {
-      "position": 372,
-      "source_html": "listing_zh_2026-08-31.html",
-      "canton": "ZH",
-      "listing_date": "2026-08-31",
-      "listing_position": 225,
-      "id": "deb26eea-1283-48cc-80ac-18d16f28e11b",
-      "publication_number": "AB01-0000023234",
-      "date": "31.08.2026",
-      "source": "SHAB - Arbeit",
-      "title": "Gesuch um Erteilung von Arbeitszeitbewilligung Planzer Transport AG",
-      "url": "https://www.shab.ch/#!/search/publications/detail/deb26eea-1283-48cc-80ac-18d16f28e11b"
-    },
-    {
-      "position": 373,
-      "source_html": "listing_zh_2026-08-31.html",
-      "canton": "ZH",
-      "listing_date": "2026-08-31",
-      "listing_position": 226,
-      "id": "be8f51ab-e5af-41a1-9e87-fc54b43635ec",
-      "publication_number": "AB01-0000023223",
-      "date": "31.08.2026",
-      "source": "SHAB - Arbeit",
-      "title": "Gesuch um Erteilung von Arbeitszeitbewilligung Sieber Logistics AG",
-      "url": "https://www.shab.ch/#!/search/publications/detail/be8f51ab-e5af-41a1-9e87-fc54b43635ec"
-    },
-    {
-      "position": 374,
-      "source_html": "listing_zh_2026-08-31.html",
-      "canton": "ZH",
-      "listing_date": "2026-08-31",
-      "listing_position": 227,
-      "id": "d5a1a8a9-7a80-41c6-a1aa-8e03aa97de7c",
-      "publication_number": "UV02-0000006528",
-      "date": "31.08.2026",
-      "source": "SHAB - Gerichtliche Entscheide und Vorladungen im SHAB",
-      "title": "Gerichtlicher Entscheid gegen RM Haustechnik AG in Liquidation",
-      "url": "https://www.shab.ch/#!/search/publications/detail/d5a1a8a9-7a80-41c6-a1aa-8e03aa97de7c"
-    },
-    {
-      "position": 375,
-      "source_html": "listing_zh_2026-08-31.html",
-      "canton": "ZH",
-      "listing_date": "2026-08-31",
-      "listing_position": 228,
-      "id": "be361dee-bd2d-403a-9f61-13872993ee78",
-      "publication_number": "UV03-0000001931",
-      "date": "31.08.2026",
-      "source": "SHAB - Gerichtliche Entscheide und Vorladungen im SHAB",
-      "title": "Gerichtliche Vorladung von Sanitär Tech.ch AG",
-      "url": "https://www.shab.ch/#!/search/publications/detail/be361dee-bd2d-403a-9f61-13872993ee78"
-    },
-    {
-      "position": 376,
-      "source_html": "listing_zh_2026-08-31.html",
-      "canton": "ZH",
-      "listing_date": "2026-08-31",
-      "listing_position": 229,
-      "id": "b82d9f0a-e134-4476-b502-e4f63e73ad2c",
-      "publication_number": "UV02-0000006526",
-      "date": "31.08.2026",
-      "source": "SHAB - Gerichtliche Entscheide und Vorladungen im SHAB",
-      "title": "Gerichtlicher Entscheid gegen HimmelsHüter Dachservice GmbH",
-      "url": "https://www.shab.ch/#!/search/publications/detail/b82d9f0a-e134-4476-b502-e4f63e73ad2c"
-    },
-    {
-      "position": 377,
-      "source_html": "listing_zh_2026-08-31.html",
-      "canton": "ZH",
-      "listing_date": "2026-08-31",
-      "listing_position": 230,
-      "id": "f7f7897e-9a5e-4a43-aaef-5c5ba7b53aa2",
-      "publication_number": "UV03-0000001929",
-      "date": "31.08.2026",
-      "source": "SHAB - Gerichtliche Entscheide und Vorladungen im SHAB",
-      "title": "Gerichtliche Vorladung von Dominik Schrader",
-      "url": "https://www.shab.ch/#!/search/publications/detail/f7f7897e-9a5e-4a43-aaef-5c5ba7b53aa2"
-    },
-    {
-      "position": 378,
-      "source_html": "listing_zh_2026-08-31.html",
-      "canton": "ZH",
-      "listing_date": "2026-08-31",
-      "listing_position": 231,
-      "id": "560289be-a330-4678-9e8a-c02b96480a66",
-      "publication_number": "UV02-0000006501",
-      "date": "31.08.2026",
-      "source": "SHAB - Gerichtliche Entscheide und Vorladungen im SHAB",
-      "title": "Gerichtlicher Entscheid Doofus Corporation, Wilmington, Zweigniederlassung Horgen",
-      "url": "https://www.shab.ch/#!/search/publications/detail/560289be-a330-4678-9e8a-c02b96480a66"
-    },
-    {
-      "position": 379,
-      "source_html": "listing_zh_2026-08-31.html",
-      "canton": "ZH",
-      "listing_date": "2026-08-31",
-      "listing_position": 232,
-      "id": "147d7810-8531-4eb2-9141-b65d4e9b7c61",
-      "publication_number": "UV02-0000006523",
-      "date": "31.08.2026",
-      "source": "SHAB - Gerichtliche Entscheide und Vorladungen im SHAB",
-      "title": "Gerichtlicher Entscheid gegen P&C Churrasqueira Marques Ferreira KLG",
-      "url": "https://www.shab.ch/#!/search/publications/detail/147d7810-8531-4eb2-9141-b65d4e9b7c61"
-    },
-    {
-      "position": 380,
-      "source_html": "listing_zh_2026-08-31.html",
-      "canton": "ZH",
-      "listing_date": "2026-08-31",
-      "listing_position": 233,
-      "id": "86ce657e-7a39-4fe4-a721-a5f42427d20f",
-      "publication_number": "UV03-0000001930",
-      "date": "31.08.2026",
-      "source": "SHAB - Gerichtliche Entscheide und Vorladungen im SHAB",
-      "title": "Gerichtliche Vorladung von Lina Krekhovetska",
-      "url": "https://www.shab.ch/#!/search/publications/detail/86ce657e-7a39-4fe4-a721-a5f42427d20f"
     }
   ]
 }
