@@ -21,21 +21,26 @@ error needs a human, not a substring search). It only flags values that
 don't exist in the source at all, which is almost always either a
 transcription slip or contamination copied in from another document.
 
-`doc_id`, `schema_version` and `language` are skipped entirely: they are
-bookkeeping, never derived by reading the source text (see
-`_SKIPPED_FIELDS` below), so checking them can only ever produce noise.
+`doc_id`, `schema_version`, `language`, `notes` and `uncertain` are skipped
+entirely: they are bookkeeping or the annotator's own commentary, never
+derived by reading the source text (see `_SKIPPED_FIELDS` below), so
+checking them can only ever produce noise.
 
 A few remaining fields are still expected to show up as "not found" even
 on a correct annotation, because they are normalized rather than
-transcribed verbatim: `act_type` (lowercased), `legal_form` and
-`seat_canton` (mapped to a code, e.g. "Aktiengesellschaft" -> "AG" -> "VS").
-That's expected, not a bug in this tool.
+transcribed verbatim: `act_type` (lowercased) and `legal_form`,
+`seat_canton`, `canton_previous`, `canton_new` (mapped to a code, e.g.
+"Aktiengesellschaft" -> "AG", "Sitten" -> "VS"). That's expected, not a
+bug in this tool; batch mode marks them as such.
 
 Called without a `doc_id`, the CLI runs in batch mode over every
 `data/exploratory/*.json` whose `_verified` flag is true (the unverified
 ones are prefill output, not annotations, so their values are expected to
 be rough). Batch mode reports only the "NOT found in the text" section per
-document, and exits non-zero if any document has one.
+document, and exits non-zero if any document has one. The normalized
+fields below don't count as a finding on their own — they are missing on
+every document by construction — but they are still listed, marked,
+whenever their document has a real one.
 
 This module only reads `data/raw/` and `data/exploratory/`. It never writes
 anything.
@@ -71,13 +76,19 @@ _CHECKED_KINDS = frozenset({"str", "date", "int", "number"})
 # landing in "missing"; `language` is a corpus-wide constant ("de" — see
 # SCHEMA.md "Scope decisions") whose 2-character value spuriously substring-
 # matches inside ordinary German words, always landing in "ambiguous".
-_SKIPPED_FIELDS = frozenset({"doc_id", "schema_version", "language"})
+# `notes` is the annotator's own prose about the document and `uncertain`
+# holds field names, not values — neither is read off the source text.
+_SKIPPED_FIELDS = frozenset(
+    {"doc_id", "schema_version", "language", "notes", "uncertain"}
+)
 
 # Fields that are normalized rather than transcribed verbatim, so they land
 # in "missing" even on a correct annotation (see the module docstring).
 # They are still reported — flagging them silently would hide a real error
 # in one of them — but the batch listing marks them as expected.
-_NORMALIZED_FIELDS = frozenset({"act_type", "legal_form", "seat_canton"})
+_NORMALIZED_FIELDS = frozenset(
+    {"act_type", "legal_form", "seat_canton", "canton_previous", "canton_new"}
+)
 
 
 @dataclass
@@ -246,8 +257,12 @@ def _print_section(title: str, checks: list[FieldCheck]) -> None:
 
 def _run_batch() -> int:
     """Print the "NOT found in the text" fields of every verified document.
-    Returns the process exit code: non-zero if any document reported such a
-    field, or could not be read at all.
+    Only fields outside `_NORMALIZED_FIELDS` count as a finding; the
+    normalized ones are listed, marked, under a document that has a real
+    finding, since they are part of the picture when reviewing it.
+
+    Returns the process exit code: non-zero if any document reported a
+    finding, or could not be read at all.
     """
     entries = crosscheck_verified()
     flagged = 0
@@ -260,7 +275,7 @@ def _run_batch() -> int:
 
         assert entry.result is not None
         missing = entry.result.missing
-        if not missing:
+        if not any(check.field not in _NORMALIZED_FIELDS for check in missing):
             continue
 
         flagged += 1
@@ -271,7 +286,7 @@ def _run_batch() -> int:
 
     checked = len(entries)
     docs = "document" if checked == 1 else "documents"
-    print(f"\n{checked} verified {docs} checked, {flagged} with results.")
+    print(f"\n{checked} verified {docs} checked, {flagged} with findings.")
     return 1 if flagged else 0
 
 
