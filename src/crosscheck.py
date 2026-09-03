@@ -31,6 +31,12 @@ transcribed verbatim: `act_type` (lowercased), `legal_form` and
 `seat_canton` (mapped to a code, e.g. "Aktiengesellschaft" -> "AG" -> "VS").
 That's expected, not a bug in this tool.
 
+Called without a `doc_id`, the CLI runs in batch mode over every
+`data/exploratory/*.json` whose `_verified` flag is true (the unverified
+ones are prefill output, not annotations, so their values are expected to
+be rough). Batch mode reports only the "NOT found in the text" section per
+document, and exits non-zero if any document has one.
+
 This module only reads `data/raw/` and `data/exploratory/`. It never writes
 anything.
 """
@@ -66,6 +72,12 @@ _CHECKED_KINDS = frozenset({"str", "date", "int", "number"})
 # SCHEMA.md "Scope decisions") whose 2-character value spuriously substring-
 # matches inside ordinary German words, always landing in "ambiguous".
 _SKIPPED_FIELDS = frozenset({"doc_id", "schema_version", "language"})
+
+# Fields that are normalized rather than transcribed verbatim, so they land
+# in "missing" even on a correct annotation (see the module docstring).
+# They are still reported — flagging them silently would hide a real error
+# in one of them — but the batch listing marks them as expected.
+_NORMALIZED_FIELDS = frozenset({"act_type", "legal_form", "seat_canton"})
 
 
 @dataclass
@@ -167,6 +179,56 @@ def crosscheck_doc(doc_id: str) -> CrosscheckResult:
     return crosscheck_record(text, record)
 
 
+@dataclass
+class BatchEntry:
+    """One document's batch outcome: either a `result` or an `error`."""
+
+    doc_id: str
+    result: CrosscheckResult | None = None
+    error: str | None = None
+
+
+def _is_verified(record: dict) -> bool:
+    """True only for a record explicitly marked `"_verified": true`.
+    Records without the flag are treated as unverified (see src/prefill.py,
+    which writes `"_verified": false`).
+    """
+    return record.get("_verified") is True
+
+
+def crosscheck_verified() -> list[BatchEntry]:
+    """Cross-check every verified `data/exploratory/*.json`, in doc_id order.
+
+    Unverified records are skipped entirely (no entry is returned for them).
+    A document whose raw text is missing or whose JSON is unreadable yields
+    an entry carrying an `error` instead of a result, so one bad file does
+    not abort the run.
+    """
+    entries: list[BatchEntry] = []
+
+    for exploratory_path in sorted(DATA_EXPLORATORY.glob("*.json")):
+        doc_id = exploratory_path.stem
+        try:
+            record = json.loads(exploratory_path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError as exc:
+            entries.append(BatchEntry(doc_id=doc_id, error=f"invalid JSON: {exc}"))
+            continue
+
+        if not _is_verified(record):
+            continue
+
+        raw_path = DATA_RAW / f"{doc_id}.txt"
+        try:
+            text = raw_path.read_text(encoding="utf-8")
+        except FileNotFoundError:
+            entries.append(BatchEntry(doc_id=doc_id, error=f"no source text at {raw_path}"))
+            continue
+
+        entries.append(BatchEntry(doc_id=doc_id, result=crosscheck_record(text, record)))
+
+    return entries
+
+
 def _format_check(check: FieldCheck) -> str:
     extra = ""
     if len(check.searched) > 1:
@@ -182,15 +244,51 @@ def _print_section(title: str, checks: list[FieldCheck]) -> None:
         print(_format_check(check))
 
 
+def _run_batch() -> int:
+    """Print the "NOT found in the text" fields of every verified document.
+    Returns the process exit code: non-zero if any document reported such a
+    field, or could not be read at all.
+    """
+    entries = crosscheck_verified()
+    flagged = 0
+
+    for entry in entries:
+        if entry.error is not None:
+            print(f"{entry.doc_id}: error: {entry.error}", file=sys.stderr)
+            flagged += 1
+            continue
+
+        assert entry.result is not None
+        missing = entry.result.missing
+        if not missing:
+            continue
+
+        flagged += 1
+        print(f"\n{entry.doc_id} — NOT found in the text ({len(missing)})")
+        for check in missing:
+            note = " [normalized, expected]" if check.field in _NORMALIZED_FIELDS else ""
+            print(f"{_format_check(check)}{note}")
+
+    checked = len(entries)
+    docs = "document" if checked == 1 else "documents"
+    print(f"\n{checked} verified {docs} checked, {flagged} with results.")
+    return 1 if flagged else 0
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(
         description=(
             "Check whether data/exploratory/<doc_id>.json field values appear "
-            "literally in data/raw/<doc_id>.txt."
+            "literally in data/raw/<doc_id>.txt. Without a doc_id, checks every "
+            "verified exploratory record and reports only the fields that do "
+            "not appear in the text (exit code 1 if there are any)."
         )
     )
-    parser.add_argument("doc_id", help='Document id, e.g. "0001"')
+    parser.add_argument("doc_id", nargs="?", help='Document id, e.g. "0001"')
     args = parser.parse_args()
+
+    if args.doc_id is None:
+        sys.exit(_run_batch())
 
     try:
         result = crosscheck_doc(args.doc_id)
