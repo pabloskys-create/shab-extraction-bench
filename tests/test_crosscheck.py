@@ -192,6 +192,93 @@ def test_crosscheck_doc_raises_for_missing_doc(monkeypatch):
         pass
 
 
+# --- multi-line address blocks in the header ---
+
+
+def _text(*lines: str) -> str:
+    """A source text built from its lines, as the raw files store it."""
+    return "\n".join(lines)
+
+
+HEADER = _text(
+    "Mutation Liyame Gastro GmbH, Herzogenbuchsee, neu Burgdorf",
+    "Liyame Gastro GmbH",
+    "Gyrischachenstrasse 38",
+    "3400 Burgdorf",
+    "Bisher",
+    "Zürichstrasse 11",
+    "3360 Herzogenbuchsee",
+)
+
+
+def test_join_address_lines_joins_street_to_postal_code_line():
+    joined = crosscheck._join_address_lines(HEADER).splitlines()
+    assert "Gyrischachenstrasse 38, 3400 Burgdorf" in joined
+    assert "Zürichstrasse 11, 3360 Herzogenbuchsee" in joined
+
+
+def test_join_address_lines_keeps_everything_else_intact():
+    joined = crosscheck._join_address_lines(HEADER).splitlines()
+    assert joined[0] == "Mutation Liyame Gastro GmbH, Herzogenbuchsee, neu Burgdorf"
+    assert "Liyame Gastro GmbH" in joined
+    assert "Bisher" in joined
+
+
+def test_join_address_lines_attaches_a_co_line_to_its_own_block_only():
+    # Regression: the "c/o" rule must not keep swallowing the rest of the
+    # notice — it attaches the street that follows it and stops there.
+    text = _text(
+        "denkarbeit GmbH",
+        "c/o Roland Hunziker",
+        "Hinterwies 31",
+        "9042 Speicher",
+        "Bisher",
+        "Achenbergstrasse 9",
+        "5000 Aarau",
+    )
+
+    joined = crosscheck._join_address_lines(text).splitlines()
+
+    assert joined == [
+        "denkarbeit GmbH",
+        "c/o Roland Hunziker, Hinterwies 31, 9042 Speicher",
+        "Bisher",
+        "Achenbergstrasse 9, 5000 Aarau",
+    ]
+
+
+def test_join_address_lines_does_not_join_across_a_blank_line():
+    text = "c/o Roland Hunziker\n   \nHinterwies 31"
+    assert crosscheck._join_address_lines(text).splitlines() == [
+        "c/o Roland Hunziker",
+        "   ",
+        "Hinterwies 31",
+    ]
+
+
+def test_previous_domicile_from_the_bisher_block_is_found():
+    # The whole point: the annotation writes the address as one string,
+    # the header prints it over two lines.
+    result = crosscheck_record(
+        HEADER, {"domicile_previous": "Zürichstrasse 11, 3360 Herzogenbuchsee"}
+    )
+    assert _field_names(result.unique) == ["domicile_previous"]
+
+
+def test_a_domicile_absent_from_the_text_is_still_missing():
+    # Joining must not make everything match: a fabricated address stays a
+    # finding.
+    result = crosscheck_record(
+        HEADER, {"domicile_previous": "Bahnhofstrasse 1, 8001 Zürich"}
+    )
+    assert _field_names(result.missing) == ["domicile_previous"]
+
+
+def test_a_line_that_was_found_before_joining_is_still_found():
+    result = crosscheck_record(HEADER, {"seat_municipality": "Herzogenbuchsee"})
+    assert result.ambiguous[0].field == "seat_municipality"
+
+
 # --- batch mode over verified exploratory records ---
 
 
