@@ -15,6 +15,11 @@ stores ISO `YYYY-MM-DD` but the source text never does. Numbers are also
 searched in Swiss apostrophe-grouped form (`189'123.50`), since the JSON
 stores a plain number but the source text never does.
 
+The search runs against the text with its address blocks joined onto one
+line (see `_join_address_lines`), because the header prints an address
+over several lines while the annotation writes it as a single
+comma-separated string.
+
 This does NOT validate correctness: a value can appear in the text and
 still be assigned to the wrong field (see CLAUDE.md rule 5 — that kind of
 error needs a human, not a substring search). It only flags values that
@@ -50,6 +55,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import sys
 from dataclasses import dataclass
 from pathlib import Path
@@ -148,10 +154,61 @@ def _candidates(kind: str, value: Any) -> list[str]:
     return seen
 
 
+# A line holding a Swiss postal code and locality, e.g. "3400 Burgdorf" or
+# "2555 Brügg BE". Only ever an address line in these notices; the body is
+# a single long paragraph and never starts a line with four digits.
+_PLZ_LINE = re.compile(r"^\d{4} \S")
+
+# A "c/o" line, which the header prints above the street.
+_CO_LINE = re.compile(r"^c/o ", re.IGNORECASE)
+
+
+def _join_address_lines(text: str) -> str:
+    """Join the header's multi-line address blocks onto one line.
+
+    The header prints an address as separate lines (a "c/o" line, the
+    street, then the postal code and locality), both for the current
+    address and for the one under `Bisher`:
+
+        Bisher
+        Zürichstrasse 11
+        3360 Herzogenbuchsee
+
+    while `domicile_previous` / `domicile_new` hold it as one
+    comma-separated string ("Zürichstrasse 11, 3360 Herzogenbuchsee"), so a
+    literal search would never find it. Joining the newline to ", " makes
+    those values searchable; nothing is dropped, so a value that was found
+    before is still found — including the individual lines themselves.
+    """
+    joined: list[str] = []
+    # True while the last output line is a "c/o" line still waiting for the
+    # street that follows it. It is cleared as soon as one line attaches, so
+    # a "c/o" never swallows more than its own address block.
+    pending_co = False
+
+    for line in text.split("\n"):
+        stripped = line.strip()
+        previous = joined[-1] if joined else ""
+        attaches = bool(_PLZ_LINE.match(stripped)) or (pending_co and bool(stripped))
+
+        if joined and previous.strip() and attaches:
+            joined[-1] = f"{previous}, {stripped}"
+            pending_co = False
+        else:
+            joined.append(line)
+            pending_co = bool(_CO_LINE.match(stripped))
+
+    return "\n".join(joined)
+
+
 def crosscheck_record(text: str, record: dict) -> CrosscheckResult:
     """Check every non-null scalar field of `record` for literal presence
-    in `text`. Field order follows `FIELD_SPECS` (i.e. SCHEMA.md order).
+    in `text`, whose address blocks are first joined onto one line (see
+    `_join_address_lines`). Field order follows `FIELD_SPECS` (i.e.
+    SCHEMA.md order).
     """
+    text = _join_address_lines(text)
+
     unique: list[FieldCheck] = []
     ambiguous: list[FieldCheck] = []
     missing: list[FieldCheck] = []
