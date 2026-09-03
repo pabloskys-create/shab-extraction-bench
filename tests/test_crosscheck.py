@@ -6,6 +6,7 @@ one integration test that exercises the actual file-reading path, against
 tests/fixtures/crosscheck_sample.{txt,json}.
 """
 
+import json
 from pathlib import Path
 
 from src import crosscheck
@@ -179,3 +180,103 @@ def test_crosscheck_doc_raises_for_missing_doc(monkeypatch):
         assert False, "expected FileNotFoundError"
     except FileNotFoundError:
         pass
+
+
+# --- batch mode over verified exploratory records ---
+
+
+def _write_pair(tmp_path, doc_id, text, record):
+    (tmp_path / f"{doc_id}.txt").write_text(text, encoding="utf-8")
+    (tmp_path / f"{doc_id}.json").write_text(json.dumps(record), encoding="utf-8")
+
+
+def _use_tmp_data(monkeypatch, tmp_path):
+    monkeypatch.setattr(crosscheck, "DATA_RAW", tmp_path)
+    monkeypatch.setattr(crosscheck, "DATA_EXPLORATORY", tmp_path)
+
+
+def test_batch_skips_unverified_records(monkeypatch, tmp_path):
+    _use_tmp_data(monkeypatch, tmp_path)
+    _write_pair(tmp_path, "0001", "in Bern", {"_verified": True, "seat_municipality": "Bern"})
+    _write_pair(tmp_path, "0002", "in Bern", {"_verified": False, "seat_municipality": "Zug"})
+    # no flag at all counts as unverified
+    _write_pair(tmp_path, "0003", "in Bern", {"seat_municipality": "Zug"})
+
+    entries = crosscheck.crosscheck_verified()
+
+    assert [e.doc_id for e in entries] == ["0001"]
+
+
+def test_batch_reports_missing_fields_and_is_ordered(monkeypatch, tmp_path):
+    _use_tmp_data(monkeypatch, tmp_path)
+    _write_pair(tmp_path, "0002", "in Bern", {"_verified": True, "seat_municipality": "Zug"})
+    _write_pair(tmp_path, "0001", "in Bern", {"_verified": True, "seat_municipality": "Bern"})
+
+    entries = crosscheck.crosscheck_verified()
+
+    assert [e.doc_id for e in entries] == ["0001", "0002"]
+    assert entries[0].result.missing == []
+    assert _field_names(entries[1].result.missing) == ["seat_municipality"]
+
+
+def test_batch_records_error_for_missing_raw_text(monkeypatch, tmp_path):
+    _use_tmp_data(monkeypatch, tmp_path)
+    (tmp_path / "0001.json").write_text(json.dumps({"_verified": True}), encoding="utf-8")
+
+    (entry,) = crosscheck.crosscheck_verified()
+
+    assert entry.result is None
+    assert "no source text" in entry.error
+
+
+def test_batch_records_error_for_invalid_json(monkeypatch, tmp_path):
+    _use_tmp_data(monkeypatch, tmp_path)
+    (tmp_path / "0001.json").write_text("{not json", encoding="utf-8")
+
+    (entry,) = crosscheck.crosscheck_verified()
+
+    assert entry.result is None
+    assert "invalid JSON" in entry.error
+
+
+def test_batch_exit_code_is_zero_when_nothing_is_missing(monkeypatch, tmp_path, capsys):
+    _use_tmp_data(monkeypatch, tmp_path)
+    _write_pair(tmp_path, "0001", "in Bern", {"_verified": True, "seat_municipality": "Bern"})
+
+    assert crosscheck._run_batch() == 0
+    assert "1 verified document checked, 0 with results." in capsys.readouterr().out
+
+
+def test_batch_exit_code_is_nonzero_when_a_field_is_missing(monkeypatch, tmp_path, capsys):
+    _use_tmp_data(monkeypatch, tmp_path)
+    _write_pair(tmp_path, "0001", "in Bern", {"_verified": True, "seat_municipality": "Zug"})
+
+    assert crosscheck._run_batch() == 1
+    out = capsys.readouterr().out
+    assert "0001 — NOT found in the text (1)" in out
+    assert "seat_municipality" in out
+
+
+def test_batch_output_omits_found_fields(monkeypatch, tmp_path, capsys):
+    _use_tmp_data(monkeypatch, tmp_path)
+    _write_pair(
+        tmp_path,
+        "0001",
+        "in Bern, CHE-123.456.789",
+        {"_verified": True, "seat_municipality": "Zug", "uid": "CHE-123.456.789"},
+    )
+
+    crosscheck._run_batch()
+
+    out = capsys.readouterr().out
+    assert "seat_municipality" in out
+    assert "uid" not in out
+
+
+def test_batch_marks_normalized_fields_as_expected(monkeypatch, tmp_path, capsys):
+    _use_tmp_data(monkeypatch, tmp_path)
+    _write_pair(tmp_path, "0001", "Aktiengesellschaft", {"_verified": True, "legal_form": "AG"})
+
+    crosscheck._run_batch()
+
+    assert "[normalized, expected]" in capsys.readouterr().out
