@@ -9,6 +9,8 @@ tests/fixtures/crosscheck_sample.{txt,json}.
 import json
 from pathlib import Path
 
+import pytest
+
 from src import crosscheck
 from src.crosscheck import CrosscheckResult, crosscheck_doc, crosscheck_record
 
@@ -129,6 +131,14 @@ def test_bookkeeping_fields_are_always_skipped():
     assert _result_field_names(result) == set()
 
 
+def test_annotator_prose_fields_are_always_skipped():
+    # notes is the annotator's own commentary and uncertain holds field
+    # names, so neither is ever a literal quote from the source text.
+    record = {"notes": "Sole board member; cannot sign alone.", "uncertain": ["seat_canton"]}
+    result = crosscheck_record("unrelated text", record)
+    assert _result_field_names(result) == set()
+
+
 def test_composite_kind_fields_are_skipped():
     record = {
         "alternative_names": ["Foo Bar SA"],
@@ -244,7 +254,7 @@ def test_batch_exit_code_is_zero_when_nothing_is_missing(monkeypatch, tmp_path, 
     _write_pair(tmp_path, "0001", "in Bern", {"_verified": True, "seat_municipality": "Bern"})
 
     assert crosscheck._run_batch() == 0
-    assert "1 verified document checked, 0 with results." in capsys.readouterr().out
+    assert "1 verified document checked, 0 with findings." in capsys.readouterr().out
 
 
 def test_batch_exit_code_is_nonzero_when_a_field_is_missing(monkeypatch, tmp_path, capsys):
@@ -254,6 +264,38 @@ def test_batch_exit_code_is_nonzero_when_a_field_is_missing(monkeypatch, tmp_pat
     assert crosscheck._run_batch() == 1
     out = capsys.readouterr().out
     assert "0001 — NOT found in the text (1)" in out
+    assert "seat_municipality" in out
+
+
+def test_batch_ignores_a_document_with_only_normalized_fields_missing(
+    monkeypatch, tmp_path, capsys
+):
+    # Every correct annotation has these missing, so on their own they are
+    # not a reason to flag the document (or to fail the run).
+    _use_tmp_data(monkeypatch, tmp_path)
+    _write_pair(
+        tmp_path,
+        "0001",
+        "Aktiengesellschaft in Bern",
+        {"_verified": True, "seat_canton": "BE", "act_type": "mutation"},
+    )
+
+    assert crosscheck._run_batch() == 0
+    assert "0001 — NOT found" not in capsys.readouterr().out
+
+
+def test_batch_lists_normalized_fields_alongside_a_real_finding(monkeypatch, tmp_path, capsys):
+    _use_tmp_data(monkeypatch, tmp_path)
+    _write_pair(
+        tmp_path,
+        "0001",
+        "in Bern",
+        {"_verified": True, "seat_canton": "BE", "seat_municipality": "Zug"},
+    )
+
+    assert crosscheck._run_batch() == 1
+    out = capsys.readouterr().out
+    assert "seat_canton: 'BE' — 0 times [normalized, expected]" in out
     assert "seat_municipality" in out
 
 
@@ -273,10 +315,29 @@ def test_batch_output_omits_found_fields(monkeypatch, tmp_path, capsys):
     assert "uid" not in out
 
 
-def test_batch_marks_normalized_fields_as_expected(monkeypatch, tmp_path, capsys):
+@pytest.mark.parametrize(
+    "field, value",
+    [
+        ("legal_form", "AG"),
+        ("seat_canton", "BE"),
+        ("canton_previous", "SO"),
+        ("canton_new", "BE"),
+    ],
+)
+def test_batch_marks_normalized_fields_as_expected(monkeypatch, tmp_path, capsys, field, value):
+    # Canton codes are derived from the municipality, never written out in
+    # the notice, so they are reported but not counted as a real finding.
     _use_tmp_data(monkeypatch, tmp_path)
-    _write_pair(tmp_path, "0001", "Aktiengesellschaft", {"_verified": True, "legal_form": "AG"})
+    _write_pair(
+        tmp_path,
+        "0001",
+        "Aktiengesellschaft in Bern",
+        # seat_municipality is the real finding that makes the document
+        # print at all; the normalized field rides along, marked.
+        {"_verified": True, field: value, "seat_municipality": "Zug"},
+    )
 
     crosscheck._run_batch()
 
-    assert "[normalized, expected]" in capsys.readouterr().out
+    out = capsys.readouterr().out
+    assert f"{field}: {value!r} — 0 times [normalized, expected]" in out
