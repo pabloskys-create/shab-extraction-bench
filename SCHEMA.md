@@ -99,7 +99,9 @@ chrome. Only `Mutation` is used (→ `act_type`).
 
 **`domicile_*` vs `address_*`** — `address_*` is the address as printed.
 `domicile_new` / `domicile_previous` are populated **only when the act
-changes the address** (source shows `Bisher` / `bisher`).
+changes the address** (source shows `Bisher` / `bisher`). Street and
+postcode-plus-town only, joined with ", ". The `c/o` party is excluded:
+it has its own field (`address_care_of`).
 
 **Nationality convention** — `von <Ort>` marks a Swiss citizen (Heimatort);
 `<Land> Staatsangehörige(r)` marks a foreigner. A change from the latter to the
@@ -183,7 +185,7 @@ worth recording.
 `bedingte_kapitalerhoehung`, `kapitalband_aufhebung`, `organaenderung`,
 `sitzverlegung`, `kantonswechsel`, `firmenaenderung`, `zweckaenderung`,
 `rechtsformaenderung`, `liquidationseroeffnung`, `liquidation_beendet`,
-`fusion`, `revisionsstelle`
+`fusion`, `revisionsstelle`, `konkurseinstellung`, `konkurseroeffnung`
 
 `rechtsformaenderung` — the company's legal form itself changes (e.g.
 `Rechtsform Hauptsitz neu: Aktiengesellschaft [bisher: Gesellschaft mit
@@ -214,6 +216,8 @@ Keys already in use. **Check this list before inventing a new key.**
 - `tipo_kapitalerhoehung` — e.g. `Ordentliche Kapitalerhöhung innerhalb Kapitalband`
 - `weitere_adressen_nueva` / `weitere_adressen_anterior` — secondary addresses
 - `mitteilungen` — how the company notifies its shareholders/partners
+- `motivo_konkurseinstellung` — stated reason proceedings were
+  discontinued (e.g. `mangels Aktiven`)
 
 **Promotion rule:** an `extras` key appearing in ≥5% of documents is promoted to
 a core field in the next schema version, and previously annotated documents are

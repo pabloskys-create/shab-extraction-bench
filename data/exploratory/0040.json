@@ -18,7 +18,7 @@
   "address_street": "Rehhagstrasse 43",
   "address_postcode": "3018",
   "address_municipality": "Bern",
-  "act_date": null,
+  "act_date": "2026-08-05",
   "tagesregister_nr": "14916",
   "tagesregister_date": "2026-08-05",
   "prior_publication_shab_nr": 22,
@@ -34,8 +34,10 @@
   "persons_added": [],
   "persons_removed": [],
   "persons_changed": [],
-  "extras": {},
+  "extras": {
+    "motivo_loeschung": "Geschäftsaufgabe"
+  },
   "uncertain": [],
   "notes": null,
-  "_verified": false
+  "_verified": true
 }

@@ -3,7 +3,9 @@
   "doc_id": "0034",
   "language": "de",
   "act_type": "mutation",
-  "act_subtypes": [],
+  "act_subtypes": [
+    "konkurseinstellung"
+  ],
   "company_name_full": "Dentomobil Thun GmbH in Liquidation",
   "company_name_base": "Dentomobil Thun GmbH",
   "status_suffix": "in Liquidation",
@@ -18,7 +20,7 @@
   "address_street": "Mühlemattweg 16C",
   "address_postcode": "3608",
   "address_municipality": "Thun",
-  "act_date": null,
+  "act_date": "2026-08-04",
   "tagesregister_nr": "14863",
   "tagesregister_date": "2026-08-05",
   "prior_publication_shab_nr": 69,
@@ -34,8 +36,10 @@
   "persons_added": [],
   "persons_removed": [],
   "persons_changed": [],
-  "extras": {},
+  "extras": {
+    "motivo_konkurseinstellung": "mangels Aktiven"
+  },
   "uncertain": [],
-  "notes": null,
-  "_verified": false
+  "notes": "Bankruptcy proceedings discontinued for lack of assets. The company keeps its 'in Liquidation' suffix; the discontinuation does not by itself remove it from the register.",
+  "_verified": true
 }

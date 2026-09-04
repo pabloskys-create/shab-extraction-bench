@@ -3,17 +3,20 @@
   "doc_id": "0036",
   "language": "de",
   "act_type": "mutation",
-  "act_subtypes": [],
-  "company_name_full": "Yeap GmbH in Liquidation",
+  "act_subtypes": [
+    "firmenaenderung",
+    "konkurseroeffnung"
+  ],
+  "company_name_full": "Yeap GmbH",
   "company_name_base": "Yeap GmbH",
-  "status_suffix": "in Liquidation",
+  "status_suffix": null,
   "alternative_names": [
     "Yeap Sàrl en liquidation",
     "Yeap Sagl in liquidazione",
     "Yeap Ltd liab. Co in liquidation"
   ],
-  "company_name_new": null,
-  "company_name_previous": null,
+  "company_name_new": "Yeap GmbH in Liquidation",
+  "company_name_previous": "Yeap GmbH",
   "uid": "CHE-372.546.481",
   "legal_form": "GmbH",
   "seat_municipality": "Köniz",
@@ -22,7 +25,7 @@
   "address_street": "Dorfbachstrasse 36",
   "address_postcode": "3098",
   "address_municipality": "Köniz",
-  "act_date": null,
+  "act_date": "2026-08-04",
   "tagesregister_nr": "14915",
   "tagesregister_date": "2026-08-05",
   "prior_publication_shab_nr": 75,
@@ -38,8 +41,12 @@
   "persons_added": [],
   "persons_removed": [],
   "persons_changed": [],
-  "extras": {},
-  "uncertain": [],
-  "notes": null,
-  "_verified": false
+  "extras": {
+    "konkurs_wirkung_ab": "2026-08-04 11:00"
+  },
+  "uncertain": [
+    "alternative_names"
+  ],
+  "notes": "The act renames the company and all three translated names, which take the liquidation suffix. alternative_names has no new/previous pair, so it holds the new values; the previous translations are not stated in the notice. Bankruptcy opened by court decision effective 04.08.2026, 11:00.",
+  "_verified": true
 }

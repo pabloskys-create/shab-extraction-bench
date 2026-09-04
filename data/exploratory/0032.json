@@ -3,7 +3,10 @@
   "doc_id": "0032",
   "language": "de",
   "act_type": "mutation",
-  "act_subtypes": [],
+  "act_subtypes": [
+    "zweckaenderung",
+    "organaenderung"
+  ],
   "company_name_full": "Woodkit Khamso",
   "company_name_base": "Woodkit Khamso",
   "status_suffix": null,
@@ -33,9 +36,28 @@
   "domicile_previous": null,
   "persons_added": [],
   "persons_removed": [],
-  "persons_changed": [],
-  "extras": {},
+  "persons_changed": [
+    {
+      "name_new": "Khamso, Natthakit",
+      "name_previous": null,
+      "domicile_new": "Thörishaus (Neuenegg)",
+      "domicile_previous": "Neuenegg",
+      "role_new": "Inhaber",
+      "role_previous": null,
+      "signature_new": "Einzelunterschrift",
+      "signature_previous": null,
+      "nationality_new": null,
+      "nationality_previous": null,
+      "heimatort_new": "Madiswil",
+      "heimatort_previous": null,
+      "stammanteile_new": null,
+      "stammanteile_previous": null
+    }
+  ],
+  "extras": {
+    "zweck": "Holzmanufaktur und Werkstatt. Entwurf, Herstellung und Vertrieb von massgeschneiderten Möbeln und anderen Gegenständen sowie damit verbundene Dienstleistungen; Erbringen von Dienstleistungen in den Bereichen…"
+  },
   "uncertain": [],
   "notes": null,
-  "_verified": false
+  "_verified": true
 }

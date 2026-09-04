@@ -3,7 +3,9 @@
   "doc_id": "0035",
   "language": "de",
   "act_type": "mutation",
-  "act_subtypes": [],
+  "act_subtypes": [
+    "organaenderung"
+  ],
   "company_name_full": "Gesundheit Emmental Service AG",
   "company_name_base": "Gesundheit Emmental Service AG",
   "status_suffix": null,
@@ -31,11 +33,33 @@
   "capital_previous_chf": null,
   "domicile_new": null,
   "domicile_previous": null,
-  "persons_added": [],
-  "persons_removed": [],
+  "persons_added": [
+    {
+      "name": "Siegenthaler, Manuela",
+      "nationality": null,
+      "heimatort": "Kirchleerau",
+      "domicile": "Arni BE",
+      "role": "Mitglied des Verwaltungsrates",
+      "signature": "Kollektivunterschrift zu zweien",
+      "uid": null,
+      "stammanteile": null
+    }
+  ],
+  "persons_removed": [
+    {
+      "name": "Zundel, Rolf",
+      "nationality": null,
+      "heimatort": "Rorschach",
+      "domicile": "Utzenstorf",
+      "role": "Mitglied des Verwaltungsrates",
+      "signature": "Kollektivunterschrift zu zweien",
+      "uid": null,
+      "stammanteile": null
+    }
+  ],
   "persons_changed": [],
   "extras": {},
   "uncertain": [],
   "notes": null,
-  "_verified": false
+  "_verified": true
 }

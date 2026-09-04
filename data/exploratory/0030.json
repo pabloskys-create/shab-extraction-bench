@@ -3,7 +3,10 @@
   "doc_id": "0030",
   "language": "de",
   "act_type": "mutation",
-  "act_subtypes": [],
+  "act_subtypes": [
+    "sitzverlegung",
+    "organaenderung"
+  ],
   "company_name_full": "HEROS-DOGSPORT Heiko Frey",
   "company_name_base": "HEROS-DOGSPORT Heiko Frey",
   "status_suffix": null,
@@ -29,11 +32,28 @@
   "canton_new": null,
   "capital_new_chf": null,
   "capital_previous_chf": null,
-  "domicile_new": null,
-  "domicile_previous": null,
+  "domicile_new": "Chemin du Collège 33, 2604 La Heutte",
+  "domicile_previous": "Wilerbergweg 18d, 2504 Biel/Bienne",
   "persons_added": [],
   "persons_removed": [],
-  "persons_changed": [],
+  "persons_changed": [
+    {
+      "name_new": "Frey, Heiko",
+      "name_previous": null,
+      "domicile_new": "La Heutte (Péry-La Heutte)",
+      "domicile_previous": "Biel/Bienne",
+      "role_new": "Inhaber",
+      "role_previous": null,
+      "signature_new": "Einzelunterschrift",
+      "signature_previous": null,
+      "nationality_new": "deutscher",
+      "nationality_previous": null,
+      "heimatort_new": null,
+      "heimatort_previous": null,
+      "stammanteile_new": null,
+      "stammanteile_previous": null
+    }
+  ],
   "extras": {},
   "uncertain": [],
   "notes": null,
