@@ -3,13 +3,16 @@
   "doc_id": "0043",
   "language": "de",
   "act_type": "mutation",
-  "act_subtypes": [],
-  "company_name_full": "Kröner Design",
-  "company_name_base": "Kröner Design",
+  "act_subtypes": [
+    "firmenaenderung",
+    "zweckaenderung"
+  ],
+  "company_name_full": "Kröner Consulting",
+  "company_name_base": "Kröner Consulting",
   "status_suffix": null,
   "alternative_names": [],
-  "company_name_new": null,
-  "company_name_previous": null,
+  "company_name_new": "Kröner Design",
+  "company_name_previous": "Kröner Consulting",
   "uid": "CHE-279.705.403",
   "legal_form": "Einzelunternehmen",
   "seat_municipality": "Bolligen",
@@ -34,8 +37,10 @@
   "persons_added": [],
   "persons_removed": [],
   "persons_changed": [],
-  "extras": {},
+  "extras": {
+    "zweck": "Erbringen von Dienstleistungen im Bereich Online Marketing, Webdesign, Suchmaschinenoptimierung, digitale Strategie sowie Beratung und Vertrieb von digitalen Lösungen für Unternehmen."
+  },
   "uncertain": [],
   "notes": null,
-  "_verified": false
+  "_verified": true
 }
