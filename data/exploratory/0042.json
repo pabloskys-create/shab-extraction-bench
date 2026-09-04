@@ -3,7 +3,9 @@
   "doc_id": "0042",
   "language": "de",
   "act_type": "mutation",
-  "act_subtypes": [],
+  "act_subtypes": [
+    "organaenderung"
+  ],
   "company_name_full": "NOSS Genossenschaft",
   "company_name_base": "NOSS Genossenschaft",
   "status_suffix": null,
@@ -32,10 +34,21 @@
   "domicile_new": null,
   "domicile_previous": null,
   "persons_added": [],
-  "persons_removed": [],
+  "persons_removed": [
+    {
+      "name": "Blaser, Jürg",
+      "nationality": null,
+      "heimatort": "Langnau im Emmental",
+      "domicile": "Spiez",
+      "role": "Direktor",
+      "signature": "Kollektivunterschrift zu zweien",
+      "uid": null,
+      "stammanteile": null
+    }
+  ],
   "persons_changed": [],
   "extras": {},
   "uncertain": [],
   "notes": null,
-  "_verified": false
+  "_verified": true
 }

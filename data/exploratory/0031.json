@@ -3,7 +3,10 @@
   "doc_id": "0031",
   "language": "de",
   "act_type": "mutation",
-  "act_subtypes": [],
+  "act_subtypes": [
+    "organaenderung",
+    "revisionsstelle"
+  ],
   "company_name_full": "Seniorenzentrum Schweizerhof AG",
   "company_name_base": "Seniorenzentrum Schweizerhof AG",
   "status_suffix": null,
@@ -31,9 +34,58 @@
   "capital_previous_chf": null,
   "domicile_new": null,
   "domicile_previous": null,
-  "persons_added": [],
-  "persons_removed": [],
-  "persons_changed": [],
+  "persons_added": [
+    {
+      "name": "Sutter-Della Valle, Sandro",
+      "nationality": null,
+      "heimatort": "Ebnat-Kappel",
+      "domicile": "Hünenberg",
+      "role": "Mitglied des Verwaltungsrates",
+      "signature": "Kollektivunterschrift zu zweien",
+      "uid": null,
+      "stammanteile": null
+    },
+    {
+      "name": "Künzle Treuhand AG",
+      "nationality": null,
+      "heimatort": null,
+      "domicile": "Jona (Rapperswil-Jona)",
+      "role": "Revisionsstelle",
+      "signature": null,
+      "uid": "CHE-107.798.374",
+      "stammanteile": null
+    }
+  ],
+  "persons_removed": [
+    {
+      "name": "Rüegsegger Treuhand AG",
+      "nationality": null,
+      "heimatort": null,
+      "domicile": "Frutigen",
+      "role": "Revisionsstelle",
+      "signature": null,
+      "uid": "CHE-449.664.829",
+      "stammanteile": null
+    }
+  ],
+  "persons_changed": [
+    {
+      "name_new": "Staubli, Fabian Christoph",
+      "name_previous": null,
+      "domicile_new": "Hinteregg (Egg)",
+      "domicile_previous": null,
+      "role_new": "Mitglied des Verwaltungsrates",
+      "role_previous": "ohne eingetragene Funktion",
+      "signature_new": "Kollektivunterschrift zu zweien",
+      "signature_previous": null,
+      "nationality_new": null,
+      "nationality_previous": null,
+      "heimatort_new": "Herrliberg",
+      "heimatort_previous": null,
+      "stammanteile_new": null,
+      "stammanteile_previous": null
+    }
+  ],
   "extras": {},
   "uncertain": [],
   "notes": null,

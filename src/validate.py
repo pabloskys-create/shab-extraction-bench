@@ -59,6 +59,8 @@ ACT_SUBTYPES_VALUES = [
     "liquidation_beendet",
     "fusion",
     "revisionsstelle",
+    "konkurseroeffnung", 
+    "konkurseinstellung"
 ]
 
 PERSON_KEYS = frozenset(

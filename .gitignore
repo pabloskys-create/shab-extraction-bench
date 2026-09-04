@@ -33,5 +33,11 @@ Thumbs.db
 
 pr_body.md
 todo.md
+list_*.py
+check_shape.py
+make_missing.py
+prefill_new.py
+find_null.py
+guia-json-rapida.json
 # NOTE: data/gold/, data/raw/ and results/ summaries ARE committed on purpose.
 # The dataset is the deliverable.

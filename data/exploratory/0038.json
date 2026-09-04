@@ -33,13 +33,13 @@
   "canton_new": null,
   "capital_new_chf": null,
   "capital_previous_chf": null,
-  "domicile_new": null,
-  "domicile_previous": null,
+  "domicile_new": "Dorfplatz 2, 3176 Neuenegg",
+  "domicile_previous": "Wassermattweg 32, 3176 Neuenegg",
   "persons_added": [],
   "persons_removed": [],
   "persons_changed": [],
   "extras": {},
   "uncertain": [],
   "notes": null,
-  "_verified": false
+  "_verified": true
 }

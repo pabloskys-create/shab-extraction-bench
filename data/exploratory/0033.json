@@ -3,13 +3,16 @@
   "doc_id": "0033",
   "language": "de",
   "act_type": "mutation",
-  "act_subtypes": [],
-  "company_name_full": "Della Neve Gastro",
-  "company_name_base": "Della Neve Gastro",
+  "act_subtypes": [
+    "firmenaenderung",
+    "zweckaenderung"
+  ],
+  "company_name_full": "Della Neve Baumontage",
+  "company_name_base": "Della Neve Baumontage",
   "status_suffix": null,
   "alternative_names": [],
-  "company_name_new": null,
-  "company_name_previous": null,
+  "company_name_new": "Della Neve Gastro",
+  "company_name_previous": "Della Neve Baumontage",
   "uid": "CHE-107.387.367",
   "legal_form": "Einzelunternehmen",
   "seat_municipality": "Madiswil",
@@ -34,8 +37,13 @@
   "persons_added": [],
   "persons_removed": [],
   "persons_changed": [],
-  "extras": {},
-  "uncertain": [],
-  "notes": null,
-  "_verified": false
+  "extras": {
+    "zweck": "Betrieb von Restaurants und Gastrobetrieben, Catering und Eventorganisation sowie Ausführung von Arbeiten im Bereich Trennwandsysteme, Küchen- und Fensterbau.",
+    "prior_publication_page": "3707"
+  },
+  "uncertain": [
+    "prior_publication_id"
+  ],
+  "notes": "Prior publication predates the Publ. identifier: the 2000 citation gives a page number (S.3707) instead. Recorded in extras.",
+  "_verified": true
 }

@@ -36,6 +36,7 @@ Format: `doc_id | minutes | new fields | notes`
 0027 | 8 | 0 | Field swap: act_subtypes values pasted into alternative_names
 0028 | 7 | 0 | Two legal persons as auditors (Person.uid again)
 
+0034 | 11 | 1 (konkurseinstellung) | Bankruptcy discontinued for lack of assets — no vocabulary value existed
 ## Exploratory phase verdict (28 documents)
 
 New fields in the last five documents (0024-0028): **0**. Everything that

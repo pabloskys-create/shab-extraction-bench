@@ -18,6 +18,12 @@ A single notice can contain four different dates. Keep them apart.
 | `tagesregister_date` | `Tagesregister-Nr. NNNN vom …` | always present |
 | `prior_publication_date` | `Vorangehende Publikation im SHAB: Nr. N, Datum: …` | `null` |
 
+`act_date` also takes a dated decision that constitutes the act:
+`mit Entscheid … vom …` (court) · `mit Beschluss der
+Gesellschafterversammlung vom …` (shareholders). Use
+`extras.decision_junta_fecha` only for a resolution that predates and
+underlies the act, not for the act itself.
+
 ⚠️ The date inside the parenthesis — `(SHAB Nr. 223 vom 18.11.2025, Publ. …)` —
 is the **previous** publication, not this one. It duplicates
 `prior_publication_*`. It is never `act_date`.
@@ -116,7 +122,7 @@ Multi-label. Assign every one that applies. Controlled vocabulary only.
 
 | Value | Trigger |
 |---|---|
-| `statutenaenderung` | `Statutenänderung:` |
+| `statutenaenderung` | `Statutenänderung:` · `Urkundenänderung:` (foundations) |
 | `kapitalerhoehung` | capital goes up |
 | `kapitalherabsetzung` | capital goes down |
 | `organaenderung` | **any** person enters, leaves or changes |
@@ -129,6 +135,8 @@ Multi-label. Assign every one that applies. Controlled vocabulary only.
 | `liquidation_beendet` | `Die Liquidation ist beendet` |
 | `revisionsstelle` | auditor appointed or removed |
 | `fusion` | merger |
+| `konkurseinstellung` | `Das Konkursverfahren ist … eingestellt worden` — bankruptcy proceedings discontinued, typically for lack of assets |
+| `konkurseroeffnung` | `wurde … der Konkurs eröffnet` — bankruptcy opened by court decision |
 
 Most common mistake: forgetting `organaenderung` when someone leaves.
 

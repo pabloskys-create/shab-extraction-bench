@@ -3,7 +3,11 @@
   "doc_id": "0039",
   "language": "de",
   "act_type": "mutation",
-  "act_subtypes": [],
+  "act_subtypes": [
+    "statutenaenderung",
+    "zweckaenderung",
+    "organaenderung"
+  ],
   "company_name_full": "Stiftung Bieler Theater",
   "company_name_base": "Stiftung Bieler Theater",
   "status_suffix": null,
@@ -18,7 +22,7 @@
   "address_street": "Spitalstrasse 12",
   "address_postcode": "2502",
   "address_municipality": "Biel/Bienne",
-  "act_date": null,
+  "act_date": "2026-05-28",
   "tagesregister_nr": "14905",
   "tagesregister_date": "2026-08-05",
   "prior_publication_shab_nr": 78,
@@ -31,11 +35,104 @@
   "capital_previous_chf": null,
   "domicile_new": null,
   "domicile_previous": null,
-  "persons_added": [],
-  "persons_removed": [],
-  "persons_changed": [],
-  "extras": {},
-  "uncertain": [],
-  "notes": null,
-  "_verified": false
+  "persons_added": [
+    {
+      "name": "Augsburger, Alain",
+      "nationality": null,
+      "heimatort": "Langnau im Emmental",
+      "domicile": "Biel/Bienne",
+      "role": "Mitglied des Stiftungsrates, Kassier",
+      "signature": "Kollektivunterschrift zu zweien",
+      "uid": null,
+      "stammanteile": null
+    },
+    {
+      "name": "Debétaz, Marynelle",
+      "nationality": null,
+      "heimatort": "Fey",
+      "domicile": "Biel/Bienne",
+      "role": "Mitglied des Stiftungsrates",
+      "signature": "Kollektivunterschrift zu zweien",
+      "uid": null,
+      "stammanteile": null
+    },
+    {
+      "name": "Friedli, Monika",
+      "nationality": null,
+      "heimatort": "Seeberg",
+      "domicile": "Biel/Bienne",
+      "role": "Mitglied des Stiftungsrates",
+      "signature": "Kollektivunterschrift zu zweien",
+      "uid": null,
+      "stammanteile": null
+    },
+    {
+      "name": "Steinegger, Verena",
+      "nationality": null,
+      "heimatort": "Lyss",
+      "domicile": "Biel/Bienne",
+      "role": "Mitglied des Stiftungsrates",
+      "signature": "Kollektivunterschrift zu zweien",
+      "uid": null,
+      "stammanteile": null
+    }
+  ],
+  "persons_removed": [
+    {
+      "name": "Berger-Ritzmann, Therese Maria",
+      "nationality": null,
+      "heimatort": "Fahrni",
+      "domicile": "Biel/Bienne",
+      "role": "Sekretärin",
+      "signature": "Kollektivunterschrift zu zweien",
+      "uid": null,
+      "stammanteile": null
+    },
+    {
+      "name": "Ammann, Jürg",
+      "nationality": null,
+      "heimatort": "Zürich und Dinhard",
+      "domicile": "Biel/Bienne",
+      "role": "Präsident",
+      "signature": "Kollektivunterschrift zu zweien",
+      "uid": null,
+      "stammanteile": null
+    },
+    {
+      "name": "Sigrist, Georges",
+      "nationality": null,
+      "heimatort": "Rafz",
+      "domicile": "Biel/Bienne",
+      "role": "Mitglied",
+      "signature": "ohne Zeichnungsberechtigung",
+      "uid": null,
+      "stammanteile": null
+    }
+  ],
+  "persons_changed": [
+    {
+      "name_new": "Esseiva, Michel Pierre-Frédéric",
+      "name_previous": null,
+      "domicile_new": "Biel/Bienne",
+      "domicile_previous": null,
+      "role_new": "Präsident des Stiftungsrates",
+      "role_previous": "Kassier",
+      "signature_new": "Kollektivunterschrift zu zweien",
+      "signature_previous": null,
+      "nationality_new": null,
+      "nationality_previous": null,
+      "heimatort_new": "Fribourg",
+      "heimatort_previous": "Freiburg",
+      "stammanteile_new": null,
+      "stammanteile_previous": null
+    }
+  ],
+  "extras": {
+    "zweck": "Die Stiftung bezweckt, die Bühnenkunst in allen ihren Formen in der Region Biel-Seeland, Berner Jura in enger Zusammenarbeit mit den zuständigen Behörden und den in diesem Bereich tätigen Institutionen…"
+  },
+  "uncertain": [
+    "persons_removed"
+  ],
+  "notes": "Ammann has two Heimatorte ('Zürich und Dinhard'); the schema allows only one string.",
+  "_verified": true
 }

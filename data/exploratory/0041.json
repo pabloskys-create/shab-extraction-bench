@@ -3,13 +3,17 @@
   "doc_id": "0041",
   "language": "de",
   "act_type": "mutation",
-  "act_subtypes": [],
-  "company_name_full": "F+F Bildhaueratelier GmbH in Liquidation",
+  "act_subtypes": [
+    "firmenaenderung",
+    "liquidationseroeffnung",
+    "organaenderung"
+  ],
+  "company_name_full": "F+F Bildhaueratelier GmbH",
   "company_name_base": "F+F Bildhaueratelier GmbH",
-  "status_suffix": "in Liquidation",
+  "status_suffix": null,
   "alternative_names": [],
-  "company_name_new": null,
-  "company_name_previous": null,
+  "company_name_new": "F+F Bildhaueratelier GmbH in Liquidation",
+  "company_name_previous": "F+F Bildhaueratelier GmbH",
   "uid": "CHE-415.641.227",
   "legal_form": "GmbH",
   "seat_municipality": "Safnern",
@@ -32,10 +36,42 @@
   "domicile_new": null,
   "domicile_previous": null,
   "persons_added": [],
-  "persons_removed": [],
-  "persons_changed": [],
-  "extras": {},
+  "persons_removed": [
+    {
+      "name": "Bachofner, Franziska",
+      "nationality": "deutsch",
+      "heimatort": null,
+      "domicile": "Lengnau bei Biel (Lengnau BE)",
+      "role": "Gesellschafterin und Vorsitzende der Geschäftsführung",
+      "signature": "Einzelunterschrift",
+      "uid": null,
+      "stammanteile": 10
+    }
+  ],
+  "persons_changed": [
+    {
+      "name_new": "Sinniger, Franziska",
+      "name_previous": null,
+      "domicile_new": "Lengnau BE",
+      "domicile_previous": "Lengnau bei Biel (Lengnau BE)",
+      "role_new": "Gesellschafterin und Geschäftsführerin, Liquidatorin",
+      "role_previous": "Gesellschafterin und Geschäftsführerin",
+      "signature_new": "Einzelunterschrift",
+      "signature_previous": null,
+      "nationality_new": null,
+      "nationality_previous": null,
+      "heimatort_new": "Erlinsbach (SO)",
+      "heimatort_previous": null,
+      "stammanteile_new": 20,
+      "stammanteile_previous": 10
+    }
+  ],
+  "extras": {
+    "decision_junta_fecha": "2026-05-18",
+    "prior_publication_page": "0",
+    "valor_nominal_chf": 1000
+  },
   "uncertain": [],
   "notes": null,
-  "_verified": false
+  "_verified": true
 }

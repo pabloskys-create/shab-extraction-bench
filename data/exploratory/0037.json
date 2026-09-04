@@ -3,7 +3,9 @@
   "doc_id": "0037",
   "language": "de",
   "act_type": "mutation",
-  "act_subtypes": [],
+  "act_subtypes": [
+    "konkurseinstellung"
+  ],
   "company_name_full": "Restaurant Christina, Inhaberin Antunes Rainho",
   "company_name_base": "Restaurant Christina, Inhaberin Antunes Rainho",
   "status_suffix": null,
@@ -18,7 +20,7 @@
   "address_street": "Kirchgasse 80",
   "address_postcode": "3812",
   "address_municipality": "Wilderswil",
-  "act_date": null,
+  "act_date": "2026-08-03",
   "tagesregister_nr": "14900",
   "tagesregister_date": "2026-08-05",
   "prior_publication_shab_nr": 89,
@@ -34,8 +36,10 @@
   "persons_added": [],
   "persons_removed": [],
   "persons_changed": [],
-  "extras": {},
+  "extras": {
+    "motivo_konkurseinstellung": "mangels Aktiven"
+  },
   "uncertain": [],
   "notes": null,
-  "_verified": false
+  "_verified": true
 }
