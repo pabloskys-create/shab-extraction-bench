@@ -18,7 +18,7 @@
   "address_street": "Widenmatt 34",
   "address_postcode": "6102",
   "address_municipality": "Malters",
-  "act_date": null,
+  "act_date": "2026-08-14",
   "tagesregister_nr": "8676",
   "tagesregister_date": "2026-08-20",
   "prior_publication_shab_nr": null,
@@ -27,15 +27,55 @@
   "authority": "Handelsregisteramt des Kantons Luzern",
   "canton_previous": null,
   "canton_new": null,
-  "capital_new_chf": null,
+  "capital_new_chf": 100000,
   "capital_previous_chf": null,
   "domicile_new": null,
   "domicile_previous": null,
-  "persons_added": [],
+  "persons_added": [
+    {
+      "name": "Estermann, Bernhard Josef",
+      "nationality": null,
+      "heimatort": "Schötz",
+      "domicile": "Malters",
+      "role": "Präsident des Verwaltungsrates",
+      "signature": "Kollektivunterschrift zu zweien",
+      "uid": null,
+      "stammanteile": null
+    },
+    {
+      "name": "Estermann, Elias Simon",
+      "nationality": null,
+      "heimatort": "Schötz",
+      "domicile": "Malters",
+      "role": "Mitglied des Verwaltungsrates",
+      "signature": "Kollektivunterschrift zu zweien aber nicht mit Andrea Maria Langenegger",
+      "uid": null,
+      "stammanteile": null
+    },
+    {
+      "name": "Langenegger, Andrea Maria",
+      "nationality": null,
+      "heimatort": "Muotathal",
+      "domicile": "Malters",
+      "role": "Mitglied des Verwaltungsrates",
+      "signature": "Kollektivunterschrift zu zweien aber nicht mit Elias Simon Estermann",
+      "uid": null,
+      "stammanteile": null
+    }
+  ],
   "persons_removed": [],
   "persons_changed": [],
-  "extras": {},
+  "extras": {
+    "zweck": "Die Gesellschaft bezweckt den Kauf, den Verkauf, die Vermietung und die Verwaltung von Immobilien.",
+    "liberierung_nuevo_chf": 100000,
+    "acciones_nuevas": 100,
+    "valor_nominal_chf": 1000,
+    "clases_acciones": "vinkulierte Namenaktien",
+    "vinkulierung": true,
+    "mitteilungen": "per Brief oder E-Mail",
+    "revision": "opting-out"
+  },
   "uncertain": [],
   "notes": null,
-  "_verified": false
+  "_verified": true
 }

@@ -3,7 +3,9 @@
   "doc_id": "0050",
   "language": "de",
   "act_type": "mutation",
-  "act_subtypes": [],
+  "act_subtypes": [
+    "organaenderung"
+  ],
   "company_name_full": "Koller Kanal GmbH",
   "company_name_base": "Koller Kanal GmbH",
   "status_suffix": null,
@@ -31,11 +33,34 @@
   "capital_previous_chf": null,
   "domicile_new": null,
   "domicile_previous": null,
-  "persons_added": [],
+  "persons_added": [
+    {
+      "name": "Amacher-Flück, Brigitte",
+      "nationality": null,
+      "heimatort": "Brienz (BE) und Hasliberg",
+      "domicile": "Giswil",
+      "role": null,
+      "signature": "Einzelunterschrift",
+      "uid": null,
+      "stammanteile": null
+    },
+    {
+      "name": "Koller, Rita",
+      "nationality": null,
+      "heimatort": "Fischbach",
+      "domicile": "Malters",
+      "role": null,
+      "signature": "Einzelunterschrift",
+      "uid": null,
+      "stammanteile": null
+    }
+  ],
   "persons_removed": [],
   "persons_changed": [],
   "extras": {},
-  "uncertain": [],
-  "notes": null,
-  "_verified": false
+  "uncertain": [
+    "persons_added"
+  ],
+  "notes": "Amacher-Flück has two Heimatorte ('Brienz (BE) und Hasliberg'); the schema allows only one string.",
+  "_verified": true
 }

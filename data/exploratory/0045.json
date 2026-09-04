@@ -31,11 +31,24 @@
   "capital_previous_chf": null,
   "domicile_new": null,
   "domicile_previous": null,
-  "persons_added": [],
+  "persons_added": [
+    {
+      "name": "Pavlovic, Stevo",
+      "nationality": "montenegrinisch",
+      "heimatort": null,
+      "domicile": "Ostermundigen",
+      "role": "Inhaber",
+      "signature": "Einzelunterschrift",
+      "uid": null,
+      "stammanteile": null
+    }
+  ],
   "persons_removed": [],
   "persons_changed": [],
-  "extras": {},
+  "extras": {
+    "zweck": "Physiotherapie, Rehabilitation und Prävention."
+  },
   "uncertain": [],
   "notes": null,
-  "_verified": false
+  "_verified": true
 }

@@ -18,7 +18,7 @@
   "address_street": "Unterdorfweg 2",
   "address_postcode": "6033",
   "address_municipality": "Buchrain",
-  "act_date": null,
+  "act_date": "2026-07-16",
   "tagesregister_nr": "8684",
   "tagesregister_date": "2026-08-20",
   "prior_publication_shab_nr": null,
@@ -27,15 +27,31 @@
   "authority": "Handelsregisteramt des Kantons Luzern",
   "canton_previous": null,
   "canton_new": null,
-  "capital_new_chf": null,
+  "capital_new_chf": 20000,
   "capital_previous_chf": null,
   "domicile_new": null,
   "domicile_previous": null,
-  "persons_added": [],
+  "persons_added": [
+    {
+      "name": "Rüegg, Patrick Joshua",
+      "nationality": null,
+      "heimatort": "Bauma",
+      "domicile": "Nottwil",
+      "role": "Gesellschafter und Geschäftsführer",
+      "signature": "Einzelunterschrift",
+      "uid": null,
+      "stammanteile": 200
+    }
+  ],
   "persons_removed": [],
   "persons_changed": [],
-  "extras": {},
+  "extras": {
+    "zweck": "Die Gesellschaft bezweckt die Erbringung von Dienstleistungen in den Bereichen Ingenieurwesen und Softwareentwicklung, insbesondere die Entwicklung, Konstruktion und Optimierung mechanischer und…",
+    "valor_nominal_chf": 100,
+    "mitteilungen": "per Brief oder E-Mail",
+    "revision": "opting-out"
+  },
   "uncertain": [],
   "notes": null,
-  "_verified": false
+  "_verified": true
 }
