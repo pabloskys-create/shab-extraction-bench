@@ -16,9 +16,12 @@ Fields extracted here:
     one SCHEMA.md wants; see BISHER_IN_RE, PLZ_PREFIX_TO_CANTON),
     seat_municipality (from "in <Ort>," right before the UID, or from the
     "bisher in <Ort>" phrase itself on a relocation), act_type,
-    company_name_full, company_name_base,
+    company_name_full, company_name_base and status_suffix (all three from
+    the body's name, anchored on the UID to its right — the header block
+    shows the state *after* the act, SCHEMA.md wants the state before it;
+    see BODY_NAME_RE),
     address_care_of, address_street, address_postcode, address_municipality,
-    status_suffix, alternative_names, language (constant "de" — see
+    alternative_names, language (constant "de" — see
     SCHEMA.md "Scope decisions": this module only ever sees
     German-language notices)
 
@@ -129,6 +132,45 @@ SEAT_MUNICIPALITY_RE = re.compile(r",\s*in\s+([^,]+),\s*CHE-\d{3}\.\d{3}\.\d{3}"
 # in the header's "Bisher" sub-block (see _bisher_header_postcode below).
 BISHER_IN_RE = re.compile(r"\bbisher in\s+([^,]+)")
 
+# The registered name as it stood *before* the act. It opens the body
+# paragraph and runs up to the seat clause that precedes the UID
+# ("<Firma>, in <Ort>, CHE-..." or "<Firma>, bisher in <Ort>, CHE-..."),
+# so it is anchored on the UID from the right exactly like
+# SEAT_MUNICIPALITY_RE above.
+#
+# The header block cannot be used for these names: it shows the state
+# *after* the act, while SCHEMA.md defines company_name_full /
+# company_name_base / status_suffix as the state before it. On a name
+# change the header carries the new name (data/raw/0043.txt: header
+# "Kröner Design", body "Kröner Consulting"), and on a liquidation it
+# carries a status suffix the pre-act name did not have (0036, 0041, 0096).
+#
+# The capture starts at the beginning of the body block rather than after
+# some comma, because registered names contain commas of their own:
+# "Hasler + Co AG, die Zutrittsexperten" (data/raw/0114.txt),
+# "WIK FAR EAST LIMITED, Hongkong, Zweigniederlassung Luzern" (0054.txt).
+BODY_NAME_RE = re.compile(
+    r"^(.*?),\s*(?:bisher\s+)?in\s+[^,]+,\s*CHE-\d{3}\.\d{3}\.\d{3}", re.DOTALL
+)
+# A correction notice puts a clause naming the entry being corrected in
+# front of the company name: "Berichtigung des im SHAB vom 11.11.2025
+# unter Meldungsnummer 1006480861 publizierten TR-Eintrags Nr. 49'879 vom
+# 06.11.2025 <Firma>, in <Ort>, CHE-...".
+#
+# CAUTION: this pattern is derived from a single document — data/raw/0095.txt
+# is the only "Berichtigung" in the corpus. That the preamble ends at the
+# last "vom <DD.MM.YYYY>" before the name is an observation about that one
+# notice, not a documented rule. Re-check it against real examples as soon
+# as a second Berichtigung appears, and widen it only against those.
+#
+# Detection and trimming are two separate patterns on purpose: when a body
+# starts with "Berichtigung" but the preamble does not match in full,
+# _body_name returns nothing at all rather than a name cut off somewhere
+# inside the preamble. A half-truncated name is worse than a missing one —
+# same reasoning as PLZ_PREFIX_TO_CANTON below refusing to guess a canton.
+BERICHTIGUNG_START_RE = re.compile(r"^Berichtigung\b")
+BERICHTIGUNG_PREAMBLE_RE = re.compile(r"^Berichtigung\b.*\bvom \d{2}\.\d{2}\.\d{4}\s+")
+
 # Swiss postal codes are geographic but not aligned to canton borders (a
 # given 3-digit prefix can straddle two cantons), so this table is built
 # incrementally against "bisher in <Ort>" cases actually seen in the corpus
@@ -236,8 +278,41 @@ def _canton_from_plz(plz: str | None) -> str | None:
     return PLZ_PREFIX_TO_CANTON.get(plz) or PLZ_PREFIX_TO_CANTON.get(plz[:3])
 
 
+def _body_name(blocks: list[list[str]]) -> str | None:
+    """Return the pre-act registered name from the body block, or None.
+
+    The body block is the one carrying the UID; the name runs from its
+    start to the seat clause in front of that UID (see BODY_NAME_RE).
+    Trailing "(...)" alternative-language groups are stripped — 0016.txt
+    repeats them in the body the same way the header line does.
+
+    Returns None when the name cannot be read in full: no UID, no seat
+    clause, or a "Berichtigung" preamble that does not match
+    BERICHTIGUNG_PREAMBLE_RE end to end. The caller then leaves the name
+    fields null for the annotator instead of recording a partial name.
+    """
+    for block in blocks:
+        joined = "\n".join(block)
+        if not UID_RE.search(joined):
+            continue
+        name_match = BODY_NAME_RE.match(joined)
+        if not name_match:
+            return None
+        name = name_match.group(1).strip()
+        if BERICHTIGUNG_START_RE.match(name):
+            preamble_match = BERICHTIGUNG_PREAMBLE_RE.match(name)
+            if not preamble_match:
+                return None
+            name = name[preamble_match.end() :].strip()
+        trailing_match = TRAILING_ALT_NAMES_RE.search(name)
+        if trailing_match:
+            name = name[: trailing_match.start()].rstrip()
+        return name or None
+    return None
+
+
 def _parse_header_block(lines: list[str]) -> dict:
-    """Parse the headline block: act_type, status_suffix, alt names, address.
+    """Parse the headline block: act_type, alt names, address.
 
     `lines[0]` is the portal headline (e.g. "Mutation Foo AG, Basel") — it is
     portal chrome per SCHEMA.md and only its first word (the act type) is used.
@@ -247,10 +322,7 @@ def _parse_header_block(lines: list[str]) -> dict:
     """
     result = {
         "act_type": None,
-        "status_suffix": None,
         "alternative_names": [],
-        "company_name_full": None,
-        "company_name_base": None,
         "address_care_of": None,
         "address_street": None,
         "address_postcode": None,
@@ -264,18 +336,17 @@ def _parse_header_block(lines: list[str]) -> dict:
     if first_word:
         result["act_type"] = ACT_TYPE_MAP.get(first_word.group(1).lower())
 
-    header_text = "\n".join(lines)
-    state_match = STATE_SUFFIX_RE.search(header_text)
-    if state_match:
-        result["status_suffix"] = state_match.group(0)
-
     body_lines = lines[1:]
 
     # `body_lines[0]`, if present, is the portal's repeated full company name
-    # (every sampled document repeats it right after the headline). This is
-    # the one header line this module locates positionally rather than by
-    # pattern, so guard against it actually being an address/alt-name line in
-    # case some document skips the repeat.
+    # (every sampled document repeats it right after the headline). The name
+    # itself is not read from here — it is the post-act name, see
+    # BODY_NAME_RE — but the line still has to be recognised and skipped so
+    # the address parsing below does not mistake it for an address, and any
+    # alternative names trailing on it are still picked up. This is the one
+    # header line this module locates positionally rather than by pattern,
+    # so guard against it actually being an address/alt-name line in case
+    # some document skips the repeat.
     if body_lines:
         candidate = body_lines[0].strip()
         looks_like_something_else = (
@@ -292,9 +363,6 @@ def _parse_header_block(lines: list[str]) -> dict:
                 result["alternative_names"].extend(
                     ALT_NAME_GROUP_RE.findall(trailing_match.group(0))
                 )
-                candidate = candidate[: trailing_match.start()].rstrip()
-            result["company_name_full"] = candidate
-            result["company_name_base"] = STATE_SUFFIX_RE.sub("", candidate).strip()
             body_lines = body_lines[1:]
 
     for line in body_lines:
@@ -393,6 +461,18 @@ def prefill_text(text: str, doc_id: str | None = None) -> dict:
     blocks = _blocks(text)
     header = blocks[0] if blocks else []
     record.update(_parse_header_block(header))
+
+    # The three name fields are the pre-act state, so they come from the
+    # body, not from the header block (see BODY_NAME_RE). When the body
+    # name cannot be read in full they stay null: the header's name is
+    # known to be the wrong state, so falling back to it would record a
+    # value that is wrong by construction.
+    name = _body_name(blocks)
+    if name:
+        record["company_name_full"] = name
+        status_match = STATE_SUFFIX_RE.search(name)
+        record["status_suffix"] = status_match.group(0) if status_match else None
+        record["company_name_base"] = STATE_SUFFIX_RE.sub("", name).strip().rstrip(",").strip()
 
     uid_match = UID_RE.search(text)
     if uid_match:

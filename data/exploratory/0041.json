@@ -22,7 +22,7 @@
   "address_street": "Industriestrasse 11b",
   "address_postcode": "2553",
   "address_municipality": "Safnern",
-  "act_date": null,
+  "act_date": "2026-05-18",
   "tagesregister_nr": "14873",
   "tagesregister_date": "2026-08-05",
   "prior_publication_shab_nr": 188,
@@ -67,7 +67,6 @@
     }
   ],
   "extras": {
-    "decision_junta_fecha": "2026-05-18",
     "prior_publication_page": "0",
     "valor_nominal_chf": 1000
   },
