@@ -3,7 +3,9 @@
   "doc_id": "0055",
   "language": "de",
   "act_type": "mutation",
-  "act_subtypes": [],
+  "act_subtypes": [
+    "organaenderung"
+  ],
   "company_name_full": "Sun Fung Offset Binding (Europe) GmbH",
   "company_name_base": "Sun Fung Offset Binding (Europe) GmbH",
   "status_suffix": null,
@@ -32,10 +34,41 @@
   "domicile_new": null,
   "domicile_previous": null,
   "persons_added": [],
-  "persons_removed": [],
-  "persons_changed": [],
+  "persons_removed": [
+    {
+      "name": "Meier, Rolf",
+      "nationality": null,
+      "heimatort": "Biberist",
+      "domicile": "Vitznau",
+      "role": "Gesellschafter",
+      "signature": "ohne Zeichnungsberechtigung",
+      "uid": null,
+      "stammanteile": 1
+    }
+  ],
+  "persons_changed": [
+    {
+      "name_new": "Mei, Lin",
+      "name_previous": null,
+      "domicile_new": "Luzern",
+      "domicile_previous": null,
+      "role_new": "Gesellschafterin und Geschäftsführerin",
+      "role_previous": null,
+      "signature_new": "Einzelunterschrift",
+      "signature_previous": null,
+      "nationality_new": null,
+      "nationality_previous": null,
+      "heimatort_new": "Horw",
+      "heimatort_previous": null,
+      "stammanteile_new": 2,
+      "stammanteile_previous": 1
+    }
+  ],
   "extras": {},
-  "uncertain": [],
-  "notes": null,
-  "_verified": false
+  "uncertain": [
+    "persons_removed",
+    "persons_changed"
+  ],
+  "notes": "The notice identifies each participation by its nominal amount instead of giving a count, and the schema field holds only a count. Recording it that way loses the amounts: two participations of CHF 19'000 and CHF 1'000 for the partner who stays, one of CHF 1'000 for the one who leaves. There is no per-person field for the nominal value, and the company-level key cannot hold two different ones.",
+  "_verified": true
 }

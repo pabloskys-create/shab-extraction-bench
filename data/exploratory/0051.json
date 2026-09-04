@@ -3,7 +3,9 @@
   "doc_id": "0051",
   "language": "de",
   "act_type": "mutation",
-  "act_subtypes": [],
+  "act_subtypes": [
+    "organaenderung"
+  ],
   "company_name_full": "Studio B 47 AG",
   "company_name_base": "Studio B 47 AG",
   "status_suffix": null,
@@ -33,9 +35,42 @@
   "domicile_previous": null,
   "persons_added": [],
   "persons_removed": [],
-  "persons_changed": [],
+  "persons_changed": [
+    {
+      "name_new": "Beck, Raphael Emanuel",
+      "name_previous": null,
+      "domicile_new": "Horw",
+      "domicile_previous": null,
+      "role_new": "Vizepräsident des Verwaltungsrates",
+      "role_previous": "Mitglied des Verwaltungsrates",
+      "signature_new": "Einzelunterschrift",
+      "signature_previous": "Kollektivunterschrift zu zweien",
+      "nationality_new": null,
+      "nationality_previous": null,
+      "heimatort_new": "Rohrbachgraben",
+      "heimatort_previous": null,
+      "stammanteile_new": null,
+      "stammanteile_previous": null
+    },
+    {
+      "name_new": "Häller Beltran, Jeanette Caroline",
+      "name_previous": "Häller, Jeanette Caroline",
+      "domicile_new": "Ruswil",
+      "domicile_previous": "Menziken",
+      "role_new": "Mitglied und Sekretärin des Verwaltungsrates",
+      "role_previous": "Mitglied des Verwaltungsrates",
+      "signature_new": "Kollektivunterschrift zu zweien",
+      "signature_previous": null,
+      "nationality_new": null,
+      "nationality_previous": null,
+      "heimatort_new": "Schenkon",
+      "heimatort_previous": null,
+      "stammanteile_new": null,
+      "stammanteile_previous": null
+    }
+  ],
   "extras": {},
   "uncertain": [],
   "notes": null,
-  "_verified": false
+  "_verified": true
 }

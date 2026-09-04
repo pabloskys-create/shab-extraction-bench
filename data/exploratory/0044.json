@@ -3,7 +3,9 @@
   "doc_id": "0044",
   "language": "de",
   "act_type": "mutation",
-  "act_subtypes": [],
+  "act_subtypes": [
+    "organaenderung"
+  ],
   "company_name_full": "Elepress Bau AG",
   "company_name_base": "Elepress Bau AG",
   "status_suffix": null,
@@ -31,11 +33,32 @@
   "capital_previous_chf": null,
   "domicile_new": null,
   "domicile_previous": null,
-  "persons_added": [],
+  "persons_added": [
+    {
+      "name": "Balz, Niklaus Samuel",
+      "nationality": null,
+      "heimatort": "Langnau im Emmental",
+      "domicile": "Langnau im Emmental",
+      "role": null,
+      "signature": "Kollektivunterschrift zu zweien",
+      "uid": null,
+      "stammanteile": null
+    },
+    {
+      "name": "Zalac, Oliver",
+      "nationality": null,
+      "heimatort": "Subingen",
+      "domicile": "Derendingen",
+      "role": null,
+      "signature": "Kollektivunterschrift zu zweien",
+      "uid": null,
+      "stammanteile": null
+    }
+  ],
   "persons_removed": [],
   "persons_changed": [],
   "extras": {},
   "uncertain": [],
   "notes": null,
-  "_verified": false
+  "_verified": true
 }

@@ -3,7 +3,9 @@
   "doc_id": "0053",
   "language": "de",
   "act_type": "mutation",
-  "act_subtypes": [],
+  "act_subtypes": [
+    "organaenderung"
+  ],
   "company_name_full": "Raumfluss AG",
   "company_name_base": "Raumfluss AG",
   "status_suffix": null,
@@ -32,10 +34,38 @@
   "domicile_new": null,
   "domicile_previous": null,
   "persons_added": [],
-  "persons_removed": [],
-  "persons_changed": [],
+  "persons_removed": [
+    {
+      "name": "Turunc, Ökkes",
+      "nationality": null,
+      "heimatort": "Carouge (GE)",
+      "domicile": "Root",
+      "role": "Mitglied des Verwaltungsrates",
+      "signature": "Kollektivunterschrift zu zweien",
+      "uid": null,
+      "stammanteile": null
+    }
+  ],
+  "persons_changed": [
+    {
+      "name_new": "Turunc, Sefkan",
+      "name_previous": null,
+      "domicile_new": "Luzern",
+      "domicile_previous": null,
+      "role_new": "Mitglied des Verwaltungsrates",
+      "role_previous": "Präsident des Verwaltungsrates",
+      "signature_new": "Einzelunterschrift",
+      "signature_previous": "Kollektivunterschrift zu zweien",
+      "nationality_new": null,
+      "nationality_previous": null,
+      "heimatort_new": "Hochdorf",
+      "heimatort_previous": null,
+      "stammanteile_new": null,
+      "stammanteile_previous": null
+    }
+  ],
   "extras": {},
   "uncertain": [],
   "notes": null,
-  "_verified": false
+  "_verified": true
 }

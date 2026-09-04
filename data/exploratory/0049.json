@@ -3,7 +3,10 @@
   "doc_id": "0049",
   "language": "de",
   "act_type": "mutation",
-  "act_subtypes": [],
+  "act_subtypes": [
+    "sitzverlegung",
+    "kantonswechsel"
+  ],
   "company_name_full": "BLT Group Thaler",
   "company_name_base": "BLT Group Thaler",
   "status_suffix": null,
@@ -25,17 +28,17 @@
   "prior_publication_date": "2024-12-06",
   "prior_publication_id": "1006196943",
   "authority": "Handelsregisteramt des Kantons Luzern",
-  "canton_previous": null,
-  "canton_new": null,
+  "canton_previous": "LU",
+  "canton_new": "AG",
   "capital_new_chf": null,
   "capital_previous_chf": null,
-  "domicile_new": null,
-  "domicile_previous": null,
+  "domicile_new": "Schiltwald 259, 5046 Walde AG",
+  "domicile_previous": "Sagenstrasse 26, 6030 Ebikon",
   "persons_added": [],
   "persons_removed": [],
   "persons_changed": [],
   "extras": {},
   "uncertain": [],
-  "notes": null,
-  "_verified": false
+  "notes": "The new seat municipality is Schmiedrued, which no field captures: the seat fields hold the pre-act seat and the postal town printed in the header is Walde AG. Both are recorded as written, neither normalised to the other.",
+  "_verified": true
 }

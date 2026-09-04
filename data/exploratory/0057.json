@@ -3,7 +3,11 @@
   "doc_id": "0057",
   "language": "de",
   "act_type": "mutation",
-  "act_subtypes": [],
+  "act_subtypes": [
+    "sitzverlegung",
+    "kantonswechsel",
+    "organaenderung"
+  ],
   "company_name_full": "Schneiter Gastro",
   "company_name_base": "Schneiter Gastro",
   "status_suffix": null,
@@ -25,17 +29,34 @@
   "prior_publication_date": "2024-12-20",
   "prior_publication_id": "1006211619",
   "authority": "Handelsregisteramt des Kantons Luzern",
-  "canton_previous": null,
-  "canton_new": null,
+  "canton_previous": "NW",
+  "canton_new": "LU",
   "capital_new_chf": null,
   "capital_previous_chf": null,
-  "domicile_new": null,
-  "domicile_previous": null,
+  "domicile_new": "Dorfstrasse 5, 6030 Ebikon",
+  "domicile_previous": "Wylstrasse 13, 6052 Hergiswil NW",
   "persons_added": [],
   "persons_removed": [],
-  "persons_changed": [],
+  "persons_changed": [
+    {
+      "name_new": "Schneiter, Marcel",
+      "name_previous": null,
+      "domicile_new": "Ebikon",
+      "domicile_previous": "Hergiswil (NW)",
+      "role_new": "Inhaber",
+      "role_previous": null,
+      "signature_new": "Einzelunterschrift",
+      "signature_previous": null,
+      "nationality_new": null,
+      "nationality_previous": null,
+      "heimatort_new": "Fahrni",
+      "heimatort_previous": null,
+      "stammanteile_new": null,
+      "stammanteile_previous": null
+    }
+  ],
   "extras": {},
   "uncertain": [],
   "notes": null,
-  "_verified": false
+  "_verified": true
 }

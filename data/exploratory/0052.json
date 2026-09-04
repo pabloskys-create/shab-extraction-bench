@@ -3,7 +3,9 @@
   "doc_id": "0052",
   "language": "de",
   "act_type": "mutation",
-  "act_subtypes": [],
+  "act_subtypes": [
+    "organaenderung"
+  ],
   "company_name_full": "Schwanenplatz AG",
   "company_name_base": "Schwanenplatz AG",
   "status_suffix": null,
@@ -31,11 +33,22 @@
   "capital_previous_chf": null,
   "domicile_new": null,
   "domicile_previous": null,
-  "persons_added": [],
+  "persons_added": [
+    {
+      "name": "Zimmerli, Michael Hans",
+      "nationality": null,
+      "heimatort": "Vordemwald",
+      "domicile": "Root",
+      "role": null,
+      "signature": "Kollektivunterschrift zu zweien",
+      "uid": null,
+      "stammanteile": null
+    }
+  ],
   "persons_removed": [],
   "persons_changed": [],
   "extras": {},
   "uncertain": [],
   "notes": null,
-  "_verified": false
+  "_verified": true
 }

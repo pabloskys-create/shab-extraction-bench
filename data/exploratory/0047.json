@@ -3,7 +3,11 @@
   "doc_id": "0047",
   "language": "de",
   "act_type": "mutation",
-  "act_subtypes": [],
+  "act_subtypes": [
+    "statutenaenderung",
+    "sitzverlegung",
+    "organaenderung"
+  ],
   "company_name_full": "Colotec AG",
   "company_name_base": "Colotec AG",
   "status_suffix": null,
@@ -18,7 +22,7 @@
   "address_street": "Leopoldstrasse 6",
   "address_postcode": "6210",
   "address_municipality": "Sursee",
-  "act_date": null,
+  "act_date": "2026-08-18",
   "tagesregister_nr": "8700",
   "tagesregister_date": "2026-08-20",
   "prior_publication_shab_nr": 200,
@@ -29,13 +33,30 @@
   "canton_new": null,
   "capital_new_chf": null,
   "capital_previous_chf": null,
-  "domicile_new": null,
-  "domicile_previous": null,
+  "domicile_new": "Leopoldstrasse 6, 6210 Sursee",
+  "domicile_previous": "Sonnenblick 4, 6212 Kaltbach",
   "persons_added": [],
   "persons_removed": [],
-  "persons_changed": [],
+  "persons_changed": [
+    {
+      "name_new": "Jeanmonod, Yvan",
+      "name_previous": null,
+      "domicile_new": "Sursee",
+      "domicile_previous": "Mauensee",
+      "role_new": "Präsident des Verwaltungsrates",
+      "role_previous": null,
+      "signature_new": "Einzelunterschrift",
+      "signature_previous": null,
+      "nationality_new": null,
+      "nationality_previous": null,
+      "heimatort_new": "Provence",
+      "heimatort_previous": null,
+      "stammanteile_new": null,
+      "stammanteile_previous": null
+    }
+  ],
   "extras": {},
   "uncertain": [],
   "notes": null,
-  "_verified": false
+  "_verified": true
 }
