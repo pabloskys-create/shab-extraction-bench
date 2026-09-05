@@ -32,13 +32,16 @@
   "canton_new": null,
   "capital_new_chf": null,
   "capital_previous_chf": null,
-  "domicile_new": null,
-  "domicile_previous": null,
+  "domicile_new": "Weinmarkt 17, 6004 Luzern",
+  "domicile_previous": "Weinmarkt 17, 6004 Luzern",
   "persons_added": [],
   "persons_removed": [],
   "persons_changed": [],
   "extras": {},
-  "uncertain": [],
-  "notes": null,
-  "_verified": false
+  "uncertain": [
+    "domicile_new",
+    "domicile_previous"
+  ],
+  "notes": "The new-domicile line reproduces the address already on file, so both halves of the pair carry the same value and nothing publishable appears to change. The Bisher block is also malformed: it opens with a bare town line above the street.",
+  "_verified": true
 }

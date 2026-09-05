@@ -18,7 +18,7 @@
   "address_street": "Murbacherstrasse 37",
   "address_postcode": "6003",
   "address_municipality": "Luzern",
-  "act_date": null,
+  "act_date": "2026-08-20",
   "tagesregister_nr": "8749",
   "tagesregister_date": "2026-08-20",
   "prior_publication_shab_nr": 31,
@@ -34,8 +34,11 @@
   "persons_added": [],
   "persons_removed": [],
   "persons_changed": [],
-  "extras": {},
+  "extras": {
+    "motivo_loeschung": "Liquidation durchgeführt",
+    "steuerzustimmung": true
+  },
   "uncertain": [],
   "notes": null,
-  "_verified": false
+  "_verified": true
 }

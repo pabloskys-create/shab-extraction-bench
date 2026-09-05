@@ -132,7 +132,6 @@ Multi-label. Assign every one that applies. Controlled vocabulary only.
 | `zweckaenderung` | `Zweck neu:` |
 | `rechtsformaenderung` | `Rechtsform … neu: … [bisher: …]` — the legal form itself changes |
 | `liquidationseroeffnung` | company enters liquidation |
-| `liquidation_beendet` | `Die Liquidation ist beendet` |
 | `revisionsstelle` | auditor appointed or removed |
 | `fusion` | merger |
 | `konkurseinstellung` | `Das Konkursverfahren ist … eingestellt worden` — bankruptcy proceedings discontinued, typically for lack of assets |

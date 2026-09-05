@@ -184,7 +184,7 @@ worth recording.
 `statutenaenderung`, `kapitalerhoehung`, `kapitalherabsetzung`,
 `bedingte_kapitalerhoehung`, `kapitalband_aufhebung`, `organaenderung`,
 `sitzverlegung`, `kantonswechsel`, `firmenaenderung`, `zweckaenderung`,
-`rechtsformaenderung`, `liquidationseroeffnung`, `liquidation_beendet`,
+`rechtsformaenderung`, `liquidationseroeffnung`,
 `fusion`, `revisionsstelle`, `konkurseinstellung`, `konkurseroeffnung`
 
 `rechtsformaenderung` — the company's legal form itself changes (e.g.
@@ -218,6 +218,8 @@ Keys already in use. **Check this list before inventing a new key.**
 - `mitteilungen` — how the company notifies its shareholders/partners
 - `motivo_konkurseinstellung` — stated reason proceedings were
   discontinued (e.g. `mangels Aktiven`)
+- `steuerzustimmung` — bool, tax authorities' clearance for deletion is on
+  file (`Die Zustimmungen der Steuerverwaltungen liegen vor`)
 
 **Promotion rule:** an `extras` key appearing in ≥5% of documents is promoted to
 a core field in the next schema version, and previously annotated documents are

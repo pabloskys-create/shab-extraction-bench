@@ -3,7 +3,9 @@
   "doc_id": "0065",
   "language": "de",
   "act_type": "mutation",
-  "act_subtypes": [],
+  "act_subtypes": [
+    "organaenderung"
+  ],
   "company_name_full": "Tourismus Forum Luzern",
   "company_name_base": "Tourismus Forum Luzern",
   "status_suffix": null,
@@ -31,11 +33,33 @@
   "capital_previous_chf": null,
   "domicile_new": null,
   "domicile_previous": null,
-  "persons_added": [],
-  "persons_removed": [],
+  "persons_added": [
+    {
+      "name": "Ternes, Jessica",
+      "nationality": "deutsch",
+      "heimatort": null,
+      "domicile": "Adligenswil",
+      "role": "Mitglied des Vorstandes",
+      "signature": "ohne Zeichnungsberechtigung",
+      "uid": null,
+      "stammanteile": null
+    }
+  ],
+  "persons_removed": [
+    {
+      "name": "Hunziker, Raymond",
+      "nationality": null,
+      "heimatort": "Oberkulm",
+      "domicile": "Kriens",
+      "role": "Mitglied des Vorstandes",
+      "signature": "ohne Zeichnungsberechtigung",
+      "uid": null,
+      "stammanteile": null
+    }
+  ],
   "persons_changed": [],
   "extras": {},
   "uncertain": [],
   "notes": null,
-  "_verified": false
+  "_verified": true
 }

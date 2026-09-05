@@ -3,7 +3,9 @@
   "doc_id": "0059",
   "language": "de",
   "act_type": "mutation",
-  "act_subtypes": [],
+  "act_subtypes": [
+    "organaenderung"
+  ],
   "company_name_full": "beck konzept ag",
   "company_name_base": "beck konzept ag",
   "status_suffix": null,
@@ -31,11 +33,24 @@
   "capital_previous_chf": null,
   "domicile_new": null,
   "domicile_previous": null,
-  "persons_added": [],
+  "persons_added": [
+    {
+      "name": "Müller, Sandro",
+      "nationality": null,
+      "heimatort": "Ermensee und Buttisholz",
+      "domicile": "Buttisholz",
+      "role": "Mitglied des Verwaltungsrates",
+      "signature": "Kollektivunterschrift zu zweien mit einem Mitglied der Geschäftsleitung",
+      "uid": null,
+      "stammanteile": null
+    }
+  ],
   "persons_removed": [],
   "persons_changed": [],
   "extras": {},
-  "uncertain": [],
-  "notes": null,
-  "_verified": false
+  "uncertain": [
+    "persons_added"
+  ],
+  "notes": "Müller has two Heimatorte ('Ermensee und Buttisholz'); the schema allows only one string.",
+  "_verified": true
 }

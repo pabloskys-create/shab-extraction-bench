@@ -3,7 +3,9 @@
   "doc_id": "0063",
   "language": "de",
   "act_type": "mutation",
-  "act_subtypes": [],
+  "act_subtypes": [
+    "organaenderung"
+  ],
   "company_name_full": "David Dauwalder Hypnosetherapie",
   "company_name_base": "David Dauwalder Hypnosetherapie",
   "status_suffix": null,
@@ -33,9 +35,29 @@
   "domicile_previous": null,
   "persons_added": [],
   "persons_removed": [],
-  "persons_changed": [],
-  "extras": {},
+  "persons_changed": [
+    {
+      "name_new": "Dauwalder, David",
+      "name_previous": null,
+      "domicile_new": "Niederwangen b. Bern (Köniz)",
+      "domicile_previous": "Köniz",
+      "role_new": "Inhaber",
+      "role_previous": null,
+      "signature_new": "Einzelunterschrift",
+      "signature_previous": null,
+      "nationality_new": null,
+      "nationality_previous": null,
+      "heimatort_new": "Saanen",
+      "heimatort_previous": null,
+      "stammanteile_new": null,
+      "stammanteile_previous": null
+    }
+  ],
+  "extras": {
+    "weitere_adressen_nueva": "Papillonallee 9b, 3172 Niederwangen b. Bern",
+    "weitere_adressen_anterior": "Sägestrasse 78, 3098 Köniz"
+  },
   "uncertain": [],
-  "notes": null,
-  "_verified": false
+  "notes": "The header's Bisher block repeats the registered address unchanged and the body carries no new-domicile line, so the domicile pair stays empty. What moves is the secondary address, which has its own pair of keys in extras.",
+  "_verified": true
 }
