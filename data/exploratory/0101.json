@@ -3,7 +3,9 @@
   "doc_id": "0101",
   "language": "de",
   "act_type": "mutation",
-  "act_subtypes": [],
+  "act_subtypes": [
+    "konkurseinstellung"
+  ],
   "company_name_full": "Performyou GmbH in Liquidation",
   "company_name_base": "Performyou GmbH",
   "status_suffix": "in Liquidation",
@@ -18,7 +20,7 @@
   "address_street": "Lerzenstrasse 8",
   "address_postcode": "8953",
   "address_municipality": "Dietikon",
-  "act_date": null,
+  "act_date": "2026-08-25",
   "tagesregister_nr": "40483",
   "tagesregister_date": "2026-08-26",
   "prior_publication_shab_nr": 75,
@@ -34,8 +36,10 @@
   "persons_added": [],
   "persons_removed": [],
   "persons_changed": [],
-  "extras": {},
+  "extras": {
+    "motivo_konkurseinstellung": "mangels Aktiven"
+  },
   "uncertain": [],
-  "notes": null,
-  "_verified": false
+  "notes": "The date of the act is the bankruptcy court's judgment date, taken like any other dated decision that constitutes the act rather than merely underlying it.",
+  "_verified": true
 }

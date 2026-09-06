@@ -3,7 +3,9 @@
   "doc_id": "0107",
   "language": "de",
   "act_type": "mutation",
-  "act_subtypes": [],
+  "act_subtypes": [
+    "organaenderung"
+  ],
   "company_name_full": "Burckhardt Architektur AG",
   "company_name_base": "Burckhardt Architektur AG",
   "status_suffix": null,
@@ -31,11 +33,24 @@
   "capital_previous_chf": null,
   "domicile_new": null,
   "domicile_previous": null,
-  "persons_added": [],
+  "persons_added": [
+    {
+      "name": "Arndt, Alexandra",
+      "nationality": "deutsch",
+      "heimatort": null,
+      "domicile": "Zürich",
+      "role": null,
+      "signature": "Kollektivprokura zu zweien",
+      "uid": null,
+      "stammanteile": null
+    }
+  ],
   "persons_removed": [],
   "persons_changed": [],
-  "extras": {},
+  "extras": {
+    "hauptsitz": "Basel"
+  },
   "uncertain": [],
   "notes": null,
-  "_verified": false
+  "_verified": true
 }

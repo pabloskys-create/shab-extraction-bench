@@ -31,11 +31,24 @@
   "capital_previous_chf": null,
   "domicile_new": null,
   "domicile_previous": null,
-  "persons_added": [],
+  "persons_added": [
+    {
+      "name": "Thanabalasingam, Thavaseelan",
+      "nationality": null,
+      "heimatort": "Zürich",
+      "domicile": "Niederweningen",
+      "role": "Inhaber",
+      "signature": "Einzelunterschrift",
+      "uid": null,
+      "stammanteile": null
+    }
+  ],
   "persons_removed": [],
   "persons_changed": [],
-  "extras": {},
+  "extras": {
+    "zweck": "Detailhandel mit Gemüse, Früchten, Lebensmitteln und Alkoholische Getränken."
+  },
   "uncertain": [],
   "notes": null,
-  "_verified": false
+  "_verified": true
 }

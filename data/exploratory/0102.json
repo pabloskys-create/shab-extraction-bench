@@ -3,7 +3,9 @@
   "doc_id": "0102",
   "language": "de",
   "act_type": "mutation",
-  "act_subtypes": [],
+  "act_subtypes": [
+    "organaenderung"
+  ],
   "company_name_full": "Duvenbeck Management Services GmbH",
   "company_name_base": "Duvenbeck Management Services GmbH",
   "status_suffix": null,
@@ -32,10 +34,21 @@
   "domicile_new": null,
   "domicile_previous": null,
   "persons_added": [],
-  "persons_removed": [],
+  "persons_removed": [
+    {
+      "name": "Bicil, Hakan",
+      "nationality": null,
+      "heimatort": "Teufenthal (AG)",
+      "domicile": "Gersau",
+      "role": "Geschäftsführer",
+      "signature": "Einzelunterschrift",
+      "uid": null,
+      "stammanteile": null
+    }
+  ],
   "persons_changed": [],
   "extras": {},
   "uncertain": [],
   "notes": null,
-  "_verified": false
+  "_verified": true
 }

@@ -31,11 +31,24 @@
   "capital_previous_chf": null,
   "domicile_new": null,
   "domicile_previous": null,
-  "persons_added": [],
+  "persons_added": [
+    {
+      "name": "Theillaud, Sédona Anne-Marie",
+      "nationality": "französisch",
+      "heimatort": null,
+      "domicile": "Zürich",
+      "role": "Inhaberin",
+      "signature": "Einzelunterschrift",
+      "uid": null,
+      "stammanteile": null
+    }
+  ],
   "persons_removed": [],
   "persons_changed": [],
-  "extras": {},
+  "extras": {
+    "zweck": "Das Unternehmen ist im Bereich der Schnellgastronomie tätig und auf die Zubereitung und den Verkauf von Sandwiches spezialisiert."
+  },
   "uncertain": [],
   "notes": null,
-  "_verified": false
+  "_verified": true
 }

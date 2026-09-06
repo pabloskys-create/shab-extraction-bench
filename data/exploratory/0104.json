@@ -34,8 +34,12 @@
   "persons_added": [],
   "persons_removed": [],
   "persons_changed": [],
-  "extras": {},
-  "uncertain": [],
-  "notes": null,
-  "_verified": false
+  "extras": {
+    "zweigniederlassung_nueva": "Oftringen (CHE-151.436.779)"
+  },
+  "uncertain": [
+    "extras"
+  ],
+  "notes": "The whole act is the registration of a new branch at Oftringen, with its own UID. No core field and no registered extras key covers a branch of the company being described, so it goes under a key that does not yet exist in the registry.",
+  "_verified": true
 }
