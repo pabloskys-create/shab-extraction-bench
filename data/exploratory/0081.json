@@ -18,7 +18,7 @@
   "address_street": "Pfarrain 9",
   "address_postcode": "8604",
   "address_municipality": "Volketswil",
-  "act_date": null,
+  "act_date": "2026-08-07",
   "tagesregister_nr": "40365",
   "tagesregister_date": "2026-08-26",
   "prior_publication_shab_nr": null,
@@ -27,15 +27,31 @@
   "authority": "Handelsregisteramt des Kantons Zürich",
   "canton_previous": null,
   "canton_new": null,
-  "capital_new_chf": null,
+  "capital_new_chf": 20000.0,
   "capital_previous_chf": null,
   "domicile_new": null,
   "domicile_previous": null,
-  "persons_added": [],
+  "persons_added": [
+    {
+      "name": "Beciraj, Bujar",
+      "nationality": null,
+      "heimatort": "Fällanden",
+      "domicile": "Volketswil",
+      "role": "Gesellschafter und Geschäftsführer",
+      "signature": "Einzelunterschrift",
+      "uid": null,
+      "stammanteile": 200
+    }
+  ],
   "persons_removed": [],
   "persons_changed": [],
-  "extras": {},
+  "extras": {
+    "zweck": "Die Gesellschaft bezweckt die Erbringung von Bau- und Handwerksdienstleistungen aller Art, insbesondere in den Bereichen Umbau, Renovation, Sanierung, Gebäudeunterhalt, Umgebungsarbeiten und Tiefbau.",
+    "valor_nominal_chf": 100.0,
+    "mitteilungen": "per Brief oder E-Mail an die im Anteilbuch verzeichneten Adressen",
+    "revision": "opting-out"
+  },
   "uncertain": [],
   "notes": null,
-  "_verified": false
+  "_verified": true
 }

@@ -3,13 +3,17 @@
   "doc_id": "0096",
   "language": "de",
   "act_type": "mutation",
-  "act_subtypes": [],
+  "act_subtypes": [
+    "firmenaenderung",
+    "liquidationseroeffnung",
+    "organaenderung"
+  ],
   "company_name_full": "WBR IT GmbH",
   "company_name_base": "WBR IT GmbH",
   "status_suffix": null,
   "alternative_names": [],
-  "company_name_new": null,
-  "company_name_previous": null,
+  "company_name_new": "WBR IT GmbH in Liquidation",
+  "company_name_previous": "WBR IT GmbH",
   "uid": "CHE-149.726.506",
   "legal_form": "GmbH",
   "seat_municipality": "Bäretswil",
@@ -18,7 +22,7 @@
   "address_street": "Promenadenweg 1",
   "address_postcode": "8344",
   "address_municipality": "Bäretswil",
-  "act_date": null,
+  "act_date": "2026-08-17",
   "tagesregister_nr": "40527",
   "tagesregister_date": "2026-08-26",
   "prior_publication_shab_nr": 92,
@@ -31,11 +35,22 @@
   "capital_previous_chf": null,
   "domicile_new": null,
   "domicile_previous": null,
-  "persons_added": [],
+  "persons_added": [
+    {
+      "name": "Dietrich Treuhand AG",
+      "nationality": null,
+      "heimatort": null,
+      "domicile": "Dübendorf",
+      "role": "Liquidatorin",
+      "signature": null,
+      "uid": "CHE-108.129.170",
+      "stammanteile": null
+    }
+  ],
   "persons_removed": [],
   "persons_changed": [],
   "extras": {},
   "uncertain": [],
   "notes": null,
-  "_verified": false
+  "_verified": true
 }

@@ -3,7 +3,9 @@
   "doc_id": "0097",
   "language": "de",
   "act_type": "mutation",
-  "act_subtypes": [],
+  "act_subtypes": [
+    "organaenderung"
+  ],
   "company_name_full": "Houzy AG",
   "company_name_base": "Houzy AG",
   "status_suffix": null,
@@ -32,10 +34,21 @@
   "domicile_new": null,
   "domicile_previous": null,
   "persons_added": [],
-  "persons_removed": [],
+  "persons_removed": [
+    {
+      "name": "Staub, Stefan",
+      "nationality": null,
+      "heimatort": "Neuheim",
+      "domicile": "Zug",
+      "role": "Mitglied des Verwaltungsrates",
+      "signature": "Kollektivunterschrift zu zweien",
+      "uid": null,
+      "stammanteile": null
+    }
+  ],
   "persons_changed": [],
   "extras": {},
   "uncertain": [],
   "notes": null,
-  "_verified": false
+  "_verified": true
 }

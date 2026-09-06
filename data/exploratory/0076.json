@@ -3,7 +3,9 @@
   "doc_id": "0076",
   "language": "de",
   "act_type": "mutation",
-  "act_subtypes": [],
+  "act_subtypes": [
+    "organaenderung"
+  ],
   "company_name_full": "QESTIT AG",
   "company_name_base": "QESTIT AG",
   "status_suffix": null,
@@ -35,10 +37,21 @@
   "domicile_new": null,
   "domicile_previous": null,
   "persons_added": [],
-  "persons_removed": [],
+  "persons_removed": [
+    {
+      "name": "Bonomo, Robert Alexander",
+      "nationality": null,
+      "heimatort": "Affoltern am Albis",
+      "domicile": "Bassersdorf",
+      "role": null,
+      "signature": "Kollektivprokura zu zweien",
+      "uid": null,
+      "stammanteile": null
+    }
+  ],
   "persons_changed": [],
   "extras": {},
   "uncertain": [],
   "notes": null,
-  "_verified": false
+  "_verified": true
 }

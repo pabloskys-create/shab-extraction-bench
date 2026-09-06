@@ -3,7 +3,9 @@
   "doc_id": "0095",
   "language": "de",
   "act_type": "mutation",
-  "act_subtypes": [],
+  "act_subtypes": [
+    "organaenderung"
+  ],
   "company_name_full": "Stiftung Alterssiedlung Witikon",
   "company_name_base": "Stiftung Alterssiedlung Witikon",
   "status_suffix": null,
@@ -31,11 +33,41 @@
   "capital_previous_chf": null,
   "domicile_new": null,
   "domicile_previous": null,
-  "persons_added": [],
-  "persons_removed": [],
+  "persons_added": [
+    {
+      "name": "Montanari, Remo",
+      "nationality": null,
+      "heimatort": "Zürich",
+      "domicile": "Zürich",
+      "role": "Vizepräsident des Stiftungsrates, Aktuar",
+      "signature": "Kollektivunterschrift zu zweien",
+      "uid": null,
+      "stammanteile": null
+    }
+  ],
+  "persons_removed": [
+    {
+      "name": "Montanari, Remo Carlo",
+      "nationality": null,
+      "heimatort": "Zürich",
+      "domicile": "Zürich",
+      "role": "Vizepräsident des Stiftungsrates, Aktuar",
+      "signature": "Kollektivunterschrift zu zweien",
+      "uid": null,
+      "stammanteile": null
+    }
+  ],
   "persons_changed": [],
-  "extras": {},
-  "uncertain": [],
-  "notes": null,
-  "_verified": false
+  "extras": {
+    "berichtigung_shab_datum": "2025-11-11",
+    "berichtigung_meldungsnummer": "1006480861",
+    "berichtigung_tr_nr": "49879",
+    "berichtigung_tr_datum": "2025-11-06"
+  },
+  "uncertain": [
+    "persons_added",
+    "persons_removed"
+  ],
+  "notes": "This notice corrects an earlier register entry. The second person entry carries a bracketed 'nicht' clause instead of the usual 'bisher' one: it states what was wrongly published, not a previous state, so I recorded it as an addition even though it is plainly the same man as the one removed, under a slightly different first name. The subtype follows the headings present in the text, which are the same removal and entry headings as any other change of officers, although no organ actually changed here.",
+  "_verified": true
 }

@@ -3,7 +3,10 @@
   "doc_id": "0092",
   "language": "de",
   "act_type": "mutation",
-  "act_subtypes": [],
+  "act_subtypes": [
+    "statutenaenderung",
+    "zweckaenderung"
+  ],
   "company_name_full": "Primedea GmbH",
   "company_name_base": "Primedea GmbH",
   "status_suffix": null,
@@ -18,7 +21,7 @@
   "address_street": "Dörflistrasse 117",
   "address_postcode": "8050",
   "address_municipality": "Zürich",
-  "act_date": null,
+  "act_date": "2026-08-19",
   "tagesregister_nr": "40487",
   "tagesregister_date": "2026-08-26",
   "prior_publication_shab_nr": 64,
@@ -34,8 +37,10 @@
   "persons_added": [],
   "persons_removed": [],
   "persons_changed": [],
-  "extras": {},
+  "extras": {
+    "zweck": "Die Gesellschaft bezweckt die Entwicklung, den Betrieb und die Vermarktung von digitalen Plattformen und IT-Infrastrukturen im Gesundheits- und Medizinbereich, die Vermittlung von medizinischen…"
+  },
   "uncertain": [],
   "notes": null,
-  "_verified": false
+  "_verified": true
 }

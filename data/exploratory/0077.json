@@ -3,7 +3,9 @@
   "doc_id": "0077",
   "language": "de",
   "act_type": "mutation",
-  "act_subtypes": [],
+  "act_subtypes": [
+    "organaenderung"
+  ],
   "company_name_full": "Consultive Revisions AG",
   "company_name_base": "Consultive Revisions AG",
   "status_suffix": null,
@@ -31,11 +33,33 @@
   "capital_previous_chf": null,
   "domicile_new": null,
   "domicile_previous": null,
-  "persons_added": [],
-  "persons_removed": [],
+  "persons_added": [
+    {
+      "name": "Kamber, Anja",
+      "nationality": null,
+      "heimatort": "Hägendorf",
+      "domicile": "Oberrieden",
+      "role": null,
+      "signature": "Kollektivprokura zu zweien",
+      "uid": null,
+      "stammanteile": null
+    }
+  ],
+  "persons_removed": [
+    {
+      "name": "Widmer, Tatjana",
+      "nationality": null,
+      "heimatort": "Zürich",
+      "domicile": "Dinhard",
+      "role": null,
+      "signature": "Kollektivprokura zu zweien",
+      "uid": null,
+      "stammanteile": null
+    }
+  ],
   "persons_changed": [],
   "extras": {},
   "uncertain": [],
-  "notes": null,
-  "_verified": false
+  "notes": "The header carries an unlabelled line, 'Erlenhof', between the company name and the street. It is not a c/o and no address field fits it, so it is not recorded.",
+  "_verified": true
 }

@@ -3,7 +3,9 @@
   "doc_id": "0071",
   "language": "de",
   "act_type": "mutation",
-  "act_subtypes": [],
+  "act_subtypes": [
+    "organaenderung"
+  ],
   "company_name_full": "kids creative agency GmbH",
   "company_name_base": "kids creative agency GmbH",
   "status_suffix": null,
@@ -33,9 +35,44 @@
   "domicile_previous": null,
   "persons_added": [],
   "persons_removed": [],
-  "persons_changed": [],
-  "extras": {},
+  "persons_changed": [
+    {
+      "name_new": "Semsedini, Valentin",
+      "name_previous": "Cheli, Valentin",
+      "domicile_new": "Mönchaltorf",
+      "domicile_previous": "Zürich",
+      "role_new": "Gesellschafter und Geschäftsführer",
+      "role_previous": null,
+      "signature_new": "Einzelunterschrift",
+      "signature_previous": null,
+      "nationality_new": null,
+      "nationality_previous": null,
+      "heimatort_new": "Nyon",
+      "heimatort_previous": null,
+      "stammanteile_new": 25,
+      "stammanteile_previous": null
+    },
+    {
+      "name_new": "Bossart, Christoph David",
+      "name_previous": null,
+      "domicile_new": "Zürich",
+      "domicile_previous": null,
+      "role_new": "Gesellschafter",
+      "role_previous": "Gesellschafter und Vorsitzender der Geschäftsführung",
+      "signature_new": "ohne Zeichnungsberechtigung",
+      "signature_previous": "Einzelunterschrift",
+      "nationality_new": null,
+      "nationality_previous": null,
+      "heimatort_new": "Buchs (AG)",
+      "heimatort_previous": null,
+      "stammanteile_new": 25,
+      "stammanteile_previous": null
+    }
+  ],
+  "extras": {
+    "valor_nominal_chf": 200.0
+  },
   "uncertain": [],
   "notes": null,
-  "_verified": false
+  "_verified": true
 }

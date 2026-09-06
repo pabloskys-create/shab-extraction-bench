@@ -3,7 +3,9 @@
   "doc_id": "0072",
   "language": "de",
   "act_type": "mutation",
-  "act_subtypes": [],
+  "act_subtypes": [
+    "organaenderung"
+  ],
   "company_name_full": "Vereinigung diplomierter Hoteliers-Restaurateure/Hotelmanager NDS HF",
   "company_name_base": "Vereinigung diplomierter Hoteliers-Restaurateure/Hotelmanager NDS HF",
   "status_suffix": null,
@@ -31,11 +33,78 @@
   "capital_previous_chf": null,
   "domicile_new": null,
   "domicile_previous": null,
-  "persons_added": [],
-  "persons_removed": [],
-  "persons_changed": [],
-  "extras": {},
+  "persons_added": [
+    {
+      "name": "Menti, Samuel",
+      "nationality": null,
+      "heimatort": "Meggen",
+      "domicile": "Meggen",
+      "role": "Mitglied des Vorstandes",
+      "signature": "Kollektivunterschrift zu zweien",
+      "uid": null,
+      "stammanteile": null
+    }
+  ],
+  "persons_removed": [
+    {
+      "name": "Müller, Nicoletta Claudia",
+      "nationality": null,
+      "heimatort": "Löhningen",
+      "domicile": "Zürich",
+      "role": "Mitglied des Vorstandes",
+      "signature": "Kollektivunterschrift zu zweien",
+      "uid": null,
+      "stammanteile": null
+    },
+    {
+      "name": "Rohn, Christoph",
+      "nationality": null,
+      "heimatort": "Subingen",
+      "domicile": "Burgdorf",
+      "role": "Mitglied des Vorstandes",
+      "signature": "ohne Zeichnungsberechtigung",
+      "uid": null,
+      "stammanteile": null
+    }
+  ],
+  "persons_changed": [
+    {
+      "name_new": "Schwarze, Catharina",
+      "name_previous": null,
+      "domicile_new": "Oetwil am See",
+      "domicile_previous": null,
+      "role_new": "Vizepräsidentin des Vorstandes",
+      "role_previous": null,
+      "signature_new": "Kollektivunterschrift zu zweien",
+      "signature_previous": "ohne Zeichnungsberechtigung",
+      "nationality_new": "deutsch",
+      "nationality_previous": null,
+      "heimatort_new": null,
+      "heimatort_previous": null,
+      "stammanteile_new": null,
+      "stammanteile_previous": null
+    },
+    {
+      "name_new": "Burkhard, Christian",
+      "name_previous": null,
+      "domicile_new": "Lenk",
+      "domicile_previous": null,
+      "role_new": "Mitglied des Vorstandes",
+      "role_previous": null,
+      "signature_new": "Kollektivunterschrift zu zweien",
+      "signature_previous": "ohne Zeichnungsberechtigung",
+      "nationality_new": null,
+      "nationality_previous": null,
+      "heimatort_new": "Sumiswald",
+      "heimatort_previous": null,
+      "stammanteile_new": null,
+      "stammanteile_previous": null
+    }
+  ],
+  "extras": {
+    "weitere_adressen_anterior": "Lindenstrasse 2, 8134 Adliswil"
+  },
   "uncertain": [],
-  "notes": null,
-  "_verified": false
+  "notes": "The secondary address is struck rather than replaced, so only the previous half of that pair in extras is filled; the empty new half means removed here, not unknown. The header's Bisher block repeats the registered address unchanged and the body has no new-domicile line, so the domicile pair stays empty.",
+  "_verified": true
 }

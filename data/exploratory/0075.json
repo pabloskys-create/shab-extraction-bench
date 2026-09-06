@@ -3,7 +3,9 @@
   "doc_id": "0075",
   "language": "de",
   "act_type": "mutation",
-  "act_subtypes": [],
+  "act_subtypes": [
+    "organaenderung"
+  ],
   "company_name_full": "EF International Academy Ltd",
   "company_name_base": "EF International Academy Ltd",
   "status_suffix": null,
@@ -33,11 +35,43 @@
   "capital_previous_chf": null,
   "domicile_new": null,
   "domicile_previous": null,
-  "persons_added": [],
-  "persons_removed": [],
+  "persons_added": [
+    {
+      "name": "Johnson, Carl",
+      "nationality": "schwedisch",
+      "heimatort": null,
+      "domicile": "Zürich",
+      "role": "Präsident des Verwaltungsrates",
+      "signature": "Kollektivunterschrift zu zweien",
+      "uid": null,
+      "stammanteile": null
+    },
+    {
+      "name": "Hollander, Marc",
+      "nationality": "niederländisch",
+      "heimatort": null,
+      "domicile": "Zürich",
+      "role": "Geschäftsführer",
+      "signature": "Kollektivunterschrift zu zweien",
+      "uid": null,
+      "stammanteile": null
+    }
+  ],
+  "persons_removed": [
+    {
+      "name": "Appelkvist, Jens",
+      "nationality": "schwedisch",
+      "heimatort": null,
+      "domicile": "Kilchberg ZH",
+      "role": "Präsident des Verwaltungsrates",
+      "signature": "Kollektivunterschrift zu zweien",
+      "uid": null,
+      "stammanteile": null
+    }
+  ],
   "persons_changed": [],
   "extras": {},
   "uncertain": [],
   "notes": null,
-  "_verified": false
+  "_verified": true
 }

@@ -31,11 +31,24 @@
   "capital_previous_chf": null,
   "domicile_new": null,
   "domicile_previous": null,
-  "persons_added": [],
+  "persons_added": [
+    {
+      "name": "Marin Perez, Francisco",
+      "nationality": "spanisch",
+      "heimatort": null,
+      "domicile": "Lufingen",
+      "role": "Inhaber",
+      "signature": "Einzelunterschrift",
+      "uid": null,
+      "stammanteile": null
+    }
+  ],
   "persons_removed": [],
   "persons_changed": [],
-  "extras": {},
+  "extras": {
+    "zweck": "Internationaler Import und Export von Fertigprodukten. Import und Export von Materialen. An- und Verkauf von Uhren / An- und Verkauf von Autos. Personenbeförderung (Uber) Coaching Personal."
+  },
   "uncertain": [],
   "notes": null,
-  "_verified": false
+  "_verified": true
 }

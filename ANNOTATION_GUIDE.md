@@ -142,6 +142,9 @@ Most common mistake: forgetting `organaenderung` when someone leaves.
 `act_subtypes` is always `[]` on `neueintragung` and `loeschung`. Nothing changes
 on a registration or a deletion — the act type says it all.
 
+Subtypes follow the headings the notice carries, not what legally
+happened. A rectification with the usual person headings still gets
+`organaenderung` (see SCHEMA.md).
 ---
 
 ## `extras`, `uncertain`, `notes` — what goes where

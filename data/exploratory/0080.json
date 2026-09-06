@@ -18,7 +18,7 @@
   "address_street": "Bucheggstrasse 40",
   "address_postcode": "8037",
   "address_municipality": "Zürich",
-  "act_date": null,
+  "act_date": "2026-08-19",
   "tagesregister_nr": "40402",
   "tagesregister_date": "2026-08-26",
   "prior_publication_shab_nr": null,
@@ -31,11 +31,34 @@
   "capital_previous_chf": null,
   "domicile_new": null,
   "domicile_previous": null,
-  "persons_added": [],
+  "persons_added": [
+    {
+      "name": "Hess, Tanit",
+      "nationality": null,
+      "heimatort": "Zürich",
+      "domicile": "Zürich",
+      "role": "Gesellschafter",
+      "signature": "Einzelunterschrift",
+      "uid": null,
+      "stammanteile": null
+    },
+    {
+      "name": "Hevler, Nicholas José",
+      "nationality": null,
+      "heimatort": "Dietlikon",
+      "domicile": "Zürich",
+      "role": "Gesellschafter",
+      "signature": "Einzelunterschrift",
+      "uid": null,
+      "stammanteile": null
+    }
+  ],
   "persons_removed": [],
   "persons_changed": [],
-  "extras": {},
+  "extras": {
+    "zweck": "Verkauf von Hundeprodukte. Onlineshop."
+  },
   "uncertain": [],
   "notes": null,
-  "_verified": false
+  "_verified": true
 }

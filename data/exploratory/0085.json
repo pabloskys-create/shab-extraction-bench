@@ -18,7 +18,7 @@
   "address_street": "Pflanzschulstrasse 37",
   "address_postcode": "8400",
   "address_municipality": "Winterthur",
-  "act_date": null,
+  "act_date": "2026-08-13",
   "tagesregister_nr": "40388",
   "tagesregister_date": "2026-08-26",
   "prior_publication_shab_nr": null,
@@ -27,15 +27,35 @@
   "authority": "Handelsregisteramt des Kantons Zürich",
   "canton_previous": null,
   "canton_new": null,
-  "capital_new_chf": null,
+  "capital_new_chf": 100000.0,
   "capital_previous_chf": null,
   "domicile_new": null,
   "domicile_previous": null,
-  "persons_added": [],
+  "persons_added": [
+    {
+      "name": "Urso, Alfonso",
+      "nationality": "italienisch",
+      "heimatort": null,
+      "domicile": "Zürich",
+      "role": "Mitglied des Verwaltungsrates",
+      "signature": "Einzelunterschrift",
+      "uid": null,
+      "stammanteile": null
+    }
+  ],
   "persons_removed": [],
   "persons_changed": [],
-  "extras": {},
+  "extras": {
+    "zweck": "Die Gesellschaft bezweckt den Erwerb, die Verwaltung und die Veräusserung von Beteiligungen an anderen Unternehmungen jeder Art im In- und Ausland.",
+    "liberierung_nuevo_chf": 50000.0,
+    "acciones_nuevas": 1000000,
+    "valor_nominal_chf": 0.1,
+    "clases_acciones": "Namenaktien",
+    "vinkulierung": true,
+    "mitteilungen": "per Brief oder E-Mail an die im Aktienbuch verzeichneten Adressen",
+    "revision": "opting-out"
+  },
   "uncertain": [],
   "notes": null,
-  "_verified": false
+  "_verified": true
 }

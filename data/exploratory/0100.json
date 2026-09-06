@@ -3,7 +3,9 @@
   "doc_id": "0100",
   "language": "de",
   "act_type": "mutation",
-  "act_subtypes": [],
+  "act_subtypes": [
+    "organaenderung"
+  ],
   "company_name_full": "Livingdocs AG",
   "company_name_base": "Livingdocs AG",
   "status_suffix": null,
@@ -31,11 +33,33 @@
   "capital_previous_chf": null,
   "domicile_new": null,
   "domicile_previous": null,
-  "persons_added": [],
-  "persons_removed": [],
+  "persons_added": [
+    {
+      "name": "Skinner, Barnaby",
+      "nationality": null,
+      "heimatort": "Homburg",
+      "domicile": "St. Gallen",
+      "role": "Mitglied des Verwaltungsrates",
+      "signature": "Kollektivunterschrift zu zweien",
+      "uid": null,
+      "stammanteile": null
+    }
+  ],
+  "persons_removed": [
+    {
+      "name": "Dietzel, Volker",
+      "nationality": null,
+      "heimatort": "Maur",
+      "domicile": "Russikon",
+      "role": "Mitglied des Verwaltungsrates",
+      "signature": "Kollektivunterschrift zu zweien",
+      "uid": null,
+      "stammanteile": null
+    }
+  ],
   "persons_changed": [],
   "extras": {},
   "uncertain": [],
   "notes": null,
-  "_verified": false
+  "_verified": true
 }

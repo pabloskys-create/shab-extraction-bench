@@ -3,7 +3,9 @@
   "doc_id": "0094",
   "language": "de",
   "act_type": "mutation",
-  "act_subtypes": [],
+  "act_subtypes": [
+    "organaenderung"
+  ],
   "company_name_full": "Prozura Solutions GmbH",
   "company_name_base": "Prozura Solutions GmbH",
   "status_suffix": null,
@@ -32,10 +34,40 @@
   "domicile_new": null,
   "domicile_previous": null,
   "persons_added": [],
-  "persons_removed": [],
-  "persons_changed": [],
-  "extras": {},
+  "persons_removed": [
+    {
+      "name": "Frølich, Rolf",
+      "nationality": "dänisch",
+      "heimatort": null,
+      "domicile": "Lindau",
+      "role": "Gesellschafter und Geschäftsführer",
+      "signature": "Kollektivunterschrift zu zweien",
+      "uid": null,
+      "stammanteile": 25
+    }
+  ],
+  "persons_changed": [
+    {
+      "name_new": "Gamma, Patrick",
+      "name_previous": null,
+      "domicile_new": "Zürich",
+      "domicile_previous": null,
+      "role_new": "Gesellschafter und Geschäftsführer",
+      "role_previous": "Gesellschafter und Vorsitzender der Geschäftsführung",
+      "signature_new": "Einzelunterschrift",
+      "signature_previous": null,
+      "nationality_new": null,
+      "nationality_previous": null,
+      "heimatort_new": "Zürich",
+      "heimatort_previous": null,
+      "stammanteile_new": 100,
+      "stammanteile_previous": 75
+    }
+  ],
+  "extras": {
+    "valor_nominal_chf": 200.0
+  },
   "uncertain": [],
   "notes": null,
-  "_verified": false
+  "_verified": true
 }
