@@ -3,13 +3,17 @@
   "doc_id": "0114",
   "language": "de",
   "act_type": "mutation",
-  "act_subtypes": [],
+  "act_subtypes": [
+    "statutenaenderung",
+    "firmenaenderung",
+    "organaenderung"
+  ],
   "company_name_full": "Hasler + Co AG, die Zutrittsexperten",
   "company_name_base": "Hasler + Co AG, die Zutrittsexperten",
   "status_suffix": null,
   "alternative_names": [],
-  "company_name_new": null,
-  "company_name_previous": null,
+  "company_name_new": "Hasler + Co AG, Zutrittslösungen",
+  "company_name_previous": "Hasler + Co AG, die Zutrittsexperten",
   "uid": "CHE-100.766.120",
   "legal_form": "AG",
   "seat_municipality": "Winterthur",
@@ -18,7 +22,7 @@
   "address_street": "Rudolf Diesel-Strasse 12",
   "address_postcode": "8404",
   "address_municipality": "Winterthur",
-  "act_date": null,
+  "act_date": "2026-08-19",
   "tagesregister_nr": "40450",
   "tagesregister_date": "2026-08-26",
   "prior_publication_shab_nr": 96,
@@ -31,11 +35,22 @@
   "capital_previous_chf": null,
   "domicile_new": null,
   "domicile_previous": null,
-  "persons_added": [],
+  "persons_added": [
+    {
+      "name": "Eiholzer, Adrian",
+      "nationality": null,
+      "heimatort": "Zürich",
+      "domicile": "Hinwil",
+      "role": null,
+      "signature": "Kollektivprokura zu zweien",
+      "uid": null,
+      "stammanteile": null
+    }
+  ],
   "persons_removed": [],
   "persons_changed": [],
   "extras": {},
   "uncertain": [],
   "notes": null,
-  "_verified": false
+  "_verified": true
 }

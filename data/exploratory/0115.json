@@ -3,7 +3,9 @@
   "doc_id": "0115",
   "language": "de",
   "act_type": "mutation",
-  "act_subtypes": [],
+  "act_subtypes": [
+    "organaenderung"
+  ],
   "company_name_full": "Greater Zurich Area AG",
   "company_name_base": "Greater Zurich Area AG",
   "status_suffix": null,
@@ -35,10 +37,21 @@
   "domicile_new": null,
   "domicile_previous": null,
   "persons_added": [],
-  "persons_removed": [],
+  "persons_removed": [
+    {
+      "name": "Friedli-Walser, Monika",
+      "nationality": null,
+      "heimatort": "Zürich",
+      "domicile": "Baar",
+      "role": "Mitglied des Verwaltungsrates",
+      "signature": "ohne Zeichnungsberechtigung",
+      "uid": null,
+      "stammanteile": null
+    }
+  ],
   "persons_changed": [],
   "extras": {},
   "uncertain": [],
   "notes": null,
-  "_verified": false
+  "_verified": true
 }

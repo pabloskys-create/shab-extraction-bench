@@ -3,7 +3,10 @@
   "doc_id": "0116",
   "language": "de",
   "act_type": "mutation",
-  "act_subtypes": [],
+  "act_subtypes": [
+    "statutenaenderung",
+    "zweckaenderung"
+  ],
   "company_name_full": "Ancotech AG",
   "company_name_base": "Ancotech AG",
   "status_suffix": null,
@@ -18,7 +21,7 @@
   "address_street": "Industriestrasse 3",
   "address_postcode": "8157",
   "address_municipality": "Dielsdorf",
-  "act_date": null,
+  "act_date": "2026-08-18",
   "tagesregister_nr": "40410",
   "tagesregister_date": "2026-08-26",
   "prior_publication_shab_nr": 25,
@@ -34,8 +37,11 @@
   "persons_added": [],
   "persons_removed": [],
   "persons_changed": [],
-  "extras": {},
+  "extras": {
+    "zweck": "Die Gesellschaft bezweckt den Handel mit Maschinen und Produkten für das Bauwesen und die Erbringung von Ingenieurleistungen, insbesondere auf dem Gebiet der Verankerungstechnik.",
+    "mitteilungen": "durch einfachen Brief, Fax, E-Mail oder andere Übermittlungsmittel an die im Aktienbuch eingetragene Adresse der Aktionäre"
+  },
   "uncertain": [],
   "notes": null,
-  "_verified": false
+  "_verified": true
 }

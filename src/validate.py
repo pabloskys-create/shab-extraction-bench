@@ -92,6 +92,15 @@ PERSON_CHANGE_INT_KEYS = frozenset({"stammanteile_new", "stammanteile_previous"}
 
 DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 
+# Fields that must be present or absent together — see the both-or-neither
+# rule in _check_coherence(). capital_new_chf / capital_previous_chf is
+# deliberately not listed: a notice routinely prints only the new capital,
+# so that pair has no both-or-neither rule to exempt from.
+PAIRED_FIELDS = (
+    ("canton_previous", "canton_new"),
+    ("domicile_previous", "domicile_new"),
+)
+
 # SCHEMA.md's header reads "# SCHEMA.md — v1.0 (frozen)".
 SCHEMA_MD_PATH = Path(__file__).resolve().parent.parent / "SCHEMA.md"
 SCHEMA_VERSION_RE = re.compile(r"^#\s*SCHEMA\.md\s*—\s*v(\d+\.\d+)", re.MULTILINE)
@@ -349,25 +358,33 @@ def _check_coherence(record: dict) -> list[ValidationError]:
                 ValidationError("persons_added", 'must be empty when act_type is "loeschung"')
             )
 
-    canton_previous = record.get("canton_previous")
-    canton_new = record.get("canton_new")
-    if canton_previous is not None and canton_new is None:
-        errors.append(ValidationError("canton_new", "must not be null when canton_previous is set"))
-    if canton_new is not None and canton_previous is None:
-        errors.append(ValidationError("canton_previous", "must not be null when canton_new is set"))
-
-    domicile_new = record.get("domicile_new")
-    domicile_previous = record.get("domicile_previous")
-    if domicile_new is not None and domicile_previous is None:
-        errors.append(
-            ValidationError("domicile_previous", "must not be null when domicile_new is set")
-        )
-    if domicile_previous is not None and domicile_new is None:
-        errors.append(
-            ValidationError("domicile_new", "must not be null when domicile_previous is set")
-        )
-
     uncertain = record.get("uncertain")
+    uncertain_fields = (
+        {name for name in uncertain if isinstance(name, str)}
+        if isinstance(uncertain, list)
+        else set()
+    )
+
+    # Both-or-neither pairs: a "previous" value is only meaningful next to the
+    # "new" one it changed into, and vice versa.
+    #
+    # The exemption: a notice can print the heading of a "Bisher" block with no
+    # address under it (data/exploratory/0112.json), so the previous domicile
+    # genuinely is not in the source and its half of the pair stays null.
+    # Listing the missing field in `uncertain` is the annotator stating they
+    # looked and it was not there. An ordinary oversight never carries that
+    # mark, so the rule still catches it.
+    for field_a, field_b in PAIRED_FIELDS:
+        for present, missing in ((field_a, field_b), (field_b, field_a)):
+            if (
+                record.get(present) is not None
+                and record.get(missing) is None
+                and missing not in uncertain_fields
+            ):
+                errors.append(
+                    ValidationError(missing, f"must not be null when {present} is set")
+                )
+
     if isinstance(uncertain, list):
         for i, name in enumerate(uncertain):
             if isinstance(name, str) and name not in FIELD_SPECS:

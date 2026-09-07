@@ -212,6 +212,37 @@ def test_domicile_previous_requires_domicile_new():
     assert _errors_on(errors, "domicile_new")
 
 
+def test_missing_pair_half_still_fails_without_uncertain():
+    """The exemption below is opt-in: a plain oversight carries no mark."""
+    record = _load_fixture("valid_intercantonal.json")
+    record["domicile_previous"] = None
+    record["uncertain"] = []
+    errors = validate_record(record)
+    assert _errors_on(errors, "domicile_previous")
+
+
+@pytest.mark.parametrize(
+    "present,missing",
+    [
+        ("domicile_new", "domicile_previous"),
+        ("domicile_previous", "domicile_new"),
+        ("canton_previous", "canton_new"),
+        ("canton_new", "canton_previous"),
+    ],
+)
+def test_pair_rule_waived_when_missing_half_is_uncertain(present, missing):
+    """data/exploratory/0112.json: the header's Bisher block is printed with no
+    address under it, so the previous domicile is nowhere in the source. The
+    annotator marks the absent half `uncertain` and the pair rule stands down.
+    """
+    record = _load_fixture("valid_intercantonal.json")
+    assert record[present] is not None
+    record[missing] = None
+    record["uncertain"] = [missing]
+    errors = validate_record(record)
+    assert _errors_on(errors, missing) == []
+
+
 def test_uncertain_field_name_must_exist_in_schema():
     record = _load_fixture("valid_mutation.json")
     record["uncertain"] = ["campo_inexistente"]

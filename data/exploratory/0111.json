@@ -3,7 +3,9 @@
   "doc_id": "0111",
   "language": "de",
   "act_type": "mutation",
-  "act_subtypes": [],
+  "act_subtypes": [
+    "organaenderung"
+  ],
   "company_name_full": "SC+P Sieber, Cassina + Partner AG",
   "company_name_base": "SC+P Sieber, Cassina + Partner AG",
   "status_suffix": null,
@@ -31,11 +33,33 @@
   "capital_previous_chf": null,
   "domicile_new": null,
   "domicile_previous": null,
-  "persons_added": [],
-  "persons_removed": [],
+  "persons_added": [
+    {
+      "name": "Holzner, Patrick",
+      "nationality": null,
+      "heimatort": "Cazis",
+      "domicile": "Hedingen",
+      "role": null,
+      "signature": "Kollektivprokura zu zweien",
+      "uid": null,
+      "stammanteile": null
+    }
+  ],
+  "persons_removed": [
+    {
+      "name": "Locher, Barbara",
+      "nationality": null,
+      "heimatort": "Oberegg",
+      "domicile": "Olten",
+      "role": null,
+      "signature": "Kollektivprokura zu zweien",
+      "uid": null,
+      "stammanteile": null
+    }
+  ],
   "persons_changed": [],
   "extras": {},
   "uncertain": [],
   "notes": null,
-  "_verified": false
+  "_verified": true
 }
