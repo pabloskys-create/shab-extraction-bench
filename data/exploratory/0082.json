@@ -35,7 +35,7 @@
   "persons_removed": [],
   "persons_changed": [],
   "extras": {
-    "motivo_loeschung": "Aufgabe der Geschäftstätigkeit"
+    "loeschung_reason": "Aufgabe der Geschäftstätigkeit"
   },
   "uncertain": [],
   "notes": null,

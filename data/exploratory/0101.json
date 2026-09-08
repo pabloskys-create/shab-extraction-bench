@@ -37,7 +37,7 @@
   "persons_removed": [],
   "persons_changed": [],
   "extras": {
-    "motivo_konkurseinstellung": "mangels Aktiven"
+    "konkurseinstellung_reason": "mangels Aktiven"
   },
   "uncertain": [],
   "notes": "The date of the act is the bankruptcy court's judgment date, taken like any other dated decision that constitutes the act rather than merely underlying it.",

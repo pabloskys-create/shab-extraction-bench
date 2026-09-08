@@ -47,7 +47,7 @@
   "persons_changed": [],
   "extras": {
     "zweck": "Die Gesellschaft bezweckt die Erbringung von Dienstleistungen in den Bereichen Ingenieurwesen und Softwareentwicklung, insbesondere die Entwicklung, Konstruktion und Optimierung mechanischer und…",
-    "valor_nominal_chf": 100,
+    "nominal_value_chf": 100,
     "mitteilungen": "per Brief oder E-Mail",
     "revision": "opting-out"
   },

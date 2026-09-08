@@ -67,10 +67,10 @@
   "persons_changed": [],
   "extras": {
     "zweck": "Die Gesellschaft bezweckt den Import, Export, Handel, die Lagerung, Verarbeitung und Vermarktung von Lebensmitteln aller Art, insbesondere von Früchten, Gemüse, Agrar- und Landesprodukten sowie verwandten Erzeugnissen.",
-    "liberierung_nuevo_chf": 510000,
-    "acciones_nuevas": 510000,
-    "valor_nominal_chf": 1,
-    "clases_acciones": "Namenaktien",
+    "liberierung_new_chf": 510000,
+    "aktien_new": 510000,
+    "nominal_value_chf": 1,
+    "share_classes": "Namenaktien",
     "vinkulierung": true,
     "mitteilungen": "auf schriftlichem Weg oder in elektronischer Form an die im Aktienbuch eingetragenen Adressen der Aktionäre",
     "revision": "opting-out"

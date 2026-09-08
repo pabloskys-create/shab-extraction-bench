@@ -37,7 +37,7 @@
   "persons_removed": [],
   "persons_changed": [],
   "extras": {
-    "motivo_konkurseinstellung": "mangels Aktiven"
+    "konkurseinstellung_reason": "mangels Aktiven"
   },
   "uncertain": [],
   "notes": "Bankruptcy proceedings discontinued for lack of assets. The company keeps its 'in Liquidation' suffix; the discontinuation does not by itself remove it from the register.",

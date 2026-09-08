@@ -47,7 +47,7 @@
   "persons_changed": [],
   "extras": {
     "zweck": "Die Gesellschaft bezweckt die Erbringung von Bau- und Handwerksdienstleistungen aller Art, insbesondere in den Bereichen Umbau, Renovation, Sanierung, Gebäudeunterhalt, Umgebungsarbeiten und Tiefbau.",
-    "valor_nominal_chf": 100.0,
+    "nominal_value_chf": 100.0,
     "mitteilungen": "per Brief oder E-Mail an die im Anteilbuch verzeichneten Adressen",
     "revision": "opting-out"
   },

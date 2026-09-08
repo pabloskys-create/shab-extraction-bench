@@ -59,13 +59,13 @@
     }
   ],
   "extras": {
-    "acciones_nuevas": 378247,
-    "acciones_anteriores": 376247,
-    "valor_nominal_chf": 0.5,
-    "clases_acciones": "Namenaktien",
-    "liberierung_nuevo_chf": 189123.5,
-    "liberierung_anterior_chf": 188123.5,
-    "tipo_kapitalerhoehung": "Ordentliche Kapitalerhöhung innerhalb Kapitalband"
+    "aktien_new": 378247,
+    "aktien_previous": 376247,
+    "nominal_value_chf": 0.5,
+    "share_classes": "Namenaktien",
+    "liberierung_new_chf": 189123.5,
+    "liberierung_previous_chf": 188123.5,
+    "kapitalerhoehung_type": "Ordentliche Kapitalerhöhung innerhalb Kapitalband"
   },
   "uncertain": [],
   "notes": "Naturalisation: previously 'amerikanischer Staatsangehöriger', now 'von Riehen' (Swiss Heimatort). Surname also changed from Navarro to Navarro Carpentieri. Same person, not an entry plus an exit.",

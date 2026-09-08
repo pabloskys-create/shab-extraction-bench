@@ -54,8 +54,8 @@
     }
   ],
   "extras": {
-    "weitere_adressen_nueva": "Papillonallee 9b, 3172 Niederwangen b. Bern",
-    "weitere_adressen_anterior": "Sägestrasse 78, 3098 Köniz"
+    "weitere_adressen_new": "Papillonallee 9b, 3172 Niederwangen b. Bern",
+    "weitere_adressen_previous": "Sägestrasse 78, 3098 Köniz"
   },
   "uncertain": [],
   "notes": "The header's Bisher block repeats the registered address unchanged and the body carries no new-domicile line, so the domicile pair stays empty. What moves is the secondary address, which has its own pair of keys in extras.",

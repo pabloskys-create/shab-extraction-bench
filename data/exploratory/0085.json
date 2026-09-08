@@ -47,10 +47,10 @@
   "persons_changed": [],
   "extras": {
     "zweck": "Die Gesellschaft bezweckt den Erwerb, die Verwaltung und die Veräusserung von Beteiligungen an anderen Unternehmungen jeder Art im In- und Ausland.",
-    "liberierung_nuevo_chf": 50000.0,
-    "acciones_nuevas": 1000000,
-    "valor_nominal_chf": 0.1,
-    "clases_acciones": "Namenaktien",
+    "liberierung_new_chf": 50000.0,
+    "aktien_new": 1000000,
+    "nominal_value_chf": 0.1,
+    "share_classes": "Namenaktien",
     "vinkulierung": true,
     "mitteilungen": "per Brief oder E-Mail an die im Aktienbuch verzeichneten Adressen",
     "revision": "opting-out"

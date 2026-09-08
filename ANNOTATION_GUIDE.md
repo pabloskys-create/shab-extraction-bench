@@ -19,9 +19,11 @@ A single notice can contain four different dates. Keep them apart.
 | `prior_publication_date` | `Vorangehende Publikation im SHAB: Nr. N, Datum: …` | `null` |
 
 `act_date` also takes a dated decision that constitutes the act:
-`mit Entscheid … vom …` (court) · `mit Beschluss der
-Gesellschafterversammlung vom …` (shareholders). Use
-`extras.decision_junta_fecha` only for a resolution that predates and
+`mit Entscheid … vom …` (court) · `mit Urteil des Konkursgerichts des
+Bezirksgerichts <Ort> vom …` (bankruptcy court — the date the Konkurs was
+opened or the proceedings discontinued, as in 0101 and 0118) · `mit Beschluss
+der Gesellschafterversammlung vom …` (shareholders). Use
+`extras.gesellschafterversammlung_date` only for a resolution that predates and
 underlies the act, not for the act itself.
 
 ⚠️ The date inside the parenthesis — `(SHAB Nr. 223 vom 18.11.2025, Publ. …)` —
@@ -61,7 +63,8 @@ legal seat in the old town and its address in the new one. Read both.
 
 `canton_previous` / `canton_new`: **only** for moves between cantons
 (look for the company being registered in one canton's register and deleted
-from another's). Both `null` or both filled — never one alone.
+from another's). Both `null` or both filled — never one alone (but see the
+exemption below).
 
 ---
 
@@ -82,6 +85,15 @@ in `capital_new_chf`, with `capital_previous_chf` null.
 `company_name_new` / `company_name_previous` — both or neither.
 Trigger: `Firma neu:`. Always fill both, even though `_previous` repeats
 `company_name_full`.
+
+**When the source only has one half.** A notice can print a `Bisher` heading
+with no address under it (0112), so the previous value is genuinely nowhere in
+the text. Leave it `null` — never reconstruct it — and put the field name in
+`uncertain`. `validate.py` waives the both-or-neither rule for
+`domicile_new`/`domicile_previous` and `canton_previous`/`canton_new` when the
+missing half is marked that way, so the rule still catches a plain oversight,
+which never carries the mark. Say in `notes` what the source did.
+
 ---
 
 ## People — three lists, pick carefully
@@ -105,9 +117,16 @@ Each person is an object, never a string:
 ```json
 { "name": "Beswick, Graham", "nationality": "britisch",
   "heimatort": null, "domicile": "Zermatt",
-  "role": "einziges Mitglied", "signature": "Kollektivunterschrift zu zweien" }
+  "role": "einziges Mitglied", "signature": "Kollektivunterschrift zu zweien",
+  "uid": null, "stammanteile": null }
 ```
 
+- All eight keys are always present; the ones that don't apply are `null`.
+- `uid` only when the officer or partner is itself a company
+  (`CHE-XXX.XXX.XXX`); then `nationality` and `heimatort` stay `null`.
+- `stammanteile` is the **count** of GmbH participations (`mit N
+  Stammanteilen`) as a JSON number — not their nominal value, which is the
+  company's and goes in `extras.nominal_value_chf`.
 - Keep `name` in source order: `Surname, Firstname`.
 - `von <Ort>` → Swiss citizen; that town is `heimatort`, `nationality` stays `null`.
 - `<Land> Staatsangehörige(r)` → foreigner; `nationality` filled, `heimatort` `null`.
@@ -128,7 +147,7 @@ Multi-label. Assign every one that applies. Controlled vocabulary only.
 | `organaenderung` | **any** person enters, leaves or changes |
 | `sitzverlegung` | `Sitz neu: <Ort>` — the legal seat moves to another municipality. A `Domizil neu:` alone is an address change, NOT a Sitzverlegung |
 | `kantonswechsel` | the move crosses a canton border |
-| `firmenaenderung` | `neu <new company name>` |
+| `firmenaenderung` | `Firma neu:` |
 | `zweckaenderung` | `Zweck neu:` |
 | `rechtsformaenderung` | `Rechtsform … neu: … [bisher: …]` — the legal form itself changes |
 | `liquidationseroeffnung` | company enters liquidation |
@@ -155,10 +174,14 @@ happened. A rectification with the usual person headings still gets
 | `uncertain` | field **names** you weren't sure about, e.g. `["act_subtypes"]` |
 | `notes` | prose: ambiguities, oddities, why you decided something |
 
-`extras` is an object: `{"clave": "valor"}`, never a bare string.
+`extras` is an object: `{"key": "value"}`, never a bare string.
 
-`extras.zweck` is truncated to the first sentence or ~200 characters, with
-`…`. It is scored by prefix match, not exact equality.
+`extras.zweck` is truncated **by characters, never at the first full stop**:
+take the first ~200 characters, round out to the nearest word boundary, and
+append `…`. A purpose shorter than that is kept whole, however many sentences
+it runs to. Purposes routinely open with a short fragment — `Holzmanufaktur
+und Werkstatt.` (0032) — and cutting there throws away the substance. It is
+scored by prefix match, not exact equality.
 
 `extras` vs `notes`: if it is a datum that will recur across documents with
 comparable values, it goes in `extras` under a registered key. If it is your

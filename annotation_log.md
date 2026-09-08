@@ -25,7 +25,7 @@ Format: `doc_id | minutes | new fields | notes`
 0016 | 12 | 0 | Zweigniederlassung of Muttenz parent; legal_form ambiguity (branch vs. parent) flagged uncertain; four-way parenthesised name (Sàrl/Sagl/Ltd liab Co)
 0017 | 3 | 0 | Domicile-only change, no persons — clean
 0018 | 6 | 0 | Domicile change (Neuendorf → Roggwil) tied to sole owner's move; PersonChange.domicile gap repeat
-0019 | 15 | 0 | Firmenänderung; two Reber brothers gain sole signature from no registered role — PersonChange gaps (role_previous, domicile) recur together, and signature changes with no anterior field either; source data error in the Bisher block ("ober Bärhegen null")
+0019 | 15 | 0 | Firmenänderung; two Reber brothers gain sole signature from no registered role — PersonChange gaps (role_previous, domicile) recur together, and signature changes with no previous field either; source data error in the Bisher block ("ober Bärhegen null")
 0020 | 3 | 0 | Löschung; second motivo_loeschung value (Nichtaufnahme des Geschäftsbetriebes)
 0021 | 9 | 0 | Intercantonal move (Aeschi SO → Lyss BE); "bisher in <Ort>" phrasing exposed a prefill.py seat_canton bug (authority names the new canton, not the pre-act seat) — fixed later this session
 0022 | 11 | 0 | Zweigniederlassung renamed; parent (Kloten) separately renamed and changes legal form GmbH→AG — schema can't attribute parent-level changes to the branch record, kept in extras (repeat of 0016). Source of the "Rechtsform Hauptsitz neu: … [bisher: …]" phrasing used to add rechtsformaenderung to act_subtypes this session
@@ -36,7 +36,6 @@ Format: `doc_id | minutes | new fields | notes`
 0027 | 8 | 0 | Field swap: act_subtypes values pasted into alternative_names
 0028 | 7 | 0 | Two legal persons as auditors (Person.uid again)
 
-0034 | 11 | 1 (konkurseinstellung) | Bankruptcy discontinued for lack of assets — no vocabulary value existed
 ## Exploratory phase verdict (28 documents)
 
 New fields in the last five documents (0024-0028): **0**. Everything that
@@ -44,10 +43,80 @@ appeared was a repeat of an already-known gap (Person.stammanteile,
 Person.uid for legal persons). Schema has converged → freeze v1.0.
 
 Average annotation time: ~7.5 min/doc after the first five.
-Estimated cost of the remaining 172 documents: ~21.5 hours (172 × 7.5 min ÷ 60).
 Exclusions from the sampled frame: 0 of 25 (0%).
 One additional document (0000, French FOSC) was excluded during the
 warm-up phase, before the sampling frame was defined.
+
+The corpus was later fixed at 120 documents, not the 200 originally
+targeted, so 92 remained to annotate after this verdict. Per-document times
+were not logged for them (0034 is the only entry below that carries one), so
+the actual cost of that stretch is not recoverable from this log — the old
+projection for "the remaining 172 documents" has been removed rather than
+rescaled to a number nothing here supports.
+
+## Sampled batch (0029-0043, Bern 2026-08-10, first batch after the freeze)
+
+0034 | 11 | 1 (konkurseinstellung) | Bankruptcy discontinued for lack of assets — no vocabulary value existed
+
+## Corpus complete (120 documents)
+
+Counts below were recomputed from `data/exploratory/` and `SCHEMA.md`, not
+carried over from earlier entries. All 120 records declare `schema_version`
+`1.0` and `_verified: true`. The gold standard lives in `data/exploratory/`;
+`data/gold/` is still empty.
+
+**New schema fields after the v1.0 freeze (daf99cd): 0.** 39 core fields at
+the freeze and 39 now — the Spanish→English rename (3a8d0b4) changed every
+name and added none. `Person` still has 8 keys, `PersonChange` 14. The 92
+documents annotated after the freeze produced no field the schema lacked.
+
+**`act_subtypes` values first seen after the freeze — 3 of 16:**
+
+- `konkurseinstellung` — 0034, 0037, 0101 (×3). New vocabulary value, added
+  in ae28b36; the first case, 0034, is what forced it.
+- `konkurseroeffnung` — 0036, 0118 (×2). Same commit, same reason.
+- `liquidationseroeffnung` — 0041, 0096 (×2). Already in the frozen
+  vocabulary; the corpus simply had no instance until 0041.
+
+So the vocabulary grew by exactly two values in 92 documents, both from the
+same gap: bankruptcy. `kapitalerhoehung` and `rechtsformaenderung` went the
+other way — seen only in the exploratory 28 and never again.
+
+**`extras` keys first seen after the freeze — 10 of the 25 in use:**
+
+| Key | n | Documents | Registered in SCHEMA.md |
+|---|---|---|---|
+| `konkurseinstellung_reason` | 3 | 0034, 0037, 0101 | yes |
+| `konkurs_wirkung_ab` | 2 | 0036, 0118 | **no** |
+| `prior_publication_page` | 2 | 0033, 0041 | **no** |
+| `steuerzustimmung` | 1 | 0068 | yes |
+| `berichtigung_meldungsnummer` | 1 | 0095 | **no** |
+| `berichtigung_shab_datum` | 1 | 0095 | **no** |
+| `berichtigung_tr_datum` | 1 | 0095 | **no** |
+| `berichtigung_tr_nr` | 1 | 0095 | **no** |
+| `zweigniederlassung_new` | 1 | 0104 | **no** |
+| `nebenleistungspflichten` | 1 | 0112 | **no** |
+
+Eight of the ten were not in the `extras` key registry — it was updated for
+the bankruptcy work and for 0068, and drifted afterwards. All eight have since
+been registered. None of the ten is near the 5% promotion threshold (≥6 of
+120); the highest is 3.
+
+Four registered keys appeared in no document at all. Three were dropped from
+the registry as exploratory leftovers: `confirmacion_revisor_fecha`,
+`antes_del_sperrjahr`, and `firma_nueva`, which the core field
+`company_name_new` had already replaced. The fourth,
+`gesellschafterversammlung_date`, was kept: `ANNOTATION_GUIDE.md` actively
+prescribes it for a resolution that predates the act, so it is a rule waiting
+for its first case rather than a leftover.
+
+**Harness, run on the complete corpus:**
+
+- `python -m src.validate data/exploratory --gold` → 120 of 120 `OK`, exit 0.
+- `python src/crosscheck.py` → `120 verified documents checked, 0 with findings.`
+
+**Exclusions from the 92-document sample: 0.** The only excluded document
+remains 0000 (French FOSC), dropped before the sampling frame existed.
 
 ## Method notes
 
@@ -108,22 +177,61 @@ warm-up phase, before the sampling frame was defined.
   reference in prose were still Spanish afterwards, and tests do not
   check their own names. Found only by re-sweeping without boundaries
   for an unrelated reason.
+- **`extras` key language homogenised.** The registry had grown three
+  languages, and six keys mixed German and Spanish inside one identifier
+  (`motivo_konkurseinstellung`, `tipo_kapitalerhoehung`,
+  `weitere_adressen_nueva`, `liberierung_nuevo_chf`, `zweigniederlassung_nueva`,
+  `valor_nominal_chf`). Rule adopted: a German noun for the registry concept,
+  English for everything else, never Spanish. Twelve keys renamed across 29
+  documents (55 occurrences), plus `decision_junta_fecha` →
+  `gesellschafterversammlung_date`, which no document used. Done by parsing and
+  re-dumping the JSON, not by text substitution: `weitere_adressen_nueva` and
+  `weitere_adressen_anterior` share a prefix, as do the `liberierung_*` pair,
+  and a textual pass would have hit them twice. The map, oldest name first:
+
+  | Before | After |
+  |---|---|
+  | `acciones_nuevas` / `acciones_anteriores` | `aktien_new` / `aktien_previous` |
+  | `valor_nominal_chf` | `nominal_value_chf` |
+  | `clases_acciones` | `share_classes` |
+  | `motivo_loeschung` | `loeschung_reason` |
+  | `motivo_konkurseinstellung` | `konkurseinstellung_reason` |
+  | `liberierung_nuevo_chf` / `liberierung_anterior_chf` | `liberierung_new_chf` / `liberierung_previous_chf` |
+  | `weitere_adressen_nueva` / `weitere_adressen_anterior` | `weitere_adressen_new` / `weitere_adressen_previous` |
+  | `tipo_kapitalerhoehung` | `kapitalerhoehung_type` |
+  | `zweigniederlassung_nueva` | `zweigniederlassung_new` |
+  | `decision_junta_fecha` | `gesellschafterversammlung_date` |
+
+  The per-document entries above keep the name the key carried on the day the
+  document was annotated (0008, 0011, 0020, and the "Schema candidates"
+  section), same as the Spanish→English field rename. Read them through this
+  table.
 - **A test that skips a check looks the same as one that passes it.**
   The 0016 test had a comment declining to assert legal_form. It sat
   green among 170 tests, so when 0107 failed the same way, "why does
   0016 work?" seemed like the obvious question. It had never worked.
 
-## Schema candidates for v1.0
+## Schema candidates for v1.0 — resolved
+
+All eight entered schema v1.0 and are closed. The first five became fields
+on `Person` / `PersonChange`; the last three were answered without new
+fields, as noted per line.
 
 - `PersonChange.role_previous` — seen in 0004, 0006, 0019, 0023 (×4)
 - `PersonChange.domicile` — seen in 0003, 0015, 0017, 0018, 0019
 - `PersonChange.signature_previous` — seen in 0019
 - `Person.stammanteile` — seen in 0004
 - `Person.uid` — seen in 0004, 0028
-- `heimatort` with multiple values — seen in 0006
-- `weitere_adressen_*` — seen in 0008
-- atribución matriz vs sucursal — schema can't attribute parent-level
-  changes to a branch (Zweigniederlassung) record — seen in 0016, 0022
+- `heimatort` with multiple values — seen in 0006. No new field: several
+  Heimatorte are transcribed into the single `heimatort` string as the
+  source writes them.
+- `weitere_adressen_*` — seen in 0008. Registered as the `extras` keys
+  `weitere_adressen_new` / `weitere_adressen_previous`, not as core
+  fields; still under the 5% promotion threshold at 120 documents.
+- parent vs branch attribution — schema can't attribute parent-level
+  changes to a branch (Zweigniederlassung) record — seen in 0016, 0022.
+  Resolved as a scope decision, not a field: the record describes the
+  branch, and parent-level facts go to `extras.hauptsitz`.
 
 ## Pending after v1.0
 
@@ -146,4 +254,6 @@ personas_mutantes        → persons_changed
 tipo_acto / subtipos     → act_type / act_subtypes
 incierto / notas         → uncertain / notes
 
-Completado: aplicado en todo el repositorio (claves solamente; `extras` y el vocabulario de `act_subtypes` siguen en alemán).
+Done: applied across the repository. `extras` keys were left untouched at
+the time and renamed separately later — see the rename note under
+Method notes. The `act_subtypes` vocabulary stays German by design.

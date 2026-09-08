@@ -35,8 +35,8 @@
   "persons_removed": [],
   "persons_changed": [],
   "extras": {
-    "weitere_adressen_nueva": "Oberdorfstrasse 35, 3612 Steffisburg",
-    "weitere_adressen_anterior": "Waisenhausstrasse 8, 3600 Thun"
+    "weitere_adressen_new": "Oberdorfstrasse 35, 3612 Steffisburg",
+    "weitere_adressen_previous": "Waisenhausstrasse 8, 3600 Thun"
   },
   "uncertain": [
     "extras"

@@ -68,7 +68,7 @@
   ],
   "extras": {
     "prior_publication_page": "0",
-    "valor_nominal_chf": 1000
+    "nominal_value_chf": 1000
   },
   "uncertain": [],
   "notes": null,

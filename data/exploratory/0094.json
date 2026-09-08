@@ -65,7 +65,7 @@
     }
   ],
   "extras": {
-    "valor_nominal_chf": 200.0
+    "nominal_value_chf": 200.0
   },
   "uncertain": [],
   "notes": null,

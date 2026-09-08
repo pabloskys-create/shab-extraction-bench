@@ -35,7 +35,7 @@
   "persons_removed": [],
   "persons_changed": [],
   "extras": {
-    "weitere_adressen_anterior": "Usterstrasse 16, 8620 Wetzikon ZH"
+    "weitere_adressen_previous": "Usterstrasse 16, 8620 Wetzikon ZH"
   },
   "uncertain": [],
   "notes": "The secondary address is struck rather than replaced, so only the previous half of that pair in extras is filled; the empty new half means removed here, not unknown. The header's Bisher block repeats the registered address unchanged and the body has no new-domicile line, so the domicile pair stays empty.",

@@ -67,10 +67,10 @@
   "persons_changed": [],
   "extras": {
     "zweck": "Die Gesellschaft bezweckt den Kauf, den Verkauf, die Vermietung und die Verwaltung von Immobilien.",
-    "liberierung_nuevo_chf": 100000,
-    "acciones_nuevas": 100,
-    "valor_nominal_chf": 1000,
-    "clases_acciones": "vinkulierte Namenaktien",
+    "liberierung_new_chf": 100000,
+    "aktien_new": 100,
+    "nominal_value_chf": 1000,
+    "share_classes": "vinkulierte Namenaktien",
     "vinkulierung": true,
     "mitteilungen": "per Brief oder E-Mail",
     "revision": "opting-out"

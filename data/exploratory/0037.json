@@ -37,7 +37,7 @@
   "persons_removed": [],
   "persons_changed": [],
   "extras": {
-    "motivo_konkurseinstellung": "mangels Aktiven"
+    "konkurseinstellung_reason": "mangels Aktiven"
   },
   "uncertain": [],
   "notes": null,

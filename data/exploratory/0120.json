@@ -35,7 +35,7 @@
   "persons_removed": [],
   "persons_changed": [],
   "extras": {
-    "motivo_loeschung": "Geschäftsbetrieb aufgehört"
+    "loeschung_reason": "Geschäftsbetrieb aufgehört"
   },
   "uncertain": [],
   "notes": null,

@@ -77,10 +77,10 @@
   "persons_changed": [],
   "extras": {
     "zweck": "Die Gesellschaft bezweckt die Erbringung von Generalplanungsleistungen im Baubereich.",
-    "liberierung_nuevo_chf": 100000.0,
-    "acciones_nuevas": 100,
-    "valor_nominal_chf": 1000.0,
-    "clases_acciones": "Namenaktien",
+    "liberierung_new_chf": 100000.0,
+    "aktien_new": 100,
+    "nominal_value_chf": 1000.0,
+    "share_classes": "Namenaktien",
     "vinkulierung": true,
     "mitteilungen": "per Brief oder E-Mail an die im Aktienbuch verzeichneten Adressen",
     "revision": "opting-out"
