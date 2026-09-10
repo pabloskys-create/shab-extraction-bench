@@ -1,0 +1,337 @@
+{
+  "description": "Notices pasted for the sample drawn on the contaminated frame, which the resample on the corrected frame no longer selects. Kept, not deleted: `foreign_rubric: true` entries are publications from other rubrics of the gazette that a missing filter let into the listing and that are gone from the frame entirely; the rest are valid Handelsregister notices that are still in the frame (data/sampling/manifest_full.json) and were simply not drawn this time. If a later sample selects one, its text can be recovered from here by `uuid` instead of being pasted again. `previous_doc_id` is the doc_id the earlier sample gave it and is also this directory's filename; it carries no meaning in the current corpus. This directory is NOT data/excluded/, which is for documents of the frame that could not be annotated and which feeds the exclusion budget reported in the README.",
+  "retired_from_sample": 47,
+  "foreign_rubric": 17,
+  "not_drawn_again": 30,
+  "records": [
+    {
+      "uuid": "76cde6d2-792d-4d41-9b38-909952ba195c",
+      "previous_doc_id": "0036",
+      "canton": "BE",
+      "headline": "Mutation petcenter.ch AG, Niederbipp",
+      "foreign_rubric": false
+    },
+    {
+      "uuid": "dcf3447f-5b5f-454a-98f5-ef67c994a3b9",
+      "previous_doc_id": "0060",
+      "canton": "LU",
+      "headline": "Mutation dislingua AG, Luzern",
+      "foreign_rubric": false
+    },
+    {
+      "uuid": "ead94c20-b227-45a5-82f3-f514d0f76307",
+      "previous_doc_id": "0063",
+      "canton": "LU",
+      "headline": "Schuldenruf infolge Fusion nach FusG GC Europe AG mit GC International AG",
+      "foreign_rubric": true
+    },
+    {
+      "uuid": "c4ebb597-ac02-48a6-a87b-efba3e5f71e3",
+      "previous_doc_id": "0064",
+      "canton": "LU",
+      "headline": "Vorläufige Konkursanzeige SM Regio Print GmbH",
+      "foreign_rubric": true
+    },
+    {
+      "uuid": "d00c8b6d-2933-483e-9c3b-53a5d169047c",
+      "previous_doc_id": "0065",
+      "canton": "LU",
+      "headline": "Vorläufige Konkursanzeige northdirection GmbH",
+      "foreign_rubric": true
+    },
+    {
+      "uuid": "b5dcefaf-2d3f-44b7-ab1c-6e59e6f8802a",
+      "previous_doc_id": "0066",
+      "canton": "LU",
+      "headline": "Vorläufige Konkursanzeige TransMech GmbH",
+      "foreign_rubric": true
+    },
+    {
+      "uuid": "e0f88eb2-129b-4aa0-9831-cb78d208c4ae",
+      "previous_doc_id": "0067",
+      "canton": "LU",
+      "headline": "Vorläufige Konkursanzeige UNLEASH GmbH",
+      "foreign_rubric": true
+    },
+    {
+      "uuid": "9d12b9ec-2a54-4d35-bbbd-88db61dba40a",
+      "previous_doc_id": "0068",
+      "canton": "LU",
+      "headline": "Vorläufige Konkursanzeige EOPTI SOLUTIONS AG",
+      "foreign_rubric": true
+    },
+    {
+      "uuid": "5795ff6f-a560-4f3b-932d-bad7d87309f8",
+      "previous_doc_id": "0070",
+      "canton": "ZH",
+      "headline": "Mutation Integras, Fachverband Sozial- und Sonderpädagogik, Zürich",
+      "foreign_rubric": false
+    },
+    {
+      "uuid": "c8defc3b-4608-4870-8cd5-5daaf4db5846",
+      "previous_doc_id": "0072",
+      "canton": "ZH",
+      "headline": "Mutation REMO Montagen GmbH in Liquidation, Winterthur",
+      "foreign_rubric": false
+    },
+    {
+      "uuid": "b9581002-3624-4ec1-9b8b-627639e5d05d",
+      "previous_doc_id": "0073",
+      "canton": "ZH",
+      "headline": "Löschung Wood PermitPro, Oberweningen",
+      "foreign_rubric": false
+    },
+    {
+      "uuid": "d5f4d8a4-bfe9-42da-a2cf-24bf1e07004d",
+      "previous_doc_id": "0074",
+      "canton": "ZH",
+      "headline": "Mutation Genossenschaft the Business Institute Zürich, Zürich",
+      "foreign_rubric": false
+    },
+    {
+      "uuid": "9e42aa42-a549-4a9e-b18a-83fba33ab500",
+      "previous_doc_id": "0076",
+      "canton": "ZH",
+      "headline": "Mutation CRA International (Switzerland) GmbH, Zürich",
+      "foreign_rubric": false
+    },
+    {
+      "uuid": "0b127b69-1d97-4ced-8959-72b41f2183cc",
+      "previous_doc_id": "0077",
+      "canton": "ZH",
+      "headline": "Mutation asm Fundraising AG, Zürich",
+      "foreign_rubric": false
+    },
+    {
+      "uuid": "48a84d80-cc1e-4016-8ab5-c706509ee442",
+      "previous_doc_id": "0079",
+      "canton": "ZH",
+      "headline": "Mutation AIX Group AG, Zürich",
+      "foreign_rubric": false
+    },
+    {
+      "uuid": "6c8b2c1e-6fdb-4581-9fc4-90cf51ff326b",
+      "previous_doc_id": "0081",
+      "canton": "ZH",
+      "headline": "Löschung Black&White Shop by Fierz, Horgen",
+      "foreign_rubric": false
+    },
+    {
+      "uuid": "4482edb4-b3ce-4efd-8561-110ac77c81e2",
+      "previous_doc_id": "0083",
+      "canton": "ZH",
+      "headline": "Neueintragung Connect - Jasmin Friedli, Wettswil am Albis",
+      "foreign_rubric": false
+    },
+    {
+      "uuid": "015f03ff-6580-4220-8a27-3d14d66017f1",
+      "previous_doc_id": "0084",
+      "canton": "ZH",
+      "headline": "Neueintragung Meyer & Fischer Gastro GmbH, Kloten",
+      "foreign_rubric": false
+    },
+    {
+      "uuid": "9ac402c9-ea7a-4d6c-bf81-b47706b6414a",
+      "previous_doc_id": "0085",
+      "canton": "ZH",
+      "headline": "Neueintragung Julian Strütt, Zürich",
+      "foreign_rubric": false
+    },
+    {
+      "uuid": "9ffbd217-cabb-4e6d-9a8e-0ea1c80ab537",
+      "previous_doc_id": "0087",
+      "canton": "ZH",
+      "headline": "Mutation Seyfried.com GmbH, Zürich",
+      "foreign_rubric": false
+    },
+    {
+      "uuid": "5f41e653-d202-4888-82c8-63127fac338c",
+      "previous_doc_id": "0088",
+      "canton": "ZH",
+      "headline": "Mutation Strada Sagl, Winterthur",
+      "foreign_rubric": false
+    },
+    {
+      "uuid": "60ed1a75-e97d-4029-9930-303d4724281b",
+      "previous_doc_id": "0089",
+      "canton": "ZH",
+      "headline": "Mutation Verband chinesischer Unternehmen in der Schweiz, Zürich",
+      "foreign_rubric": false
+    },
+    {
+      "uuid": "29100b74-b047-4fe8-8d57-4b4ef7a799e8",
+      "previous_doc_id": "0090",
+      "canton": "ZH",
+      "headline": "Mutation Orient Express Altiparmak, Winterthur",
+      "foreign_rubric": false
+    },
+    {
+      "uuid": "ca1d03fa-f567-4620-96a7-8fd37a27cea4",
+      "previous_doc_id": "0091",
+      "canton": "ZH",
+      "headline": "Neueintragung Mühle Gütighausen AG, Thalheim an der Thur",
+      "foreign_rubric": false
+    },
+    {
+      "uuid": "6968ec7c-1982-416b-ba77-42cc75e89f01",
+      "previous_doc_id": "0092",
+      "canton": "ZH",
+      "headline": "Neueintragung Sehi Professional, Zürich",
+      "foreign_rubric": false
+    },
+    {
+      "uuid": "8b2994f8-32d3-4e73-9858-600539d21576",
+      "previous_doc_id": "0093",
+      "canton": "ZH",
+      "headline": "Neueintragung Sama Beirut GmbH, Thalwil",
+      "foreign_rubric": false
+    },
+    {
+      "uuid": "9b1f4a5b-0570-4e59-a882-85a0b4f0a71a",
+      "previous_doc_id": "0094",
+      "canton": "ZH",
+      "headline": "Neueintragung Reality Recognition Fries, Zürich",
+      "foreign_rubric": false
+    },
+    {
+      "uuid": "26ae6856-d2c0-4697-bd9b-192fa440ee3f",
+      "previous_doc_id": "0095",
+      "canton": "ZH",
+      "headline": "Mutation ZARAB Investment AG, Freienbach, neu Küsnacht (ZH)",
+      "foreign_rubric": false
+    },
+    {
+      "uuid": "f18ead50-6254-4435-8aa8-68d7ce84c065",
+      "previous_doc_id": "0097",
+      "canton": "ZH",
+      "headline": "Mutation pom+Consulting AG, Zürich",
+      "foreign_rubric": false
+    },
+    {
+      "uuid": "02cc15e4-6e39-4732-a1eb-279940c2883f",
+      "previous_doc_id": "0098",
+      "canton": "ZH",
+      "headline": "Mutation Ultra Isoliertechnik GmbH in Liquidation, Dietikon",
+      "foreign_rubric": false
+    },
+    {
+      "uuid": "41873d53-f427-4c60-95a6-53d64dc82e26",
+      "previous_doc_id": "0101",
+      "canton": "ZH",
+      "headline": "Mutation NewGreenTec International AG, Kloten",
+      "foreign_rubric": false
+    },
+    {
+      "uuid": "fd11c0ef-cf23-4a8d-a3dc-70bd0c34f6eb",
+      "previous_doc_id": "0103",
+      "canton": "ZH",
+      "headline": "Mutation DieSozialfirma AG in Liquidation, Uster",
+      "foreign_rubric": false
+    },
+    {
+      "uuid": "5033301d-f7d0-47f5-883f-ff1d4d6be579",
+      "previous_doc_id": "0105",
+      "canton": "ZH",
+      "headline": "Mutation FAU Fokus Arbeit Umfeld, Zürich",
+      "foreign_rubric": false
+    },
+    {
+      "uuid": "87a1727a-1964-46ab-8423-cc6c34c19a9d",
+      "previous_doc_id": "0106",
+      "canton": "ZH",
+      "headline": "Mutation Erdgas Zürich Transport AG, Zürich",
+      "foreign_rubric": false
+    },
+    {
+      "uuid": "0caaa064-3f85-438e-b091-27198e38afb0",
+      "previous_doc_id": "0108",
+      "canton": "ZH",
+      "headline": "Löschung SWR telepro AG in Liquidation, Zürich",
+      "foreign_rubric": false
+    },
+    {
+      "uuid": "db800a66-d742-4f3c-9e18-49bed5986def",
+      "previous_doc_id": "0109",
+      "canton": "ZH",
+      "headline": "Löschung Widmer & Cantz Partners GmbH in Liquidation, Stäfa",
+      "foreign_rubric": false
+    },
+    {
+      "uuid": "56e68737-05ef-4e8d-814a-5fb22edc48ea",
+      "previous_doc_id": "0110",
+      "canton": "ZH",
+      "headline": "Zahlungsbefehl Rampf - Elektronik AG",
+      "foreign_rubric": true
+    },
+    {
+      "uuid": "2f0fb367-5a36-403d-bb24-5ff3484e1ca4",
+      "previous_doc_id": "0111",
+      "canton": "ZH",
+      "headline": "Konkursandrohung R Cooper AG",
+      "foreign_rubric": true
+    },
+    {
+      "uuid": "0969229f-4006-4a1c-8d84-2e41827c54a6",
+      "previous_doc_id": "0112",
+      "canton": "ZH",
+      "headline": "Kollokationsplan Schmidlin Energy Technologies GmbH in Liquidation",
+      "foreign_rubric": true
+    },
+    {
+      "uuid": "1b533615-01c7-4f25-91f9-2b34c5cc824e",
+      "previous_doc_id": "0113",
+      "canton": "ZH",
+      "headline": "Vorläufige Konkursanzeige Marcel Neuhaus, ausgeschlagene Erbschaft",
+      "foreign_rubric": true
+    },
+    {
+      "uuid": "c187e890-04f0-4637-a63c-fc478b08018b",
+      "previous_doc_id": "0114",
+      "canton": "ZH",
+      "headline": "Vorläufige Konkursanzeige Susanne Renate Düsel-Strebel, ausgeschlagene Erbschaft",
+      "foreign_rubric": true
+    },
+    {
+      "uuid": "05e6ffd5-db0a-4851-9077-71d76cf8e7f9",
+      "previous_doc_id": "0115",
+      "canton": "ZH",
+      "headline": "Vorläufige Konkursanzeige Symmetra Technologies GmbH",
+      "foreign_rubric": true
+    },
+    {
+      "uuid": "bae41201-0bc7-47a4-bba9-54e30834f2fa",
+      "previous_doc_id": "0116",
+      "canton": "ZH",
+      "headline": "Kraftloserklärung Papier-Namenschuldbriefe, lastend auf Grundstück Kat.-Nr. 5757, Plan 27, GBBI 1253, Gemeinde Dietlikon, EGRID CH899877774441, 3. Pfandstelle, Maximalzinsfuss 6 %, Grundstück Kat.-Nr. 5757, Plan 27, GBBI 1253, Gemeinde Dietlikon, EGRID CH899877774441, 4. Pfandstelle, Maximalzinsfuss 6 %., lautend auf Werner Meier, geb. 14. Mai 1938, von Rümlang ZH, Obholzerstrasse 22, 8309 Nürensdorf",
+      "foreign_rubric": true
+    },
+    {
+      "uuid": "542cb738-c86b-484e-b817-4db656b67c2d",
+      "previous_doc_id": "0117",
+      "canton": "ZH",
+      "headline": "Die aufgeführten Titel sind innert der genannten Frist nicht vorgewiesen worden und werden hiermit kraftlos erklärt.",
+      "foreign_rubric": true
+    },
+    {
+      "uuid": "99fd447e-947a-48de-bfa9-f191b8634b4c",
+      "previous_doc_id": "0118",
+      "canton": "ZH",
+      "headline": "Gesuch um Erteilung von Arbeitszeitbewilligung AQIPTECH AG",
+      "foreign_rubric": true
+    },
+    {
+      "uuid": "be8f51ab-e5af-41a1-9e87-fc54b43635ec",
+      "previous_doc_id": "0119",
+      "canton": "ZH",
+      "headline": "Gesuch um Erteilung von Arbeitszeitbewilligung Sieber Logistics AG",
+      "foreign_rubric": true
+    },
+    {
+      "uuid": "b82d9f0a-e134-4476-b502-e4f63e73ad2c",
+      "previous_doc_id": "0120",
+      "canton": "ZH",
+      "headline": "Gerichtlicher Entscheid gegen HimmelsHüter Dachservice GmbH",
+      "foreign_rubric": true
+    }
+  ]
+}

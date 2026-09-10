@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "doc_id": "0001",
+  "act_type": "mutation",
+  "act_subtypes": ["firmenaenderung", "zweckaenderung"],
+  "legal_form": "AG",
+  "seat_canton": "ZH",
+  "persons_added": [
+    {"name": "Muster, Anna", "role": "Mitglied"},
+    {"name": "Muster, Beat", "role": "Mitglied"}
+  ],
+  "persons_removed": [],
+  "persons_changed": [],
+  "extras": {"zweck": "Handel mit Waren aller Art."},
+  "uncertain": [],
+  "_verified": true
+}

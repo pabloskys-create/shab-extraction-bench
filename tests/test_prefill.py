@@ -341,10 +341,59 @@ def test_0016_helios_solar_alt_names_same_line():
     assert record["company_name_full"] == "Helios Solar Energie GmbH"
     assert record["company_name_base"] == "Helios Solar Energie GmbH"
 
-    # legal_form is deliberately not asserted here: the body describes
-    # this record as a "schweizerische Zweigniederlassung" of a company
-    # named "... GmbH" — which of the two belongs in legal_form is a
-    # domain judgement call outside the scope of this regression test.
+    # The body describes this record as a "schweizerische
+    # Zweigniederlassung" of a company named "... GmbH". The branch, not
+    # the parent's form, is what belongs in legal_form: the annotated
+    # data/exploratory/0016.json settles it with "Zweigniederlassung",
+    # _verified true.
+    assert record["legal_form"] == "Zweigniederlassung"
+
+
+# --- 0054.txt / 0107.txt: branch records, where the body writes the legal
+#     form with a parent-location qualifier in front of it ---
+
+
+def test_0107_burckhardt_schweizerische_zweigniederlassung():
+    record = prefill_file(DATA_RAW / "0107.txt")
+
+    assert record["doc_id"] == "0107"
+    assert record["uid"] == "CHE-335.665.029"
+
+    # Body reads "schweizerische Zweigniederlassung". The qualifier says
+    # where the parent sits (here "Hauptsitz in: Basel"); SCHEMA.md's enum
+    # has one flat `Zweigniederlassung` value, so it must not block the
+    # FORM_MAP lookup.
+    assert record["legal_form"] == "Zweigniederlassung"
+    assert record["company_name_full"] == "Burckhardt Architektur AG"
+
+
+def test_0054_wik_far_east_auslaendische_zweigniederlassung():
+    record = prefill_file(DATA_RAW / "0054.txt")
+
+    assert record["doc_id"] == "0054"
+    assert record["uid"] == "CHE-227.108.275"
+
+    # Foreign parent ("Hauptsitz in: Hongkong (CN)"), so the body reads
+    # "ausländische Zweigniederlassung" — same qualifier problem, other
+    # adjective. The legal form still comes from the standard slot after
+    # the UID, NOT from the "Zweigniederlassung Luzern" inside the name.
+    assert record["legal_form"] == "Zweigniederlassung"
+
+    # The company name carries commas of its own; it comes from the body
+    # whole, and must not be cut at the first comma.
+    assert (
+        record["company_name_full"]
+        == "WIK FAR EAST LIMITED, Hongkong, Zweigniederlassung Luzern"
+    )
+
+
+def test_legal_form_qualifier_stripped_only_from_the_front():
+    # The qualifier is removed as a prefix, so an unrelated form is
+    # unaffected and a bare "Zweigniederlassung" still resolves.
+    assert prefill_text("x, CHE-111.111.111, Zweigniederlassung (SHAB")["legal_form"] == (
+        "Zweigniederlassung"
+    )
+    assert prefill_text("x, CHE-111.111.111, Aktiengesellschaft (SHAB")["legal_form"] == "AG"
 
 
 # --- 0018.txt / 0021.txt: relocations where the body reads "bisher in
@@ -384,9 +433,120 @@ def test_0021_linder_immobilien_bisher_in_derives_seat_from_bisher_cp():
     assert record["seat_canton"] == "SO"
 
 
+def test_0057_schneiter_gastro_bisher_in_derives_seat_from_bisher_cp():
+    record = prefill_file(DATA_RAW / "0057.txt")
+
+    assert record["doc_id"] == "0057"
+    assert record["uid"] == "CHE-464.687.482"
+
+    # Kontaktstelle is "Handelsregisteramt des Kantons Luzern" — the NEW
+    # canton (Ebikon LU), not the pre-act seat (Hergiswil NW).
+    # seat_municipality comes from "bisher in <Ort>"; seat_canton from the
+    # header's "Bisher" postal code (6052 -> NW).
+    assert record["authority"] == "Handelsregisteramt des Kantons Luzern"
+    assert record["seat_municipality"] == "Hergiswil (NW)"
+    assert record["seat_canton"] == "NW"
+
+
+def test_canton_from_plz_prefers_full_code_over_straddling_prefix():
+    # 6052 Hergiswil is NW, but the surrounding "605" prefix reaches into
+    # Obwalden (6053 Alpnachstad, 6055 Alpnach Dorf), so only the verified
+    # full code resolves — its neighbours stay unmapped.
+    assert _canton_from_plz("6052") == "NW"
+    assert _canton_from_plz("6053") is None
+    assert _canton_from_plz("6055") is None
+
+
 def test_canton_from_plz_unmapped_prefix_returns_none_not_a_guess():
     # A prefix this module hasn't verified must never resolve to a canton —
     # see PLZ_PREFIX_TO_CANTON's comment: a wrong canton is worse than none.
     assert _canton_from_plz("8001") is None
     assert _canton_from_plz(None) is None
     assert _canton_from_plz("12") is None  # too short to be a real PLZ prefix
+
+
+# --- 0043.txt / 0114.txt / 0095.txt: the name fields are the state
+#     *before* the act, so they come from the body, not from the header
+#     block (which shows the state after it) ---
+
+
+def test_0043_kroener_name_comes_from_the_body_not_the_header():
+    record = prefill_file(DATA_RAW / "0043.txt")
+
+    assert record["doc_id"] == "0043"
+    assert record["uid"] == "CHE-279.705.403"
+
+    # The act renames the company: the header block already says
+    # "Kröner Design" (post-act), the body says "Kröner Consulting, in
+    # Bolligen, CHE-..." (pre-act). SCHEMA.md defines these fields as the
+    # pre-act state, same as seat_municipality.
+    assert record["company_name_full"] == "Kröner Consulting"
+    assert record["company_name_base"] == "Kröner Consulting"
+    assert record["status_suffix"] is None
+
+
+def test_0114_hasler_body_name_contains_commas():
+    record = prefill_file(DATA_RAW / "0114.txt")
+
+    assert record["doc_id"] == "0114"
+    assert record["uid"] == "CHE-100.766.120"
+
+    # The registered name carries a comma of its own, and the act renames
+    # it ("Firma neu: Hasler + Co AG, Zutrittslösungen"). The pre-act name
+    # must come out of the body whole: cutting at the first comma would
+    # leave "Hasler + Co AG", and reading the header would give the new
+    # name.
+    assert record["company_name_full"] == "Hasler + Co AG, die Zutrittsexperten"
+    assert record["company_name_base"] == "Hasler + Co AG, die Zutrittsexperten"
+
+
+def test_0095_berichtigung_preamble_is_trimmed_off_the_name():
+    record = prefill_file(DATA_RAW / "0095.txt")
+
+    assert record["doc_id"] == "0095"
+    assert record["uid"] == "CHE-101.499.453"
+
+    # The body opens with a correction clause ("Berichtigung des im SHAB
+    # vom 11.11.2025 ... TR-Eintrags Nr. 49'879 vom 06.11.2025") in front
+    # of the company name; it is not part of the name.
+    assert record["company_name_full"] == "Stiftung Alterssiedlung Witikon"
+    assert record["company_name_base"] == "Stiftung Alterssiedlung Witikon"
+    assert record["status_suffix"] is None
+
+
+def test_liquidation_act_leaves_the_pre_act_name_without_the_suffix():
+    # 0036/0041/0096: the liquidation *is* the act ("Firma neu: ... in
+    # Liquidation"), so the header name carries a suffix the pre-act name
+    # did not have. Contrast test_0001, where the company was already in
+    # liquidation before the act and the body name keeps the suffix.
+    record = prefill_file(DATA_RAW / "0036.txt")
+
+    assert record["company_name_full"] == "Yeap GmbH"
+    assert record["company_name_base"] == "Yeap GmbH"
+    assert record["status_suffix"] is None
+
+
+def test_incomplete_berichtigung_preamble_yields_no_name_at_all():
+    # An unrecognised preamble must not be trimmed halfway: a name cut off
+    # inside the preamble is worse than a missing one, so all three fields
+    # stay null and the annotator fills them in. Here the preamble has no
+    # closing "vom <date>" for BERICHTIGUNG_PREAMBLE_RE to end on.
+    record = prefill_text("Berichtigung eines Eintrags Foo AG, in Bern, CHE-111.111.111, x")
+
+    assert record["company_name_full"] is None
+    assert record["company_name_base"] is None
+    assert record["status_suffix"] is None
+    # the fields that do not depend on the name are unaffected
+    assert record["uid"] == "CHE-111.111.111"
+    assert record["seat_municipality"] == "Bern"
+
+
+def test_body_name_missing_seat_clause_yields_no_name():
+    # No ", in <Ort>," anchor in front of the UID: nothing to read the name
+    # from, and the header is the wrong state by definition.
+    record = prefill_text("Foo AG CHE-111.111.111, Aktiengesellschaft (SHAB")
+
+    assert record["company_name_full"] is None
+    assert record["company_name_base"] is None
+    assert record["status_suffix"] is None
+    assert record["legal_form"] == "AG"

@@ -1,0 +1,24 @@
+{
+  "description": "Fixture mirroring data/sampling/annotated_exclusions.json: two publications present in the fixture listings, plus one annotated before the frame existed and therefore absent from it.",
+  "records": [
+    {
+      "doc_id": "0001",
+      "publication_number": null,
+      "source_html": null,
+      "title": "Mutation Fixture Company Absent AG, Sion",
+      "note": "Not present in any fixture listing, so it removes nothing from the population."
+    },
+    {
+      "doc_id": "0002",
+      "publication_number": "HR02-0000002",
+      "source_html": "listing_aa_2026-07-07.html",
+      "title": "Neueintragung Test Company Two GmbH, Bern"
+    },
+    {
+      "doc_id": "0003",
+      "publication_number": "HR02-0000010",
+      "source_html": "listing_bb_2026-07-08.html",
+      "title": "Mutation Test Company Ten AG, St. Gallen"
+    }
+  ]
+}

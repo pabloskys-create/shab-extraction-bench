@@ -1,0 +1,71 @@
+{
+  "schema_version": "1.0",
+  "doc_id": "0066",
+  "language": "de",
+  "act_type": "mutation",
+  "act_subtypes": [
+    "organaenderung"
+  ],
+  "company_name_full": "Rossi Aregger AG",
+  "company_name_base": "Rossi Aregger AG",
+  "status_suffix": null,
+  "alternative_names": [],
+  "company_name_new": null,
+  "company_name_previous": null,
+  "uid": "CHE-107.240.936",
+  "legal_form": "AG",
+  "seat_municipality": "Luzern",
+  "seat_canton": "LU",
+  "address_care_of": null,
+  "address_street": "Cécile-Lauber-Gasse 1",
+  "address_postcode": "6005",
+  "address_municipality": "Luzern",
+  "act_date": null,
+  "tagesregister_nr": "8730",
+  "tagesregister_date": "2026-08-20",
+  "prior_publication_shab_nr": 138,
+  "prior_publication_date": "2026-07-21",
+  "prior_publication_id": "1006712121",
+  "authority": "Handelsregisteramt des Kantons Luzern",
+  "canton_previous": null,
+  "canton_new": null,
+  "capital_new_chf": null,
+  "capital_previous_chf": null,
+  "domicile_new": null,
+  "domicile_previous": null,
+  "persons_added": [],
+  "persons_removed": [
+    {
+      "name": "Schmidt, Michael",
+      "nationality": "deutsch",
+      "heimatort": null,
+      "domicile": "Zug",
+      "role": "Mitglied des Verwaltungsrates",
+      "signature": "Einzelunterschrift",
+      "uid": null,
+      "stammanteile": null
+    }
+  ],
+  "persons_changed": [
+    {
+      "name_new": "Jovanovic, Zoran",
+      "name_previous": null,
+      "domicile_new": "Baar",
+      "domicile_previous": null,
+      "role_new": "Mitglied des Verwaltungsrates",
+      "role_previous": "Präsident des Verwaltungsrates",
+      "signature_new": "Einzelunterschrift",
+      "signature_previous": null,
+      "nationality_new": "kroatisch",
+      "nationality_previous": null,
+      "heimatort_new": null,
+      "heimatort_previous": null,
+      "stammanteile_new": null,
+      "stammanteile_previous": null
+    }
+  ],
+  "extras": {},
+  "uncertain": [],
+  "notes": null,
+  "_verified": true
+}

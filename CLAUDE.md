@@ -95,6 +95,7 @@ CHANGELOG.md             schema version history
   evaluating the author's judgement, not just executed.
 - When a design decision has a trade-off, state it in the commit message or in
   `SCHEMA.md` rather than picking silently.
+- Commit messages: never add a `Claude-Session:` trailer — it links to a private session. `Co-Authored-By` is fine.
 
 ## What I (the human) do, and you don't
 

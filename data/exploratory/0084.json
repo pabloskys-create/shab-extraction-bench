@@ -1,0 +1,63 @@
+{
+  "schema_version": "1.0",
+  "doc_id": "0084",
+  "language": "de",
+  "act_type": "neueintragung",
+  "act_subtypes": [],
+  "company_name_full": "Flowtech Holding AG",
+  "company_name_base": "Flowtech Holding AG",
+  "status_suffix": null,
+  "alternative_names": [],
+  "company_name_new": null,
+  "company_name_previous": null,
+  "uid": "CHE-176.241.186",
+  "legal_form": "AG",
+  "seat_municipality": "Thalwil",
+  "seat_canton": "ZH",
+  "address_care_of": "Tanja Meyer",
+  "address_street": "Aegertlistrasse 23a",
+  "address_postcode": "8800",
+  "address_municipality": "Thalwil",
+  "act_date": "2026-08-18",
+  "tagesregister_nr": "40372",
+  "tagesregister_date": "2026-08-26",
+  "prior_publication_shab_nr": null,
+  "prior_publication_date": null,
+  "prior_publication_id": null,
+  "authority": "Handelsregisteramt des Kantons Zürich",
+  "canton_previous": null,
+  "canton_new": null,
+  "capital_new_chf": 100000.0,
+  "capital_previous_chf": null,
+  "domicile_new": null,
+  "domicile_previous": null,
+  "persons_added": [
+    {
+      "name": "Meyer, Tanja Yumi",
+      "nationality": null,
+      "heimatort": "Villmergen und Würenlos",
+      "domicile": "Thalwil",
+      "role": "Mitglied des Verwaltungsrates",
+      "signature": "Einzelunterschrift",
+      "uid": null,
+      "stammanteile": null
+    }
+  ],
+  "persons_removed": [],
+  "persons_changed": [],
+  "extras": {
+    "zweck": "Die Gesellschaft bezweckt den Erwerb, das Halten, die Verwaltung und die Veräusserung von Beteiligungen an anderen Unternehmungen jeder Art im In- und Ausland.",
+    "liberierung_new_chf": 100000.0,
+    "aktien_new": 1000,
+    "nominal_value_chf": 100.0,
+    "share_classes": "Namenaktien",
+    "vinkulierung": true,
+    "mitteilungen": "per Brief oder E-Mail an die im Aktienbuch verzeichneten Adressen",
+    "revision": "opting-out"
+  },
+  "uncertain": [
+    "persons_added"
+  ],
+  "notes": "Meyer has two Heimatorte ('Villmergen und Würenlos'); the schema allows only one string.",
+  "_verified": true
+}

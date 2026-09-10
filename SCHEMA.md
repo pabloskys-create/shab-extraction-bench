@@ -9,10 +9,12 @@ Scope: German-language Handelsregister publications only (`Neueintragung`,
 
 ---
 
-**Scoreability** — every annotation rule must be applicable from the
+## Scoreability 
+Every annotation rule must be applicable from the
 source text alone, without knowing what the annotator considered
 interesting. A rule that depends on judgement about relevance cannot be
 scored against a model and turns the field into noise.
+
 ## Core fields — scored in the benchmark
 
 | Field | Type | Notes |
@@ -99,7 +101,9 @@ chrome. Only `Mutation` is used (→ `act_type`).
 
 **`domicile_*` vs `address_*`** — `address_*` is the address as printed.
 `domicile_new` / `domicile_previous` are populated **only when the act
-changes the address** (source shows `Bisher` / `bisher`).
+changes the address** (source shows `Bisher` / `bisher`). Street and
+postcode-plus-town only, joined with ", ". The `c/o` party is excluded:
+it has its own field (`address_care_of`).
 
 **Nationality convention** — `von <Ort>` marks a Swiss citizen (Heimatort);
 `<Land> Staatsangehörige(r)` marks a foreigner. A change from the latter to the
@@ -146,7 +150,7 @@ as a partner in 0004); `nationality`/`heimatort` stay `null` for it, since
 neither applies to a company. `stammanteile` is the number of GmbH
 participations the person holds (`mit N Stammanteilen`), not their nominal
 value — nominal value per participation belongs to the company, not the
-partner, and stays in `extras.valor_nominal_chf`. Seen in 0004, 0025, 0027.
+partner, and stays in `extras.nominal_value_chf`. Seen in 0004, 0025, 0027.
 
 **`PersonChange` — one pair per attribute.** Each attribute that can change
 (`name`, `domicile`, `role`, `signature`, `nationality`, `heimatort`,
@@ -175,6 +179,20 @@ field, and a judgement-based rule ("only when it adds something") would
 not be scoreable — a model cannot know when the annotator considered it
 worth recording.
 
+**`act_subtypes` follow the text, not the legal substance.** Subtypes are
+assigned from the headings the notice actually carries. A `Berichtigung`
+(rectification of an earlier entry) that lists people under
+`Ausgeschiedene Personen und erloschene Unterschriften:` and
+`Eingetragene Personen neu oder mutierend:` gets `organaenderung`, even
+though no office in fact changed hands and the two entries are the same
+person under a corrected name (see 0095).
+
+Leaving it empty would require the annotator — or a model — to work out
+that the earlier publication was wrong and that the two entries refer to
+one person. That is reasoning about the substance, not reading, and it
+breaks the scoreability rule above: a model that labels `organaenderung`
+here is reading correctly and would be penalised for not thinking like a
+registrar.
 ---
 
 ## `act_subtypes` — controlled vocabulary
@@ -182,8 +200,8 @@ worth recording.
 `statutenaenderung`, `kapitalerhoehung`, `kapitalherabsetzung`,
 `bedingte_kapitalerhoehung`, `kapitalband_aufhebung`, `organaenderung`,
 `sitzverlegung`, `kantonswechsel`, `firmenaenderung`, `zweckaenderung`,
-`rechtsformaenderung`, `liquidationseroeffnung`, `liquidation_beendet`,
-`fusion`, `revisionsstelle`
+`rechtsformaenderung`, `liquidationseroeffnung`,
+`fusion`, `revisionsstelle`, `konkurseinstellung`, `konkurseroeffnung`
 
 `rechtsformaenderung` — the company's legal form itself changes (e.g.
 `Rechtsform Hauptsitz neu: Aktiengesellschaft [bisher: Gesellschaft mit
@@ -198,26 +216,51 @@ Add new values here before using them.
 
 Keys already in use. **Check this list before inventing a new key.**
 
-- `decision_junta_fecha` — date of the shareholder resolution underlying the act
-- `acciones_nuevas` / `acciones_anteriores` — share counts
-- `valor_nominal_chf` — nominal value per share
-- `clases_acciones` — description of share classes and privileges
-- `confirmacion_revisor_fecha` — auditor confirmation date
-- `antes_del_sperrjahr` — bool, deletion before the statutory blocking year
-- `motivo_loeschung` — stated reason for the deletion (e.g. `Geschäftsaufgabe`)
-- `firma_nueva` — new company name on a `Firma neu:` change
-- `zweck` — company purpose, truncated to first sentence or ~200 chars
+Naming rule: a German noun for the registry concept, English for everything
+else. No Spanish. Applied across the corpus and this registry in one pass.
+
+- `gesellschafterversammlung_date` — date of the shareholder resolution
+  underlying the act (`mit Beschluss der Gesellschafterversammlung vom …`)
+- `aktien_new` / `aktien_previous` — share counts
+- `nominal_value_chf` — nominal value per share
+- `share_classes` — description of share classes and privileges
+- `loeschung_reason` — stated reason for the deletion (e.g. `Geschäftsaufgabe`)
+- `zweck` — company purpose, truncated by characters to the first ~200,
+  rounded out to the nearest word boundary, with `…`; never cut at the
+  first full stop, since purposes routinely open with a short fragment.
+  A purpose under that length is kept whole. Scored by prefix match.
 - `hauptsitz` — parent company's head office (branch registrations only)
-- `liberierung_nuevo_chf` / `liberierung_anterior_chf` — paid-in capital
+- `liberierung_new_chf` / `liberierung_previous_chf` — paid-in capital
 - `vinkulierung` — bool, share transferability restricted per articles
 - `revision` — audit regime, e.g. `opting-out`
-- `tipo_kapitalerhoehung` — e.g. `Ordentliche Kapitalerhöhung innerhalb Kapitalband`
-- `weitere_adressen_nueva` / `weitere_adressen_anterior` — secondary addresses
+- `kapitalerhoehung_type` — e.g. `Ordentliche Kapitalerhöhung innerhalb Kapitalband`
+- `weitere_adressen_new` / `weitere_adressen_previous` — secondary addresses
 - `mitteilungen` — how the company notifies its shareholders/partners
+- `konkurseinstellung_reason` — stated reason proceedings were
+  discontinued (e.g. `mangels Aktiven`)
+- `konkurs_wirkung_ab` — timestamp the bankruptcy takes effect from
+  (`mit Wirkung ab dem …`)
+- `steuerzustimmung` — bool, tax authorities' clearance for deletion is on
+  file (`Die Zustimmungen der Steuerverwaltungen liegen vor`)
+- `nebenleistungspflichten` — ancillary obligations and pre-emption rights
+  clause carried by the articles
+- `zweigniederlassung_new` — branch office opened by the act
+- `prior_publication_page` — page number in an old-format prior-publication
+  citation (`S.5`)
+- `berichtigung_meldungsnummer` / `berichtigung_shab_datum` /
+  `berichtigung_tr_nr` / `berichtigung_tr_datum` — the publication a
+  Berichtigung corrects, identified by its own notice numbers and dates
 
-**Promotion rule:** an `extras` key appearing in ≥5% of documents is promoted to
-a core field in the next schema version, and previously annotated documents are
-back-filled for that field only.
+**Promotion threshold — a v2.0 decision, deliberately not taken for v1.0.**
+An `extras` key appearing in ≥5% of documents (≥6 of the 120) is a candidate
+for promotion to a core field. Nine keys already exceed it: `zweck` 32,
+`nominal_value_chf` 14, `mitteilungen` 12, `revision` 10, and five more at
+6-7 (`aktien_new`, `share_classes`, `liberierung_new_chf`,
+`loeschung_reason`, `vinkulierung`). Promoting them would mean re-annotating
+the whole corpus for no benefit to the benchmark: `extras` is scored as an
+object, so the data is present and comparable either way. The threshold is
+recorded as a signal for a future schema version, not as a rule this version
+follows.
 
 ---
 
@@ -233,33 +276,65 @@ Cross-language degradation is listed as future work.
 annotator cannot stand behind the annotation. All exclusions are logged with a
 reason and reported in the README.
 
-**Random sampling.** Documents are sampled at random from a publication day, not
+**Random sampling.** Documents are sampled at random from three diferent publication days, not
 hand-picked, so the corpus reflects the real distribution of act types.
 
 ---
 
 ## Corpus sampling
 
-- Frame: SHAB Handelsregister publications, German, Bern, 2026-08-10
-- Population: 85 — verified equal to the site's reported hit count,
-  so the frame is fully enumerated (see `data/sampling/manifest_full.json`:
-  `population_size` == `site_reported_total` == `len(records)` == 85).
-- Method: simple random sample, seed 42, n=25, no replacement
-- Note: the SHAB listing uses virtual DOM scrolling and recycles nodes.
-  Saved listings of ~1050 and ~220 results were both incomplete
-  (1050 of 1169; 210 of 220). The frame was narrowed until the saved
-  page provably contained the entire population.
-- Out-of-scope documents are excluded and NOT replaced.
+Frame: the union of per-day, per-canton SHAB Handelsregister listings,
+German language filter. Each listing was saved separately and verified
+to contain its full population before sampling:
 
-Scope: Handelsregister publications only (Neueintragung, Mutation,
-Löschung). Other SHAB rubrics — Schuldenruf, Testamentseröffnung,
-Kraftloserklärung, Gesuch and similar — are out of scope and are
-excluded at the filtering stage, not at annotation time.
+| Canton | Date | Population |
+|---|---|---|
+| BE | 2026-08-10 | 85 |
+| ZH | 2026-08-31 | 233 |
+| LU | 2026-08-25 | 87 |
+| **Total** | | **405** |
+
+Method: simple random sample from the union, seed 42, no replacement.
+Documents 0001-0003 are warm-up notices annotated before any frame
+existed, and belong to no listing. Documents 0004-0028 were drawn from
+the Bern listing during the exploratory phase; the remaining 92 from
+the union of all three, Bern included.
+
+Resulting corpus: BE 42, LU 23, ZH 52, plus 3 warm-up. Total 120.
+The cantonal mix reflects which days were captured, not each canton's
+real share of SHAB output.
 
 ---
 
 ## Changelog
 
+- **2026-09-08, unversioned** — renamed the `extras` keys from Spanish under
+  one naming rule (a German noun for the registry concept, English for
+  everything else): `decision_junta_fecha` → `gesellschafterversammlung_date`,
+  `acciones_nuevas`/`acciones_anteriores` → `aktien_new`/`aktien_previous`,
+  `valor_nominal_chf` → `nominal_value_chf`,
+  `clases_acciones` → `share_classes`,
+  `motivo_loeschung` → `loeschung_reason`,
+  `liberierung_nuevo_chf`/`liberierung_anterior_chf` →
+  `liberierung_new_chf`/`liberierung_previous_chf`,
+  `tipo_kapitalerhoehung` → `kapitalerhoehung_type`,
+  `weitere_adressen_nueva`/`weitere_adressen_anterior` →
+  `weitere_adressen_new`/`weitere_adressen_previous`,
+  `motivo_konkurseinstellung` → `konkurseinstellung_reason`.
+  Dropped three keys that were registered but never used in the corpus:
+  `firma_nueva`, `confirmacion_revisor_fecha`, `antes_del_sperrjahr`.
+  Applied across the corpus and this registry in one pass. Key names only —
+  no field semantics changed, so `schema_version` stays `1.0`.
+- **2026-08-31, unversioned** — renamed the schema's own field names from
+  Spanish to English (`tipo_acto` → `act_type`, `empresa_nombre_completo` →
+  `company_name_full`, `sede_localidad` → `seat_municipality`,
+  `personas_entrantes`/`personas_salientes`/`personas_mutantes` →
+  `persons_added`/`persons_removed`/`persons_changed`, and so on, including
+  the `Person` and `PersonChange` sub-objects), per the English-only
+  convention in `CLAUDE.md`. Structure, types and semantics unchanged, so
+  `schema_version` stays `1.0`; the v1.0 entry below keeps the old names it
+  was written with. `extras` keys were left Spanish here and renamed later,
+  see the entry above.
 - **v1.0** — froze the schema after 28 exploratory documents (0001-0028;
   see `annotation_log.md`), all re-annotated to this version. Redesigned
   `PersonChange` to one `_new`/`_previous` pair per attribute (`name`,

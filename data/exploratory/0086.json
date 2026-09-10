@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0",
+  "doc_id": "0086",
+  "language": "de",
+  "act_type": "mutation",
+  "act_subtypes": [
+    "organaenderung"
+  ],
+  "company_name_full": "Responsible Capital AG",
+  "company_name_base": "Responsible Capital AG",
+  "status_suffix": null,
+  "alternative_names": [],
+  "company_name_new": null,
+  "company_name_previous": null,
+  "uid": "CHE-141.402.448",
+  "legal_form": "AG",
+  "seat_municipality": "Kilchberg (ZH)",
+  "seat_canton": "ZH",
+  "address_care_of": "Palma Di Salvo Petracca",
+  "address_street": "Bahnhofplatz 1",
+  "address_postcode": "8802",
+  "address_municipality": "Kilchberg ZH",
+  "act_date": null,
+  "tagesregister_nr": "40493",
+  "tagesregister_date": "2026-08-26",
+  "prior_publication_shab_nr": 62,
+  "prior_publication_date": "2021-03-30",
+  "prior_publication_id": "1005136824",
+  "authority": "Handelsregisteramt des Kantons Zürich",
+  "canton_previous": null,
+  "canton_new": null,
+  "capital_new_chf": null,
+  "capital_previous_chf": null,
+  "domicile_new": "Bahnhofplatz 1, 8802 Kilchberg ZH",
+  "domicile_previous": "Bahnhofplatz 1, 8802 Kilchberg ZH",
+  "persons_added": [
+    {
+      "name": "Petracca, Stefano",
+      "nationality": null,
+      "heimatort": "Wangen-Brüttisellen",
+      "domicile": "Sesto Campano (IT)",
+      "role": "Mitglied des Verwaltungsrates",
+      "signature": "Einzelunterschrift",
+      "uid": null,
+      "stammanteile": null
+    },
+    {
+      "name": "Di Salvo Petracca, Palma Stefania",
+      "nationality": null,
+      "heimatort": "Zürich",
+      "domicile": "Kilchberg (ZH)",
+      "role": "Direktorin",
+      "signature": "Einzelunterschrift",
+      "uid": null,
+      "stammanteile": null
+    }
+  ],
+  "persons_removed": [],
+  "persons_changed": [],
+  "extras": {},
+  "uncertain": [
+    "domicile_new",
+    "domicile_previous"
+  ],
+  "notes": "Only the c/o party changes: street, postcode and town are identical on both sides of the address change, so the two halves of the domicile pair carry the same value. The c/o itself is excluded from that pair by the schema and sits in its own field.",
+  "_verified": true
+}
