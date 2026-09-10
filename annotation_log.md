@@ -47,16 +47,22 @@ Exclusions from the sampled frame: 0 of 25 (0%).
 One additional document (0000, French FOSC) was excluded during the
 warm-up phase, before the sampling frame was defined.
 
-The corpus was later fixed at 120 documents, not the 200 originally
-targeted, so 92 remained to annotate after this verdict. Per-document times
-were not logged for them (0034 is the only entry below that carries one), so
-the actual cost of that stretch is not recoverable from this log — the old
-projection for "the remaining 172 documents" has been removed rather than
-rescaled to a number nothing here supports.
+The corpus was fixed at 120 documents, sized so the benchmark and its
+failure analysis would fit the project's timeline. Per-document times were
+not logged past 0034; the process became routine and batch-level notes
+replaced them.
 
-## Sampled batch (0029-0043, Bern 2026-08-10, first batch after the freeze)
+## Sampled batch (0029-0120)
 
-0034 | 11 | 1 (konkurseinstellung) | Bankruptcy discontinued for lack of assets — no vocabulary value existed
+Logged by batch from here on: per-document timing stopped adding
+information once the routine settled. Times are estimates from session
+records, not measurements.
+
+0029-0043 | ~6 min/doc | new: konkurseinstellung, konkurseroeffnung, konkurs_wirkung_ab, prior_publication_page | first bankruptcy notices in the corpus, and the only source of new vocabulary in 92 documents. prefill was taking the company name from the post-act header; found at 0036, fixed at 0043
+0044-0058 | ~6 min/doc | new: 0 | first Lucerne documents. Branch legal form fixed at 0054: the regex missed a qualified `ausländische Zweigniederlassung`
+0059-0078 | ~5 min/doc | new: steuerzustimmung | first Zurich documents; no cantonal variation in phrasing, which is what the widened frame was meant to test
+0079-0098 | ~5 min/doc | new: berichtigung_* (4 keys) | 0095 is the corpus's only Berichtigung, and the only notice whose bracket reads `[nicht: …]` instead of `[bisher: …]`
+0099-0120 | ~4 min/doc | new: zweigniederlassung_new, nebenleistungspflichten | 0112's `Bisher` heading is printed with no address under it, the only case where one half of a change pair is genuinely absent from the source
 
 ## Corpus complete (120 documents)
 
@@ -188,6 +194,14 @@ remains 0000 (French FOSC), dropped before the sampling frame existed.
   re-dumping the JSON, not by text substitution: `weitere_adressen_nueva` and
   `weitere_adressen_anterior` share a prefix, as do the `liberierung_*` pair,
   and a textual pass would have hit them twice. The map, oldest name first:
+- **Naming conventions are cheap before the first annotation and
+  expensive after.** Field names started in Spanish because that is the
+  language the work was done in, and the repository's own convention says
+  English. Fixing it took two separate renames — schema fields first,
+  `extras` keys later — and a full pass over the corpus and the docs each
+  time. The schema was deliberately derived from the data rather than
+  designed up front, which was right; the naming convention did not need
+  to wait for that and should have been settled on day one.
 
   | Before | After |
   |---|---|
