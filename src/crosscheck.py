@@ -15,21 +15,37 @@ stores ISO `YYYY-MM-DD` but the source text never does. Numbers are also
 searched in Swiss apostrophe-grouped form (`189'123.50`), since the JSON
 stores a plain number but the source text never does.
 
+The search runs against the text with its address blocks joined onto one
+line (see `_join_address_lines`), because the header prints an address
+over several lines while the annotation writes it as a single
+comma-separated string.
+
 This does NOT validate correctness: a value can appear in the text and
 still be assigned to the wrong field (see CLAUDE.md rule 5 — that kind of
 error needs a human, not a substring search). It only flags values that
 don't exist in the source at all, which is almost always either a
 transcription slip or contamination copied in from another document.
 
-`doc_id`, `schema_version` and `language` are skipped entirely: they are
-bookkeeping, never derived by reading the source text (see
-`_SKIPPED_FIELDS` below), so checking them can only ever produce noise.
+`doc_id`, `schema_version`, `language`, `notes` and `uncertain` are skipped
+entirely: they are bookkeeping or the annotator's own commentary, never
+derived by reading the source text (see `_SKIPPED_FIELDS` below), so
+checking them can only ever produce noise.
 
 A few remaining fields are still expected to show up as "not found" even
 on a correct annotation, because they are normalized rather than
-transcribed verbatim: `act_type` (lowercased), `legal_form` and
-`seat_canton` (mapped to a code, e.g. "Aktiengesellschaft" -> "AG" -> "VS").
-That's expected, not a bug in this tool.
+transcribed verbatim: `act_type` (lowercased) and `legal_form`,
+`seat_canton`, `canton_previous`, `canton_new` (mapped to a code, e.g.
+"Aktiengesellschaft" -> "AG", "Sitten" -> "VS"). That's expected, not a
+bug in this tool; batch mode marks them as such.
+
+Called without a `doc_id`, the CLI runs in batch mode over every
+`data/exploratory/*.json` whose `_verified` flag is true (the unverified
+ones are prefill output, not annotations, so their values are expected to
+be rough). Batch mode reports only the "NOT found in the text" section per
+document, and exits non-zero if any document has one. The normalized
+fields below don't count as a finding on their own — they are missing on
+every document by construction — but they are still listed, marked,
+whenever their document has a real one.
 
 This module only reads `data/raw/` and `data/exploratory/`. It never writes
 anything.
@@ -39,6 +55,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import sys
 from dataclasses import dataclass
 from pathlib import Path
@@ -65,7 +82,19 @@ _CHECKED_KINDS = frozenset({"str", "date", "int", "number"})
 # landing in "missing"; `language` is a corpus-wide constant ("de" — see
 # SCHEMA.md "Scope decisions") whose 2-character value spuriously substring-
 # matches inside ordinary German words, always landing in "ambiguous".
-_SKIPPED_FIELDS = frozenset({"doc_id", "schema_version", "language"})
+# `notes` is the annotator's own prose about the document and `uncertain`
+# holds field names, not values — neither is read off the source text.
+_SKIPPED_FIELDS = frozenset(
+    {"doc_id", "schema_version", "language", "notes", "uncertain"}
+)
+
+# Fields that are normalized rather than transcribed verbatim, so they land
+# in "missing" even on a correct annotation (see the module docstring).
+# They are still reported — flagging them silently would hide a real error
+# in one of them — but the batch listing marks them as expected.
+_NORMALIZED_FIELDS = frozenset(
+    {"act_type", "legal_form", "seat_canton", "canton_previous", "canton_new"}
+)
 
 
 @dataclass
@@ -125,10 +154,61 @@ def _candidates(kind: str, value: Any) -> list[str]:
     return seen
 
 
+# A line holding a Swiss postal code and locality, e.g. "3400 Burgdorf" or
+# "2555 Brügg BE". Only ever an address line in these notices; the body is
+# a single long paragraph and never starts a line with four digits.
+_PLZ_LINE = re.compile(r"^\d{4} \S")
+
+# A "c/o" line, which the header prints above the street.
+_CO_LINE = re.compile(r"^c/o ", re.IGNORECASE)
+
+
+def _join_address_lines(text: str) -> str:
+    """Join the header's multi-line address blocks onto one line.
+
+    The header prints an address as separate lines (a "c/o" line, the
+    street, then the postal code and locality), both for the current
+    address and for the one under `Bisher`:
+
+        Bisher
+        Zürichstrasse 11
+        3360 Herzogenbuchsee
+
+    while `domicile_previous` / `domicile_new` hold it as one
+    comma-separated string ("Zürichstrasse 11, 3360 Herzogenbuchsee"), so a
+    literal search would never find it. Joining the newline to ", " makes
+    those values searchable; nothing is dropped, so a value that was found
+    before is still found — including the individual lines themselves.
+    """
+    joined: list[str] = []
+    # True while the last output line is a "c/o" line still waiting for the
+    # street that follows it. It is cleared as soon as one line attaches, so
+    # a "c/o" never swallows more than its own address block.
+    pending_co = False
+
+    for line in text.split("\n"):
+        stripped = line.strip()
+        previous = joined[-1] if joined else ""
+        attaches = bool(_PLZ_LINE.match(stripped)) or (pending_co and bool(stripped))
+
+        if joined and previous.strip() and attaches:
+            joined[-1] = f"{previous}, {stripped}"
+            pending_co = False
+        else:
+            joined.append(line)
+            pending_co = bool(_CO_LINE.match(stripped))
+
+    return "\n".join(joined)
+
+
 def crosscheck_record(text: str, record: dict) -> CrosscheckResult:
     """Check every non-null scalar field of `record` for literal presence
-    in `text`. Field order follows `FIELD_SPECS` (i.e. SCHEMA.md order).
+    in `text`, whose address blocks are first joined onto one line (see
+    `_join_address_lines`). Field order follows `FIELD_SPECS` (i.e.
+    SCHEMA.md order).
     """
+    text = _join_address_lines(text)
+
     unique: list[FieldCheck] = []
     ambiguous: list[FieldCheck] = []
     missing: list[FieldCheck] = []
@@ -167,6 +247,56 @@ def crosscheck_doc(doc_id: str) -> CrosscheckResult:
     return crosscheck_record(text, record)
 
 
+@dataclass
+class BatchEntry:
+    """One document's batch outcome: either a `result` or an `error`."""
+
+    doc_id: str
+    result: CrosscheckResult | None = None
+    error: str | None = None
+
+
+def _is_verified(record: dict) -> bool:
+    """True only for a record explicitly marked `"_verified": true`.
+    Records without the flag are treated as unverified (see src/prefill.py,
+    which writes `"_verified": false`).
+    """
+    return record.get("_verified") is True
+
+
+def crosscheck_verified() -> list[BatchEntry]:
+    """Cross-check every verified `data/exploratory/*.json`, in doc_id order.
+
+    Unverified records are skipped entirely (no entry is returned for them).
+    A document whose raw text is missing or whose JSON is unreadable yields
+    an entry carrying an `error` instead of a result, so one bad file does
+    not abort the run.
+    """
+    entries: list[BatchEntry] = []
+
+    for exploratory_path in sorted(DATA_EXPLORATORY.glob("*.json")):
+        doc_id = exploratory_path.stem
+        try:
+            record = json.loads(exploratory_path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError as exc:
+            entries.append(BatchEntry(doc_id=doc_id, error=f"invalid JSON: {exc}"))
+            continue
+
+        if not _is_verified(record):
+            continue
+
+        raw_path = DATA_RAW / f"{doc_id}.txt"
+        try:
+            text = raw_path.read_text(encoding="utf-8")
+        except FileNotFoundError:
+            entries.append(BatchEntry(doc_id=doc_id, error=f"no source text at {raw_path}"))
+            continue
+
+        entries.append(BatchEntry(doc_id=doc_id, result=crosscheck_record(text, record)))
+
+    return entries
+
+
 def _format_check(check: FieldCheck) -> str:
     extra = ""
     if len(check.searched) > 1:
@@ -182,15 +312,55 @@ def _print_section(title: str, checks: list[FieldCheck]) -> None:
         print(_format_check(check))
 
 
+def _run_batch() -> int:
+    """Print the "NOT found in the text" fields of every verified document.
+    Only fields outside `_NORMALIZED_FIELDS` count as a finding; the
+    normalized ones are listed, marked, under a document that has a real
+    finding, since they are part of the picture when reviewing it.
+
+    Returns the process exit code: non-zero if any document reported a
+    finding, or could not be read at all.
+    """
+    entries = crosscheck_verified()
+    flagged = 0
+
+    for entry in entries:
+        if entry.error is not None:
+            print(f"{entry.doc_id}: error: {entry.error}", file=sys.stderr)
+            flagged += 1
+            continue
+
+        assert entry.result is not None
+        missing = entry.result.missing
+        if not any(check.field not in _NORMALIZED_FIELDS for check in missing):
+            continue
+
+        flagged += 1
+        print(f"\n{entry.doc_id} — NOT found in the text ({len(missing)})")
+        for check in missing:
+            note = " [normalized, expected]" if check.field in _NORMALIZED_FIELDS else ""
+            print(f"{_format_check(check)}{note}")
+
+    checked = len(entries)
+    docs = "document" if checked == 1 else "documents"
+    print(f"\n{checked} verified {docs} checked, {flagged} with findings.")
+    return 1 if flagged else 0
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(
         description=(
             "Check whether data/exploratory/<doc_id>.json field values appear "
-            "literally in data/raw/<doc_id>.txt."
+            "literally in data/raw/<doc_id>.txt. Without a doc_id, checks every "
+            "verified exploratory record and reports only the fields that do "
+            "not appear in the text (exit code 1 if there are any)."
         )
     )
-    parser.add_argument("doc_id", help='Document id, e.g. "0001"')
+    parser.add_argument("doc_id", nargs="?", help='Document id, e.g. "0001"')
     args = parser.parse_args()
+
+    if args.doc_id is None:
+        sys.exit(_run_batch())
 
     try:
         result = crosscheck_doc(args.doc_id)

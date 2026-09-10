@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0",
+  "doc_id": "0003",
+  "act_type": "neueintragung",
+  "act_subtypes": [],
+  "legal_form": "AG",
+  "seat_canton": "ZH",
+  "persons_added": [{"name": "Muster, Dora", "role": "Praesidentin"}],
+  "persons_removed": [],
+  "persons_changed": [],
+  "extras": {"zweck": "Betrieb eines Restaurants."},
+  "uncertain": [],
+  "_verified": true
+}

@@ -34,7 +34,7 @@
   "persons_added": [],
   "persons_removed": [],
   "persons_changed": [],
-  "extras": {"antes_del_sperrjahr": true},
+  "extras": {"vinkulierung": true},
   "uncertain": ["act_date"],
   "notes": null,
   "_verified": true

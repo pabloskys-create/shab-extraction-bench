@@ -1,0 +1,98 @@
+{
+  "schema_version": "1.0",
+  "doc_id": "0078",
+  "language": "de",
+  "act_type": "mutation",
+  "act_subtypes": [
+    "organaenderung"
+  ],
+  "company_name_full": "Berufsbildungsstiftung der VSSM-Fachgruppe Holzgerätebau",
+  "company_name_base": "Berufsbildungsstiftung der VSSM-Fachgruppe Holzgerätebau",
+  "status_suffix": null,
+  "alternative_names": [],
+  "company_name_new": null,
+  "company_name_previous": null,
+  "uid": "CHE-101.953.357",
+  "legal_form": "Stiftung",
+  "seat_municipality": "Wallisellen",
+  "seat_canton": "ZH",
+  "address_care_of": "VSSM-Fachgruppe Wagner + Skibauer",
+  "address_street": "Oberwiesenstrasse 2",
+  "address_postcode": "8304",
+  "address_municipality": "Wallisellen",
+  "act_date": null,
+  "tagesregister_nr": "40416",
+  "tagesregister_date": "2026-08-26",
+  "prior_publication_shab_nr": 161,
+  "prior_publication_date": "2021-08-20",
+  "prior_publication_id": "1005274355",
+  "authority": "Handelsregisteramt des Kantons Zürich",
+  "canton_previous": null,
+  "canton_new": null,
+  "capital_new_chf": null,
+  "capital_previous_chf": null,
+  "domicile_new": null,
+  "domicile_previous": null,
+  "persons_added": [
+    {
+      "name": "Thomke, Roland",
+      "nationality": null,
+      "heimatort": "Biel/Bienne",
+      "domicile": "Bellach",
+      "role": "Mitglied des Stiftungsrates",
+      "signature": "ohne Zeichnungsberechtigung",
+      "uid": null,
+      "stammanteile": null
+    }
+  ],
+  "persons_removed": [
+    {
+      "name": "Dreier, Erwin",
+      "nationality": null,
+      "heimatort": "Trub",
+      "domicile": "Sulgen",
+      "role": "Vizepräsident des Stiftungsrates",
+      "signature": "Kollektivunterschrift zu zweien",
+      "uid": null,
+      "stammanteile": null
+    }
+  ],
+  "persons_changed": [
+    {
+      "name_new": "Koch, Thomas",
+      "name_previous": null,
+      "domicile_new": "Glattfelden",
+      "domicile_previous": null,
+      "role_new": "Präsident des Stiftungsrates",
+      "role_previous": "Mitglied des Stiftungsrates",
+      "signature_new": "Kollektivunterschrift zu zweien",
+      "signature_previous": "ohne Zeichnungsberechtigung",
+      "nationality_new": null,
+      "nationality_previous": null,
+      "heimatort_new": "Eglisau",
+      "heimatort_previous": null,
+      "stammanteile_new": null,
+      "stammanteile_previous": null
+    },
+    {
+      "name_new": "Ambauen, Christian",
+      "name_previous": null,
+      "domicile_new": "Beckenried",
+      "domicile_previous": null,
+      "role_new": "Vizepräsident des Stiftungsrates, Kassier",
+      "role_previous": "Präsident des Stiftungsrates",
+      "signature_new": "Kollektivunterschrift zu zweien",
+      "signature_previous": null,
+      "nationality_new": null,
+      "nationality_previous": null,
+      "heimatort_new": "Beckenried",
+      "heimatort_previous": null,
+      "stammanteile_new": null,
+      "stammanteile_previous": null
+    }
+  ],
+  "extras": {},
+  "uncertain": [],
+  "notes": null,
+  "_verified": true
+}

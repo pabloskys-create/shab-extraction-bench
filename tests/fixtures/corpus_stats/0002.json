@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0",
+  "doc_id": "0002",
+  "act_type": "mutation",
+  "act_subtypes": ["firmenaenderung"],
+  "legal_form": "GmbH",
+  "seat_canton": "BE",
+  "persons_added": [],
+  "persons_removed": [{"name": "Beispiel, Carla", "role": "Geschaeftsfuehrerin"}],
+  "persons_changed": [],
+  "extras": {"prior_publication_page": "3707"},
+  "uncertain": ["prior_publication_id"],
+  "_verified": true
+}

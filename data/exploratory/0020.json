@@ -35,7 +35,7 @@
   "persons_removed": [],
   "persons_changed": [],
   "extras": {
-    "motivo_loeschung": "Nichtaufnahme des Geschäftsbetriebes"
+    "loeschung_reason": "Nichtaufnahme des Geschäftsbetriebes"
   },
   "uncertain": [],
   "notes": null,

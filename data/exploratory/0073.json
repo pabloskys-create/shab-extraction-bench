@@ -1,0 +1,71 @@
+{
+  "schema_version": "1.0",
+  "doc_id": "0073",
+  "language": "de",
+  "act_type": "mutation",
+  "act_subtypes": [
+    "organaenderung"
+  ],
+  "company_name_full": "MeteoNews AG",
+  "company_name_base": "MeteoNews AG",
+  "status_suffix": null,
+  "alternative_names": [],
+  "company_name_new": null,
+  "company_name_previous": null,
+  "uid": "CHE-108.589.005",
+  "legal_form": "AG",
+  "seat_municipality": "Zürich",
+  "seat_canton": "ZH",
+  "address_care_of": null,
+  "address_street": "Leutschenbachstrasse 95",
+  "address_postcode": "8050",
+  "address_municipality": "Zürich",
+  "act_date": null,
+  "tagesregister_nr": "40470",
+  "tagesregister_date": "2026-08-26",
+  "prior_publication_shab_nr": 233,
+  "prior_publication_date": "2025-12-02",
+  "prior_publication_id": "1006499806",
+  "authority": "Handelsregisteramt des Kantons Zürich",
+  "canton_previous": null,
+  "canton_new": null,
+  "capital_new_chf": null,
+  "capital_previous_chf": null,
+  "domicile_new": null,
+  "domicile_previous": null,
+  "persons_added": [
+    {
+      "name": "Blümmel, Andreas Jakob",
+      "nationality": "österreichisch",
+      "heimatort": null,
+      "domicile": "Wien (AT)",
+      "role": "Mitglied des Verwaltungsrates",
+      "signature": "Kollektivunterschrift zu zweien",
+      "uid": null,
+      "stammanteile": null
+    }
+  ],
+  "persons_removed": [],
+  "persons_changed": [
+    {
+      "name_new": "Schneider-Marfels, Dr. Jascha",
+      "name_previous": null,
+      "domicile_new": "Reinach (BL)",
+      "domicile_previous": "Rheinfelden",
+      "role_new": "Präsident des Verwaltungsrates",
+      "role_previous": "Mitglied des Verwaltungsrates",
+      "signature_new": "Kollektivunterschrift zu zweien",
+      "signature_previous": "Einzelunterschrift",
+      "nationality_new": null,
+      "nationality_previous": null,
+      "heimatort_new": "Riehen",
+      "heimatort_previous": null,
+      "stammanteile_new": null,
+      "stammanteile_previous": null
+    }
+  ],
+  "extras": {},
+  "uncertain": [],
+  "notes": null,
+  "_verified": true
+}

@@ -1,0 +1,69 @@
+{
+  "schema_version": "1.0",
+  "doc_id": "0090",
+  "language": "de",
+  "act_type": "mutation",
+  "act_subtypes": [
+    "statutenaenderung",
+    "zweckaenderung",
+    "organaenderung"
+  ],
+  "company_name_full": "Sevenseas AG",
+  "company_name_base": "Sevenseas AG",
+  "status_suffix": null,
+  "alternative_names": [],
+  "company_name_new": null,
+  "company_name_previous": null,
+  "uid": "CHE-112.311.507",
+  "legal_form": "AG",
+  "seat_municipality": "Zürich",
+  "seat_canton": "ZH",
+  "address_care_of": null,
+  "address_street": "Zeltweg 7",
+  "address_postcode": "8032",
+  "address_municipality": "Zürich",
+  "act_date": "2026-08-18",
+  "tagesregister_nr": "40502",
+  "tagesregister_date": "2026-08-26",
+  "prior_publication_shab_nr": 106,
+  "prior_publication_date": "2022-06-02",
+  "prior_publication_id": "1005486562",
+  "authority": "Handelsregisteramt des Kantons Zürich",
+  "canton_previous": null,
+  "canton_new": null,
+  "capital_new_chf": null,
+  "capital_previous_chf": null,
+  "domicile_new": null,
+  "domicile_previous": null,
+  "persons_added": [
+    {
+      "name": "Lettieri, Brigitta",
+      "nationality": null,
+      "heimatort": "Bern",
+      "domicile": "Zürich",
+      "role": null,
+      "signature": "Kollektivunterschrift zu zweien",
+      "uid": null,
+      "stammanteile": null
+    },
+    {
+      "name": "Schweizer, Ilona Claudia Philomena",
+      "nationality": "deutsch",
+      "heimatort": null,
+      "domicile": "Zürich",
+      "role": null,
+      "signature": "Kollektivunterschrift zu zweien",
+      "uid": null,
+      "stammanteile": null
+    }
+  ],
+  "persons_removed": [],
+  "persons_changed": [],
+  "extras": {
+    "zweck": "Die Gesellschaft bezweckt die Entwicklung, Gestaltung und Führung von Marken sowie die Konzeption, Planung und Umsetzung strategischer und kreativer Kommunikations- und Marketinglösungen…",
+    "mitteilungen": "per Brief oder E-Mail an die im Aktienbuch verzeichneten Adressen"
+  },
+  "uncertain": [],
+  "notes": null,
+  "_verified": true
+}

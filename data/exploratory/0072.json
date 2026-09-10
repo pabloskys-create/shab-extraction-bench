@@ -1,0 +1,110 @@
+{
+  "schema_version": "1.0",
+  "doc_id": "0072",
+  "language": "de",
+  "act_type": "mutation",
+  "act_subtypes": [
+    "organaenderung"
+  ],
+  "company_name_full": "Vereinigung diplomierter Hoteliers-Restaurateure/Hotelmanager NDS HF",
+  "company_name_base": "Vereinigung diplomierter Hoteliers-Restaurateure/Hotelmanager NDS HF",
+  "status_suffix": null,
+  "alternative_names": [],
+  "company_name_new": null,
+  "company_name_previous": null,
+  "uid": "CHE-101.475.062",
+  "legal_form": "Verein",
+  "seat_municipality": "Zürich",
+  "seat_canton": "ZH",
+  "address_care_of": null,
+  "address_street": "Brown-Boveri-Strasse 5",
+  "address_postcode": "8050",
+  "address_municipality": "Zürich",
+  "act_date": null,
+  "tagesregister_nr": "40522",
+  "tagesregister_date": "2026-08-26",
+  "prior_publication_shab_nr": 43,
+  "prior_publication_date": "2026-03-04",
+  "prior_publication_id": "1006585656",
+  "authority": "Handelsregisteramt des Kantons Zürich",
+  "canton_previous": null,
+  "canton_new": null,
+  "capital_new_chf": null,
+  "capital_previous_chf": null,
+  "domicile_new": null,
+  "domicile_previous": null,
+  "persons_added": [
+    {
+      "name": "Menti, Samuel",
+      "nationality": null,
+      "heimatort": "Meggen",
+      "domicile": "Meggen",
+      "role": "Mitglied des Vorstandes",
+      "signature": "Kollektivunterschrift zu zweien",
+      "uid": null,
+      "stammanteile": null
+    }
+  ],
+  "persons_removed": [
+    {
+      "name": "Müller, Nicoletta Claudia",
+      "nationality": null,
+      "heimatort": "Löhningen",
+      "domicile": "Zürich",
+      "role": "Mitglied des Vorstandes",
+      "signature": "Kollektivunterschrift zu zweien",
+      "uid": null,
+      "stammanteile": null
+    },
+    {
+      "name": "Rohn, Christoph",
+      "nationality": null,
+      "heimatort": "Subingen",
+      "domicile": "Burgdorf",
+      "role": "Mitglied des Vorstandes",
+      "signature": "ohne Zeichnungsberechtigung",
+      "uid": null,
+      "stammanteile": null
+    }
+  ],
+  "persons_changed": [
+    {
+      "name_new": "Schwarze, Catharina",
+      "name_previous": null,
+      "domicile_new": "Oetwil am See",
+      "domicile_previous": null,
+      "role_new": "Vizepräsidentin des Vorstandes",
+      "role_previous": null,
+      "signature_new": "Kollektivunterschrift zu zweien",
+      "signature_previous": "ohne Zeichnungsberechtigung",
+      "nationality_new": "deutsch",
+      "nationality_previous": null,
+      "heimatort_new": null,
+      "heimatort_previous": null,
+      "stammanteile_new": null,
+      "stammanteile_previous": null
+    },
+    {
+      "name_new": "Burkhard, Christian",
+      "name_previous": null,
+      "domicile_new": "Lenk",
+      "domicile_previous": null,
+      "role_new": "Mitglied des Vorstandes",
+      "role_previous": null,
+      "signature_new": "Kollektivunterschrift zu zweien",
+      "signature_previous": "ohne Zeichnungsberechtigung",
+      "nationality_new": null,
+      "nationality_previous": null,
+      "heimatort_new": "Sumiswald",
+      "heimatort_previous": null,
+      "stammanteile_new": null,
+      "stammanteile_previous": null
+    }
+  ],
+  "extras": {
+    "weitere_adressen_previous": "Lindenstrasse 2, 8134 Adliswil"
+  },
+  "uncertain": [],
+  "notes": "The secondary address is struck rather than replaced, so only the previous half of that pair in extras is filled; the empty new half means removed here, not unknown. The header's Bisher block repeats the registered address unchanged and the body has no new-domicile line, so the domicile pair stays empty.",
+  "_verified": true
+}
