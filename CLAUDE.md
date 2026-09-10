@@ -74,6 +74,10 @@ CHANGELOG.md             schema version history
   inspecting individual cases.
 - No claim about *why* a model fails goes into the README without having
   inspected at least 5 real failures for that field.
+- run_eval.py must include a trivial baseline (always null / [] / the
+  most frequent value) alongside the rule-based one. Several fields are
+  empty in most documents — persons_changed in 76.7%, persons_removed in
+  72.5% — so a model score means nothing without the floor it has to beat.
 
 ## Conventions
 
