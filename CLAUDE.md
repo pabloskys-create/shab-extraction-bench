@@ -79,6 +79,24 @@ CHANGELOG.md             schema version history
   empty in most documents — persons_changed in 76.7%, persons_removed in
   72.5% — so a model score means nothing without the floor it has to beat.
 
+## Benchmark design (decided)
+
+- Scored: every data field, act_type, act_subtypes, the three person lists.
+  Not scored: notes, uncertain, _verified, doc_id, schema_version, language.
+- extras is scored separately, as a harder task, with the key registry
+  given in the prompt.
+- Prompt: full detail (schema, vocabulary, annotation rules). Frozen and
+  committed before the holdout is sampled.
+- Holdout: 25 documents from a new canton, annotated after the prompt
+  freeze. Reported separately; the gap to the 120 is the generalisation cost.
+- Structured output: at least one model run both with and without it.
+- One pass per document at temperature 0. Three passes only if time allows.
+- Scalars reported both exact and normalised (whitespace, case).
+- Fields listed in a gold record's `uncertain` are excluded from scoring,
+  field by field.
+- Competitors: trivial baseline, rule baseline (prefill.py), 4-5 models via
+  OpenRouter, 1 local model via Ollama.
+
 ## Conventions
 
 - All dates in output JSON: ISO `YYYY-MM-DD`. Source uses `DD.MM.YYYY`.
@@ -95,7 +113,8 @@ CHANGELOG.md             schema version history
   evaluating the author's judgement, not just executed.
 - When a design decision has a trade-off, state it in the commit message or in
   `SCHEMA.md` rather than picking silently.
-- Commit messages: never add a `Claude-Session:` trailer — it links to a private session. `Co-Authored-By` is fine.
+- Commit messages: never add a `Claude-Session:` trailer — it links to a
+  private session. `Co-Authored-By` is fine.
 
 ## What I (the human) do, and you don't
 
