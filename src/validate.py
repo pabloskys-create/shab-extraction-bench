@@ -101,6 +101,10 @@ PAIRED_FIELDS = (
     ("domicile_previous", "domicile_new"),
 )
 
+# The three person lists that make up an officer/partner change — see the
+# organaenderung <-> non-empty-list rule in _check_coherence().
+PERSON_LIST_FIELDS = ("persons_added", "persons_removed", "persons_changed")
+
 # SCHEMA.md's header reads "# SCHEMA.md — v1.0 (frozen)".
 SCHEMA_MD_PATH = Path(__file__).resolve().parent.parent / "SCHEMA.md"
 SCHEMA_VERSION_RE = re.compile(r"^#\s*SCHEMA\.md\s*—\s*v(\d+\.\d+)", re.MULTILINE)
@@ -356,6 +360,35 @@ def _check_coherence(record: dict) -> list[ValidationError]:
         if isinstance(added, list) and len(added) > 0:
             errors.append(
                 ValidationError("persons_added", 'must be empty when act_type is "loeschung"')
+            )
+
+    # organaenderung <-> a non-empty person list, on mutation records only.
+    # act_subtypes is read from the notice's headings (see SCHEMA.md's "follow
+    # the text, not the legal substance"), so the two can drift independently
+    # unless checked: an annotator can tag organaenderung without transcribing
+    # anyone, or list a person change without the heading tag.
+    if record.get("act_type") == "mutation":
+        act_subtypes = record.get("act_subtypes")
+        has_organaenderung = isinstance(act_subtypes, list) and "organaenderung" in act_subtypes
+        has_person_change = any(
+            isinstance(record.get(field), list) and len(record[field]) > 0
+            for field in PERSON_LIST_FIELDS
+        )
+        if has_person_change and not has_organaenderung:
+            errors.append(
+                ValidationError(
+                    "act_subtypes",
+                    'must contain "organaenderung" when act_type is "mutation" and '
+                    "persons_added, persons_removed or persons_changed is non-empty",
+                )
+            )
+        if has_organaenderung and not has_person_change:
+            errors.append(
+                ValidationError(
+                    "act_subtypes",
+                    'contains "organaenderung" but persons_added, persons_removed and '
+                    'persons_changed are all empty (act_type "mutation")',
+                )
             )
 
     uncertain = record.get("uncertain")

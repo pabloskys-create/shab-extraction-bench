@@ -4,7 +4,8 @@
   "language": "de",
   "act_type": "mutation",
   "act_subtypes": [
-    "revisionsstelle"
+    "revisionsstelle",
+    "organaenderung"
   ],
   "company_name_full": "Personalvorsorgestiftung der Haag-Streit Gruppe Köniz",
   "company_name_base": "Personalvorsorgestiftung der Haag-Streit Gruppe Köniz",

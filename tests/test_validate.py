@@ -184,6 +184,45 @@ def test_loeschung_forbids_persons_added():
     assert _errors_on(errors, "persons_added")
 
 
+def test_mutation_with_person_change_requires_organaenderung():
+    # valid_mutation.json's act_subtypes is ["liquidationseroeffnung"], with
+    # all three person lists empty — adding a person without adding the
+    # "organaenderung" tag must fail.
+    record = _load_fixture("valid_mutation.json")
+    record["persons_removed"] = [
+        {
+            "name": "Alte Person",
+            "nationality": None,
+            "heimatort": None,
+            "domicile": None,
+            "role": None,
+            "signature": None,
+        }
+    ]
+    errors = validate_record(record)
+    assert _errors_on(errors, "act_subtypes")
+
+
+def test_organaenderung_requires_a_non_empty_person_list():
+    record = _load_fixture("valid_mutation.json")
+    record["act_subtypes"] = ["organaenderung"]
+    assert record["persons_added"] == record["persons_removed"] == record["persons_changed"] == []
+    errors = validate_record(record)
+    assert _errors_on(errors, "act_subtypes")
+
+
+def test_organaenderung_rule_does_not_apply_to_neueintragung():
+    # Same shape as the failing case above (organaenderung tagged, all three
+    # person lists empty) but act_type is "neueintragung" — the rule is
+    # scoped to "mutation" only and must stand down.
+    record = _load_fixture("valid_mutation.json")
+    record["act_type"] = "neueintragung"
+    record["act_subtypes"] = ["organaenderung"]
+    assert record["persons_added"] == record["persons_removed"] == record["persons_changed"] == []
+    errors = validate_record(record)
+    assert _errors_on(errors, "act_subtypes") == []
+
+
 def test_canton_previous_requires_canton_new():
     record = _load_fixture("valid_intercantonal.json")
     record["canton_new"] = None

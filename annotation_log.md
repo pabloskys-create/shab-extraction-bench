@@ -202,6 +202,12 @@ remains 0000 (French FOSC), dropped before the sampling frame existed.
   time. The schema was deliberately derived from the data rather than
   designed up front, which was right; the naming convention did not need
   to wait for that and should have been settled on day one.
+  - **Two gold errors caught by a coherence rule, both exploratory.** A rule
+  tying `organaenderung` to non-empty person lists, added while writing the
+  extraction prompt, flagged 0018 and 0028 — both annotated before the
+  schema froze. The 92 documents annotated afterwards had none. A verified
+  gold set still carries errors; machine-checkable rules find the ones a
+  second read misses.
 
   | Before | After |
   |---|---|

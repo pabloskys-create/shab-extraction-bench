@@ -6,7 +6,8 @@
   "act_subtypes": [
     "sitzverlegung",
     "kantonswechsel",
-    "zweckaenderung"
+    "zweckaenderung",
+    "organaenderung"
   ],
   "company_name_full": "Equimode Pieper",
   "company_name_base": "Equimode Pieper",
