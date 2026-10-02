@@ -318,7 +318,9 @@ its value.
   `weitere_adressen_previous` only.
 - `nebenleistungspflichten` — the clause on ancillary obligations and
   pre-emption rights, as written.
-- `loeschung_reason` — the stated reason for a deletion, as written.
+- `loeschung_reason` — the stated reason for a deletion, as written but
+  without a leading preposition such as `infolge` or `wegen`:
+  `Geschäftsaufgabe`, not `infolge Geschäftsaufgabe`.
 - `steuerzustimmung` — `true` when the notice states that the tax
   authorities' consent is on file.
 - `konkurseinstellung_reason` — the stated reason bankruptcy proceedings
