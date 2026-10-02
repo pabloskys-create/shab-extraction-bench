@@ -49,8 +49,8 @@
     }
   ],
   "persons_changed": [],
-  "extras": {},
+  "extras": {"mitteilungen": "Mitteilungen an die Gesellschafter: per Brief oder E-Mail."},
   "uncertain": [],
-  "notes": "Mitteilungen neu: Mitteilungen an die Gesellschafter: per Brief oder E-Mail.",
+  "notes": null,
   "_verified": true
 }

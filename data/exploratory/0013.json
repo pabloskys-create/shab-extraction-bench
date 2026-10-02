@@ -56,13 +56,14 @@
   "persons_removed": [],
   "persons_changed": [],
   "extras": {
-    "zweck": "Die Gesellschaft bezweckt das Halten von Beteiligungen an fleischverarbeitenden und mit Fleisch handelnden Unternehmen im In- und Ausland, die Durchführung von Finanzierungsgeschäften…",
+    "zweck": "Die Gesellschaft bezweckt das Halten von Beteiligungen an fleischverarbeitenden und mit Fleisch handelnden Unternehmen im ln- und Ausland, die Durchführung von Finanzierungsgeschäften…",
     "aktien_new": 100,
     "nominal_value_chf": 1000.0,
     "share_classes": "Namenaktien",
     "liberierung_new_chf": 100000.0,
     "vinkulierung": true,
-    "revision": "opting-out"
+    "revision": "opting-out",
+    "mitteilungen": "schriftlich oder mit elektronischer Post"
   },
   "uncertain": [],
   "notes": null,
