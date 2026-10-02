@@ -71,6 +71,10 @@ carried over from earlier entries. All 120 records declare `schema_version`
 `1.0` and `_verified: true`. The gold standard lives in `data/exploratory/`;
 `data/gold/` is still empty.
 
+## Holdout
+
+Prompt frozen at 1a7e326 (prompts/extraction_v1.md). Holdout sampled after this commit.
+
 **New schema fields after the v1.0 freeze (daf99cd): 0.** 39 core fields at
 the freeze and 39 now — the Spanish→English rename (3a8d0b4) changed every
 name and added none. `Person` still has 8 keys, `PersonChange` 14. The 92
