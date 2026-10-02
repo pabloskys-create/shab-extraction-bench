@@ -20,7 +20,9 @@ Three deliverables:
 Every file there is hand-annotated ground truth produced by a human. If a model
 writes ground truth, the entire benchmark is circular and worthless. You may
 *read* these files. You may write code that *validates* them. You may never
-write their contents.
+write their contents. **This protection also covers `data/exploratory/`
+while it holds the project's actual 120-document gold set** — `data/gold/`
+is currently empty; the real annotations have not moved there yet.
 
 **2. Never modify `data/raw/`.**
 Source documents are immutable. If a file looks malformed, report it — do not fix it.
@@ -36,6 +38,14 @@ invalidate both roles.
 
 **5. Never invent data.** If a field is absent from the source text, it is `null`.
 Never infer, never fill from context, never carry a value over from another document.
+
+**6. `data/holdout/raw/` is immutable once a document is pasted, same as `data/raw/`.**
+
+**7. `data/holdout/gold/` is hand-annotated ground truth: read-only for
+tooling, never set `_verified`, never annotate.**
+
+**8. No model output may be generated for any holdout document until all
+holdout gold files are `_verified` and committed.**
 
 ## Stack
 
@@ -55,7 +65,11 @@ Never infer, never fill from context, never carry a value over from another docu
 data/raw/NNNN.txt        immutable source text
 data/gold/NNNN.json      hand-annotated ground truth  (READ ONLY for you)
 data/excluded/           documents excluded from the corpus, with reasons
-data/exploratory/        first ~25 annotations, kept as provenance
+data/exploratory/        the full 120-document gold set (dev set) — READ ONLY
+                         for you, same protection as data/gold/
+data/holdout/raw/        holdout source text — immutable once pasted (rule 6)
+data/holdout/gold/       holdout ground truth — read only for you (rule 7)
+data/holdout/sampling/   holdout sample manifest (mirrors data/sampling/)
 src/prefill.py           deterministic field prefill (no LLM)
 src/validate.py          schema + coherence validation
 src/baselines/rules.py   rule-based extractor (benchmark baseline)
