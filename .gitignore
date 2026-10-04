@@ -11,6 +11,7 @@ venv/
 .pytest_cache/
 .ruff_cache/
 *.egg-info/
+*_files/
 
 # --- model outputs: regenerable, can be large ---
 results/raw_responses/
