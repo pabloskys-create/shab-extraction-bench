@@ -4,7 +4,9 @@
       "Write(./data/gold/**)",
       "Write(./data/raw/**)",
       "Edit(./data/gold/**)",
-      "Edit(./data/raw/**)"
+      "Edit(./data/raw/**)",
+      "Read(./.env)",
+      "Read(./.env.*)"
     ],
     "allow": [
       "Bash(git status)",
