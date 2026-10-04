@@ -42,3 +42,5 @@ find_null.py
 guia-json-rapida.json
 # NOTE: data/gold/, data/raw/ and results/ summaries ARE committed on purpose.
 # The dataset is the deliverable.
+
+.env
