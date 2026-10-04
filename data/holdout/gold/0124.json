@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0",
+  "doc_id": "0124",
+  "language": "de",
+  "act_type": "mutation",
+  "act_subtypes": ["statutenaenderung", "organaenderung", "sitzverlegung", "kantonswechsel", "zweckaenderung"],
+  "company_name_full": "I+Konzeptbau GmbH",
+  "company_name_base": "I+Konzeptbau GmbH",
+  "status_suffix": null,
+  "alternative_names": [],
+  "company_name_new": null,
+  "company_name_previous": null,
+  "uid": "CHE-188.233.733",
+  "legal_form": "GmbH",
+  "seat_municipality": "St. Gallen",
+  "seat_canton": "SG",
+  "address_care_of": null,
+  "address_street": "Neudorfstrasse 24",
+  "address_postcode": "5734",
+  "address_municipality": "Reinach AG",
+  "act_date": "2026-08-10",
+  "tagesregister_nr": "12644",
+  "tagesregister_date": "2026-09-04",
+  "prior_publication_shab_nr": 16,
+  "prior_publication_date": "2026-01-26",
+  "prior_publication_id": "1006549813",
+  "authority": "Handelsregisteramt des Kantons Aargau",
+  "canton_previous": "SG",
+  "canton_new": "AG",
+  "capital_new_chf": null,
+  "capital_previous_chf": null,
+  "domicile_new": "Neudorfstrasse 24, 5734 Reinach AG",
+  "domicile_previous": "Linsebühlstrasse 18, 9000 St. Gallen",
+  "persons_added": [
+    {"name": "Wella, Damir", "nationality": "österreichisch", "heimatort": null, "domicile": "Reinach (AG)", "role": null, "signature": "Kollektivunterschrift zu zweien", "uid": null, "stammanteile": null}
+  ],
+  "persons_removed": [],
+  "persons_changed": [
+    {"name_new": "Wella, Ilda", "name_previous": null, "domicile_new": "Reinach (AG)", "domicile_previous": "Zurzach", "role_new": "Gesellschafterin und Geschäftsführerin", "role_previous": null, "signature_new": "Einzelunterschrift", "signature_previous": null, "nationality_new": null, "nationality_previous": null, "heimatort_new": "Kriens", "heimatort_previous": null, "stammanteile_new": 200, "stammanteile_previous": null}
+  ],
+  "extras": {
+    "zweck": "Dienstleistungen im Bereich Immobilienunterhalt und -bewirtschaftung. Die Gesellschaft kann Zweigniederlassungen und Tochtergesellschaften im In- und Ausland errichten und sich an anderen Unternehmen …",
+    "nominal_value_chf": 100.0
+  },
+  "uncertain": [],
+  "notes": null,
+  "_verified": true
+}

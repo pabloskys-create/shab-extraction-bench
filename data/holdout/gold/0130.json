@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0",
+  "doc_id": "0130",
+  "language": "de",
+  "act_type": "mutation",
+  "act_subtypes": ["organaenderung"],
+  "company_name_full": "Auto-Germann AG",
+  "company_name_base": "Auto-Germann AG",
+  "status_suffix": null,
+  "alternative_names": [],
+  "company_name_new": null,
+  "company_name_previous": null,
+  "uid": "CHE-105.976.647",
+  "legal_form": "AG",
+  "seat_municipality": "Hunzenschwil",
+  "seat_canton": "AG",
+  "address_care_of": null,
+  "address_street": "Hauptstrasse 37",
+  "address_postcode": "5502",
+  "address_municipality": "Hunzenschwil",
+  "act_date": null,
+  "tagesregister_nr": "12636",
+  "tagesregister_date": "2026-09-04",
+  "prior_publication_shab_nr": 67,
+  "prior_publication_date": "2026-04-09",
+  "prior_publication_id": "1006620204",
+  "authority": "Handelsregisteramt des Kantons Aargau",
+  "canton_previous": null,
+  "canton_new": null,
+  "capital_new_chf": null,
+  "capital_previous_chf": null,
+  "domicile_new": null,
+  "domicile_previous": null,
+  "persons_added": [
+    {"name": "Germann, Karin", "nationality": null, "heimatort": "Schaffhausen, Merishausen und Römerswil", "domicile": "Hägglingen", "role": null, "signature": "Kollektivunterschrift zu zweien", "uid": null, "stammanteile": null}
+  ],
+  "persons_removed": [
+    {"name": "Germann, Urs", "nationality": null, "heimatort": "Merishausen und Schaffhausen", "domicile": "Hunzenschwil", "role": "Mitglied des Verwaltungsrates", "signature": "Kollektivunterschrift zu zweien", "uid": null, "stammanteile": null},
+    {"name": "Germann, Rolf", "nationality": null, "heimatort": "Merishausen und Schaffhausen", "domicile": "Lenzburg", "role": "Mitglied des Verwaltungsrates", "signature": "Kollektivunterschrift zu zweien", "uid": null, "stammanteile": null}
+  ],
+  "persons_changed": [
+    {"name_new": "Germann, Patrick", "name_previous": null, "domicile_new": "Hägglingen", "domicile_previous": null, "role_new": "Präsident des Verwaltungsrates", "role_previous": null, "signature_new": "Einzelunterschrift", "signature_previous": "Kollektivunterschrift zu zweien", "nationality_new": null, "nationality_previous": null, "heimatort_new": "Schaffhausen und Merishausen", "heimatort_previous": null, "stammanteile_new": null, "stammanteile_previous": null},
+    {"name_new": "Wehrli, Martin", "name_previous": null, "domicile_new": "Gretzenbach", "domicile_previous": null, "role_new": "Mitglied des Verwaltungsrates", "role_previous": "ohne eingetragene Funktion", "signature_new": "Kollektivunterschrift zu zweien", "signature_previous": null, "nationality_new": null, "nationality_previous": null, "heimatort_new": "Küttigen", "heimatort_previous": null, "stammanteile_new": null, "stammanteile_previous": null}
+  ],
+  "extras": {},
+  "uncertain": ["persons_changed"],
+  "notes": "Second changed person (Wehrli, Martin): the [bisher: …] states 'ohne eingetragene Funktion' explicitly. The prompt says role is null when none is stated, but here the absence of a role is stated in words; unclear whether role_previous should be that literal text or null. Kept verbatim ('ohne eingetragene Funktion'). Also: heimatort order differs between relatives ('Merishausen und Schaffhausen' vs 'Schaffhausen und Merishausen'); kept verbatim.",
+  "_verified": true
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0",
+  "doc_id": "0128",
+  "language": "de",
+  "act_type": "mutation",
+  "act_subtypes": ["organaenderung"],
+  "company_name_full": "Nagra, Nationale Genossenschaft für die Lagerung radioaktiver Abfälle",
+  "company_name_base": "Nagra, Nationale Genossenschaft für die Lagerung radioaktiver Abfälle",
+  "status_suffix": null,
+  "alternative_names": [
+    "Nagra, National Cooperative for the Disposal of Radioactive Waste",
+    "Nagra, Société coopérative nationale pour le stockage des déchets radioactifs",
+    "Nagra, Società cooperativa nazionale per lo smaltimento delle scorie radioattive"
+  ],
+  "company_name_new": null,
+  "company_name_previous": null,
+  "uid": "CHE-105.877.519",
+  "legal_form": "Genossenschaft",
+  "seat_municipality": "Wettingen",
+  "seat_canton": "AG",
+  "address_care_of": null,
+  "address_street": "Hardstrasse 73",
+  "address_postcode": "5430",
+  "address_municipality": "Wettingen",
+  "act_date": null,
+  "tagesregister_nr": "12645",
+  "tagesregister_date": "2026-09-04",
+  "prior_publication_shab_nr": 96,
+  "prior_publication_date": "2025-05-20",
+  "prior_publication_id": "1006336354",
+  "authority": "Handelsregisteramt des Kantons Aargau",
+  "canton_previous": null,
+  "canton_new": null,
+  "capital_new_chf": null,
+  "capital_previous_chf": null,
+  "domicile_new": null,
+  "domicile_previous": null,
+  "persons_added": [
+    {"name": "Hammer-Rotzler, Bernadette", "nationality": "österreichisch", "heimatort": null, "domicile": "Basel", "role": "Mitglied der Verwaltung", "signature": "Kollektivunterschrift zu zweien", "uid": null, "stammanteile": null}
+  ],
+  "persons_removed": [
+    {"name": "Kohler, Thomas", "nationality": null, "heimatort": "Lostorf und Olten", "domicile": "Lostorf", "role": "Mitglied der Verwaltung", "signature": "Kollektivunterschrift zu zweien", "uid": null, "stammanteile": null},
+    {"name": "Beutler, Reto", "nationality": null, "heimatort": "Willisau", "domicile": "Weiningen (ZH)", "role": "Mitglied der Geschäftsleitung", "signature": "Kollektivunterschrift zu zweien", "uid": null, "stammanteile": null},
+    {"name": "Vietor, Dr. Tim", "nationality": "deutsch", "heimatort": null, "domicile": "Konstanz (DE)", "role": "Mitglied der Geschäftsleitung", "signature": "Kollektivunterschrift zu zweien", "uid": null, "stammanteile": null}
+  ],
+  "persons_changed": [
+    {"name_new": "Blechschmidt, Dr. Ingo", "name_previous": null, "domicile_new": "Oberrohrdorf", "domicile_previous": null, "role_new": "Mitglied der Geschäftsleitung", "role_previous": null, "signature_new": "Kollektivunterschrift zu zweien", "signature_previous": null, "nationality_new": null, "nationality_previous": "deutsch", "heimatort_new": "Oberrohrdorf", "heimatort_previous": null, "stammanteile_new": null, "stammanteile_previous": null}
+  ],
+  "extras": {},
+  "uncertain": [],
+  "notes": "Title position varies in the source: 'Vietor, Dr. Tim' and 'Blechschmidt, Dr. Ingo' carry 'Dr.' between surname and first name, unlike the dev set, where titles follow the first name. Kept in source order, per the name rule.",
+  "_verified": true
+}
