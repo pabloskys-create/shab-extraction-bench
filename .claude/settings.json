@@ -3,8 +3,14 @@
     "deny": [
       "Write(./data/gold/**)",
       "Write(./data/raw/**)",
+      "Write(./data/exploratory/**)",
+      "Write(./data/holdout/raw/**)",
+      "Write(./data/holdout/gold/**)",
       "Edit(./data/gold/**)",
       "Edit(./data/raw/**)",
+      "Edit(./data/exploratory/**)",
+      "Edit(./data/holdout/raw/**)",
+      "Edit(./data/holdout/gold/**)",
       "Read(./.env)",
       "Read(./.env.*)"
     ],
