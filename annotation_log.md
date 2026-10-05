@@ -49,7 +49,7 @@ warm-up phase, before the sampling frame was defined.
 
 The corpus was fixed at 120 documents, sized so the benchmark and its
 failure analysis would fit the project's timeline. Per-document times were
-not logged past 0034; the process became routine and batch-level notes
+not logged past 0028; the process became routine and batch-level notes
 replaced them.
 
 ## Sampled batch (0029-0120)
@@ -70,41 +70,6 @@ Counts below were recomputed from `data/exploratory/` and `SCHEMA.md`, not
 carried over from earlier entries. All 120 records declare `schema_version`
 `1.0` and `_verified: true`. The gold standard lives in `data/exploratory/`;
 `data/gold/` is still empty.
-
-## Holdout batch (0121-0145, Aargau 2026-09-09, seed 42)
-
-Prompt frozen at 1a7e326 (prompts/extraction_v1.md). Holdout sampled after this commit.
-
-0121 | 7 | 0 | Intercantonal move (Kestenholz SO → Baden AG); seat_canton from pre-act seat, not Kontaktstelle
-0122 | 9 | 0 | Four GmbH partners all with [bisher: …]; brackets repeat unchanged role (→ previous null) alongside signature changes
-0123 | 7 | 0 | Two out, two changed; same municipality written two ways in one notice ("Bremgarten AG" / "Bremgarten (AG)")
-0124 | 12 | 0 | Intercantonal move SG → AG plus Zweck neu (cut at ~200); one changed partner, one new person without role
-0125 | 4 | 0 | Intercantonal move LU → AG, no persons — clean
-0126 | 6 | 0 | One out, one promoted (role_previous), one new — clean
-0127 | 5 | 2 (act_subtypes value for branch opening, extras.zweigniederlassung_uid) | Only act is "Zweigniederlassung neu:" — act_subtypes [] on a non-empty mutation; flagged uncertain
-0128 | 10 | 0 | Naturalisation (deutsch → von Oberrohrdorf); titles before first name ("Vietor, Dr. Tim"), unlike the dev set — kept in source order per the name rule
-0129 | 4 | 0 | One foreign president out, one in — clean
-0130 | 10 | 0 | "ohne eingetragene Funktion" in [bisher: …] kept literally in role_previous, as in 0019; heimatort order differs among relatives
-0131 | 6 | 0 | GmbH; stammanteile_previous filled from bracket (10 → 20) — clean
-0132 | 11 | 1 (act_subtypes value for Mitteilungen change / extras.mitteilungen_previous) | Sitzverlegung within AG + Zweck neu + "Mitteilungen neu:"
-0133 | 13 | 2 (firma_hauptsitz_new/previous, parent-level Konkurs) | Branch renamed "in Liquidation" because parent went bankrupt; Konkurs published under "Bekanntmachungen Hauptsitz neu:" — repeat of 0016/0022; subtype and act_date flagged uncertain
-0134 | 5 | 1 (absorbing company) | Löschung by merger: fusion subtype barred on loeschung
-0135 | 6 | 1 (parent deletion SHAB date) | Branch Löschung ex officio after parent deleted (Art. 111 Abs. 2 HRegV); name carries "in Liquidation" but no "Zweigniederlassung"; date kept inside loeschung_reason
-0136 | 7 | 0 | Einzelunternehmen Firmenänderung after owner's name change (Jud → Rüdisühli-Jud); c/o address; Bisher holds only previous name — not an address change
-0137 | 6 | 0 | Konkurs over the owner of an Einzelunternehmen; "Verfügung des Gerichtspräsidiums" not among act_date triggers — flagged uncertain
-0138 | 10 | 1 (extras.publikationsorgan) | Neueintragung AG with full share structure, Vinkulierung, opting-out
-0139 | 8 | 1 (ex officio deletion / outgoing-canton flag) | Outgoing side of intercantonal move (AG → BE): Kontaktstelle is the OLD canton, the reverse of every move in the dev set (cf. 0021)
-0140 | 4 | 0 | Einzelunternehmen Neueintragung; seat Böztal vs postal town Effingen (merged municipality)
-0141 | 16 | 3 (act_subtypes value for share split, extras.nominal_value_previous_chf, act_subtypes value for Mitteilungen change) | Very long Zweck; intercantonal move SO → AG; share split with unchanged capital; name change + naturalisation in one bracket
-0142 | 9 | 4 (absorbed company, merger contract date(s), balance-sheet date, transferred assets/liabilities) | Fusion by absorption; contract dates not an act_date trigger — flagged uncertain; seat "Zurzach" vs postal "Bad Zurzach"
-0143 | 3 | 0 | Stiftung, one person out without role — clean
-0144 | 3 | 0 | One foreign VR member out — clean
-0145 | 4 | 0 | Several other-language names inside a single parenthesis without separator — flagged uncertain
-
-Holdout verdict: 13 of 25 documents surfaced a case or field the v1.0 schema does
-not cover, against 0 new fields in the last five dev-set documents. Average
-annotation time: ~7.4 min/doc. None of these findings were fed back into the
-schema or the prompt; they are recorded as results.
 
 **New schema fields after the v1.0 freeze (daf99cd): 0.** 39 core fields at
 the freeze and 39 now — the Spanish→English rename (3a8d0b4) changed every
@@ -158,6 +123,45 @@ for its first case rather than a leftover.
 
 **Exclusions from the 92-document sample: 0.** The only excluded document
 remains 0000 (French FOSC), dropped before the sampling frame existed.
+
+## Holdout batch (0121-0145, Aargau 2026-09-09, seed 42)
+
+Prompt frozen at 1a7e326 (prompts/extraction_v1.md). Holdout sampled after this commit.
+
+0121 | 7 | 0 | Intercantonal move (Kestenholz SO → Baden AG); seat_canton from pre-act seat, not Kontaktstelle
+0122 | 9 | 0 | Four GmbH partners all with [bisher: …]; brackets repeat unchanged role (→ previous null) alongside signature changes
+0123 | 7 | 0 | Two out, two changed; same municipality written two ways in one notice ("Bremgarten AG" / "Bremgarten (AG)")
+0124 | 12 | 0 | Intercantonal move SG → AG plus Zweck neu (cut at ~200); one changed partner, one new person without role
+0125 | 4 | 0 | Intercantonal move LU → AG, no persons — clean
+0126 | 6 | 0 | One out, one promoted (role_previous), one new — clean
+0127 | 5 | 2 (act_subtypes value for branch opening, extras.zweigniederlassung_uid) | Only act is "Zweigniederlassung neu:" — act_subtypes [] on a non-empty mutation; flagged uncertain
+0128 | 10 | 0 | Naturalisation (deutsch → von Oberrohrdorf); titles before first name ("Vietor, Dr. Tim"), unlike the dev set — kept in source order per the name rule
+0129 | 4 | 0 | One foreign president out, one in — clean
+0130 | 10 | 0 | "ohne eingetragene Funktion" in [bisher: …] kept literally in role_previous, as in 0019; heimatort order differs among relatives
+0131 | 6 | 0 | GmbH; stammanteile_previous filled from bracket (10 → 20) — clean
+0132 | 11 | 1 (act_subtypes value for Mitteilungen change / extras.mitteilungen_previous) | Sitzverlegung within AG + Zweck neu + "Mitteilungen neu:"
+0133 | 13 | 2 (firma_hauptsitz_new/previous, parent-level Konkurs) | Branch renamed "in Liquidation" because parent went bankrupt; Konkurs published under "Bekanntmachungen Hauptsitz neu:" — repeat of 0016/0022; subtype and act_date flagged uncertain
+0134 | 5 | 1 (absorbing company) | Löschung by merger: fusion subtype barred on loeschung
+0135 | 6 | 1 (parent deletion SHAB date) | Branch Löschung ex officio after parent deleted (Art. 111 Abs. 2 HRegV); name carries "in Liquidation" but no "Zweigniederlassung"; date kept inside loeschung_reason
+0136 | 7 | 0 | Einzelunternehmen Firmenänderung after owner's name change (Jud → Rüdisühli-Jud); c/o address; Bisher holds only previous name — not an address change
+0137 | 6 | 0 | Konkurs over the owner of an Einzelunternehmen; "Verfügung des Gerichtspräsidiums" not among act_date triggers — flagged uncertain
+0138 | 10 | 1 (extras.publikationsorgan) | Neueintragung AG with full share structure, Vinkulierung, opting-out
+0139 | 8 | 1 (ex officio deletion / outgoing-canton flag) | Outgoing side of intercantonal move (AG → BE): Kontaktstelle is the OLD canton, the reverse of every move in the dev set (cf. 0021)
+0140 | 4 | 0 | Einzelunternehmen Neueintragung; seat Böztal vs postal town Effingen (merged municipality)
+0141 | 16 | 3 (act_subtypes value for share split, extras.nominal_value_previous_chf, act_subtypes value for Mitteilungen change) | Very long Zweck; intercantonal move SO → AG; share split with unchanged capital; name change + naturalisation in one bracket
+0142 | 9 | 4 (absorbed company, merger contract date(s), balance-sheet date, transferred assets/liabilities) | Fusion by absorption; contract dates not an act_date trigger — flagged uncertain; seat "Zurzach" vs postal "Bad Zurzach"
+0143 | 3 | 0 | Stiftung, one person out without role — clean
+0144 | 3 | 0 | One foreign VR member out — clean
+0145 | 4 | 0 | Several other-language names inside a single parenthesis without separator — flagged uncertain
+
+Holdout verdict: 13 of 25 documents surfaced a case or field the v1.0 schema does
+not cover, against 0 new fields in the last five dev-set documents. Average
+annotation time: ~7.4 min/doc. None of these findings were fed back into the
+schema or the prompt; they are recorded as results.
+
+Holdout extended from 25 to 50 documents (decided 2026-10-05, before any model
+was run on the holdout): a further 25 drawn from the 34 unsampled notices of
+the same listing, seed 43. Equivalent to a simple random sample of 50 of 59.
 
 ## Method notes
 
@@ -229,20 +233,6 @@ remains 0000 (French FOSC), dropped before the sampling frame existed.
   re-dumping the JSON, not by text substitution: `weitere_adressen_nueva` and
   `weitere_adressen_anterior` share a prefix, as do the `liberierung_*` pair,
   and a textual pass would have hit them twice. The map, oldest name first:
-- **Naming conventions are cheap before the first annotation and
-  expensive after.** Field names started in Spanish because that is the
-  language the work was done in, and the repository's own convention says
-  English. Fixing it took two separate renames — schema fields first,
-  `extras` keys later — and a full pass over the corpus and the docs each
-  time. The schema was deliberately derived from the data rather than
-  designed up front, which was right; the naming convention did not need
-  to wait for that and should have been settled on day one.
-  - **Two gold errors caught by a coherence rule, both exploratory.** A rule
-  tying `organaenderung` to non-empty person lists, added while writing the
-  extraction prompt, flagged 0018 and 0028 — both annotated before the
-  schema froze. The 92 documents annotated afterwards had none. A verified
-  gold set still carries errors; machine-checkable rules find the ones a
-  second read misses.
 
   | Before | After |
   |---|---|
@@ -261,6 +251,20 @@ remains 0000 (French FOSC), dropped before the sampling frame existed.
   document was annotated (0008, 0011, 0020, and the "Schema candidates"
   section), same as the Spanish→English field rename. Read them through this
   table.
+- **Naming conventions are cheap before the first annotation and
+  expensive after.** Field names started in Spanish because that is the
+  language the work was done in, and the repository's own convention says
+  English. Fixing it took two separate renames — schema fields first,
+  `extras` keys later — and a full pass over the corpus and the docs each
+  time. The schema was deliberately derived from the data rather than
+  designed up front, which was right; the naming convention did not need
+  to wait for that and should have been settled on day one.
+- **Two gold errors caught by a coherence rule, both exploratory.** A rule
+  tying `organaenderung` to non-empty person lists, added while writing the
+  extraction prompt, flagged 0018 and 0028 — both annotated before the
+  schema froze. The 92 documents annotated afterwards had none. A verified
+  gold set still carries errors; machine-checkable rules find the ones a
+  second read misses.
 - **A test that skips a check looks the same as one that passes it.**
   The 0016 test had a comment declining to assert legal_form. It sat
   green among 170 tests, so when 0107 failed the same way, "why does
