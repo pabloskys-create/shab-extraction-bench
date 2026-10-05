@@ -20,6 +20,10 @@ venv/
 # (a run_id under runs/ that starts with "scratch/" — see src/run_eval.py)
 runs/scratch/
 
+# --- derived/regenerable from runs/*/raw/ (see src/parse_responses.py) ---
+runs/*/parsed/
+runs/*/parse_summary.json
+
 # --- os / editor ---
 .DS_Store
 Thumbs.db
