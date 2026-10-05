@@ -13,9 +13,12 @@ venv/
 *.egg-info/
 *_files/
 
-# --- model outputs: regenerable, can be large ---
-results/raw_responses/
+# --- caches ---
 *.cache
+
+# --- scratch runs: throwaway debugging tirades, never committed ---
+# (a run_id under runs/ that starts with "scratch/" — see src/run_eval.py)
+runs/scratch/
 
 # --- os / editor ---
 .DS_Store
