@@ -10,6 +10,7 @@ failure, so classify_error() is exercised against the genuine SDK types.
 from __future__ import annotations
 
 import json
+import subprocess
 import time
 import types
 from dataclasses import dataclass
@@ -456,6 +457,63 @@ def test_git_dirty_recorded_in_run_and_raw_files(tmp_path, monkeypatch):
     record = json.loads((runs_dir / "run1" / "raw" / "0001.json").read_text())
     assert record["git_commit"] == "deadbeef"
     assert record["git_dirty"] is True
+
+
+def _git(repo: Path, *args: str) -> None:
+    subprocess.run(
+        ["git", "-c", "user.name=t", "-c", "user.email=t@t", *args], cwd=repo, check=True, capture_output=True
+    )
+
+
+@pytest.fixture
+def clean_repo(tmp_path) -> Path:
+    _git(tmp_path, "init", "-q")
+    (tmp_path / "src").mkdir()
+    (tmp_path / "src" / "tracked.py").write_text("x = 1\n", encoding="utf-8")
+    _git(tmp_path, "add", ".")
+    _git(tmp_path, "commit", "-q", "-m", "init")
+    return tmp_path
+
+
+def test_git_is_clean_with_untracked_harness_outputs(clean_repo):
+    for path in ("runs/m1/raw/0001.json", "runs/scratch/x/run.json", "results/m1/summary.json"):
+        (clean_repo / path).parent.mkdir(parents=True, exist_ok=True)
+        (clean_repo / path).write_text("{}", encoding="utf-8")
+    assert run_eval.git_is_dirty(clean_repo) is False
+
+
+@pytest.mark.parametrize(
+    "untracked",
+    ["src/new_module.py", "notes.md", "runs_backup/x.json", "data/results/x.json"],
+)
+def test_git_is_dirty_with_an_untracked_file_outside_harness_outputs(clean_repo, untracked):
+    (clean_repo / untracked).parent.mkdir(parents=True, exist_ok=True)
+    (clean_repo / untracked).write_text("x", encoding="utf-8")
+    (clean_repo / "runs").mkdir()
+    (clean_repo / "runs" / "r.json").write_text("{}", encoding="utf-8")
+    assert run_eval.git_is_dirty(clean_repo) is True
+
+
+def test_git_is_dirty_with_a_modified_tracked_file(clean_repo):
+    (clean_repo / "src" / "tracked.py").write_text("x = 2\n", encoding="utf-8")
+    assert run_eval.git_is_dirty(clean_repo) is True
+
+
+def test_git_is_dirty_with_a_modified_tracked_file_inside_runs(clean_repo):
+    (clean_repo / "runs").mkdir()
+    (clean_repo / "runs" / "raw.json").write_text("{}", encoding="utf-8")
+    _git(clean_repo, "add", ".")
+    _git(clean_repo, "commit", "-q", "-m", "add run")
+    (clean_repo / "runs" / "raw.json").write_text('{"edited": true}', encoding="utf-8")
+    assert run_eval.git_is_dirty(clean_repo) is True
+
+
+def test_evaluator_and_baselines_share_the_same_dirty_check():
+    from src import evaluate
+    from src.baselines import build_run
+
+    assert evaluate.git_is_dirty is run_eval.git_is_dirty
+    assert build_run.git_is_dirty is run_eval.git_is_dirty
 
 
 def test_run_git_missing_raises_config_error(monkeypatch):
