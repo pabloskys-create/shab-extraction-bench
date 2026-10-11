@@ -153,6 +153,31 @@ Prompt frozen at 1a7e326 (prompts/extraction_v1.md). Holdout sampled after this 
 0143 | 3 | 0 | Stiftung, one person out without role — clean
 0144 | 3 | 0 | One foreign VR member out — clean
 0145 | 4 | 0 | Several other-language names inside a single parenthesis without separator — flagged uncertain
+0146 | 3 | 0 | Einzelunternehmen Neueintragung; name contains an internal comma (", Inh. Wilhelm") — clean
+0147 | 3 | 0 | One VR member out; same person as 0144 under a longer name ("Sven Ottmar") — no cross-notice linking
+0148 | 14 | 0 | Sister of 0121/0141: SO → AG move, long Zweck, Mitteilungen neu; three functions in one role string; name change + naturalisation in one bracket
+0149 | 12 | 2 (act_subtypes value for court-ordered dissolution under Art. 731b OR, legal basis) | Liquidation "nach den Vorschriften über den Konkurs" fits neither liquidationseroeffnung nor konkurseroeffnung; act_date from a Verfügung (repeat of 0137); konkurs_wirkung_ab stretched — flagged uncertain
+0150 | 4 | 0 | One president out, member promoted — clean
+0151 | 8 | 0 | Firmenänderung with a name containing its own full stop and "!"; owner's surname change; owner has no role stated — name flagged uncertain
+0152 | 3 | 0 | One Prokurist out; role with parenthesised abbreviation "(CFO)" — clean
+0153 | 6 | 0 | Director out, deputy promoted; name change only drops a second given name
+0154 | 3 | 0 | Sister of 0143; stray comma in c/o line (source typo), kept verbatim — flagged uncertain
+0155 | 3 | 0 | Domicile change within same municipality, no subtype — clean
+0156 | 3 | 0 | Domizil neu identical to the Bisher address — no visible change; both filled as printed
+0157 | 2 | 0 | Domicile change within same street (22a → 22b) — clean
+0158 | 12 | 0 | Very long Zweck (OCR slip "Kl-gestützten"); participation transfer between partners visible only as 200 → 150 + new holder with 50
+0159 | 10 | 0 | Outgoing AG → LU move plus Firma neu, but header/headline still show the old name — contradicts header-after-act rule; alternative names of the old name flagged uncertain
+0160 | 4 | 0 | One member out, president steps down to member, no new president — clean
+0161 | 2 | 0 | Löschung, Geschäftsaufgabe — template
+0162 | 3 | 0 | Konkurs over Einzelunternehmen owner via Verfügung (repeat of 0137) — act_date flagged uncertain
+0163 | 3 | 0 | Domicile change within same street; old 7-digit Publ. number format (2016)
+0164 | 6 | 0 | Sitzverlegung within AG; previous postal town (Nussbaumen) is a village of the seat municipality
+0165 | 9 | 0 | Voluntary liquidation by Gesellschafterversammlung; liquidator appended to role list, signature "als Liquidator" qualifier
+0166 | 5 | 1 (Person.alias) | President out, member promoted, new member; removed person's name carries an alias ("genannt Harry"), kept inside name — flagged uncertain
+0167 | 3 | 0 | Delegierte out, Delegierter in — clean
+0168 | 3 | 0 | One member out, one member's domicile changes — clean
+0169 | 5 | 1 (Person.register_nr_alt) | Auditor swap (two companies as persons with UID); incoming auditor has an old cantonal register number in a second bracket, not a [bisher: …] — flagged uncertain
+0170 | 3 | 0 | Sitzverlegung within AG (Aarau → Erlinsbach) — clean
 
 Holdout verdict: 13 of 25 documents surfaced a case or field the v1.0 schema does
 not cover, against 0 new fields in the last five dev-set documents. Average
@@ -269,6 +294,12 @@ the same listing, seed 43. Equivalent to a simple random sample of 50 of 59.
   The 0016 test had a comment declining to assert legal_form. It sat
   green among 170 tests, so when 0107 failed the same way, "why does
   0016 work?" seemed like the obvious question. It had never worked.
+- **Tools that write gold must refuse to overwrite.** Re-running prefill.py
+  on 0146-0170 by mistake replaced 20 annotated, uncommitted records with
+  fresh prefill output; recovered only through the editor's undo history.
+  prefill.py now refuses to overwrite an existing file, as sample.py
+  already does for manifests. Commit annotation batches as soon as they
+  validate.
 
 ## Schema candidates for v1.0 — resolved
 
