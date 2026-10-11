@@ -406,6 +406,102 @@ def test_raw_record_has_prompt_hash_git_commit_finish_reason_and_max_tokens(tmp_
     assert run_config["params"]["max_tokens"] == 123
 
 
+# --- 13b. defaults for reasoning models; full usage, reasoning tokens, response length ---
+
+
+def _run_one(tmp_path, monkeypatch, queue: list, extra: list[str] | None = None) -> tuple[FakeClient, dict, dict]:
+    _patch_git(monkeypatch)
+    data_root = _make_dev_corpus(tmp_path, {"0001": "NOTICE-ONE"})
+    prompt_path = _write_prompt(tmp_path)
+    runs_dir = tmp_path / "runs"
+    client = FakeClient(queue)
+    run_eval.main(
+        _base_argv("run1", extra=["--prompt", str(prompt_path), *(extra or [])]),
+        client_factory=_client_factory(client),
+        sleep_fn=lambda s: None,
+        data_root=data_root,
+        runs_dir=runs_dir,
+    )
+    record = json.loads((runs_dir / "run1" / "raw" / "0001.json").read_text(encoding="utf-8"))
+    run_config = json.loads((runs_dir / "run1" / "run.json").read_text(encoding="utf-8"))
+    return client, record, run_config
+
+
+def test_default_max_tokens_is_16384_and_recorded(tmp_path, monkeypatch):
+    client, record, run_config = _run_one(tmp_path, monkeypatch, [_make_fake_completion()])
+    assert client.completions.calls[0]["max_tokens"] == 16384
+    assert record["params"]["max_tokens"] == 16384
+    assert run_config["params"]["max_tokens"] == 16384
+
+
+def test_default_openrouter_timeout_is_600_seconds():
+    assert run_eval.BACKEND_DEFAULT_TIMEOUTS["openrouter"] == 600.0
+
+
+def _sdk_completion(usage: dict, content: str | None = "{}") -> FakeResponse:
+    """A response built through the installed SDK's own ChatCompletion
+    model, so the field names below are the SDK's, not assumed ones."""
+    completion = openai.types.chat.ChatCompletion.model_validate(
+        {
+            "id": "gen-1",
+            "object": "chat.completion",
+            "created": 0,
+            "model": "served/model-x",
+            "provider": "Together",
+            "choices": [
+                {"index": 0, "finish_reason": "stop", "message": {"role": "assistant", "content": content}}
+            ],
+            "usage": usage,
+        }
+    )
+    return FakeResponse(completion.model_dump())
+
+
+def test_full_usage_is_kept_and_reasoning_tokens_extracted():
+    usage = {
+        "prompt_tokens": 5000,
+        "completion_tokens": 3000,
+        "total_tokens": 8000,
+        "cost": 0.0123,
+        "completion_tokens_details": {"reasoning_tokens": 2600},
+        "prompt_tokens_details": {"cached_tokens": 0},
+    }
+    fields = run_eval.extract_result_fields(_sdk_completion(usage, content="abcde"))
+    assert fields["usage"]["completion_tokens_details"]["reasoning_tokens"] == 2600
+    assert fields["usage"]["prompt_tokens_details"]["cached_tokens"] == 0
+    assert fields["usage"]["cost"] == 0.0123
+    assert fields["reasoning_tokens"] == 2600
+    assert fields["cost_usd"] == 0.0123
+    assert fields["response_chars"] == 5
+
+
+def test_reasoning_tokens_is_null_when_not_reported():
+    usage = {"prompt_tokens": 10, "completion_tokens": 2, "total_tokens": 12}
+    assert run_eval.extract_result_fields(_sdk_completion(usage))["reasoning_tokens"] is None
+    assert run_eval.reasoning_tokens(None) is None
+
+
+def test_empty_answer_has_zero_response_chars():
+    usage = {"prompt_tokens": 10, "completion_tokens": 16384, "total_tokens": 16394}
+    assert run_eval.extract_result_fields(_sdk_completion(usage, content=None))["response_chars"] == 0
+    assert run_eval.extract_result_fields(_sdk_completion(usage, content=""))["response_chars"] == 0
+
+
+def test_raw_record_carries_usage_reasoning_tokens_and_response_chars(tmp_path, monkeypatch):
+    _, record, _ = _run_one(tmp_path, monkeypatch, [_make_fake_completion(content="hello")])
+    assert record["usage"]["cost"] == 0.0012
+    assert record["reasoning_tokens"] is None
+    assert record["response_chars"] == 5
+
+
+def test_error_record_has_null_reasoning_tokens_and_zero_response_chars(tmp_path, monkeypatch):
+    _, record, _ = _run_one(tmp_path, monkeypatch, [_fatal_error()])
+    assert record["status"] == "error"
+    assert record["usage"] is None
+    assert record["reasoning_tokens"] is None
+    assert record["response_chars"] == 0
+
+
 # --- 14. latency excludes backoff wait ---
 
 

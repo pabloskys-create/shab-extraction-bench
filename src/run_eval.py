@@ -59,13 +59,20 @@ PASSES = 1
 # mode can be told apart from today's plain-text runs by this field alone.
 STRUCTURED_OUTPUT = False
 
+# Every model runs with its provider's default behaviour, reasoning
+# included (CLAUDE.md, "Benchmark design (decided)"). Reasoning models
+# spend hidden tokens before answering: at 4096 the pilots of
+# mistral-large-4-0 and claude-haiku-5.5 ran out (finish_reason "length")
+# with an empty or truncated answer. 16384 leaves room for both.
+DEFAULT_MAX_TOKENS = 16384
+
 BACKEND_BASE_URLS = {
     "openrouter": "https://openrouter.ai/api/v1",
     "ollama": "http://localhost:11434/v1",
 }
 
 BACKEND_DEFAULT_TIMEOUTS = {
-    "openrouter": 180.0,
+    "openrouter": 600.0,
     "ollama": 900.0,
 }
 
@@ -327,20 +334,29 @@ def extract_result_fields(response: Any) -> dict[str, Any]:
     dumped = response.model_dump()
     choices = dumped.get("choices") or [{}]
     choice = choices[0]
-    usage = dumped.get("usage") or {}
+    usage = dumped.get("usage")
     message = choice.get("message") or {}
+    response_text = message.get("content")
     return {
         "model_served": dumped.get("model"),
         "provider_served": dumped.get("provider"),
-        "usage": {
-            "prompt_tokens": usage.get("prompt_tokens"),
-            "completion_tokens": usage.get("completion_tokens"),
-            "total_tokens": usage.get("total_tokens"),
-        },
-        "cost_usd": usage.get("cost"),
+        # The whole object as the API returned it — token breakdowns,
+        # cost, anything provider-specific — not a hand-picked subset.
+        "usage": usage,
+        "reasoning_tokens": reasoning_tokens(usage),
+        "cost_usd": (usage or {}).get("cost"),
         "finish_reason": choice.get("finish_reason"),
-        "response_text": message.get("content"),
+        "response_chars": len(response_text) if response_text is not None else 0,
+        "response_text": response_text,
     }
+
+
+def reasoning_tokens(usage: dict[str, Any] | None) -> int | None:
+    """`usage.completion_tokens_details.reasoning_tokens`, the field name
+    in the installed SDK's CompletionUsage/CompletionTokensDetails
+    (openai 3.24.0); None when the API did not report it."""
+    details = (usage or {}).get("completion_tokens_details") or {}
+    return details.get("reasoning_tokens")
 
 
 @dataclass
@@ -416,8 +432,10 @@ def process_document(
             model_served=None,
             provider_served=None,
             usage=None,
+            reasoning_tokens=None,
             cost_usd=None,
             finish_reason=None,
+            response_chars=0,
             response_text=None,
         )
     return record
@@ -517,7 +535,7 @@ def parse_args(argv: list[str] | None) -> argparse.Namespace:
     parser.add_argument("--allow-holdout", action="store_true")
     parser.add_argument("--openrouter-provider", default=None)
     parser.add_argument("--max-retries", type=int, default=5)
-    parser.add_argument("--max-tokens", type=int, default=4096)
+    parser.add_argument("--max-tokens", type=int, default=DEFAULT_MAX_TOKENS)
     parser.add_argument("--timeout", type=float, default=None)
     parser.add_argument("--env-file", type=Path, default=DEFAULT_ENV_FILE)
     return parser.parse_args(argv)

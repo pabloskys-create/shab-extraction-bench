@@ -110,6 +110,14 @@ CHANGELOG.md             schema version history
 - Structured output: deferred. Every run uses `structured_output: false`;
   the with/without comparison is out of scope for now.
 - One pass per document at temperature 0. Three passes only if time allows.
+- Every model runs with its provider's default configuration, reasoning
+  included where the model reasons by default — no reasoning switched on
+  or off per model. max_tokens is 16384 for all (4096 left
+  mistral-large-4-0 and claude-haiku-5.5 with empty or truncated answers,
+  finish_reason "length"); OpenRouter timeout 600 s. Each raw response
+  records the API's full `usage` object, `reasoning_tokens` (from
+  `usage.completion_tokens_details`, null if not reported) and
+  `response_chars`. Reasoning tokens are part of the cost reported.
 - Scalars reported both exact and normalised (whitespace, case).
 - Fields listed in a gold record's `uncertain` are excluded from scoring,
   field by field.
