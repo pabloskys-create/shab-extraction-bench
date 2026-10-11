@@ -12,6 +12,8 @@ import json
 import re
 from pathlib import Path
 
+import pytest
+
 from src import parse_responses, validate
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
@@ -333,13 +335,14 @@ def test_null_person_list_field_is_replaced_with_empty_list_and_logged():
     assert record["person_lists_replaced"] == {"persons_added": "NoneType"}
 
 
-def test_single_dict_person_list_field_is_wrapped_in_a_list_and_logged():
-    person = dict.fromkeys(parse_responses.PERSON_KEYS_ORDER)
-    obj = _valid_object(persons_added=person)
+@pytest.mark.parametrize(("field", "keys"), parse_responses.PERSON_LIST_FIELDS)
+def test_single_dict_person_list_field_is_wrapped_in_a_list_and_logged(field, keys):
+    person = dict.fromkeys(keys)
+    obj = _valid_object(**{field: person})
     record = _parse(json.dumps(obj))
     assert record["parse_status"] == "ok"
-    assert record["data"]["persons_added"] == [person]
-    assert record["person_lists_replaced"] == {"persons_added": "dict"}
+    assert record["data"][field] == [person]
+    assert record["person_lists_replaced"] == {field: "dict"}
 
 
 def test_string_person_list_field_is_replaced_with_empty_list_and_logged():
