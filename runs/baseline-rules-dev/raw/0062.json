@@ -1,0 +1,12 @@
+{
+  "doc_id": "0062",
+  "split": "dev",
+  "model_requested": "baseline-rules",
+  "backend": "baseline",
+  "timestamp": "2026-10-11T20:05:58.512132+00:00",
+  "git_commit": "e1122b53a5a365215413105ba78ff7ddbcccbf45",
+  "git_dirty": true,
+  "status": "ok",
+  "error": null,
+  "response_text": "{\"act_type\": \"mutation\", \"act_subtypes\": [], \"company_name_full\": \"Pensionskasse der Luzerner Kantonalbank\", \"company_name_base\": \"Pensionskasse der Luzerner Kantonalbank\", \"status_suffix\": null, \"alternative_names\": [], \"company_name_new\": null, \"company_name_previous\": null, \"uid\": \"CHE-109.776.254\", \"legal_form\": \"Stiftung\", \"seat_municipality\": \"Luzern\", \"seat_canton\": \"LU\", \"address_care_of\": null, \"address_street\": \"Pilatusstrasse 12\", \"address_postcode\": \"6002\", \"address_municipality\": \"Luzern\", \"act_date\": null, \"tagesregister_nr\": \"8720\", \"tagesregister_date\": \"2026-08-20\", \"prior_publication_shab_nr\": 157, \"prior_publication_date\": \"2025-08-18\", \"prior_publication_id\": \"1006410554\", \"authority\": \"Handelsregisteramt des Kantons Luzern\", \"canton_previous\": null, \"canton_new\": null, \"capital_new_chf\": null, \"capital_previous_chf\": null, \"domicile_new\": null, \"domicile_previous\": null, \"persons_added\": [], \"persons_removed\": [], \"persons_changed\": [], \"extras\": {}}"
+}

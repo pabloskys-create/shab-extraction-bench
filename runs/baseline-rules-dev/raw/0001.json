@@ -1,0 +1,12 @@
+{
+  "doc_id": "0001",
+  "split": "dev",
+  "model_requested": "baseline-rules",
+  "backend": "baseline",
+  "timestamp": "2026-10-11T20:05:58.512132+00:00",
+  "git_commit": "e1122b53a5a365215413105ba78ff7ddbcccbf45",
+  "git_dirty": true,
+  "status": "ok",
+  "error": null,
+  "response_text": "{\"act_type\": \"mutation\", \"act_subtypes\": [], \"company_name_full\": \"The Zermatt Kollektiv AG in Liquidation\", \"company_name_base\": \"The Zermatt Kollektiv AG\", \"status_suffix\": \"in Liquidation\", \"alternative_names\": [], \"company_name_new\": null, \"company_name_previous\": null, \"uid\": \"CHE-390.336.674\", \"legal_form\": \"AG\", \"seat_municipality\": \"Zermatt\", \"seat_canton\": \"VS\", \"address_care_of\": null, \"address_street\": \"Spissstrasse 67\", \"address_postcode\": \"3920\", \"address_municipality\": \"Zermatt\", \"act_date\": null, \"tagesregister_nr\": \"1526\", \"tagesregister_date\": \"2026-08-18\", \"prior_publication_shab_nr\": 223, \"prior_publication_date\": \"2025-11-18\", \"prior_publication_id\": \"1006488017\", \"authority\": \"Handelsregisteramt Oberwallis\", \"canton_previous\": null, \"canton_new\": null, \"capital_new_chf\": null, \"capital_previous_chf\": null, \"domicile_new\": null, \"domicile_previous\": null, \"persons_added\": [], \"persons_removed\": [], \"persons_changed\": [], \"extras\": {}}"
+}

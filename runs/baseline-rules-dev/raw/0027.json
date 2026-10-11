@@ -1,0 +1,12 @@
+{
+  "doc_id": "0027",
+  "split": "dev",
+  "model_requested": "baseline-rules",
+  "backend": "baseline",
+  "timestamp": "2026-10-11T20:05:58.512132+00:00",
+  "git_commit": "e1122b53a5a365215413105ba78ff7ddbcccbf45",
+  "git_dirty": true,
+  "status": "ok",
+  "error": null,
+  "response_text": "{\"act_type\": \"mutation\", \"act_subtypes\": [], \"company_name_full\": \"ProBau Brienz Immobilien GmbH\", \"company_name_base\": \"ProBau Brienz Immobilien GmbH\", \"status_suffix\": null, \"alternative_names\": [], \"company_name_new\": null, \"company_name_previous\": null, \"uid\": \"CHE-340.139.918\", \"legal_form\": \"GmbH\", \"seat_municipality\": \"Brienz (BE)\", \"seat_canton\": \"BE\", \"address_care_of\": \"Valeriu Eftodii\", \"address_street\": \"Talstrasse 16\", \"address_postcode\": \"3855\", \"address_municipality\": \"Brienz BE\", \"act_date\": null, \"tagesregister_nr\": \"14899\", \"tagesregister_date\": \"2026-08-05\", \"prior_publication_shab_nr\": 53, \"prior_publication_date\": \"2025-03-18\", \"prior_publication_id\": \"1006284477\", \"authority\": \"Handelsregisteramt des Kantons Bern\", \"canton_previous\": null, \"canton_new\": null, \"capital_new_chf\": null, \"capital_previous_chf\": null, \"domicile_new\": null, \"domicile_previous\": null, \"persons_added\": [], \"persons_removed\": [], \"persons_changed\": [], \"extras\": {}}"
+}

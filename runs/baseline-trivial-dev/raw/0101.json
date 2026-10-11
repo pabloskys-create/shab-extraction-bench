@@ -1,0 +1,12 @@
+{
+  "doc_id": "0101",
+  "split": "dev",
+  "model_requested": "baseline-trivial",
+  "backend": "baseline",
+  "timestamp": "2026-10-11T20:05:57.171452+00:00",
+  "git_commit": "e1122b53a5a365215413105ba78ff7ddbcccbf45",
+  "git_dirty": false,
+  "status": "ok",
+  "error": null,
+  "response_text": "{\"act_type\": \"mutation\", \"act_subtypes\": [], \"company_name_full\": null, \"company_name_base\": null, \"status_suffix\": null, \"alternative_names\": [], \"company_name_new\": null, \"company_name_previous\": null, \"uid\": null, \"legal_form\": \"AG\", \"seat_municipality\": \"Zürich\", \"seat_canton\": \"ZH\", \"address_care_of\": null, \"address_street\": \"Leutschenbachstrasse 95\", \"address_postcode\": \"8050\", \"address_municipality\": \"Zürich\", \"act_date\": null, \"tagesregister_nr\": null, \"tagesregister_date\": \"2026-08-26\", \"prior_publication_shab_nr\": null, \"prior_publication_date\": null, \"prior_publication_id\": null, \"authority\": \"Handelsregisteramt des Kantons Zürich\", \"canton_previous\": null, \"canton_new\": null, \"capital_new_chf\": null, \"capital_previous_chf\": null, \"domicile_new\": null, \"domicile_previous\": null, \"persons_added\": [], \"persons_removed\": [], \"persons_changed\": [], \"extras\": {}}"
+}
