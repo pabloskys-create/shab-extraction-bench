@@ -88,6 +88,51 @@ SET_FIELDS: tuple[str, ...] = tuple(k for k in CORE_KEYS if validate.FIELD_SPECS
 # document level and make up the headline core accuracy.
 FIELD_LEVEL_FIELDS: tuple[str, ...] = tuple(k for k in CORE_KEYS if k in SCALAR_FIELDS or k in SET_FIELDS)
 
+# The field-level fields split in two fixed groups, decided on 2026-10-11
+# before any model was scored (CLAUDE.md, "Benchmark design (decided)").
+# HEADER_FIELDS are the 19 that prefill.py fills in at least one dev
+# document: formulaic header/identity data, where the rule baseline is
+# already perfect on every value it fills. COMPREHENSION_FIELDS are the
+# ones prefill.py never fills: they require reading what the act changes.
+# Reporting the two apart keeps the easy header from masking the hard part.
+HEADER_FIELDS: tuple[str, ...] = (
+    "act_type",
+    "company_name_full",
+    "company_name_base",
+    "status_suffix",
+    "alternative_names",
+    "uid",
+    "legal_form",
+    "seat_municipality",
+    "seat_canton",
+    "address_care_of",
+    "address_street",
+    "address_postcode",
+    "address_municipality",
+    "tagesregister_nr",
+    "tagesregister_date",
+    "prior_publication_shab_nr",
+    "prior_publication_date",
+    "prior_publication_id",
+    "authority",
+)
+COMPREHENSION_FIELDS: tuple[str, ...] = (
+    "act_subtypes",
+    "company_name_new",
+    "company_name_previous",
+    "act_date",
+    "canton_previous",
+    "canton_new",
+    "capital_new_chf",
+    "capital_previous_chf",
+    "domicile_new",
+    "domicile_previous",
+)
+FIELD_GROUPS: dict[str, tuple[str, ...]] = {
+    "comprehension": COMPREHENSION_FIELDS,
+    "header": HEADER_FIELDS,
+}
+
 PERSON_NAME_KEYS = {
     "persons_added": "name",
     "persons_removed": "name",
@@ -355,6 +400,10 @@ def score_document(
             normalized = mode == "normalized"
             if not has_output:
                 outcomes[mode] = NO_OUTPUT
+                # Remembered so value/null accuracy can charge it to the
+                # right denominator.
+                gold_is_null = not _as_set(gold_value, normalized=False) if field in SET_FIELDS else gold_value is None
+                tally[("no_output_gold", field, mode, "null" if gold_is_null else "value")] += 1
             elif field in SET_FIELDS:
                 outcomes[mode] = classify_set(gold_value, pred_value, normalized=normalized)
             else:
@@ -461,6 +510,25 @@ def field_accuracy(tally: Counter, mode: str, fields: tuple[str, ...] | None = N
     return correct, _sum_where(tally, scored)
 
 
+def value_accuracy(tally: Counter, mode: str, fields: tuple[str, ...]) -> Ratio:
+    """correct / (correct + omission + wrong), only where the gold has a
+    value; a no_output document counts as a failure."""
+    correct = sum(tally[("field", f, mode, CORRECT)] for f in fields)
+    failed = sum(
+        tally[("field", f, mode, OMISSION)] + tally[("field", f, mode, WRONG)] + tally[("no_output_gold", f, mode, "value")]
+        for f in fields
+    )
+    return correct, correct + failed
+
+
+def null_accuracy(tally: Counter, mode: str, fields: tuple[str, ...]) -> Ratio:
+    """correct_null / (correct_null + hallucination), only where the gold
+    is null; a no_output document counts as a failure."""
+    correct = sum(tally[("field", f, mode, CORRECT_NULL)] for f in fields)
+    failed = sum(tally[("field", f, mode, HALLUCINATION)] + tally[("no_output_gold", f, mode, "null")] for f in fields)
+    return correct, correct + failed
+
+
 def f1_ratio(tp: int, fp: int, fn: int) -> Ratio:
     """F1 as a ratio of sums, 2TP / (2TP + FP + FN), so it bootstraps like
     any other ratio."""
@@ -514,8 +582,14 @@ def headline_metrics() -> dict[str, Callable[[Counter], Ratio]]:
         "core_accuracy_exact": lambda t: field_accuracy(t, "exact"),
         "core_accuracy_normalized": lambda t: field_accuracy(t, "normalized"),
     }
+    for group, group_fields in FIELD_GROUPS.items():
+        metrics[f"group_accuracy_normalized:{group}"] = lambda t, g=group_fields: field_accuracy(t, "normalized", g)
+        metrics[f"group_value_accuracy_normalized:{group}"] = lambda t, g=group_fields: value_accuracy(t, "normalized", g)
+        metrics[f"group_null_accuracy_normalized:{group}"] = lambda t, g=group_fields: null_accuracy(t, "normalized", g)
     for field in FIELD_LEVEL_FIELDS:
         metrics[f"field_accuracy_normalized:{field}"] = lambda t, f=field: field_accuracy(t, "normalized", (f,))
+        metrics[f"value_accuracy_normalized:{field}"] = lambda t, f=field: value_accuracy(t, "normalized", (f,))
+        metrics[f"null_accuracy_normalized:{field}"] = lambda t, f=field: null_accuracy(t, "normalized", (f,))
     for field, _keys in PERSON_LIST_FIELDS:
         metrics[f"persons_found_f1:{field}"] = lambda t, f=field: f1_ratio(*_persons_counts(t, f))
         metrics[f"persons_attribute_accuracy_normalized:{field}"] = lambda t, f=field: _person_attr_accuracy(
@@ -581,6 +655,14 @@ def _outcome_block(tally: Counter, key_prefix: tuple, mode: str) -> dict[str, An
     return {**counts, "accuracy": _div(counts[CORRECT] + counts[CORRECT_NULL], scored)}
 
 
+def _accuracy_trio(tally: Counter, mode: str, fields: tuple[str, ...]) -> dict[str, float | None]:
+    return {
+        "accuracy": _div(*field_accuracy(tally, mode, fields)),
+        "value_accuracy": _div(*value_accuracy(tally, mode, fields)),
+        "null_accuracy": _div(*null_accuracy(tally, mode, fields)),
+    }
+
+
 def build_summary(
     tally: Counter,
     per_doc: list[Counter],
@@ -597,11 +679,20 @@ def build_summary(
         num, den = fn(tally)
         headline[name] = {"value": _div(num, den), **intervals[name], "numerator": num, "denominator": den}
 
+    groups = {
+        group: {"fields": list(group_fields), **{mode: _accuracy_trio(tally, mode, group_fields) for mode in MODES}}
+        for group, group_fields in FIELD_GROUPS.items()
+    }
+
     fields = {}
     for field in FIELD_LEVEL_FIELDS:
         fields[field] = {
+            "group": next(g for g, fs in FIELD_GROUPS.items() if field in fs),
             "excluded_uncertain": tally[("excluded", field)],
-            **{mode: _outcome_block(tally, ("field", field), mode) for mode in MODES},
+            **{
+                mode: {**_outcome_block(tally, ("field", field), mode), **_accuracy_trio(tally, mode, (field,))}
+                for mode in MODES
+            },
         }
 
     labels = sorted({k[1] for k in tally if k[0] == "subtype"})
@@ -680,6 +771,7 @@ def build_summary(
             "method": "percentile, 95%, resampling documents with replacement",
         },
         "headline": headline,
+        "groups": groups,
         "fields": fields,
         "act_subtypes": act_subtypes,
         "persons": persons,
@@ -764,6 +856,36 @@ def evaluate_run(
     return summary, rows
 
 
+# Screen order: the comprehension part first, the formulaic header and the
+# global figure (dominated by the header) last.
+SCREEN_METRICS = (
+    "group_value_accuracy_normalized:comprehension",
+    "group_null_accuracy_normalized:comprehension",
+    "persons_found_f1:persons_added",
+    "persons_found_f1:persons_removed",
+    "persons_found_f1:persons_changed",
+    "act_subtypes_micro_f1",
+    "extras_key_f1",
+    "group_accuracy_normalized:header",
+    "core_accuracy_normalized",
+)
+
+
+def _fmt(value: float | None) -> str:
+    return "  n/a" if value is None else f"{value:.3f}"
+
+
+def format_headline(headline: dict[str, dict[str, Any]]) -> str:
+    lines = []
+    for name in SCREEN_METRICS:
+        m = headline[name]
+        lines.append(
+            f"{name:<48} {_fmt(m['value'])}  [{_fmt(m['ci_low'])} - {_fmt(m['ci_high'])}]"
+            f"  ({m['numerator']}/{m['denominator']})"
+        )
+    return "\n".join(lines)
+
+
 ROW_COLUMNS = ("doc_id", "field", "item", "attribute", "gold", "prediction", "outcome_exact", "outcome_normalized")
 
 
@@ -801,9 +923,7 @@ def main(argv: list[str] | None = None) -> int:
 
     out_dir = args.results_dir / args.run_id
     write_outputs(out_dir, summary, rows)
-    headline = summary["headline"]
-    for name in ("core_accuracy_exact", "core_accuracy_normalized", "parse_failure_rate"):
-        print(f"{name}: {headline[name]['value']}")
+    print(format_headline(summary["headline"]))
     print(f"wrote {out_dir / 'summary.json'} and {out_dir / 'fields.csv'}")
     return 0
 

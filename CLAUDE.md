@@ -113,6 +113,27 @@ CHANGELOG.md             schema version history
 - Scalars reported both exact and normalised (whitespace, case).
 - Fields listed in a gold record's `uncertain` are excluded from scoring,
   field by field.
+- Field groups, fixed on 2026-10-11 before any model was scored
+  (`src/evaluate.py`), reported separately:
+  - HEADER_FIELDS — the 19 that prefill.py fills in at least one dev
+    document: act_type, company_name_full, company_name_base,
+    status_suffix, alternative_names, uid, legal_form, seat_municipality,
+    seat_canton, address_care_of, address_street, address_postcode,
+    address_municipality, tagesregister_nr, tagesregister_date,
+    prior_publication_shab_nr, prior_publication_date,
+    prior_publication_id, authority.
+  - COMPREHENSION_FIELDS — the 10 it never fills: act_subtypes,
+    company_name_new, company_name_previous, act_date, canton_previous,
+    canton_new, capital_new_chf, capital_previous_chf, domicile_new,
+    domicile_previous.
+- Per group and per field, with 95% bootstrap intervals: accuracy;
+  value_accuracy = correct / (correct + omission + wrong), only where
+  the gold has a value; null_accuracy = correct_null / (correct_null +
+  hallucination), only where the gold is null. A document with no
+  parseable output counts as a failure in both denominators.
+- Report order: value_accuracy and null_accuracy of COMPREHENSION_FIELDS,
+  F1 of the three person lists, act_subtypes micro-F1, extras key F1,
+  HEADER_FIELDS accuracy, and global accuracy last.
 - Competitors: trivial baseline, rule baseline (prefill.py), 4-5 models via
   OpenRouter. A local model via Ollama is optional.
 

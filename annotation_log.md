@@ -300,7 +300,13 @@ the same listing, seed 43. Equivalent to a simple random sample of 50 of 59.
   prefill.py now refuses to overwrite an existing file, as sample.py
   already does for manifests. Commit annotation batches as soon as they
   validate.
-
+- **The rule baseline is anchored to the gold.** Every gold record started
+  as prefill.py output, and the regexes were fixed against the dev set
+  itself. Its dev score (94.2% core accuracy) is therefore an upper bound;
+  the holdout, where prefill.py was never tuned, gives its honest figure.
+  Scores are reported per field group, so header fields (where regex does
+  well) are not averaged with fields that need reading.
+  
 ## Schema candidates for v1.0 — resolved
 
 All eight entered schema v1.0 and are closed. The first five became fields

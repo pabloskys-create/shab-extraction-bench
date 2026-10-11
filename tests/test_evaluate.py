@@ -410,3 +410,97 @@ def test_missing_gold_file_aborts(tmp_path):
     (gold_dir / "0001.json").unlink()
     with pytest.raises(evaluate.EvaluationError, match="no gold file"):
         evaluate.evaluate_run(run_dir, gold_dir=gold_dir, iterations=10)
+
+
+# --- field groups, value accuracy and null accuracy ---
+
+
+def test_field_groups_partition_the_field_level_fields_exactly():
+    header, comprehension = evaluate.HEADER_FIELDS, evaluate.COMPREHENSION_FIELDS
+    assert len(header) == 19
+    assert len(set(header)) == len(header)
+    assert len(set(comprehension)) == len(comprehension)
+    assert not set(header) & set(comprehension)
+    assert set(header) | set(comprehension) == set(evaluate.FIELD_LEVEL_FIELDS)
+
+
+def _tally_for(pairs: list[tuple], field: str = "capital_new_chf") -> Counter:
+    tally: Counter = Counter()
+    for gold_value, pred_value in pairs:
+        gold = _gold(**{field: gold_value})
+        _, doc_tally = _score(gold, _parsed(_prediction_from(gold, **{field: pred_value})))
+        tally.update(doc_tally)
+    return tally
+
+
+def test_value_and_null_accuracy_by_hand():
+    # gold has a value: correct, omission, wrong   -> value accuracy 1/3
+    # gold is null:     correct_null, hallucination -> null accuracy 1/2
+    tally = _tally_for([(100, 100), (100, None), (100, 200), (None, None), (None, 5)])
+    fields = ("capital_new_chf",)
+    assert evaluate.value_accuracy(tally, "normalized", fields) == (1, 3)
+    assert evaluate.null_accuracy(tally, "normalized", fields) == (1, 2)
+    assert evaluate.field_accuracy(tally, "normalized", fields) == (2, 5)
+
+
+def test_no_output_counts_as_a_failure_in_both_denominators():
+    gold = _gold(capital_new_chf=100, act_date=None, act_subtypes=["fusion"], canton_new=None)
+    _, tally = _score(gold, _parsed(None, status="failed"))
+    assert evaluate.value_accuracy(tally, "normalized", ("capital_new_chf",)) == (0, 1)
+    assert evaluate.null_accuracy(tally, "normalized", ("capital_new_chf",)) == (0, 0)
+    assert evaluate.null_accuracy(tally, "normalized", ("act_date",)) == (0, 1)
+    assert evaluate.value_accuracy(tally, "normalized", ("act_subtypes",)) == (0, 1)
+    comprehension = evaluate.COMPREHENSION_FIELDS
+    value_num, value_den = evaluate.value_accuracy(tally, "normalized", comprehension)
+    null_num, null_den = evaluate.null_accuracy(tally, "normalized", comprehension)
+    assert (value_num, null_num) == (0, 0)
+    assert value_den + null_den == len(comprehension)
+
+
+def test_empty_gold_set_counts_as_null():
+    tally = _tally_for([([], []), ([], ["fusion"])], field="act_subtypes")
+    assert evaluate.null_accuracy(tally, "normalized", ("act_subtypes",)) == (1, 2)
+    assert evaluate.value_accuracy(tally, "normalized", ("act_subtypes",)) == (0, 0)
+
+
+def test_summary_reports_groups_and_per_field_value_and_null_accuracy_with_intervals():
+    tally = _tally_for([(100, 100), (100, None), (None, None)])
+    summary = evaluate.build_summary(tally, [tally], [], run_info={"run_id": "t"}, iterations=10, seed=1)
+    group = summary["groups"]["comprehension"]["normalized"]
+    assert group["value_accuracy"] == pytest.approx(1 / 2)
+    assert group["null_accuracy"] == pytest.approx(
+        _div_counts(evaluate.null_accuracy(tally, "normalized", evaluate.COMPREHENSION_FIELDS))
+    )
+    field = summary["fields"]["capital_new_chf"]
+    assert field["group"] == "comprehension"
+    assert field["normalized"]["value_accuracy"] == pytest.approx(1 / 2)
+    assert field["normalized"]["null_accuracy"] == pytest.approx(1.0)
+    for name in (
+        "group_accuracy_normalized:header",
+        "group_value_accuracy_normalized:comprehension",
+        "group_null_accuracy_normalized:comprehension",
+        "value_accuracy_normalized:capital_new_chf",
+        "null_accuracy_normalized:capital_new_chf",
+    ):
+        assert {"value", "ci_low", "ci_high"} <= set(summary["headline"][name])
+
+
+def _div_counts(ratio: tuple[int, int]) -> float:
+    return ratio[0] / ratio[1]
+
+
+def test_screen_output_follows_the_decided_order():
+    tally = _tally_for([(100, 100)])
+    summary = evaluate.build_summary(tally, [tally], [], run_info={"run_id": "t"}, iterations=10, seed=1)
+    lines = evaluate.format_headline(summary["headline"]).splitlines()
+    assert [line.split()[0] for line in lines] == [
+        "group_value_accuracy_normalized:comprehension",
+        "group_null_accuracy_normalized:comprehension",
+        "persons_found_f1:persons_added",
+        "persons_found_f1:persons_removed",
+        "persons_found_f1:persons_changed",
+        "act_subtypes_micro_f1",
+        "extras_key_f1",
+        "group_accuracy_normalized:header",
+        "core_accuracy_normalized",
+    ]
