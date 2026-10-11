@@ -101,15 +101,20 @@ CHANGELOG.md             schema version history
   given in the prompt.
 - Prompt: full detail (schema, vocabulary, annotation rules). Frozen and
   committed before the holdout is sampled.
-- Holdout: 25 documents from a new canton, annotated after the prompt
-  freeze. Reported separately; the gap to the 120 is the generalisation cost.
-- Structured output: at least one model run both with and without it.
+- Holdout: 50 documents from a new canton (AG), annotated after the prompt
+  freeze. Drawn in two batches from the same listing: 25 with seed 42
+  (0121-0145), then 25 of the remaining 34 with seed 43 (0146-0170).
+  The extension to 50 was decided on 2026-10-05, before any model was run
+  on the holdout (annotation_log.md). Reported separately; the gap to the
+  120 is the generalisation cost.
+- Structured output: deferred. Every run uses `structured_output: false`;
+  the with/without comparison is out of scope for now.
 - One pass per document at temperature 0. Three passes only if time allows.
 - Scalars reported both exact and normalised (whitespace, case).
 - Fields listed in a gold record's `uncertain` are excluded from scoring,
   field by field.
 - Competitors: trivial baseline, rule baseline (prefill.py), 4-5 models via
-  OpenRouter, 1 local model via Ollama.
+  OpenRouter. A local model via Ollama is optional.
 
 ## Conventions
 
