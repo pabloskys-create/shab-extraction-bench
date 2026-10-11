@@ -38,6 +38,7 @@ from __future__ import annotations
 import argparse
 import json
 import re
+import sys
 from pathlib import Path
 
 SCHEMA_VERSION = "1.0"
@@ -532,7 +533,7 @@ def prefill_file(path: str | Path) -> dict:
     return prefill_text(text, doc_id=path.stem)
 
 
-def main() -> None:
+def main(argv: list[str] | None = None) -> None:
     parser = argparse.ArgumentParser(
         description="Deterministic (regex-only) prefill of a SHAB gold-standard record."
     )
@@ -540,7 +541,20 @@ def main() -> None:
     parser.add_argument(
         "-o", "--output", type=Path, default=None, help="Write JSON here instead of stdout"
     )
-    args = parser.parse_args()
+    parser.add_argument(
+        "--force",
+        action="store_true",
+        help="Overwrite --output if it already exists (default: refuse)",
+    )
+    args = parser.parse_args(argv)
+
+    # An existing output is most likely a record already being annotated by
+    # hand; overwriting it silently destroys that work.
+    if args.output and args.output.exists() and not args.force:
+        sys.exit(
+            f"error: {args.output} already exists and may hold annotations; "
+            "nothing was written. Pass --force to overwrite it."
+        )
 
     record = prefill_file(args.raw_path)
     output_json = json.dumps(record, ensure_ascii=False, indent=2)

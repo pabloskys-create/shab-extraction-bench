@@ -17,12 +17,20 @@ parentheses:
   their own line; 0016 has them trailing on the same line as the name.
 """
 
+import json
 import re
 from pathlib import Path
 
 import pytest
 
-from src.prefill import _canton_from_plz, _derive_canton, _to_iso, prefill_file, prefill_text
+from src.prefill import (
+    _canton_from_plz,
+    _derive_canton,
+    _to_iso,
+    prefill_file,
+    prefill_text,
+)
+from src.prefill import main as prefill_main
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 DATA_RAW = REPO_ROOT / "data" / "raw"
@@ -550,3 +558,35 @@ def test_body_name_missing_seat_clause_yields_no_name():
     assert record["company_name_base"] is None
     assert record["status_suffix"] is None
     assert record["legal_form"] == "AG"
+
+
+# --- CLI: never overwrite an existing output by accident ---
+
+ANNOTATED = '{"annotated": true}\n'
+
+
+def _raw_file(tmp_path):
+    raw = tmp_path / "0042.txt"
+    raw.write_text("Mutation Foo AG, Bern\n", encoding="utf-8")
+    return raw
+
+
+def test_main_writes_output_when_it_does_not_exist(tmp_path):
+    out = tmp_path / "0042.json"
+    prefill_main([str(_raw_file(tmp_path)), "-o", str(out)])
+    assert json.loads(out.read_text(encoding="utf-8"))["doc_id"] == "0042"
+
+
+def test_main_refuses_to_overwrite_an_existing_output(tmp_path):
+    out = tmp_path / "0042.json"
+    out.write_text(ANNOTATED, encoding="utf-8")
+    with pytest.raises(SystemExit, match="already exists.*--force"):
+        prefill_main([str(_raw_file(tmp_path)), "-o", str(out)])
+    assert out.read_text(encoding="utf-8") == ANNOTATED
+
+
+def test_main_overwrites_an_existing_output_with_force(tmp_path):
+    out = tmp_path / "0042.json"
+    out.write_text(ANNOTATED, encoding="utf-8")
+    prefill_main([str(_raw_file(tmp_path)), "-o", str(out), "--force"])
+    assert json.loads(out.read_text(encoding="utf-8"))["doc_id"] == "0042"
