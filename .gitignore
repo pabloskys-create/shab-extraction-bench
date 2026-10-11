@@ -19,6 +19,7 @@ venv/
 # --- scratch runs: throwaway debugging tirades, never committed ---
 # (a run_id under runs/ that starts with "scratch/" — see src/run_eval.py)
 runs/scratch/
+results/scratch/
 
 # --- derived/regenerable from runs/*/raw/ (see src/parse_responses.py) ---
 runs/*/parsed/
