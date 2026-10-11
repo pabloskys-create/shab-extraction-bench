@@ -152,26 +152,34 @@ def git_commit_hash(repo_root: Path = REPO_ROOT) -> str:
     return _run_git(["rev-parse", "HEAD"], repo_root).strip()
 
 
-# Where the harness writes its own outputs. Untracked files here are the
-# runs and results themselves, not uncommitted code, so they must not make
-# every run after the first one look dirty.
+# Where the harness writes its own outputs. Changes here — new runs, or
+# re-evaluating a committed run, which rewrites tracked results/ files —
+# are the harness's own products, not uncommitted code, so they must not
+# mark a run or an evaluation as dirty.
 HARNESS_OUTPUT_DIRS = ("runs/", "results/")
 
 
 def is_dirty_status(porcelain_z: str) -> bool:
     """Whether `git status --porcelain -z` output means the code is dirty.
 
-    Dirty: any change to a tracked file, and any untracked file outside
-    HARNESS_OUTPUT_DIRS (a new, uncommitted .py counts). -z keeps paths
-    unquoted; a rename's extra NUL-separated field is never reached,
-    because a rename is a tracked change and returns True first.
+    Any change inside HARNESS_OUTPUT_DIRS, tracked or untracked, is
+    ignored; any change outside them counts (a new, uncommitted .py
+    included). -z keeps paths unquoted. A rename or copy carries a second,
+    NUL-separated path (the source); it is dirty if either path lies
+    outside the output directories.
     """
-    for entry in porcelain_z.split("\0"):
+    fields = porcelain_z.split("\0")
+    i = 0
+    while i < len(fields):
+        entry = fields[i]
+        i += 1
         if not entry:
             continue
-        if not entry.startswith("?? "):
-            return True
-        if not entry[3:].startswith(HARNESS_OUTPUT_DIRS):
+        status, paths = entry[:2], [entry[3:]]
+        if "R" in status or "C" in status:
+            paths.append(fields[i])
+            i += 1
+        if any(not path.startswith(HARNESS_OUTPUT_DIRS) for path in paths):
             return True
     return False
 

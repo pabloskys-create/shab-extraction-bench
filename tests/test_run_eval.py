@@ -499,13 +499,49 @@ def test_git_is_dirty_with_a_modified_tracked_file(clean_repo):
     assert run_eval.git_is_dirty(clean_repo) is True
 
 
-def test_git_is_dirty_with_a_modified_tracked_file_inside_runs(clean_repo):
-    (clean_repo / "runs").mkdir()
-    (clean_repo / "runs" / "raw.json").write_text("{}", encoding="utf-8")
-    _git(clean_repo, "add", ".")
-    _git(clean_repo, "commit", "-q", "-m", "add run")
-    (clean_repo / "runs" / "raw.json").write_text('{"edited": true}', encoding="utf-8")
+def _commit_then_modify(repo: Path, path: str) -> None:
+    (repo / path).parent.mkdir(parents=True, exist_ok=True)
+    (repo / path).write_text("{}", encoding="utf-8")
+    _git(repo, "add", ".")
+    _git(repo, "commit", "-q", "-m", f"add {path}")
+    (repo / path).write_text('{"edited": true}', encoding="utf-8")
+
+
+def test_git_is_clean_with_a_modified_tracked_file_inside_runs(clean_repo):
+    _commit_then_modify(clean_repo, "runs/m1/raw/0001.json")
+    assert run_eval.git_is_dirty(clean_repo) is False
+
+
+def test_git_is_clean_with_a_modified_tracked_file_inside_results(clean_repo):
+    # Re-evaluating a committed run rewrites its tracked summary.
+    _commit_then_modify(clean_repo, "results/m1/summary.json")
+    assert run_eval.git_is_dirty(clean_repo) is False
+
+
+def test_git_is_clean_with_a_deleted_tracked_file_inside_results(clean_repo):
+    _commit_then_modify(clean_repo, "results/m1/fields.csv")
+    (clean_repo / "results" / "m1" / "fields.csv").unlink()
+    assert run_eval.git_is_dirty(clean_repo) is False
+
+
+def test_git_is_dirty_when_outputs_change_alongside_code(clean_repo):
+    _commit_then_modify(clean_repo, "results/m1/summary.json")
+    (clean_repo / "src" / "tracked.py").write_text("x = 2\n", encoding="utf-8")
     assert run_eval.git_is_dirty(clean_repo) is True
+
+
+@pytest.mark.parametrize(
+    ("porcelain", "dirty"),
+    [
+        ("R  results/new.json\0results/old.json\0", False),
+        ("R  results/new.json\0src/old.py\0", True),
+        ("R  src/new.py\0results/old.json\0", True),
+        (" M runs/a.json\0?? results/b.json\0", False),
+        ("", False),
+    ],
+)
+def test_is_dirty_status_checks_both_paths_of_a_rename(porcelain, dirty):
+    assert run_eval.is_dirty_status(porcelain) is dirty
 
 
 def test_evaluator_and_baselines_share_the_same_dirty_check():
