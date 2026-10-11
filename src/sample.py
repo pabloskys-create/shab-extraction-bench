@@ -456,7 +456,7 @@ def build_manifests(
     return full_manifest, sample_manifest
 
 
-def main() -> None:
+def main(argv: list[str] | None = None) -> None:
     parser = argparse.ArgumentParser(
         description="Sample publications from saved SHAB search-results HTML pages."
     )
@@ -484,7 +484,19 @@ def main() -> None:
         default=DEFAULT_EXCLUSIONS,
         help="JSON listing the already-annotated publications to exclude",
     )
-    args = parser.parse_args()
+    parser.add_argument(
+        "--out-dir",
+        type=Path,
+        default=None,
+        help="Directory for the two manifests (default: the first input HTML's directory)",
+    )
+    args = parser.parse_args(argv)
+
+    # A committed manifest is the record of an earlier draw; never replace it.
+    out_dir = args.out_dir or args.html_paths[0].parent
+    for name in ("manifest_full.json", "manifest_sample.json"):
+        if (out_dir / name).exists():
+            sys.exit(f"error: {out_dir / name} already exists; refusing to overwrite a manifest")
 
     try:
         listings = load_listings(args.html_paths)
@@ -512,7 +524,7 @@ def main() -> None:
     print(f"eligible population: {metadata['eligible_population_size']}")
     print(f"sampled: {metadata['sample_size']} (seed {metadata['seed']})")
 
-    out_dir = args.html_paths[0].parent
+    out_dir.mkdir(parents=True, exist_ok=True)
     (out_dir / "manifest_full.json").write_text(
         json.dumps(full_manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )

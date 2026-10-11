@@ -31,6 +31,7 @@ from src.sample import (
     load_exclusions,
     load_listing,
     load_listings,
+    main,
     parse_html,
     parse_listing_filename,
     select_sample_positions,
@@ -377,3 +378,26 @@ def test_build_manifests_sample_records_carry_their_origin():
 def test_build_manifests_aborts_on_an_untrustworthy_listing():
     with pytest.raises(FrameError):
         build_manifests([LISTING_AA, LISTING_CC], n=2, seed=42, start_id=29, exclusions_path=EXCLUSIONS)
+
+
+# --- CLI output location ---
+
+
+def _main_args(out_dir: Path) -> list[str]:
+    return [str(LISTING_AA), "--n", "2", "--exclusions", str(EXCLUSIONS), "--out-dir", str(out_dir)]
+
+
+def test_main_writes_both_manifests_to_out_dir(tmp_path):
+    out_dir = tmp_path / "batch2"
+    main(_main_args(out_dir))
+    assert (out_dir / "manifest_full.json").is_file()
+    assert (out_dir / "manifest_sample.json").is_file()
+
+
+@pytest.mark.parametrize("existing", ["manifest_full.json", "manifest_sample.json"])
+def test_main_refuses_to_overwrite_an_existing_manifest(tmp_path, existing):
+    (tmp_path / existing).write_text("committed", encoding="utf-8")
+    with pytest.raises(SystemExit, match="refusing to overwrite"):
+        main(_main_args(tmp_path))
+    assert (tmp_path / existing).read_text(encoding="utf-8") == "committed"
+    assert sorted(p.name for p in tmp_path.iterdir()) == [existing]
