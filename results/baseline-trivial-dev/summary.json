@@ -8,8 +8,8 @@
     "n_docs": 120,
     "gold_dir": "data/exploratory",
     "gold_sha256": "7b3b57faa8ef69051e2ef09d8cf286592de0e2a6963f4b0a3e3142fec71d6b9f",
-    "evaluator_git_commit": "39936f14267d5143604e5e67f6957aaedf9c02c5",
-    "evaluator_git_dirty": true
+    "evaluator_git_commit": "121335123ce3a4547c22b321a8516c8a56102b37",
+    "evaluator_git_dirty": false
   },
   "bootstrap": {
     "iterations": 10000,

@@ -3,9 +3,9 @@
   "split": "dev",
   "model_requested": "baseline-rules",
   "backend": "baseline",
-  "timestamp": "2026-10-11T20:44:30.879473+00:00",
-  "git_commit": "39936f14267d5143604e5e67f6957aaedf9c02c5",
-  "git_dirty": true,
+  "timestamp": "2026-10-11T21:21:53.989421+00:00",
+  "git_commit": "121335123ce3a4547c22b321a8516c8a56102b37",
+  "git_dirty": false,
   "status": "ok",
   "error": null,
   "response_text": "{\"act_type\": \"mutation\", \"act_subtypes\": [], \"company_name_full\": \"Stiftung Vinetum\", \"company_name_base\": \"Stiftung Vinetum\", \"status_suffix\": null, \"alternative_names\": [\"Fondation Vinetum\"], \"company_name_new\": null, \"company_name_previous\": null, \"uid\": \"CHE-100.641.323\", \"legal_form\": \"Stiftung\", \"seat_municipality\": \"Biel/Bienne\", \"seat_canton\": \"BE\", \"address_care_of\": \"Geocent AG\", \"address_street\": \"Sydebusweg 9\", \"address_postcode\": \"2500\", \"address_municipality\": \"Biel/Bienne 3\", \"act_date\": null, \"tagesregister_nr\": \"14907\", \"tagesregister_date\": \"2026-08-05\", \"prior_publication_shab_nr\": 56, \"prior_publication_date\": \"2015-03-23\", \"prior_publication_id\": \"2057397\", \"authority\": \"Handelsregisteramt des Kantons Bern\", \"canton_previous\": null, \"canton_new\": null, \"capital_new_chf\": null, \"capital_previous_chf\": null, \"domicile_new\": null, \"domicile_previous\": null, \"persons_added\": [], \"persons_removed\": [], \"persons_changed\": [], \"extras\": {}}"
