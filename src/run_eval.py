@@ -63,8 +63,10 @@ STRUCTURED_OUTPUT = False
 # included (CLAUDE.md, "Benchmark design (decided)"). Reasoning models
 # spend hidden tokens before answering: at 4096 the pilots of
 # mistral-large-4-0 and claude-haiku-5.5 ran out (finish_reason "length")
-# with an empty or truncated answer. 16384 leaves room for both.
-DEFAULT_MAX_TOKENS = 16384
+# with an empty or truncated answer. At 16384, mistral-large-4-0 still
+# reached 13,578 output tokens (10,869 of them reasoning) on one notice,
+# too close to the cap. 32768 leaves room for both.
+DEFAULT_MAX_TOKENS = 32768
 
 BACKEND_BASE_URLS = {
     "openrouter": "https://openrouter.ai/api/v1",

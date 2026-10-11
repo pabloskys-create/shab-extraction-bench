@@ -427,11 +427,11 @@ def _run_one(tmp_path, monkeypatch, queue: list, extra: list[str] | None = None)
     return client, record, run_config
 
 
-def test_default_max_tokens_is_16384_and_recorded(tmp_path, monkeypatch):
+def test_default_max_tokens_is_32768_and_recorded(tmp_path, monkeypatch):
     client, record, run_config = _run_one(tmp_path, monkeypatch, [_make_fake_completion()])
-    assert client.completions.calls[0]["max_tokens"] == 16384
-    assert record["params"]["max_tokens"] == 16384
-    assert run_config["params"]["max_tokens"] == 16384
+    assert client.completions.calls[0]["max_tokens"] == 32768
+    assert record["params"]["max_tokens"] == 32768
+    assert run_config["params"]["max_tokens"] == 32768
 
 
 def test_default_openrouter_timeout_is_600_seconds():
@@ -482,7 +482,7 @@ def test_reasoning_tokens_is_null_when_not_reported():
 
 
 def test_empty_answer_has_zero_response_chars():
-    usage = {"prompt_tokens": 10, "completion_tokens": 16384, "total_tokens": 16394}
+    usage = {"prompt_tokens": 10, "completion_tokens": 32768, "total_tokens": 32778}
     assert run_eval.extract_result_fields(_sdk_completion(usage, content=None))["response_chars"] == 0
     assert run_eval.extract_result_fields(_sdk_completion(usage, content=""))["response_chars"] == 0
 
