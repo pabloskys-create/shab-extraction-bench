@@ -1,0 +1,55 @@
+{
+  "doc_id": "0025",
+  "split": "dev",
+  "model_requested": "google/gemini-3.5-flash-lite",
+  "backend": "openrouter",
+  "timestamp": "2026-10-12T01:05:06.383788+00:00",
+  "latency_ms": 2031.0000000172295,
+  "params": {
+    "temperature": 0,
+    "max_tokens": 32768,
+    "passes": 1,
+    "structured_output": false
+  },
+  "prompt_sha256": "964dec417be3b1c664627b2505ba64f3dc8c0249bfb1cb9430e82c9850e0d20c",
+  "git_commit": "58451200af2804956b5755732cace8478cfc1d6f",
+  "git_dirty": false,
+  "attempts": 1,
+  "status": "ok",
+  "error": null,
+  "model_served": "google/gemini-3.5-flash-lite",
+  "provider_served": "Google",
+  "usage": {
+    "completion_tokens": 721,
+    "prompt_tokens": 5489,
+    "total_tokens": 6210,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.0034492,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.0034492,
+      "upstream_inference_prompt_cost": 0.0016467,
+      "upstream_inference_completions_cost": 0.0018025
+    }
+  },
+  "reasoning_tokens": 0,
+  "cost_usd": 0.0034492,
+  "finish_reason": "stop",
+  "response_chars": 2186,
+  "response_text": "{\n  \"act_type\": \"neueintragung\",\n  \"act_subtypes\": [],\n  \"company_name_full\": \"Baker Coiffeur GmbH\",\n  \"company_name_base\": \"Baker Coiffeur GmbH\",\n  \"status_suffix\": null,\n  \"alternative_names\": [],\n  \"company_name_new\": null,\n  \"company_name_previous\": null,\n  \"uid\": \"CHE-393.678.326\",\n  \"legal_form\": \"GmbH\",\n  \"seat_municipality\": \"Bern\",\n  \"seat_canton\": \"BE\",\n  \"address_care_of\": null,\n  \"address_street\": \"Kramgasse 78\",\n  \"address_postcode\": \"3011\",\n  \"address_municipality\": \"Bern\",\n  \"act_date\": \"2026-08-03\",\n  \"tagesregister_nr\": \"14840\",\n  \"tagesregister_date\": \"2026-08-05\",\n  \"prior_publication_shab_nr\": null,\n  \"prior_publication_date\": null,\n  \"prior_publication_id\": null,\n  \"authority\": \"Handelsregisteramt des Kantons Bern\",\n  \"canton_previous\": null,\n  \"canton_new\": null,\n  \"capital_new_chf\": 20000.0,\n  \"capital_previous_chf\": null,\n  \"domicile_new\": null,\n  \"domicile_previous\": null,\n  \"persons_added\": [\n    {\n      \"name\": \"Daud, Mohammed\",\n      \"nationality\": \"syrisch\",\n      \"heimatort\": null,\n      \"domicile\": \"Kehrsatz\",\n      \"role\": \"Gesellschafter und Geschäftsführer\",\n      \"signature\": \"Einzelunterschrift\",\n      \"uid\": null,\n      \"stammanteile\": \"200\"\n    }\n  ],\n  \"persons_removed\": [],\n  \"persons_changed\": [],\n  \"extras\": {\n    \"zweck\": \"Die Gesellschaft bezweckt den Betrieb von Coiffeur- und Barbershops sowie die Erbringung von Dienstleistungen in den Bereichen Haar-, Bart- und Schönheitspflege. Sie kann Produkte der Beauty-, Kosmetik- und Pflegebranche sowie verwandte Artikel handeln, vertreiben und verkaufen. Die Gesellschaft kann Zweigniederlassungen und Tochtergesellschaften im In- und Ausland errichten und sich an anderen Unternehmen im In- und Ausland beteiligen sowie alle Geschäfte tätigen, die direkt oder indirekt mit ihrem Zweck in Zusammenhang stehen. Die Gesellschaft kann im In- und Ausland Grundeigentum erwerben, belasten, veräussern und verwalten. Sie kann auch Finanzierungen für eigene oder fremde Rechnung vornehmen sowie Garantien und Bürgschaften für Tochtergesellschaften und Dritte eingehen.\",\n    \"nominal_value_chf\": 100.0,\n    \"revision\": \"opting-out\",\n    \"mitteilungen\": \"per Brief oder E-Mail\"\n  }\n}"
+}

@@ -1,0 +1,55 @@
+{
+  "doc_id": "0051",
+  "split": "dev",
+  "model_requested": "mistralai/mistral-large-4-0",
+  "backend": "openrouter",
+  "timestamp": "2026-10-12T00:02:57.117527+00:00",
+  "latency_ms": 51922.00000002049,
+  "params": {
+    "temperature": 0,
+    "max_tokens": 32768,
+    "passes": 1,
+    "structured_output": false
+  },
+  "prompt_sha256": "964dec417be3b1c664627b2505ba64f3dc8c0249bfb1cb9430e82c9850e0d20c",
+  "git_commit": "58451200af2804956b5755732cace8478cfc1d6f",
+  "git_dirty": false,
+  "attempts": 1,
+  "status": "ok",
+  "error": null,
+  "model_served": "mistralai/mistral-large-4-0",
+  "provider_served": "Mistral",
+  "usage": {
+    "completion_tokens": 6659,
+    "prompt_tokens": 4984,
+    "total_tokens": 11643,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 5482,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 4076,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.01482007,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.01482007,
+      "upstream_inference_prompt_cost": 0.00090276,
+      "upstream_inference_completions_cost": 0.01391731
+    }
+  },
+  "reasoning_tokens": 5482,
+  "cost_usd": 0.01482007,
+  "finish_reason": "stop",
+  "response_chars": 2205,
+  "response_text": "{\n  \"act_type\": \"mutation\",\n  \"act_subtypes\": [\"organaenderung\"],\n  \"company_name_full\": \"Studio B 47 AG\",\n  \"company_name_base\": \"Studio B 47 AG\",\n  \"status_suffix\": null,\n  \"alternative_names\": [],\n  \"company_name_new\": null,\n  \"company_name_previous\": null,\n  \"uid\": \"CHE-103.214.130\",\n  \"legal_form\": \"AG\",\n  \"seat_municipality\": \"Horw\",\n  \"seat_canton\": \"LU\",\n  \"address_care_of\": \"Raphael Beck\",\n  \"address_street\": \"Ringstrasse 17\",\n  \"address_postcode\": \"6048\",\n  \"address_municipality\": \"Horw\",\n  \"act_date\": null,\n  \"tagesregister_nr\": \"8738\",\n  \"tagesregister_date\": \"2026-08-20\",\n  \"prior_publication_shab_nr\": 101,\n  \"prior_publication_date\": \"2024-05-28\",\n  \"prior_publication_id\": \"1006041255\",\n  \"authority\": \"Handelsregisteramt des Kantons Luzern\",\n  \"canton_previous\": null,\n  \"canton_new\": null,\n  \"capital_new_chf\": null,\n  \"capital_previous_chf\": null,\n  \"domicile_new\": null,\n  \"domicile_previous\": null,\n  \"persons_added\": [],\n  \"persons_removed\": [],\n  \"persons_changed\": [\n    {\n      \"name_new\": \"Beck, Raphael Emanuel\",\n      \"name_previous\": null,\n      \"domicile_new\": \"Horw\",\n      \"domicile_previous\": null,\n      \"role_new\": \"Vizepräsident des Verwaltungsrates\",\n      \"role_previous\": \"Mitglied des Verwaltungsrates\",\n      \"signature_new\": \"Einzelunterschrift\",\n      \"signature_previous\": \"Kollektivunterschrift zu zweien\",\n      \"nationality_new\": null,\n      \"nationality_previous\": null,\n      \"heimatort_new\": \"Rohrbachgraben\",\n      \"heimatort_previous\": null,\n      \"stammanteile_new\": null,\n      \"stammanteile_previous\": null\n    },\n    {\n      \"name_new\": \"Häller Beltran, Jeanette Caroline\",\n      \"name_previous\": \"Häller, Jeanette Caroline\",\n      \"domicile_new\": \"Ruswil\",\n      \"domicile_previous\": \"Menziken\",\n      \"role_new\": \"Mitglied und Sekretärin des Verwaltungsrates\",\n      \"role_previous\": \"Mitglied des Verwaltungsrates\",\n      \"signature_new\": \"Kollektivunterschrift zu zweien\",\n      \"signature_previous\": null,\n      \"nationality_new\": null,\n      \"nationality_previous\": null,\n      \"heimatort_new\": \"Schenkon\",\n      \"heimatort_previous\": null,\n      \"stammanteile_new\": null,\n      \"stammanteile_previous\": null\n    }\n  ],\n  \"extras\": {}\n}"
+}

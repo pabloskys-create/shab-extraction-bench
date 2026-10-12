@@ -1,0 +1,55 @@
+{
+  "doc_id": "0017",
+  "split": "dev",
+  "model_requested": "anthropic/claude-haiku-5.5",
+  "backend": "openrouter",
+  "timestamp": "2026-10-12T00:52:38.294299+00:00",
+  "latency_ms": 3344.000000040978,
+  "params": {
+    "temperature": 0,
+    "max_tokens": 32768,
+    "passes": 1,
+    "structured_output": false
+  },
+  "prompt_sha256": "964dec417be3b1c664627b2505ba64f3dc8c0249bfb1cb9430e82c9850e0d20c",
+  "git_commit": "58451200af2804956b5755732cace8478cfc1d6f",
+  "git_dirty": false,
+  "attempts": 1,
+  "status": "ok",
+  "error": null,
+  "model_served": "anthropic/claude-haiku-5.5",
+  "provider_served": "Claude Platform on AWS",
+  "usage": {
+    "completion_tokens": 800,
+    "prompt_tokens": 7167,
+    "total_tokens": 7967,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 374,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.0011167,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.0011167,
+      "upstream_inference_prompt_cost": 0.0007167,
+      "upstream_inference_completions_cost": 0.0004
+    }
+  },
+  "reasoning_tokens": 374,
+  "cost_usd": 0.0011167,
+  "finish_reason": "stop",
+  "response_chars": 918,
+  "response_text": "{\"act_type\":\"mutation\",\"act_subtypes\":[],\"company_name_full\":\"acoalex GmbH\",\"company_name_base\":\"acoalex GmbH\",\"status_suffix\":null,\"alternative_names\":[],\"company_name_new\":null,\"company_name_previous\":null,\"uid\":\"CHE-419.218.158\",\"legal_form\":\"GmbH\",\"seat_municipality\":\"Brügg\",\"seat_canton\":\"BE\",\"address_care_of\":null,\"address_street\":\"Orpundstrasse 15a\",\"address_postcode\":\"2555\",\"address_municipality\":\"Brügg BE\",\"act_date\":null,\"tagesregister_nr\":\"14852\",\"tagesregister_date\":\"2026-08-05\",\"prior_publication_shab_nr\":152,\"prior_publication_date\":\"2022-08-09\",\"prior_publication_id\":1005537435,\"authority\":\"Handelsregisteramt des Kantons Bern\",\"canton_previous\":null,\"canton_new\":null,\"capital_new_chf\":null,\"capital_previous_chf\":null,\"domicile_new\":\"Orpundstrasse 15a, 2555 Brügg BE\",\"domicile_previous\":\"Pfeidstrasse 20, 2555 Brügg BE\",\"persons_added\":[],\"persons_removed\":[],\"persons_changed\":[],\"extras\":{}}"
+}

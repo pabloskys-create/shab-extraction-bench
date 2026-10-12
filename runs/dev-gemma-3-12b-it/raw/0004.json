@@ -1,0 +1,55 @@
+{
+  "doc_id": "0004",
+  "split": "dev",
+  "model_requested": "google/gemma-3-12b-it",
+  "backend": "openrouter",
+  "timestamp": "2026-10-12T01:09:02.830987+00:00",
+  "latency_ms": 8077.999999979511,
+  "params": {
+    "temperature": 0,
+    "max_tokens": 32768,
+    "passes": 1,
+    "structured_output": false
+  },
+  "prompt_sha256": "964dec417be3b1c664627b2505ba64f3dc8c0249bfb1cb9430e82c9850e0d20c",
+  "git_commit": "58451200af2804956b5755732cace8478cfc1d6f",
+  "git_dirty": false,
+  "attempts": 1,
+  "status": "ok",
+  "error": null,
+  "model_served": "google/gemma-3-12b-it",
+  "provider_served": "NextBit",
+  "usage": {
+    "completion_tokens": 618,
+    "prompt_tokens": 5483,
+    "total_tokens": 6101,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00036685,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00036685,
+      "upstream_inference_prompt_cost": 0.00027415,
+      "upstream_inference_completions_cost": 9.27e-05
+    }
+  },
+  "reasoning_tokens": 0,
+  "cost_usd": 0.00036685,
+  "finish_reason": "stop",
+  "response_chars": 1597,
+  "response_text": "\n\n```json\n{\n  \"act_type\": \"mutation\",\n  \"act_subtypes\": [\n    \"organaenderung\"\n  ],\n  \"company_name_full\": \"Asemblis GmbH\",\n  \"company_name_base\": \"Asemblis GmbH\",\n  \"status_suffix\": null,\n  \"alternative_names\": [\n    \"Asemblis LLC\"\n  ],\n  \"company_name_new\": null,\n  \"company_name_previous\": null,\n  \"uid\": \"CHE-185.214.900\",\n  \"legal_form\": \"GmbH\",\n  \"seat_municipality\": \"Bern\",\n  \"seat_canton\": \"BE\",\n  \"address_care_of\": null,\n  \"address_street\": \"Weyermannsstrasse 36\",\n  \"address_postcode\": \"3008\",\n  \"address_municipality\": \"Bern\",\n  \"act_date\": null,\n  \"tagesregister_nr\": \"14856\",\n  \"tagesregister_date\": \"2026-08-05\",\n  \"prior_publication_shab_nr\": 216,\n  \"prior_publication_date\": \"2025-11-07\",\n  \"prior_publication_id\": null,\n  \"authority\": \"Handelsregisteramt des Kantons Bern\",\n  \"canton_previous\": null,\n  \"canton_new\": null,\n  \"capital_new_chf\": null,\n  \"capital_previous_chf\": null,\n  \"domicile_new\": null,\n  \"domicile_previous\": null,\n  \"persons_added\": [\n    {\n      \"name\": \"Souza Valeriano, Caio Felipe\",\n      \"nationality\": \"brasilianischer\",\n      \"heimatort\": null,\n      \"domicile\": \"Bern\",\n      \"role\": \"Gesellschafter und Geschäftsführer\",\n      \"signature\": null,\n      \"uid\": null,\n      \"stammanteile\": 170\n    }\n  ],\n  \"persons_removed\": [\n    {\n      \"name\": \"Stienne, Leoni\",\n      \"nationality\": \"französisch\",\n      \"heimatort\": \"Chavannes-près-Renens\",\n      \"domicile\": null,\n      \"role\": \"Gesellschafterin und Geschäftsführerin\",\n      \"signature\": null,\n      \"uid\": null,\n      \"stammanteile\": 30\n    }\n  ],\n  \"persons_changed\": [],\n  \"extras\": {}\n}\n```"
+}

@@ -1,0 +1,55 @@
+{
+  "doc_id": "0045",
+  "split": "dev",
+  "model_requested": "mistralai/mistral-large-4-0",
+  "backend": "openrouter",
+  "timestamp": "2026-10-11T23:58:50.639484+00:00",
+  "latency_ms": 47734.99999998603,
+  "params": {
+    "temperature": 0,
+    "max_tokens": 32768,
+    "passes": 1,
+    "structured_output": false
+  },
+  "prompt_sha256": "964dec417be3b1c664627b2505ba64f3dc8c0249bfb1cb9430e82c9850e0d20c",
+  "git_commit": "58451200af2804956b5755732cace8478cfc1d6f",
+  "git_dirty": false,
+  "attempts": 1,
+  "status": "ok",
+  "error": null,
+  "model_served": "mistralai/mistral-large-4-0",
+  "provider_served": "Mistral",
+  "usage": {
+    "completion_tokens": 4266,
+    "prompt_tokens": 4879,
+    "total_tokens": 9145,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 3306,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 4076,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.0097473,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.0097473,
+      "upstream_inference_prompt_cost": 0.00083136,
+      "upstream_inference_completions_cost": 0.00891594
+    }
+  },
+  "reasoning_tokens": 3306,
+  "cost_usd": 0.0097473,
+  "finish_reason": "stop",
+  "response_chars": 1389,
+  "response_text": "{\n  \"act_type\": \"neueintragung\",\n  \"act_subtypes\": [],\n  \"company_name_full\": \"Physio Bantiger Inhaber Stevo Pavlovic\",\n  \"company_name_base\": \"Physio Bantiger Inhaber Stevo Pavlovic\",\n  \"status_suffix\": null,\n  \"alternative_names\": [],\n  \"company_name_new\": null,\n  \"company_name_previous\": null,\n  \"uid\": \"CHE-371.151.482\",\n  \"legal_form\": \"Einzelunternehmen\",\n  \"seat_municipality\": \"Ostermundigen\",\n  \"seat_canton\": \"BE\",\n  \"address_care_of\": null,\n  \"address_street\": \"Paracelsusstrasse 2\",\n  \"address_postcode\": \"3072\",\n  \"address_municipality\": \"Ostermundigen\",\n  \"act_date\": null,\n  \"tagesregister_nr\": \"14847\",\n  \"tagesregister_date\": \"2026-08-05\",\n  \"prior_publication_shab_nr\": null,\n  \"prior_publication_date\": null,\n  \"prior_publication_id\": null,\n  \"authority\": \"Handelsregisteramt des Kantons Bern\",\n  \"canton_previous\": null,\n  \"canton_new\": null,\n  \"capital_new_chf\": null,\n  \"capital_previous_chf\": null,\n  \"domicile_new\": null,\n  \"domicile_previous\": null,\n  \"persons_added\": [\n    {\n      \"name\": \"Pavlovic, Stevo\",\n      \"nationality\": \"montenegrinisch\",\n      \"heimatort\": null,\n      \"domicile\": \"Ostermundigen\",\n      \"role\": \"Inhaber\",\n      \"signature\": \"Einzelunterschrift\",\n      \"uid\": null,\n      \"stammanteile\": null\n    }\n  ],\n  \"persons_removed\": [],\n  \"persons_changed\": [],\n  \"extras\": {\n    \"zweck\": \"Physiotherapie, Rehabilitation und Prävention\"\n  }\n}"
+}

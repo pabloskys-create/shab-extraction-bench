@@ -1,0 +1,55 @@
+{
+  "doc_id": "0046",
+  "split": "dev",
+  "model_requested": "google/gemini-3.5-flash-lite",
+  "backend": "openrouter",
+  "timestamp": "2026-10-12T01:05:50.951195+00:00",
+  "latency_ms": 2202.999999979511,
+  "params": {
+    "temperature": 0,
+    "max_tokens": 32768,
+    "passes": 1,
+    "structured_output": false
+  },
+  "prompt_sha256": "964dec417be3b1c664627b2505ba64f3dc8c0249bfb1cb9430e82c9850e0d20c",
+  "git_commit": "58451200af2804956b5755732cace8478cfc1d6f",
+  "git_dirty": false,
+  "attempts": 1,
+  "status": "ok",
+  "error": null,
+  "model_served": "google/gemini-3.5-flash-lite",
+  "provider_served": "Google",
+  "usage": {
+    "completion_tokens": 809,
+    "prompt_tokens": 5558,
+    "total_tokens": 6367,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.0036899,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.0036899,
+      "upstream_inference_prompt_cost": 0.0016674,
+      "upstream_inference_completions_cost": 0.0020225
+    }
+  },
+  "reasoning_tokens": 0,
+  "cost_usd": 0.0036899,
+  "finish_reason": "stop",
+  "response_chars": 2628,
+  "response_text": "```json\n{\n  \"act_type\": \"neueintragung\",\n  \"act_subtypes\": [],\n  \"company_name_full\": \"Veloxon Engineering GmbH\",\n  \"company_name_base\": \"Veloxon Engineering GmbH\",\n  \"status_suffix\": null,\n  \"alternative_names\": [],\n  \"company_name_new\": null,\n  \"company_name_previous\": null,\n  \"uid\": \"CHE-357.003.457\",\n  \"legal_form\": \"GmbH\",\n  \"seat_municipality\": \"Buchrain\",\n  \"seat_canton\": \"LU\",\n  \"address_care_of\": null,\n  \"address_street\": \"Unterdorfweg 2\",\n  \"address_postcode\": \"6033\",\n  \"address_municipality\": \"Buchrain\",\n  \"act_date\": \"2026-07-16\",\n  \"tagesregister_nr\": \"8684\",\n  \"tagesregister_date\": \"2026-08-20\",\n  \"prior_publication_shab_nr\": null,\n  \"prior_publication_date\": null,\n  \"prior_publication_id\": null,\n  \"authority\": \"Handelsregisteramt des Kantons Luzern\",\n  \"canton_previous\": null,\n  \"canton_new\": null,\n  \"capital_new_chf\": 20000.0,\n  \"capital_previous_chf\": null,\n  \"domicile_new\": null,\n  \"domicile_previous\": null,\n  \"persons_added\": [\n    {\n      \"name\": \"Rüegg, Patrick Joshua\",\n      \"nationality\": null,\n      \"heimatort\": \"Bauma\",\n      \"domicile\": \"Nottwil\",\n      \"role\": \"Gesellschafter und Geschäftsführer\",\n      \"signature\": \"Einzelunterschrift\",\n      \"uid\": null,\n      \"stammanteile\": 200\n    }\n  ],\n  \"persons_removed\": [],\n  \"persons_changed\": [],\n  \"extras\": {\n    \"zweck\": \"Die Gesellschaft bezweckt die Erbringung von Dienstleistungen in den Bereichen Ingenieurwesen und Softwareentwicklung, insbesondere die Entwicklung, Konstruktion und Optimierung mechanischer und technischer Systeme, die Erstellung von CAD-Konstruktionen, Struktur- und Festigkeitsanalysen, Fluidsimulationen sowie Prototypen, die additive Fertigung (3D-Druck), die Entwicklung, den Betrieb und den Vertrieb von Software, Web- und Mobile-Applikationen, digitalen Plattformen und Automatisierungslösungen, die Integration von Hardware, Firmware und Software zu Gesamtsystemen sowie die Beratung in technischen, gestalterischen und softwarebezogenen Fragestellungen. Die Gesellschaft kann Zweigniederlassungen und Tochtergesellschaften im In- und Ausland errichten und sich an anderen Unternehmen im In- und Ausland beteiligen sowie alle Geschäfte tätigen, die direkt oder indirekt mit ihrem Zweck in Zusammenhang stehen. Die Gesellschaft kann im In- und Ausland Grundeigentum erwerben, belasten, veräussern und verwalten. Sie kann auch Finanzierungen für eigene oder fremde Rechnung vornehmen sowie Garantien und Bürgschaften für Tochtergesellschaften und Dritte eingehen.\",\n    \"nominal_value_chf\": 100.0,\n    \"mitteilungen\": \"Mitteilungen erfolgen per Brief oder E-Mail.\",\n    \"revision\": \"opting-out\"\n  }\n}\n```"
+}

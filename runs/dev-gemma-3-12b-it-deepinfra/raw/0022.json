@@ -1,0 +1,56 @@
+{
+  "doc_id": "0022",
+  "split": "dev",
+  "model_requested": "google/gemma-3-12b-it",
+  "backend": "openrouter",
+  "timestamp": "2026-10-12T08:04:02.367462+00:00",
+  "latency_ms": 7937.999999965541,
+  "params": {
+    "temperature": 0,
+    "max_tokens": 8192,
+    "passes": 1,
+    "structured_output": false
+  },
+  "prompt_sha256": "964dec417be3b1c664627b2505ba64f3dc8c0249bfb1cb9430e82c9850e0d20c",
+  "git_commit": "3ee8317ccaf34f4f62f5e00b8847867829bc26e1",
+  "git_dirty": true,
+  "attempts": 1,
+  "status": "ok",
+  "error": null,
+  "model_served": "google/gemma-3-12b-it",
+  "provider_served": "DeepInfra",
+  "usage": {
+    "completion_tokens": 463,
+    "prompt_tokens": 5361,
+    "total_tokens": 5824,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.0003375,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.0003375,
+      "upstream_inference_prompt_cost": 0.00026805,
+      "upstream_inference_completions_cost": 6.945e-05
+    }
+  },
+  "reasoning_tokens": 0,
+  "cost_usd": 0.0003375,
+  "finish_reason": "stop",
+  "response_chars": 1109,
+  "response_text": "```json\n{\n  \"act_type\": \"mutation\",\n  \"act_subtypes\": [],\n  \"company_name_full\": \"Operaio AG, in Stettlen\",\n  \"company_name_base\": \"Operaio AG\",\n  \"status_suffix\": null,\n  \"alternative_names\": [\n    \"Operaio Ltd.\",\n    \"Operaio SA\"\n  ],\n  \"company_name_new\": \"Operaio AG\",\n  \"company_name_previous\": \"Operaio GmbH\",\n  \"uid\": \"CHE-227.620.863\",\n  \"legal_form\": \"Aktiengesellschaft\",\n  \"seat_municipality\": \"Stettlen\",\n  \"seat_canton\": \"BE\",\n  \"address_care_of\": null,\n  \"address_street\": \"Bernapark 28\",\n  \"address_postcode\": \"3066\",\n  \"address_municipality\": \"Stettlen\",\n  \"act_date\": null,\n  \"tagesregister_nr\": \"14895\",\n  \"tagesregister_date\": \"2026-08-05\",\n  \"prior_publication_shab_nr\": 170,\n  \"prior_publication_date\": \"2025-09-04\",\n  \"prior_publication_id\": 1006424592,\n  \"authority\": \"Handelsregisteramt des Kantons Bern\",\n  \"canton_previous\": null,\n  \"canton_new\": null,\n  \"capital_new_chf\": null,\n  \"capital_previous_chf\": null,\n  \"domicile_new\": \"Bernapark 28, 3066 Stettlen\",\n  \"domicile_previous\": null,\n  \"persons_added\": [],\n  \"persons_removed\": [],\n  \"persons_changed\": [],\n  \"extras\": {}\n}\n```",
+  "warnings": []
+}

@@ -1,0 +1,55 @@
+{
+  "doc_id": "0003",
+  "split": "dev",
+  "model_requested": "anthropic/claude-haiku-5.5",
+  "backend": "openrouter",
+  "timestamp": "2026-10-12T00:51:06.739394+00:00",
+  "latency_ms": 7858.99999999674,
+  "params": {
+    "temperature": 0,
+    "max_tokens": 32768,
+    "passes": 1,
+    "structured_output": false
+  },
+  "prompt_sha256": "964dec417be3b1c664627b2505ba64f3dc8c0249bfb1cb9430e82c9850e0d20c",
+  "git_commit": "58451200af2804956b5755732cace8478cfc1d6f",
+  "git_dirty": false,
+  "attempts": 1,
+  "status": "ok",
+  "error": null,
+  "model_served": "anthropic/claude-haiku-5.5",
+  "provider_served": "Claude Platform on AWS",
+  "usage": {
+    "completion_tokens": 2041,
+    "prompt_tokens": 7441,
+    "total_tokens": 9482,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 1267,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.0017646,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.0017646,
+      "upstream_inference_prompt_cost": 0.0007441,
+      "upstream_inference_completions_cost": 0.0010205
+    }
+  },
+  "reasoning_tokens": 1267,
+  "cost_usd": 0.0017646,
+  "finish_reason": "stop",
+  "response_chars": 1679,
+  "response_text": "{\"act_type\":\"mutation\",\"act_subtypes\":[\"statutenaenderung\",\"kapitalerhoehung\",\"organaenderung\"],\"company_name_full\":\"Noorik Biopharmaceuticals AG\",\"company_name_base\":\"Noorik Biopharmaceuticals AG\",\"status_suffix\":null,\"alternative_names\":[\"Noorik Biopharmaceuticals SA\",\"Noorik Biopharmaceuticals Ltd\"],\"company_name_new\":null,\"company_name_previous\":null,\"uid\":\"CHE-115.986.883\",\"legal_form\":\"AG\",\"seat_municipality\":\"Basel\",\"seat_canton\":\"BS\",\"address_care_of\":null,\"address_street\":\"Lange Gasse 15\",\"address_postcode\":\"4052\",\"address_municipality\":\"Basel\",\"act_date\":\"2026-08-14\",\"tagesregister_nr\":\"5762\",\"tagesregister_date\":\"2026-08-18\",\"prior_publication_shab_nr\":129,\"prior_publication_date\":\"2024-07-05\",\"prior_publication_id\":\"1006077090\",\"authority\":\"Handelsregisteramt des Kantons Basel-Stadt\",\"canton_previous\":null,\"canton_new\":null,\"capital_new_chf\":189123.5,\"capital_previous_chf\":188123.5,\"domicile_new\":null,\"domicile_previous\":null,\"persons_added\":[],\"persons_removed\":[],\"persons_changed\":[{\"name_new\":\"Navarro Carpentieri, Iker\",\"name_previous\":\"Navarro, Iker\",\"domicile_new\":\"Riehen\",\"domicile_previous\":null,\"role_new\":\"Mitglied des Verwaltungsrates\",\"role_previous\":null,\"signature_new\":\"Einzelunterschrift\",\"signature_previous\":null,\"nationality_new\":null,\"nationality_previous\":\"amerikanisch\",\"heimatort_new\":\"Riehen\",\"heimatort_previous\":null,\"stammanteile_new\":null,\"stammanteile_previous\":null}],\"extras\":{\"nominal_value_chf\":0.5,\"aktien_new\":378247,\"aktien_previous\":376247,\"share_classes\":\"Namenaktien\",\"liberierung_new_chf\":189123.5,\"liberierung_previous_chf\":188123.5,\"kapitalerhoehung_type\":\"Ordentliche Kapitalerhöhung innerhalb Kapitalband\"}}"
+}

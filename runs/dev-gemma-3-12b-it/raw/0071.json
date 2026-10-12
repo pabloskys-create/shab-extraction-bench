@@ -1,0 +1,55 @@
+{
+  "doc_id": "0071",
+  "split": "dev",
+  "model_requested": "google/gemma-3-12b-it",
+  "backend": "openrouter",
+  "timestamp": "2026-10-12T01:13:14.135945+00:00",
+  "latency_ms": 11516.00000000326,
+  "params": {
+    "temperature": 0,
+    "max_tokens": 32768,
+    "passes": 1,
+    "structured_output": false
+  },
+  "prompt_sha256": "964dec417be3b1c664627b2505ba64f3dc8c0249bfb1cb9430e82c9850e0d20c",
+  "git_commit": "58451200af2804956b5755732cace8478cfc1d6f",
+  "git_dirty": false,
+  "attempts": 1,
+  "status": "ok",
+  "error": null,
+  "model_served": "google/gemma-3-12b-it",
+  "provider_served": "NextBit",
+  "usage": {
+    "completion_tokens": 883,
+    "prompt_tokens": 5419,
+    "total_tokens": 6302,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 4928,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.0004034,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.0004034,
+      "upstream_inference_prompt_cost": 0.00027095,
+      "upstream_inference_completions_cost": 0.00013245
+    }
+  },
+  "reasoning_tokens": 0,
+  "cost_usd": 0.0004034,
+  "finish_reason": "stop",
+  "response_chars": 2526,
+  "response_text": "```json\n{\n  \"act_type\": \"mutation\",\n  \"act_subtypes\": [],\n  \"company_name_full\": \"kids creative agency GmbH, in Zürich\",\n  \"company_name_base\": \"kids creative agency GmbH\",\n  \"status_suffix\": null,\n  \"alternative_names\": [],\n  \"company_name_new\": null,\n  \"company_name_previous\": null,\n  \"uid\": \"CHE-382.275.361\",\n  \"legal_form\": \"GmbH\",\n  \"seat_municipality\": \"Zürich\",\n  \"seat_canton\": \"ZH\",\n  \"address_care_of\": \"Christoph Bossart\",\n  \"address_street\": \"Affolternstrasse 42\",\n  \"address_postcode\": \"8050\",\n  \"address_municipality\": \"Zürich\",\n  \"act_date\": null,\n  \"tagesregister_nr\": \"40457\",\n  \"tagesregister_date\": \"2026-08-26\",\n  \"prior_publication_shab_nr\": 93,\n  \"prior_publication_date\": \"2025-05-15\",\n  \"prior_publication_id\": null,\n  \"authority\": \"Handelsregisteramt des Kantons Zürich\",\n  \"canton_previous\": null,\n  \"canton_new\": null,\n  \"capital_new_chf\": null,\n  \"capital_previous_chf\": null,\n  \"domicile_new\": null,\n  \"domicile_previous\": null,\n  \"persons_added\": [],\n  \"persons_removed\": [\n    {\n      \"name\": \"Cheli, Valentin\",\n      \"nationality\": null,\n      \"heimatort\": \"Zürich\",\n      \"domicile\": null,\n      \"role\": \"Gesellschafter und Vorsitzender der Geschäftsführung, mit Einzelunterschrift\",\n      \"signature\": \"Einzelunterschrift\",\n      \"uid\": null,\n      \"stammanteile\": 25\n    }\n  ],\n  \"persons_changed\": [\n    {\n      \"name_new\": \"Semsedini, Valentin\",\n      \"name_previous\": \"Cheli, Valentin\",\n      \"domicile_new\": \"Mönchaltorf\",\n      \"domicile_previous\": \"Zürich\",\n      \"role_new\": \"Gesellschafter und Geschäftsführer, mit Einzelunterschrift\",\n      \"role_previous\": \"Gesellschafter und Vorsitzender der Geschäftsführung, mit Einzelunterschrift\",\n      \"signature_new\": \"Einzelunterschrift\",\n      \"signature_previous\": \"Einzelunterschrift\",\n      \"nationality_new\": \"null\",\n      \"nationality_previous\": null,\n      \"heimatort_new\": \"Nyon\",\n      \"heimatort_previous\": \"Zürich\",\n      \"stammanteile_new\": 25,\n      \"stammanteile_previous\": 25\n    },\n    {\n      \"name_new\": \"Bossart, Christoph David\",\n      \"name_previous\": null,\n      \"domicile_new\": \"Zürich\",\n      \"domicile_previous\": null,\n      \"role_new\": \"Gesellschafter, ohne Zeichnungsberechtigung\",\n      \"role_previous\": null,\n      \"signature_new\": null,\n      \"signature_previous\": null,\n      \"nationality_new\": null,\n      \"nationality_previous\": null,\n      \"heimatort_new\": \"Buchs (AG)\",\n      \"heimatort_previous\": null,\n      \"stammanteile_new\": 25,\n      \"stammanteile_previous\": null\n    }\n  ],\n  \"extras\": {}\n}\n```"
+}

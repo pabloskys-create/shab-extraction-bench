@@ -1,0 +1,55 @@
+{
+  "doc_id": "0090",
+  "split": "dev",
+  "model_requested": "google/gemini-3.5-flash-lite",
+  "backend": "openrouter",
+  "timestamp": "2026-10-12T01:07:27.783313+00:00",
+  "latency_ms": 2469.000000040978,
+  "params": {
+    "temperature": 0,
+    "max_tokens": 32768,
+    "passes": 1,
+    "structured_output": false
+  },
+  "prompt_sha256": "964dec417be3b1c664627b2505ba64f3dc8c0249bfb1cb9430e82c9850e0d20c",
+  "git_commit": "58451200af2804956b5755732cace8478cfc1d6f",
+  "git_dirty": false,
+  "attempts": 1,
+  "status": "ok",
+  "error": null,
+  "model_served": "google/gemini-3.5-flash-lite",
+  "provider_served": "Google",
+  "usage": {
+    "completion_tokens": 880,
+    "prompt_tokens": 5588,
+    "total_tokens": 6468,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.0038764,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.0038764,
+      "upstream_inference_prompt_cost": 0.0016764,
+      "upstream_inference_completions_cost": 0.0022
+    }
+  },
+  "reasoning_tokens": 0,
+  "cost_usd": 0.0038764,
+  "finish_reason": "stop",
+  "response_chars": 2867,
+  "response_text": "```json\n{\n  \"act_type\": \"mutation\",\n  \"act_subtypes\": [\n    \"statutenaenderung\",\n    \"zweckaenderung\",\n    \"organaenderung\"\n  ],\n  \"company_name_full\": \"Sevenseas AG\",\n  \"company_name_base\": \"Sevenseas AG\",\n  \"status_suffix\": null,\n  \"alternative_names\": [],\n  \"company_name_new\": null,\n  \"company_name_previous\": null,\n  \"uid\": \"CHE-112.311.507\",\n  \"legal_form\": \"AG\",\n  \"seat_municipality\": \"Zürich\",\n  \"seat_canton\": \"ZH\",\n  \"address_care_of\": null,\n  \"address_street\": \"Zeltweg 7\",\n  \"address_postcode\": \"8032\",\n  \"address_municipality\": \"Zürich\",\n  \"act_date\": \"2026-08-18\",\n  \"tagesregister_nr\": \"40502\",\n  \"tagesregister_date\": \"2026-08-26\",\n  \"prior_publication_shab_nr\": 106,\n  \"prior_publication_date\": \"2022-06-02\",\n  \"prior_publication_id\": \"1005486562\",\n  \"authority\": \"Handelsregisteramt des Kantons Zürich\",\n  \"canton_previous\": null,\n  \"canton_new\": null,\n  \"capital_new_chf\": null,\n  \"capital_previous_chf\": null,\n  \"domicile_new\": null,\n  \"domicile_previous\": null,\n  \"persons_added\": [\n    {\n      \"name\": \"Lettieri, Brigitta\",\n      \"nationality\": null,\n      \"heimatort\": \"Bern\",\n      \"domicile\": \"Zürich\",\n      \"role\": null,\n      \"signature\": \"Kollektivunterschrift zu zweien\",\n      \"uid\": null,\n      \"stammanteile\": null\n    },\n    {\n      \"name\": \"Schweizer, Ilona Claudia Philomena\",\n      \"nationality\": \"deutsch\",\n      \"heimatort\": null,\n      \"domicile\": \"Zürich\",\n      \"role\": null,\n      \"signature\": \"Kollektivunterschrift zu zweien\",\n      \"uid\": null,\n      \"stammanteile\": null\n    }\n  ],\n  \"persons_removed\": [],\n  \"persons_changed\": [],\n  \"extras\": {\n    \"zweck\": \"Die Gesellschaft bezweckt die Entwicklung, Gestaltung und Führung von Marken sowie die Konzeption, Planung und Umsetzung strategischer und kreativer Kommunikations- und Marketinglösungen für Unternehmen, Organisationen und Institutionen aller Branchen. Sie unterstützt ihre Auftraggeber insbesondere in den Bereichen Markenstrategie, Positionierung, Branding, Storytelling, Corporate Design, digitale Kommunikation, Marketing sowie bei der Entwicklung und Vermarktung von Produkten, Dienstleistungen, Immobilien und Standorten. Die Gesellschaft kann im In- und Ausland Zweigniederlassungen errichten, Tochtergesellschaften gründen, sich an anderen Unternehmen beteiligen sowie alle Geschäfte tätigen, die geeignet sind, den Gesellschaftszweck direkt oder indirekt zu fördern. Sie kann Immaterialgüterrechte erwerben, entwickeln, verwalten, lizenzieren und verwerten sowie digitale Plattformen, Software und weitere innovative Lösungen entwickeln, betreiben und vermarkten. Ferner kann sie alle Tätigkeiten ausüben, die mit dem Gesellschaftszweck, unmittelbar oder mittelbar zusammenhängen oder dessen Erfüllung fördern.\",\n    \"mitteilungen\": \"Mitteilungen an die Aktionäre erfolgen per Brief oder E-Mail an die im Aktienbuch verzeichneten Adressen.\"\n  }\n}\n```"
+}

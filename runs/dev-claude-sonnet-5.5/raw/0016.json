@@ -1,0 +1,55 @@
+{
+  "doc_id": "0016",
+  "split": "dev",
+  "model_requested": "anthropic/claude-sonnet-5.5",
+  "backend": "openrouter",
+  "timestamp": "2026-10-11T23:08:40.807767+00:00",
+  "latency_ms": 3342.9999999934807,
+  "params": {
+    "temperature": 0,
+    "max_tokens": 32768,
+    "passes": 1,
+    "structured_output": false
+  },
+  "prompt_sha256": "964dec417be3b1c664627b2505ba64f3dc8c0249bfb1cb9430e82c9850e0d20c",
+  "git_commit": "58451200af2804956b5755732cace8478cfc1d6f",
+  "git_dirty": false,
+  "attempts": 1,
+  "status": "ok",
+  "error": null,
+  "model_served": "anthropic/claude-sonnet-5.5",
+  "provider_served": "Claude Platform on AWS",
+  "usage": {
+    "completion_tokens": 519,
+    "prompt_tokens": 7385,
+    "total_tokens": 7904,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.01996,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.01996,
+      "upstream_inference_prompt_cost": 0.01477,
+      "upstream_inference_completions_cost": 0.00519
+    }
+  },
+  "reasoning_tokens": 0,
+  "cost_usd": 0.01996,
+  "finish_reason": "stop",
+  "response_chars": 1097,
+  "response_text": "{\"act_type\":\"mutation\",\"act_subtypes\":[\"sitzverlegung\"],\"company_name_full\":\"Helios Solar Energie GmbH\",\"company_name_base\":\"Helios Solar Energie GmbH\",\"status_suffix\":null,\"alternative_names\":[\"Helios Solar Energie Sàrl\",\"Helios Solar Energie Sagl\",\"Helios Solar Energie Ltd liab Co\"],\"company_name_new\":null,\"company_name_previous\":null,\"uid\":\"CHE-300.591.146\",\"legal_form\":\"Zweigniederlassung\",\"seat_municipality\":\"Rüdtligen-Alchenflüh\",\"seat_canton\":\"BE\",\"address_care_of\":null,\"address_street\":\"Kirchgasse 5\",\"address_postcode\":\"3302\",\"address_municipality\":\"Moosseedorf\",\"act_date\":null,\"tagesregister_nr\":\"14878\",\"tagesregister_date\":\"2026-08-05\",\"prior_publication_shab_nr\":83,\"prior_publication_date\":\"2026-05-01\",\"prior_publication_id\":\"1006639929\",\"authority\":\"Handelsregisteramt des Kantons Bern\",\"canton_previous\":null,\"canton_new\":null,\"capital_new_chf\":null,\"capital_previous_chf\":null,\"domicile_new\":\"Kirchgasse 5, 3302 Moosseedorf\",\"domicile_previous\":\"Heimstrasse 54, 3422 Alchenflüh\",\"persons_added\":[],\"persons_removed\":[],\"persons_changed\":[],\"extras\":{\"hauptsitz\":\"Muttenz\"}}"
+}

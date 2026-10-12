@@ -1,0 +1,56 @@
+{
+  "doc_id": "0069",
+  "split": "dev",
+  "model_requested": "google/gemma-3-12b-it",
+  "backend": "openrouter",
+  "timestamp": "2026-10-12T08:17:12.589549+00:00",
+  "latency_ms": 28342.99999999348,
+  "params": {
+    "temperature": 0,
+    "max_tokens": 8192,
+    "passes": 1,
+    "structured_output": false
+  },
+  "prompt_sha256": "964dec417be3b1c664627b2505ba64f3dc8c0249bfb1cb9430e82c9850e0d20c",
+  "git_commit": "3ee8317ccaf34f4f62f5e00b8847867829bc26e1",
+  "git_dirty": true,
+  "attempts": 1,
+  "status": "ok",
+  "error": null,
+  "model_served": "google/gemma-3-12b-it",
+  "provider_served": "DeepInfra",
+  "usage": {
+    "completion_tokens": 884,
+    "prompt_tokens": 5420,
+    "total_tokens": 6304,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.0004036,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.0004036,
+      "upstream_inference_prompt_cost": 0.000271,
+      "upstream_inference_completions_cost": 0.0001326
+    }
+  },
+  "reasoning_tokens": 0,
+  "cost_usd": 0.0004036,
+  "finish_reason": "stop",
+  "response_chars": 2451,
+  "response_text": "```json\n{\n  \"act_type\": \"mutation\",\n  \"act_subtypes\": [\n    \"organaenderung\"\n  ],\n  \"company_name_full\": \"Vorsorgestiftung Film und Audiovision\",\n  \"company_name_base\": \"Vorsorgestiftung Film und Audiovision\",\n  \"status_suffix\": null,\n  \"alternative_names\": [],\n  \"company_name_new\": null,\n  \"company_name_previous\": null,\n  \"uid\": \"CHE-109.632.158\",\n  \"legal_form\": \"Stiftung\",\n  \"seat_municipality\": \"Bonstetten\",\n  \"seat_canton\": \"ZH\",\n  \"address_care_of\": null,\n  \"address_street\": \"Stallikerstrasse 1a\",\n  \"address_postcode\": \"8906\",\n  \"address_municipality\": \"Bonstetten\",\n  \"act_date\": null,\n  \"tagesregister_nr\": \"40526\",\n  \"tagesregister_date\": \"2026-08-26\",\n  \"prior_publication_shab_nr\": 63,\n  \"prior_publication_date\": \"2026-04-01\",\n  \"prior_publication_id\": 1006613294,\n  \"authority\": \"Handelsregisteramt des Kantons Zürich\",\n  \"canton_previous\": null,\n  \"canton_new\": null,\n  \"capital_new_chf\": null,\n  \"capital_previous_chf\": null,\n  \"domicile_new\": null,\n  \"domicile_previous\": null,\n  \"persons_added\": [],\n  \"persons_removed\": [],\n  \"persons_changed\": [\n    {\n      \"name_new\": \"Brülhart, Daniel\",\n      \"name_previous\": \"Brülhart, Daniel\",\n      \"domicile_new\": \"Muri bei Bern\",\n      \"domicile_previous\": \"Muri bei Bern\",\n      \"role_new\": \"Präsident des Stiftungsrates\",\n      \"role_previous\": \"Vizepräsident des Stiftungsrates\",\n      \"signature_new\": \"mit Kollektivunterschrift zu zweien\",\n      \"signature_previous\": \"mit Kollektivunterschrift zu zweien\",\n      \"nationality_new\": \"Schweizer Staatsangehörige(r)\",\n      \"nationality_previous\": \"Schweizer Staatsangehörige(r)\",\n      \"heimatort_new\": \"Tschugg\",\n      \"heimatort_previous\": \"Tschugg\",\n      \"stammanteile_new\": null,\n      \"stammanteile_previous\": null\n    },\n    {\n      \"name_new\": \"Münger Wüthrich, Matthias\",\n      \"name_previous\": \"Münger Wüthrich, Matthias\",\n      \"domicile_new\": \"Zürich\",\n      \"domicile_previous\": \"Zürich\",\n      \"role_new\": \"Vizepräsident des Stiftungsrates\",\n      \"role_previous\": \"Präsident des Stiftungsrates\",\n      \"signature_new\": \"mit Kollektivunterschrift zu zweien\",\n      \"signature_previous\": \"mit Kollektivunterschrift zu zweien\",\n      \"nationality_new\": \"Schweizer Staatsangehörige(r)\",\n      \"nationality_previous\": \"Schweizer Staatsangehörige(r)\",\n      \"heimatort_new\": \"Zürich\",\n      \"heimatort_previous\": \"Zürich\",\n      \"stammanteile_new\": null,\n      \"stammanteile_previous\": null\n    }\n  ],\n  \"extras\": {}\n}\n```",
+  "warnings": []
+}

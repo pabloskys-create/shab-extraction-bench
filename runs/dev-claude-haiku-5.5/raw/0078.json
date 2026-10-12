@@ -1,0 +1,55 @@
+{
+  "doc_id": "0078",
+  "split": "dev",
+  "model_requested": "anthropic/claude-haiku-5.5",
+  "backend": "openrouter",
+  "timestamp": "2026-10-12T00:59:38.342658+00:00",
+  "latency_ms": 8282.00000000652,
+  "params": {
+    "temperature": 0,
+    "max_tokens": 32768,
+    "passes": 1,
+    "structured_output": false
+  },
+  "prompt_sha256": "964dec417be3b1c664627b2505ba64f3dc8c0249bfb1cb9430e82c9850e0d20c",
+  "git_commit": "58451200af2804956b5755732cace8478cfc1d6f",
+  "git_dirty": false,
+  "attempts": 1,
+  "status": "ok",
+  "error": null,
+  "model_served": "anthropic/claude-haiku-5.5",
+  "provider_served": "Claude Platform on AWS",
+  "usage": {
+    "completion_tokens": 2427,
+    "prompt_tokens": 7553,
+    "total_tokens": 9980,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 1373,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.0019688,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.0019688,
+      "upstream_inference_prompt_cost": 0.0007553,
+      "upstream_inference_completions_cost": 0.0012135
+    }
+  },
+  "reasoning_tokens": 1373,
+  "cost_usd": 0.0019688,
+  "finish_reason": "stop",
+  "response_chars": 2306,
+  "response_text": "{\"act_type\":\"mutation\",\"act_subtypes\":[\"organaenderung\"],\"company_name_full\":\"Berufsbildungsstiftung der VSSM-Fachgruppe Holzgerätebau\",\"company_name_base\":\"Berufsbildungsstiftung der VSSM-Fachgruppe Holzgerätebau\",\"status_suffix\":null,\"alternative_names\":[],\"company_name_new\":null,\"company_name_previous\":null,\"uid\":\"CHE-101.953.357\",\"legal_form\":\"Stiftung\",\"seat_municipality\":\"Wallisellen\",\"seat_canton\":\"ZH\",\"address_care_of\":\"VSSM-Fachgruppe Wagner + Skibauer\",\"address_street\":\"Oberwiesenstrasse 2\",\"address_postcode\":\"8304\",\"address_municipality\":\"Wallisellen\",\"act_date\":null,\"tagesregister_nr\":\"40416\",\"tagesregister_date\":\"2026-08-26\",\"prior_publication_shab_nr\":161,\"prior_publication_date\":\"2021-08-20\",\"prior_publication_id\":1005274355,\"authority\":\"Handelsregisteramt des Kantons Zürich\",\"canton_previous\":null,\"canton_new\":null,\"capital_new_chf\":null,\"capital_previous_chf\":null,\"domicile_new\":null,\"domicile_previous\":null,\"persons_added\":[{\"name\":\"Thomke, Roland\",\"nationality\":null,\"heimatort\":\"Biel/Bienne\",\"domicile\":\"Bellach\",\"role\":\"Mitglied des Stiftungsrates\",\"signature\":\"ohne Zeichnungsberechtigung\",\"uid\":null,\"stammanteile\":null}],\"persons_removed\":[{\"name\":\"Dreier, Erwin\",\"nationality\":null,\"heimatort\":\"Trub\",\"domicile\":\"Sulgen\",\"role\":\"Vizepräsident des Stiftungsrates\",\"signature\":\"Kollektivunterschrift zu zweien\",\"uid\":null,\"stammanteile\":null}],\"persons_changed\":[{\"name_new\":\"Koch, Thomas\",\"name_previous\":null,\"domicile_new\":\"Glattfelden\",\"domicile_previous\":null,\"role_new\":\"Präsident des Stiftungsrates\",\"role_previous\":\"Mitglied des Stiftungsrates\",\"signature_new\":\"Kollektivunterschrift zu zweien\",\"signature_previous\":\"ohne Zeichnungsberechtigung\",\"nationality_new\":null,\"nationality_previous\":null,\"heimatort_new\":\"Eglisau\",\"heimatort_previous\":null,\"stammanteile_new\":null,\"stammanteile_previous\":null},{\"name_new\":\"Ambauen, Christian\",\"name_previous\":null,\"domicile_new\":\"Beckenried\",\"domicile_previous\":null,\"role_new\":\"Vizepräsident des Stiftungsrates, Kassier\",\"role_previous\":\"Präsident des Stiftungsrates\",\"signature_new\":\"Kollektivunterschrift zu zweien\",\"signature_previous\":null,\"nationality_new\":null,\"nationality_previous\":null,\"heimatort_new\":\"Beckenried\",\"heimatort_previous\":null,\"stammanteile_new\":null,\"stammanteile_previous\":null}],\"extras\":{}}"
+}

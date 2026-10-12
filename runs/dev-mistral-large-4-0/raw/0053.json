@@ -1,0 +1,55 @@
+{
+  "doc_id": "0053",
+  "split": "dev",
+  "model_requested": "mistralai/mistral-large-4-0",
+  "backend": "openrouter",
+  "timestamp": "2026-10-12T00:04:09.851646+00:00",
+  "latency_ms": 39421.99999996228,
+  "params": {
+    "temperature": 0,
+    "max_tokens": 32768,
+    "passes": 1,
+    "structured_output": false
+  },
+  "prompt_sha256": "964dec417be3b1c664627b2505ba64f3dc8c0249bfb1cb9430e82c9850e0d20c",
+  "git_commit": "58451200af2804956b5755732cace8478cfc1d6f",
+  "git_dirty": false,
+  "attempts": 1,
+  "status": "ok",
+  "error": null,
+  "model_served": "mistralai/mistral-large-4-0",
+  "provider_served": "Mistral",
+  "usage": {
+    "completion_tokens": 6171,
+    "prompt_tokens": 4957,
+    "total_tokens": 11128,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 4914,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 4076,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.01378179,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.01378179,
+      "upstream_inference_prompt_cost": 0.0008844,
+      "upstream_inference_completions_cost": 0.01289739
+    }
+  },
+  "reasoning_tokens": 4914,
+  "cost_usd": 0.01378179,
+  "finish_reason": "stop",
+  "response_chars": 1869,
+  "response_text": "{\n  \"act_type\": \"mutation\",\n  \"act_subtypes\": [\"organaenderung\"],\n  \"company_name_full\": \"Raumfluss AG\",\n  \"company_name_base\": \"Raumfluss AG\",\n  \"status_suffix\": null,\n  \"alternative_names\": [],\n  \"company_name_new\": null,\n  \"company_name_previous\": null,\n  \"uid\": \"CHE-211.594.208\",\n  \"legal_form\": \"AG\",\n  \"seat_municipality\": \"Luzern\",\n  \"seat_canton\": \"LU\",\n  \"address_care_of\": \"Sefkan Turunc\",\n  \"address_street\": \"Weinberglistrasse 64\",\n  \"address_postcode\": \"6005\",\n  \"address_municipality\": \"Luzern\",\n  \"act_date\": null,\n  \"tagesregister_nr\": \"8727\",\n  \"tagesregister_date\": \"2026-08-20\",\n  \"prior_publication_shab_nr\": 120,\n  \"prior_publication_date\": \"2025-06-25\",\n  \"prior_publication_id\": \"1006365472\",\n  \"authority\": \"Handelsregisteramt des Kantons Luzern\",\n  \"canton_previous\": null,\n  \"canton_new\": null,\n  \"capital_new_chf\": null,\n  \"capital_previous_chf\": null,\n  \"domicile_new\": null,\n  \"domicile_previous\": null,\n  \"persons_added\": [],\n  \"persons_removed\": [\n    {\n      \"name\": \"Turunc, Ökkes\",\n      \"nationality\": null,\n      \"heimatort\": \"Carouge (GE)\",\n      \"domicile\": \"Root\",\n      \"role\": \"Mitglied des Verwaltungsrates\",\n      \"signature\": \"Kollektivunterschrift zu zweien\",\n      \"uid\": null,\n      \"stammanteile\": null\n    }\n  ],\n  \"persons_changed\": [\n    {\n      \"name_new\": \"Turunc, Sefkan\",\n      \"name_previous\": null,\n      \"domicile_new\": \"Luzern\",\n      \"domicile_previous\": null,\n      \"role_new\": \"Mitglied des Verwaltungsrates\",\n      \"role_previous\": \"Präsident des Verwaltungsrates\",\n      \"signature_new\": \"Einzelunterschrift\",\n      \"signature_previous\": \"Kollektivunterschrift zu zweien\",\n      \"nationality_new\": null,\n      \"nationality_previous\": null,\n      \"heimatort_new\": \"Hochdorf\",\n      \"heimatort_previous\": null,\n      \"stammanteile_new\": null,\n      \"stammanteile_previous\": null\n    }\n  ],\n  \"extras\": {}\n}"
+}

@@ -1,0 +1,55 @@
+{
+  "doc_id": "0013",
+  "split": "dev",
+  "model_requested": "anthropic/claude-sonnet-5.5",
+  "backend": "openrouter",
+  "timestamp": "2026-10-11T23:08:25.856238+00:00",
+  "latency_ms": 4656.0000000172295,
+  "params": {
+    "temperature": 0,
+    "max_tokens": 32768,
+    "passes": 1,
+    "structured_output": false
+  },
+  "prompt_sha256": "964dec417be3b1c664627b2505ba64f3dc8c0249bfb1cb9430e82c9850e0d20c",
+  "git_commit": "58451200af2804956b5755732cace8478cfc1d6f",
+  "git_dirty": false,
+  "attempts": 1,
+  "status": "ok",
+  "error": null,
+  "model_served": "anthropic/claude-sonnet-5.5",
+  "provider_served": "Claude Platform on AWS",
+  "usage": {
+    "completion_tokens": 790,
+    "prompt_tokens": 7744,
+    "total_tokens": 8534,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.023388,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.023388,
+      "upstream_inference_prompt_cost": 0.015488,
+      "upstream_inference_completions_cost": 0.0079
+    }
+  },
+  "reasoning_tokens": 0,
+  "cost_usd": 0.023388,
+  "finish_reason": "stop",
+  "response_chars": 1718,
+  "response_text": "{\"act_type\":\"neueintragung\",\"act_subtypes\":[],\"company_name_full\":\"STuBI Fleisch AG\",\"company_name_base\":\"STuBI Fleisch AG\",\"status_suffix\":null,\"alternative_names\":[],\"company_name_new\":null,\"company_name_previous\":null,\"uid\":\"CHE-295.332.571\",\"legal_form\":\"AG\",\"seat_municipality\":\"Eggiwil\",\"seat_canton\":\"BE\",\"address_care_of\":null,\"address_street\":\"Heidbühl 475\",\"address_postcode\":\"3537\",\"address_municipality\":\"Eggiwil\",\"act_date\":\"2026-08-04\",\"tagesregister_nr\":\"14848\",\"tagesregister_date\":\"2026-08-05\",\"prior_publication_shab_nr\":null,\"prior_publication_date\":null,\"prior_publication_id\":null,\"authority\":\"Handelsregisteramt des Kantons Bern\",\"canton_previous\":null,\"canton_new\":null,\"capital_new_chf\":100000.0,\"capital_previous_chf\":null,\"domicile_new\":null,\"domicile_previous\":null,\"persons_added\":[{\"name\":\"Stucki, Simon\",\"nationality\":null,\"heimatort\":\"Röthenbach im Emmental\",\"domicile\":\"Heimenschwand (Buchholterberg)\",\"role\":\"Mitglied des Verwaltungsrates\",\"signature\":\"Einzelunterschrift\",\"uid\":null,\"stammanteile\":null},{\"name\":\"Bieri, Karin\",\"nationality\":null,\"heimatort\":\"Schangnau\",\"domicile\":\"Heimenschwand (Buchholterberg)\",\"role\":null,\"signature\":\"Einzelunterschrift\",\"uid\":null,\"stammanteile\":null}],\"persons_removed\":[],\"persons_changed\":[],\"extras\":{\"zweck\":\"Die Gesellschaft bezweckt das Halten von Beteiligungen an fleischverarbeitenden und mit Fleisch handelnden Unternehmen im ln- und Ausland, die Durchführung von Finanzierungsgeschäften sowie alle übrigen damit direkt oder…\",\"nominal_value_chf\":1000.0,\"aktien_new\":100,\"share_classes\":\"Namenaktien\",\"liberierung_new_chf\":100000.0,\"vinkulierung\":true,\"revision\":\"opting-out\",\"mitteilungen\":\"schriftlich oder mit elektronischer Post\"}}"
+}

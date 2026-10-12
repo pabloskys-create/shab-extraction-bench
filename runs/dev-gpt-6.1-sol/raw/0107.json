@@ -1,0 +1,55 @@
+{
+  "doc_id": "0107",
+  "split": "dev",
+  "model_requested": "openai/gpt-6.1-sol",
+  "backend": "openrouter",
+  "timestamp": "2026-10-11T23:28:13.831139+00:00",
+  "latency_ms": 5593.9999999827705,
+  "params": {
+    "temperature": 0,
+    "max_tokens": 32768,
+    "passes": 1,
+    "structured_output": false
+  },
+  "prompt_sha256": "964dec417be3b1c664627b2505ba64f3dc8c0249bfb1cb9430e82c9850e0d20c",
+  "git_commit": "58451200af2804956b5755732cace8478cfc1d6f",
+  "git_dirty": false,
+  "attempts": 1,
+  "status": "ok",
+  "error": null,
+  "model_served": "openai/gpt-6.1-sol",
+  "provider_served": "OpenAI",
+  "usage": {
+    "completion_tokens": 427,
+    "prompt_tokens": 4828,
+    "total_tokens": 5255,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 4825,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.0163385,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.0163385,
+      "upstream_inference_prompt_cost": 0.0120685,
+      "upstream_inference_completions_cost": 0.00427
+    }
+  },
+  "reasoning_tokens": 0,
+  "cost_usd": 0.0163385,
+  "finish_reason": "stop",
+  "response_chars": 1323,
+  "response_text": "{\n  \"act_type\": \"mutation\",\n  \"act_subtypes\": [\"organaenderung\"],\n  \"company_name_full\": \"Burckhardt Architektur AG\",\n  \"company_name_base\": \"Burckhardt Architektur AG\",\n  \"status_suffix\": null,\n  \"alternative_names\": [],\n  \"company_name_new\": null,\n  \"company_name_previous\": null,\n  \"uid\": \"CHE-335.665.029\",\n  \"legal_form\": \"Zweigniederlassung\",\n  \"seat_municipality\": \"Zürich\",\n  \"seat_canton\": \"ZH\",\n  \"address_care_of\": null,\n  \"address_street\": \"Neumarkt 28\",\n  \"address_postcode\": \"8001\",\n  \"address_municipality\": \"Zürich\",\n  \"act_date\": null,\n  \"tagesregister_nr\": \"40422\",\n  \"tagesregister_date\": \"2026-08-26\",\n  \"prior_publication_shab_nr\": 151,\n  \"prior_publication_date\": \"2026-08-07\",\n  \"prior_publication_id\": \"1006726176\",\n  \"authority\": \"Handelsregisteramt des Kantons Zürich\",\n  \"canton_previous\": null,\n  \"canton_new\": null,\n  \"capital_new_chf\": null,\n  \"capital_previous_chf\": null,\n  \"domicile_new\": null,\n  \"domicile_previous\": null,\n  \"persons_added\": [\n    {\n      \"name\": \"Arndt, Alexandra\",\n      \"nationality\": \"deutsch\",\n      \"heimatort\": null,\n      \"domicile\": \"Zürich\",\n      \"role\": null,\n      \"signature\": \"Kollektivprokura zu zweien\",\n      \"uid\": null,\n      \"stammanteile\": null\n    }\n  ],\n  \"persons_removed\": [],\n  \"persons_changed\": [],\n  \"extras\": {\n    \"hauptsitz\": \"Basel\"\n  }\n}"
+}

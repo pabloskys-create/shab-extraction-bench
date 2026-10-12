@@ -1,0 +1,55 @@
+{
+  "doc_id": "0086",
+  "split": "dev",
+  "model_requested": "anthropic/claude-haiku-5.5",
+  "backend": "openrouter",
+  "timestamp": "2026-10-12T01:00:40.123031+00:00",
+  "latency_ms": 6188.000000023749,
+  "params": {
+    "temperature": 0,
+    "max_tokens": 32768,
+    "passes": 1,
+    "structured_output": false
+  },
+  "prompt_sha256": "964dec417be3b1c664627b2505ba64f3dc8c0249bfb1cb9430e82c9850e0d20c",
+  "git_commit": "58451200af2804956b5755732cace8478cfc1d6f",
+  "git_dirty": false,
+  "attempts": 1,
+  "status": "ok",
+  "error": null,
+  "model_served": "anthropic/claude-haiku-5.5",
+  "provider_served": "Claude Platform on AWS",
+  "usage": {
+    "completion_tokens": 1712,
+    "prompt_tokens": 7356,
+    "total_tokens": 9068,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 1049,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.0015916,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.0015916,
+      "upstream_inference_prompt_cost": 0.0007356,
+      "upstream_inference_completions_cost": 0.000856
+    }
+  },
+  "reasoning_tokens": 1049,
+  "cost_usd": 0.0015916,
+  "finish_reason": "stop",
+  "response_chars": 1403,
+  "response_text": "{\"act_type\":\"mutation\",\"act_subtypes\":[\"organaenderung\"],\"company_name_full\":\"Responsible Capital AG\",\"company_name_base\":\"Responsible Capital AG\",\"status_suffix\":null,\"alternative_names\":[],\"company_name_new\":null,\"company_name_previous\":null,\"uid\":\"CHE-141.402.448\",\"legal_form\":\"AG\",\"seat_municipality\":\"Kilchberg (ZH)\",\"seat_canton\":\"ZH\",\"address_care_of\":\"Palma Di Salvo Petracca\",\"address_street\":\"Bahnhofplatz 1\",\"address_postcode\":\"8802\",\"address_municipality\":\"Kilchberg ZH\",\"act_date\":null,\"tagesregister_nr\":\"40493\",\"tagesregister_date\":\"2026-08-26\",\"prior_publication_shab_nr\":62,\"prior_publication_date\":\"2021-03-30\",\"prior_publication_id\":\"1005136824\",\"authority\":\"Handelsregisteramt des Kantons Zürich\",\"canton_previous\":null,\"canton_new\":null,\"capital_new_chf\":null,\"capital_previous_chf\":null,\"domicile_new\":\"Bahnhofplatz 1, 8802 Kilchberg ZH\",\"domicile_previous\":\"Bahnhofplatz 1, 8802 Kilchberg ZH\",\"persons_added\":[{\"name\":\"Petracca, Stefano\",\"nationality\":null,\"heimatort\":\"Wangen-Brüttisellen\",\"domicile\":\"Sesto Campano (IT)\",\"role\":\"Mitglied des Verwaltungsrates\",\"signature\":\"Einzelunterschrift\",\"uid\":null,\"stammanteile\":null},{\"name\":\"Di Salvo Petracca, Palma Stefania\",\"nationality\":null,\"heimatort\":\"Zürich\",\"domicile\":\"Kilchberg (ZH)\",\"role\":\"Direktorin\",\"signature\":\"Einzelunterschrift\",\"uid\":null,\"stammanteile\":null}],\"persons_removed\":[],\"persons_changed\":[],\"extras\":{}}"
+}

@@ -1,0 +1,55 @@
+{
+  "doc_id": "0112",
+  "split": "dev",
+  "model_requested": "openai/gpt-6.1-sol",
+  "backend": "openrouter",
+  "timestamp": "2026-10-11T23:28:47.330976+00:00",
+  "latency_ms": 5546.999999962281,
+  "params": {
+    "temperature": 0,
+    "max_tokens": 32768,
+    "passes": 1,
+    "structured_output": false
+  },
+  "prompt_sha256": "964dec417be3b1c664627b2505ba64f3dc8c0249bfb1cb9430e82c9850e0d20c",
+  "git_commit": "58451200af2804956b5755732cace8478cfc1d6f",
+  "git_dirty": false,
+  "attempts": 1,
+  "status": "ok",
+  "error": null,
+  "model_served": "openai/gpt-6.1-sol",
+  "provider_served": "OpenAI",
+  "usage": {
+    "completion_tokens": 425,
+    "prompt_tokens": 4905,
+    "total_tokens": 5330,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 4902,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.016511,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.016511,
+      "upstream_inference_prompt_cost": 0.012261,
+      "upstream_inference_completions_cost": 0.00425
+    }
+  },
+  "reasoning_tokens": 0,
+  "cost_usd": 0.016511,
+  "finish_reason": "stop",
+  "response_chars": 1350,
+  "response_text": "{\n  \"act_type\": \"mutation\",\n  \"act_subtypes\": [\"statutenaenderung\", \"sitzverlegung\"],\n  \"company_name_full\": \"Swiss Fassaden GmbH\",\n  \"company_name_base\": \"Swiss Fassaden GmbH\",\n  \"status_suffix\": null,\n  \"alternative_names\": [],\n  \"company_name_new\": null,\n  \"company_name_previous\": null,\n  \"uid\": \"CHE-112.994.805\",\n  \"legal_form\": \"GmbH\",\n  \"seat_municipality\": \"Zürich\",\n  \"seat_canton\": \"ZH\",\n  \"address_care_of\": \"Kajoli Blerim\",\n  \"address_street\": \"Tellstrasse 4a\",\n  \"address_postcode\": \"8400\",\n  \"address_municipality\": \"Winterthur\",\n  \"act_date\": \"2026-08-05\",\n  \"tagesregister_nr\": \"40515\",\n  \"tagesregister_date\": \"2026-08-26\",\n  \"prior_publication_shab_nr\": 38,\n  \"prior_publication_date\": \"2026-02-25\",\n  \"prior_publication_id\": \"1006579048\",\n  \"authority\": \"Handelsregisteramt des Kantons Zürich\",\n  \"canton_previous\": null,\n  \"canton_new\": null,\n  \"capital_new_chf\": null,\n  \"capital_previous_chf\": null,\n  \"domicile_new\": \"Tellstrasse 4a, 8400 Winterthur\",\n  \"domicile_previous\": null,\n  \"persons_added\": [],\n  \"persons_removed\": [],\n  \"persons_changed\": [],\n  \"extras\": {\n    \"mitteilungen\": \"erfolgen schriftlich (Brief, Fax, E-Mail oder andere elektronische Kommunikationsmittel).\",\n    \"nebenleistungspflichten\": \"Nebenleistungspflichten, Vorhand-, Vorkaufs- oder Kaufsrechte gemäss näherer Umschreibung in den Statuten.\"\n  }\n}"
+}

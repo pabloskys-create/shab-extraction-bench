@@ -1,0 +1,56 @@
+{
+  "doc_id": "0013",
+  "split": "dev",
+  "model_requested": "google/gemma-3-12b-it",
+  "backend": "openrouter",
+  "timestamp": "2026-10-12T08:02:17.187780+00:00",
+  "latency_ms": 21172.00000002049,
+  "params": {
+    "temperature": 0,
+    "max_tokens": 8192,
+    "passes": 1,
+    "structured_output": false
+  },
+  "prompt_sha256": "964dec417be3b1c664627b2505ba64f3dc8c0249bfb1cb9430e82c9850e0d20c",
+  "git_commit": "3ee8317ccaf34f4f62f5e00b8847867829bc26e1",
+  "git_dirty": true,
+  "attempts": 1,
+  "status": "ok",
+  "error": null,
+  "model_served": "google/gemma-3-12b-it",
+  "provider_served": "DeepInfra",
+  "usage": {
+    "completion_tokens": 1019,
+    "prompt_tokens": 5558,
+    "total_tokens": 6577,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00043075,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00043075,
+      "upstream_inference_prompt_cost": 0.0002779,
+      "upstream_inference_completions_cost": 0.00015285
+    }
+  },
+  "reasoning_tokens": 0,
+  "cost_usd": 0.00043075,
+  "finish_reason": "stop",
+  "response_chars": 3010,
+  "response_text": "```json\n{\n  \"act_type\": \"neueintragung\",\n  \"act_subtypes\": [],\n  \"company_name_full\": \"STuBI Fleisch AG, in Eggiwil\",\n  \"company_name_base\": \"STuBI Fleisch AG\",\n  \"status_suffix\": null,\n  \"alternative_names\": [],\n  \"company_name_new\": null,\n  \"company_name_previous\": null,\n  \"uid\": \"CHE-295.332.571\",\n  \"legal_form\": \"AG\",\n  \"seat_municipality\": \"Eggiwil\",\n  \"seat_canton\": \"BE\",\n  \"address_care_of\": null,\n  \"address_street\": \"Heidbühl 475\",\n  \"address_postcode\": \"3537\",\n  \"address_municipality\": \"Eggiwil\",\n  \"act_date\": \"2026-08-04\",\n  \"tagesregister_nr\": \"14848\",\n  \"tagesregister_date\": \"2026-08-05\",\n  \"prior_publication_shab_nr\": null,\n  \"prior_publication_date\": null,\n  \"prior_publication_id\": null,\n  \"authority\": \"Handelsregisteramt des Kantons Bern\",\n  \"canton_previous\": null,\n  \"canton_new\": null,\n  \"capital_new_chf\": 100000.00,\n  \"capital_previous_chf\": null,\n  \"domicile_new\": null,\n  \"domicile_previous\": null,\n  \"persons_added\": [\n    {\n      \"name\": \"Stucki, Simon\",\n      \"nationality\": null,\n      \"heimatort\": \"von Röthenbach im Emmental\",\n      \"domicile\": \"in Heimenschwand (Buchholterberg)\",\n      \"role\": \"Mitglied des Verwaltungsrates\",\n      \"signature\": \"mit Einzelunterschrift\",\n      \"uid\": null,\n      \"stammanteile\": null\n    },\n    {\n      \"name\": \"Bieri, Karin\",\n      \"nationality\": null,\n      \"heimatort\": \"von Schangnau\",\n      \"domicile\": \"in Heimenschwand (Buchholterberg)\",\n      \"role\": null,\n      \"signature\": \"mit Einzelunterschrift\",\n      \"uid\": null,\n      \"stammanteile\": null\n    }\n  ],\n  \"persons_removed\": [],\n  \"persons_changed\": [],\n  \"extras\": {\n    \"zweck\": \"Die Gesellschaft bezweckt das Halten von Beteiligungen an fleischverarbeitenden und mit Fleisch handelnden Unternehmen im ln- und Ausland, die Durchführung von Finanzierungsgeschäften sowie alle übrigen damit direkt oder indirekt im Zusammenhang stehenden Aktivitäten. Die Gesellschaft kann im In- und Ausland Zweigniederlassungen errichten, sich an weiteren Unternehmen im In- und Ausland beteiligen, gleichartige oder verwandte Unternehmen erwerben oder sich mit solchen zusammenschliessen, Grundstücke erwerben, verwalten und veräussern sowie alle Geschäfte eingehen und Verträge abschliessen, die geeignet sind, den Zweck der Gesellschaft zu fördern, oder die direkt oder indirekt damit im Zusammenhang stehen.\",\n    \"nominal_value_chf\": 1000.00,\n    \"aktien_new\": 100,\n    \"share_classes\": \"Namenaktien\",\n    \"liberierung_new_chf\": 100000.00,\n    \"kapitalerhoehung_type\": null,\n    \"vinkulierung\": true,\n    \"revision\": \"opting-out\",\n    \"mitteilungen\": \"schriftlich oder mit elektronischer Post\",\n    \"hauptsitz\": null,\n    \"zweigniederlassung_new\": null,\n    \"weitere_adressen_new\": null,\n    \"weitere_adressen_previous\": null,\n    \"nebenleistungspflichten\": null,\n    \"loeschung_reason\": null,\n    \"steuerzustimmung\": null,\n    \"konkurseinstellung_reason\": null,\n    \"konkurs_wirkung_ab\": null,\n    \"gesellschafterversammlung_date\": null,\n    \"prior_publication_page\": null\n  }\n}\n```",
+  "warnings": []
+}

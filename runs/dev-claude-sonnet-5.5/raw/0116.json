@@ -1,0 +1,55 @@
+{
+  "doc_id": "0116",
+  "split": "dev",
+  "model_requested": "anthropic/claude-sonnet-5.5",
+  "backend": "openrouter",
+  "timestamp": "2026-10-11T23:15:22.090418+00:00",
+  "latency_ms": 3796.9999999622814,
+  "params": {
+    "temperature": 0,
+    "max_tokens": 32768,
+    "passes": 1,
+    "structured_output": false
+  },
+  "prompt_sha256": "964dec417be3b1c664627b2505ba64f3dc8c0249bfb1cb9430e82c9850e0d20c",
+  "git_commit": "58451200af2804956b5755732cace8478cfc1d6f",
+  "git_dirty": false,
+  "attempts": 1,
+  "status": "ok",
+  "error": null,
+  "model_served": "anthropic/claude-sonnet-5.5",
+  "provider_served": "Claude Platform on AWS",
+  "usage": {
+    "completion_tokens": 619,
+    "prompt_tokens": 7589,
+    "total_tokens": 8208,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.021368,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.021368,
+      "upstream_inference_prompt_cost": 0.015178,
+      "upstream_inference_completions_cost": 0.00619
+    }
+  },
+  "reasoning_tokens": 0,
+  "cost_usd": 0.021368,
+  "finish_reason": "stop",
+  "response_chars": 1357,
+  "response_text": "{\"act_type\":\"mutation\",\"act_subtypes\":[\"statutenaenderung\",\"zweckaenderung\"],\"company_name_full\":\"Ancotech AG\",\"company_name_base\":\"Ancotech AG\",\"status_suffix\":null,\"alternative_names\":[],\"company_name_new\":null,\"company_name_previous\":null,\"uid\":\"CHE-103.764.672\",\"legal_form\":\"AG\",\"seat_municipality\":\"Dielsdorf\",\"seat_canton\":\"ZH\",\"address_care_of\":null,\"address_street\":\"Industriestrasse 3\",\"address_postcode\":\"8157\",\"address_municipality\":\"Dielsdorf\",\"act_date\":\"2026-08-18\",\"tagesregister_nr\":\"40410\",\"tagesregister_date\":\"2026-08-26\",\"prior_publication_shab_nr\":25,\"prior_publication_date\":\"2026-02-06\",\"prior_publication_id\":\"1006561716\",\"authority\":\"Handelsregisteramt des Kantons Zürich\",\"canton_previous\":null,\"canton_new\":null,\"capital_new_chf\":null,\"capital_previous_chf\":null,\"domicile_new\":null,\"domicile_previous\":null,\"persons_added\":[],\"persons_removed\":[],\"persons_changed\":[],\"extras\":{\"zweck\":\"Die Gesellschaft bezweckt den Handel mit Maschinen und Produkten für das Bauwesen und die Erbringung von Ingenieurleistungen, insbesondere auf dem Gebiet der Verankerungstechnik. Die Gesellschaft kann Liegenschaften erwerben und sich an…\",\"mitteilungen\":\"Die Mitteilungen der Gesellschaft an die Aktionäre erfolgen durch einfachen Brief, Fax, E-Mail oder andere Übermittlungsmittel an die im Aktienbuch eingetragene Adresse der Aktionäre.\"}}"
+}

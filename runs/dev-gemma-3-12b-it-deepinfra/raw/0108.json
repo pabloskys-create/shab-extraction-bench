@@ -1,0 +1,56 @@
+{
+  "doc_id": "0108",
+  "split": "dev",
+  "model_requested": "google/gemma-3-12b-it",
+  "backend": "openrouter",
+  "timestamp": "2026-10-12T08:30:53.498742+00:00",
+  "latency_ms": 35531.00000001723,
+  "params": {
+    "temperature": 0,
+    "max_tokens": 8192,
+    "passes": 1,
+    "structured_output": false
+  },
+  "prompt_sha256": "964dec417be3b1c664627b2505ba64f3dc8c0249bfb1cb9430e82c9850e0d20c",
+  "git_commit": "3ee8317ccaf34f4f62f5e00b8847867829bc26e1",
+  "git_dirty": true,
+  "attempts": 1,
+  "status": "ok",
+  "error": null,
+  "model_served": "google/gemma-3-12b-it",
+  "provider_served": "DeepInfra",
+  "usage": {
+    "completion_tokens": 1137,
+    "prompt_tokens": 5614,
+    "total_tokens": 6751,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00045125,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00045125,
+      "upstream_inference_prompt_cost": 0.0002807,
+      "upstream_inference_completions_cost": 0.00017055
+    }
+  },
+  "reasoning_tokens": 0,
+  "cost_usd": 0.00045125,
+  "finish_reason": "stop",
+  "response_chars": 3407,
+  "response_text": "```json\n{\n  \"act_type\": \"neueintragung\",\n  \"act_subtypes\": [],\n  \"company_name_full\": \"Trivo AG, in Zürich\",\n  \"company_name_base\": \"Trivo AG\",\n  \"status_suffix\": null,\n  \"alternative_names\": [],\n  \"company_name_new\": null,\n  \"company_name_previous\": null,\n  \"uid\": \"CHE-481.668.511\",\n  \"legal_form\": \"AG\",\n  \"seat_municipality\": \"Zürich\",\n  \"seat_canton\": \"ZH\",\n  \"address_care_of\": null,\n  \"address_street\": \"Aargauerstrasse 1b\",\n  \"address_postcode\": \"8048\",\n  \"address_municipality\": \"Zürich\",\n  \"act_date\": \"2026-08-18\",\n  \"tagesregister_nr\": \"40400\",\n  \"tagesregister_date\": \"2026-08-26\",\n  \"prior_publication_shab_nr\": null,\n  \"prior_publication_date\": null,\n  \"prior_publication_id\": null,\n  \"authority\": \"Handelsregisteramt des Kantons Zürich\",\n  \"canton_previous\": null,\n  \"canton_new\": null,\n  \"capital_new_chf\": 510000.00,\n  \"capital_previous_chf\": null,\n  \"domicile_new\": null,\n  \"domicile_previous\": null,\n  \"persons_added\": [\n    {\n      \"name\": \"Tuygu, Ali\",\n      \"nationality\": \"Schweizer\",\n      \"heimatort\": \"Wangen-Brüttisellen\",\n      \"domicile\": \"Bassersdorf\",\n      \"role\": \"Präsident des Verwaltungsrates\",\n      \"signature\": \"mit Kollektivunterschrift zu zweien\",\n      \"uid\": null,\n      \"stammanteile\": null\n    },\n    {\n      \"name\": \"Ikbal, Oguz\",\n      \"nationality\": \"türkisch\",\n      \"heimatort\": null,\n      \"domicile\": \"Bassersdorf\",\n      \"role\": \"Mitglied des Verwaltungsrates\",\n      \"signature\": \"mit Kollektivunterschrift zu zweien\",\n      \"uid\": null,\n      \"stammanteile\": null\n    },\n    {\n      \"name\": \"Akdag, Özcan\",\n      \"nationality\": \"türkisch\",\n      \"heimatort\": null,\n      \"domicile\": \"Adliswil\",\n      \"role\": \"Mitglied des Verwaltungsrates\",\n      \"signature\": \"mit Kollektivunterschrift zu zweien\",\n      \"uid\": null,\n      \"stammanteile\": null\n    }\n  ],\n  \"persons_removed\": [],\n  \"persons_changed\": [],\n  \"extras\": {\n    \"zweck\": \"der Gesellschaft bezweckt den Import, Export, Handel, die Lagerung, Verarbeitung und Vermarktung von Lebensmitteln aller Art, insbesondere von Früchten, Gemüse, Agrar- und Landesprodukten sowie verwandten Erzeugnissen. Sie kann Dienstleistungen in den Bereichen Einkauf, Beschaffung, Logistik, Qualitätsmanagement, Verpackung, Vertrieb und Vermarktung erbringen. Die Gesellschaft kann Zweigniederlassungen und Tochtergesellschaften errichten und sich an anderen Unternehmen beteiligen. Die Gesellschaft kann Grundstücke und Immaterialgüterrechte erwerben, halten, verwalten, belasten und veräussern. Die Gesellschaft kann auch alle kommerziellen, finanziellen und anderen Tätigkeiten ausüben, die mit dem Zweck der Gesellschaft direkt oder indirekt im Zusammenhang stehen.\",\n    \"nominal_value_chf\": 1.00,\n    \"aktien_new\": 510000,\n    \"share_classes\": \"Namenaktien\",\n    \"liberierung_new_chf\": 510000.00,\n    \"kapitalerhoehung_type\": null,\n    \"vinkulierung\": true,\n    \"revision\": \"opting-out\",\n    \"mitteilungen\": \"auf schriftlichem Weg oder in elektronischer Form an die im Aktienbuch eingetragenen Adressen der Aktionäre\",\n    \"hauptsitz\": null,\n    \"zweigniederlassung_new\": null,\n    \"weitere_adressen_new\": null,\n    \"weitere_adressen_previous\": null,\n    \"nebenleistungspflichten\": null,\n    \"loeschung_reason\": null,\n    \"steuerzustimmung\": null,\n    \"konkurseinstellung_reason\": null,\n    \"konkurs_wirkung_ab\": null,\n    \"gesellschafterversammlung_date\": null,\n    \"prior_publication_page\": null\n  }\n}\n```",
+  "warnings": []
+}

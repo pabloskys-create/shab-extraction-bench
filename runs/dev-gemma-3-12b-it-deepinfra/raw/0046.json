@@ -1,0 +1,56 @@
+{
+  "doc_id": "0046",
+  "split": "dev",
+  "model_requested": "google/gemma-3-12b-it",
+  "backend": "openrouter",
+  "timestamp": "2026-10-12T08:08:50.233462+00:00",
+  "latency_ms": 16468.99999998277,
+  "params": {
+    "temperature": 0,
+    "max_tokens": 8192,
+    "passes": 1,
+    "structured_output": false
+  },
+  "prompt_sha256": "964dec417be3b1c664627b2505ba64f3dc8c0249bfb1cb9430e82c9850e0d20c",
+  "git_commit": "3ee8317ccaf34f4f62f5e00b8847867829bc26e1",
+  "git_dirty": true,
+  "attempts": 1,
+  "status": "ok",
+  "error": null,
+  "model_served": "google/gemma-3-12b-it",
+  "provider_served": "DeepInfra",
+  "usage": {
+    "completion_tokens": 786,
+    "prompt_tokens": 5567,
+    "total_tokens": 6353,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00039625,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00039625,
+      "upstream_inference_prompt_cost": 0.00027835,
+      "upstream_inference_completions_cost": 0.0001179
+    }
+  },
+  "reasoning_tokens": 0,
+  "cost_usd": 0.00039625,
+  "finish_reason": "stop",
+  "response_chars": 2586,
+  "response_text": "```json\n{\n  \"act_type\": \"neueintragung\",\n  \"act_subtypes\": [],\n  \"company_name_full\": \"Veloxon Engineering GmbH, in Buchrain\",\n  \"company_name_base\": \"Veloxon Engineering GmbH\",\n  \"status_suffix\": null,\n  \"alternative_names\": [],\n  \"company_name_new\": null,\n  \"company_name_previous\": null,\n  \"uid\": \"CHE-357.003.457\",\n  \"legal_form\": \"Gesellschaft mit beschränkter Haftung\",\n  \"seat_municipality\": \"Buchrain\",\n  \"seat_canton\": \"LU\",\n  \"address_care_of\": null,\n  \"address_street\": \"Unterdorfweg 2\",\n  \"address_postcode\": \"6033\",\n  \"address_municipality\": \"Buchrain\",\n  \"act_date\": \"2026-07-16\",\n  \"tagesregister_nr\": \"8684\",\n  \"tagesregister_date\": \"2026-08-20\",\n  \"prior_publication_shab_nr\": null,\n  \"prior_publication_date\": null,\n  \"prior_publication_id\": null,\n  \"authority\": \"Handelsregisteramt des Kantons Luzern\",\n  \"canton_previous\": null,\n  \"canton_new\": null,\n  \"capital_new_chf\": 20000.00,\n  \"capital_previous_chf\": null,\n  \"domicile_new\": null,\n  \"domicile_previous\": null,\n  \"persons_added\": [\n    {\n      \"name\": \"Rüegg, Patrick Joshua\",\n      \"nationality\": null,\n      \"heimatort\": \"von Bauma\",\n      \"domicile\": \"in Nottwil\",\n      \"role\": \"Gesellschafter und Geschäftsführer\",\n      \"signature\": \"mit Einzelunterschrift\",\n      \"uid\": null,\n      \"stammanteile\": 200\n    }\n  ],\n  \"persons_removed\": [],\n  \"persons_changed\": [],\n  \"extras\": {\n    \"revision\": \"opting-out\",\n    \"zweck\": \"Die Gesellschaft bezweckt die Erbringung von Dienstleistungen in den Bereichen Ingenieurwesen und Softwareentwicklung, insbesondere die Entwicklung, Konstruktion und Optimierung mechanischer und technischer Systeme, die Erstellung von CAD-Konstruktionen, Struktur- und Festigkeitsanalysen, Fluidsimulationen sowie Prototypen, die additive Fertigung (3D-Druck), die Entwicklung, den Betrieb und den Vertrieb von Software, Web- und Mobile-Applikationen, digitalen Plattformen und Automatisierungslösungen, die Integration von Hardware, Firmware und Software zu Gesamtsystemen sowie die Beratung in technischen, gestalterischen und softwarebezogenen Fragestellungen. Die Gesellschaft kann Zweigniederlassungen und Tochtergesellschaften im In- und Ausland errichten und sich an anderen Unternehmen im In- und Ausland beteiligen sowie alle Geschäfte tätigen, die direkt oder indirekt mit ihrem Zweck in Zusammenhang stehen. Die Gesellschaft kann im In- und Ausland Grundeigentum erwerben, belasten, veräussern und verwalten. Sie kann auch Finanzierungen für eigene oder fremde Rechnung vornehmen sowie Garantien und Bürgschaften für Tochtergesellschaften und Dritte eingehen.\"\n  }\n}\n```",
+  "warnings": []
+}

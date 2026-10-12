@@ -1,0 +1,55 @@
+{
+  "doc_id": "0024",
+  "split": "dev",
+  "model_requested": "openai/gpt-6-luna",
+  "backend": "openrouter",
+  "timestamp": "2026-10-11T22:30:05.759272+00:00",
+  "latency_ms": 4063.0000000237487,
+  "params": {
+    "temperature": 0,
+    "max_tokens": 32768,
+    "passes": 1,
+    "structured_output": false
+  },
+  "prompt_sha256": "964dec417be3b1c664627b2505ba64f3dc8c0249bfb1cb9430e82c9850e0d20c",
+  "git_commit": "58451200af2804956b5755732cace8478cfc1d6f",
+  "git_dirty": false,
+  "attempts": 1,
+  "status": "ok",
+  "error": null,
+  "model_served": "openai/gpt-6-luna",
+  "provider_served": "OpenAI",
+  "usage": {
+    "completion_tokens": 512,
+    "prompt_tokens": 4831,
+    "total_tokens": 5343,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 143,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 4828,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.0008598,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.0008598,
+      "upstream_inference_prompt_cost": 0.0006038,
+      "upstream_inference_completions_cost": 0.000256
+    }
+  },
+  "reasoning_tokens": 143,
+  "cost_usd": 0.0008598,
+  "finish_reason": "stop",
+  "response_chars": 1094,
+  "response_text": "{\n  \"act_type\": \"mutation\",\n  \"act_subtypes\": [],\n  \"company_name_full\": \"Allfinanz Hügli GmbH\",\n  \"company_name_base\": \"Allfinanz Hügli GmbH\",\n  \"status_suffix\": null,\n  \"alternative_names\": [],\n  \"company_name_new\": null,\n  \"company_name_previous\": null,\n  \"uid\": \"CHE-113.431.373\",\n  \"legal_form\": \"GmbH\",\n  \"seat_municipality\": \"Heimberg\",\n  \"seat_canton\": \"BE\",\n  \"address_care_of\": null,\n  \"address_street\": \"Haslikehrweg 5\",\n  \"address_postcode\": \"3627\",\n  \"address_municipality\": \"Heimberg\",\n  \"act_date\": null,\n  \"tagesregister_nr\": \"14854\",\n  \"tagesregister_date\": \"2026-08-05\",\n  \"prior_publication_shab_nr\": 37,\n  \"prior_publication_date\": \"2009-02-24\",\n  \"prior_publication_id\": 4895012,\n  \"authority\": \"Handelsregisteramt des Kantons Bern\",\n  \"canton_previous\": null,\n  \"canton_new\": null,\n  \"capital_new_chf\": null,\n  \"capital_previous_chf\": null,\n  \"domicile_new\": \"Haslikehrweg 5, 3627 Heimberg\",\n  \"domicile_previous\": \"Bäumbergweg 40, 3627 Heimberg\",\n  \"persons_added\": [],\n  \"persons_removed\": [],\n  \"persons_changed\": [],\n  \"extras\": {\n    \"prior_publication_page\": 5\n  }\n}"
+}

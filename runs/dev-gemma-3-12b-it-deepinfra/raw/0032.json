@@ -1,0 +1,56 @@
+{
+  "doc_id": "0032",
+  "split": "dev",
+  "model_requested": "google/gemma-3-12b-it",
+  "backend": "openrouter",
+  "timestamp": "2026-10-12T08:05:58.617600+00:00",
+  "latency_ms": 13562.999999965541,
+  "params": {
+    "temperature": 0,
+    "max_tokens": 8192,
+    "passes": 1,
+    "structured_output": false
+  },
+  "prompt_sha256": "964dec417be3b1c664627b2505ba64f3dc8c0249bfb1cb9430e82c9850e0d20c",
+  "git_commit": "3ee8317ccaf34f4f62f5e00b8847867829bc26e1",
+  "git_dirty": true,
+  "attempts": 1,
+  "status": "ok",
+  "error": null,
+  "model_served": "google/gemma-3-12b-it",
+  "provider_served": "DeepInfra",
+  "usage": {
+    "completion_tokens": 719,
+    "prompt_tokens": 5397,
+    "total_tokens": 6116,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.0003777,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.0003777,
+      "upstream_inference_prompt_cost": 0.00026985,
+      "upstream_inference_completions_cost": 0.00010785
+    }
+  },
+  "reasoning_tokens": 0,
+  "cost_usd": 0.0003777,
+  "finish_reason": "stop",
+  "response_chars": 2029,
+  "response_text": "```json\n{\n  \"act_type\": \"mutation\",\n  \"act_subtypes\": [],\n  \"company_name_full\": \"Woodkit Khamso, in Neuenegg\",\n  \"company_name_base\": \"Woodkit Khamso\",\n  \"status_suffix\": null,\n  \"alternative_names\": [],\n  \"company_name_new\": null,\n  \"company_name_previous\": null,\n  \"uid\": \"CHE-470.689.555\",\n  \"legal_form\": \"Einzelunternehmen\",\n  \"seat_municipality\": \"Neuenegg\",\n  \"seat_canton\": \"BE\",\n  \"address_care_of\": null,\n  \"address_street\": \"Freiburgstrasse 92\",\n  \"address_postcode\": \"3174\",\n  \"address_municipality\": \"Thörishaus\",\n  \"act_date\": null,\n  \"tagesregister_nr\": \"14914\",\n  \"tagesregister_date\": \"2026-08-05\",\n  \"prior_publication_shab_nr\": 108,\n  \"prior_publication_date\": \"2024-06-06\",\n  \"prior_publication_id\": null,\n  \"authority\": \"Handelsregisteramt des Kantons Bern\",\n  \"canton_previous\": null,\n  \"canton_new\": null,\n  \"capital_new_chf\": null,\n  \"capital_previous_chf\": null,\n  \"domicile_new\": \"Freiburgstrasse 92, 3174 Thörishaus\",\n  \"domicile_previous\": \"Freiburgstrasse 92, 3174 Thörishaus\",\n  \"persons_added\": [],\n  \"persons_removed\": [],\n  \"persons_changed\": [\n    {\n      \"name_new\": \"Khamso, Natthakit\",\n      \"name_previous\": \"Khamso, Natthakit\",\n      \"domicile_new\": \"in Thörishaus (Neuenegg)\",\n      \"domicile_previous\": \"in Neuenegg\",\n      \"role_new\": \"Inhaber\",\n      \"role_previous\": \"Inhaber\",\n      \"signature_new\": \"mit Einzelunterschrift\",\n      \"signature_previous\": \"mit Einzelunterschrift\",\n      \"nationality_new\": null,\n      \"nationality_previous\": null,\n      \"heimatort_new\": \"von Madiswil\",\n      \"heimatort_previous\": \"von Madiswil\",\n      \"stammanteile_new\": null,\n      \"stammanteile_previous\": null\n    }\n  ],\n  \"extras\": {\n    \"zweck\": \"Holzmanufaktur und Werkstatt. Entwurf, Herstellung und Vertrieb von massgeschneiderten Möbeln und anderen Gegenständen sowie damit verbundene Dienstleistungen; Erbringen von Dienstleistungen in den Bereichen IT, Grafik und visuelle Kommunikation, insbesondere Webentwicklung, Web- und Grafikdesign sowie Handel mit digitalen Produkten.\"\n  }\n}\n```",
+  "warnings": []
+}

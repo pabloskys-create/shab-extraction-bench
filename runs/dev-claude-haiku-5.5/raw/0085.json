@@ -1,0 +1,55 @@
+{
+  "doc_id": "0085",
+  "split": "dev",
+  "model_requested": "anthropic/claude-haiku-5.5",
+  "backend": "openrouter",
+  "timestamp": "2026-10-12T01:00:33.931896+00:00",
+  "latency_ms": 9063.000000023749,
+  "params": {
+    "temperature": 0,
+    "max_tokens": 32768,
+    "passes": 1,
+    "structured_output": false
+  },
+  "prompt_sha256": "964dec417be3b1c664627b2505ba64f3dc8c0249bfb1cb9430e82c9850e0d20c",
+  "git_commit": "58451200af2804956b5755732cace8478cfc1d6f",
+  "git_dirty": false,
+  "attempts": 1,
+  "status": "ok",
+  "error": null,
+  "model_served": "anthropic/claude-haiku-5.5",
+  "provider_served": "Claude Platform on AWS",
+  "usage": {
+    "completion_tokens": 2367,
+    "prompt_tokens": 7700,
+    "total_tokens": 10067,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 1664,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.0019535,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.0019535,
+      "upstream_inference_prompt_cost": 0.00077,
+      "upstream_inference_completions_cost": 0.0011835
+    }
+  },
+  "reasoning_tokens": 1664,
+  "cost_usd": 0.0019535,
+  "finish_reason": "stop",
+  "response_chars": 1551,
+  "response_text": "{\"act_type\":\"neueintragung\",\"act_subtypes\":[],\"company_name_full\":\"Millberry Investment Holding AG\",\"company_name_base\":\"Millberry Investment Holding AG\",\"status_suffix\":null,\"alternative_names\":[],\"company_name_new\":null,\"company_name_previous\":null,\"uid\":\"CHE-263.828.721\",\"legal_form\":\"AG\",\"seat_municipality\":\"Winterthur\",\"seat_canton\":\"ZH\",\"address_care_of\":null,\"address_street\":\"Pflanzschulstrasse 37\",\"address_postcode\":\"8400\",\"address_municipality\":\"Winterthur\",\"act_date\":\"2026-08-13\",\"tagesregister_nr\":\"40388\",\"tagesregister_date\":\"2026-08-26\",\"prior_publication_shab_nr\":null,\"prior_publication_date\":null,\"prior_publication_id\":null,\"authority\":\"Handelsregisteramt des Kantons Zürich\",\"canton_previous\":null,\"canton_new\":null,\"capital_new_chf\":100000.0,\"capital_previous_chf\":null,\"domicile_new\":null,\"domicile_previous\":null,\"persons_added\":[{\"name\":\"Urso, Alfonso\",\"nationality\":\"italienisch\",\"heimatort\":null,\"domicile\":\"Zürich\",\"role\":\"Mitglied des Verwaltungsrates\",\"signature\":\"Einzelunterschrift\",\"uid\":null,\"stammanteile\":null}],\"persons_removed\":[],\"persons_changed\":[],\"extras\":{\"zweck\":\"Die Gesellschaft bezweckt den Erwerb, die Verwaltung und die Veräusserung von Beteiligungen an anderen Unternehmungen jeder Art im In- und Ausland. Die Gesellschaft kann Zweigniederlassungen und…\",\"nominal_value_chf\":0.1,\"aktien_new\":1000000,\"share_classes\":\"Namenaktien\",\"liberierung_new_chf\":50000.0,\"vinkulierung\":true,\"revision\":\"opting-out\",\"mitteilungen\":\"erfolgen per Brief oder E-Mail an die im Aktienbuch verzeichneten Adressen\"}}"
+}

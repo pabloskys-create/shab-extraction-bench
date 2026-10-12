@@ -1,0 +1,55 @@
+{
+  "doc_id": "0011",
+  "split": "dev",
+  "model_requested": "openai/gpt-6.1-sol",
+  "backend": "openrouter",
+  "timestamp": "2026-10-11T23:17:00.722210+00:00",
+  "latency_ms": 4734.99999998603,
+  "params": {
+    "temperature": 0,
+    "max_tokens": 32768,
+    "passes": 1,
+    "structured_output": false
+  },
+  "prompt_sha256": "964dec417be3b1c664627b2505ba64f3dc8c0249bfb1cb9430e82c9850e0d20c",
+  "git_commit": "58451200af2804956b5755732cace8478cfc1d6f",
+  "git_dirty": false,
+  "attempts": 1,
+  "status": "ok",
+  "error": null,
+  "model_served": "openai/gpt-6.1-sol",
+  "provider_served": "OpenAI",
+  "usage": {
+    "completion_tokens": 357,
+    "prompt_tokens": 4832,
+    "total_tokens": 5189,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 4829,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.0156485,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.0156485,
+      "upstream_inference_prompt_cost": 0.0120785,
+      "upstream_inference_completions_cost": 0.00357
+    }
+  },
+  "reasoning_tokens": 0,
+  "cost_usd": 0.0156485,
+  "finish_reason": "stop",
+  "response_chars": 1088,
+  "response_text": "{\n  \"act_type\": \"loeschung\",\n  \"act_subtypes\": [],\n  \"company_name_full\": \"Autosattlerei T. Probst\",\n  \"company_name_base\": \"Autosattlerei T. Probst\",\n  \"status_suffix\": null,\n  \"alternative_names\": [],\n  \"company_name_new\": null,\n  \"company_name_previous\": null,\n  \"uid\": \"CHE-106.527.996\",\n  \"legal_form\": \"Einzelunternehmen\",\n  \"seat_municipality\": \"Münsingen\",\n  \"seat_canton\": \"BE\",\n  \"address_care_of\": null,\n  \"address_street\": \"Bernstrasse 22b\",\n  \"address_postcode\": \"3110\",\n  \"address_municipality\": \"Münsingen\",\n  \"act_date\": \"2026-08-05\",\n  \"tagesregister_nr\": \"14918\",\n  \"tagesregister_date\": \"2026-08-05\",\n  \"prior_publication_shab_nr\": 150,\n  \"prior_publication_date\": \"2021-08-05\",\n  \"prior_publication_id\": \"1005265095\",\n  \"authority\": \"Handelsregisteramt des Kantons Bern\",\n  \"canton_previous\": null,\n  \"canton_new\": null,\n  \"capital_new_chf\": null,\n  \"capital_previous_chf\": null,\n  \"domicile_new\": null,\n  \"domicile_previous\": null,\n  \"persons_added\": [],\n  \"persons_removed\": [],\n  \"persons_changed\": [],\n  \"extras\": {\n    \"loeschung_reason\": \"Geschäftsaufgabe\"\n  }\n}"
+}

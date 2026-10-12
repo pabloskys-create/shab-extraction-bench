@@ -1,0 +1,55 @@
+{
+  "doc_id": "0057",
+  "split": "dev",
+  "model_requested": "anthropic/claude-haiku-5.5",
+  "backend": "openrouter",
+  "timestamp": "2026-10-12T00:57:29.427497+00:00",
+  "latency_ms": 7438.000000023749,
+  "params": {
+    "temperature": 0,
+    "max_tokens": 32768,
+    "passes": 1,
+    "structured_output": false
+  },
+  "prompt_sha256": "964dec417be3b1c664627b2505ba64f3dc8c0249bfb1cb9430e82c9850e0d20c",
+  "git_commit": "58451200af2804956b5755732cace8478cfc1d6f",
+  "git_dirty": false,
+  "attempts": 1,
+  "status": "ok",
+  "error": null,
+  "model_served": "anthropic/claude-haiku-5.5",
+  "provider_served": "Claude Platform on AWS",
+  "usage": {
+    "completion_tokens": 1685,
+    "prompt_tokens": 7269,
+    "total_tokens": 8954,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 1028,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.0015694,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.0015694,
+      "upstream_inference_prompt_cost": 0.0007269,
+      "upstream_inference_completions_cost": 0.0008425
+    }
+  },
+  "reasoning_tokens": 1028,
+  "cost_usd": 0.0015694,
+  "finish_reason": "stop",
+  "response_chars": 1456,
+  "response_text": "{\"act_type\": \"mutation\", \"act_subtypes\": [\"sitzverlegung\", \"kantonswechsel\", \"organaenderung\"], \"company_name_full\": \"Schneiter Gastro\", \"company_name_base\": \"Schneiter Gastro\", \"status_suffix\": null, \"alternative_names\": [], \"company_name_new\": null, \"company_name_previous\": null, \"uid\": \"CHE-464.687.482\", \"legal_form\": \"Einzelunternehmen\", \"seat_municipality\": \"Hergiswil (NW)\", \"seat_canton\": \"NW\", \"address_care_of\": null, \"address_street\": \"Dorfstrasse 5\", \"address_postcode\": \"6030\", \"address_municipality\": \"Ebikon\", \"act_date\": null, \"tagesregister_nr\": \"8734\", \"tagesregister_date\": \"2026-08-20\", \"prior_publication_shab_nr\": 248, \"prior_publication_date\": \"2024-12-20\", \"prior_publication_id\": 1006211619, \"authority\": \"Handelsregisteramt des Kantons Luzern\", \"canton_previous\": \"NW\", \"canton_new\": \"LU\", \"capital_new_chf\": null, \"capital_previous_chf\": null, \"domicile_new\": \"Dorfstrasse 5, 6030 Ebikon\", \"domicile_previous\": \"Wylstrasse 13, 6052 Hergiswil NW\", \"persons_added\": [], \"persons_removed\": [], \"persons_changed\": [{\"name_new\": \"Schneiter, Marcel\", \"name_previous\": null, \"domicile_new\": \"Ebikon\", \"domicile_previous\": \"Hergiswil (NW)\", \"role_new\": \"Inhaber\", \"role_previous\": null, \"signature_new\": \"Einzelunterschrift\", \"signature_previous\": null, \"nationality_new\": null, \"nationality_previous\": null, \"heimatort_new\": \"Fahrni\", \"heimatort_previous\": null, \"stammanteile_new\": null, \"stammanteile_previous\": null}], \"extras\": {}}"
+}

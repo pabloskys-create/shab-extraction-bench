@@ -1,0 +1,55 @@
+{
+  "doc_id": "0042",
+  "split": "dev",
+  "model_requested": "openai/gpt-6-luna",
+  "backend": "openrouter",
+  "timestamp": "2026-10-11T22:31:56.305099+00:00",
+  "latency_ms": 3625.0,
+  "params": {
+    "temperature": 0,
+    "max_tokens": 32768,
+    "passes": 1,
+    "structured_output": false
+  },
+  "prompt_sha256": "964dec417be3b1c664627b2505ba64f3dc8c0249bfb1cb9430e82c9850e0d20c",
+  "git_commit": "58451200af2804956b5755732cace8478cfc1d6f",
+  "git_dirty": false,
+  "attempts": 1,
+  "status": "ok",
+  "error": null,
+  "model_served": "openai/gpt-6-luna",
+  "provider_served": "OpenAI",
+  "usage": {
+    "completion_tokens": 520,
+    "prompt_tokens": 4832,
+    "total_tokens": 5352,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 96,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 4829,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.000863925,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.000863925,
+      "upstream_inference_prompt_cost": 0.000603925,
+      "upstream_inference_completions_cost": 0.00026
+    }
+  },
+  "reasoning_tokens": 96,
+  "cost_usd": 0.000863925,
+  "finish_reason": "stop",
+  "response_chars": 1306,
+  "response_text": "{\n  \"act_type\": \"mutation\",\n  \"act_subtypes\": [\n    \"organaenderung\"\n  ],\n  \"company_name_full\": \"NOSS Genossenschaft\",\n  \"company_name_base\": \"NOSS Genossenschaft\",\n  \"status_suffix\": null,\n  \"alternative_names\": [],\n  \"company_name_new\": null,\n  \"company_name_previous\": null,\n  \"uid\": \"CHE-110.140.028\",\n  \"legal_form\": \"Genossenschaft\",\n  \"seat_municipality\": \"Spiez\",\n  \"seat_canton\": \"BE\",\n  \"address_care_of\": null,\n  \"address_street\": \"Schlösslistrasse 7\",\n  \"address_postcode\": \"3700\",\n  \"address_municipality\": \"Spiez\",\n  \"act_date\": null,\n  \"tagesregister_nr\": \"14894\",\n  \"tagesregister_date\": \"2026-08-05\",\n  \"prior_publication_shab_nr\": 143,\n  \"prior_publication_date\": \"2026-07-28\",\n  \"prior_publication_id\": 1006717789,\n  \"authority\": \"Handelsregisteramt des Kantons Bern\",\n  \"canton_previous\": null,\n  \"canton_new\": null,\n  \"capital_new_chf\": null,\n  \"capital_previous_chf\": null,\n  \"domicile_new\": null,\n  \"domicile_previous\": null,\n  \"persons_added\": [],\n  \"persons_removed\": [\n    {\n      \"name\": \"Blaser, Jürg\",\n      \"nationality\": null,\n      \"heimatort\": \"Langnau im Emmental\",\n      \"domicile\": \"Spiez\",\n      \"role\": \"Direktor\",\n      \"signature\": \"Kollektivunterschrift zu zweien\",\n      \"uid\": null,\n      \"stammanteile\": null\n    }\n  ],\n  \"persons_changed\": [],\n  \"extras\": {}\n}"
+}

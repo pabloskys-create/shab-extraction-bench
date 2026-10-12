@@ -1,0 +1,56 @@
+{
+  "doc_id": "0003",
+  "split": "dev",
+  "model_requested": "google/gemma-3-12b-it",
+  "backend": "openrouter",
+  "timestamp": "2026-10-12T07:59:33.774668+00:00",
+  "latency_ms": 20032.00000000652,
+  "params": {
+    "temperature": 0,
+    "max_tokens": 8192,
+    "passes": 1,
+    "structured_output": false
+  },
+  "prompt_sha256": "964dec417be3b1c664627b2505ba64f3dc8c0249bfb1cb9430e82c9850e0d20c",
+  "git_commit": "3ee8317ccaf34f4f62f5e00b8847867829bc26e1",
+  "git_dirty": true,
+  "attempts": 1,
+  "status": "ok",
+  "error": null,
+  "model_served": "google/gemma-3-12b-it",
+  "provider_served": "DeepInfra",
+  "usage": {
+    "completion_tokens": 755,
+    "prompt_tokens": 5492,
+    "total_tokens": 6247,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00038785,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00038785,
+      "upstream_inference_prompt_cost": 0.0002746,
+      "upstream_inference_completions_cost": 0.00011325
+    }
+  },
+  "reasoning_tokens": 0,
+  "cost_usd": 0.00038785,
+  "finish_reason": "stop",
+  "response_chars": 1976,
+  "response_text": "```json\n{\n  \"act_type\": \"mutation\",\n  \"act_subtypes\": [\n    \"kapitalerhoehung\",\n    \"organaenderung\"\n  ],\n  \"company_name_full\": \"Noorik Biopharmaceuticals AG, in Basel\",\n  \"company_name_base\": \"Noorik Biopharmaceuticals AG\",\n  \"status_suffix\": null,\n  \"alternative_names\": [\n    \"Noorik Biopharmaceuticals SA\",\n    \"Noorik Biopharmaceuticals Ltd\"\n  ],\n  \"company_name_new\": null,\n  \"company_name_previous\": null,\n  \"uid\": \"CHE-115.986.883\",\n  \"legal_form\": \"AG\",\n  \"seat_municipality\": \"Basel\",\n  \"seat_canton\": \"BS\",\n  \"address_care_of\": null,\n  \"address_street\": \"Lange Gasse 15\",\n  \"address_postcode\": \"4052\",\n  \"address_municipality\": \"Basel\",\n  \"act_date\": \"2026-08-14\",\n  \"tagesregister_nr\": \"5762\",\n  \"tagesregister_date\": \"2026-08-18\",\n  \"prior_publication_shab_nr\": 129,\n  \"prior_publication_date\": \"2024-07-05\",\n  \"prior_publication_id\": 1006077090,\n  \"authority\": \"Handelsregisteramt des Kantons Basel-Stadt\",\n  \"canton_previous\": null,\n  \"canton_new\": null,\n  \"capital_new_chf\": 189123.50,\n  \"capital_previous_chf\": 188123.50,\n  \"domicile_new\": null,\n  \"domicile_previous\": null,\n  \"persons_added\": [],\n  \"persons_removed\": [],\n  \"persons_changed\": [\n    {\n      \"name_new\": \"Navarro Carpentieri, Iker\",\n      \"name_previous\": \"Navarro, Iker\",\n      \"domicile_new\": \"Riehen\",\n      \"domicile_previous\": null,\n      \"role_new\": \"Mitglied des Verwaltungsrates\",\n      \"role_previous\": \"Mitglied des Verwaltungsrates\",\n      \"signature_new\": \"mit Einzelunterschrift\",\n      \"signature_previous\": \"mit Einzelunterschrift\",\n      \"nationality_new\": \"von Riehen\",\n      \"nationality_previous\": \"amerikanischer Staatsangehöriger\",\n      \"heimatort_new\": null,\n      \"heimatort_previous\": null,\n      \"stammanteile_new\": null,\n      \"stammanteile_previous\": null\n    }\n  ],\n  \"extras\": {\n    \"aktien_new\": 378247,\n    \"aktien_previous\": 376247,\n    \"share_classes\": \"Namenaktien\",\n    \"kapitalerhoehung_type\": \"Ordentliche Kapitalerhöhung innerhalb Kapitalband\"\n  }\n}\n```",
+  "warnings": []
+}

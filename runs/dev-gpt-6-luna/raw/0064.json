@@ -1,0 +1,55 @@
+{
+  "doc_id": "0064",
+  "split": "dev",
+  "model_requested": "openai/gpt-6-luna",
+  "backend": "openrouter",
+  "timestamp": "2026-10-11T22:33:49.516459+00:00",
+  "latency_ms": 3516.0000000032596,
+  "params": {
+    "temperature": 0,
+    "max_tokens": 32768,
+    "passes": 1,
+    "structured_output": false
+  },
+  "prompt_sha256": "964dec417be3b1c664627b2505ba64f3dc8c0249bfb1cb9430e82c9850e0d20c",
+  "git_commit": "58451200af2804956b5755732cace8478cfc1d6f",
+  "git_dirty": false,
+  "attempts": 1,
+  "status": "ok",
+  "error": null,
+  "model_served": "openai/gpt-6-luna",
+  "provider_served": "OpenAI",
+  "usage": {
+    "completion_tokens": 470,
+    "prompt_tokens": 4855,
+    "total_tokens": 5325,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 97,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 4852,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.0008418,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.0008418,
+      "upstream_inference_prompt_cost": 0.0006068,
+      "upstream_inference_completions_cost": 0.000235
+    }
+  },
+  "reasoning_tokens": 97,
+  "cost_usd": 0.0008418,
+  "finish_reason": "stop",
+  "response_chars": 1180,
+  "response_text": "{\n  \"act_type\": \"mutation\",\n  \"act_subtypes\": [\n    \"firmenaenderung\"\n  ],\n  \"company_name_full\": \"SKEMA Energie und Kampfkunst Binggeli\",\n  \"company_name_base\": \"SKEMA Energie und Kampfkunst Binggeli\",\n  \"status_suffix\": null,\n  \"alternative_names\": [],\n  \"company_name_new\": \"SKEMA Kampfkunstschule Bern-Ostermundigen Adrian Binggeli\",\n  \"company_name_previous\": \"SKEMA Energie und Kampfkunst Binggeli\",\n  \"uid\": \"CHE-327.249.640\",\n  \"legal_form\": \"Einzelunternehmen\",\n  \"seat_municipality\": \"Ostermundigen\",\n  \"seat_canton\": \"BE\",\n  \"address_care_of\": null,\n  \"address_street\": \"Bernstrasse 28\",\n  \"address_postcode\": \"3072\",\n  \"address_municipality\": \"Ostermundigen\",\n  \"act_date\": null,\n  \"tagesregister_nr\": \"14903\",\n  \"tagesregister_date\": \"2026-08-05\",\n  \"prior_publication_shab_nr\": 59,\n  \"prior_publication_date\": \"2021-03-25\",\n  \"prior_publication_id\": 1005132909,\n  \"authority\": \"Handelsregisteramt des Kantons Bern\",\n  \"canton_previous\": null,\n  \"canton_new\": null,\n  \"capital_new_chf\": null,\n  \"capital_previous_chf\": null,\n  \"domicile_new\": null,\n  \"domicile_previous\": null,\n  \"persons_added\": [],\n  \"persons_removed\": [],\n  \"persons_changed\": [],\n  \"extras\": {}\n}"
+}

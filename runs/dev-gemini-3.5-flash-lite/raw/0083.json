@@ -1,0 +1,55 @@
+{
+  "doc_id": "0083",
+  "split": "dev",
+  "model_requested": "google/gemini-3.5-flash-lite",
+  "backend": "openrouter",
+  "timestamp": "2026-10-12T01:07:12.395314+00:00",
+  "latency_ms": 3484.99999998603,
+  "params": {
+    "temperature": 0,
+    "max_tokens": 32768,
+    "passes": 1,
+    "structured_output": false
+  },
+  "prompt_sha256": "964dec417be3b1c664627b2505ba64f3dc8c0249bfb1cb9430e82c9850e0d20c",
+  "git_commit": "58451200af2804956b5755732cace8478cfc1d6f",
+  "git_dirty": false,
+  "attempts": 1,
+  "status": "ok",
+  "error": null,
+  "model_served": "google/gemini-3.5-flash-lite",
+  "provider_served": "Google",
+  "usage": {
+    "completion_tokens": 1048,
+    "prompt_tokens": 5608,
+    "total_tokens": 6656,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.0043024,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.0043024,
+      "upstream_inference_prompt_cost": 0.0016824,
+      "upstream_inference_completions_cost": 0.00262
+    }
+  },
+  "reasoning_tokens": 0,
+  "cost_usd": 0.0043024,
+  "finish_reason": "stop",
+  "response_chars": 3100,
+  "response_text": "{\n  \"act_type\": \"neueintragung\",\n  \"act_subtypes\": [],\n  \"company_name_full\": \"GP GGG AG\",\n  \"company_name_base\": \"GP GGG AG\",\n  \"status_suffix\": null,\n  \"alternative_names\": [],\n  \"company_name_new\": null,\n  \"company_name_previous\": null,\n  \"uid\": \"CHE-280.969.073\",\n  \"legal_form\": \"AG\",\n  \"seat_municipality\": \"Zürich\",\n  \"seat_canton\": \"ZH\",\n  \"address_care_of\": \"Ghisleni Partner AG\",\n  \"address_street\": \"Lessingstrasse 3\",\n  \"address_postcode\": \"8002\",\n  \"address_municipality\": \"Zürich\",\n  \"act_date\": \"2026-08-20\",\n  \"tagesregister_nr\": \"40375\",\n  \"tagesregister_date\": \"2026-08-26\",\n  \"prior_publication_shab_nr\": null,\n  \"prior_publication_date\": null,\n  \"prior_publication_id\": null,\n  \"authority\": \"Handelsregisteramt des Kantons Zürich\",\n  \"canton_previous\": null,\n  \"canton_new\": null,\n  \"capital_new_chf\": 100000.0,\n  \"capital_previous_chf\": null,\n  \"domicile_new\": null,\n  \"domicile_previous\": null,\n  \"persons_added\": [\n    {\n      \"name\": \"Ghisleni, Stefano\",\n      \"nationality\": null,\n      \"heimatort\": \"Rapperswil-Jona\",\n      \"domicile\": \"Rapperswil-Jona\",\n      \"role\": \"Präsident des Verwaltungsrates\",\n      \"signature\": \"Kollektivunterschrift zu zweien\",\n      \"uid\": null,\n      \"stammanteile\": null\n    },\n    {\n      \"name\": \"Brunschwiler, Martin\",\n      \"nationality\": null,\n      \"heimatort\": \"Bettwiesen\",\n      \"domicile\": \"Rapperswil-Jona\",\n      \"role\": \"Mitglied des Verwaltungsrates\",\n      \"signature\": \"Kollektivunterschrift zu zweien\",\n      \"uid\": null,\n      \"stammanteile\": null\n    },\n    {\n      \"name\": \"Gujer, Michael\",\n      \"nationality\": null,\n      \"heimatort\": \"Uster\",\n      \"domicile\": \"Zürich\",\n      \"role\": \"Mitglied des Verwaltungsrates\",\n      \"signature\": \"Kollektivunterschrift zu zweien\",\n      \"uid\": null,\n      \"stammanteile\": null\n    },\n    {\n      \"name\": \"Maggioni, Christian\",\n      \"nationality\": null,\n      \"heimatort\": \"Seewen\",\n      \"domicile\": \"Winterthur\",\n      \"role\": \"Mitglied des Verwaltungsrates\",\n      \"signature\": \"Kollektivunterschrift zu zweien\",\n      \"uid\": null,\n      \"stammanteile\": null\n    }\n  ],\n  \"persons_removed\": [],\n  \"persons_changed\": [],\n  \"extras\": {\n    \"zweck\": \"Die Gesellschaft bezweckt die Erbringung von Generalplanungsleistungen im Baubereich. Die Gesellschaft kann Zweigniederlassungen und Tochtergesellschaften im In- und Ausland errichten und sich an anderen Unternehmen im In- und Ausland beteiligen sowie alle Geschäfte tätigen, die direkt oder indirekt mit ihrem Zweck in Zusammenhang stehen. Die Gesellschaft kann im In- und Ausland Grundeigentum erwerben, belasten, veräussern und verwalten. Sie kann auch Finanzierungen für eigene oder fremde Rechnung vornehmen sowie Garantien und Bürgschaften für Tochtergesellschaften und Dritte eingehen.\",\n    \"nominal_value_chf\": 1000.0,\n    \"aktien_new\": 100,\n    \"share_classes\": [\n      \"Namenaktien\"\n    ],\n    \"liberierung_new_chf\": 100000.0,\n    \"vinkulierung\": true,\n    \"revision\": \"opting-out\",\n    \"mitteilungen\": \"Mitteilungen an die Aktionäre erfolgen per Brief oder E-Mail an die im Aktienbuch verzeichneten Adressen.\"\n  }\n}"
+}

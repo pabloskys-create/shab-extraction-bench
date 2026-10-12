@@ -1,0 +1,56 @@
+{
+  "doc_id": "0072",
+  "split": "dev",
+  "model_requested": "google/gemma-3-12b-it",
+  "backend": "openrouter",
+  "timestamp": "2026-10-12T08:18:24.034567+00:00",
+  "latency_ms": 29686.99999997625,
+  "params": {
+    "temperature": 0,
+    "max_tokens": 8192,
+    "passes": 1,
+    "structured_output": false
+  },
+  "prompt_sha256": "964dec417be3b1c664627b2505ba64f3dc8c0249bfb1cb9430e82c9850e0d20c",
+  "git_commit": "3ee8317ccaf34f4f62f5e00b8847867829bc26e1",
+  "git_dirty": true,
+  "attempts": 1,
+  "status": "ok",
+  "error": null,
+  "model_served": "google/gemma-3-12b-it",
+  "provider_served": "DeepInfra",
+  "usage": {
+    "completion_tokens": 1247,
+    "prompt_tokens": 5571,
+    "total_tokens": 6818,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.0004656,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.0004656,
+      "upstream_inference_prompt_cost": 0.00027855,
+      "upstream_inference_completions_cost": 0.00018705
+    }
+  },
+  "reasoning_tokens": 0,
+  "cost_usd": 0.0004656,
+  "finish_reason": "stop",
+  "response_chars": 3601,
+  "response_text": "```json\n{\n  \"act_type\": \"mutation\",\n  \"act_subtypes\": [\n    \"organaenderung\"\n  ],\n  \"company_name_full\": \"Vereinigung diplomierter Hoteliers-Restaurateure/Hotelmanager NDS HF\",\n  \"company_name_base\": \"Vereinigung diplomierter Hoteliers-Restaurateure/Hotelmanager NDS HF\",\n  \"status_suffix\": null,\n  \"alternative_names\": [],\n  \"company_name_new\": null,\n  \"company_name_previous\": null,\n  \"uid\": \"CHE-101.475.062\",\n  \"legal_form\": \"Verein\",\n  \"seat_municipality\": \"Zürich\",\n  \"seat_canton\": \"ZH\",\n  \"address_care_of\": null,\n  \"address_street\": \"Brown-Boveri-Strasse 5\",\n  \"address_postcode\": \"8050\",\n  \"address_municipality\": \"Zürich\",\n  \"act_date\": null,\n  \"tagesregister_nr\": \"40522\",\n  \"tagesregister_date\": \"2026-08-26\",\n  \"prior_publication_shab_nr\": 43,\n  \"prior_publication_date\": \"2026-03-04\",\n  \"prior_publication_id\": 1006585656,\n  \"authority\": \"Handelsregisteramt des Kantons Zürich\",\n  \"canton_previous\": null,\n  \"canton_new\": null,\n  \"capital_new_chf\": null,\n  \"capital_previous_chf\": null,\n  \"domicile_new\": null,\n  \"domicile_previous\": null,\n  \"persons_added\": [],\n  \"persons_removed\": [\n    {\n      \"name\": \"Müller, Nicoletta Claudia\",\n      \"nationality\": null,\n      \"heimatort\": \"von Löhningen\",\n      \"domicile\": \"in Zürich\",\n      \"role\": \"Mitglied des Vorstandes\",\n      \"signature\": \"mit Kollektivunterschrift zu zweien\",\n      \"uid\": null,\n      \"stammanteile\": null\n    },\n    {\n      \"name\": \"Rohn, Christoph\",\n      \"nationality\": null,\n      \"heimatort\": \"von Subingen\",\n      \"domicile\": \"in Burgdorf\",\n      \"role\": \"Mitglied des Vorstandes\",\n      \"signature\": \"ohne Zeichnungsberechtigung\",\n      \"uid\": null,\n      \"stammanteile\": null\n    }\n  ],\n  \"persons_changed\": [\n    {\n      \"name_new\": \"Schwarze, Catharina\",\n      \"name_previous\": \"Schwarze, Catharina\",\n      \"domicile_new\": \"in Oetwil am See\",\n      \"domicile_previous\": \"in Oetwil am See\",\n      \"role_new\": \"Vizepräsidentin des Vorstandes\",\n      \"role_previous\": \"Vizepräsidentin des Vorstandes\",\n      \"signature_new\": \"mit Kollektivunterschrift zu zweien\",\n      \"signature_previous\": \"ohne Zeichnungsberechtigung\",\n      \"nationality_new\": \"deutsche Staatsangehörige\",\n      \"nationality_previous\": \"deutsche Staatsangehörige\",\n      \"heimatort_new\": null,\n      \"heimatort_previous\": null,\n      \"stammanteile_new\": null,\n      \"stammanteile_previous\": null\n    },\n    {\n      \"name_new\": \"Burkhard, Christian\",\n      \"name_previous\": \"Burkhard, Christian\",\n      \"domicile_new\": \"in Lenk\",\n      \"domicile_previous\": \"in Lenk\",\n      \"role_new\": \"Mitglied des Vorstandes\",\n      \"role_previous\": \"Mitglied des Vorstandes\",\n      \"signature_new\": \"mit Kollektivunterschrift zu zweien\",\n      \"signature_previous\": \"ohne Zeichnungsberechtigung\",\n      \"nationality_new\": null,\n      \"nationality_previous\": null,\n      \"heimatort_new\": \"von Sumiswald\",\n      \"heimatort_previous\": \"von Sumiswald\",\n      \"stammanteile_new\": null,\n      \"stammanteile_previous\": null\n    },\n    {\n      \"name_new\": \"Menti, Samuel\",\n      \"name_previous\": \"Menti, Samuel\",\n      \"domicile_new\": \"in Meggen\",\n      \"domicile_previous\": \"in Meggen\",\n      \"role_new\": \"Mitglied des Vorstandes\",\n      \"role_previous\": \"Mitglied des Vorstandes\",\n      \"signature_new\": \"mit Kollektivunterschrift zu zweien\",\n      \"signature_previous\": null,\n      \"nationality_new\": null,\n      \"nationality_previous\": null,\n      \"heimatort_new\": \"von Meggen\",\n      \"heimatort_previous\": \"von Meggen\",\n      \"stammanteile_new\": null,\n      \"stammanteile_previous\": null\n    }\n  ],\n  \"extras\": {\n    \"prior_publication_page\": null\n  }\n}\n```",
+  "warnings": []
+}

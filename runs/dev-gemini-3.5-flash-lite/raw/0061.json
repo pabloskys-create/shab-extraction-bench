@@ -1,0 +1,55 @@
+{
+  "doc_id": "0061",
+  "split": "dev",
+  "model_requested": "google/gemini-3.5-flash-lite",
+  "backend": "openrouter",
+  "timestamp": "2026-10-12T01:06:21.568692+00:00",
+  "latency_ms": 1686.9999999762513,
+  "params": {
+    "temperature": 0,
+    "max_tokens": 32768,
+    "passes": 1,
+    "structured_output": false
+  },
+  "prompt_sha256": "964dec417be3b1c664627b2505ba64f3dc8c0249bfb1cb9430e82c9850e0d20c",
+  "git_commit": "58451200af2804956b5755732cace8478cfc1d6f",
+  "git_dirty": false,
+  "attempts": 1,
+  "status": "ok",
+  "error": null,
+  "model_served": "google/gemini-3.5-flash-lite",
+  "provider_served": "Google",
+  "usage": {
+    "completion_tokens": 486,
+    "prompt_tokens": 5350,
+    "total_tokens": 5836,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00282,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00282,
+      "upstream_inference_prompt_cost": 0.001605,
+      "upstream_inference_completions_cost": 0.001215
+    }
+  },
+  "reasoning_tokens": 0,
+  "cost_usd": 0.00282,
+  "finish_reason": "stop",
+  "response_chars": 1175,
+  "response_text": "{\n  \"act_type\": \"mutation\",\n  \"act_subtypes\": [\n    \"sitzverlegung\",\n    \"kantonswechsel\",\n    \"firmenaenderung\"\n  ],\n  \"company_name_full\": \"Network of Arts AG\",\n  \"company_name_base\": \"Network of Arts AG\",\n  \"status_suffix\": null,\n  \"alternative_names\": [],\n  \"company_name_new\": \"NOA contemporary AG\",\n  \"company_name_previous\": \"Network of Arts AG\",\n  \"uid\": \"CHE-159.626.272\",\n  \"legal_form\": \"AG\",\n  \"seat_municipality\": \"Luzern\",\n  \"seat_canton\": \"LU\",\n  \"address_care_of\": null,\n  \"address_street\": \"Stockenmatt 52\",\n  \"address_postcode\": \"6063\",\n  \"address_municipality\": \"Stalden (Sarnen)\",\n  \"act_date\": null,\n  \"tagesregister_nr\": \"8750\",\n  \"tagesregister_date\": \"2026-08-20\",\n  \"prior_publication_shab_nr\": 126,\n  \"prior_publication_date\": \"2023-07-03\",\n  \"prior_publication_id\": \"1005784316\",\n  \"authority\": \"Handelsregisteramt des Kantons Luzern\",\n  \"canton_previous\": \"LU\",\n  \"canton_new\": \"OW\",\n  \"capital_new_chf\": null,\n  \"capital_previous_chf\": null,\n  \"domicile_new\": \"Stockenmatt 52, 6063 Stalden (Sarnen)\",\n  \"domicile_previous\": \"Töpferstrasse 10, 6004 Luzern\",\n  \"persons_added\": [],\n  \"persons_removed\": [],\n  \"persons_changed\": [],\n  \"extras\": {}\n}"
+}

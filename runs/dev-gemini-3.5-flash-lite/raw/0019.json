@@ -1,0 +1,55 @@
+{
+  "doc_id": "0019",
+  "split": "dev",
+  "model_requested": "google/gemini-3.5-flash-lite",
+  "backend": "openrouter",
+  "timestamp": "2026-10-12T01:04:54.645720+00:00",
+  "latency_ms": 3657.0000000065193,
+  "params": {
+    "temperature": 0,
+    "max_tokens": 32768,
+    "passes": 1,
+    "structured_output": false
+  },
+  "prompt_sha256": "964dec417be3b1c664627b2505ba64f3dc8c0249bfb1cb9430e82c9850e0d20c",
+  "git_commit": "58451200af2804956b5755732cace8478cfc1d6f",
+  "git_dirty": false,
+  "attempts": 1,
+  "status": "ok",
+  "error": null,
+  "model_served": "google/gemini-3.5-flash-lite",
+  "provider_served": "Google",
+  "usage": {
+    "completion_tokens": 1494,
+    "prompt_tokens": 5872,
+    "total_tokens": 7366,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.0054966,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.0054966,
+      "upstream_inference_prompt_cost": 0.0017616,
+      "upstream_inference_completions_cost": 0.003735
+    }
+  },
+  "reasoning_tokens": 0,
+  "cost_usd": 0.0054966,
+  "finish_reason": "stop",
+  "response_chars": 4464,
+  "response_text": "{\n  \"act_type\": \"mutation\",\n  \"act_subtypes\": [\n    \"statutenaenderung\",\n    \"organaenderung\",\n    \"firmenaenderung\",\n    \"zweckaenderung\"\n  ],\n  \"company_name_full\": \"Schenk Manfred GmbH\",\n  \"company_name_base\": \"Schenk Manfred GmbH\",\n  \"status_suffix\": null,\n  \"alternative_names\": [],\n  \"company_name_new\": \"Schenk Bedachungen GmbH\",\n  \"company_name_previous\": \"Schenk Manfred GmbH\",\n  \"uid\": \"CHE-106.449.959\",\n  \"legal_form\": \"GmbH\",\n  \"seat_municipality\": \"Sumiswald\",\n  \"seat_canton\": \"BE\",\n  \"address_care_of\": null,\n  \"address_street\": \"Dorfstrasse 51\",\n  \"address_postcode\": \"3457\",\n  \"address_municipality\": \"Wasen im Emmental\",\n  \"act_date\": \"2026-07-31\",\n  \"tagesregister_nr\": \"14901\",\n  \"tagesregister_date\": \"2026-08-05\",\n  \"prior_publication_shab_nr\": 140,\n  \"prior_publication_date\": \"2025-07-23\",\n  \"prior_publication_id\": \"1006391936\",\n  \"authority\": \"Handelsregisteramt des Kantons Bern\",\n  \"canton_previous\": null,\n  \"canton_new\": null,\n  \"capital_new_chf\": null,\n  \"capital_previous_chf\": null,\n  \"domicile_new\": \"Dorfstrasse 51, 3457 Wasen im Emmental\",\n  \"domicile_previous\": \"ober Bärhegen null, 3457 Wasen im Emmental\",\n  \"persons_added\": [\n    {\n      \"name\": \"Gerber, Sven\",\n      \"nationality\": null,\n      \"heimatort\": \"Langnau im Emmental\",\n      \"domicile\": \"Sumiswald\",\n      \"role\": null,\n      \"signature\": \"Kollektivunterschrift zu zweien\",\n      \"uid\": null,\n      \"stammanteile\": null\n    },\n    {\n      \"name\": \"Grossen, Thomas\",\n      \"nationality\": null,\n      \"heimatort\": \"Kandergrund\",\n      \"domicile\": \"Wasen im Emmental (Sumiswald)\",\n      \"role\": null,\n      \"signature\": \"Kollektivunterschrift zu zweien\",\n      \"uid\": null,\n      \"stammanteile\": null\n    },\n    {\n      \"name\": \"Heiniger, Michael\",\n      \"nationality\": null,\n      \"heimatort\": \"Eriswil\",\n      \"domicile\": \"Grünen (Sumiswald)\",\n      \"role\": null,\n      \"signature\": \"Kollektivunterschrift zu zweien\",\n      \"uid\": null,\n      \"stammanteile\": null\n    },\n    {\n      \"name\": \"Moser, Paul\",\n      \"nationality\": null,\n      \"heimatort\": \"Röthenbach im Emmental\",\n      \"domicile\": \"Bowil\",\n      \"role\": null,\n      \"signature\": \"Kollektivunterschrift zu zweien\",\n      \"uid\": null,\n      \"stammanteile\": null\n    }\n  ],\n  \"persons_removed\": [\n    {\n      \"name\": \"Schenk, Karin\",\n      \"nationality\": null,\n      \"heimatort\": \"Eggiwil\",\n      \"domicile\": \"Bern\",\n      \"role\": null,\n      \"signature\": \"Kollektivunterschrift zu zweien\",\n      \"uid\": null,\n      \"stammanteile\": null\n    }\n  ],\n  \"persons_changed\": [\n    {\n      \"name_new\": \"Reber, Elias\",\n      \"name_previous\": null,\n      \"domicile_new\": \"Wasen im Emmental (Sumiswald)\",\n      \"domicile_previous\": null,\n      \"role_new\": \"Vorsitzender der Geschäftsführung\",\n      \"role_previous\": null,\n      \"signature_new\": \"Einzelunterschrift\",\n      \"signature_previous\": \"Kollektivunterschrift zu zweien\",\n      \"nationality_new\": null,\n      \"nationality_previous\": null,\n      \"heimatort_new\": \"Schangnau\",\n      \"heimatort_previous\": null,\n      \"stammanteile_new\": null,\n      \"stammanteile_previous\": null\n    },\n    {\n      \"name_new\": \"Reber, Joschua\",\n      \"name_previous\": null,\n      \"domicile_new\": \"Wasen im Emmental (Sumiswald)\",\n      \"domicile_previous\": null,\n      \"role_new\": \"Geschäftsführer\",\n      \"role_previous\": null,\n      \"signature_new\": \"Einzelunterschrift\",\n      \"signature_previous\": \"Kollektivunterschrift zu zweien\",\n      \"nationality_new\": null,\n      \"nationality_previous\": null,\n      \"heimatort_new\": \"Schangnau\",\n      \"heimatort_previous\": null,\n      \"stammanteile_new\": null,\n      \"stammanteile_previous\": null\n    }\n  ],\n  \"extras\": {\n    \"zweck\": \"Zweck der Gesellschaft ist der Betrieb eines Dachdeckergeschäftes und insbesondere die Ausführung von Bedachungen, Kamin- und Fassadenverkleidungen, Dach- und Fassadenisolationen, Dach- und Fassadenreparaturen, Gerüstbau und Flachdachbau. Die Gesellschaft kann im In- und Ausland Zweigniederlassungen errichten, sich an anderen Unternehmen im In- und Ausland beteiligen, gleichartige oder verwandte Unternehmen erwerben oder sich mit solchen zusammenschliessen, Grundstücke erwerben, verwalten und veräussern sowie alle Geschäfte eingehen und Verträge abschliessen, die geeignet sind, den Zweck der Gesellschaft zu fördern, oder die direkt oder indirekt damit im Zusammenhang stehen.\",\n    \"mitteilungen\": \"Mitteilungen an die Gesellschafter: schriftlich oder mit elektronischer Post.\"\n  }\n}"
+}

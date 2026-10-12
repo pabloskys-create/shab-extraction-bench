@@ -1,0 +1,55 @@
+{
+  "doc_id": "0084",
+  "split": "dev",
+  "model_requested": "anthropic/claude-sonnet-5.5",
+  "backend": "openrouter",
+  "timestamp": "2026-10-11T23:13:25.742339+00:00",
+  "latency_ms": 4031.0000000172295,
+  "params": {
+    "temperature": 0,
+    "max_tokens": 32768,
+    "passes": 1,
+    "structured_output": false
+  },
+  "prompt_sha256": "964dec417be3b1c664627b2505ba64f3dc8c0249bfb1cb9430e82c9850e0d20c",
+  "git_commit": "58451200af2804956b5755732cace8478cfc1d6f",
+  "git_dirty": false,
+  "attempts": 1,
+  "status": "ok",
+  "error": null,
+  "model_served": "anthropic/claude-sonnet-5.5",
+  "provider_served": "Claude Platform on AWS",
+  "usage": {
+    "completion_tokens": 721,
+    "prompt_tokens": 7722,
+    "total_tokens": 8443,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.022654,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.022654,
+      "upstream_inference_prompt_cost": 0.015444,
+      "upstream_inference_completions_cost": 0.00721
+    }
+  },
+  "reasoning_tokens": 0,
+  "cost_usd": 0.022654,
+  "finish_reason": "stop",
+  "response_chars": 1557,
+  "response_text": "{\"act_type\":\"neueintragung\",\"act_subtypes\":[],\"company_name_full\":\"Flowtech Holding AG\",\"company_name_base\":\"Flowtech Holding AG\",\"status_suffix\":null,\"alternative_names\":[],\"company_name_new\":null,\"company_name_previous\":null,\"uid\":\"CHE-176.241.186\",\"legal_form\":\"AG\",\"seat_municipality\":\"Thalwil\",\"seat_canton\":\"ZH\",\"address_care_of\":\"Tanja Meyer\",\"address_street\":\"Aegertlistrasse 23a\",\"address_postcode\":\"8800\",\"address_municipality\":\"Thalwil\",\"act_date\":\"2026-08-18\",\"tagesregister_nr\":\"40372\",\"tagesregister_date\":\"2026-08-26\",\"prior_publication_shab_nr\":null,\"prior_publication_date\":null,\"prior_publication_id\":null,\"authority\":\"Handelsregisteramt des Kantons Zürich\",\"canton_previous\":null,\"canton_new\":null,\"capital_new_chf\":100000.0,\"capital_previous_chf\":null,\"domicile_new\":null,\"domicile_previous\":null,\"persons_added\":[{\"name\":\"Meyer, Tanja Yumi\",\"nationality\":null,\"heimatort\":\"Villmergen und Würenlos\",\"domicile\":\"Thalwil\",\"role\":\"Mitglied des Verwaltungsrates\",\"signature\":\"Einzelunterschrift\",\"uid\":null,\"stammanteile\":null}],\"persons_removed\":[],\"persons_changed\":[],\"extras\":{\"zweck\":\"Die Gesellschaft bezweckt den Erwerb, das Halten, die Verwaltung und die Veräusserung von Beteiligungen an anderen Unternehmungen jeder Art im In- und Ausland. Die Gesellschaft kann Zweigniederlassungen und…\",\"nominal_value_chf\":100.0,\"aktien_new\":1000,\"share_classes\":\"Namenaktien\",\"liberierung_new_chf\":100000.0,\"vinkulierung\":true,\"revision\":\"opting-out\",\"mitteilungen\":\"erfolgen per Brief oder E-Mail an die im Aktienbuch verzeichneten Adressen\"}}"
+}

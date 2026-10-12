@@ -1,0 +1,55 @@
+{
+  "doc_id": "0117",
+  "split": "dev",
+  "model_requested": "mistralai/mistral-large-4-0",
+  "backend": "openrouter",
+  "timestamp": "2026-10-12T00:48:21.371143+00:00",
+  "latency_ms": 26563.00000002375,
+  "params": {
+    "temperature": 0,
+    "max_tokens": 32768,
+    "passes": 1,
+    "structured_output": false
+  },
+  "prompt_sha256": "964dec417be3b1c664627b2505ba64f3dc8c0249bfb1cb9430e82c9850e0d20c",
+  "git_commit": "58451200af2804956b5755732cace8478cfc1d6f",
+  "git_dirty": false,
+  "attempts": 1,
+  "status": "ok",
+  "error": null,
+  "model_served": "mistralai/mistral-large-4-0",
+  "provider_served": "Mistral",
+  "usage": {
+    "completion_tokens": 3887,
+    "prompt_tokens": 4891,
+    "total_tokens": 8778,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 3151,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 4076,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00896335,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00896335,
+      "upstream_inference_prompt_cost": 0.00083952,
+      "upstream_inference_completions_cost": 0.00812383
+    }
+  },
+  "reasoning_tokens": 3151,
+  "cost_usd": 0.00896335,
+  "finish_reason": "stop",
+  "response_chars": 1058,
+  "response_text": "{\n  \"act_type\": \"mutation\",\n  \"act_subtypes\": [],\n  \"company_name_full\": \"CHFL AG\",\n  \"company_name_base\": \"CHFL AG\",\n  \"status_suffix\": null,\n  \"alternative_names\": [\"CHFL SA\", \"CHFL Ltd.\"],\n  \"company_name_new\": null,\n  \"company_name_previous\": null,\n  \"uid\": \"CHE-460.928.043\",\n  \"legal_form\": \"AG\",\n  \"seat_municipality\": \"Zürich\",\n  \"seat_canton\": \"ZH\",\n  \"address_care_of\": null,\n  \"address_street\": \"Heerenwiesen 5\",\n  \"address_postcode\": \"8051\",\n  \"address_municipality\": \"Zürich\",\n  \"act_date\": null,\n  \"tagesregister_nr\": \"40425\",\n  \"tagesregister_date\": \"2026-08-26\",\n  \"prior_publication_shab_nr\": 174,\n  \"prior_publication_date\": \"2021-09-08\",\n  \"prior_publication_id\": 1005286541,\n  \"authority\": \"Handelsregisteramt des Kantons Zürich\",\n  \"canton_previous\": null,\n  \"canton_new\": null,\n  \"capital_new_chf\": null,\n  \"capital_previous_chf\": null,\n  \"domicile_new\": \"Heerenwiesen 5, 8051 Zürich\",\n  \"domicile_previous\": \"Stettbachstrasse 127f, 8051 Zürich\",\n  \"persons_added\": [],\n  \"persons_removed\": [],\n  \"persons_changed\": [],\n  \"extras\": {}\n}"
+}

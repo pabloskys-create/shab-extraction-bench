@@ -1,0 +1,56 @@
+{
+  "doc_id": "0086",
+  "split": "dev",
+  "model_requested": "google/gemma-3-12b-it",
+  "backend": "openrouter",
+  "timestamp": "2026-10-12T08:23:11.471928+00:00",
+  "latency_ms": 17608.99999999674,
+  "params": {
+    "temperature": 0,
+    "max_tokens": 8192,
+    "passes": 1,
+    "structured_output": false
+  },
+  "prompt_sha256": "964dec417be3b1c664627b2505ba64f3dc8c0249bfb1cb9430e82c9850e0d20c",
+  "git_commit": "3ee8317ccaf34f4f62f5e00b8847867829bc26e1",
+  "git_dirty": true,
+  "attempts": 1,
+  "status": "ok",
+  "error": null,
+  "model_served": "google/gemma-3-12b-it",
+  "provider_served": "DeepInfra",
+  "usage": {
+    "completion_tokens": 658,
+    "prompt_tokens": 5415,
+    "total_tokens": 6073,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00036945,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00036945,
+      "upstream_inference_prompt_cost": 0.00027075,
+      "upstream_inference_completions_cost": 9.87e-05
+    }
+  },
+  "reasoning_tokens": 0,
+  "cost_usd": 0.00036945,
+  "finish_reason": "stop",
+  "response_chars": 1761,
+  "response_text": "```json\n{\n  \"act_type\": \"mutation\",\n  \"act_subtypes\": [],\n  \"company_name_full\": \"Responsible Capital AG, in Kilchberg (ZH)\",\n  \"company_name_base\": \"Responsible Capital AG\",\n  \"status_suffix\": null,\n  \"alternative_names\": [],\n  \"company_name_new\": null,\n  \"company_name_previous\": null,\n  \"uid\": \"CHE-141.402.448\",\n  \"legal_form\": \"Aktiengesellschaft\",\n  \"seat_municipality\": \"Kilchberg (ZH)\",\n  \"seat_canton\": \"ZH\",\n  \"address_care_of\": \"c/o Palma Di Salvo Petracca\",\n  \"address_street\": \"Bahnhofplatz 1\",\n  \"address_postcode\": \"8802\",\n  \"address_municipality\": \"Kilchberg ZH\",\n  \"act_date\": null,\n  \"tagesregister_nr\": \"40493\",\n  \"tagesregister_date\": \"2026-08-26\",\n  \"prior_publication_shab_nr\": 62,\n  \"prior_publication_date\": \"2021-03-30\",\n  \"prior_publication_id\": null,\n  \"authority\": \"Handelsregisteramt des Kantons Zürich\",\n  \"canton_previous\": null,\n  \"canton_new\": null,\n  \"capital_new_chf\": null,\n  \"capital_previous_chf\": null,\n  \"domicile_new\": \"c/o Palma Di Salvo Petracca, Bahnhofplatz 1, 8802 Kilchberg ZH\",\n  \"domicile_previous\": \"Bahnhofplatz 1, 8802 Kilchberg ZH\",\n  \"persons_added\": [\n    {\n      \"name\": \"Petracca, Stefano\",\n      \"nationality\": \"Schweizer\",\n      \"heimatort\": \"Wangen-Brüttisellen\",\n      \"domicile\": \"Sesto Campano (IT)\",\n      \"role\": \"Mitglied des Verwaltungsrates\",\n      \"signature\": \"mit Einzelunterschrift\",\n      \"uid\": null,\n      \"stammanteile\": null\n    },\n    {\n      \"name\": \"Di Salvo Petracca, Palma Stefania\",\n      \"nationality\": \"Schweizer\",\n      \"heimatort\": null,\n      \"domicile\": \"Kilchberg (ZH)\",\n      \"role\": \"Direktorin\",\n      \"signature\": \"mit Einzelunterschrift\",\n      \"uid\": null,\n      \"stammanteile\": null\n    }\n  ],\n  \"persons_removed\": [],\n  \"persons_changed\": [],\n  \"extras\": {}\n}\n```",
+  "warnings": []
+}

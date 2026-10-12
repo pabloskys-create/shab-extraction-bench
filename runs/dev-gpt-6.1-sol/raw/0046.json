@@ -1,0 +1,55 @@
+{
+  "doc_id": "0046",
+  "split": "dev",
+  "model_requested": "openai/gpt-6.1-sol",
+  "backend": "openrouter",
+  "timestamp": "2026-10-11T23:21:03.456986+00:00",
+  "latency_ms": 6266.00000000326,
+  "params": {
+    "temperature": 0,
+    "max_tokens": 32768,
+    "passes": 1,
+    "structured_output": false
+  },
+  "prompt_sha256": "964dec417be3b1c664627b2505ba64f3dc8c0249bfb1cb9430e82c9850e0d20c",
+  "git_commit": "58451200af2804956b5755732cace8478cfc1d6f",
+  "git_dirty": false,
+  "attempts": 1,
+  "status": "ok",
+  "error": null,
+  "model_served": "openai/gpt-6.1-sol",
+  "provider_served": "OpenAI",
+  "usage": {
+    "completion_tokens": 498,
+    "prompt_tokens": 5103,
+    "total_tokens": 5601,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 5100,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.017736,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.017736,
+      "upstream_inference_prompt_cost": 0.012756,
+      "upstream_inference_completions_cost": 0.00498
+    }
+  },
+  "reasoning_tokens": 0,
+  "cost_usd": 0.017736,
+  "finish_reason": "stop",
+  "response_chars": 1640,
+  "response_text": "{\n  \"act_type\": \"neueintragung\",\n  \"act_subtypes\": [],\n  \"company_name_full\": \"Veloxon Engineering GmbH\",\n  \"company_name_base\": \"Veloxon Engineering GmbH\",\n  \"status_suffix\": null,\n  \"alternative_names\": [],\n  \"company_name_new\": null,\n  \"company_name_previous\": null,\n  \"uid\": \"CHE-357.003.457\",\n  \"legal_form\": \"GmbH\",\n  \"seat_municipality\": \"Buchrain\",\n  \"seat_canton\": \"LU\",\n  \"address_care_of\": null,\n  \"address_street\": \"Unterdorfweg 2\",\n  \"address_postcode\": \"6033\",\n  \"address_municipality\": \"Buchrain\",\n  \"act_date\": \"2026-07-16\",\n  \"tagesregister_nr\": \"8684\",\n  \"tagesregister_date\": \"2026-08-20\",\n  \"prior_publication_shab_nr\": null,\n  \"prior_publication_date\": null,\n  \"prior_publication_id\": null,\n  \"authority\": \"Handelsregisteramt des Kantons Luzern\",\n  \"canton_previous\": null,\n  \"canton_new\": null,\n  \"capital_new_chf\": 20000.0,\n  \"capital_previous_chf\": null,\n  \"domicile_new\": null,\n  \"domicile_previous\": null,\n  \"persons_added\": [\n    {\n      \"name\": \"Rüegg, Patrick Joshua\",\n      \"nationality\": null,\n      \"heimatort\": \"Bauma\",\n      \"domicile\": \"Nottwil\",\n      \"role\": \"Gesellschafter und Geschäftsführer\",\n      \"signature\": \"Einzelunterschrift\",\n      \"uid\": null,\n      \"stammanteile\": 200\n    }\n  ],\n  \"persons_removed\": [],\n  \"persons_changed\": [],\n  \"extras\": {\n    \"zweck\": \"Die Gesellschaft bezweckt die Erbringung von Dienstleistungen in den Bereichen Ingenieurwesen und Softwareentwicklung, insbesondere die Entwicklung, Konstruktion und Optimierung mechanischer und technischer…\",\n    \"nominal_value_chf\": 100.0,\n    \"revision\": \"opting-out\",\n    \"mitteilungen\": \"erfolgen per Brief oder E-Mail.\"\n  }\n}"
+}

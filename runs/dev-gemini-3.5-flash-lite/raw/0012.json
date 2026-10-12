@@ -1,0 +1,55 @@
+{
+  "doc_id": "0012",
+  "split": "dev",
+  "model_requested": "google/gemini-3.5-flash-lite",
+  "backend": "openrouter",
+  "timestamp": "2026-10-12T01:04:38.475630+00:00",
+  "latency_ms": 2750.0,
+  "params": {
+    "temperature": 0,
+    "max_tokens": 32768,
+    "passes": 1,
+    "structured_output": false
+  },
+  "prompt_sha256": "964dec417be3b1c664627b2505ba64f3dc8c0249bfb1cb9430e82c9850e0d20c",
+  "git_commit": "58451200af2804956b5755732cace8478cfc1d6f",
+  "git_dirty": false,
+  "attempts": 1,
+  "status": "ok",
+  "error": null,
+  "model_served": "google/gemini-3.5-flash-lite",
+  "provider_served": "Google",
+  "usage": {
+    "completion_tokens": 701,
+    "prompt_tokens": 5319,
+    "total_tokens": 6020,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.0033482,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.0033482,
+      "upstream_inference_prompt_cost": 0.0015957,
+      "upstream_inference_completions_cost": 0.0017525
+    }
+  },
+  "reasoning_tokens": 0,
+  "cost_usd": 0.0033482,
+  "finish_reason": "stop",
+  "response_chars": 1861,
+  "response_text": "```json\n{\n  \"act_type\": \"neueintragung\",\n  \"act_subtypes\": [],\n  \"company_name_full\": \"Chez India KLG\",\n  \"company_name_base\": \"Chez India KLG\",\n  \"status_suffix\": null,\n  \"alternative_names\": [],\n  \"company_name_new\": null,\n  \"company_name_previous\": null,\n  \"uid\": \"CHE-358.426.607\",\n  \"legal_form\": \"Kollektivgesellschaft\",\n  \"seat_municipality\": \"Biel/Bienne\",\n  \"seat_canton\": \"BE\",\n  \"address_care_of\": null,\n  \"address_street\": \"General-Dufour-Strasse 31\",\n  \"address_postcode\": \"2502\",\n  \"address_municipality\": \"Biel/Bienne\",\n  \"act_date\": \"2026-08-03\",\n  \"tagesregister_nr\": \"14841\",\n  \"tagesregister_date\": \"2026-08-05\",\n  \"prior_publication_shab_nr\": null,\n  \"prior_publication_date\": null,\n  \"prior_publication_id\": null,\n  \"authority\": \"Handelsregisteramt des Kantons Bern\",\n  \"canton_previous\": null,\n  \"canton_new\": null,\n  \"capital_new_chf\": null,\n  \"capital_previous_chf\": null,\n  \"domicile_new\": null,\n  \"domicile_previous\": null,\n  \"persons_added\": [\n    {\n      \"name\": \"Singh, Gurbachan\",\n      \"nationality\": null,\n      \"heimatort\": \"Vechigen\",\n      \"domicile\": \"Boll (Vechigen)\",\n      \"role\": \"Gesellschafter\",\n      \"signature\": \"Einzelunterschrift\",\n      \"uid\": null,\n      \"stammanteile\": null\n    },\n    {\n      \"name\": \"Khan, Resabul\",\n      \"nationality\": \"indisch\",\n      \"heimatort\": null,\n      \"domicile\": \"Biel/Bienne\",\n      \"role\": \"Gesellschafter\",\n      \"signature\": \"Kollektivunterschrift zu zweien\",\n      \"uid\": null,\n      \"stammanteile\": null\n    },\n    {\n      \"name\": \"Singh, Biramandeep\",\n      \"nationality\": null,\n      \"heimatort\": \"Vechigen\",\n      \"domicile\": \"Boll (Vechigen)\",\n      \"role\": null,\n      \"signature\": \"Einzelunterschrift\",\n      \"uid\": null,\n      \"stammanteile\": null\n    }\n  ],\n  \"persons_removed\": [],\n  \"persons_changed\": [],\n  \"extras\": {\n    \"zweck\": \"Gastronomiebetrieb.\"\n  }\n}\n```"
+}

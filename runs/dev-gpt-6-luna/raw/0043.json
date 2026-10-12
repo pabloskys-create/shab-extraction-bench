@@ -1,0 +1,55 @@
+{
+  "doc_id": "0043",
+  "split": "dev",
+  "model_requested": "openai/gpt-6-luna",
+  "backend": "openrouter",
+  "timestamp": "2026-10-11T22:32:00.214052+00:00",
+  "latency_ms": 3907.0000000065193,
+  "params": {
+    "temperature": 0,
+    "max_tokens": 32768,
+    "passes": 1,
+    "structured_output": false
+  },
+  "prompt_sha256": "964dec417be3b1c664627b2505ba64f3dc8c0249bfb1cb9430e82c9850e0d20c",
+  "git_commit": "58451200af2804956b5755732cace8478cfc1d6f",
+  "git_dirty": false,
+  "attempts": 1,
+  "status": "ok",
+  "error": null,
+  "model_served": "openai/gpt-6-luna",
+  "provider_served": "OpenAI",
+  "usage": {
+    "completion_tokens": 503,
+    "prompt_tokens": 4835,
+    "total_tokens": 5338,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 114,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 4832,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.0008558,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.0008558,
+      "upstream_inference_prompt_cost": 0.0006043,
+      "upstream_inference_completions_cost": 0.0002515
+    }
+  },
+  "reasoning_tokens": 114,
+  "cost_usd": 0.0008558,
+  "finish_reason": "stop",
+  "response_chars": 1293,
+  "response_text": "{\n  \"act_type\": \"mutation\",\n  \"act_subtypes\": [\n    \"firmenaenderung\",\n    \"zweckaenderung\"\n  ],\n  \"company_name_full\": \"Kröner Consulting\",\n  \"company_name_base\": \"Kröner Consulting\",\n  \"status_suffix\": null,\n  \"alternative_names\": [],\n  \"company_name_new\": \"Kröner Design\",\n  \"company_name_previous\": \"Kröner Consulting\",\n  \"uid\": \"CHE-279.705.403\",\n  \"legal_form\": \"Einzelunternehmen\",\n  \"seat_municipality\": \"Bolligen\",\n  \"seat_canton\": \"BE\",\n  \"address_care_of\": null,\n  \"address_street\": \"Chrottegässli 28\",\n  \"address_postcode\": \"3065\",\n  \"address_municipality\": \"Bolligen\",\n  \"act_date\": null,\n  \"tagesregister_nr\": \"14884\",\n  \"tagesregister_date\": \"2026-08-05\",\n  \"prior_publication_shab_nr\": 251,\n  \"prior_publication_date\": \"2024-12-27\",\n  \"prior_publication_id\": 1006216229,\n  \"authority\": \"Handelsregisteramt des Kantons Bern\",\n  \"canton_previous\": null,\n  \"canton_new\": null,\n  \"capital_new_chf\": null,\n  \"capital_previous_chf\": null,\n  \"domicile_new\": null,\n  \"domicile_previous\": null,\n  \"persons_added\": [],\n  \"persons_removed\": [],\n  \"persons_changed\": [],\n  \"extras\": {\n    \"zweck\": \"Erbringen von Dienstleistungen im Bereich Online Marketing, Webdesign, Suchmaschinenoptimierung, digitale Strategie sowie Beratung und Vertrieb von digitalen Lösungen für Unternehmen.\"\n  }\n}"
+}

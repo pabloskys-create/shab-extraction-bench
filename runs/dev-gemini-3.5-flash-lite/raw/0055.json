@@ -1,0 +1,55 @@
+{
+  "doc_id": "0055",
+  "split": "dev",
+  "model_requested": "google/gemini-3.5-flash-lite",
+  "backend": "openrouter",
+  "timestamp": "2026-10-12T01:06:09.260595+00:00",
+  "latency_ms": 1954.0000000270084,
+  "params": {
+    "temperature": 0,
+    "max_tokens": 32768,
+    "passes": 1,
+    "structured_output": false
+  },
+  "prompt_sha256": "964dec417be3b1c664627b2505ba64f3dc8c0249bfb1cb9430e82c9850e0d20c",
+  "git_commit": "58451200af2804956b5755732cace8478cfc1d6f",
+  "git_dirty": false,
+  "attempts": 1,
+  "status": "ok",
+  "error": null,
+  "model_served": "google/gemini-3.5-flash-lite",
+  "provider_served": "Google",
+  "usage": {
+    "completion_tokens": 703,
+    "prompt_tokens": 5438,
+    "total_tokens": 6141,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.0033889,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.0033889,
+      "upstream_inference_prompt_cost": 0.0016314,
+      "upstream_inference_completions_cost": 0.0017575
+    }
+  },
+  "reasoning_tokens": 0,
+  "cost_usd": 0.0033889,
+  "finish_reason": "stop",
+  "response_chars": 1860,
+  "response_text": "{\n  \"act_type\": \"mutation\",\n  \"act_subtypes\": [\n    \"kapitalerhoehung\",\n    \"organaenderung\"\n  ],\n  \"company_name_full\": \"Sun Fung Offset Binding (Europe) GmbH\",\n  \"company_name_base\": \"Sun Fung Offset Binding (Europe) GmbH\",\n  \"status_suffix\": null,\n  \"alternative_names\": [],\n  \"company_name_new\": null,\n  \"company_name_previous\": null,\n  \"uid\": \"CHE-109.100.186\",\n  \"legal_form\": \"GmbH\",\n  \"seat_municipality\": \"Luzern\",\n  \"seat_canton\": \"LU\",\n  \"address_care_of\": \"Mei Lin\",\n  \"address_street\": \"Landenbergstrasse 5\",\n  \"address_postcode\": \"6005\",\n  \"address_municipality\": \"Luzern\",\n  \"act_date\": null,\n  \"tagesregister_nr\": \"8739\",\n  \"tagesregister_date\": \"2026-08-20\",\n  \"prior_publication_shab_nr\": 185,\n  \"prior_publication_date\": \"2016-09-23\",\n  \"prior_publication_id\": \"3070939\",\n  \"authority\": \"Handelsregisteramt des Kantons Luzern\",\n  \"canton_previous\": null,\n  \"canton_new\": null,\n  \"capital_new_chf\": null,\n  \"capital_previous_chf\": null,\n  \"domicile_new\": null,\n  \"domicile_previous\": null,\n  \"persons_added\": [],\n  \"persons_removed\": [\n    {\n      \"name\": \"Meier, Rolf\",\n      \"nationality\": null,\n      \"heimatort\": \"Biberist\",\n      \"domicile\": \"Vitznau\",\n      \"role\": \"Gesellschafter\",\n      \"signature\": \"ohne Zeichnungsberechtigung\",\n      \"uid\": null,\n      \"stammanteile\": \"1\"\n    }\n  ],\n  \"persons_changed\": [\n    {\n      \"name_new\": \"Mei, Lin\",\n      \"name_previous\": null,\n      \"domicile_new\": \"Luzern\",\n      \"domicile_previous\": null,\n      \"role_new\": \"Gesellschafterin und Geschäftsführerin\",\n      \"role_previous\": null,\n      \"signature_new\": \"Einzelunterschrift\",\n      \"signature_previous\": null,\n      \"nationality_new\": null,\n      \"nationality_previous\": null,\n      \"heimatort_new\": \"Horw\",\n      \"heimatort_previous\": null,\n      \"stammanteile_new\": \"2\",\n      \"stammanteile_previous\": \"1\"\n    }\n  ],\n  \"extras\": {}\n}"
+}

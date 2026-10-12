@@ -1,0 +1,60 @@
+{
+  "doc_id": "0084",
+  "split": "dev",
+  "model_requested": "mistralai/mistral-large-4-0",
+  "backend": "openrouter",
+  "timestamp": "2026-10-12T07:56:09.920500+00:00",
+  "latency_ms": 2436.9999999762513,
+  "params": {
+    "temperature": 0,
+    "max_tokens": 32768,
+    "passes": 1,
+    "structured_output": false
+  },
+  "prompt_sha256": "964dec417be3b1c664627b2505ba64f3dc8c0249bfb1cb9430e82c9850e0d20c",
+  "git_commit": "3ee8317ccaf34f4f62f5e00b8847867829bc26e1",
+  "git_dirty": true,
+  "attempts": 6,
+  "status": "error",
+  "error": {
+    "type": "UnusableResponse",
+    "message": "provider returned finish_reason 'error'",
+    "attempts": 6
+  },
+  "model_served": "mistralai/mistral-large-4-0",
+  "provider_served": "Mistral",
+  "usage": {
+    "completion_tokens": 275,
+    "prompt_tokens": 5118,
+    "total_tokens": 5393,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 173,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00405499,
+      "upstream_inference_prompt_cost": 0.00348024,
+      "upstream_inference_completions_cost": 0.00057475
+    }
+  },
+  "reasoning_tokens": 173,
+  "cost_usd": 0,
+  "finish_reason": "error",
+  "response_chars": 0,
+  "response_text": null,
+  "warnings": []
+}
