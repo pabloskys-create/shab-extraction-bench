@@ -261,11 +261,32 @@ def make_client(backend: str, api_key: str, timeout: float) -> openai.OpenAI:
 
 def build_extra_body(backend: str, openrouter_provider: str | None) -> dict[str, Any] | None:
     """OpenRouter's provider-pin request body, for open-weight models that
-    must not silently fall back to a different provider. None for every
-    other case (including Ollama, which has no such concept)."""
+    must not silently fall back to a different provider: the pinned
+    provider first in `order`, and `allow_fallbacks` off so no other one is
+    tried. None for every other case (including Ollama, which has no such
+    concept)."""
     if backend != "openrouter" or not openrouter_provider:
         return None
-    return {"provider": {"only": [openrouter_provider], "allow_fallbacks": False}}
+    return {"provider": {"order": [openrouter_provider], "allow_fallbacks": False}}
+
+
+def _provider_key(name: str) -> str:
+    """Compare a provider slug ("deepinfra", "deepinfra/bf16") with the
+    display name OpenRouter reports back ("DeepInfra"): drop a quantization
+    suffix, lowercase, keep only letters and digits."""
+    return "".join(ch for ch in name.split("/")[0].lower() if ch.isalnum())
+
+
+def provider_mismatch(pinned: str | None, served: str | None) -> str | None:
+    """A warning when a pinned provider was not the one that served the
+    response; None when nothing was pinned or they match."""
+    if not pinned:
+        return None
+    if served is None:
+        return f"provider pinned to {pinned!r} but the response names no provider"
+    if _provider_key(served) != _provider_key(pinned):
+        return f"provider pinned to {pinned!r} but served by {served!r}"
+    return None
 
 
 # --- error classification / retry ---
@@ -296,9 +317,17 @@ def call_with_retries(
     max_retries: int,
     backoff_base: float = 1.0,
     sleep_fn: Callable[[float], None] = time.sleep,
+    check_response: Callable[[Any], str | None] = lambda response: None,
 ) -> CallOutcome:
     """Call `call_fn()` until it succeeds, a fatal error occurs, or
     `max_retries` transient retries are exhausted.
+
+    `check_response` inspects a response that arrived without an exception
+    (HTTP 200) and returns a problem description when it is unusable — an
+    empty completion, or a provider error reported in the body. Such a
+    response is retried like a transient API error; if retries run out,
+    the outcome carries both the error and that last response, so its
+    finish_reason, usage and provider can still be recorded.
 
     Backoff is `backoff_base * 2**attempt` seconds (attempt 0 for the first
     retry), i.e. increasing wait between attempts.
@@ -309,7 +338,16 @@ def call_with_retries(
         try:
             response = call_fn()
             latency_ms = (time.monotonic() - started) * 1000
-            return CallOutcome(response=response, error=None, attempts=attempt + 1, latency_ms=latency_ms)
+            problem = check_response(response)
+            if problem is None:
+                return CallOutcome(response=response, error=None, attempts=attempt + 1, latency_ms=latency_ms)
+            if attempt >= max_retries:
+                error_info = {"type": "UnusableResponse", "message": problem, "attempts": attempt + 1}
+                return CallOutcome(
+                    response=response, error=error_info, attempts=attempt + 1, latency_ms=latency_ms
+                )
+            sleep_fn(backoff_base * (2**attempt))
+            attempt += 1
         except openai.OpenAIError as exc:
             latency_ms = (time.monotonic() - started) * 1000
             kind = classify_error(exc)
@@ -353,6 +391,27 @@ def extract_result_fields(response: Any) -> dict[str, Any]:
     }
 
 
+def response_problem(record: dict[str, Any]) -> str | None:
+    """Why a response (extract_result_fields() output, or a saved raw
+    record) is unusable, or None if it is usable: finish_reason "error"
+    (the provider failed but still answered HTTP 200), or no text at all
+    (null, empty or only whitespace). Shared with parse_responses.py so
+    that "unusable" means the same thing when collecting and when parsing.
+    """
+    if record.get("finish_reason") == "error":
+        return "provider returned finish_reason 'error'"
+    text = record.get("response_text")
+    if text is None or not text.strip():
+        return "empty completion (no response text)"
+    return None
+
+
+def raw_needs_request(record: dict[str, Any] | None) -> bool:
+    """On resume: whether a saved raw/<doc_id>.json must be requested again
+    — missing or unreadable, status "error", or "ok" but unusable."""
+    return record is None or record.get("status") != "ok" or response_problem(record) is not None
+
+
 def reasoning_tokens(usage: dict[str, Any] | None) -> int | None:
     """`usage.completion_tokens_details.reasoning_tokens`, the field name
     in the installed SDK's CompletionUsage/CompletionTokensDetails
@@ -393,8 +452,16 @@ def process_document(
     git_commit: str,
     git_dirty: bool,
     sleep_fn: Callable[[float], None] = time.sleep,
+    pinned_provider: str | None = None,
 ) -> dict[str, Any]:
-    """Call the model for one document and build its raw/<doc_id>.json record."""
+    """Call the model for one document and build its raw/<doc_id>.json record.
+
+    status is "ok" only for a usable response (see response_problem); an
+    API error or an unusable response that persists through every retry is
+    saved as "error", with whatever the last response did report.
+    `warnings` lists anything worth a look that is not an error — so far,
+    a pinned provider that did not serve the response.
+    """
     prompt_text = build_prompt(prompt_template, notice_text)
 
     def call_fn() -> Any:
@@ -408,7 +475,12 @@ def process_document(
             kwargs["extra_body"] = extra_body
         return client.chat.completions.create(**kwargs)
 
-    outcome = call_with_retries(call_fn, max_retries=max_retries, sleep_fn=sleep_fn)
+    outcome = call_with_retries(
+        call_fn,
+        max_retries=max_retries,
+        sleep_fn=sleep_fn,
+        check_response=lambda response: response_problem(extract_result_fields(response)),
+    )
 
     record: dict[str, Any] = {
         "doc_id": doc_id,
@@ -425,8 +497,11 @@ def process_document(
     }
 
     if outcome.response is not None:
+        # Usable (error is None), or unusable after every retry (error set):
+        # either way the response's own fields are kept.
         fields = extract_result_fields(outcome.response)
-        record.update(status="ok", error=None, **fields)
+        status = "ok" if outcome.error is None else "error"
+        record.update(status=status, error=outcome.error, **fields)
     else:
         record.update(
             status="error",
@@ -440,6 +515,9 @@ def process_document(
             response_chars=0,
             response_text=None,
         )
+
+    mismatch = provider_mismatch(pinned_provider, record["provider_served"]) if outcome.response is not None else None
+    record["warnings"] = [mismatch] if mismatch else []
     return record
 
 
@@ -621,8 +699,7 @@ def main(
     any_errors = False
     for doc_id in doc_ids:
         output_path = doc_output_path(run_dir, doc_id)
-        existing_result = load_json(output_path)
-        if existing_result is not None and existing_result.get("status") == "ok":
+        if not raw_needs_request(load_json(output_path)):
             print(f"{doc_id}: skipped (already ok)")
             continue
 
@@ -642,9 +719,12 @@ def main(
             git_commit=git_commit,
             git_dirty=git_dirty,
             sleep_fn=sleep_fn,
+            pinned_provider=args.openrouter_provider if extra_body is not None else None,
         )
         write_json_atomic(output_path, record)
 
+        for warning in record["warnings"]:
+            print(f"{doc_id}: warning — {warning}")
         if record["status"] == "ok":
             print(f"{doc_id}: ok ({record['attempts']} attempt(s))")
         else:

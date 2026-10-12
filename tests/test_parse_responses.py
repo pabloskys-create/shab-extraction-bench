@@ -156,6 +156,52 @@ def test_raw_error_status_yields_no_response():
     assert record["error"] == {"type": "BadRequestError", "message": "boom"}
 
 
+@pytest.mark.parametrize("text", [None, "", "   \n\t "])
+def test_empty_response_text_with_status_ok_yields_no_response(text):
+    record = _parse(text)
+    assert record["parse_status"] == "no_response"
+    assert record["data"] is None
+    assert "empty completion" in record["error"]["message"]
+
+
+def test_finish_reason_error_yields_no_response_even_with_text():
+    raw = {**_raw(response_text=json.dumps(_valid_object())), "finish_reason": "error"}
+    record = parse_responses.parse_response(raw, extras_registry=EXTRAS_REGISTRY)
+    assert record["parse_status"] == "no_response"
+    assert "finish_reason 'error'" in record["error"]["message"]
+
+
+def test_unusable_response_saved_as_error_keeps_the_collectors_error():
+    error = {"type": "UnusableResponse", "message": "empty completion (no response text)", "attempts": 6}
+    raw = {**_raw(status="error", response_text="", error=error), "finish_reason": "stop"}
+    record = parse_responses.parse_response(raw, extras_registry=EXTRAS_REGISTRY)
+    assert record["parse_status"] == "no_response"
+    assert record["error"] == error
+
+
+def test_present_but_unparseable_text_is_still_failed():
+    assert _parse("Sorry, I cannot help with that.")["parse_status"] == "failed"
+
+
+def test_evaluator_scores_no_response_as_no_output():
+    from src import evaluate
+
+    gold = dict.fromkeys(parse_responses.CORE_KEYS)
+    gold.update(
+        doc_id="0001", act_type="mutation", act_subtypes=[], alternative_names=[],
+        persons_added=[], persons_removed=[], persons_changed=[], extras={}, uncertain=[],
+    )
+    for raw in (
+        {**_raw(response_text=json.dumps(_valid_object())), "finish_reason": "error"},
+        _raw(response_text=""),
+        _raw(status="error", error={"message": "boom"}),
+    ):
+        parsed = parse_responses.parse_response(raw, extras_registry=EXTRAS_REGISTRY)
+        _, tally = evaluate.score_document(gold, parsed, EXTRAS_REGISTRY)
+        assert tally[("field", "act_type", "normalized", evaluate.NO_OUTPUT)] == 1
+        assert tally[("parse_status", "no_response")] == 1
+
+
 # --- 10: non-dict person-list element ---
 
 

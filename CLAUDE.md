@@ -120,6 +120,12 @@ CHANGELOG.md             schema version history
   records the API's full `usage` object, `reasoning_tokens` (from
   `usage.completion_tokens_details`, null if not reported) and
   `response_chars`. Reasoning tokens are part of the cost reported.
+- Provider pinning: open-weight models are run with a pinned OpenRouter
+  provider and allow_fallbacks=false, so results measure the model and not
+  a provider. gemma-3-12b-it → DeepInfra (NextBit returned empty
+  completions with 1 output token on 62/120 dev docs). mistral-large →
+  Mistral. Empty completions and finish_reason=error are retried as
+  transient and, if they persist, scored as no_output.
 - Scalars reported both exact and normalised (whitespace, case).
 - Fields listed in a gold record's `uncertain` are excluded from scoring,
   field by field.

@@ -28,7 +28,7 @@ from pathlib import Path
 from typing import Any
 
 from src import validate
-from src.run_eval import ConfigError, select_doc_ids
+from src.run_eval import ConfigError, response_problem, select_doc_ids
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_RUNS_DIR = REPO_ROOT / "runs"
@@ -321,12 +321,17 @@ def parse_response(raw: dict[str, Any], *, extras_registry: set[str] | None = No
 
     base = {"doc_id": raw.get("doc_id")}
 
-    if raw.get("status") == "error":
+    # no_response: the model gave nothing to parse — an API error, a
+    # provider error reported in the body (finish_reason "error"), or an
+    # empty completion. "failed" is kept for text that is there but cannot
+    # be turned into JSON. Same test as run_eval.py uses when collecting.
+    problem = response_problem(raw)
+    if raw.get("status") == "error" or problem is not None:
         return {
             **base,
             "parse_status": "no_response",
             "data": None,
-            "error": raw.get("error"),
+            "error": raw.get("error") or {"message": problem},
             "repairs": {
                 "markdown_fence_stripped": False,
                 "extracted_from_surrounding_text": False,

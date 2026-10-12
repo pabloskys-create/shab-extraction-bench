@@ -157,8 +157,9 @@ def test_resume_skips_ok_and_retries_error_documents(tmp_path, monkeypatch):
     runs_dir = tmp_path / "runs"
     run_dir = runs_dir / "run1"
 
+    good = {"status": "ok", "finish_reason": "stop", "response_text": '{"act_type": "mutation"}'}
     (run_dir / "raw").mkdir(parents=True)
-    (run_dir / "raw" / "0001.json").write_text(json.dumps({"status": "ok"}), encoding="utf-8")
+    (run_dir / "raw" / "0001.json").write_text(json.dumps(good), encoding="utf-8")
     (run_dir / "raw" / "0002.json").write_text(json.dumps({"status": "error"}), encoding="utf-8")
 
     client = FakeClient([_make_fake_completion(content="retried-ok")])
@@ -174,10 +175,140 @@ def test_resume_skips_ok_and_retries_error_documents(tmp_path, monkeypatch):
     assert len(client.completions.calls) == 1
     assert "NOTICE-TWO" in client.completions.calls[0]["messages"][0]["content"]
     result_0001 = json.loads((run_dir / "raw" / "0001.json").read_text())
-    assert result_0001 == {"status": "ok"}  # untouched, not re-called
+    assert result_0001 == good  # untouched, not re-called
     result_0002 = json.loads((run_dir / "raw" / "0002.json").read_text())
     assert result_0002["status"] == "ok"
     assert result_0002["response_text"] == "retried-ok"
+
+
+@pytest.mark.parametrize(
+    "unusable",
+    [
+        {"status": "ok", "finish_reason": "stop", "response_text": None},
+        {"status": "ok", "finish_reason": "stop", "response_text": ""},
+        {"status": "ok", "finish_reason": "stop", "response_text": "  \n "},
+        {"status": "ok", "finish_reason": "error", "response_text": '{"act_type": "mutation"}'},
+        {"status": "error", "finish_reason": None, "response_text": None},
+    ],
+)
+def test_resume_requests_unusable_ok_raws_again_and_leaves_good_ones(tmp_path, monkeypatch, unusable):
+    _patch_git(monkeypatch)
+    data_root = _make_dev_corpus(tmp_path, {"0001": "NOTICE-ONE", "0002": "NOTICE-TWO"})
+    prompt_path = _write_prompt(tmp_path)
+    runs_dir = tmp_path / "runs"
+    run_dir = runs_dir / "run1"
+    good = {"status": "ok", "finish_reason": "stop", "response_text": '{"act_type": "mutation"}'}
+    (run_dir / "raw").mkdir(parents=True)
+    (run_dir / "raw" / "0001.json").write_text(json.dumps(good), encoding="utf-8")
+    (run_dir / "raw" / "0002.json").write_text(json.dumps(unusable), encoding="utf-8")
+
+    client = FakeClient([_make_fake_completion(content="fresh")])
+    run_eval.main(
+        _base_argv("run1", extra=["--prompt", str(prompt_path)]),
+        client_factory=_client_factory(client),
+        sleep_fn=lambda s: None,
+        data_root=data_root,
+        runs_dir=runs_dir,
+    )
+
+    assert len(client.completions.calls) == 1
+    assert "NOTICE-TWO" in client.completions.calls[0]["messages"][0]["content"]
+    assert json.loads((run_dir / "raw" / "0001.json").read_text()) == good
+    assert json.loads((run_dir / "raw" / "0002.json").read_text())["response_text"] == "fresh"
+
+
+# --- 2b. HTTP 200 but unusable: retried like a transient error ---
+
+
+@pytest.mark.parametrize(
+    "bad",
+    [
+        {"content": None},
+        {"content": ""},
+        {"content": "   "},
+        {"content": '{"act_type": "mutation"}', "finish_reason": "error"},
+    ],
+)
+def test_unusable_response_is_retried_then_succeeds(tmp_path, monkeypatch, bad):
+    _patch_git(monkeypatch)
+    data_root = _make_dev_corpus(tmp_path, {"0001": "NOTICE-ONE"})
+    prompt_path = _write_prompt(tmp_path)
+    runs_dir = tmp_path / "runs"
+    sleeps: list[float] = []
+
+    client = FakeClient([_make_fake_completion(**bad), _make_fake_completion(content="good")])
+    code = run_eval.main(
+        _base_argv("run1", extra=["--prompt", str(prompt_path), "--max-retries", "3"]),
+        client_factory=_client_factory(client),
+        sleep_fn=sleeps.append,
+        data_root=data_root,
+        runs_dir=runs_dir,
+    )
+
+    assert code == 0
+    assert sleeps == [1.0]  # same backoff as an API transient error
+    record = json.loads((runs_dir / "run1" / "raw" / "0001.json").read_text())
+    assert record["status"] == "ok"
+    assert record["error"] is None
+    assert record["attempts"] == 2
+    assert record["response_text"] == "good"
+
+
+def test_persistently_unusable_response_is_saved_as_error_with_its_fields(tmp_path, monkeypatch):
+    _patch_git(monkeypatch)
+    data_root = _make_dev_corpus(tmp_path, {"0001": "NOTICE-ONE"})
+    prompt_path = _write_prompt(tmp_path)
+    runs_dir = tmp_path / "runs"
+    sleeps: list[float] = []
+
+    empty = _make_fake_completion(content="", provider="NextBit", completion_tokens=1)
+    client = FakeClient([empty, empty, empty])
+    code = run_eval.main(
+        _base_argv("run1", extra=["--prompt", str(prompt_path), "--max-retries", "2"]),
+        client_factory=_client_factory(client),
+        sleep_fn=sleeps.append,
+        data_root=data_root,
+        runs_dir=runs_dir,
+    )
+
+    assert code == 1
+    assert len(client.completions.calls) == 3
+    assert sleeps == [1.0, 2.0]
+    record = json.loads((runs_dir / "run1" / "raw" / "0001.json").read_text())
+    assert record["status"] == "error"
+    assert record["attempts"] == 3
+    assert record["error"] == {
+        "type": "UnusableResponse",
+        "message": "empty completion (no response text)",
+        "attempts": 3,
+    }
+    assert record["finish_reason"] == "stop"
+    assert record["provider_served"] == "NextBit"
+    assert record["usage"]["completion_tokens"] == 1
+    assert record["response_chars"] == 0
+
+
+def test_persistent_finish_reason_error_is_saved_as_error(tmp_path, monkeypatch):
+    _patch_git(monkeypatch)
+    data_root = _make_dev_corpus(tmp_path, {"0001": "NOTICE-ONE"})
+    prompt_path = _write_prompt(tmp_path)
+    runs_dir = tmp_path / "runs"
+
+    failed = _make_fake_completion(content="partial", finish_reason="error")
+    client = FakeClient([failed, failed])
+    run_eval.main(
+        _base_argv("run1", extra=["--prompt", str(prompt_path), "--max-retries", "1"]),
+        client_factory=_client_factory(client),
+        sleep_fn=lambda s: None,
+        data_root=data_root,
+        runs_dir=runs_dir,
+    )
+
+    record = json.loads((runs_dir / "run1" / "raw" / "0001.json").read_text())
+    assert record["status"] == "error"
+    assert record["finish_reason"] == "error"
+    assert record["error"]["message"] == "provider returned finish_reason 'error'"
+    assert record["attempts"] == 2
 
 
 # --- 3. holdout gate ---
@@ -303,14 +434,72 @@ def test_holdout_split_discovers_holdout_raw_only(tmp_path):
 
 
 def test_openrouter_provider_pin_builds_extra_body():
-    assert run_eval.build_extra_body("openrouter", "together") == {
-        "provider": {"only": ["together"], "allow_fallbacks": False}
+    assert run_eval.build_extra_body("openrouter", "deepinfra") == {
+        "provider": {"order": ["deepinfra"], "allow_fallbacks": False}
     }
 
 
 def test_extra_body_omitted_for_ollama_and_when_unpinned():
     assert run_eval.build_extra_body("ollama", "together") is None
     assert run_eval.build_extra_body("openrouter", None) is None
+
+
+def _openrouter_main(tmp_path, monkeypatch, queue: list, provider: str) -> tuple[FakeClient, dict, int]:
+    _patch_git(monkeypatch)
+    monkeypatch.setenv("OPENROUTER_API_KEY", "test-key")
+    data_root = _make_dev_corpus(tmp_path, {"0001": "NOTICE-ONE"})
+    prompt_path = _write_prompt(tmp_path)
+    runs_dir = tmp_path / "runs"
+    client = FakeClient(queue)
+    code = run_eval.main(
+        [
+            "--split", "dev", "--backend", "openrouter", "--model", "google/gemma-3-12b-it",
+            "--run-id", "run1", "--prompt", str(prompt_path), "--openrouter-provider", provider,
+            "--env-file", str(tmp_path / "no.env"),
+        ],
+        client_factory=_client_factory(client),
+        sleep_fn=lambda s: None,
+        data_root=data_root,
+        runs_dir=runs_dir,
+    )
+    record = json.loads((runs_dir / "run1" / "raw" / "0001.json").read_text(encoding="utf-8"))
+    return client, record, code
+
+
+def test_provider_pin_is_sent_with_the_request(tmp_path, monkeypatch):
+    client, record, _ = _openrouter_main(
+        tmp_path, monkeypatch, [_make_fake_completion(provider="DeepInfra")], provider="deepinfra"
+    )
+    assert client.completions.calls[0]["extra_body"] == {
+        "provider": {"order": ["deepinfra"], "allow_fallbacks": False}
+    }
+    assert record["warnings"] == []
+
+
+def test_provider_mismatch_is_warned_in_raw_and_console(tmp_path, monkeypatch, capsys):
+    _, record, code = _openrouter_main(
+        tmp_path, monkeypatch, [_make_fake_completion(provider="NextBit")], provider="deepinfra"
+    )
+    assert code == 0
+    assert record["status"] == "ok"
+    assert record["warnings"] == ["provider pinned to 'deepinfra' but served by 'NextBit'"]
+    assert "0001: warning — provider pinned to 'deepinfra' but served by 'NextBit'" in capsys.readouterr().out
+
+
+@pytest.mark.parametrize(
+    ("pinned", "served", "warns"),
+    [
+        ("deepinfra", "DeepInfra", False),
+        ("deepinfra/bf16", "DeepInfra", False),
+        ("google-ai-studio", "Google AI Studio", False),
+        ("mistral", "Mistral", False),
+        ("deepinfra", "NextBit", True),
+        ("deepinfra", None, True),
+        (None, "NextBit", False),
+    ],
+)
+def test_provider_mismatch_matches_slugs_to_display_names(pinned, served, warns):
+    assert (run_eval.provider_mismatch(pinned, served) is not None) is warns
 
 
 # --- 9/13. resume-compatibility gate ---
