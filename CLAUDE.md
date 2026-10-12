@@ -112,7 +112,8 @@ CHANGELOG.md             schema version history
 - One pass per document at temperature 0. Three passes only if time allows.
 - Every model runs with its provider's default configuration, reasoning
   included where the model reasons by default — no reasoning switched on
-  or off per model. max_tokens is 32768 for all (4096 left
+  or off per model. max_tokens is 32768 by default, see per-model
+  max_tokens below (4096 left
   mistral-large-4-0 and claude-haiku-5.5 with empty or truncated answers,
   finish_reason "length"; at 16384 mistral-large-4-0 still reached 13,578
   output tokens, 10,869 of them reasoning, on one notice); OpenRouter
@@ -126,6 +127,13 @@ CHANGELOG.md             schema version history
   completions with 1 output token on 62/120 dev docs). mistral-large →
   Mistral. Empty completions and finish_reason=error are retried as
   transient and, if they persist, scored as no_output.
+- Retry policy: transient errors and unusable completions are retried
+  in-call (--max-retries). After a run completes, at most ONE resume pass
+  is allowed; anything still failing is scored as no_output. Same rule
+  for dev and holdout.
+- Per-model max_tokens: default 32768. gemma-3-12b-it uses 8192 because
+  the pinned provider (DeepInfra) has a shorter context window; gemma is
+  a non-reasoning model and no dev response hit finish_reason=length.
 - Scalars reported both exact and normalised (whitespace, case).
 - Fields listed in a gold record's `uncertain` are excluded from scoring,
   field by field.
