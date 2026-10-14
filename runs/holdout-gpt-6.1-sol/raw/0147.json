@@ -1,0 +1,56 @@
+{
+  "doc_id": "0147",
+  "split": "holdout",
+  "model_requested": "openai/gpt-6.1-sol",
+  "backend": "openrouter",
+  "timestamp": "2026-10-13T12:27:34.367059+00:00",
+  "latency_ms": 7718.9999999827705,
+  "params": {
+    "temperature": 0,
+    "max_tokens": 32768,
+    "passes": 1,
+    "structured_output": false
+  },
+  "prompt_sha256": "964dec417be3b1c664627b2505ba64f3dc8c0249bfb1cb9430e82c9850e0d20c",
+  "git_commit": "6a6bd2e193f6f9b2d38f6030b0a722c8c36dae6c",
+  "git_dirty": true,
+  "attempts": 1,
+  "status": "ok",
+  "error": null,
+  "model_served": "openai/gpt-6.1-sol",
+  "provider_served": "OpenAI",
+  "usage": {
+    "completion_tokens": 423,
+    "prompt_tokens": 4840,
+    "total_tokens": 5263,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 4837,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.0163285,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.0163285,
+      "upstream_inference_prompt_cost": 0.0120985,
+      "upstream_inference_completions_cost": 0.00423
+    }
+  },
+  "reasoning_tokens": 0,
+  "cost_usd": 0.0163285,
+  "finish_reason": "stop",
+  "response_chars": 1324,
+  "response_text": "{\n  \"act_type\": \"mutation\",\n  \"act_subtypes\": [\"organaenderung\"],\n  \"company_name_full\": \"OHRafz Immobilien AG\",\n  \"company_name_base\": \"OHRafz Immobilien AG\",\n  \"status_suffix\": null,\n  \"alternative_names\": [],\n  \"company_name_new\": null,\n  \"company_name_previous\": null,\n  \"uid\": \"CHE-439.291.738\",\n  \"legal_form\": \"AG\",\n  \"seat_municipality\": \"Oftringen\",\n  \"seat_canton\": \"AG\",\n  \"address_care_of\": null,\n  \"address_street\": \"Baslerstrasse 42\",\n  \"address_postcode\": \"4665\",\n  \"address_municipality\": \"Oftringen\",\n  \"act_date\": null,\n  \"tagesregister_nr\": \"12674\",\n  \"tagesregister_date\": \"2026-09-04\",\n  \"prior_publication_shab_nr\": 250,\n  \"prior_publication_date\": \"2024-12-24\",\n  \"prior_publication_id\": \"1006215388\",\n  \"authority\": \"Handelsregisteramt des Kantons Aargau\",\n  \"canton_previous\": null,\n  \"canton_new\": null,\n  \"capital_new_chf\": null,\n  \"capital_previous_chf\": null,\n  \"domicile_new\": null,\n  \"domicile_previous\": null,\n  \"persons_added\": [],\n  \"persons_removed\": [\n    {\n      \"name\": \"Wildner, Sven Ottmar\",\n      \"nationality\": \"deutsch\",\n      \"heimatort\": null,\n      \"domicile\": \"Beinwil am See\",\n      \"role\": \"Mitglied des Verwaltungsrates\",\n      \"signature\": \"Kollektivunterschrift zu zweien\",\n      \"uid\": null,\n      \"stammanteile\": null\n    }\n  ],\n  \"persons_changed\": [],\n  \"extras\": {}\n}",
+  "warnings": []
+}

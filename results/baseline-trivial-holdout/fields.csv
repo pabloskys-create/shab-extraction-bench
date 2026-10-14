@@ -1,0 +1,1555 @@
+doc_id,field,item,attribute,gold,prediction,outcome_exact,outcome_normalized
+0121,act_type,,,"""mutation""","""mutation""",correct,correct
+0121,act_subtypes,,,"[""statutenaenderung"", ""organaenderung"", ""sitzverlegung"", ""kantonswechsel""]",[],omission,omission
+0121,company_name_full,,,"""CSB Expansion AG""",null,omission,omission
+0121,company_name_base,,,"""CSB Expansion AG""",null,omission,omission
+0121,status_suffix,,,null,null,correct_null,correct_null
+0121,alternative_names,,,"[""CSB Expansion SA"", ""CSB Expansion Ltd""]",[],omission,omission
+0121,company_name_new,,,null,null,correct_null,correct_null
+0121,company_name_previous,,,null,null,correct_null,correct_null
+0121,uid,,,"""CHE-442.360.185""",null,omission,omission
+0121,legal_form,,,"""AG""","""AG""",correct,correct
+0121,seat_municipality,,,"""Kestenholz""","""Zürich""",wrong,wrong
+0121,seat_canton,,,"""SO""","""ZH""",wrong,wrong
+0121,address_care_of,,,null,null,correct_null,correct_null
+0121,address_street,,,"""Brown Boveri Strasse 7""","""Leutschenbachstrasse 95""",wrong,wrong
+0121,address_postcode,,,"""5400""","""8050""",wrong,wrong
+0121,address_municipality,,,"""Baden""","""Zürich""",wrong,wrong
+0121,act_date,,,"""2026-08-31""",null,omission,omission
+0121,tagesregister_nr,,,"""12665""",null,omission,omission
+0121,tagesregister_date,,,"""2026-09-04""","""2026-08-26""",wrong,wrong
+0121,prior_publication_shab_nr,,,73,null,omission,omission
+0121,prior_publication_date,,,"""2025-04-15""",null,omission,omission
+0121,prior_publication_id,,,"""1006309592""",null,omission,omission
+0121,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Zürich""",wrong,wrong
+0121,canton_previous,,,"""SO""",null,omission,omission
+0121,canton_new,,,"""AG""",null,omission,omission
+0121,capital_new_chf,,,null,null,correct_null,correct_null
+0121,capital_previous_chf,,,null,null,correct_null,correct_null
+0121,domicile_new,,,"""Brown Boveri Strasse 7, 5400 Baden""",null,omission,omission
+0121,domicile_previous,,,"""Gäustrasse 52, 4703 Kestenholz""",null,omission,omission
+0121,persons_changed,"Jorns, Hansjörg",,"{""name_new"": ""Jorns, Hansjörg"", ""name_previous"": null, ""domicile_new"": ""Locarno"", ""domicile_previous"": ""Oensingen"", ""role_new"": ""Mitglied des Verwaltungsrates"", ""role_previous"": null, ""signature_new"": ""Kollektivunterschrift zu zweien"", ""signature_previous"": null, ""nationality_new"": null, ""nationality_previous"": null, ""heimatort_new"": ""Saanen"", ""heimatort_previous"": null, ""stammanteile_new"": null, ""stammanteile_previous"": null}",null,missed,missed
+0122,act_type,,,"""mutation""","""mutation""",correct,correct
+0122,act_subtypes,,,"[""organaenderung""]",[],omission,omission
+0122,company_name_full,,,"""Foodtower GmbH""",null,omission,omission
+0122,company_name_base,,,"""Foodtower GmbH""",null,omission,omission
+0122,status_suffix,,,null,null,correct_null,correct_null
+0122,alternative_names,,,[],[],correct_null,correct_null
+0122,company_name_new,,,null,null,correct_null,correct_null
+0122,company_name_previous,,,null,null,correct_null,correct_null
+0122,uid,,,"""CHE-234.990.986""",null,omission,omission
+0122,legal_form,,,"""GmbH""","""AG""",wrong,wrong
+0122,seat_municipality,,,"""Brugg""","""Zürich""",wrong,wrong
+0122,seat_canton,,,"""AG""","""ZH""",wrong,wrong
+0122,address_care_of,,,null,null,correct_null,correct_null
+0122,address_street,,,"""Vorstadt 15""","""Leutschenbachstrasse 95""",wrong,wrong
+0122,address_postcode,,,"""5200""","""8050""",wrong,wrong
+0122,address_municipality,,,"""Brugg AG""","""Zürich""",wrong,wrong
+0122,act_date,,,null,null,correct_null,correct_null
+0122,tagesregister_nr,,,"""12691""",null,omission,omission
+0122,tagesregister_date,,,"""2026-09-04""","""2026-08-26""",wrong,wrong
+0122,prior_publication_shab_nr,,,153,null,omission,omission
+0122,prior_publication_date,,,"""2026-08-11""",null,omission,omission
+0122,prior_publication_id,,,"""1006728721""",null,omission,omission
+0122,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Zürich""",wrong,wrong
+0122,canton_previous,,,null,null,correct_null,correct_null
+0122,canton_new,,,null,null,correct_null,correct_null
+0122,capital_new_chf,,,null,null,correct_null,correct_null
+0122,capital_previous_chf,,,null,null,correct_null,correct_null
+0122,domicile_new,,,null,null,correct_null,correct_null
+0122,domicile_previous,,,null,null,correct_null,correct_null
+0122,persons_changed,"Alkan, Seyyid Bilal",,"{""name_new"": ""Alkan, Seyyid Bilal"", ""name_previous"": null, ""domicile_new"": ""Brugg"", ""domicile_previous"": ""Neufahrn bei Freising (DE)"", ""role_new"": ""Gesellschafter und Geschäftsführer"", ""role_previous"": null, ""signature_new"": ""Einzelunterschrift"", ""signature_previous"": null, ""nationality_new"": ""deutsch"", ""nationality_previous"": null, ""heimatort_new"": null, ""heimatort_previous"": null, ""stammanteile_new"": 50, ""stammanteile_previous"": null}",null,missed,missed
+0122,persons_changed,"Alkan, Ömer Burak",,"{""name_new"": ""Alkan, Ömer Burak"", ""name_previous"": null, ""domicile_new"": ""Neufahrn bei Freising (DE)"", ""domicile_previous"": null, ""role_new"": ""Gesellschafter"", ""role_previous"": null, ""signature_new"": ""Einzelunterschrift"", ""signature_previous"": ""ohne Zeichnungsberechtigung"", ""nationality_new"": ""deutsch"", ""nationality_previous"": null, ""heimatort_new"": null, ""heimatort_previous"": null, ""stammanteile_new"": 50, ""stammanteile_previous"": null}",null,missed,missed
+0122,persons_changed,"Mendi, Nürcan",,"{""name_new"": ""Mendi, Nürcan"", ""name_previous"": null, ""domicile_new"": ""Neufahrn bei Freising (DE)"", ""domicile_previous"": null, ""role_new"": ""Gesellschafterin"", ""role_previous"": null, ""signature_new"": ""Einzelunterschrift"", ""signature_previous"": ""ohne Zeichnungsberechtigung"", ""nationality_new"": ""deutsch"", ""nationality_previous"": null, ""heimatort_new"": null, ""heimatort_previous"": null, ""stammanteile_new"": 50, ""stammanteile_previous"": null}",null,missed,missed
+0122,persons_changed,"Sevimli, Adem",,"{""name_new"": ""Sevimli, Adem"", ""name_previous"": null, ""domicile_new"": ""Schaffhausen"", ""domicile_previous"": null, ""role_new"": ""Gesellschafter"", ""role_previous"": null, ""signature_new"": ""ohne Zeichnungsberechtigung"", ""signature_previous"": ""Einzelunterschrift"", ""nationality_new"": ""deutsch"", ""nationality_previous"": null, ""heimatort_new"": null, ""heimatort_previous"": null, ""stammanteile_new"": 50, ""stammanteile_previous"": null}",null,missed,missed
+0122,extras,nominal_value_chf,,100.0,null,missed,missed
+0123,act_type,,,"""mutation""","""mutation""",correct,correct
+0123,act_subtypes,,,"[""organaenderung""]",[],omission,omission
+0123,company_name_full,,,"""Felix Stöckli AG""",null,omission,omission
+0123,company_name_base,,,"""Felix Stöckli AG""",null,omission,omission
+0123,status_suffix,,,null,null,correct_null,correct_null
+0123,alternative_names,,,[],[],correct_null,correct_null
+0123,company_name_new,,,null,null,correct_null,correct_null
+0123,company_name_previous,,,null,null,correct_null,correct_null
+0123,uid,,,"""CHE-105.722.940""",null,omission,omission
+0123,legal_form,,,"""AG""","""AG""",correct,correct
+0123,seat_municipality,,,"""Bremgarten (AG)""","""Zürich""",wrong,wrong
+0123,seat_canton,,,"""AG""","""ZH""",wrong,wrong
+0123,address_care_of,,,null,null,correct_null,correct_null
+0123,address_street,,,"""Rüttenenstrasse 6""","""Leutschenbachstrasse 95""",wrong,wrong
+0123,address_postcode,,,"""5620""","""8050""",wrong,wrong
+0123,address_municipality,,,"""Bremgarten AG""","""Zürich""",wrong,wrong
+0123,act_date,,,null,null,correct_null,correct_null
+0123,tagesregister_nr,,,"""12648""",null,omission,omission
+0123,tagesregister_date,,,"""2026-09-04""","""2026-08-26""",wrong,wrong
+0123,prior_publication_shab_nr,,,135,null,omission,omission
+0123,prior_publication_date,,,"""2023-07-14""",null,omission,omission
+0123,prior_publication_id,,,"""1005796031""",null,omission,omission
+0123,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Zürich""",wrong,wrong
+0123,canton_previous,,,null,null,correct_null,correct_null
+0123,canton_new,,,null,null,correct_null,correct_null
+0123,capital_new_chf,,,null,null,correct_null,correct_null
+0123,capital_previous_chf,,,null,null,correct_null,correct_null
+0123,domicile_new,,,null,null,correct_null,correct_null
+0123,domicile_previous,,,null,null,correct_null,correct_null
+0123,persons_removed,"Stöckli, Felix",,"{""name"": ""Stöckli, Felix"", ""nationality"": null, ""heimatort"": ""Bremgarten AG"", ""domicile"": ""Bremgarten AG"", ""role"": ""Präsident des Verwaltungsrates"", ""signature"": ""Einzelunterschrift"", ""uid"": null, ""stammanteile"": null}",null,missed,missed
+0123,persons_removed,"Stöckli-Furrer, Maria",,"{""name"": ""Stöckli-Furrer, Maria"", ""nationality"": null, ""heimatort"": ""Bremgarten (AG) und Schongau"", ""domicile"": ""Bremgarten (AG)"", ""role"": ""Mitglied des Verwaltungsrates"", ""signature"": ""Einzelunterschrift"", ""uid"": null, ""stammanteile"": null}",null,missed,missed
+0123,persons_changed,"Stöckli, Michael",,"{""name_new"": ""Stöckli, Michael"", ""name_previous"": null, ""domicile_new"": ""Bremgarten (AG)"", ""domicile_previous"": null, ""role_new"": ""Präsident des Verwaltungsrates"", ""role_previous"": ""Mitglied des Verwaltungsrates"", ""signature_new"": ""Einzelunterschrift"", ""signature_previous"": ""Kollektivunterschrift zu zweien"", ""nationality_new"": null, ""nationality_previous"": null, ""heimatort_new"": ""Bremgarten (AG)"", ""heimatort_previous"": null, ""stammanteile_new"": null, ""stammanteile_previous"": null}",null,missed,missed
+0123,persons_changed,"Stöckli, Fabian",,"{""name_new"": ""Stöckli, Fabian"", ""name_previous"": null, ""domicile_new"": ""Bremgarten (AG)"", ""domicile_previous"": null, ""role_new"": ""Mitglied des Verwaltungsrates"", ""role_previous"": null, ""signature_new"": ""Einzelunterschrift"", ""signature_previous"": ""Kollektivunterschrift zu zweien"", ""nationality_new"": null, ""nationality_previous"": null, ""heimatort_new"": ""Bremgarten (AG)"", ""heimatort_previous"": null, ""stammanteile_new"": null, ""stammanteile_previous"": null}",null,missed,missed
+0124,act_type,,,"""mutation""","""mutation""",correct,correct
+0124,act_subtypes,,,"[""statutenaenderung"", ""organaenderung"", ""sitzverlegung"", ""kantonswechsel"", ""zweckaenderung""]",[],omission,omission
+0124,company_name_full,,,"""I+Konzeptbau GmbH""",null,omission,omission
+0124,company_name_base,,,"""I+Konzeptbau GmbH""",null,omission,omission
+0124,status_suffix,,,null,null,correct_null,correct_null
+0124,alternative_names,,,[],[],correct_null,correct_null
+0124,company_name_new,,,null,null,correct_null,correct_null
+0124,company_name_previous,,,null,null,correct_null,correct_null
+0124,uid,,,"""CHE-188.233.733""",null,omission,omission
+0124,legal_form,,,"""GmbH""","""AG""",wrong,wrong
+0124,seat_municipality,,,"""St. Gallen""","""Zürich""",wrong,wrong
+0124,seat_canton,,,"""SG""","""ZH""",wrong,wrong
+0124,address_care_of,,,null,null,correct_null,correct_null
+0124,address_street,,,"""Neudorfstrasse 24""","""Leutschenbachstrasse 95""",wrong,wrong
+0124,address_postcode,,,"""5734""","""8050""",wrong,wrong
+0124,address_municipality,,,"""Reinach AG""","""Zürich""",wrong,wrong
+0124,act_date,,,"""2026-08-10""",null,omission,omission
+0124,tagesregister_nr,,,"""12644""",null,omission,omission
+0124,tagesregister_date,,,"""2026-09-04""","""2026-08-26""",wrong,wrong
+0124,prior_publication_shab_nr,,,16,null,omission,omission
+0124,prior_publication_date,,,"""2026-01-26""",null,omission,omission
+0124,prior_publication_id,,,"""1006549813""",null,omission,omission
+0124,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Zürich""",wrong,wrong
+0124,canton_previous,,,"""SG""",null,omission,omission
+0124,canton_new,,,"""AG""",null,omission,omission
+0124,capital_new_chf,,,null,null,correct_null,correct_null
+0124,capital_previous_chf,,,null,null,correct_null,correct_null
+0124,domicile_new,,,"""Neudorfstrasse 24, 5734 Reinach AG""",null,omission,omission
+0124,domicile_previous,,,"""Linsebühlstrasse 18, 9000 St. Gallen""",null,omission,omission
+0124,persons_added,"Wella, Damir",,"{""name"": ""Wella, Damir"", ""nationality"": ""österreichisch"", ""heimatort"": null, ""domicile"": ""Reinach (AG)"", ""role"": null, ""signature"": ""Kollektivunterschrift zu zweien"", ""uid"": null, ""stammanteile"": null}",null,missed,missed
+0124,persons_changed,"Wella, Ilda",,"{""name_new"": ""Wella, Ilda"", ""name_previous"": null, ""domicile_new"": ""Reinach (AG)"", ""domicile_previous"": ""Zurzach"", ""role_new"": ""Gesellschafterin und Geschäftsführerin"", ""role_previous"": null, ""signature_new"": ""Einzelunterschrift"", ""signature_previous"": null, ""nationality_new"": null, ""nationality_previous"": null, ""heimatort_new"": ""Kriens"", ""heimatort_previous"": null, ""stammanteile_new"": 200, ""stammanteile_previous"": null}",null,missed,missed
+0124,extras,zweck,,"""Dienstleistungen im Bereich Immobilienunterhalt und -bewirtschaftung. Die Gesellschaft kann Zweigniederlassungen und Tochtergesellschaften im In- und Ausland errichten und sich an anderen Unternehmen …""",null,missed,missed
+0124,extras,nominal_value_chf,,100.0,null,missed,missed
+0125,act_type,,,"""mutation""","""mutation""",correct,correct
+0125,act_subtypes,,,"[""statutenaenderung"", ""sitzverlegung"", ""kantonswechsel""]",[],omission,omission
+0125,company_name_full,,,"""Inveno AG""",null,omission,omission
+0125,company_name_base,,,"""Inveno AG""",null,omission,omission
+0125,status_suffix,,,null,null,correct_null,correct_null
+0125,alternative_names,,,"[""Inveno SA"", ""Inveno Ltd""]",[],omission,omission
+0125,company_name_new,,,null,null,correct_null,correct_null
+0125,company_name_previous,,,null,null,correct_null,correct_null
+0125,uid,,,"""CHE-256.227.634""",null,omission,omission
+0125,legal_form,,,"""AG""","""AG""",correct,correct
+0125,seat_municipality,,,"""Sursee""","""Zürich""",wrong,wrong
+0125,seat_canton,,,"""LU""","""ZH""",wrong,wrong
+0125,address_care_of,,,null,null,correct_null,correct_null
+0125,address_street,,,"""Hintermättlistrasse 3""","""Leutschenbachstrasse 95""",wrong,wrong
+0125,address_postcode,,,"""5506""","""8050""",wrong,wrong
+0125,address_municipality,,,"""Mägenwil""","""Zürich""",wrong,wrong
+0125,act_date,,,"""2026-08-26""",null,omission,omission
+0125,tagesregister_nr,,,"""12657""",null,omission,omission
+0125,tagesregister_date,,,"""2026-09-04""","""2026-08-26""",wrong,wrong
+0125,prior_publication_shab_nr,,,223,null,omission,omission
+0125,prior_publication_date,,,"""2025-11-18""",null,omission,omission
+0125,prior_publication_id,,,"""1006487316""",null,omission,omission
+0125,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Zürich""",wrong,wrong
+0125,canton_previous,,,"""LU""",null,omission,omission
+0125,canton_new,,,"""AG""",null,omission,omission
+0125,capital_new_chf,,,null,null,correct_null,correct_null
+0125,capital_previous_chf,,,null,null,correct_null,correct_null
+0125,domicile_new,,,"""Hintermättlistrasse 3, 5506 Mägenwil""",null,omission,omission
+0125,domicile_previous,,,"""Bahnhofstrasse 6c, 6210 Sursee""",null,omission,omission
+0126,act_type,,,"""mutation""","""mutation""",correct,correct
+0126,act_subtypes,,,"[""organaenderung""]",[],omission,omission
+0126,company_name_full,,,"""Sommerhalde Bau AG""",null,omission,omission
+0126,company_name_base,,,"""Sommerhalde Bau AG""",null,omission,omission
+0126,status_suffix,,,null,null,correct_null,correct_null
+0126,alternative_names,,,[],[],correct_null,correct_null
+0126,company_name_new,,,null,null,correct_null,correct_null
+0126,company_name_previous,,,null,null,correct_null,correct_null
+0126,uid,,,"""CHE-235.481.807""",null,omission,omission
+0126,legal_form,,,"""AG""","""AG""",correct,correct
+0126,seat_municipality,,,"""Uerkheim""","""Zürich""",wrong,wrong
+0126,seat_canton,,,"""AG""","""ZH""",wrong,wrong
+0126,address_care_of,,,null,null,correct_null,correct_null
+0126,address_street,,,"""Grossmattenstrasse 2""","""Leutschenbachstrasse 95""",wrong,wrong
+0126,address_postcode,,,"""4813""","""8050""",wrong,wrong
+0126,address_municipality,,,"""Uerkheim""","""Zürich""",wrong,wrong
+0126,act_date,,,null,null,correct_null,correct_null
+0126,tagesregister_nr,,,"""12663""",null,omission,omission
+0126,tagesregister_date,,,"""2026-09-04""","""2026-08-26""",wrong,wrong
+0126,prior_publication_shab_nr,,,159,null,omission,omission
+0126,prior_publication_date,,,"""2024-08-19""",null,omission,omission
+0126,prior_publication_id,,,"""1006109431""",null,omission,omission
+0126,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Zürich""",wrong,wrong
+0126,canton_previous,,,null,null,correct_null,correct_null
+0126,canton_new,,,null,null,correct_null,correct_null
+0126,capital_new_chf,,,null,null,correct_null,correct_null
+0126,capital_previous_chf,,,null,null,correct_null,correct_null
+0126,domicile_new,,,null,null,correct_null,correct_null
+0126,domicile_previous,,,null,null,correct_null,correct_null
+0126,persons_added,"Häfliger, Thomas",,"{""name"": ""Häfliger, Thomas"", ""nationality"": null, ""heimatort"": ""Reitnau"", ""domicile"": ""Holziken"", ""role"": ""Mitglied des Verwaltungsrates"", ""signature"": ""Kollektivunterschrift zu zweien"", ""uid"": null, ""stammanteile"": null}",null,missed,missed
+0126,persons_removed,"Blättler, Josef",,"{""name"": ""Blättler, Josef"", ""nationality"": null, ""heimatort"": ""Hergiswil (NW)"", ""domicile"": ""Zürich"", ""role"": ""Präsident des Verwaltungsrates"", ""signature"": ""Kollektivunterschrift zu zweien"", ""uid"": null, ""stammanteile"": null}",null,missed,missed
+0126,persons_changed,"Heiniger, Hans",,"{""name_new"": ""Heiniger, Hans"", ""name_previous"": null, ""domicile_new"": ""Hirschthal"", ""domicile_previous"": null, ""role_new"": ""Präsident des Verwaltungsrates"", ""role_previous"": ""Mitglied des Verwaltungsrates"", ""signature_new"": ""Kollektivunterschrift zu zweien"", ""signature_previous"": null, ""nationality_new"": null, ""nationality_previous"": null, ""heimatort_new"": ""Eriswil"", ""heimatort_previous"": null, ""stammanteile_new"": null, ""stammanteile_previous"": null}",null,missed,missed
+0127,act_type,,,"""mutation""","""mutation""",correct,correct
+0127,act_subtypes,,,[],[],excluded_uncertain,excluded_uncertain
+0127,company_name_full,,,"""Kafi-Shop Imhof KLG""",null,omission,omission
+0127,company_name_base,,,"""Kafi-Shop Imhof KLG""",null,omission,omission
+0127,status_suffix,,,null,null,correct_null,correct_null
+0127,alternative_names,,,[],[],correct_null,correct_null
+0127,company_name_new,,,null,null,correct_null,correct_null
+0127,company_name_previous,,,null,null,correct_null,correct_null
+0127,uid,,,"""CHE-109.943.339""",null,omission,omission
+0127,legal_form,,,"""Kollektivgesellschaft""","""AG""",wrong,wrong
+0127,seat_municipality,,,"""Laufenburg""","""Zürich""",wrong,wrong
+0127,seat_canton,,,"""AG""","""ZH""",wrong,wrong
+0127,address_care_of,,,null,null,correct_null,correct_null
+0127,address_street,,,"""Baslerstrasse 12""","""Leutschenbachstrasse 95""",wrong,wrong
+0127,address_postcode,,,"""5080""","""8050""",wrong,wrong
+0127,address_municipality,,,"""Laufenburg""","""Zürich""",wrong,wrong
+0127,act_date,,,null,null,correct_null,correct_null
+0127,tagesregister_nr,,,"""12679""",null,omission,omission
+0127,tagesregister_date,,,"""2026-09-04""","""2026-08-26""",wrong,wrong
+0127,prior_publication_shab_nr,,,49,null,omission,omission
+0127,prior_publication_date,,,"""2019-03-12""",null,omission,omission
+0127,prior_publication_id,,,"""1004585765""",null,omission,omission
+0127,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Zürich""",wrong,wrong
+0127,canton_previous,,,null,null,correct_null,correct_null
+0127,canton_new,,,null,null,correct_null,correct_null
+0127,capital_new_chf,,,null,null,correct_null,correct_null
+0127,capital_previous_chf,,,null,null,correct_null,correct_null
+0127,domicile_new,,,null,null,correct_null,correct_null
+0127,domicile_previous,,,null,null,correct_null,correct_null
+0127,extras,zweigniederlassung_new,,"""Chur (CHE-405.145.412)""",null,missed,missed
+0128,act_type,,,"""mutation""","""mutation""",correct,correct
+0128,act_subtypes,,,"[""organaenderung""]",[],omission,omission
+0128,company_name_full,,,"""Nagra, Nationale Genossenschaft für die Lagerung radioaktiver Abfälle""",null,omission,omission
+0128,company_name_base,,,"""Nagra, Nationale Genossenschaft für die Lagerung radioaktiver Abfälle""",null,omission,omission
+0128,status_suffix,,,null,null,correct_null,correct_null
+0128,alternative_names,,,"[""Nagra, National Cooperative for the Disposal of Radioactive Waste"", ""Nagra, Société coopérative nationale pour le stockage des déchets radioactifs"", ""Nagra, Società cooperativa nazionale per lo smaltimento delle scorie radioattive""]",[],omission,omission
+0128,company_name_new,,,null,null,correct_null,correct_null
+0128,company_name_previous,,,null,null,correct_null,correct_null
+0128,uid,,,"""CHE-105.877.519""",null,omission,omission
+0128,legal_form,,,"""Genossenschaft""","""AG""",wrong,wrong
+0128,seat_municipality,,,"""Wettingen""","""Zürich""",wrong,wrong
+0128,seat_canton,,,"""AG""","""ZH""",wrong,wrong
+0128,address_care_of,,,null,null,correct_null,correct_null
+0128,address_street,,,"""Hardstrasse 73""","""Leutschenbachstrasse 95""",wrong,wrong
+0128,address_postcode,,,"""5430""","""8050""",wrong,wrong
+0128,address_municipality,,,"""Wettingen""","""Zürich""",wrong,wrong
+0128,act_date,,,null,null,correct_null,correct_null
+0128,tagesregister_nr,,,"""12645""",null,omission,omission
+0128,tagesregister_date,,,"""2026-09-04""","""2026-08-26""",wrong,wrong
+0128,prior_publication_shab_nr,,,96,null,omission,omission
+0128,prior_publication_date,,,"""2025-05-20""",null,omission,omission
+0128,prior_publication_id,,,"""1006336354""",null,omission,omission
+0128,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Zürich""",wrong,wrong
+0128,canton_previous,,,null,null,correct_null,correct_null
+0128,canton_new,,,null,null,correct_null,correct_null
+0128,capital_new_chf,,,null,null,correct_null,correct_null
+0128,capital_previous_chf,,,null,null,correct_null,correct_null
+0128,domicile_new,,,null,null,correct_null,correct_null
+0128,domicile_previous,,,null,null,correct_null,correct_null
+0128,persons_added,"Hammer-Rotzler, Bernadette",,"{""name"": ""Hammer-Rotzler, Bernadette"", ""nationality"": ""österreichisch"", ""heimatort"": null, ""domicile"": ""Basel"", ""role"": ""Mitglied der Verwaltung"", ""signature"": ""Kollektivunterschrift zu zweien"", ""uid"": null, ""stammanteile"": null}",null,missed,missed
+0128,persons_removed,"Kohler, Thomas",,"{""name"": ""Kohler, Thomas"", ""nationality"": null, ""heimatort"": ""Lostorf und Olten"", ""domicile"": ""Lostorf"", ""role"": ""Mitglied der Verwaltung"", ""signature"": ""Kollektivunterschrift zu zweien"", ""uid"": null, ""stammanteile"": null}",null,missed,missed
+0128,persons_removed,"Beutler, Reto",,"{""name"": ""Beutler, Reto"", ""nationality"": null, ""heimatort"": ""Willisau"", ""domicile"": ""Weiningen (ZH)"", ""role"": ""Mitglied der Geschäftsleitung"", ""signature"": ""Kollektivunterschrift zu zweien"", ""uid"": null, ""stammanteile"": null}",null,missed,missed
+0128,persons_removed,"Vietor, Dr. Tim",,"{""name"": ""Vietor, Dr. Tim"", ""nationality"": ""deutsch"", ""heimatort"": null, ""domicile"": ""Konstanz (DE)"", ""role"": ""Mitglied der Geschäftsleitung"", ""signature"": ""Kollektivunterschrift zu zweien"", ""uid"": null, ""stammanteile"": null}",null,missed,missed
+0128,persons_changed,"Blechschmidt, Dr. Ingo",,"{""name_new"": ""Blechschmidt, Dr. Ingo"", ""name_previous"": null, ""domicile_new"": ""Oberrohrdorf"", ""domicile_previous"": null, ""role_new"": ""Mitglied der Geschäftsleitung"", ""role_previous"": null, ""signature_new"": ""Kollektivunterschrift zu zweien"", ""signature_previous"": null, ""nationality_new"": null, ""nationality_previous"": ""deutsch"", ""heimatort_new"": ""Oberrohrdorf"", ""heimatort_previous"": null, ""stammanteile_new"": null, ""stammanteile_previous"": null}",null,missed,missed
+0129,act_type,,,"""mutation""","""mutation""",correct,correct
+0129,act_subtypes,,,"[""organaenderung""]",[],omission,omission
+0129,company_name_full,,,"""Eurofins Qualitech AG""",null,omission,omission
+0129,company_name_base,,,"""Eurofins Qualitech AG""",null,omission,omission
+0129,status_suffix,,,null,null,correct_null,correct_null
+0129,alternative_names,,,[],[],correct_null,correct_null
+0129,company_name_new,,,null,null,correct_null,correct_null
+0129,company_name_previous,,,null,null,correct_null,correct_null
+0129,uid,,,"""CHE-108.817.525""",null,omission,omission
+0129,legal_form,,,"""AG""","""AG""",correct,correct
+0129,seat_municipality,,,"""Mägenwil""","""Zürich""",wrong,wrong
+0129,seat_canton,,,"""AG""","""ZH""",wrong,wrong
+0129,address_care_of,,,null,null,correct_null,correct_null
+0129,address_street,,,"""Almuesenacherstrasse 3""","""Leutschenbachstrasse 95""",wrong,wrong
+0129,address_postcode,,,"""5506""","""8050""",wrong,wrong
+0129,address_municipality,,,"""Mägenwil""","""Zürich""",wrong,wrong
+0129,act_date,,,null,null,correct_null,correct_null
+0129,tagesregister_nr,,,"""12633""",null,omission,omission
+0129,tagesregister_date,,,"""2026-09-04""","""2026-08-26""",wrong,wrong
+0129,prior_publication_shab_nr,,,237,null,omission,omission
+0129,prior_publication_date,,,"""2025-12-08""",null,omission,omission
+0129,prior_publication_id,,,"""1006506214""",null,omission,omission
+0129,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Zürich""",wrong,wrong
+0129,canton_previous,,,null,null,correct_null,correct_null
+0129,canton_new,,,null,null,correct_null,correct_null
+0129,capital_new_chf,,,null,null,correct_null,correct_null
+0129,capital_previous_chf,,,null,null,correct_null,correct_null
+0129,domicile_new,,,null,null,correct_null,correct_null
+0129,domicile_previous,,,null,null,correct_null,correct_null
+0129,persons_added,"Ozdag, Recep",,"{""name"": ""Ozdag, Recep"", ""nationality"": ""amerikanisch"", ""heimatort"": null, ""domicile"": ""Los Angeles (US)"", ""role"": ""Präsident des Verwaltungsrates"", ""signature"": ""Einzelunterschrift"", ""uid"": null, ""stammanteile"": null}",null,missed,missed
+0129,persons_removed,"Batel, Mehdi",,"{""name"": ""Batel, Mehdi"", ""nationality"": ""französisch"", ""heimatort"": null, ""domicile"": ""Bussy-Saint-Georges (FR)"", ""role"": ""Präsident des Verwaltungsrates"", ""signature"": ""Einzelunterschrift"", ""uid"": null, ""stammanteile"": null}",null,missed,missed
+0130,act_type,,,"""mutation""","""mutation""",correct,correct
+0130,act_subtypes,,,"[""organaenderung""]",[],omission,omission
+0130,company_name_full,,,"""Auto-Germann AG""",null,omission,omission
+0130,company_name_base,,,"""Auto-Germann AG""",null,omission,omission
+0130,status_suffix,,,null,null,correct_null,correct_null
+0130,alternative_names,,,[],[],correct_null,correct_null
+0130,company_name_new,,,null,null,correct_null,correct_null
+0130,company_name_previous,,,null,null,correct_null,correct_null
+0130,uid,,,"""CHE-105.976.647""",null,omission,omission
+0130,legal_form,,,"""AG""","""AG""",correct,correct
+0130,seat_municipality,,,"""Hunzenschwil""","""Zürich""",wrong,wrong
+0130,seat_canton,,,"""AG""","""ZH""",wrong,wrong
+0130,address_care_of,,,null,null,correct_null,correct_null
+0130,address_street,,,"""Hauptstrasse 37""","""Leutschenbachstrasse 95""",wrong,wrong
+0130,address_postcode,,,"""5502""","""8050""",wrong,wrong
+0130,address_municipality,,,"""Hunzenschwil""","""Zürich""",wrong,wrong
+0130,act_date,,,null,null,correct_null,correct_null
+0130,tagesregister_nr,,,"""12636""",null,omission,omission
+0130,tagesregister_date,,,"""2026-09-04""","""2026-08-26""",wrong,wrong
+0130,prior_publication_shab_nr,,,67,null,omission,omission
+0130,prior_publication_date,,,"""2026-04-09""",null,omission,omission
+0130,prior_publication_id,,,"""1006620204""",null,omission,omission
+0130,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Zürich""",wrong,wrong
+0130,canton_previous,,,null,null,correct_null,correct_null
+0130,canton_new,,,null,null,correct_null,correct_null
+0130,capital_new_chf,,,null,null,correct_null,correct_null
+0130,capital_previous_chf,,,null,null,correct_null,correct_null
+0130,domicile_new,,,null,null,correct_null,correct_null
+0130,domicile_previous,,,null,null,correct_null,correct_null
+0130,persons_added,"Germann, Karin",,"{""name"": ""Germann, Karin"", ""nationality"": null, ""heimatort"": ""Schaffhausen, Merishausen und Römerswil"", ""domicile"": ""Hägglingen"", ""role"": null, ""signature"": ""Kollektivunterschrift zu zweien"", ""uid"": null, ""stammanteile"": null}",null,missed,missed
+0130,persons_removed,"Germann, Urs",,"{""name"": ""Germann, Urs"", ""nationality"": null, ""heimatort"": ""Merishausen und Schaffhausen"", ""domicile"": ""Hunzenschwil"", ""role"": ""Mitglied des Verwaltungsrates"", ""signature"": ""Kollektivunterschrift zu zweien"", ""uid"": null, ""stammanteile"": null}",null,missed,missed
+0130,persons_removed,"Germann, Rolf",,"{""name"": ""Germann, Rolf"", ""nationality"": null, ""heimatort"": ""Merishausen und Schaffhausen"", ""domicile"": ""Lenzburg"", ""role"": ""Mitglied des Verwaltungsrates"", ""signature"": ""Kollektivunterschrift zu zweien"", ""uid"": null, ""stammanteile"": null}",null,missed,missed
+0130,persons_changed,,,"[{""name_new"": ""Germann, Patrick"", ""name_previous"": null, ""domicile_new"": ""Hägglingen"", ""domicile_previous"": null, ""role_new"": ""Präsident des Verwaltungsrates"", ""role_previous"": null, ""signature_new"": ""Einzelunterschrift"", ""signature_previous"": ""Kollektivunterschrift zu zweien"", ""nationality_new"": null, ""nationality_previous"": null, ""heimatort_new"": ""Schaffhausen und Merishausen"", ""heimatort_previous"": null, ""stammanteile_new"": null, ""stammanteile_previous"": null}, {""name_new"": ""Wehrli, Martin"", ""name_previous"": null, ""domicile_new"": ""Gretzenbach"", ""domicile_previous"": null, ""role_new"": ""Mitglied des Verwaltungsrates"", ""role_previous"": ""ohne eingetragene Funktion"", ""signature_new"": ""Kollektivunterschrift zu zweien"", ""signature_previous"": null, ""nationality_new"": null, ""nationality_previous"": null, ""heimatort_new"": ""Küttigen"", ""heimatort_previous"": null, ""stammanteile_new"": null, ""stammanteile_previous"": null}]",[],excluded_uncertain,excluded_uncertain
+0131,act_type,,,"""mutation""","""mutation""",correct,correct
+0131,act_subtypes,,,"[""organaenderung""]",[],omission,omission
+0131,company_name_full,,,"""Physiotherapie Lipa GmbH""",null,omission,omission
+0131,company_name_base,,,"""Physiotherapie Lipa GmbH""",null,omission,omission
+0131,status_suffix,,,null,null,correct_null,correct_null
+0131,alternative_names,,,[],[],correct_null,correct_null
+0131,company_name_new,,,null,null,correct_null,correct_null
+0131,company_name_previous,,,null,null,correct_null,correct_null
+0131,uid,,,"""CHE-265.726.209""",null,omission,omission
+0131,legal_form,,,"""GmbH""","""AG""",wrong,wrong
+0131,seat_municipality,,,"""Gebenstorf""","""Zürich""",wrong,wrong
+0131,seat_canton,,,"""AG""","""ZH""",wrong,wrong
+0131,address_care_of,,,null,null,correct_null,correct_null
+0131,address_street,,,"""Geeligstrasse 1""","""Leutschenbachstrasse 95""",wrong,wrong
+0131,address_postcode,,,"""5412""","""8050""",wrong,wrong
+0131,address_municipality,,,"""Gebenstorf""","""Zürich""",wrong,wrong
+0131,act_date,,,null,null,correct_null,correct_null
+0131,tagesregister_nr,,,"""12652""",null,omission,omission
+0131,tagesregister_date,,,"""2026-09-04""","""2026-08-26""",wrong,wrong
+0131,prior_publication_shab_nr,,,149,null,omission,omission
+0131,prior_publication_date,,,"""2024-08-05""",null,omission,omission
+0131,prior_publication_id,,,"""1006100000""",null,omission,omission
+0131,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Zürich""",wrong,wrong
+0131,canton_previous,,,null,null,correct_null,correct_null
+0131,canton_new,,,null,null,correct_null,correct_null
+0131,capital_new_chf,,,null,null,correct_null,correct_null
+0131,capital_previous_chf,,,null,null,correct_null,correct_null
+0131,domicile_new,,,null,null,correct_null,correct_null
+0131,domicile_previous,,,null,null,correct_null,correct_null
+0131,persons_removed,"Birrer, Katica",,"{""name"": ""Birrer, Katica"", ""nationality"": null, ""heimatort"": ""Luthern"", ""domicile"": ""Hendschiken"", ""role"": ""Gesellschafterin"", ""signature"": ""Einzelunterschrift"", ""uid"": null, ""stammanteile"": 10}",null,missed,missed
+0131,persons_changed,"Tropsch, Christian",,"{""name_new"": ""Tropsch, Christian"", ""name_previous"": null, ""domicile_new"": ""Dottikon"", ""domicile_previous"": ""Thalheim (AG)"", ""role_new"": ""Gesellschafter und Geschäftsführer"", ""role_previous"": null, ""signature_new"": ""Einzelunterschrift"", ""signature_previous"": null, ""nationality_new"": ""deutsch"", ""nationality_previous"": null, ""heimatort_new"": null, ""heimatort_previous"": null, ""stammanteile_new"": 20, ""stammanteile_previous"": 10}",null,missed,missed
+0131,extras,nominal_value_chf,,1000.0,null,missed,missed
+0132,act_type,,,"""mutation""","""mutation""",correct,correct
+0132,act_subtypes,,,"[""statutenaenderung"", ""organaenderung"", ""sitzverlegung"", ""zweckaenderung""]",[],omission,omission
+0132,company_name_full,,,"""SuH Holding AG""",null,omission,omission
+0132,company_name_base,,,"""SuH Holding AG""",null,omission,omission
+0132,status_suffix,,,null,null,correct_null,correct_null
+0132,alternative_names,,,[],[],correct_null,correct_null
+0132,company_name_new,,,null,null,correct_null,correct_null
+0132,company_name_previous,,,null,null,correct_null,correct_null
+0132,uid,,,"""CHE-391.791.992""",null,omission,omission
+0132,legal_form,,,"""AG""","""AG""",correct,correct
+0132,seat_municipality,,,"""Oftringen""","""Zürich""",wrong,wrong
+0132,seat_canton,,,"""AG""","""ZH""",wrong,wrong
+0132,address_care_of,,,null,null,correct_null,correct_null
+0132,address_street,,,"""Talrain 27b""","""Leutschenbachstrasse 95""",wrong,wrong
+0132,address_postcode,,,"""5037""","""8050""",wrong,wrong
+0132,address_municipality,,,"""Muhen""","""Zürich""",wrong,wrong
+0132,act_date,,,"""2026-08-24""",null,omission,omission
+0132,tagesregister_nr,,,"""12634""",null,omission,omission
+0132,tagesregister_date,,,"""2026-09-04""","""2026-08-26""",wrong,wrong
+0132,prior_publication_shab_nr,,,232,null,omission,omission
+0132,prior_publication_date,,,"""2024-11-28""",null,omission,omission
+0132,prior_publication_id,,,"""1006190339""",null,omission,omission
+0132,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Zürich""",wrong,wrong
+0132,canton_previous,,,null,null,correct_null,correct_null
+0132,canton_new,,,null,null,correct_null,correct_null
+0132,capital_new_chf,,,null,null,correct_null,correct_null
+0132,capital_previous_chf,,,null,null,correct_null,correct_null
+0132,domicile_new,,,"""Talrain 27b, 5037 Muhen""",null,omission,omission
+0132,domicile_previous,,,"""Weichlerrain 7, 4665 Oftringen""",null,omission,omission
+0132,persons_changed,"Stankovski, Aleksandar",,"{""name_new"": ""Stankovski, Aleksandar"", ""name_previous"": null, ""domicile_new"": ""Muhen"", ""domicile_previous"": ""Oftringen"", ""role_new"": ""Mitglied des Verwaltungsrates"", ""role_previous"": null, ""signature_new"": ""Einzelunterschrift"", ""signature_previous"": null, ""nationality_new"": null, ""nationality_previous"": null, ""heimatort_new"": ""Schöftland"", ""heimatort_previous"": null, ""stammanteile_new"": null, ""stammanteile_previous"": null}",null,missed,missed
+0132,extras,zweck,,"""Die Gesellschaft bezweckt das Halten von Beteiligungen sowie den Kauf und Verkauf von Immobilien. Die Gesellschaft kann Zweigniederlassungen und Tochtergesellschaften im In- und Ausland errichten …""",null,missed,missed
+0132,extras,mitteilungen,,"""durch Brief oder E-Mail an die im Aktienbuch verzeichneten Adressen""",null,missed,missed
+0133,act_type,,,"""mutation""","""mutation""",correct,correct
+0133,act_subtypes,,,"[""firmenaenderung"", ""konkurseroeffnung""]",[],excluded_uncertain,excluded_uncertain
+0133,company_name_full,,,"""M&M Consulting GmbH, Zweigniederlassung Zofingen""",null,omission,omission
+0133,company_name_base,,,"""M&M Consulting GmbH, Zweigniederlassung Zofingen""",null,omission,omission
+0133,status_suffix,,,null,null,correct_null,correct_null
+0133,alternative_names,,,[],[],correct_null,correct_null
+0133,company_name_new,,,"""M&M Consulting GmbH, Zweigniederlassung Zofingen in Liquidation""",null,omission,omission
+0133,company_name_previous,,,"""M&M Consulting GmbH, Zweigniederlassung Zofingen""",null,omission,omission
+0133,uid,,,"""CHE-491.574.811""",null,omission,omission
+0133,legal_form,,,"""Zweigniederlassung""","""AG""",wrong,wrong
+0133,seat_municipality,,,"""Zofingen""","""Zürich""",wrong,wrong
+0133,seat_canton,,,"""AG""","""ZH""",wrong,wrong
+0133,address_care_of,,,null,null,correct_null,correct_null
+0133,address_street,,,"""Untere Brühlstrasse 30""","""Leutschenbachstrasse 95""",wrong,wrong
+0133,address_postcode,,,"""4800""","""8050""",wrong,wrong
+0133,address_municipality,,,"""Zofingen""","""Zürich""",wrong,wrong
+0133,act_date,,,"""2026-08-26""",null,excluded_uncertain,excluded_uncertain
+0133,tagesregister_nr,,,"""12680""",null,omission,omission
+0133,tagesregister_date,,,"""2026-09-04""","""2026-08-26""",wrong,wrong
+0133,prior_publication_shab_nr,,,38,null,omission,omission
+0133,prior_publication_date,,,"""2022-02-23""",null,omission,omission
+0133,prior_publication_id,,,"""1005412605""",null,omission,omission
+0133,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Zürich""",wrong,wrong
+0133,canton_previous,,,null,null,correct_null,correct_null
+0133,canton_new,,,null,null,correct_null,correct_null
+0133,capital_new_chf,,,null,null,correct_null,correct_null
+0133,capital_previous_chf,,,null,null,correct_null,correct_null
+0133,domicile_new,,,null,null,correct_null,correct_null
+0133,domicile_previous,,,null,null,correct_null,correct_null
+0133,extras,hauptsitz,,"""Triengen""",null,missed,missed
+0133,extras,konkurs_wirkung_ab,,"""2026-08-26 10:00""",null,missed,missed
+0134,act_type,,,"""loeschung""","""mutation""",wrong,wrong
+0134,act_subtypes,,,[],[],correct_null,correct_null
+0134,company_name_full,,,"""Bahnhoftaxi Wohlen Stutz AG""",null,omission,omission
+0134,company_name_base,,,"""Bahnhoftaxi Wohlen Stutz AG""",null,omission,omission
+0134,status_suffix,,,null,null,correct_null,correct_null
+0134,alternative_names,,,[],[],correct_null,correct_null
+0134,company_name_new,,,null,null,correct_null,correct_null
+0134,company_name_previous,,,null,null,correct_null,correct_null
+0134,uid,,,"""CHE-107.891.401""",null,omission,omission
+0134,legal_form,,,"""AG""","""AG""",correct,correct
+0134,seat_municipality,,,"""Wohlen (AG)""","""Zürich""",wrong,wrong
+0134,seat_canton,,,"""AG""","""ZH""",wrong,wrong
+0134,address_care_of,,,null,null,correct_null,correct_null
+0134,address_street,,,"""Dammweg 45""","""Leutschenbachstrasse 95""",wrong,wrong
+0134,address_postcode,,,"""5610""","""8050""",wrong,wrong
+0134,address_municipality,,,"""Wohlen AG""","""Zürich""",wrong,wrong
+0134,act_date,,,"""2026-09-04""",null,omission,omission
+0134,tagesregister_nr,,,"""12684""",null,omission,omission
+0134,tagesregister_date,,,"""2026-09-04""","""2026-08-26""",wrong,wrong
+0134,prior_publication_shab_nr,,,116,null,omission,omission
+0134,prior_publication_date,,,"""2026-06-19""",null,omission,omission
+0134,prior_publication_id,,,"""1006682841""",null,omission,omission
+0134,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Zürich""",wrong,wrong
+0134,canton_previous,,,null,null,correct_null,correct_null
+0134,canton_new,,,null,null,correct_null,correct_null
+0134,capital_new_chf,,,null,null,correct_null,correct_null
+0134,capital_previous_chf,,,null,null,correct_null,correct_null
+0134,domicile_new,,,null,null,correct_null,correct_null
+0134,domicile_previous,,,null,null,correct_null,correct_null
+0134,extras,loeschung_reason,,"""infolge Fusion""",null,missed,missed
+0135,act_type,,,"""loeschung""","""mutation""",wrong,wrong
+0135,act_subtypes,,,[],[],correct_null,correct_null
+0135,company_name_full,,,"""Burger Tankrevisionen Frei GmbH in Liquidation""",null,omission,omission
+0135,company_name_base,,,"""Burger Tankrevisionen Frei GmbH""",null,omission,omission
+0135,status_suffix,,,"""in Liquidation""",null,omission,omission
+0135,alternative_names,,,[],[],correct_null,correct_null
+0135,company_name_new,,,null,null,correct_null,correct_null
+0135,company_name_previous,,,null,null,correct_null,correct_null
+0135,uid,,,"""CHE-434.604.669""",null,omission,omission
+0135,legal_form,,,"""Zweigniederlassung""","""AG""",wrong,wrong
+0135,seat_municipality,,,"""Würenlos""","""Zürich""",wrong,wrong
+0135,seat_canton,,,"""AG""","""ZH""",wrong,wrong
+0135,address_care_of,,,null,null,correct_null,correct_null
+0135,address_street,,,"""Bahnhofstrasse 10""","""Leutschenbachstrasse 95""",wrong,wrong
+0135,address_postcode,,,"""5436""","""8050""",wrong,wrong
+0135,address_municipality,,,"""Würenlos""","""Zürich""",wrong,wrong
+0135,act_date,,,"""2026-09-04""",null,omission,omission
+0135,tagesregister_nr,,,"""12678""",null,omission,omission
+0135,tagesregister_date,,,"""2026-09-04""","""2026-08-26""",wrong,wrong
+0135,prior_publication_shab_nr,,,144,null,omission,omission
+0135,prior_publication_date,,,"""2024-07-26""",null,omission,omission
+0135,prior_publication_id,,,"""1006095060""",null,omission,omission
+0135,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Zürich""",wrong,wrong
+0135,canton_previous,,,null,null,correct_null,correct_null
+0135,canton_new,,,null,null,correct_null,correct_null
+0135,capital_new_chf,,,null,null,correct_null,correct_null
+0135,capital_previous_chf,,,null,null,correct_null,correct_null
+0135,domicile_new,,,null,null,correct_null,correct_null
+0135,domicile_previous,,,null,null,correct_null,correct_null
+0135,extras,hauptsitz,,"""Zug""",null,missed,missed
+0135,extras,loeschung_reason,,"""infolge Löschung der Hauptniederlassung (SHAB vom 02.09.2026) im Sinne von Art. 111 Abs. 2 HRegV von Amtes wegen""",null,missed,missed
+0136,act_type,,,"""mutation""","""mutation""",correct,correct
+0136,act_subtypes,,,"[""organaenderung"", ""firmenaenderung"", ""zweckaenderung""]",[],omission,omission
+0136,company_name_full,,,"""Jasmin Jud Cosmetics""",null,omission,omission
+0136,company_name_base,,,"""Jasmin Jud Cosmetics""",null,omission,omission
+0136,status_suffix,,,null,null,correct_null,correct_null
+0136,alternative_names,,,[],[],correct_null,correct_null
+0136,company_name_new,,,"""JASMIN COSMETICS RÜDISÜHLI""",null,omission,omission
+0136,company_name_previous,,,"""Jasmin Jud Cosmetics""",null,omission,omission
+0136,uid,,,"""CHE-302.193.986""",null,omission,omission
+0136,legal_form,,,"""Einzelunternehmen""","""AG""",wrong,wrong
+0136,seat_municipality,,,"""Brugg""","""Zürich""",wrong,wrong
+0136,seat_canton,,,"""AG""","""ZH""",wrong,wrong
+0136,address_care_of,,,"""Bodyline medizinische Kosmetik GmbH""",null,omission,omission
+0136,address_street,,,"""Stahlrain 8""","""Leutschenbachstrasse 95""",wrong,wrong
+0136,address_postcode,,,"""5200""","""8050""",wrong,wrong
+0136,address_municipality,,,"""Brugg AG""","""Zürich""",wrong,wrong
+0136,act_date,,,null,null,correct_null,correct_null
+0136,tagesregister_nr,,,"""12656""",null,omission,omission
+0136,tagesregister_date,,,"""2026-09-04""","""2026-08-26""",wrong,wrong
+0136,prior_publication_shab_nr,,,85,null,omission,omission
+0136,prior_publication_date,,,"""2020-05-04""",null,omission,omission
+0136,prior_publication_id,,,"""1004882341""",null,omission,omission
+0136,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Zürich""",wrong,wrong
+0136,canton_previous,,,null,null,correct_null,correct_null
+0136,canton_new,,,null,null,correct_null,correct_null
+0136,capital_new_chf,,,null,null,correct_null,correct_null
+0136,capital_previous_chf,,,null,null,correct_null,correct_null
+0136,domicile_new,,,null,null,correct_null,correct_null
+0136,domicile_previous,,,null,null,correct_null,correct_null
+0136,persons_changed,"Rüdisühli-Jud, Jasmin",,"{""name_new"": ""Rüdisühli-Jud, Jasmin"", ""name_previous"": ""Jud, Jasmin"", ""domicile_new"": ""Hausen (AG)"", ""domicile_previous"": null, ""role_new"": ""Inhaberin"", ""role_previous"": null, ""signature_new"": ""Einzelunterschrift"", ""signature_previous"": null, ""nationality_new"": null, ""nationality_previous"": null, ""heimatort_new"": ""Schongau"", ""heimatort_previous"": null, ""stammanteile_new"": null, ""stammanteile_previous"": null}",null,missed,missed
+0136,extras,zweck,,"""Kosmetikpraxis für kosmetische Behandlungen aller Art. Beratungen und Schulungen im kosmetischen Bereich sowie Vertrieb von Kosmetik- und Schönheitsprodukten.""",null,missed,missed
+0137,act_type,,,"""mutation""","""mutation""",correct,correct
+0137,act_subtypes,,,"[""konkurseroeffnung""]",[],omission,omission
+0137,company_name_full,,,"""von Rotz Fahrzeugpflege & Montage""",null,omission,omission
+0137,company_name_base,,,"""von Rotz Fahrzeugpflege & Montage""",null,omission,omission
+0137,status_suffix,,,null,null,correct_null,correct_null
+0137,alternative_names,,,[],[],correct_null,correct_null
+0137,company_name_new,,,null,null,correct_null,correct_null
+0137,company_name_previous,,,null,null,correct_null,correct_null
+0137,uid,,,"""CHE-429.667.925""",null,omission,omission
+0137,legal_form,,,"""Einzelunternehmen""","""AG""",wrong,wrong
+0137,seat_municipality,,,"""Leuggern""","""Zürich""",wrong,wrong
+0137,seat_canton,,,"""AG""","""ZH""",wrong,wrong
+0137,address_care_of,,,null,null,correct_null,correct_null
+0137,address_street,,,"""Wardstrasse 3""","""Leutschenbachstrasse 95""",wrong,wrong
+0137,address_postcode,,,"""5316""","""8050""",wrong,wrong
+0137,address_municipality,,,"""Leuggern""","""Zürich""",wrong,wrong
+0137,act_date,,,"""2026-09-02""",null,excluded_uncertain,excluded_uncertain
+0137,tagesregister_nr,,,"""12683""",null,omission,omission
+0137,tagesregister_date,,,"""2026-09-04""","""2026-08-26""",wrong,wrong
+0137,prior_publication_shab_nr,,,58,null,omission,omission
+0137,prior_publication_date,,,"""2026-03-25""",null,omission,omission
+0137,prior_publication_id,,,"""1006606317""",null,omission,omission
+0137,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Zürich""",wrong,wrong
+0137,canton_previous,,,null,null,correct_null,correct_null
+0137,canton_new,,,null,null,correct_null,correct_null
+0137,capital_new_chf,,,null,null,correct_null,correct_null
+0137,capital_previous_chf,,,null,null,correct_null,correct_null
+0137,domicile_new,,,null,null,correct_null,correct_null
+0137,domicile_previous,,,null,null,correct_null,correct_null
+0137,extras,konkurs_wirkung_ab,,"""2026-09-02 10:45""",null,missed,missed
+0138,act_type,,,"""neueintragung""","""mutation""",wrong,wrong
+0138,act_subtypes,,,[],[],correct_null,correct_null
+0138,company_name_full,,,"""Praxis-Sisseln AG""",null,omission,omission
+0138,company_name_base,,,"""Praxis-Sisseln AG""",null,omission,omission
+0138,status_suffix,,,null,null,correct_null,correct_null
+0138,alternative_names,,,[],[],correct_null,correct_null
+0138,company_name_new,,,null,null,correct_null,correct_null
+0138,company_name_previous,,,null,null,correct_null,correct_null
+0138,uid,,,"""CHE-290.073.729""",null,omission,omission
+0138,legal_form,,,"""AG""","""AG""",correct,correct
+0138,seat_municipality,,,"""Sisseln""","""Zürich""",wrong,wrong
+0138,seat_canton,,,"""AG""","""ZH""",wrong,wrong
+0138,address_care_of,,,null,null,correct_null,correct_null
+0138,address_street,,,"""Poststrasse 9""","""Leutschenbachstrasse 95""",wrong,wrong
+0138,address_postcode,,,"""4334""","""8050""",wrong,wrong
+0138,address_municipality,,,"""Sisseln AG""","""Zürich""",wrong,wrong
+0138,act_date,,,"""2026-08-27""",null,omission,omission
+0138,tagesregister_nr,,,"""12662""",null,omission,omission
+0138,tagesregister_date,,,"""2026-09-04""","""2026-08-26""",wrong,wrong
+0138,prior_publication_shab_nr,,,null,null,correct_null,correct_null
+0138,prior_publication_date,,,null,null,correct_null,correct_null
+0138,prior_publication_id,,,null,null,correct_null,correct_null
+0138,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Zürich""",wrong,wrong
+0138,canton_previous,,,null,null,correct_null,correct_null
+0138,canton_new,,,null,null,correct_null,correct_null
+0138,capital_new_chf,,,100000.0,null,omission,omission
+0138,capital_previous_chf,,,null,null,correct_null,correct_null
+0138,domicile_new,,,null,null,correct_null,correct_null
+0138,domicile_previous,,,null,null,correct_null,correct_null
+0138,persons_added,"Bachmann, Philipp Andreas",,"{""name"": ""Bachmann, Philipp Andreas"", ""nationality"": null, ""heimatort"": ""Hochdorf"", ""domicile"": ""Sisseln"", ""role"": ""Präsident des Verwaltungsrates"", ""signature"": ""Einzelunterschrift"", ""uid"": null, ""stammanteile"": null}",null,missed,missed
+0138,persons_added,"Bachmann, Patrizia",,"{""name"": ""Bachmann, Patrizia"", ""nationality"": null, ""heimatort"": ""Hochdorf"", ""domicile"": ""Sisseln"", ""role"": ""Mitglied des Verwaltungsrates"", ""signature"": ""Einzelunterschrift"", ""uid"": null, ""stammanteile"": null}",null,missed,missed
+0138,extras,zweck,,"""Die Gesellschaft bezweckt den Betrieb einer Arztpraxis und die Erbringung von Dienstleistungen im Gesundheitsbereich. Die Gesellschaft kann Zweigniederlassungen und Tochtergesellschaften im In- und Ausland …""",null,missed,missed
+0138,extras,nominal_value_chf,,1000.0,null,missed,missed
+0138,extras,aktien_new,,100,null,missed,missed
+0138,extras,share_classes,,"""Namenaktien""",null,missed,missed
+0138,extras,liberierung_new_chf,,100000.0,null,missed,missed
+0138,extras,vinkulierung,,true,null,missed,missed
+0138,extras,revision,,"""opting-out""",null,missed,missed
+0138,extras,mitteilungen,,"""durch Brief oder E-Mail an die im Aktienbuch verzeichneten Adressen""",null,missed,missed
+0139,act_type,,,"""mutation""","""mutation""",correct,correct
+0139,act_subtypes,,,"[""sitzverlegung"", ""kantonswechsel""]",[],omission,omission
+0139,company_name_full,,,"""Generation Living GmbH""",null,omission,omission
+0139,company_name_base,,,"""Generation Living GmbH""",null,omission,omission
+0139,status_suffix,,,null,null,correct_null,correct_null
+0139,alternative_names,,,[],[],correct_null,correct_null
+0139,company_name_new,,,null,null,correct_null,correct_null
+0139,company_name_previous,,,null,null,correct_null,correct_null
+0139,uid,,,"""CHE-438.589.922""",null,omission,omission
+0139,legal_form,,,"""GmbH""","""AG""",wrong,wrong
+0139,seat_municipality,,,"""Aarau""","""Zürich""",wrong,wrong
+0139,seat_canton,,,"""AG""","""ZH""",wrong,wrong
+0139,address_care_of,,,null,null,correct_null,correct_null
+0139,address_street,,,"""Glashütte 89d""","""Leutschenbachstrasse 95""",wrong,wrong
+0139,address_postcode,,,"""3807""","""8050""",wrong,wrong
+0139,address_municipality,,,"""Iseltwald""","""Zürich""",wrong,wrong
+0139,act_date,,,null,null,correct_null,correct_null
+0139,tagesregister_nr,,,"""12688""",null,omission,omission
+0139,tagesregister_date,,,"""2026-09-04""","""2026-08-26""",wrong,wrong
+0139,prior_publication_shab_nr,,,160,null,omission,omission
+0139,prior_publication_date,,,"""2025-08-21""",null,omission,omission
+0139,prior_publication_id,,,"""1006413685""",null,omission,omission
+0139,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Zürich""",wrong,wrong
+0139,canton_previous,,,"""AG""",null,omission,omission
+0139,canton_new,,,"""BE""",null,omission,omission
+0139,capital_new_chf,,,null,null,correct_null,correct_null
+0139,capital_previous_chf,,,null,null,correct_null,correct_null
+0139,domicile_new,,,"""Glashütte 89d, 3807 Iseltwald""",null,omission,omission
+0139,domicile_previous,,,"""Buchserstrasse 4, 5000 Aarau""",null,omission,omission
+0140,act_type,,,"""neueintragung""","""mutation""",wrong,wrong
+0140,act_subtypes,,,[],[],correct_null,correct_null
+0140,company_name_full,,,"""Rostas Dachdecker und Zimmerei""",null,omission,omission
+0140,company_name_base,,,"""Rostas Dachdecker und Zimmerei""",null,omission,omission
+0140,status_suffix,,,null,null,correct_null,correct_null
+0140,alternative_names,,,[],[],correct_null,correct_null
+0140,company_name_new,,,null,null,correct_null,correct_null
+0140,company_name_previous,,,null,null,correct_null,correct_null
+0140,uid,,,"""CHE-143.620.861""",null,omission,omission
+0140,legal_form,,,"""Einzelunternehmen""","""AG""",wrong,wrong
+0140,seat_municipality,,,"""Böztal""","""Zürich""",wrong,wrong
+0140,seat_canton,,,"""AG""","""ZH""",wrong,wrong
+0140,address_care_of,,,null,null,correct_null,correct_null
+0140,address_street,,,"""Dorfstrasse 53""","""Leutschenbachstrasse 95""",wrong,wrong
+0140,address_postcode,,,"""5078""","""8050""",wrong,wrong
+0140,address_municipality,,,"""Effingen""","""Zürich""",wrong,wrong
+0140,act_date,,,null,null,correct_null,correct_null
+0140,tagesregister_nr,,,"""12692""",null,omission,omission
+0140,tagesregister_date,,,"""2026-09-04""","""2026-08-26""",wrong,wrong
+0140,prior_publication_shab_nr,,,null,null,correct_null,correct_null
+0140,prior_publication_date,,,null,null,correct_null,correct_null
+0140,prior_publication_id,,,null,null,correct_null,correct_null
+0140,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Zürich""",wrong,wrong
+0140,canton_previous,,,null,null,correct_null,correct_null
+0140,canton_new,,,null,null,correct_null,correct_null
+0140,capital_new_chf,,,null,null,correct_null,correct_null
+0140,capital_previous_chf,,,null,null,correct_null,correct_null
+0140,domicile_new,,,null,null,correct_null,correct_null
+0140,domicile_previous,,,null,null,correct_null,correct_null
+0140,persons_added,"Rostas, Ludovic",,"{""name"": ""Rostas, Ludovic"", ""nationality"": ""rumänisch"", ""heimatort"": null, ""domicile"": ""Böztal"", ""role"": ""Inhaber"", ""signature"": ""Einzelunterschrift"", ""uid"": null, ""stammanteile"": null}",null,missed,missed
+0140,extras,zweck,,"""Betreiben einer Dachdeckerei und Spenglerei sowie Ausführen von Zimmermann- und Fassadenarbeiten.""",null,missed,missed
+0141,act_type,,,"""mutation""","""mutation""",correct,correct
+0141,act_subtypes,,,"[""statutenaenderung"", ""organaenderung"", ""sitzverlegung"", ""kantonswechsel"", ""zweckaenderung""]",[],omission,omission
+0141,company_name_full,,,"""CSB System AG Schweiz""",null,omission,omission
+0141,company_name_base,,,"""CSB System AG Schweiz""",null,omission,omission
+0141,status_suffix,,,null,null,correct_null,correct_null
+0141,alternative_names,,,[],[],correct_null,correct_null
+0141,company_name_new,,,null,null,correct_null,correct_null
+0141,company_name_previous,,,null,null,correct_null,correct_null
+0141,uid,,,"""CHE-113.707.144""",null,omission,omission
+0141,legal_form,,,"""AG""","""AG""",correct,correct
+0141,seat_municipality,,,"""Kestenholz""","""Zürich""",wrong,wrong
+0141,seat_canton,,,"""SO""","""ZH""",wrong,wrong
+0141,address_care_of,,,null,null,correct_null,correct_null
+0141,address_street,,,"""Brown Boveri Strasse 7""","""Leutschenbachstrasse 95""",wrong,wrong
+0141,address_postcode,,,"""5400""","""8050""",wrong,wrong
+0141,address_municipality,,,"""Baden""","""Zürich""",wrong,wrong
+0141,act_date,,,"""2026-08-31""",null,omission,omission
+0141,tagesregister_nr,,,"""12666""",null,omission,omission
+0141,tagesregister_date,,,"""2026-09-04""","""2026-08-26""",wrong,wrong
+0141,prior_publication_shab_nr,,,161,null,omission,omission
+0141,prior_publication_date,,,"""2025-08-22""",null,omission,omission
+0141,prior_publication_id,,,"""1006414693""",null,omission,omission
+0141,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Zürich""",wrong,wrong
+0141,canton_previous,,,"""SO""",null,omission,omission
+0141,canton_new,,,"""AG""",null,omission,omission
+0141,capital_new_chf,,,null,null,correct_null,correct_null
+0141,capital_previous_chf,,,null,null,correct_null,correct_null
+0141,domicile_new,,,"""Brown Boveri Strasse 7, 5400 Baden""",null,omission,omission
+0141,domicile_previous,,,"""Gäustrasse 52, 4703 Kestenholz""",null,omission,omission
+0141,persons_changed,"Kröner, Vanessa",,"{""name_new"": ""Kröner, Vanessa"", ""name_previous"": ""Kröner-Schimitzek, Vanessa"", ""domicile_new"": ""Ennetbaden"", ""domicile_previous"": null, ""role_new"": ""Präsidentin des Verwaltungsrates"", ""role_previous"": null, ""signature_new"": ""Kollektivunterschrift zu zweien"", ""signature_previous"": null, ""nationality_new"": null, ""nationality_previous"": ""deutsch"", ""heimatort_new"": ""Ennetbaden"", ""heimatort_previous"": null, ""stammanteile_new"": null, ""stammanteile_previous"": null}",null,missed,missed
+0141,persons_changed,"Jorns, Hansjörg",,"{""name_new"": ""Jorns, Hansjörg"", ""name_previous"": null, ""domicile_new"": ""Locarno"", ""domicile_previous"": ""Oensingen"", ""role_new"": ""Mitglied des Verwaltungsrates"", ""role_previous"": null, ""signature_new"": ""Kollektivunterschrift zu zweien"", ""signature_previous"": null, ""nationality_new"": null, ""nationality_previous"": null, ""heimatort_new"": ""Saanen"", ""heimatort_previous"": null, ""stammanteile_new"": null, ""stammanteile_previous"": null}",null,missed,missed
+0141,extras,zweck,,"""Die Gesellschaft bezweckt die betriebswirtschaftliche Beratung von Unternehmen aller Art, insbesondere die Erstellung von Kalkulationsgrundlagen und die entsprechende Betreuung, EDV-Einführung …""",null,missed,missed
+0141,extras,nominal_value_chf,,1.0,null,missed,missed
+0141,extras,aktien_new,,100000,null,missed,missed
+0141,extras,aktien_previous,,100,null,missed,missed
+0141,extras,share_classes,,"""Namenaktien""",null,missed,missed
+0141,extras,mitteilungen,,"""durch Briefe, E-Mail oder eine andere geeignete elektronische Kommunikationsplattform an die im Aktienbuch eingetragenen Aktionäre""",null,missed,missed
+0142,act_type,,,"""mutation""","""mutation""",correct,correct
+0142,act_subtypes,,,"[""fusion""]",[],omission,omission
+0142,company_name_full,,,"""Lobeck Chemie AG""",null,omission,omission
+0142,company_name_base,,,"""Lobeck Chemie AG""",null,omission,omission
+0142,status_suffix,,,null,null,correct_null,correct_null
+0142,alternative_names,,,[],[],correct_null,correct_null
+0142,company_name_new,,,null,null,correct_null,correct_null
+0142,company_name_previous,,,null,null,correct_null,correct_null
+0142,uid,,,"""CHE-102.723.707""",null,omission,omission
+0142,legal_form,,,"""AG""","""AG""",correct,correct
+0142,seat_municipality,,,"""Zurzach""","""Zürich""",wrong,wrong
+0142,seat_canton,,,"""AG""","""ZH""",wrong,wrong
+0142,address_care_of,,,null,null,correct_null,correct_null
+0142,address_street,,,"""Zürcherstrasse 42""","""Leutschenbachstrasse 95""",wrong,wrong
+0142,address_postcode,,,"""5330""","""8050""",wrong,wrong
+0142,address_municipality,,,"""Bad Zurzach""","""Zürich""",wrong,wrong
+0142,act_date,,,null,null,excluded_uncertain,excluded_uncertain
+0142,tagesregister_nr,,,"""12653""",null,omission,omission
+0142,tagesregister_date,,,"""2026-09-04""","""2026-08-26""",wrong,wrong
+0142,prior_publication_shab_nr,,,5,null,omission,omission
+0142,prior_publication_date,,,"""2024-01-09""",null,omission,omission
+0142,prior_publication_id,,,"""1005929388""",null,omission,omission
+0142,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Zürich""",wrong,wrong
+0142,canton_previous,,,null,null,correct_null,correct_null
+0142,canton_new,,,null,null,correct_null,correct_null
+0142,capital_new_chf,,,null,null,correct_null,correct_null
+0142,capital_previous_chf,,,null,null,correct_null,correct_null
+0142,domicile_new,,,null,null,correct_null,correct_null
+0142,domicile_previous,,,null,null,correct_null,correct_null
+0143,act_type,,,"""mutation""","""mutation""",correct,correct
+0143,act_subtypes,,,"[""organaenderung""]",[],omission,omission
+0143,company_name_full,,,"""Agrisano Prevos""",null,omission,omission
+0143,company_name_base,,,"""Agrisano Prevos""",null,omission,omission
+0143,status_suffix,,,null,null,correct_null,correct_null
+0143,alternative_names,,,[],[],correct_null,correct_null
+0143,company_name_new,,,null,null,correct_null,correct_null
+0143,company_name_previous,,,null,null,correct_null,correct_null
+0143,uid,,,"""CHE-109.706.532""",null,omission,omission
+0143,legal_form,,,"""Stiftung""","""AG""",wrong,wrong
+0143,seat_municipality,,,"""Brugg""","""Zürich""",wrong,wrong
+0143,seat_canton,,,"""AG""","""ZH""",wrong,wrong
+0143,address_care_of,,,"""Schweizerischer Bauernverband""",null,omission,omission
+0143,address_street,,,"""Laurstrasse 10""","""Leutschenbachstrasse 95""",wrong,wrong
+0143,address_postcode,,,"""5200""","""8050""",wrong,wrong
+0143,address_municipality,,,"""Brugg AG""","""Zürich""",wrong,wrong
+0143,act_date,,,null,null,correct_null,correct_null
+0143,tagesregister_nr,,,"""12677""",null,omission,omission
+0143,tagesregister_date,,,"""2026-09-04""","""2026-08-26""",wrong,wrong
+0143,prior_publication_shab_nr,,,109,null,omission,omission
+0143,prior_publication_date,,,"""2026-06-10""",null,omission,omission
+0143,prior_publication_id,,,"""1006672866""",null,omission,omission
+0143,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Zürich""",wrong,wrong
+0143,canton_previous,,,null,null,correct_null,correct_null
+0143,canton_new,,,null,null,correct_null,correct_null
+0143,capital_new_chf,,,null,null,correct_null,correct_null
+0143,capital_previous_chf,,,null,null,correct_null,correct_null
+0143,domicile_new,,,null,null,correct_null,correct_null
+0143,domicile_previous,,,null,null,correct_null,correct_null
+0143,persons_removed,"Hächler, Sandra",,"{""name"": ""Hächler, Sandra"", ""nationality"": null, ""heimatort"": ""Densbüren"", ""domicile"": ""Densbüren"", ""role"": null, ""signature"": ""Kollektivunterschrift zu zweien"", ""uid"": null, ""stammanteile"": null}",null,missed,missed
+0144,act_type,,,"""mutation""","""mutation""",correct,correct
+0144,act_subtypes,,,"[""organaenderung""]",[],omission,omission
+0144,company_name_full,,,"""Plüss-Staufer Immobilien AG""",null,omission,omission
+0144,company_name_base,,,"""Plüss-Staufer Immobilien AG""",null,omission,omission
+0144,status_suffix,,,null,null,correct_null,correct_null
+0144,alternative_names,,,[],[],correct_null,correct_null
+0144,company_name_new,,,null,null,correct_null,correct_null
+0144,company_name_previous,,,null,null,correct_null,correct_null
+0144,uid,,,"""CHE-464.573.016""",null,omission,omission
+0144,legal_form,,,"""AG""","""AG""",correct,correct
+0144,seat_municipality,,,"""Oftringen""","""Zürich""",wrong,wrong
+0144,seat_canton,,,"""AG""","""ZH""",wrong,wrong
+0144,address_care_of,,,null,null,correct_null,correct_null
+0144,address_street,,,"""Baslerstrasse 42""","""Leutschenbachstrasse 95""",wrong,wrong
+0144,address_postcode,,,"""4665""","""8050""",wrong,wrong
+0144,address_municipality,,,"""Oftringen""","""Zürich""",wrong,wrong
+0144,act_date,,,null,null,correct_null,correct_null
+0144,tagesregister_nr,,,"""12675""",null,omission,omission
+0144,tagesregister_date,,,"""2026-09-04""","""2026-08-26""",wrong,wrong
+0144,prior_publication_shab_nr,,,66,null,omission,omission
+0144,prior_publication_date,,,"""2025-04-04""",null,omission,omission
+0144,prior_publication_id,,,"""1006300836""",null,omission,omission
+0144,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Zürich""",wrong,wrong
+0144,canton_previous,,,null,null,correct_null,correct_null
+0144,canton_new,,,null,null,correct_null,correct_null
+0144,capital_new_chf,,,null,null,correct_null,correct_null
+0144,capital_previous_chf,,,null,null,correct_null,correct_null
+0144,domicile_new,,,null,null,correct_null,correct_null
+0144,domicile_previous,,,null,null,correct_null,correct_null
+0144,persons_removed,"Wildner, Sven",,"{""name"": ""Wildner, Sven"", ""nationality"": ""deutsch"", ""heimatort"": null, ""domicile"": ""Beinwil am See"", ""role"": ""Mitglied des Verwaltungsrates"", ""signature"": ""Kollektivunterschrift zu zweien"", ""uid"": null, ""stammanteile"": null}",null,missed,missed
+0145,act_type,,,"""mutation""","""mutation""",correct,correct
+0145,act_subtypes,,,"[""organaenderung""]",[],omission,omission
+0145,company_name_full,,,"""Freundes-Dienst""",null,omission,omission
+0145,company_name_base,,,"""Freundes-Dienst""",null,omission,omission
+0145,status_suffix,,,null,null,correct_null,correct_null
+0145,alternative_names,,,"[""Service Amical"", ""Servicio Amichevole"", ""Friendship Vriendendienst Servicio de Amistad Servicos Amizade""]",[],excluded_uncertain,excluded_uncertain
+0145,company_name_new,,,null,null,correct_null,correct_null
+0145,company_name_previous,,,null,null,correct_null,correct_null
+0145,uid,,,"""CHE-105.771.281""",null,omission,omission
+0145,legal_form,,,"""Stiftung""","""AG""",wrong,wrong
+0145,seat_municipality,,,"""Biberstein""","""Zürich""",wrong,wrong
+0145,seat_canton,,,"""AG""","""ZH""",wrong,wrong
+0145,address_care_of,,,null,null,correct_null,correct_null
+0145,address_street,,,"""Quellmattweg 2""","""Leutschenbachstrasse 95""",wrong,wrong
+0145,address_postcode,,,"""5023""","""8050""",wrong,wrong
+0145,address_municipality,,,"""Biberstein""","""Zürich""",wrong,wrong
+0145,act_date,,,null,null,correct_null,correct_null
+0145,tagesregister_nr,,,"""12654""",null,omission,omission
+0145,tagesregister_date,,,"""2026-09-04""","""2026-08-26""",wrong,wrong
+0145,prior_publication_shab_nr,,,135,null,omission,omission
+0145,prior_publication_date,,,"""2026-07-16""",null,omission,omission
+0145,prior_publication_id,,,"""1006708856""",null,omission,omission
+0145,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Zürich""",wrong,wrong
+0145,canton_previous,,,null,null,correct_null,correct_null
+0145,canton_new,,,null,null,correct_null,correct_null
+0145,capital_new_chf,,,null,null,correct_null,correct_null
+0145,capital_previous_chf,,,null,null,correct_null,correct_null
+0145,domicile_new,,,null,null,correct_null,correct_null
+0145,domicile_previous,,,null,null,correct_null,correct_null
+0145,persons_added,"Heger, Andreas Ernst Wilhelm",,"{""name"": ""Heger, Andreas Ernst Wilhelm"", ""nationality"": null, ""heimatort"": ""Blumenstein"", ""domicile"": ""Oberdiessbach"", ""role"": ""Mitglied des Stiftungsrates"", ""signature"": ""Kollektivunterschrift zu zweien"", ""uid"": null, ""stammanteile"": null}",null,missed,missed
+0146,act_type,,,"""neueintragung""","""mutation""",wrong,wrong
+0146,act_subtypes,,,[],[],correct_null,correct_null
+0146,company_name_full,,,"""WSUAS - Wilhelm Schweizer Umwelt und Abfallkontrolle Service, Inh. Wilhelm""",null,omission,omission
+0146,company_name_base,,,"""WSUAS - Wilhelm Schweizer Umwelt und Abfallkontrolle Service, Inh. Wilhelm""",null,omission,omission
+0146,status_suffix,,,null,null,correct_null,correct_null
+0146,alternative_names,,,[],[],correct_null,correct_null
+0146,company_name_new,,,null,null,correct_null,correct_null
+0146,company_name_previous,,,null,null,correct_null,correct_null
+0146,uid,,,"""CHE-463.686.037""",null,omission,omission
+0146,legal_form,,,"""Einzelunternehmen""","""AG""",wrong,wrong
+0146,seat_municipality,,,"""Koblenz""","""Zürich""",wrong,wrong
+0146,seat_canton,,,"""AG""","""ZH""",wrong,wrong
+0146,address_care_of,,,null,null,correct_null,correct_null
+0146,address_street,,,"""Rhygasse 1""","""Leutschenbachstrasse 95""",wrong,wrong
+0146,address_postcode,,,"""5322""","""8050""",wrong,wrong
+0146,address_municipality,,,"""Koblenz""","""Zürich""",wrong,wrong
+0146,act_date,,,null,null,correct_null,correct_null
+0146,tagesregister_nr,,,"""12637""",null,omission,omission
+0146,tagesregister_date,,,"""2026-09-04""","""2026-08-26""",wrong,wrong
+0146,prior_publication_shab_nr,,,null,null,correct_null,correct_null
+0146,prior_publication_date,,,null,null,correct_null,correct_null
+0146,prior_publication_id,,,null,null,correct_null,correct_null
+0146,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Zürich""",wrong,wrong
+0146,canton_previous,,,null,null,correct_null,correct_null
+0146,canton_new,,,null,null,correct_null,correct_null
+0146,capital_new_chf,,,null,null,correct_null,correct_null
+0146,capital_previous_chf,,,null,null,correct_null,correct_null
+0146,domicile_new,,,null,null,correct_null,correct_null
+0146,domicile_previous,,,null,null,correct_null,correct_null
+0146,persons_added,"Wilhelm, Paul",,"{""name"": ""Wilhelm, Paul"", ""nationality"": ""deutsch"", ""heimatort"": null, ""domicile"": ""Koblenz"", ""role"": ""Inhaber"", ""signature"": ""Einzelunterschrift"", ""uid"": null, ""stammanteile"": null}",null,missed,missed
+0146,extras,zweck,,"""Erbringung von Dienstleistungen in den Bereichen Abfall und Recycling, Beratung, Dokumentation, Kontrollen und Nachhaltigkeit.""",null,missed,missed
+0147,act_type,,,"""mutation""","""mutation""",correct,correct
+0147,act_subtypes,,,"[""organaenderung""]",[],omission,omission
+0147,company_name_full,,,"""OHRafz Immobilien AG""",null,omission,omission
+0147,company_name_base,,,"""OHRafz Immobilien AG""",null,omission,omission
+0147,status_suffix,,,null,null,correct_null,correct_null
+0147,alternative_names,,,[],[],correct_null,correct_null
+0147,company_name_new,,,null,null,correct_null,correct_null
+0147,company_name_previous,,,null,null,correct_null,correct_null
+0147,uid,,,"""CHE-439.291.738""",null,omission,omission
+0147,legal_form,,,"""AG""","""AG""",correct,correct
+0147,seat_municipality,,,"""Oftringen""","""Zürich""",wrong,wrong
+0147,seat_canton,,,"""AG""","""ZH""",wrong,wrong
+0147,address_care_of,,,null,null,correct_null,correct_null
+0147,address_street,,,"""Baslerstrasse 42""","""Leutschenbachstrasse 95""",wrong,wrong
+0147,address_postcode,,,"""4665""","""8050""",wrong,wrong
+0147,address_municipality,,,"""Oftringen""","""Zürich""",wrong,wrong
+0147,act_date,,,null,null,correct_null,correct_null
+0147,tagesregister_nr,,,"""12674""",null,omission,omission
+0147,tagesregister_date,,,"""2026-09-04""","""2026-08-26""",wrong,wrong
+0147,prior_publication_shab_nr,,,250,null,omission,omission
+0147,prior_publication_date,,,"""2024-12-24""",null,omission,omission
+0147,prior_publication_id,,,"""1006215388""",null,omission,omission
+0147,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Zürich""",wrong,wrong
+0147,canton_previous,,,null,null,correct_null,correct_null
+0147,canton_new,,,null,null,correct_null,correct_null
+0147,capital_new_chf,,,null,null,correct_null,correct_null
+0147,capital_previous_chf,,,null,null,correct_null,correct_null
+0147,domicile_new,,,null,null,correct_null,correct_null
+0147,domicile_previous,,,null,null,correct_null,correct_null
+0147,persons_removed,"Wildner, Sven Ottmar",,"{""name"": ""Wildner, Sven Ottmar"", ""nationality"": ""deutsch"", ""heimatort"": null, ""domicile"": ""Beinwil am See"", ""role"": ""Mitglied des Verwaltungsrates"", ""signature"": ""Kollektivunterschrift zu zweien"", ""uid"": null, ""stammanteile"": null}",null,missed,missed
+0148,act_type,,,"""mutation""","""mutation""",correct,correct
+0148,act_subtypes,,,"[""statutenaenderung"", ""organaenderung"", ""sitzverlegung"", ""kantonswechsel"", ""zweckaenderung""]",[],omission,omission
+0148,company_name_full,,,"""CSB System AG""",null,omission,omission
+0148,company_name_base,,,"""CSB System AG""",null,omission,omission
+0148,status_suffix,,,null,null,correct_null,correct_null
+0148,alternative_names,,,[],[],correct_null,correct_null
+0148,company_name_new,,,null,null,correct_null,correct_null
+0148,company_name_previous,,,null,null,correct_null,correct_null
+0148,uid,,,"""CHE-106.668.289""",null,omission,omission
+0148,legal_form,,,"""AG""","""AG""",correct,correct
+0148,seat_municipality,,,"""Kestenholz""","""Zürich""",wrong,wrong
+0148,seat_canton,,,"""SO""","""ZH""",wrong,wrong
+0148,address_care_of,,,null,null,correct_null,correct_null
+0148,address_street,,,"""Brown Boveri Strasse 7""","""Leutschenbachstrasse 95""",wrong,wrong
+0148,address_postcode,,,"""5400""","""8050""",wrong,wrong
+0148,address_municipality,,,"""Baden""","""Zürich""",wrong,wrong
+0148,act_date,,,"""2026-08-31""",null,omission,omission
+0148,tagesregister_nr,,,"""12667""",null,omission,omission
+0148,tagesregister_date,,,"""2026-09-04""","""2026-08-26""",wrong,wrong
+0148,prior_publication_shab_nr,,,161,null,omission,omission
+0148,prior_publication_date,,,"""2025-08-22""",null,omission,omission
+0148,prior_publication_id,,,"""1006414692""",null,omission,omission
+0148,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Zürich""",wrong,wrong
+0148,canton_previous,,,"""SO""",null,omission,omission
+0148,canton_new,,,"""AG""",null,omission,omission
+0148,capital_new_chf,,,null,null,correct_null,correct_null
+0148,capital_previous_chf,,,null,null,correct_null,correct_null
+0148,domicile_new,,,"""Brown Boveri Strasse 7, 5400 Baden""",null,omission,omission
+0148,domicile_previous,,,"""Gäustrasse 52, 4703 Kestenholz""",null,omission,omission
+0148,persons_changed,"Kröner, Vanessa",,"{""name_new"": ""Kröner, Vanessa"", ""name_previous"": ""Kröner-Schimitzek, Vanessa"", ""domicile_new"": ""Ennetbaden"", ""domicile_previous"": null, ""role_new"": ""Präsidentin des Verwaltungsrates, Delegierte des Verwaltungsrates, Geschäftsführerin"", ""role_previous"": null, ""signature_new"": ""Kollektivunterschrift zu zweien"", ""signature_previous"": null, ""nationality_new"": null, ""nationality_previous"": ""deutsch"", ""heimatort_new"": ""Ennetbaden"", ""heimatort_previous"": null, ""stammanteile_new"": null, ""stammanteile_previous"": null}",null,missed,missed
+0148,persons_changed,"Jorns, Hansjörg",,"{""name_new"": ""Jorns, Hansjörg"", ""name_previous"": null, ""domicile_new"": ""Locarno"", ""domicile_previous"": ""Oensingen"", ""role_new"": ""Mitglied des Verwaltungsrates"", ""role_previous"": null, ""signature_new"": ""Kollektivunterschrift zu zweien"", ""signature_previous"": null, ""nationality_new"": null, ""nationality_previous"": null, ""heimatort_new"": ""Saanen"", ""heimatort_previous"": null, ""stammanteile_new"": null, ""stammanteile_previous"": null}",null,missed,missed
+0148,extras,zweck,,"""Die Gesellschaft bezweckt den Erwerb, die Verwaltung und die Veräusserung von Beteiligungen an Unternehmen sowie den Erwerb und die Akquisition, die Verwertung, Vermarktung und Verwaltung von Patenten …""",null,missed,missed
+0148,extras,mitteilungen,,"""durch Briefe, E-Mail oder eine andere geeignete elektronische Kommunikationsplattform an die im Aktienbuch eingetragenen Aktionäre""",null,missed,missed
+0149,act_type,,,"""mutation""","""mutation""",correct,correct
+0149,act_subtypes,,,"[""firmenaenderung""]",[],excluded_uncertain,excluded_uncertain
+0149,company_name_full,,,"""PartnerPack AG""",null,omission,omission
+0149,company_name_base,,,"""PartnerPack AG""",null,omission,omission
+0149,status_suffix,,,null,null,correct_null,correct_null
+0149,alternative_names,,,[],[],correct_null,correct_null
+0149,company_name_new,,,"""PartnerPack AG in Liquidation""",null,omission,omission
+0149,company_name_previous,,,"""PartnerPack AG""",null,omission,omission
+0149,uid,,,"""CHE-115.272.737""",null,omission,omission
+0149,legal_form,,,"""AG""","""AG""",correct,correct
+0149,seat_municipality,,,"""Rheinfelden""","""Zürich""",wrong,wrong
+0149,seat_canton,,,"""AG""","""ZH""",wrong,wrong
+0149,address_care_of,,,null,null,correct_null,correct_null
+0149,address_street,,,"""Theodorshofweg 22""","""Leutschenbachstrasse 95""",wrong,wrong
+0149,address_postcode,,,"""4310""","""8050""",wrong,wrong
+0149,address_municipality,,,"""Rheinfelden""","""Zürich""",wrong,wrong
+0149,act_date,,,"""2026-07-22""",null,excluded_uncertain,excluded_uncertain
+0149,tagesregister_nr,,,"""12658""",null,omission,omission
+0149,tagesregister_date,,,"""2026-09-04""","""2026-08-26""",wrong,wrong
+0149,prior_publication_shab_nr,,,102,null,omission,omission
+0149,prior_publication_date,,,"""2025-05-28""",null,omission,omission
+0149,prior_publication_id,,,"""1006343443""",null,omission,omission
+0149,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Zürich""",wrong,wrong
+0149,canton_previous,,,null,null,correct_null,correct_null
+0149,canton_new,,,null,null,correct_null,correct_null
+0149,capital_new_chf,,,null,null,correct_null,correct_null
+0149,capital_previous_chf,,,null,null,correct_null,correct_null
+0149,domicile_new,,,null,null,correct_null,correct_null
+0149,domicile_previous,,,null,null,correct_null,correct_null
+0149,extras,,,"{""konkurs_wirkung_ab"": ""2026-07-22 11:00""}",{},excluded_uncertain,excluded_uncertain
+0150,act_type,,,"""mutation""","""mutation""",correct,correct
+0150,act_subtypes,,,"[""organaenderung""]",[],omission,omission
+0150,company_name_full,,,"""Accordo Montage AG""",null,omission,omission
+0150,company_name_base,,,"""Accordo Montage AG""",null,omission,omission
+0150,status_suffix,,,null,null,correct_null,correct_null
+0150,alternative_names,,,[],[],correct_null,correct_null
+0150,company_name_new,,,null,null,correct_null,correct_null
+0150,company_name_previous,,,null,null,correct_null,correct_null
+0150,uid,,,"""CHE-458.958.081""",null,omission,omission
+0150,legal_form,,,"""AG""","""AG""",correct,correct
+0150,seat_municipality,,,"""Zofingen""","""Zürich""",wrong,wrong
+0150,seat_canton,,,"""AG""","""ZH""",wrong,wrong
+0150,address_care_of,,,null,null,correct_null,correct_null
+0150,address_street,,,"""Junkerbifangstrasse 10""","""Leutschenbachstrasse 95""",wrong,wrong
+0150,address_postcode,,,"""4800""","""8050""",wrong,wrong
+0150,address_municipality,,,"""Zofingen""","""Zürich""",wrong,wrong
+0150,act_date,,,null,null,correct_null,correct_null
+0150,tagesregister_nr,,,"""12635""",null,omission,omission
+0150,tagesregister_date,,,"""2026-09-04""","""2026-08-26""",wrong,wrong
+0150,prior_publication_shab_nr,,,78,null,omission,omission
+0150,prior_publication_date,,,"""2026-04-24""",null,omission,omission
+0150,prior_publication_id,,,"""1006634410""",null,omission,omission
+0150,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Zürich""",wrong,wrong
+0150,canton_previous,,,null,null,correct_null,correct_null
+0150,canton_new,,,null,null,correct_null,correct_null
+0150,capital_new_chf,,,null,null,correct_null,correct_null
+0150,capital_previous_chf,,,null,null,correct_null,correct_null
+0150,domicile_new,,,null,null,correct_null,correct_null
+0150,domicile_previous,,,null,null,correct_null,correct_null
+0150,persons_removed,"Iannello, Domenico",,"{""name"": ""Iannello, Domenico"", ""nationality"": null, ""heimatort"": ""Reinach (AG)"", ""domicile"": ""Muhen"", ""role"": ""Präsident des Verwaltungsrates"", ""signature"": ""Kollektivunterschrift zu zweien"", ""uid"": null, ""stammanteile"": null}",null,missed,missed
+0150,persons_changed,"Ranauda, Donato",,"{""name_new"": ""Ranauda, Donato"", ""name_previous"": null, ""domicile_new"": ""Aarburg"", ""domicile_previous"": null, ""role_new"": ""Präsident des Verwaltungsrates"", ""role_previous"": ""Mitglied des Verwaltungsrates"", ""signature_new"": ""Kollektivunterschrift zu zweien"", ""signature_previous"": null, ""nationality_new"": ""italienisch"", ""nationality_previous"": null, ""heimatort_new"": null, ""heimatort_previous"": null, ""stammanteile_new"": null, ""stammanteile_previous"": null}",null,missed,missed
+0151,act_type,,,"""mutation""","""mutation""",correct,correct
+0151,act_subtypes,,,"[""organaenderung"", ""firmenaenderung"", ""zweckaenderung""]",[],omission,omission
+0151,company_name_full,,,"""Grottinodellascarpa N. Wey""",null,omission,omission
+0151,company_name_base,,,"""Grottinodellascarpa N. Wey""",null,omission,omission
+0151,status_suffix,,,null,null,correct_null,correct_null
+0151,alternative_names,,,[],[],correct_null,correct_null
+0151,company_name_new,,,"""WEY. Wear it your wey!""",null,excluded_uncertain,excluded_uncertain
+0151,company_name_previous,,,"""Grottinodellascarpa N. Wey""",null,omission,omission
+0151,uid,,,"""CHE-112.237.495""",null,omission,omission
+0151,legal_form,,,"""Einzelunternehmen""","""AG""",wrong,wrong
+0151,seat_municipality,,,"""Wohlen (AG)""","""Zürich""",wrong,wrong
+0151,seat_canton,,,"""AG""","""ZH""",wrong,wrong
+0151,address_care_of,,,null,null,correct_null,correct_null
+0151,address_street,,,"""Zentralstrasse 2""","""Leutschenbachstrasse 95""",wrong,wrong
+0151,address_postcode,,,"""5610""","""8050""",wrong,wrong
+0151,address_municipality,,,"""Wohlen AG""","""Zürich""",wrong,wrong
+0151,act_date,,,null,null,correct_null,correct_null
+0151,tagesregister_nr,,,"""12647""",null,omission,omission
+0151,tagesregister_date,,,"""2026-09-04""","""2026-08-26""",wrong,wrong
+0151,prior_publication_shab_nr,,,89,null,omission,omission
+0151,prior_publication_date,,,"""2024-05-08""",null,omission,omission
+0151,prior_publication_id,,,"""1006027974""",null,omission,omission
+0151,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Zürich""",wrong,wrong
+0151,canton_previous,,,null,null,correct_null,correct_null
+0151,canton_new,,,null,null,correct_null,correct_null
+0151,capital_new_chf,,,null,null,correct_null,correct_null
+0151,capital_previous_chf,,,null,null,correct_null,correct_null
+0151,domicile_new,,,null,null,correct_null,correct_null
+0151,domicile_previous,,,null,null,correct_null,correct_null
+0151,persons_changed,"Marcucci, Julia Anna",,"{""name_new"": ""Marcucci, Julia Anna"", ""name_previous"": ""Sahli, Julia Anna"", ""domicile_new"": ""Hägglingen"", ""domicile_previous"": null, ""role_new"": null, ""role_previous"": null, ""signature_new"": ""Einzelunterschrift"", ""signature_previous"": null, ""nationality_new"": null, ""nationality_previous"": null, ""heimatort_new"": ""Wohlen bei Bern"", ""heimatort_previous"": null, ""stammanteile_new"": null, ""stammanteile_previous"": null}",null,missed,missed
+0151,extras,zweck,,"""Verkauf von Damenmode, Damenschuhen, Accessoires und Wohnaccessoires.""",null,missed,missed
+0152,act_type,,,"""mutation""","""mutation""",correct,correct
+0152,act_subtypes,,,"[""organaenderung""]",[],omission,omission
+0152,company_name_full,,,"""FFF Fresh & Frozen Food AG""",null,omission,omission
+0152,company_name_base,,,"""FFF Fresh & Frozen Food AG""",null,omission,omission
+0152,status_suffix,,,null,null,correct_null,correct_null
+0152,alternative_names,,,[],[],correct_null,correct_null
+0152,company_name_new,,,null,null,correct_null,correct_null
+0152,company_name_previous,,,null,null,correct_null,correct_null
+0152,uid,,,"""CHE-105.495.980""",null,omission,omission
+0152,legal_form,,,"""AG""","""AG""",correct,correct
+0152,seat_municipality,,,"""Wohlen (AG)""","""Zürich""",wrong,wrong
+0152,seat_canton,,,"""AG""","""ZH""",wrong,wrong
+0152,address_care_of,,,null,null,correct_null,correct_null
+0152,address_street,,,"""Industriestrasse 32""","""Leutschenbachstrasse 95""",wrong,wrong
+0152,address_postcode,,,"""5610""","""8050""",wrong,wrong
+0152,address_municipality,,,"""Wohlen AG""","""Zürich""",wrong,wrong
+0152,act_date,,,null,null,correct_null,correct_null
+0152,tagesregister_nr,,,"""12671""",null,omission,omission
+0152,tagesregister_date,,,"""2026-09-04""","""2026-08-26""",wrong,wrong
+0152,prior_publication_shab_nr,,,146,null,omission,omission
+0152,prior_publication_date,,,"""2026-07-31""",null,omission,omission
+0152,prior_publication_id,,,"""1006721531""",null,omission,omission
+0152,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Zürich""",wrong,wrong
+0152,canton_previous,,,null,null,correct_null,correct_null
+0152,canton_new,,,null,null,correct_null,correct_null
+0152,capital_new_chf,,,null,null,correct_null,correct_null
+0152,capital_previous_chf,,,null,null,correct_null,correct_null
+0152,domicile_new,,,null,null,correct_null,correct_null
+0152,domicile_previous,,,null,null,correct_null,correct_null
+0152,persons_removed,"Guion, Tabita",,"{""name"": ""Guion, Tabita"", ""nationality"": ""italienisch"", ""heimatort"": null, ""domicile"": ""Wohlen (AG)"", ""role"": ""Mitglied der Geschäftsleitung (CFO)"", ""signature"": ""Kollektivprokura zu zweien"", ""uid"": null, ""stammanteile"": null}",null,missed,missed
+0153,act_type,,,"""mutation""","""mutation""",correct,correct
+0153,act_subtypes,,,"[""organaenderung""]",[],omission,omission
+0153,company_name_full,,,"""Stiftung zur Unterstützung des Pädiatrischen Therapiezentrums der Reha Rheinfelden""",null,omission,omission
+0153,company_name_base,,,"""Stiftung zur Unterstützung des Pädiatrischen Therapiezentrums der Reha Rheinfelden""",null,omission,omission
+0153,status_suffix,,,null,null,correct_null,correct_null
+0153,alternative_names,,,[],[],correct_null,correct_null
+0153,company_name_new,,,null,null,correct_null,correct_null
+0153,company_name_previous,,,null,null,correct_null,correct_null
+0153,uid,,,"""CHE-113.610.088""",null,omission,omission
+0153,legal_form,,,"""Stiftung""","""AG""",wrong,wrong
+0153,seat_municipality,,,"""Rheinfelden""","""Zürich""",wrong,wrong
+0153,seat_canton,,,"""AG""","""ZH""",wrong,wrong
+0153,address_care_of,,,"""Reha Rheinfelden""",null,omission,omission
+0153,address_street,,,"""Salinenstrasse 98""","""Leutschenbachstrasse 95""",wrong,wrong
+0153,address_postcode,,,"""4310""","""8050""",wrong,wrong
+0153,address_municipality,,,"""Rheinfelden""","""Zürich""",wrong,wrong
+0153,act_date,,,null,null,correct_null,correct_null
+0153,tagesregister_nr,,,"""12661""",null,omission,omission
+0153,tagesregister_date,,,"""2026-09-04""","""2026-08-26""",wrong,wrong
+0153,prior_publication_shab_nr,,,157,null,omission,omission
+0153,prior_publication_date,,,"""2026-08-17""",null,omission,omission
+0153,prior_publication_id,,,"""1006732708""",null,omission,omission
+0153,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Zürich""",wrong,wrong
+0153,canton_previous,,,null,null,correct_null,correct_null
+0153,canton_new,,,null,null,correct_null,correct_null
+0153,capital_new_chf,,,null,null,correct_null,correct_null
+0153,capital_previous_chf,,,null,null,correct_null,correct_null
+0153,domicile_new,,,null,null,correct_null,correct_null
+0153,domicile_previous,,,null,null,correct_null,correct_null
+0153,persons_removed,"Mühlheim, Matthias",,"{""name"": ""Mühlheim, Matthias"", ""nationality"": null, ""heimatort"": ""Scheuren"", ""domicile"": ""Zollikerberg"", ""role"": ""Direktor"", ""signature"": ""Kollektivunterschrift zu zweien"", ""uid"": null, ""stammanteile"": null}",null,missed,missed
+0153,persons_changed,"Illi, Hanspeter",,"{""name_new"": ""Illi, Hanspeter"", ""name_previous"": ""Illi, Hanspeter Roland"", ""domicile_new"": ""Erlinsbach (SO)"", ""domicile_previous"": null, ""role_new"": ""Direktor"", ""role_previous"": ""stellvertretender Direktor"", ""signature_new"": ""Kollektivunterschrift zu zweien"", ""signature_previous"": null, ""nationality_new"": null, ""nationality_previous"": null, ""heimatort_new"": ""Bonstetten"", ""heimatort_previous"": null, ""stammanteile_new"": null, ""stammanteile_previous"": null}",null,missed,missed
+0154,act_type,,,"""mutation""","""mutation""",correct,correct
+0154,act_subtypes,,,"[""organaenderung""]",[],omission,omission
+0154,company_name_full,,,"""Agrisano Pencas""",null,omission,omission
+0154,company_name_base,,,"""Agrisano Pencas""",null,omission,omission
+0154,status_suffix,,,null,null,correct_null,correct_null
+0154,alternative_names,,,[],[],correct_null,correct_null
+0154,company_name_new,,,null,null,correct_null,correct_null
+0154,company_name_previous,,,null,null,correct_null,correct_null
+0154,uid,,,"""CHE-109.706.489""",null,omission,omission
+0154,legal_form,,,"""Stiftung""","""AG""",wrong,wrong
+0154,seat_municipality,,,"""Brugg""","""Zürich""",wrong,wrong
+0154,seat_canton,,,"""AG""","""ZH""",wrong,wrong
+0154,address_care_of,,,"""Schweizerischer, Bauernverband""",null,excluded_uncertain,excluded_uncertain
+0154,address_street,,,"""Laurstrasse 10""","""Leutschenbachstrasse 95""",wrong,wrong
+0154,address_postcode,,,"""5200""","""8050""",wrong,wrong
+0154,address_municipality,,,"""Brugg AG""","""Zürich""",wrong,wrong
+0154,act_date,,,null,null,correct_null,correct_null
+0154,tagesregister_nr,,,"""12676""",null,omission,omission
+0154,tagesregister_date,,,"""2026-09-04""","""2026-08-26""",wrong,wrong
+0154,prior_publication_shab_nr,,,235,null,omission,omission
+0154,prior_publication_date,,,"""2025-12-04""",null,omission,omission
+0154,prior_publication_id,,,"""1006503248""",null,omission,omission
+0154,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Zürich""",wrong,wrong
+0154,canton_previous,,,null,null,correct_null,correct_null
+0154,canton_new,,,null,null,correct_null,correct_null
+0154,capital_new_chf,,,null,null,correct_null,correct_null
+0154,capital_previous_chf,,,null,null,correct_null,correct_null
+0154,domicile_new,,,null,null,correct_null,correct_null
+0154,domicile_previous,,,null,null,correct_null,correct_null
+0154,persons_removed,"Hächler, Sandra",,"{""name"": ""Hächler, Sandra"", ""nationality"": null, ""heimatort"": ""Densbüren"", ""domicile"": ""Densbüren"", ""role"": null, ""signature"": ""Kollektivunterschrift zu zweien"", ""uid"": null, ""stammanteile"": null}",null,missed,missed
+0155,act_type,,,"""mutation""","""mutation""",correct,correct
+0155,act_subtypes,,,[],[],correct_null,correct_null
+0155,company_name_full,,,"""mhc Swiss GmbH""",null,omission,omission
+0155,company_name_base,,,"""mhc Swiss GmbH""",null,omission,omission
+0155,status_suffix,,,null,null,correct_null,correct_null
+0155,alternative_names,,,[],[],correct_null,correct_null
+0155,company_name_new,,,null,null,correct_null,correct_null
+0155,company_name_previous,,,null,null,correct_null,correct_null
+0155,uid,,,"""CHE-340.870.003""",null,omission,omission
+0155,legal_form,,,"""GmbH""","""AG""",wrong,wrong
+0155,seat_municipality,,,"""Möhlin""","""Zürich""",wrong,wrong
+0155,seat_canton,,,"""AG""","""ZH""",wrong,wrong
+0155,address_care_of,,,null,null,correct_null,correct_null
+0155,address_street,,,"""Austrasse 14""","""Leutschenbachstrasse 95""",wrong,wrong
+0155,address_postcode,,,"""4313""","""8050""",wrong,wrong
+0155,address_municipality,,,"""Möhlin""","""Zürich""",wrong,wrong
+0155,act_date,,,null,null,correct_null,correct_null
+0155,tagesregister_nr,,,"""12668""",null,omission,omission
+0155,tagesregister_date,,,"""2026-09-04""","""2026-08-26""",wrong,wrong
+0155,prior_publication_shab_nr,,,72,null,omission,omission
+0155,prior_publication_date,,,"""2023-04-14""",null,omission,omission
+0155,prior_publication_id,,,"""1005724207""",null,omission,omission
+0155,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Zürich""",wrong,wrong
+0155,canton_previous,,,null,null,correct_null,correct_null
+0155,canton_new,,,null,null,correct_null,correct_null
+0155,capital_new_chf,,,null,null,correct_null,correct_null
+0155,capital_previous_chf,,,null,null,correct_null,correct_null
+0155,domicile_new,,,"""Austrasse 14, 4313 Möhlin""",null,omission,omission
+0155,domicile_previous,,,"""Höllstenstrasse 20, 4313 Möhlin""",null,omission,omission
+0156,act_type,,,"""mutation""","""mutation""",correct,correct
+0156,act_subtypes,,,[],[],correct_null,correct_null
+0156,company_name_full,,,"""Eddy Kaufmann AG Buchs""",null,omission,omission
+0156,company_name_base,,,"""Eddy Kaufmann AG Buchs""",null,omission,omission
+0156,status_suffix,,,null,null,correct_null,correct_null
+0156,alternative_names,,,[],[],correct_null,correct_null
+0156,company_name_new,,,null,null,correct_null,correct_null
+0156,company_name_previous,,,null,null,correct_null,correct_null
+0156,uid,,,"""CHE-107.076.105""",null,omission,omission
+0156,legal_form,,,"""AG""","""AG""",correct,correct
+0156,seat_municipality,,,"""Buchs (AG)""","""Zürich""",wrong,wrong
+0156,seat_canton,,,"""AG""","""ZH""",wrong,wrong
+0156,address_care_of,,,null,null,correct_null,correct_null
+0156,address_street,,,"""Neumattstrasse 42""","""Leutschenbachstrasse 95""",wrong,wrong
+0156,address_postcode,,,"""5033""","""8050""",wrong,wrong
+0156,address_municipality,,,"""Buchs AG""","""Zürich""",wrong,wrong
+0156,act_date,,,null,null,correct_null,correct_null
+0156,tagesregister_nr,,,"""12646""",null,omission,omission
+0156,tagesregister_date,,,"""2026-09-04""","""2026-08-26""",wrong,wrong
+0156,prior_publication_shab_nr,,,46,null,omission,omission
+0156,prior_publication_date,,,"""2022-03-07""",null,omission,omission
+0156,prior_publication_id,,,"""1005421469""",null,omission,omission
+0156,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Zürich""",wrong,wrong
+0156,canton_previous,,,null,null,correct_null,correct_null
+0156,canton_new,,,null,null,correct_null,correct_null
+0156,capital_new_chf,,,null,null,correct_null,correct_null
+0156,capital_previous_chf,,,null,null,correct_null,correct_null
+0156,domicile_new,,,"""Neumattstrasse 42, 5033 Buchs AG""",null,omission,omission
+0156,domicile_previous,,,"""Neumattstrasse 42, 5033 Buchs AG""",null,omission,omission
+0157,act_type,,,"""mutation""","""mutation""",correct,correct
+0157,act_subtypes,,,[],[],correct_null,correct_null
+0157,company_name_full,,,"""Innolutions AG""",null,omission,omission
+0157,company_name_base,,,"""Innolutions AG""",null,omission,omission
+0157,status_suffix,,,null,null,correct_null,correct_null
+0157,alternative_names,,,[],[],correct_null,correct_null
+0157,company_name_new,,,null,null,correct_null,correct_null
+0157,company_name_previous,,,null,null,correct_null,correct_null
+0157,uid,,,"""CHE-109.368.665""",null,omission,omission
+0157,legal_form,,,"""AG""","""AG""",correct,correct
+0157,seat_municipality,,,"""Möriken-Wildegg""","""Zürich""",wrong,wrong
+0157,seat_canton,,,"""AG""","""ZH""",wrong,wrong
+0157,address_care_of,,,null,null,correct_null,correct_null
+0157,address_street,,,"""Hornimattstrasse 22b""","""Leutschenbachstrasse 95""",wrong,wrong
+0157,address_postcode,,,"""5103""","""8050""",wrong,wrong
+0157,address_municipality,,,"""Wildegg""","""Zürich""",wrong,wrong
+0157,act_date,,,null,null,correct_null,correct_null
+0157,tagesregister_nr,,,"""12643""",null,omission,omission
+0157,tagesregister_date,,,"""2026-09-04""","""2026-08-26""",wrong,wrong
+0157,prior_publication_shab_nr,,,228,null,omission,omission
+0157,prior_publication_date,,,"""2023-11-23""",null,omission,omission
+0157,prior_publication_id,,,"""1005892340""",null,omission,omission
+0157,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Zürich""",wrong,wrong
+0157,canton_previous,,,null,null,correct_null,correct_null
+0157,canton_new,,,null,null,correct_null,correct_null
+0157,capital_new_chf,,,null,null,correct_null,correct_null
+0157,capital_previous_chf,,,null,null,correct_null,correct_null
+0157,domicile_new,,,"""Hornimattstrasse 22b, 5103 Wildegg""",null,omission,omission
+0157,domicile_previous,,,"""Hornimattstrasse 22a, 5103 Wildegg""",null,omission,omission
+0158,act_type,,,"""mutation""","""mutation""",correct,correct
+0158,act_subtypes,,,"[""statutenaenderung"", ""organaenderung"", ""zweckaenderung""]",[],omission,omission
+0158,company_name_full,,,"""Tyche Consulting GmbH""",null,omission,omission
+0158,company_name_base,,,"""Tyche Consulting GmbH""",null,omission,omission
+0158,status_suffix,,,null,null,correct_null,correct_null
+0158,alternative_names,,,[],[],correct_null,correct_null
+0158,company_name_new,,,null,null,correct_null,correct_null
+0158,company_name_previous,,,null,null,correct_null,correct_null
+0158,uid,,,"""CHE-351.849.013""",null,omission,omission
+0158,legal_form,,,"""GmbH""","""AG""",wrong,wrong
+0158,seat_municipality,,,"""Eggenwil""","""Zürich""",wrong,wrong
+0158,seat_canton,,,"""AG""","""ZH""",wrong,wrong
+0158,address_care_of,,,null,null,correct_null,correct_null
+0158,address_street,,,"""Tobelstrasse 13""","""Leutschenbachstrasse 95""",wrong,wrong
+0158,address_postcode,,,"""5445""","""8050""",wrong,wrong
+0158,address_municipality,,,"""Eggenwil""","""Zürich""",wrong,wrong
+0158,act_date,,,"""2026-08-25""",null,omission,omission
+0158,tagesregister_nr,,,"""12664""",null,omission,omission
+0158,tagesregister_date,,,"""2026-09-04""","""2026-08-26""",wrong,wrong
+0158,prior_publication_shab_nr,,,177,null,omission,omission
+0158,prior_publication_date,,,"""2025-09-15""",null,omission,omission
+0158,prior_publication_id,,,"""1006433237""",null,omission,omission
+0158,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Zürich""",wrong,wrong
+0158,canton_previous,,,null,null,correct_null,correct_null
+0158,canton_new,,,null,null,correct_null,correct_null
+0158,capital_new_chf,,,null,null,correct_null,correct_null
+0158,capital_previous_chf,,,null,null,correct_null,correct_null
+0158,domicile_new,,,null,null,correct_null,correct_null
+0158,domicile_previous,,,null,null,correct_null,correct_null
+0158,persons_added,"Popravka, Olena",,"{""name"": ""Popravka, Olena"", ""nationality"": ""ukrainisch"", ""heimatort"": null, ""domicile"": ""Danzig (PL)"", ""role"": ""Gesellschafterin"", ""signature"": ""ohne Zeichnungsberechtigung"", ""uid"": null, ""stammanteile"": 50}",null,missed,missed
+0158,persons_changed,"Häusler-Wintenbach, Nathalie Sophie",,"{""name_new"": ""Häusler-Wintenbach, Nathalie Sophie"", ""name_previous"": null, ""domicile_new"": ""Eggenwil"", ""domicile_previous"": null, ""role_new"": ""Gesellschafterin und Geschäftsführerin"", ""role_previous"": null, ""signature_new"": ""Einzelunterschrift"", ""signature_previous"": null, ""nationality_new"": ""deutsch"", ""nationality_previous"": null, ""heimatort_new"": null, ""heimatort_previous"": null, ""stammanteile_new"": 150, ""stammanteile_previous"": 200}",null,missed,missed
+0158,extras,zweck,,"""Die Gesellschaft bezweckt die Entwicklung, den Betrieb und die Vermarktung von digitalen Plattformen, Online-Marktplätzen, Community-, Vermittlungs- und Buchungssystemen sowie digitalen Dienstleistungen …""",null,missed,missed
+0158,extras,nominal_value_chf,,100.0,null,missed,missed
+0159,act_type,,,"""mutation""","""mutation""",correct,correct
+0159,act_subtypes,,,"[""sitzverlegung"", ""kantonswechsel"", ""firmenaenderung""]",[],omission,omission
+0159,company_name_full,,,"""Hartl Consult GmbH""",null,omission,omission
+0159,company_name_base,,,"""Hartl Consult GmbH""",null,omission,omission
+0159,status_suffix,,,null,null,correct_null,correct_null
+0159,alternative_names,,,"[""Hartl Consult Sàrl"", ""Hartl Consult LLC""]",[],excluded_uncertain,excluded_uncertain
+0159,company_name_new,,,"""Nachtfalter Film GmbH""",null,omission,omission
+0159,company_name_previous,,,"""Hartl Consult GmbH""",null,omission,omission
+0159,uid,,,"""CHE-360.293.391""",null,omission,omission
+0159,legal_form,,,"""GmbH""","""AG""",wrong,wrong
+0159,seat_municipality,,,"""Erlinsbach (AG)""","""Zürich""",wrong,wrong
+0159,seat_canton,,,"""AG""","""ZH""",wrong,wrong
+0159,address_care_of,,,"""Hug & Dorfmüller Design AG""",null,omission,omission
+0159,address_street,,,"""Hirschengraben 33b""","""Leutschenbachstrasse 95""",wrong,wrong
+0159,address_postcode,,,"""6003""","""8050""",wrong,wrong
+0159,address_municipality,,,"""Luzern""","""Zürich""",wrong,wrong
+0159,act_date,,,null,null,correct_null,correct_null
+0159,tagesregister_nr,,,"""12687""",null,omission,omission
+0159,tagesregister_date,,,"""2026-09-04""","""2026-08-26""",wrong,wrong
+0159,prior_publication_shab_nr,,,111,null,omission,omission
+0159,prior_publication_date,,,"""2021-06-11""",null,omission,omission
+0159,prior_publication_id,,,"""1005214763""",null,omission,omission
+0159,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Zürich""",wrong,wrong
+0159,canton_previous,,,"""AG""",null,omission,omission
+0159,canton_new,,,"""LU""",null,omission,omission
+0159,capital_new_chf,,,null,null,correct_null,correct_null
+0159,capital_previous_chf,,,null,null,correct_null,correct_null
+0159,domicile_new,,,"""Hirschengraben 33b, 6003 Luzern""",null,omission,omission
+0159,domicile_previous,,,"""Gehrenstrasse 13, 5018 Erlinsbach""",null,omission,omission
+0160,act_type,,,"""mutation""","""mutation""",correct,correct
+0160,act_subtypes,,,"[""organaenderung""]",[],omission,omission
+0160,company_name_full,,,"""Gastroenterologie Aarau AG""",null,omission,omission
+0160,company_name_base,,,"""Gastroenterologie Aarau AG""",null,omission,omission
+0160,status_suffix,,,null,null,correct_null,correct_null
+0160,alternative_names,,,[],[],correct_null,correct_null
+0160,company_name_new,,,null,null,correct_null,correct_null
+0160,company_name_previous,,,null,null,correct_null,correct_null
+0160,uid,,,"""CHE-259.475.045""",null,omission,omission
+0160,legal_form,,,"""AG""","""AG""",correct,correct
+0160,seat_municipality,,,"""Aarau""","""Zürich""",wrong,wrong
+0160,seat_canton,,,"""AG""","""ZH""",wrong,wrong
+0160,address_care_of,,,null,null,correct_null,correct_null
+0160,address_street,,,"""Wiesenstrasse 25""","""Leutschenbachstrasse 95""",wrong,wrong
+0160,address_postcode,,,"""5000""","""8050""",wrong,wrong
+0160,address_municipality,,,"""Aarau""","""Zürich""",wrong,wrong
+0160,act_date,,,null,null,correct_null,correct_null
+0160,tagesregister_nr,,,"""12673""",null,omission,omission
+0160,tagesregister_date,,,"""2026-09-04""","""2026-08-26""",wrong,wrong
+0160,prior_publication_shab_nr,,,168,null,omission,omission
+0160,prior_publication_date,,,"""2019-09-02""",null,omission,omission
+0160,prior_publication_id,,,"""1004707215""",null,omission,omission
+0160,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Zürich""",wrong,wrong
+0160,canton_previous,,,null,null,correct_null,correct_null
+0160,canton_new,,,null,null,correct_null,correct_null
+0160,capital_new_chf,,,null,null,correct_null,correct_null
+0160,capital_previous_chf,,,null,null,correct_null,correct_null
+0160,domicile_new,,,null,null,correct_null,correct_null
+0160,domicile_previous,,,null,null,correct_null,correct_null
+0160,persons_removed,"Riniker, Maja Regula",,"{""name"": ""Riniker, Maja Regula"", ""nationality"": null, ""heimatort"": ""Habsburg"", ""domicile"": ""Suhr"", ""role"": ""Mitglied des Verwaltungsrates"", ""signature"": ""Einzelunterschrift"", ""uid"": null, ""stammanteile"": null}",null,missed,missed
+0160,persons_changed,"Riniker, Florian Martin",,"{""name_new"": ""Riniker, Florian Martin"", ""name_previous"": null, ""domicile_new"": ""Aarau"", ""domicile_previous"": ""Suhr"", ""role_new"": ""Mitglied des Verwaltungsrates"", ""role_previous"": ""Präsident des Verwaltungsrates"", ""signature_new"": ""Einzelunterschrift"", ""signature_previous"": null, ""nationality_new"": null, ""nationality_previous"": null, ""heimatort_new"": ""Habsburg"", ""heimatort_previous"": null, ""stammanteile_new"": null, ""stammanteile_previous"": null}",null,missed,missed
+0161,act_type,,,"""loeschung""","""mutation""",wrong,wrong
+0161,act_subtypes,,,[],[],correct_null,correct_null
+0161,company_name_full,,,"""Granato PizzaLab""",null,omission,omission
+0161,company_name_base,,,"""Granato PizzaLab""",null,omission,omission
+0161,status_suffix,,,null,null,correct_null,correct_null
+0161,alternative_names,,,[],[],correct_null,correct_null
+0161,company_name_new,,,null,null,correct_null,correct_null
+0161,company_name_previous,,,null,null,correct_null,correct_null
+0161,uid,,,"""CHE-232.453.855""",null,omission,omission
+0161,legal_form,,,"""Einzelunternehmen""","""AG""",wrong,wrong
+0161,seat_municipality,,,"""Buchs (AG)""","""Zürich""",wrong,wrong
+0161,seat_canton,,,"""AG""","""ZH""",wrong,wrong
+0161,address_care_of,,,null,null,correct_null,correct_null
+0161,address_street,,,"""Baumgartenweg 13b""","""Leutschenbachstrasse 95""",wrong,wrong
+0161,address_postcode,,,"""5033""","""8050""",wrong,wrong
+0161,address_municipality,,,"""Buchs AG""","""Zürich""",wrong,wrong
+0161,act_date,,,"""2026-09-04""",null,omission,omission
+0161,tagesregister_nr,,,"""12690""",null,omission,omission
+0161,tagesregister_date,,,"""2026-09-04""","""2026-08-26""",wrong,wrong
+0161,prior_publication_shab_nr,,,226,null,omission,omission
+0161,prior_publication_date,,,"""2025-11-21""",null,omission,omission
+0161,prior_publication_id,,,"""1006491505""",null,omission,omission
+0161,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Zürich""",wrong,wrong
+0161,canton_previous,,,null,null,correct_null,correct_null
+0161,canton_new,,,null,null,correct_null,correct_null
+0161,capital_new_chf,,,null,null,correct_null,correct_null
+0161,capital_previous_chf,,,null,null,correct_null,correct_null
+0161,domicile_new,,,null,null,correct_null,correct_null
+0161,domicile_previous,,,null,null,correct_null,correct_null
+0161,extras,loeschung_reason,,"""infolge Geschäftsaufgabe""",null,missed,missed
+0162,act_type,,,"""mutation""","""mutation""",correct,correct
+0162,act_subtypes,,,"[""konkurseroeffnung""]",[],omission,omission
+0162,company_name_full,,,"""Thavanesan Food Delivery Service""",null,omission,omission
+0162,company_name_base,,,"""Thavanesan Food Delivery Service""",null,omission,omission
+0162,status_suffix,,,null,null,correct_null,correct_null
+0162,alternative_names,,,[],[],correct_null,correct_null
+0162,company_name_new,,,null,null,correct_null,correct_null
+0162,company_name_previous,,,null,null,correct_null,correct_null
+0162,uid,,,"""CHE-477.377.217""",null,omission,omission
+0162,legal_form,,,"""Einzelunternehmen""","""AG""",wrong,wrong
+0162,seat_municipality,,,"""Mägenwil""","""Zürich""",wrong,wrong
+0162,seat_canton,,,"""AG""","""ZH""",wrong,wrong
+0162,address_care_of,,,null,null,correct_null,correct_null
+0162,address_street,,,"""Wolfbodenstrasse 3""","""Leutschenbachstrasse 95""",wrong,wrong
+0162,address_postcode,,,"""5506""","""8050""",wrong,wrong
+0162,address_municipality,,,"""Mägenwil""","""Zürich""",wrong,wrong
+0162,act_date,,,"""2026-09-01""",null,excluded_uncertain,excluded_uncertain
+0162,tagesregister_nr,,,"""12682""",null,omission,omission
+0162,tagesregister_date,,,"""2026-09-04""","""2026-08-26""",wrong,wrong
+0162,prior_publication_shab_nr,,,222,null,omission,omission
+0162,prior_publication_date,,,"""2024-11-14""",null,omission,omission
+0162,prior_publication_id,,,"""1006178628""",null,omission,omission
+0162,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Zürich""",wrong,wrong
+0162,canton_previous,,,null,null,correct_null,correct_null
+0162,canton_new,,,null,null,correct_null,correct_null
+0162,capital_new_chf,,,null,null,correct_null,correct_null
+0162,capital_previous_chf,,,null,null,correct_null,correct_null
+0162,domicile_new,,,null,null,correct_null,correct_null
+0162,domicile_previous,,,null,null,correct_null,correct_null
+0162,extras,konkurs_wirkung_ab,,"""2026-09-01 10:00""",null,missed,missed
+0163,act_type,,,"""mutation""","""mutation""",correct,correct
+0163,act_subtypes,,,[],[],correct_null,correct_null
+0163,company_name_full,,,"""Dr. R. Peuckert GmbH""",null,omission,omission
+0163,company_name_base,,,"""Dr. R. Peuckert GmbH""",null,omission,omission
+0163,status_suffix,,,null,null,correct_null,correct_null
+0163,alternative_names,,,[],[],correct_null,correct_null
+0163,company_name_new,,,null,null,correct_null,correct_null
+0163,company_name_previous,,,null,null,correct_null,correct_null
+0163,uid,,,"""CHE-109.505.324""",null,omission,omission
+0163,legal_form,,,"""GmbH""","""AG""",wrong,wrong
+0163,seat_municipality,,,"""Rheinfelden""","""Zürich""",wrong,wrong
+0163,seat_canton,,,"""AG""","""ZH""",wrong,wrong
+0163,address_care_of,,,null,null,correct_null,correct_null
+0163,address_street,,,"""Marktgasse 10b""","""Leutschenbachstrasse 95""",wrong,wrong
+0163,address_postcode,,,"""4310""","""8050""",wrong,wrong
+0163,address_municipality,,,"""Rheinfelden""","""Zürich""",wrong,wrong
+0163,act_date,,,null,null,correct_null,correct_null
+0163,tagesregister_nr,,,"""12649""",null,omission,omission
+0163,tagesregister_date,,,"""2026-09-04""","""2026-08-26""",wrong,wrong
+0163,prior_publication_shab_nr,,,4,null,omission,omission
+0163,prior_publication_date,,,"""2016-01-07""",null,omission,omission
+0163,prior_publication_id,,,"""2581609""",null,omission,omission
+0163,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Zürich""",wrong,wrong
+0163,canton_previous,,,null,null,correct_null,correct_null
+0163,canton_new,,,null,null,correct_null,correct_null
+0163,capital_new_chf,,,null,null,correct_null,correct_null
+0163,capital_previous_chf,,,null,null,correct_null,correct_null
+0163,domicile_new,,,"""Marktgasse 10b, 4310 Rheinfelden""",null,omission,omission
+0163,domicile_previous,,,"""Marktgasse 10, 4310 Rheinfelden""",null,omission,omission
+0164,act_type,,,"""mutation""","""mutation""",correct,correct
+0164,act_subtypes,,,"[""statutenaenderung"", ""organaenderung"", ""sitzverlegung""]",[],omission,omission
+0164,company_name_full,,,"""J.Partner GmbH""",null,omission,omission
+0164,company_name_base,,,"""J.Partner GmbH""",null,omission,omission
+0164,status_suffix,,,null,null,correct_null,correct_null
+0164,alternative_names,,,[],[],correct_null,correct_null
+0164,company_name_new,,,null,null,correct_null,correct_null
+0164,company_name_previous,,,null,null,correct_null,correct_null
+0164,uid,,,"""CHE-485.208.812""",null,omission,omission
+0164,legal_form,,,"""GmbH""","""AG""",wrong,wrong
+0164,seat_municipality,,,"""Obersiggenthal""","""Zürich""",wrong,wrong
+0164,seat_canton,,,"""AG""","""ZH""",wrong,wrong
+0164,address_care_of,,,null,null,correct_null,correct_null
+0164,address_street,,,"""Weststrasse 14""","""Leutschenbachstrasse 95""",wrong,wrong
+0164,address_postcode,,,"""5432""","""8050""",wrong,wrong
+0164,address_municipality,,,"""Neuenhof""","""Zürich""",wrong,wrong
+0164,act_date,,,"""2026-08-20""",null,omission,omission
+0164,tagesregister_nr,,,"""12638""",null,omission,omission
+0164,tagesregister_date,,,"""2026-09-04""","""2026-08-26""",wrong,wrong
+0164,prior_publication_shab_nr,,,217,null,omission,omission
+0164,prior_publication_date,,,"""2023-11-08""",null,omission,omission
+0164,prior_publication_id,,,"""1005879880""",null,omission,omission
+0164,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Zürich""",wrong,wrong
+0164,canton_previous,,,null,null,correct_null,correct_null
+0164,canton_new,,,null,null,correct_null,correct_null
+0164,capital_new_chf,,,null,null,correct_null,correct_null
+0164,capital_previous_chf,,,null,null,correct_null,correct_null
+0164,domicile_new,,,"""Weststrasse 14, 5432 Neuenhof""",null,omission,omission
+0164,domicile_previous,,,"""Flurstrasse 1, 5415 Nussbaumen AG""",null,omission,omission
+0164,persons_changed,"Mehmeti, Egzon",,"{""name_new"": ""Mehmeti, Egzon"", ""name_previous"": null, ""domicile_new"": ""Gossau (SG)"", ""domicile_previous"": ""Dietikon"", ""role_new"": ""Gesellschafter und Geschäftsführer"", ""role_previous"": null, ""signature_new"": ""Einzelunterschrift"", ""signature_previous"": null, ""nationality_new"": ""kosovarisch"", ""nationality_previous"": null, ""heimatort_new"": null, ""heimatort_previous"": null, ""stammanteile_new"": 200, ""stammanteile_previous"": null}",null,missed,missed
+0164,extras,nominal_value_chf,,100.0,null,missed,missed
+0165,act_type,,,"""mutation""","""mutation""",correct,correct
+0165,act_subtypes,,,"[""organaenderung"", ""firmenaenderung"", ""liquidationseroeffnung""]",[],omission,omission
+0165,company_name_full,,,"""Mayer Textilveredelung GmbH""",null,omission,omission
+0165,company_name_base,,,"""Mayer Textilveredelung GmbH""",null,omission,omission
+0165,status_suffix,,,null,null,correct_null,correct_null
+0165,alternative_names,,,[],[],correct_null,correct_null
+0165,company_name_new,,,"""Mayer Textilveredelung GmbH in Liquidation""",null,omission,omission
+0165,company_name_previous,,,"""Mayer Textilveredelung GmbH""",null,omission,omission
+0165,uid,,,"""CHE-389.695.698""",null,omission,omission
+0165,legal_form,,,"""GmbH""","""AG""",wrong,wrong
+0165,seat_municipality,,,"""Zurzach""","""Zürich""",wrong,wrong
+0165,seat_canton,,,"""AG""","""ZH""",wrong,wrong
+0165,address_care_of,,,null,null,correct_null,correct_null
+0165,address_street,,,"""Hauptstrasse 49""","""Leutschenbachstrasse 95""",wrong,wrong
+0165,address_postcode,,,"""5330""","""8050""",wrong,wrong
+0165,address_municipality,,,"""Bad Zurzach""","""Zürich""",wrong,wrong
+0165,act_date,,,"""2026-08-11""",null,omission,omission
+0165,tagesregister_nr,,,"""12641""",null,omission,omission
+0165,tagesregister_date,,,"""2026-09-04""","""2026-08-26""",wrong,wrong
+0165,prior_publication_shab_nr,,,104,null,omission,omission
+0165,prior_publication_date,,,"""2024-05-31""",null,omission,omission
+0165,prior_publication_id,,,"""1006045285""",null,omission,omission
+0165,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Zürich""",wrong,wrong
+0165,canton_previous,,,null,null,correct_null,correct_null
+0165,canton_new,,,null,null,correct_null,correct_null
+0165,capital_new_chf,,,null,null,correct_null,correct_null
+0165,capital_previous_chf,,,null,null,correct_null,correct_null
+0165,domicile_new,,,null,null,correct_null,correct_null
+0165,domicile_previous,,,null,null,correct_null,correct_null
+0165,persons_changed,"Mayer, Gian Claudio",,"{""name_new"": ""Mayer, Gian Claudio"", ""name_previous"": null, ""domicile_new"": ""Zurzach"", ""domicile_previous"": null, ""role_new"": ""Gesellschafter und Vorsitzender der Geschäftsführung, Liquidator"", ""role_previous"": ""Gesellschafter und Vorsitzender der Geschäftsführung"", ""signature_new"": ""Einzelunterschrift als Liquidator"", ""signature_previous"": ""Einzelunterschrift"", ""nationality_new"": null, ""nationality_previous"": null, ""heimatort_new"": ""Valsot"", ""heimatort_previous"": null, ""stammanteile_new"": 100, ""stammanteile_previous"": null}",null,missed,missed
+0165,persons_changed,"Mayer, Birgit",,"{""name_new"": ""Mayer, Birgit"", ""name_previous"": null, ""domicile_new"": ""Zurzach"", ""domicile_previous"": null, ""role_new"": ""Gesellschafterin"", ""role_previous"": ""Gesellschafterin und Geschäftsführerin"", ""signature_new"": ""ohne Zeichnungsberechtigung"", ""signature_previous"": ""Einzelunterschrift"", ""nationality_new"": null, ""nationality_previous"": null, ""heimatort_new"": ""Valsot"", ""heimatort_previous"": null, ""stammanteile_new"": 100, ""stammanteile_previous"": null}",null,missed,missed
+0165,extras,nominal_value_chf,,100.0,null,missed,missed
+0166,act_type,,,"""mutation""","""mutation""",correct,correct
+0166,act_subtypes,,,"[""organaenderung""]",[],omission,omission
+0166,company_name_full,,,"""Finalor AG""",null,omission,omission
+0166,company_name_base,,,"""Finalor AG""",null,omission,omission
+0166,status_suffix,,,null,null,correct_null,correct_null
+0166,alternative_names,,,"[""Finalor SA"", ""Finalor Ltd""]",[],omission,omission
+0166,company_name_new,,,null,null,correct_null,correct_null
+0166,company_name_previous,,,null,null,correct_null,correct_null
+0166,uid,,,"""CHE-102.360.734""",null,omission,omission
+0166,legal_form,,,"""AG""","""AG""",correct,correct
+0166,seat_municipality,,,"""Kaiseraugst""","""Zürich""",wrong,wrong
+0166,seat_canton,,,"""AG""","""ZH""",wrong,wrong
+0166,address_care_of,,,null,null,correct_null,correct_null
+0166,address_street,,,"""Wurmisweg 576""","""Leutschenbachstrasse 95""",wrong,wrong
+0166,address_postcode,,,"""4303""","""8050""",wrong,wrong
+0166,address_municipality,,,"""Kaiseraugst""","""Zürich""",wrong,wrong
+0166,act_date,,,null,null,correct_null,correct_null
+0166,tagesregister_nr,,,"""12669""",null,omission,omission
+0166,tagesregister_date,,,"""2026-09-04""","""2026-08-26""",wrong,wrong
+0166,prior_publication_shab_nr,,,24,null,omission,omission
+0166,prior_publication_date,,,"""2026-02-05""",null,omission,omission
+0166,prior_publication_id,,,"""1006561182""",null,omission,omission
+0166,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Zürich""",wrong,wrong
+0166,canton_previous,,,null,null,correct_null,correct_null
+0166,canton_new,,,null,null,correct_null,correct_null
+0166,capital_new_chf,,,null,null,correct_null,correct_null
+0166,capital_previous_chf,,,null,null,correct_null,correct_null
+0166,domicile_new,,,null,null,correct_null,correct_null
+0166,domicile_previous,,,null,null,correct_null,correct_null
+0166,persons_added,"Verhagen, Lisanne",,"{""name"": ""Verhagen, Lisanne"", ""nationality"": ""niederländisch"", ""heimatort"": null, ""domicile"": ""Rheinfelden"", ""role"": ""Mitglied des Verwaltungsrates"", ""signature"": ""Kollektivunterschrift zu zweien"", ""uid"": null, ""stammanteile"": null}",null,missed,missed
+0166,persons_removed,,,"[{""name"": ""Wolters, Hendrik Jan, genannt Harry"", ""nationality"": ""niederländisch"", ""heimatort"": null, ""domicile"": ""Binningen"", ""role"": ""Präsident des Verwaltungsrates"", ""signature"": ""Kollektivunterschrift zu zweien"", ""uid"": null, ""stammanteile"": null}]",[],excluded_uncertain,excluded_uncertain
+0166,persons_changed,"Isler, Dominique",,"{""name_new"": ""Isler, Dominique"", ""name_previous"": null, ""domicile_new"": ""Basel"", ""domicile_previous"": null, ""role_new"": ""Präsident des Verwaltungsrates"", ""role_previous"": ""Mitglied des Verwaltungsrates"", ""signature_new"": ""Kollektivunterschrift zu zweien"", ""signature_previous"": null, ""nationality_new"": null, ""nationality_previous"": null, ""heimatort_new"": ""Basel"", ""heimatort_previous"": null, ""stammanteile_new"": null, ""stammanteile_previous"": null}",null,missed,missed
+0167,act_type,,,"""mutation""","""mutation""",correct,correct
+0167,act_subtypes,,,"[""organaenderung""]",[],omission,omission
+0167,company_name_full,,,"""Avadis Finanzpartner AG""",null,omission,omission
+0167,company_name_base,,,"""Avadis Finanzpartner AG""",null,omission,omission
+0167,status_suffix,,,null,null,correct_null,correct_null
+0167,alternative_names,,,[],[],correct_null,correct_null
+0167,company_name_new,,,null,null,correct_null,correct_null
+0167,company_name_previous,,,null,null,correct_null,correct_null
+0167,uid,,,"""CHE-109.832.639""",null,omission,omission
+0167,legal_form,,,"""AG""","""AG""",correct,correct
+0167,seat_municipality,,,"""Aarau""","""Zürich""",wrong,wrong
+0167,seat_canton,,,"""AG""","""ZH""",wrong,wrong
+0167,address_care_of,,,null,null,correct_null,correct_null
+0167,address_street,,,"""Herzogstrasse 12""","""Leutschenbachstrasse 95""",wrong,wrong
+0167,address_postcode,,,"""5000""","""8050""",wrong,wrong
+0167,address_municipality,,,"""Aarau""","""Zürich""",wrong,wrong
+0167,act_date,,,null,null,correct_null,correct_null
+0167,tagesregister_nr,,,"""12651""",null,omission,omission
+0167,tagesregister_date,,,"""2026-09-04""","""2026-08-26""",wrong,wrong
+0167,prior_publication_shab_nr,,,42,null,omission,omission
+0167,prior_publication_date,,,"""2026-03-03""",null,omission,omission
+0167,prior_publication_id,,,"""1006584994""",null,omission,omission
+0167,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Zürich""",wrong,wrong
+0167,canton_previous,,,null,null,correct_null,correct_null
+0167,canton_new,,,null,null,correct_null,correct_null
+0167,capital_new_chf,,,null,null,correct_null,correct_null
+0167,capital_previous_chf,,,null,null,correct_null,correct_null
+0167,domicile_new,,,null,null,correct_null,correct_null
+0167,domicile_previous,,,null,null,correct_null,correct_null
+0167,persons_added,"Weber, Thomas Andreas",,"{""name"": ""Weber, Thomas Andreas"", ""nationality"": null, ""heimatort"": ""Hauptwil-Gottshaus"", ""domicile"": ""Oftringen"", ""role"": ""Delegierter des Verwaltungsrates"", ""signature"": ""Kollektivunterschrift zu zweien"", ""uid"": null, ""stammanteile"": null}",null,missed,missed
+0167,persons_removed,"Montagnolo, Costanza",,"{""name"": ""Montagnolo, Costanza"", ""nationality"": ""italienisch"", ""heimatort"": null, ""domicile"": ""Oberentfelden"", ""role"": ""Delegierte des Verwaltungsrates"", ""signature"": ""Kollektivunterschrift zu zweien"", ""uid"": null, ""stammanteile"": null}",null,missed,missed
+0168,act_type,,,"""mutation""","""mutation""",correct,correct
+0168,act_subtypes,,,"[""organaenderung""]",[],omission,omission
+0168,company_name_full,,,"""Aanova AG""",null,omission,omission
+0168,company_name_base,,,"""Aanova AG""",null,omission,omission
+0168,status_suffix,,,null,null,correct_null,correct_null
+0168,alternative_names,,,[],[],correct_null,correct_null
+0168,company_name_new,,,null,null,correct_null,correct_null
+0168,company_name_previous,,,null,null,correct_null,correct_null
+0168,uid,,,"""CHE-482.475.110""",null,omission,omission
+0168,legal_form,,,"""AG""","""AG""",correct,correct
+0168,seat_municipality,,,"""Muhen""","""Zürich""",wrong,wrong
+0168,seat_canton,,,"""AG""","""ZH""",wrong,wrong
+0168,address_care_of,,,null,null,correct_null,correct_null
+0168,address_street,,,"""Köllikerstrasse 1""","""Leutschenbachstrasse 95""",wrong,wrong
+0168,address_postcode,,,"""5037""","""8050""",wrong,wrong
+0168,address_municipality,,,"""Muhen""","""Zürich""",wrong,wrong
+0168,act_date,,,null,null,correct_null,correct_null
+0168,tagesregister_nr,,,"""12672""",null,omission,omission
+0168,tagesregister_date,,,"""2026-09-04""","""2026-08-26""",wrong,wrong
+0168,prior_publication_shab_nr,,,17,null,omission,omission
+0168,prior_publication_date,,,"""2025-01-27""",null,omission,omission
+0168,prior_publication_id,,,"""1006239141""",null,omission,omission
+0168,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Zürich""",wrong,wrong
+0168,canton_previous,,,null,null,correct_null,correct_null
+0168,canton_new,,,null,null,correct_null,correct_null
+0168,capital_new_chf,,,null,null,correct_null,correct_null
+0168,capital_previous_chf,,,null,null,correct_null,correct_null
+0168,domicile_new,,,null,null,correct_null,correct_null
+0168,domicile_previous,,,null,null,correct_null,correct_null
+0168,persons_removed,"Huber, Denise",,"{""name"": ""Huber, Denise"", ""nationality"": null, ""heimatort"": ""Eppenberg-Wöschnau"", ""domicile"": ""Muhen"", ""role"": ""Mitglied des Verwaltungsrates"", ""signature"": ""Kollektivunterschrift zu zweien"", ""uid"": null, ""stammanteile"": null}",null,missed,missed
+0168,persons_changed,"Huber, Evelyn",,"{""name_new"": ""Huber, Evelyn"", ""name_previous"": null, ""domicile_new"": ""Baden"", ""domicile_previous"": ""Untersiggenthal"", ""role_new"": ""Mitglied des Verwaltungsrates"", ""role_previous"": null, ""signature_new"": ""Kollektivunterschrift zu zweien"", ""signature_previous"": null, ""nationality_new"": null, ""nationality_previous"": null, ""heimatort_new"": ""Eppenberg-Wöschnau"", ""heimatort_previous"": null, ""stammanteile_new"": null, ""stammanteile_previous"": null}",null,missed,missed
+0169,act_type,,,"""mutation""","""mutation""",correct,correct
+0169,act_subtypes,,,"[""organaenderung"", ""revisionsstelle""]",[],omission,omission
+0169,company_name_full,,,"""sensusplus AG""",null,omission,omission
+0169,company_name_base,,,"""sensusplus AG""",null,omission,omission
+0169,status_suffix,,,null,null,correct_null,correct_null
+0169,alternative_names,,,[],[],correct_null,correct_null
+0169,company_name_new,,,null,null,correct_null,correct_null
+0169,company_name_previous,,,null,null,correct_null,correct_null
+0169,uid,,,"""CHE-114.628.346""",null,omission,omission
+0169,legal_form,,,"""AG""","""AG""",correct,correct
+0169,seat_municipality,,,"""Menziken""","""Zürich""",wrong,wrong
+0169,seat_canton,,,"""AG""","""ZH""",wrong,wrong
+0169,address_care_of,,,null,null,correct_null,correct_null
+0169,address_street,,,"""Hauptstrasse 2""","""Leutschenbachstrasse 95""",wrong,wrong
+0169,address_postcode,,,"""5737""","""8050""",wrong,wrong
+0169,address_municipality,,,"""Menziken""","""Zürich""",wrong,wrong
+0169,act_date,,,null,null,correct_null,correct_null
+0169,tagesregister_nr,,,"""12639""",null,omission,omission
+0169,tagesregister_date,,,"""2026-09-04""","""2026-08-26""",wrong,wrong
+0169,prior_publication_shab_nr,,,28,null,omission,omission
+0169,prior_publication_date,,,"""2025-02-11""",null,omission,omission
+0169,prior_publication_id,,,"""1006253663""",null,omission,omission
+0169,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Zürich""",wrong,wrong
+0169,canton_previous,,,null,null,correct_null,correct_null
+0169,canton_new,,,null,null,correct_null,correct_null
+0169,capital_new_chf,,,null,null,correct_null,correct_null
+0169,capital_previous_chf,,,null,null,correct_null,correct_null
+0169,domicile_new,,,null,null,correct_null,correct_null
+0169,domicile_previous,,,null,null,correct_null,correct_null
+0169,persons_added,,,"[{""name"": ""MBB Consulting GmbH"", ""nationality"": null, ""heimatort"": null, ""domicile"": ""Zug"", ""role"": ""Revisionsstelle"", ""signature"": null, ""uid"": ""CHE-163.382.239"", ""stammanteile"": null}]",[],excluded_uncertain,excluded_uncertain
+0169,persons_removed,Elwe Audit & Consulting AG,,"{""name"": ""Elwe Audit & Consulting AG"", ""nationality"": null, ""heimatort"": null, ""domicile"": ""Zug"", ""role"": ""Revisionsstelle"", ""signature"": null, ""uid"": ""CHE-109.603.464"", ""stammanteile"": null}",null,missed,missed
+0170,act_type,,,"""mutation""","""mutation""",correct,correct
+0170,act_subtypes,,,"[""statutenaenderung"", ""sitzverlegung""]",[],omission,omission
+0170,company_name_full,,,"""Autocenter Vellaz GmbH""",null,omission,omission
+0170,company_name_base,,,"""Autocenter Vellaz GmbH""",null,omission,omission
+0170,status_suffix,,,null,null,correct_null,correct_null
+0170,alternative_names,,,[],[],correct_null,correct_null
+0170,company_name_new,,,null,null,correct_null,correct_null
+0170,company_name_previous,,,null,null,correct_null,correct_null
+0170,uid,,,"""CHE-491.625.615""",null,omission,omission
+0170,legal_form,,,"""GmbH""","""AG""",wrong,wrong
+0170,seat_municipality,,,"""Aarau""","""Zürich""",wrong,wrong
+0170,seat_canton,,,"""AG""","""ZH""",wrong,wrong
+0170,address_care_of,,,null,null,correct_null,correct_null
+0170,address_street,,,"""Brüggerweg 5""","""Leutschenbachstrasse 95""",wrong,wrong
+0170,address_postcode,,,"""5018""","""8050""",wrong,wrong
+0170,address_municipality,,,"""Erlinsbach""","""Zürich""",wrong,wrong
+0170,act_date,,,"""2026-07-27""",null,omission,omission
+0170,tagesregister_nr,,,"""12640""",null,omission,omission
+0170,tagesregister_date,,,"""2026-09-04""","""2026-08-26""",wrong,wrong
+0170,prior_publication_shab_nr,,,111,null,omission,omission
+0170,prior_publication_date,,,"""2025-06-12""",null,omission,omission
+0170,prior_publication_id,,,"""1006354091""",null,omission,omission
+0170,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Zürich""",wrong,wrong
+0170,canton_previous,,,null,null,correct_null,correct_null
+0170,canton_new,,,null,null,correct_null,correct_null
+0170,capital_new_chf,,,null,null,correct_null,correct_null
+0170,capital_previous_chf,,,null,null,correct_null,correct_null
+0170,domicile_new,,,"""Brüggerweg 5, 5018 Erlinsbach""",null,omission,omission
+0170,domicile_previous,,,"""Metzgergasse 14, 5000 Aarau""",null,omission,omission

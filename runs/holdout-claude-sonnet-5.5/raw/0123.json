@@ -1,0 +1,56 @@
+{
+  "doc_id": "0123",
+  "split": "holdout",
+  "model_requested": "anthropic/claude-sonnet-5.5",
+  "backend": "openrouter",
+  "timestamp": "2026-10-13T12:37:49.141237+00:00",
+  "latency_ms": 5281.0000000172295,
+  "params": {
+    "temperature": 0,
+    "max_tokens": 32768,
+    "passes": 1,
+    "structured_output": false
+  },
+  "prompt_sha256": "964dec417be3b1c664627b2505ba64f3dc8c0249bfb1cb9430e82c9850e0d20c",
+  "git_commit": "6a6bd2e193f6f9b2d38f6030b0a722c8c36dae6c",
+  "git_dirty": true,
+  "attempts": 1,
+  "status": "ok",
+  "error": null,
+  "model_served": "anthropic/claude-sonnet-5.5",
+  "provider_served": "Claude Platform on AWS",
+  "usage": {
+    "completion_tokens": 1009,
+    "prompt_tokens": 7490,
+    "total_tokens": 8499,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.02507,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.02507,
+      "upstream_inference_prompt_cost": 0.01498,
+      "upstream_inference_completions_cost": 0.01009
+    }
+  },
+  "reasoning_tokens": 0,
+  "cost_usd": 0.02507,
+  "finish_reason": "stop",
+  "response_chars": 2219,
+  "response_text": "{\"act_type\":\"mutation\",\"act_subtypes\":[\"organaenderung\"],\"company_name_full\":\"Felix Stöckli AG\",\"company_name_base\":\"Felix Stöckli AG\",\"status_suffix\":null,\"alternative_names\":[],\"company_name_new\":null,\"company_name_previous\":null,\"uid\":\"CHE-105.722.940\",\"legal_form\":\"AG\",\"seat_municipality\":\"Bremgarten (AG)\",\"seat_canton\":\"AG\",\"address_care_of\":null,\"address_street\":\"Rüttenenstrasse 6\",\"address_postcode\":\"5620\",\"address_municipality\":\"Bremgarten AG\",\"act_date\":null,\"tagesregister_nr\":\"12648\",\"tagesregister_date\":\"2026-09-04\",\"prior_publication_shab_nr\":135,\"prior_publication_date\":\"2023-07-14\",\"prior_publication_id\":\"1005796031\",\"authority\":\"Handelsregisteramt des Kantons Aargau\",\"canton_previous\":null,\"canton_new\":null,\"capital_new_chf\":null,\"capital_previous_chf\":null,\"domicile_new\":null,\"domicile_previous\":null,\"persons_added\":[],\"persons_removed\":[{\"name\":\"Stöckli, Felix\",\"nationality\":null,\"heimatort\":\"Bremgarten AG\",\"domicile\":\"Bremgarten AG\",\"role\":\"Präsident des Verwaltungsrates\",\"signature\":\"Einzelunterschrift\",\"uid\":null,\"stammanteile\":null},{\"name\":\"Stöckli-Furrer, Maria\",\"nationality\":null,\"heimatort\":\"Bremgarten (AG) und Schongau\",\"domicile\":\"Bremgarten (AG)\",\"role\":\"Mitglied des Verwaltungsrates\",\"signature\":\"Einzelunterschrift\",\"uid\":null,\"stammanteile\":null}],\"persons_changed\":[{\"name_new\":\"Stöckli, Michael\",\"name_previous\":null,\"domicile_new\":\"Bremgarten (AG)\",\"domicile_previous\":null,\"role_new\":\"Präsident des Verwaltungsrates\",\"role_previous\":\"Mitglied des Verwaltungsrates\",\"signature_new\":\"Einzelunterschrift\",\"signature_previous\":\"Kollektivunterschrift zu zweien\",\"nationality_new\":null,\"nationality_previous\":null,\"heimatort_new\":\"Bremgarten (AG)\",\"heimatort_previous\":null,\"stammanteile_new\":null,\"stammanteile_previous\":null},{\"name_new\":\"Stöckli, Fabian\",\"name_previous\":null,\"domicile_new\":\"Bremgarten (AG)\",\"domicile_previous\":null,\"role_new\":\"Mitglied des Verwaltungsrates\",\"role_previous\":null,\"signature_new\":\"Einzelunterschrift\",\"signature_previous\":\"Kollektivunterschrift zu zweien\",\"nationality_new\":null,\"nationality_previous\":null,\"heimatort_new\":\"Bremgarten (AG)\",\"heimatort_previous\":null,\"stammanteile_new\":null,\"stammanteile_previous\":null}],\"extras\":{}}",
+  "warnings": []
+}

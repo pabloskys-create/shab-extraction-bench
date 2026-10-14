@@ -1,0 +1,56 @@
+{
+  "doc_id": "0159",
+  "split": "holdout",
+  "model_requested": "anthropic/claude-haiku-5.5",
+  "backend": "openrouter",
+  "timestamp": "2026-10-13T12:36:14.367563+00:00",
+  "latency_ms": 5500.0,
+  "params": {
+    "temperature": 0,
+    "max_tokens": 32768,
+    "passes": 1,
+    "structured_output": false
+  },
+  "prompt_sha256": "964dec417be3b1c664627b2505ba64f3dc8c0249bfb1cb9430e82c9850e0d20c",
+  "git_commit": "6a6bd2e193f6f9b2d38f6030b0a722c8c36dae6c",
+  "git_dirty": true,
+  "attempts": 1,
+  "status": "ok",
+  "error": null,
+  "model_served": "anthropic/claude-haiku-5.5",
+  "provider_served": "Claude Platform on AWS",
+  "usage": {
+    "completion_tokens": 1357,
+    "prompt_tokens": 7317,
+    "total_tokens": 8674,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 836,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.0014102,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.0014102,
+      "upstream_inference_prompt_cost": 0.0007317,
+      "upstream_inference_completions_cost": 0.0006785
+    }
+  },
+  "reasoning_tokens": 836,
+  "cost_usd": 0.0014102,
+  "finish_reason": "stop",
+  "response_chars": 1094,
+  "response_text": "{\"act_type\":\"mutation\",\"act_subtypes\":[\"sitzverlegung\",\"kantonswechsel\",\"firmenaenderung\"],\"company_name_full\":\"Hartl Consult GmbH\",\"company_name_base\":\"Hartl Consult GmbH\",\"status_suffix\":null,\"alternative_names\":[\"Hartl Consult Sàrl\",\"Hartl Consult LLC\"],\"company_name_new\":\"Nachtfalter Film GmbH\",\"company_name_previous\":\"Hartl Consult GmbH\",\"uid\":\"CHE-360.293.391\",\"legal_form\":\"GmbH\",\"seat_municipality\":\"Erlinsbach (AG)\",\"seat_canton\":\"AG\",\"address_care_of\":\"Hug & Dorfmüller Design AG\",\"address_street\":\"Hirschengraben 33b\",\"address_postcode\":\"6003\",\"address_municipality\":\"Luzern\",\"act_date\":null,\"tagesregister_nr\":\"12687\",\"tagesregister_date\":\"2026-09-04\",\"prior_publication_shab_nr\":111,\"prior_publication_date\":\"2021-06-11\",\"prior_publication_id\":\"1005214763\",\"authority\":\"Handelsregisteramt des Kantons Aargau\",\"canton_previous\":\"AG\",\"canton_new\":\"LU\",\"capital_new_chf\":null,\"capital_previous_chf\":null,\"domicile_new\":\"Hirschengraben 33b, 6003 Luzern\",\"domicile_previous\":\"Gehrenstrasse 13, 5018 Erlinsbach\",\"persons_added\":[],\"persons_removed\":[],\"persons_changed\":[],\"extras\":{}}",
+  "warnings": []
+}

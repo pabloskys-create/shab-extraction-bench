@@ -1,0 +1,56 @@
+{
+  "doc_id": "0161",
+  "split": "holdout",
+  "model_requested": "google/gemini-3.5-flash-lite",
+  "backend": "openrouter",
+  "timestamp": "2026-10-13T12:42:49.725503+00:00",
+  "latency_ms": 2061.9999999762513,
+  "params": {
+    "temperature": 0,
+    "max_tokens": 32768,
+    "passes": 1,
+    "structured_output": false
+  },
+  "prompt_sha256": "964dec417be3b1c664627b2505ba64f3dc8c0249bfb1cb9430e82c9850e0d20c",
+  "git_commit": "6a6bd2e193f6f9b2d38f6030b0a722c8c36dae6c",
+  "git_dirty": true,
+  "attempts": 1,
+  "status": "ok",
+  "error": null,
+  "model_served": "google/gemini-3.5-flash-lite",
+  "provider_served": "Google",
+  "usage": {
+    "completion_tokens": 451,
+    "prompt_tokens": 5351,
+    "total_tokens": 5802,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.0027328,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.0027328,
+      "upstream_inference_prompt_cost": 0.0016053,
+      "upstream_inference_completions_cost": 0.0011275
+    }
+  },
+  "reasoning_tokens": 0,
+  "cost_usd": 0.0027328,
+  "finish_reason": "stop",
+  "response_chars": 1076,
+  "response_text": "{\n  \"act_type\": \"loeschung\",\n  \"act_subtypes\": [],\n  \"company_name_full\": \"Granato PizzaLab\",\n  \"company_name_base\": \"Granato PizzaLab\",\n  \"status_suffix\": null,\n  \"alternative_names\": [],\n  \"company_name_new\": null,\n  \"company_name_previous\": null,\n  \"uid\": \"CHE-232.453.855\",\n  \"legal_form\": \"Einzelunternehmen\",\n  \"seat_municipality\": \"Buchs (AG)\",\n  \"seat_canton\": \"AG\",\n  \"address_care_of\": null,\n  \"address_street\": \"Baumgartenweg 13b\",\n  \"address_postcode\": \"5033\",\n  \"address_municipality\": \"Buchs AG\",\n  \"act_date\": \"2026-09-04\",\n  \"tagesregister_nr\": \"12690\",\n  \"tagesregister_date\": \"2026-09-04\",\n  \"prior_publication_shab_nr\": 226,\n  \"prior_publication_date\": \"2025-11-21\",\n  \"prior_publication_id\": 1006491505,\n  \"authority\": \"Handelsregisteramt des Kantons Aargau\",\n  \"canton_previous\": null,\n  \"canton_new\": null,\n  \"capital_new_chf\": null,\n  \"capital_previous_chf\": null,\n  \"domicile_new\": null,\n  \"domicile_previous\": null,\n  \"persons_added\": [],\n  \"persons_removed\": [],\n  \"persons_changed\": [],\n  \"extras\": {\n    \"loeschung_reason\": \"Geschäftsaufgabe\"\n  }\n}",
+  "warnings": []
+}

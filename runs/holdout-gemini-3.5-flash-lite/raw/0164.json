@@ -1,0 +1,56 @@
+{
+  "doc_id": "0164",
+  "split": "holdout",
+  "model_requested": "google/gemini-3.5-flash-lite",
+  "backend": "openrouter",
+  "timestamp": "2026-10-13T12:42:55.959642+00:00",
+  "latency_ms": 2233.9999999967404,
+  "params": {
+    "temperature": 0,
+    "max_tokens": 32768,
+    "passes": 1,
+    "structured_output": false
+  },
+  "prompt_sha256": "964dec417be3b1c664627b2505ba64f3dc8c0249bfb1cb9430e82c9850e0d20c",
+  "git_commit": "6a6bd2e193f6f9b2d38f6030b0a722c8c36dae6c",
+  "git_dirty": true,
+  "attempts": 1,
+  "status": "ok",
+  "error": null,
+  "model_served": "google/gemini-3.5-flash-lite",
+  "provider_served": "Google",
+  "usage": {
+    "completion_tokens": 679,
+    "prompt_tokens": 5414,
+    "total_tokens": 6093,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.0033217,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.0033217,
+      "upstream_inference_prompt_cost": 0.0016242,
+      "upstream_inference_completions_cost": 0.0016975
+    }
+  },
+  "reasoning_tokens": 0,
+  "cost_usd": 0.0033217,
+  "finish_reason": "stop",
+  "response_chars": 1721,
+  "response_text": "```json\n{\n  \"act_type\": \"mutation\",\n  \"act_subtypes\": [\n    \"statutenaenderung\",\n    \"organaenderung\",\n    \"sitzverlegung\"\n  ],\n  \"company_name_full\": \"J.Partner GmbH\",\n  \"company_name_base\": \"J.Partner GmbH\",\n  \"status_suffix\": null,\n  \"alternative_names\": [],\n  \"company_name_new\": null,\n  \"company_name_previous\": null,\n  \"uid\": \"CHE-485.208.812\",\n  \"legal_form\": \"GmbH\",\n  \"seat_municipality\": \"Obersiggenthal\",\n  \"seat_canton\": \"AG\",\n  \"address_care_of\": null,\n  \"address_street\": \"Weststrasse 14\",\n  \"address_postcode\": \"5432\",\n  \"address_municipality\": \"Neuenhof\",\n  \"act_date\": \"2026-08-20\",\n  \"tagesregister_nr\": \"12638\",\n  \"tagesregister_date\": \"2026-09-04\",\n  \"prior_publication_shab_nr\": 217,\n  \"prior_publication_date\": \"2023-11-08\",\n  \"prior_publication_id\": \"1005879880\",\n  \"authority\": \"Handelsregisteramt des Kantons Aargau\",\n  \"canton_previous\": null,\n  \"canton_new\": null,\n  \"capital_new_chf\": null,\n  \"capital_previous_chf\": null,\n  \"domicile_new\": \"Weststrasse 14, 5432 Neuenhof\",\n  \"domicile_previous\": \"Flurstrasse 1, 5415 Nussbaumen AG\",\n  \"persons_added\": [],\n  \"persons_removed\": [],\n  \"persons_changed\": [\n    {\n      \"name_new\": \"Mehmeti, Egzon\",\n      \"name_previous\": null,\n      \"domicile_new\": \"Gossau (SG)\",\n      \"domicile_previous\": \"Dietikon\",\n      \"role_new\": \"Gesellschafter und Geschäftsführer\",\n      \"role_previous\": null,\n      \"signature_new\": \"mit Einzelunterschrift\",\n      \"signature_previous\": null,\n      \"nationality_new\": \"kosovarisch\",\n      \"nationality_previous\": null,\n      \"heimatort_new\": null,\n      \"heimatort_previous\": null,\n      \"stammanteile_new\": \"200\",\n      \"stammanteile_previous\": null\n    }\n  ],\n  \"extras\": {\n    \"nominal_value_chf\": 100.0\n  }\n}\n```",
+  "warnings": []
+}

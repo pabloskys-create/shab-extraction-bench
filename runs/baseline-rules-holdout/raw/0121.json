@@ -1,0 +1,12 @@
+{
+  "doc_id": "0121",
+  "split": "holdout",
+  "model_requested": "baseline-rules",
+  "backend": "baseline",
+  "timestamp": "2026-10-13T19:40:16.399707+00:00",
+  "git_commit": "8d5e195facf9d856c555105f976879e266b5468f",
+  "git_dirty": true,
+  "status": "ok",
+  "error": null,
+  "response_text": "{\"act_type\": \"mutation\", \"act_subtypes\": [], \"company_name_full\": \"CSB Expansion AG\", \"company_name_base\": \"CSB Expansion AG\", \"status_suffix\": null, \"alternative_names\": [\"CSB Expansion SA\", \"CSB Expansion Ltd\"], \"company_name_new\": null, \"company_name_previous\": null, \"uid\": \"CHE-442.360.185\", \"legal_form\": \"AG\", \"seat_municipality\": \"Kestenholz\", \"seat_canton\": null, \"address_care_of\": null, \"address_street\": \"Brown Boveri Strasse 7\", \"address_postcode\": \"5400\", \"address_municipality\": \"Baden\", \"act_date\": null, \"tagesregister_nr\": \"12665\", \"tagesregister_date\": \"2026-09-04\", \"prior_publication_shab_nr\": 73, \"prior_publication_date\": \"2025-04-15\", \"prior_publication_id\": \"1006309592\", \"authority\": \"Handelsregisteramt des Kantons Aargau\", \"canton_previous\": null, \"canton_new\": null, \"capital_new_chf\": null, \"capital_previous_chf\": null, \"domicile_new\": null, \"domicile_previous\": null, \"persons_added\": [], \"persons_removed\": [], \"persons_changed\": [], \"extras\": {}}"
+}

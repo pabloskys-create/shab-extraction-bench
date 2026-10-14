@@ -1,0 +1,12 @@
+{
+  "doc_id": "0132",
+  "split": "holdout",
+  "model_requested": "baseline-rules",
+  "backend": "baseline",
+  "timestamp": "2026-10-13T19:40:16.399707+00:00",
+  "git_commit": "8d5e195facf9d856c555105f976879e266b5468f",
+  "git_dirty": true,
+  "status": "ok",
+  "error": null,
+  "response_text": "{\"act_type\": \"mutation\", \"act_subtypes\": [], \"company_name_full\": \"SuH Holding AG\", \"company_name_base\": \"SuH Holding AG\", \"status_suffix\": null, \"alternative_names\": [], \"company_name_new\": null, \"company_name_previous\": null, \"uid\": \"CHE-391.791.992\", \"legal_form\": \"AG\", \"seat_municipality\": \"Oftringen\", \"seat_canton\": \"AG\", \"address_care_of\": null, \"address_street\": \"Talrain 27b\", \"address_postcode\": \"5037\", \"address_municipality\": \"Muhen\", \"act_date\": null, \"tagesregister_nr\": \"12634\", \"tagesregister_date\": \"2026-09-04\", \"prior_publication_shab_nr\": 232, \"prior_publication_date\": \"2024-11-28\", \"prior_publication_id\": \"1006190339\", \"authority\": \"Handelsregisteramt des Kantons Aargau\", \"canton_previous\": null, \"canton_new\": null, \"capital_new_chf\": null, \"capital_previous_chf\": null, \"domicile_new\": null, \"domicile_previous\": null, \"persons_added\": [], \"persons_removed\": [], \"persons_changed\": [], \"extras\": {}}"
+}

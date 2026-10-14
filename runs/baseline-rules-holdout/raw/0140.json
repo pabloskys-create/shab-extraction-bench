@@ -1,0 +1,12 @@
+{
+  "doc_id": "0140",
+  "split": "holdout",
+  "model_requested": "baseline-rules",
+  "backend": "baseline",
+  "timestamp": "2026-10-13T19:40:16.399707+00:00",
+  "git_commit": "8d5e195facf9d856c555105f976879e266b5468f",
+  "git_dirty": true,
+  "status": "ok",
+  "error": null,
+  "response_text": "{\"act_type\": \"neueintragung\", \"act_subtypes\": [], \"company_name_full\": \"Rostas Dachdecker und Zimmerei\", \"company_name_base\": \"Rostas Dachdecker und Zimmerei\", \"status_suffix\": null, \"alternative_names\": [], \"company_name_new\": null, \"company_name_previous\": null, \"uid\": \"CHE-143.620.861\", \"legal_form\": \"Einzelunternehmen\", \"seat_municipality\": \"Böztal\", \"seat_canton\": \"AG\", \"address_care_of\": null, \"address_street\": \"Dorfstrasse 53\", \"address_postcode\": \"5078\", \"address_municipality\": \"Effingen\", \"act_date\": null, \"tagesregister_nr\": \"12692\", \"tagesregister_date\": \"2026-09-04\", \"prior_publication_shab_nr\": null, \"prior_publication_date\": null, \"prior_publication_id\": null, \"authority\": \"Handelsregisteramt des Kantons Aargau\", \"canton_previous\": null, \"canton_new\": null, \"capital_new_chf\": null, \"capital_previous_chf\": null, \"domicile_new\": null, \"domicile_previous\": null, \"persons_added\": [], \"persons_removed\": [], \"persons_changed\": [], \"extras\": {}}"
+}

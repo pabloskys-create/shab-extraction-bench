@@ -1,0 +1,56 @@
+{
+  "doc_id": "0148",
+  "split": "holdout",
+  "model_requested": "anthropic/claude-haiku-5.5",
+  "backend": "openrouter",
+  "timestamp": "2026-10-13T12:35:05.243247+00:00",
+  "latency_ms": 17577.99999997951,
+  "params": {
+    "temperature": 0,
+    "max_tokens": 32768,
+    "passes": 1,
+    "structured_output": false
+  },
+  "prompt_sha256": "964dec417be3b1c664627b2505ba64f3dc8c0249bfb1cb9430e82c9850e0d20c",
+  "git_commit": "6a6bd2e193f6f9b2d38f6030b0a722c8c36dae6c",
+  "git_dirty": true,
+  "attempts": 1,
+  "status": "ok",
+  "error": null,
+  "model_served": "anthropic/claude-haiku-5.5",
+  "provider_served": "Claude Platform on AWS",
+  "usage": {
+    "completion_tokens": 4913,
+    "prompt_tokens": 8268,
+    "total_tokens": 13181,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 3832,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.0032833,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.0032833,
+      "upstream_inference_prompt_cost": 0.0008268,
+      "upstream_inference_completions_cost": 0.0024565
+    }
+  },
+  "reasoning_tokens": 3832,
+  "cost_usd": 0.0032833,
+  "finish_reason": "stop",
+  "response_chars": 2409,
+  "response_text": "{\"act_type\": \"mutation\", \"act_subtypes\": [\"statutenaenderung\", \"sitzverlegung\", \"kantonswechsel\", \"zweckaenderung\", \"organaenderung\"], \"company_name_full\": \"CSB System AG\", \"company_name_base\": \"CSB System AG\", \"status_suffix\": null, \"alternative_names\": [], \"company_name_new\": null, \"company_name_previous\": null, \"uid\": \"CHE-106.668.289\", \"legal_form\": \"AG\", \"seat_municipality\": \"Kestenholz\", \"seat_canton\": \"SO\", \"address_care_of\": null, \"address_street\": \"Brown Boveri Strasse 7\", \"address_postcode\": \"5400\", \"address_municipality\": \"Baden\", \"act_date\": \"2026-08-31\", \"tagesregister_nr\": \"12667\", \"tagesregister_date\": \"2026-09-04\", \"prior_publication_shab_nr\": 161, \"prior_publication_date\": \"2025-08-22\", \"prior_publication_id\": 1006414692, \"authority\": \"Handelsregisteramt des Kantons Aargau\", \"canton_previous\": \"SO\", \"canton_new\": \"AG\", \"capital_new_chf\": null, \"capital_previous_chf\": null, \"domicile_new\": \"Brown Boveri Strasse 7, 5400 Baden\", \"domicile_previous\": \"Gäustrasse 52, 4703 Kestenholz\", \"persons_added\": [], \"persons_removed\": [], \"persons_changed\": [{\"name_new\": \"Kröner, Vanessa\", \"name_previous\": \"Kröner-Schimitzek, Vanessa\", \"domicile_new\": \"Ennetbaden\", \"domicile_previous\": null, \"role_new\": \"Präsidentin des Verwaltungsrates, Delegierte des Verwaltungsrates, Geschäftsführerin\", \"role_previous\": null, \"signature_new\": \"Kollektivunterschrift zu zweien\", \"signature_previous\": null, \"nationality_new\": null, \"nationality_previous\": \"deutsch\", \"heimatort_new\": \"Ennetbaden\", \"heimatort_previous\": null, \"stammanteile_new\": null, \"stammanteile_previous\": null}, {\"name_new\": \"Jorns, Hansjörg\", \"name_previous\": null, \"domicile_new\": \"Locarno\", \"domicile_previous\": \"Oensingen\", \"role_new\": \"Mitglied des Verwaltungsrates\", \"role_previous\": null, \"signature_new\": \"Kollektivunterschrift zu zweien\", \"signature_previous\": null, \"nationality_new\": null, \"nationality_previous\": null, \"heimatort_new\": \"Saanen\", \"heimatort_previous\": null, \"stammanteile_new\": null, \"stammanteile_previous\": null}], \"extras\": {\"zweck\": \"Die Gesellschaft bezweckt den Erwerb, die Verwaltung und die Veräusserung von Beteiligungen an Unternehmen sowie den Erwerb und die Akquisition, die Verwertung, Vermarktung und Verwaltung von Patenten…\", \"mitteilungen\": \"erfolgen durch Briefe, E-Mail oder eine andere geeignete elektronische Kommunikationsplattform an die im Aktienbuch eingetragenen Aktionäre\"}}",
+  "warnings": []
+}

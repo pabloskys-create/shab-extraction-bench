@@ -1,0 +1,56 @@
+{
+  "doc_id": "0141",
+  "split": "holdout",
+  "model_requested": "google/gemini-3.5-flash-lite",
+  "backend": "openrouter",
+  "timestamp": "2026-10-13T12:42:05.290595+00:00",
+  "latency_ms": 3859.99999998603,
+  "params": {
+    "temperature": 0,
+    "max_tokens": 32768,
+    "passes": 1,
+    "structured_output": false
+  },
+  "prompt_sha256": "964dec417be3b1c664627b2505ba64f3dc8c0249bfb1cb9430e82c9850e0d20c",
+  "git_commit": "6a6bd2e193f6f9b2d38f6030b0a722c8c36dae6c",
+  "git_dirty": true,
+  "attempts": 1,
+  "status": "ok",
+  "error": null,
+  "model_served": "google/gemini-3.5-flash-lite",
+  "provider_served": "Google",
+  "usage": {
+    "completion_tokens": 1383,
+    "prompt_tokens": 5925,
+    "total_tokens": 7308,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.005235,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.005235,
+      "upstream_inference_prompt_cost": 0.0017775,
+      "upstream_inference_completions_cost": 0.0034575
+    }
+  },
+  "reasoning_tokens": 0,
+  "cost_usd": 0.005235,
+  "finish_reason": "stop",
+  "response_chars": 4512,
+  "response_text": "```json\n{\n  \"act_type\": \"mutation\",\n  \"act_subtypes\": [\n    \"statutenaenderung\",\n    \"kapitalerhoehung\",\n    \"organaenderung\",\n    \"sitzverlegung\",\n    \"zweckaenderung\"\n  ],\n  \"company_name_full\": \"CSB System AG Schweiz\",\n  \"company_name_base\": \"CSB System AG Schweiz\",\n  \"status_suffix\": null,\n  \"alternative_names\": [],\n  \"company_name_new\": null,\n  \"company_name_previous\": null,\n  \"uid\": \"CHE-113.707.144\",\n  \"legal_form\": \"AG\",\n  \"seat_municipality\": \"Kestenholz\",\n  \"seat_canton\": \"SO\",\n  \"address_care_of\": null,\n  \"address_street\": \"Brown Boveri Strasse 7\",\n  \"address_postcode\": \"5400\",\n  \"address_municipality\": \"Baden\",\n  \"act_date\": \"2026-08-31\",\n  \"tagesregister_nr\": \"12666\",\n  \"tagesregister_date\": \"2026-09-04\",\n  \"prior_publication_shab_nr\": 161,\n  \"prior_publication_date\": \"2025-08-22\",\n  \"prior_publication_id\": \"1006414693\",\n  \"authority\": \"Handelsregisteramt des Kantons Aargau\",\n  \"canton_previous\": null,\n  \"canton_new\": null,\n  \"capital_new_chf\": 100000.0,\n  \"capital_previous_chf\": 100000.0,\n  \"domicile_new\": \"Brown Boveri Strasse 7, 5400 Baden\",\n  \"domicile_previous\": \"Gäustrasse 52, 4703 Kestenholz\",\n  \"persons_added\": [],\n  \"persons_removed\": [],\n  \"persons_changed\": [\n    {\n      \"name_new\": \"Kröner, Vanessa\",\n      \"name_previous\": \"Kröner-Schimitzek, Vanessa\",\n      \"domicile_new\": \"Ennetbaden\",\n      \"domicile_previous\": null,\n      \"role_new\": \"Präsidentin des Verwaltungsrates\",\n      \"role_previous\": null,\n      \"signature_new\": \"mit Kollektivunterschrift zu zweien\",\n      \"signature_previous\": null,\n      \"nationality_new\": null,\n      \"nationality_previous\": \"deutsch\",\n      \"heimatort_new\": \"Ennetbaden\",\n      \"heimatort_previous\": null,\n      \"stammanteile_new\": null,\n      \"stammanteile_previous\": null\n    },\n    {\n      \"name_new\": \"Jorns, Hansjörg\",\n      \"name_previous\": null,\n      \"domicile_new\": \"Locarno\",\n      \"domicile_previous\": \"Oensingen\",\n      \"role_new\": \"Mitglied des Verwaltungsrates\",\n      \"role_previous\": null,\n      \"signature_new\": \"mit Kollektivunterschrift zu zweien\",\n      \"signature_previous\": null,\n      \"nationality_new\": null,\n      \"nationality_previous\": null,\n      \"heimatort_new\": \"Saanen\",\n      \"heimatort_previous\": null,\n      \"stammanteile_new\": null,\n      \"stammanteile_previous\": null\n    }\n  ],\n  \"extras\": {\n    \"zweck\": \"Die Gesellschaft bezweckt die betriebswirtschaftliche Beratung von Unternehmen aller Art, insbesondere die Erstellung von Kalkulationsgrundlagen und die entsprechende Betreuung, EDV-Einführung, die EDV Programmentwicklung, die Entwicklung und Herstellung von EDV-Geräten und Standortanalysen. Sie bezweckt ferner den Vertrieb von EDV-Programmen und -Geräten und erschliesst neue Absatzmärkte im In- und Ausland. Die Gesellschaft kann alle Geschäfte tätigen und Massnahmen ergreifen, die geeignet sind, den Gesellschaftszweck direkt oder indirekt zu fördern, wie beispielsweise im In- und Ausland Unternehmungen aller Art, Grundstücke und Immaterialgüterrechte erwerben, verwalten, nutzen, belasten und veräussern, Zweigniederlassungen und Agenturen begründen sowie Kredite gewähren, Kapitalien verwalten und Garantien zugunsten von verbundenen Gesellschaften stellen. Die Gesellschaft kann Dritten oder Gesellschaften, an denen sie direkt oder indirekt beteiligt ist, sowie direkten oder indirekten Aktionären oder Gesellschaften, an denen solche direkt oder indirekt beteiligt sind, direkte oder indirekte Finanzierungen gewähren, sei es mittels Darlehen und/oder anderen Finanzierungen, ob gegen Entgelt oder nicht. Die Gesellschaft kann für ihre eigenen Verbindlichkeiten oder die Verbindlichkeiten der vorgenannten Personen Sicherheiten jeglicher Art bestellen, einschliesslich mittels Pfandrechten, Abtretungen, fiduziarischen Übereignungen, Garantien jeglicher Art oder mittels Ausgleichsverpflichtungen, ob gegen Entgelt oder nicht, auch wenn solche Finanzierungen, Sicherheiten oder Garantien im ausschliesslichen Interesse von Dritten oder Gesellschaften, an denen sie direkt oder indirekt beteiligt ist, oder von direkten oder indirekten Aktionären oder Gesellschaften, an denen solche direkt oder indirekt beteiligt sind, liegen.\",\n    \"nominal_value_chf\": 1.0,\n    \"aktien_new\": 100000,\n    \"aktien_previous\": 100,\n    \"share_classes\": \"Namenaktien\",\n    \"mitteilungen\": \"Die Mitteilungen der Gesellschaft an die Aktionäre erfolgen durch Briefe, E-Mail oder eine andere geeignete elektronische Kommunikationsplattform an die im Aktienbuch eingetragenen Aktionäre.\"\n  }\n}\n```",
+  "warnings": []
+}

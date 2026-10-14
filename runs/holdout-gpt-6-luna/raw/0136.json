@@ -1,0 +1,56 @@
+{
+  "doc_id": "0136",
+  "split": "holdout",
+  "model_requested": "openai/gpt-6-luna",
+  "backend": "openrouter",
+  "timestamp": "2026-10-13T12:17:54.673238+00:00",
+  "latency_ms": 10172.00000002049,
+  "params": {
+    "temperature": 0,
+    "max_tokens": 32768,
+    "passes": 1,
+    "structured_output": false
+  },
+  "prompt_sha256": "964dec417be3b1c664627b2505ba64f3dc8c0249bfb1cb9430e82c9850e0d20c",
+  "git_commit": "6a6bd2e193f6f9b2d38f6030b0a722c8c36dae6c",
+  "git_dirty": true,
+  "attempts": 1,
+  "status": "ok",
+  "error": null,
+  "model_served": "openai/gpt-6-luna",
+  "provider_served": "OpenAI",
+  "usage": {
+    "completion_tokens": 941,
+    "prompt_tokens": 4927,
+    "total_tokens": 5868,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 374,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 4924,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.0010863,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.0010863,
+      "upstream_inference_prompt_cost": 0.0006158,
+      "upstream_inference_completions_cost": 0.0004705
+    }
+  },
+  "reasoning_tokens": 374,
+  "cost_usd": 0.0010863,
+  "finish_reason": "stop",
+  "response_chars": 1847,
+  "response_text": "{\n  \"act_type\": \"mutation\",\n  \"act_subtypes\": [\n    \"organaenderung\",\n    \"firmenaenderung\",\n    \"zweckaenderung\"\n  ],\n  \"company_name_full\": \"Jasmin Jud Cosmetics\",\n  \"company_name_base\": \"Jasmin Jud Cosmetics\",\n  \"status_suffix\": null,\n  \"alternative_names\": [],\n  \"company_name_new\": \"JASMIN COSMETICS RÜDISÜHLI\",\n  \"company_name_previous\": \"Jasmin Jud Cosmetics\",\n  \"uid\": \"CHE-302.193.986\",\n  \"legal_form\": \"Einzelunternehmen\",\n  \"seat_municipality\": \"Brugg\",\n  \"seat_canton\": \"AG\",\n  \"address_care_of\": \"Bodyline medizinische Kosmetik GmbH\",\n  \"address_street\": \"Stahlrain 8\",\n  \"address_postcode\": \"5200\",\n  \"address_municipality\": \"Brugg AG\",\n  \"act_date\": null,\n  \"tagesregister_nr\": \"12656\",\n  \"tagesregister_date\": \"2026-09-04\",\n  \"prior_publication_shab_nr\": 85,\n  \"prior_publication_date\": \"2020-05-04\",\n  \"prior_publication_id\": 1004882341,\n  \"authority\": \"Handelsregisteramt des Kantons Aargau\",\n  \"canton_previous\": null,\n  \"canton_new\": null,\n  \"capital_new_chf\": null,\n  \"capital_previous_chf\": null,\n  \"domicile_new\": null,\n  \"domicile_previous\": null,\n  \"persons_added\": [],\n  \"persons_removed\": [],\n  \"persons_changed\": [\n    {\n      \"name_new\": \"Rüdisühli-Jud, Jasmin\",\n      \"name_previous\": \"Jud, Jasmin\",\n      \"domicile_new\": \"Hausen (AG)\",\n      \"domicile_previous\": null,\n      \"role_new\": \"Inhaberin\",\n      \"role_previous\": null,\n      \"signature_new\": \"Einzelunterschrift\",\n      \"signature_previous\": null,\n      \"nationality_new\": null,\n      \"nationality_previous\": null,\n      \"heimatort_new\": \"Schongau\",\n      \"heimatort_previous\": null,\n      \"stammanteile_new\": null,\n      \"stammanteile_previous\": null\n    }\n  ],\n  \"extras\": {\n    \"zweck\": \"Kosmetikpraxis für kosmetische Behandlungen aller Art. Beratungen und Schulungen im kosmetischen Bereich sowie Vertrieb von Kosmetik- und Schönheitsprodukten.\"\n  }\n}",
+  "warnings": []
+}

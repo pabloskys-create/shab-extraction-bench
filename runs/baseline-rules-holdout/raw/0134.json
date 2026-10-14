@@ -1,0 +1,12 @@
+{
+  "doc_id": "0134",
+  "split": "holdout",
+  "model_requested": "baseline-rules",
+  "backend": "baseline",
+  "timestamp": "2026-10-13T19:40:16.399707+00:00",
+  "git_commit": "8d5e195facf9d856c555105f976879e266b5468f",
+  "git_dirty": true,
+  "status": "ok",
+  "error": null,
+  "response_text": "{\"act_type\": \"loeschung\", \"act_subtypes\": [], \"company_name_full\": \"Bahnhoftaxi Wohlen Stutz AG\", \"company_name_base\": \"Bahnhoftaxi Wohlen Stutz AG\", \"status_suffix\": null, \"alternative_names\": [], \"company_name_new\": null, \"company_name_previous\": null, \"uid\": \"CHE-107.891.401\", \"legal_form\": \"AG\", \"seat_municipality\": \"Wohlen (AG)\", \"seat_canton\": \"AG\", \"address_care_of\": null, \"address_street\": \"Dammweg 45\", \"address_postcode\": \"5610\", \"address_municipality\": \"Wohlen AG\", \"act_date\": null, \"tagesregister_nr\": \"12684\", \"tagesregister_date\": \"2026-09-04\", \"prior_publication_shab_nr\": 116, \"prior_publication_date\": \"2026-06-19\", \"prior_publication_id\": \"1006682841\", \"authority\": \"Handelsregisteramt des Kantons Aargau\", \"canton_previous\": null, \"canton_new\": null, \"capital_new_chf\": null, \"capital_previous_chf\": null, \"domicile_new\": null, \"domicile_previous\": null, \"persons_added\": [], \"persons_removed\": [], \"persons_changed\": [], \"extras\": {}}"
+}

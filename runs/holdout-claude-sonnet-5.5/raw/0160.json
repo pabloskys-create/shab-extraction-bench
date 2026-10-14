@@ -1,0 +1,56 @@
+{
+  "doc_id": "0160",
+  "split": "holdout",
+  "model_requested": "anthropic/claude-sonnet-5.5",
+  "backend": "openrouter",
+  "timestamp": "2026-10-13T12:40:27.677204+00:00",
+  "latency_ms": 3875.0,
+  "params": {
+    "temperature": 0,
+    "max_tokens": 32768,
+    "passes": 1,
+    "structured_output": false
+  },
+  "prompt_sha256": "964dec417be3b1c664627b2505ba64f3dc8c0249bfb1cb9430e82c9850e0d20c",
+  "git_commit": "6a6bd2e193f6f9b2d38f6030b0a722c8c36dae6c",
+  "git_dirty": true,
+  "attempts": 1,
+  "status": "ok",
+  "error": null,
+  "model_served": "anthropic/claude-sonnet-5.5",
+  "provider_served": "Claude Platform on AWS",
+  "usage": {
+    "completion_tokens": 677,
+    "prompt_tokens": 7304,
+    "total_tokens": 7981,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.021378,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.021378,
+      "upstream_inference_prompt_cost": 0.014608,
+      "upstream_inference_completions_cost": 0.00677
+    }
+  },
+  "reasoning_tokens": 0,
+  "cost_usd": 0.021378,
+  "finish_reason": "stop",
+  "response_chars": 1517,
+  "response_text": "{\"act_type\":\"mutation\",\"act_subtypes\":[\"organaenderung\"],\"company_name_full\":\"Gastroenterologie Aarau AG\",\"company_name_base\":\"Gastroenterologie Aarau AG\",\"status_suffix\":null,\"alternative_names\":[],\"company_name_new\":null,\"company_name_previous\":null,\"uid\":\"CHE-259.475.045\",\"legal_form\":\"AG\",\"seat_municipality\":\"Aarau\",\"seat_canton\":\"AG\",\"address_care_of\":null,\"address_street\":\"Wiesenstrasse 25\",\"address_postcode\":\"5000\",\"address_municipality\":\"Aarau\",\"act_date\":null,\"tagesregister_nr\":\"12673\",\"tagesregister_date\":\"2026-09-04\",\"prior_publication_shab_nr\":168,\"prior_publication_date\":\"2019-09-02\",\"prior_publication_id\":\"1004707215\",\"authority\":\"Handelsregisteramt des Kantons Aargau\",\"canton_previous\":null,\"canton_new\":null,\"capital_new_chf\":null,\"capital_previous_chf\":null,\"domicile_new\":null,\"domicile_previous\":null,\"persons_added\":[],\"persons_removed\":[{\"name\":\"Riniker, Maja Regula\",\"nationality\":null,\"heimatort\":\"Habsburg\",\"domicile\":\"Suhr\",\"role\":\"Mitglied des Verwaltungsrates\",\"signature\":\"Einzelunterschrift\",\"uid\":null,\"stammanteile\":null}],\"persons_changed\":[{\"name_new\":\"Riniker, Florian Martin\",\"name_previous\":null,\"domicile_new\":\"Aarau\",\"domicile_previous\":\"Suhr\",\"role_new\":\"Mitglied des Verwaltungsrates\",\"role_previous\":\"Präsident des Verwaltungsrates\",\"signature_new\":\"Einzelunterschrift\",\"signature_previous\":null,\"nationality_new\":null,\"nationality_previous\":null,\"heimatort_new\":\"Habsburg\",\"heimatort_previous\":null,\"stammanteile_new\":null,\"stammanteile_previous\":null}],\"extras\":{}}",
+  "warnings": []
+}

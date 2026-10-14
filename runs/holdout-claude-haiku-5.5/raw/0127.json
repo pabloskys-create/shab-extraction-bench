@@ -1,0 +1,56 @@
+{
+  "doc_id": "0127",
+  "split": "holdout",
+  "model_requested": "anthropic/claude-haiku-5.5",
+  "backend": "openrouter",
+  "timestamp": "2026-10-13T12:32:26.526687+00:00",
+  "latency_ms": 5016.00000000326,
+  "params": {
+    "temperature": 0,
+    "max_tokens": 32768,
+    "passes": 1,
+    "structured_output": false
+  },
+  "prompt_sha256": "964dec417be3b1c664627b2505ba64f3dc8c0249bfb1cb9430e82c9850e0d20c",
+  "git_commit": "6a6bd2e193f6f9b2d38f6030b0a722c8c36dae6c",
+  "git_dirty": true,
+  "attempts": 1,
+  "status": "ok",
+  "error": null,
+  "model_served": "anthropic/claude-haiku-5.5",
+  "provider_served": "Claude Platform on AWS",
+  "usage": {
+    "completion_tokens": 1175,
+    "prompt_tokens": 7154,
+    "total_tokens": 8329,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 653,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.0013029,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.0013029,
+      "upstream_inference_prompt_cost": 0.0007154,
+      "upstream_inference_completions_cost": 0.0005875
+    }
+  },
+  "reasoning_tokens": 653,
+  "cost_usd": 0.0013029,
+  "finish_reason": "stop",
+  "response_chars": 1091,
+  "response_text": "{\n  \"act_type\": \"mutation\",\n  \"act_subtypes\": [],\n  \"company_name_full\": \"Kafi-Shop Imhof KLG\",\n  \"company_name_base\": \"Kafi-Shop Imhof KLG\",\n  \"status_suffix\": null,\n  \"alternative_names\": [],\n  \"company_name_new\": null,\n  \"company_name_previous\": null,\n  \"uid\": \"CHE-109.943.339\",\n  \"legal_form\": \"Kollektivgesellschaft\",\n  \"seat_municipality\": \"Laufenburg\",\n  \"seat_canton\": \"AG\",\n  \"address_care_of\": null,\n  \"address_street\": \"Baslerstrasse 12\",\n  \"address_postcode\": \"5080\",\n  \"address_municipality\": \"Laufenburg\",\n  \"act_date\": null,\n  \"tagesregister_nr\": \"12679\",\n  \"tagesregister_date\": \"2026-09-04\",\n  \"prior_publication_shab_nr\": 49,\n  \"prior_publication_date\": \"2019-03-12\",\n  \"prior_publication_id\": \"1004585765\",\n  \"authority\": \"Handelsregisteramt des Kantons Aargau\",\n  \"canton_previous\": null,\n  \"canton_new\": null,\n  \"capital_new_chf\": null,\n  \"capital_previous_chf\": null,\n  \"domicile_new\": null,\n  \"domicile_previous\": null,\n  \"persons_added\": [],\n  \"persons_removed\": [],\n  \"persons_changed\": [],\n  \"extras\": {\n    \"zweigniederlassung_new\": \"Chur (CHE-405.145.412)\"\n  }\n}",
+  "warnings": []
+}

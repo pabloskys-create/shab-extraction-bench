@@ -1,0 +1,56 @@
+{
+  "doc_id": "0135",
+  "split": "holdout",
+  "model_requested": "openai/gpt-6.1-sol",
+  "backend": "openrouter",
+  "timestamp": "2026-10-13T12:25:33.028317+00:00",
+  "latency_ms": 10922.00000002049,
+  "params": {
+    "temperature": 0,
+    "max_tokens": 32768,
+    "passes": 1,
+    "structured_output": false
+  },
+  "prompt_sha256": "964dec417be3b1c664627b2505ba64f3dc8c0249bfb1cb9430e82c9850e0d20c",
+  "git_commit": "6a6bd2e193f6f9b2d38f6030b0a722c8c36dae6c",
+  "git_dirty": true,
+  "attempts": 1,
+  "status": "ok",
+  "error": null,
+  "model_served": "openai/gpt-6.1-sol",
+  "provider_served": "Azure",
+  "usage": {
+    "completion_tokens": 406,
+    "prompt_tokens": 4889,
+    "total_tokens": 5295,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 4886,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.016281,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.016281,
+      "upstream_inference_prompt_cost": 0.012221,
+      "upstream_inference_completions_cost": 0.00406
+    }
+  },
+  "reasoning_tokens": 0,
+  "cost_usd": 0.016281,
+  "finish_reason": "stop",
+  "response_chars": 1230,
+  "response_text": "{\n  \"act_type\": \"loeschung\",\n  \"act_subtypes\": [],\n  \"company_name_full\": \"Burger Tankrevisionen Frei GmbH in Liquidation\",\n  \"company_name_base\": \"Burger Tankrevisionen Frei GmbH\",\n  \"status_suffix\": \"in Liquidation\",\n  \"alternative_names\": [],\n  \"company_name_new\": null,\n  \"company_name_previous\": null,\n  \"uid\": \"CHE-434.604.669\",\n  \"legal_form\": \"Zweigniederlassung\",\n  \"seat_municipality\": \"Würenlos\",\n  \"seat_canton\": \"AG\",\n  \"address_care_of\": null,\n  \"address_street\": \"Bahnhofstrasse 10\",\n  \"address_postcode\": \"5436\",\n  \"address_municipality\": \"Würenlos\",\n  \"act_date\": \"2026-09-04\",\n  \"tagesregister_nr\": \"12678\",\n  \"tagesregister_date\": \"2026-09-04\",\n  \"prior_publication_shab_nr\": 144,\n  \"prior_publication_date\": \"2024-07-26\",\n  \"prior_publication_id\": \"1006095060\",\n  \"authority\": \"Handelsregisteramt des Kantons Aargau\",\n  \"canton_previous\": null,\n  \"canton_new\": null,\n  \"capital_new_chf\": null,\n  \"capital_previous_chf\": null,\n  \"domicile_new\": null,\n  \"domicile_previous\": null,\n  \"persons_added\": [],\n  \"persons_removed\": [],\n  \"persons_changed\": [],\n  \"extras\": {\n    \"hauptsitz\": \"Zug\",\n    \"loeschung_reason\": \"Löschung der Hauptniederlassung (SHAB vom 02.09.2026) im Sinne von Art. 111 Abs. 2 HRegV\"\n  }\n}",
+  "warnings": []
+}

@@ -1,0 +1,12 @@
+{
+  "doc_id": "0125",
+  "split": "holdout",
+  "model_requested": "baseline-rules",
+  "backend": "baseline",
+  "timestamp": "2026-10-13T19:40:16.399707+00:00",
+  "git_commit": "8d5e195facf9d856c555105f976879e266b5468f",
+  "git_dirty": true,
+  "status": "ok",
+  "error": null,
+  "response_text": "{\"act_type\": \"mutation\", \"act_subtypes\": [], \"company_name_full\": \"Inveno AG\", \"company_name_base\": \"Inveno AG\", \"status_suffix\": null, \"alternative_names\": [\"Inveno SA\", \"Inveno Ltd\"], \"company_name_new\": null, \"company_name_previous\": null, \"uid\": \"CHE-256.227.634\", \"legal_form\": \"AG\", \"seat_municipality\": \"Sursee\", \"seat_canton\": null, \"address_care_of\": null, \"address_street\": \"Hintermättlistrasse 3\", \"address_postcode\": \"5506\", \"address_municipality\": \"Mägenwil\", \"act_date\": null, \"tagesregister_nr\": \"12657\", \"tagesregister_date\": \"2026-09-04\", \"prior_publication_shab_nr\": 223, \"prior_publication_date\": \"2025-11-18\", \"prior_publication_id\": \"1006487316\", \"authority\": \"Handelsregisteramt des Kantons Aargau\", \"canton_previous\": null, \"canton_new\": null, \"capital_new_chf\": null, \"capital_previous_chf\": null, \"domicile_new\": null, \"domicile_previous\": null, \"persons_added\": [], \"persons_removed\": [], \"persons_changed\": [], \"extras\": {}}"
+}

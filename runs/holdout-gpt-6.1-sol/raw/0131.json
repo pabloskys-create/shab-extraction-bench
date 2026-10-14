@@ -1,0 +1,56 @@
+{
+  "doc_id": "0131",
+  "split": "holdout",
+  "model_requested": "openai/gpt-6.1-sol",
+  "backend": "openrouter",
+  "timestamp": "2026-10-13T12:24:49.988631+00:00",
+  "latency_ms": 9296.999999962281,
+  "params": {
+    "temperature": 0,
+    "max_tokens": 32768,
+    "passes": 1,
+    "structured_output": false
+  },
+  "prompt_sha256": "964dec417be3b1c664627b2505ba64f3dc8c0249bfb1cb9430e82c9850e0d20c",
+  "git_commit": "6a6bd2e193f6f9b2d38f6030b0a722c8c36dae6c",
+  "git_dirty": true,
+  "attempts": 1,
+  "status": "ok",
+  "error": null,
+  "model_served": "openai/gpt-6.1-sol",
+  "provider_served": "OpenAI",
+  "usage": {
+    "completion_tokens": 589,
+    "prompt_tokens": 4941,
+    "total_tokens": 5530,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 4938,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.018241,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.018241,
+      "upstream_inference_prompt_cost": 0.012351,
+      "upstream_inference_completions_cost": 0.00589
+    }
+  },
+  "reasoning_tokens": 0,
+  "cost_usd": 0.018241,
+  "finish_reason": "stop",
+  "response_chars": 1858,
+  "response_text": "{\n  \"act_type\": \"mutation\",\n  \"act_subtypes\": [\"organaenderung\"],\n  \"company_name_full\": \"Physiotherapie Lipa GmbH\",\n  \"company_name_base\": \"Physiotherapie Lipa GmbH\",\n  \"status_suffix\": null,\n  \"alternative_names\": [],\n  \"company_name_new\": null,\n  \"company_name_previous\": null,\n  \"uid\": \"CHE-265.726.209\",\n  \"legal_form\": \"GmbH\",\n  \"seat_municipality\": \"Gebenstorf\",\n  \"seat_canton\": \"AG\",\n  \"address_care_of\": null,\n  \"address_street\": \"Geeligstrasse 1\",\n  \"address_postcode\": \"5412\",\n  \"address_municipality\": \"Gebenstorf\",\n  \"act_date\": null,\n  \"tagesregister_nr\": \"12652\",\n  \"tagesregister_date\": \"2026-09-04\",\n  \"prior_publication_shab_nr\": 149,\n  \"prior_publication_date\": \"2024-08-05\",\n  \"prior_publication_id\": \"1006100000\",\n  \"authority\": \"Handelsregisteramt des Kantons Aargau\",\n  \"canton_previous\": null,\n  \"canton_new\": null,\n  \"capital_new_chf\": null,\n  \"capital_previous_chf\": null,\n  \"domicile_new\": null,\n  \"domicile_previous\": null,\n  \"persons_added\": [],\n  \"persons_removed\": [\n    {\n      \"name\": \"Birrer, Katica\",\n      \"nationality\": null,\n      \"heimatort\": \"Luthern\",\n      \"domicile\": \"Hendschiken\",\n      \"role\": \"Gesellschafterin\",\n      \"signature\": \"Einzelunterschrift\",\n      \"uid\": null,\n      \"stammanteile\": 10\n    }\n  ],\n  \"persons_changed\": [\n    {\n      \"name_new\": \"Tropsch, Christian\",\n      \"name_previous\": null,\n      \"domicile_new\": \"Dottikon\",\n      \"domicile_previous\": \"Thalheim (AG)\",\n      \"role_new\": \"Gesellschafter und Geschäftsführer\",\n      \"role_previous\": null,\n      \"signature_new\": \"Einzelunterschrift\",\n      \"signature_previous\": null,\n      \"nationality_new\": \"deutsch\",\n      \"nationality_previous\": null,\n      \"heimatort_new\": null,\n      \"heimatort_previous\": null,\n      \"stammanteile_new\": 20,\n      \"stammanteile_previous\": 10\n    }\n  ],\n  \"extras\": {\n    \"nominal_value_chf\": 1000.0\n  }\n}",
+  "warnings": []
+}

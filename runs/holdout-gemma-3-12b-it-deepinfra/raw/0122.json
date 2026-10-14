@@ -1,0 +1,56 @@
+{
+  "doc_id": "0122",
+  "split": "holdout",
+  "model_requested": "google/gemma-3-12b-it",
+  "backend": "openrouter",
+  "timestamp": "2026-10-13T16:20:22.794603+00:00",
+  "latency_ms": 21937.99999996554,
+  "params": {
+    "temperature": 0,
+    "max_tokens": 8192,
+    "passes": 1,
+    "structured_output": false
+  },
+  "prompt_sha256": "964dec417be3b1c664627b2505ba64f3dc8c0249bfb1cb9430e82c9850e0d20c",
+  "git_commit": "8d5e195facf9d856c555105f976879e266b5468f",
+  "git_dirty": true,
+  "attempts": 1,
+  "status": "ok",
+  "error": null,
+  "model_served": "google/gemma-3-12b-it",
+  "provider_served": "DeepInfra",
+  "usage": {
+    "completion_tokens": 1192,
+    "prompt_tokens": 5551,
+    "total_tokens": 6743,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00045635,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00045635,
+      "upstream_inference_prompt_cost": 0.00027755,
+      "upstream_inference_completions_cost": 0.0001788
+    }
+  },
+  "reasoning_tokens": 0,
+  "cost_usd": 0.00045635,
+  "finish_reason": "stop",
+  "response_chars": 3392,
+  "response_text": "```json\n{\n  \"act_type\": \"mutation\",\n  \"act_subtypes\": [],\n  \"company_name_full\": \"Foodtower GmbH, in Brugg\",\n  \"company_name_base\": \"Foodtower GmbH\",\n  \"status_suffix\": null,\n  \"alternative_names\": [],\n  \"company_name_new\": null,\n  \"company_name_previous\": null,\n  \"uid\": \"CHE-234.990.986\",\n  \"legal_form\": \"Gesellschaft mit beschränkter Haftung\",\n  \"seat_municipality\": \"Brugg\",\n  \"seat_canton\": \"AG\",\n  \"address_care_of\": null,\n  \"address_street\": \"Vorstadt 15\",\n  \"address_postcode\": \"5200\",\n  \"address_municipality\": \"Brugg AG\",\n  \"act_date\": null,\n  \"tagesregister_nr\": \"12691\",\n  \"tagesregister_date\": \"2026-09-04\",\n  \"prior_publication_shab_nr\": 153,\n  \"prior_publication_date\": \"2026-08-11\",\n  \"prior_publication_id\": null,\n  \"authority\": \"Handelsregisteramt des Kantons Aargau\",\n  \"canton_previous\": null,\n  \"canton_new\": null,\n  \"capital_new_chf\": null,\n  \"capital_previous_chf\": null,\n  \"domicile_new\": null,\n  \"domicile_previous\": null,\n  \"persons_added\": [],\n  \"persons_removed\": [],\n  \"persons_changed\": [\n    {\n      \"name_new\": \"Alkan, Seyyid Bilal\",\n      \"name_previous\": \"Alkan, Seyyid Bilal\",\n      \"domicile_new\": \"Brugg\",\n      \"domicile_previous\": \"Neufahrn bei Freising (DE)\",\n      \"role_new\": \"Gesellschafter und Geschäftsführer\",\n      \"role_previous\": \"Gesellschafter und Geschäftsführer\",\n      \"signature_new\": \"mit Einzelunterschrift\",\n      \"signature_previous\": \"mit Einzelunterschrift\",\n      \"nationality_new\": \"deutscher\",\n      \"nationality_previous\": \"deutscher\",\n      \"heimatort_new\": null,\n      \"heimatort_previous\": null,\n      \"stammanteile_new\": 50,\n      \"stammanteile_previous\": 50\n    },\n    {\n      \"name_new\": \"Alkan, Ömer Burak\",\n      \"name_previous\": \"Alkan, Ömer Burak\",\n      \"domicile_new\": \"Neufahrn bei Freising (DE)\",\n      \"domicile_previous\": \"Neufahrn bei Freising (DE)\",\n      \"role_new\": \"Gesellschafter\",\n      \"role_previous\": \"Gesellschafter\",\n      \"signature_new\": \"mit Einzelunterschrift\",\n      \"signature_previous\": \"mit Einzelunterschrift\",\n      \"nationality_new\": \"deutscher\",\n      \"nationality_previous\": \"deutscher\",\n      \"heimatort_new\": null,\n      \"heimatort_previous\": null,\n      \"stammanteile_new\": 50,\n      \"stammanteile_previous\": 50\n    },\n    {\n      \"name_new\": \"Mendi, Nürcan\",\n      \"name_previous\": \"Mendi, Nürcan\",\n      \"domicile_new\": \"Neufahrn bei Freising (DE)\",\n      \"domicile_previous\": \"Neufahrn bei Freising (DE)\",\n      \"role_new\": \"Gesellschafterin\",\n      \"role_previous\": \"Gesellschafterin\",\n      \"signature_new\": \"mit Einzelunterschrift\",\n      \"signature_previous\": \"mit Einzelunterschrift\",\n      \"nationality_new\": \"deutsche\",\n      \"nationality_previous\": \"deutsche\",\n      \"heimatort_new\": null,\n      \"heimatort_previous\": null,\n      \"stammanteile_new\": 50,\n      \"stammanteile_previous\": 50\n    },\n    {\n      \"name_new\": \"Sevimli, Adem\",\n      \"name_previous\": \"Sevimli, Adem\",\n      \"domicile_new\": \"Schaffhausen\",\n      \"domicile_previous\": null,\n      \"role_new\": \"Gesellschafter\",\n      \"role_previous\": \"Gesellschafter\",\n      \"signature_new\": \"ohne Zeichnungsberechtigung\",\n      \"signature_previous\": \"mit Einzelunterschrift\",\n      \"nationality_new\": \"deutscher\",\n      \"nationality_previous\": \"deutscher\",\n      \"heimatort_new\": null,\n      \"heimatort_previous\": null,\n      \"stammanteile_new\": 50,\n      \"stammanteile_previous\": 50\n    }\n  ],\n  \"extras\": {}\n}\n```",
+  "warnings": []
+}

@@ -1,0 +1,56 @@
+{
+  "doc_id": "0130",
+  "split": "holdout",
+  "model_requested": "mistralai/mistral-large-4-0",
+  "backend": "openrouter",
+  "timestamp": "2026-10-13T13:00:27.795023+00:00",
+  "latency_ms": 99984.99999998603,
+  "params": {
+    "temperature": 0,
+    "max_tokens": 32768,
+    "passes": 1,
+    "structured_output": false
+  },
+  "prompt_sha256": "964dec417be3b1c664627b2505ba64f3dc8c0249bfb1cb9430e82c9850e0d20c",
+  "git_commit": "6a6bd2e193f6f9b2d38f6030b0a722c8c36dae6c",
+  "git_dirty": true,
+  "attempts": 1,
+  "status": "ok",
+  "error": null,
+  "model_served": "mistralai/mistral-large-4-0",
+  "provider_served": "Mistral",
+  "usage": {
+    "completion_tokens": 7845,
+    "prompt_tokens": 5083,
+    "total_tokens": 12928,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 6361,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 4076,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.01736613,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.01736613,
+      "upstream_inference_prompt_cost": 0.00097008,
+      "upstream_inference_completions_cost": 0.01639605
+    }
+  },
+  "reasoning_tokens": 6361,
+  "cost_usd": 0.01736613,
+  "finish_reason": "stop",
+  "response_chars": 3026,
+  "response_text": "{\n  \"act_type\": \"mutation\",\n  \"act_subtypes\": [\"organaenderung\"],\n  \"company_name_full\": \"Auto-Germann AG\",\n  \"company_name_base\": \"Auto-Germann AG\",\n  \"status_suffix\": null,\n  \"alternative_names\": [],\n  \"company_name_new\": null,\n  \"company_name_previous\": null,\n  \"uid\": \"CHE-105.976.647\",\n  \"legal_form\": \"AG\",\n  \"seat_municipality\": \"Hunzenschwil\",\n  \"seat_canton\": \"AG\",\n  \"address_care_of\": null,\n  \"address_street\": \"Hauptstrasse 37\",\n  \"address_postcode\": \"5502\",\n  \"address_municipality\": \"Hunzenschwil\",\n  \"act_date\": null,\n  \"tagesregister_nr\": \"12636\",\n  \"tagesregister_date\": \"2026-09-04\",\n  \"prior_publication_shab_nr\": 67,\n  \"prior_publication_date\": \"2026-04-09\",\n  \"prior_publication_id\": 1006620204,\n  \"authority\": \"Handelsregisteramt des Kantons Aargau\",\n  \"canton_previous\": null,\n  \"canton_new\": null,\n  \"capital_new_chf\": null,\n  \"capital_previous_chf\": null,\n  \"domicile_new\": null,\n  \"domicile_previous\": null,\n  \"persons_added\": [\n    {\n      \"name\": \"Germann, Karin\",\n      \"nationality\": null,\n      \"heimatort\": \"Schaffhausen, Merishausen und Römerswil\",\n      \"domicile\": \"Hägglingen\",\n      \"role\": null,\n      \"signature\": \"Kollektivunterschrift zu zweien\",\n      \"uid\": null,\n      \"stammanteile\": null\n    }\n  ],\n  \"persons_removed\": [\n    {\n      \"name\": \"Germann, Urs\",\n      \"nationality\": null,\n      \"heimatort\": \"Merishausen und Schaffhausen\",\n      \"domicile\": \"Hunzenschwil\",\n      \"role\": \"Mitglied des Verwaltungsrates\",\n      \"signature\": \"Kollektivunterschrift zu zweien\",\n      \"uid\": null,\n      \"stammanteile\": null\n    },\n    {\n      \"name\": \"Germann, Rolf\",\n      \"nationality\": null,\n      \"heimatort\": \"Merishausen und Schaffhausen\",\n      \"domicile\": \"Lenzburg\",\n      \"role\": \"Mitglied des Verwaltungsrates\",\n      \"signature\": \"Kollektivunterschrift zu zweien\",\n      \"uid\": null,\n      \"stammanteile\": null\n    }\n  ],\n  \"persons_changed\": [\n    {\n      \"name_new\": \"Germann, Patrick\",\n      \"name_previous\": null,\n      \"domicile_new\": \"Hägglingen\",\n      \"domicile_previous\": null,\n      \"role_new\": \"Präsident des Verwaltungsrates\",\n      \"role_previous\": null,\n      \"signature_new\": \"Einzelunterschrift\",\n      \"signature_previous\": \"Kollektivunterschrift zu zweien\",\n      \"nationality_new\": null,\n      \"nationality_previous\": null,\n      \"heimatort_new\": \"Schaffhausen und Merishausen\",\n      \"heimatort_previous\": null,\n      \"stammanteile_new\": null,\n      \"stammanteile_previous\": null\n    },\n    {\n      \"name_new\": \"Wehrli, Martin\",\n      \"name_previous\": null,\n      \"domicile_new\": \"Gretzenbach\",\n      \"domicile_previous\": null,\n      \"role_new\": \"Mitglied des Verwaltungsrates\",\n      \"role_previous\": \"ohne eingetragene Funktion\",\n      \"signature_new\": \"Kollektivunterschrift zu zweien\",\n      \"signature_previous\": null,\n      \"nationality_new\": null,\n      \"nationality_previous\": null,\n      \"heimatort_new\": \"Küttigen\",\n      \"heimatort_previous\": null,\n      \"stammanteile_new\": null,\n      \"stammanteile_previous\": null\n    }\n  ],\n  \"extras\": {}\n}",
+  "warnings": []
+}

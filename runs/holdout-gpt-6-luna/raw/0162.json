@@ -1,0 +1,56 @@
+{
+  "doc_id": "0162",
+  "split": "holdout",
+  "model_requested": "openai/gpt-6-luna",
+  "backend": "openrouter",
+  "timestamp": "2026-10-13T12:21:21.420345+00:00",
+  "latency_ms": 5688.000000023749,
+  "params": {
+    "temperature": 0,
+    "max_tokens": 32768,
+    "passes": 1,
+    "structured_output": false
+  },
+  "prompt_sha256": "964dec417be3b1c664627b2505ba64f3dc8c0249bfb1cb9430e82c9850e0d20c",
+  "git_commit": "6a6bd2e193f6f9b2d38f6030b0a722c8c36dae6c",
+  "git_dirty": true,
+  "attempts": 1,
+  "status": "ok",
+  "error": null,
+  "model_served": "openai/gpt-6-luna",
+  "provider_served": "OpenAI",
+  "usage": {
+    "completion_tokens": 457,
+    "prompt_tokens": 4842,
+    "total_tokens": 5299,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 88,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 4839,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.000833675,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.000833675,
+      "upstream_inference_prompt_cost": 0.000605175,
+      "upstream_inference_completions_cost": 0.0002285
+    }
+  },
+  "reasoning_tokens": 88,
+  "cost_usd": 0.000833675,
+  "finish_reason": "stop",
+  "response_chars": 1127,
+  "response_text": "{\n  \"act_type\": \"mutation\",\n  \"act_subtypes\": [\"konkurseroeffnung\"],\n  \"company_name_full\": \"Thavanesan Food Delivery Service\",\n  \"company_name_base\": \"Thavanesan Food Delivery Service\",\n  \"status_suffix\": null,\n  \"alternative_names\": [],\n  \"company_name_new\": null,\n  \"company_name_previous\": null,\n  \"uid\": \"CHE-477.377.217\",\n  \"legal_form\": \"Einzelunternehmen\",\n  \"seat_municipality\": \"Mägenwil\",\n  \"seat_canton\": \"AG\",\n  \"address_care_of\": null,\n  \"address_street\": \"Wolfbodenstrasse 3\",\n  \"address_postcode\": \"5506\",\n  \"address_municipality\": \"Mägenwil\",\n  \"act_date\": \"2026-09-01\",\n  \"tagesregister_nr\": \"12682\",\n  \"tagesregister_date\": \"2026-09-04\",\n  \"prior_publication_shab_nr\": 222,\n  \"prior_publication_date\": \"2024-11-14\",\n  \"prior_publication_id\": 1006178628,\n  \"authority\": \"Handelsregisteramt des Kantons Aargau\",\n  \"canton_previous\": null,\n  \"canton_new\": null,\n  \"capital_new_chf\": null,\n  \"capital_previous_chf\": null,\n  \"domicile_new\": null,\n  \"domicile_previous\": null,\n  \"persons_added\": [],\n  \"persons_removed\": [],\n  \"persons_changed\": [],\n  \"extras\": {\n    \"konkurs_wirkung_ab\": \"2026-09-01 10:00\"\n  }\n}",
+  "warnings": []
+}

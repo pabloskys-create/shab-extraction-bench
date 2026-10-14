@@ -1,0 +1,56 @@
+{
+  "doc_id": "0139",
+  "split": "holdout",
+  "model_requested": "google/gemma-3-12b-it",
+  "backend": "openrouter",
+  "timestamp": "2026-10-13T16:24:08.064091+00:00",
+  "latency_ms": 8250.0,
+  "params": {
+    "temperature": 0,
+    "max_tokens": 8192,
+    "passes": 1,
+    "structured_output": false
+  },
+  "prompt_sha256": "964dec417be3b1c664627b2505ba64f3dc8c0249bfb1cb9430e82c9850e0d20c",
+  "git_commit": "8d5e195facf9d856c555105f976879e266b5468f",
+  "git_dirty": true,
+  "attempts": 1,
+  "status": "ok",
+  "error": null,
+  "model_served": "google/gemma-3-12b-it",
+  "provider_served": "DeepInfra",
+  "usage": {
+    "completion_tokens": 453,
+    "prompt_tokens": 5350,
+    "total_tokens": 5803,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00033545,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00033545,
+      "upstream_inference_prompt_cost": 0.0002675,
+      "upstream_inference_completions_cost": 6.795e-05
+    }
+  },
+  "reasoning_tokens": 0,
+  "cost_usd": 0.00033545,
+  "finish_reason": "stop",
+  "response_chars": 1114,
+  "response_text": "```json\n{\n  \"act_type\": \"mutation\",\n  \"act_subtypes\": [],\n  \"company_name_full\": \"Generation Living GmbH, in Aarau\",\n  \"company_name_base\": \"Generation Living GmbH\",\n  \"status_suffix\": null,\n  \"alternative_names\": [],\n  \"company_name_new\": null,\n  \"company_name_previous\": null,\n  \"uid\": \"CHE-438.589.922\",\n  \"legal_form\": \"Gesellschaft mit beschränkter Haftung\",\n  \"seat_municipality\": \"Aarau\",\n  \"seat_canton\": \"AG\",\n  \"address_care_of\": null,\n  \"address_street\": \"Glashütte 89d\",\n  \"address_postcode\": \"3807\",\n  \"address_municipality\": \"Iseltwald\",\n  \"act_date\": null,\n  \"tagesregister_nr\": \"12688\",\n  \"tagesregister_date\": \"2026-09-04\",\n  \"prior_publication_shab_nr\": 160,\n  \"prior_publication_date\": \"2025-08-21\",\n  \"prior_publication_id\": null,\n  \"authority\": \"Handelsregisteramt des Kantons Aargau\",\n  \"canton_previous\": \"AG\",\n  \"canton_new\": \"BE\",\n  \"capital_new_chf\": null,\n  \"capital_previous_chf\": null,\n  \"domicile_new\": \"Glashütte 89d, 3807 Iseltwald\",\n  \"domicile_previous\": \"Buchserstrasse 4, 5000 Aarau\",\n  \"persons_added\": [],\n  \"persons_removed\": [],\n  \"persons_changed\": [],\n  \"extras\": {}\n}\n```",
+  "warnings": []
+}

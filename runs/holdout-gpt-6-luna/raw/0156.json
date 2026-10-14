@@ -1,0 +1,56 @@
+{
+  "doc_id": "0156",
+  "split": "holdout",
+  "model_requested": "openai/gpt-6-luna",
+  "backend": "openrouter",
+  "timestamp": "2026-10-13T12:20:37.504113+00:00",
+  "latency_ms": 4733.99999999674,
+  "params": {
+    "temperature": 0,
+    "max_tokens": 32768,
+    "passes": 1,
+    "structured_output": false
+  },
+  "prompt_sha256": "964dec417be3b1c664627b2505ba64f3dc8c0249bfb1cb9430e82c9850e0d20c",
+  "git_commit": "6a6bd2e193f6f9b2d38f6030b0a722c8c36dae6c",
+  "git_dirty": true,
+  "attempts": 1,
+  "status": "ok",
+  "error": null,
+  "model_served": "openai/gpt-6-luna",
+  "provider_served": "OpenAI",
+  "usage": {
+    "completion_tokens": 470,
+    "prompt_tokens": 4833,
+    "total_tokens": 5303,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 107,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 4830,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00083905,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00083905,
+      "upstream_inference_prompt_cost": 0.00060405,
+      "upstream_inference_completions_cost": 0.000235
+    }
+  },
+  "reasoning_tokens": 107,
+  "cost_usd": 0.00083905,
+  "finish_reason": "stop",
+  "response_chars": 1079,
+  "response_text": "{\n  \"act_type\": \"mutation\",\n  \"act_subtypes\": [],\n  \"company_name_full\": \"Eddy Kaufmann AG Buchs\",\n  \"company_name_base\": \"Eddy Kaufmann AG Buchs\",\n  \"status_suffix\": null,\n  \"alternative_names\": [],\n  \"company_name_new\": null,\n  \"company_name_previous\": null,\n  \"uid\": \"CHE-107.076.105\",\n  \"legal_form\": \"AG\",\n  \"seat_municipality\": \"Buchs (AG)\",\n  \"seat_canton\": \"AG\",\n  \"address_care_of\": null,\n  \"address_street\": \"Neumattstrasse 42\",\n  \"address_postcode\": \"5033\",\n  \"address_municipality\": \"Buchs AG\",\n  \"act_date\": null,\n  \"tagesregister_nr\": \"12646\",\n  \"tagesregister_date\": \"2026-09-04\",\n  \"prior_publication_shab_nr\": 46,\n  \"prior_publication_date\": \"2022-03-07\",\n  \"prior_publication_id\": \"1005421469\",\n  \"authority\": \"Handelsregisteramt des Kantons Aargau\",\n  \"canton_previous\": null,\n  \"canton_new\": null,\n  \"capital_new_chf\": null,\n  \"capital_previous_chf\": null,\n  \"domicile_new\": \"Neumattstrasse 42, 5033 Buchs AG\",\n  \"domicile_previous\": \"Neumattstrasse 42, 5033 Buchs AG\",\n  \"persons_added\": [],\n  \"persons_removed\": [],\n  \"persons_changed\": [],\n  \"extras\": {}\n}",
+  "warnings": []
+}

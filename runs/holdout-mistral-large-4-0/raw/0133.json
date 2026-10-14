@@ -1,0 +1,56 @@
+{
+  "doc_id": "0133",
+  "split": "holdout",
+  "model_requested": "mistralai/mistral-large-4-0",
+  "backend": "openrouter",
+  "timestamp": "2026-10-13T13:07:51.956315+00:00",
+  "latency_ms": 76155.99999995902,
+  "params": {
+    "temperature": 0,
+    "max_tokens": 32768,
+    "passes": 1,
+    "structured_output": false
+  },
+  "prompt_sha256": "964dec417be3b1c664627b2505ba64f3dc8c0249bfb1cb9430e82c9850e0d20c",
+  "git_commit": "6a6bd2e193f6f9b2d38f6030b0a722c8c36dae6c",
+  "git_dirty": true,
+  "attempts": 2,
+  "status": "ok",
+  "error": null,
+  "model_served": "mistralai/mistral-large-4-0",
+  "provider_served": "Mistral",
+  "usage": {
+    "completion_tokens": 7058,
+    "prompt_tokens": 5042,
+    "total_tokens": 12100,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 6101,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 4076,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.01569342,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.01569342,
+      "upstream_inference_prompt_cost": 0.0009422,
+      "upstream_inference_completions_cost": 0.01475122
+    }
+  },
+  "reasoning_tokens": 6101,
+  "cost_usd": 0.01569342,
+  "finish_reason": "stop",
+  "response_chars": 1318,
+  "response_text": "{\n  \"act_type\": \"mutation\",\n  \"act_subtypes\": [\"firmenaenderung\", \"konkurseroeffnung\"],\n  \"company_name_full\": \"M&M Consulting GmbH, Zweigniederlassung Zofingen\",\n  \"company_name_base\": \"M&M Consulting GmbH, Zweigniederlassung Zofingen\",\n  \"status_suffix\": null,\n  \"alternative_names\": [],\n  \"company_name_new\": \"M&M Consulting GmbH, Zweigniederlassung Zofingen in Liquidation\",\n  \"company_name_previous\": \"M&M Consulting GmbH, Zweigniederlassung Zofingen\",\n  \"uid\": \"CHE-491.574.811\",\n  \"legal_form\": \"Zweigniederlassung\",\n  \"seat_municipality\": \"Zofingen\",\n  \"seat_canton\": \"AG\",\n  \"address_care_of\": null,\n  \"address_street\": \"Untere Brühlstrasse 30\",\n  \"address_postcode\": \"4800\",\n  \"address_municipality\": \"Zofingen\",\n  \"act_date\": \"2026-08-26\",\n  \"tagesregister_nr\": \"12680\",\n  \"tagesregister_date\": \"2026-09-04\",\n  \"prior_publication_shab_nr\": 38,\n  \"prior_publication_date\": \"2022-02-23\",\n  \"prior_publication_id\": 1005412605,\n  \"authority\": \"Handelsregisteramt des Kantons Aargau\",\n  \"canton_previous\": null,\n  \"canton_new\": null,\n  \"capital_new_chf\": null,\n  \"capital_previous_chf\": null,\n  \"domicile_new\": null,\n  \"domicile_previous\": null,\n  \"persons_added\": [],\n  \"persons_removed\": [],\n  \"persons_changed\": [],\n  \"extras\": {\n    \"konkurs_wirkung_ab\": \"2026-08-26 10:00\",\n    \"hauptsitz\": \"Triengen\"\n  }\n}",
+  "warnings": []
+}

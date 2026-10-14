@@ -1,0 +1,56 @@
+{
+  "doc_id": "0125",
+  "split": "holdout",
+  "model_requested": "google/gemini-3.5-flash-lite",
+  "backend": "openrouter",
+  "timestamp": "2026-10-13T12:41:25.455179+00:00",
+  "latency_ms": 2061.9999999762513,
+  "params": {
+    "temperature": 0,
+    "max_tokens": 32768,
+    "passes": 1,
+    "structured_output": false
+  },
+  "prompt_sha256": "964dec417be3b1c664627b2505ba64f3dc8c0249bfb1cb9430e82c9850e0d20c",
+  "git_commit": "6a6bd2e193f6f9b2d38f6030b0a722c8c36dae6c",
+  "git_dirty": true,
+  "attempts": 1,
+  "status": "ok",
+  "error": null,
+  "model_served": "google/gemini-3.5-flash-lite",
+  "provider_served": "Google",
+  "usage": {
+    "completion_tokens": 493,
+    "prompt_tokens": 5353,
+    "total_tokens": 5846,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.0028384,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.0028384,
+      "upstream_inference_prompt_cost": 0.0016059,
+      "upstream_inference_completions_cost": 0.0012325
+    }
+  },
+  "reasoning_tokens": 0,
+  "cost_usd": 0.0028384,
+  "finish_reason": "stop",
+  "response_chars": 1149,
+  "response_text": "{\n  \"act_type\": \"mutation\",\n  \"act_subtypes\": [\n    \"statutenaenderung\",\n    \"sitzverlegung\"\n  ],\n  \"company_name_full\": \"Inveno AG\",\n  \"company_name_base\": \"Inveno AG\",\n  \"status_suffix\": null,\n  \"alternative_names\": [\n    \"Inveno SA\",\n    \"Inveno Ltd\"\n  ],\n  \"company_name_new\": null,\n  \"company_name_previous\": null,\n  \"uid\": \"CHE-256.227.634\",\n  \"legal_form\": \"AG\",\n  \"seat_municipality\": \"Sursee\",\n  \"seat_canton\": \"LU\",\n  \"address_care_of\": null,\n  \"address_street\": \"Hintermättlistrasse 3\",\n  \"address_postcode\": \"5506\",\n  \"address_municipality\": \"Mägenwil\",\n  \"act_date\": \"2026-08-26\",\n  \"tagesregister_nr\": \"12657\",\n  \"tagesregister_date\": \"2026-09-04\",\n  \"prior_publication_shab_nr\": 223,\n  \"prior_publication_date\": \"2025-11-18\",\n  \"prior_publication_id\": \"1006487316\",\n  \"authority\": \"Handelsregisteramt des Kantons Aargau\",\n  \"canton_previous\": null,\n  \"canton_new\": null,\n  \"capital_new_chf\": null,\n  \"capital_previous_chf\": null,\n  \"domicile_new\": \"Hintermättlistrasse 3, 5506 Mägenwil\",\n  \"domicile_previous\": \"Bahnhofstrasse 6c, 6210 Sursee\",\n  \"persons_added\": [],\n  \"persons_removed\": [],\n  \"persons_changed\": [],\n  \"extras\": {}\n}",
+  "warnings": []
+}

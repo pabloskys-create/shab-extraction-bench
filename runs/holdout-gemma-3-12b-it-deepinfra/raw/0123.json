@@ -1,0 +1,56 @@
+{
+  "doc_id": "0123",
+  "split": "holdout",
+  "model_requested": "google/gemma-3-12b-it",
+  "backend": "openrouter",
+  "timestamp": "2026-10-13T16:20:44.899636+00:00",
+  "latency_ms": 22094.00000004098,
+  "params": {
+    "temperature": 0,
+    "max_tokens": 8192,
+    "passes": 1,
+    "structured_output": false
+  },
+  "prompt_sha256": "964dec417be3b1c664627b2505ba64f3dc8c0249bfb1cb9430e82c9850e0d20c",
+  "git_commit": "8d5e195facf9d856c555105f976879e266b5468f",
+  "git_dirty": true,
+  "attempts": 1,
+  "status": "ok",
+  "error": null,
+  "model_served": "google/gemma-3-12b-it",
+  "provider_served": "DeepInfra",
+  "usage": {
+    "completion_tokens": 1214,
+    "prompt_tokens": 5476,
+    "total_tokens": 6690,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.0004559,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.0004559,
+      "upstream_inference_prompt_cost": 0.0002738,
+      "upstream_inference_completions_cost": 0.0001821
+    }
+  },
+  "reasoning_tokens": 0,
+  "cost_usd": 0.0004559,
+  "finish_reason": "stop",
+  "response_chars": 3544,
+  "response_text": "```json\n{\n  \"act_type\": \"mutation\",\n  \"act_subtypes\": [\n    \"organaenderung\"\n  ],\n  \"company_name_full\": \"Felix Stöckli AG, in Bremgarten (AG)\",\n  \"company_name_base\": \"Felix Stöckli AG\",\n  \"status_suffix\": null,\n  \"alternative_names\": [],\n  \"company_name_new\": null,\n  \"company_name_previous\": null,\n  \"uid\": \"CHE-105.722.940\",\n  \"legal_form\": \"AG\",\n  \"seat_municipality\": \"Bremgarten (AG)\",\n  \"seat_canton\": \"AG\",\n  \"address_care_of\": null,\n  \"address_street\": \"Rüttenenstrasse 6\",\n  \"address_postcode\": \"5620\",\n  \"address_municipality\": \"Bremgarten AG\",\n  \"act_date\": null,\n  \"tagesregister_nr\": \"12648\",\n  \"tagesregister_date\": \"2026-09-04\",\n  \"prior_publication_shab_nr\": 135,\n  \"prior_publication_date\": \"2023-07-14\",\n  \"prior_publication_id\": null,\n  \"authority\": \"Handelsregisteramt des Kantons Aargau\",\n  \"canton_previous\": null,\n  \"canton_new\": null,\n  \"capital_new_chf\": null,\n  \"capital_previous_chf\": null,\n  \"domicile_new\": null,\n  \"domicile_previous\": null,\n  \"persons_added\": [\n    {\n      \"name\": \"Stöckli, Michael\",\n      \"nationality\": null,\n      \"heimatort\": \"von Bremgarten (AG)\",\n      \"domicile\": \"in Bremgarten (AG)\",\n      \"role\": \"Präsident des Verwaltungsrates\",\n      \"signature\": \"mit Einzelunterschrift\",\n      \"uid\": null,\n      \"stammanteile\": null\n    },\n    {\n      \"name\": \"Stöckli, Fabian\",\n      \"nationality\": null,\n      \"heimatort\": \"von Bremgarten (AG)\",\n      \"domicile\": \"in Bremgarten (AG)\",\n      \"role\": \"Mitglied des Verwaltungsrates\",\n      \"signature\": \"mit Einzelunterschrift\",\n      \"uid\": null,\n      \"stammanteile\": null\n    }\n  ],\n  \"persons_removed\": [\n    {\n      \"name\": \"Stöckli, Felix\",\n      \"nationality\": null,\n      \"heimatort\": \"von Bremgarten AG\",\n      \"domicile\": \"in Bremgarten AG\",\n      \"role\": \"Präsident des Verwaltungsrates\",\n      \"signature\": \"mit Einzelunterschrift\",\n      \"uid\": null,\n      \"stammanteile\": null\n    },\n    {\n      \"name\": \"Stöckli-Furrer, Maria\",\n      \"nationality\": null,\n      \"heimatort\": \"von Bremgarten (AG) und Schongau\",\n      \"domicile\": \"in Bremgarten (AG)\",\n      \"role\": \"Mitglied des Verwaltungsrates\",\n      \"signature\": \"mit Einzelunterschrift\",\n      \"uid\": null,\n      \"stammanteile\": null\n    }\n  ],\n  \"persons_changed\": [\n    {\n      \"name_new\": \"Stöckli, Michael\",\n      \"name_previous\": \"Stöckli, Michael\",\n      \"domicile_new\": \"in Bremgarten (AG)\",\n      \"domicile_previous\": \"in Bremgarten (AG)\",\n      \"role_new\": \"Präsident des Verwaltungsrates\",\n      \"role_previous\": \"Mitglied des Verwaltungsrates\",\n      \"signature_new\": \"mit Einzelunterschrift\",\n      \"signature_previous\": \"mit Kollektivunterschrift zu zweien\",\n      \"nationality_new\": null,\n      \"nationality_previous\": null,\n      \"heimatort_new\": \"von Bremgarten (AG)\",\n      \"heimatort_previous\": \"von Bremgarten (AG)\",\n      \"stammanteile_new\": null,\n      \"stammanteile_previous\": null\n    },\n    {\n      \"name_new\": \"Stöckli, Fabian\",\n      \"name_previous\": \"Stöckli, Fabian\",\n      \"domicile_new\": \"in Bremgarten (AG)\",\n      \"domicile_previous\": \"in Bremgarten (AG)\",\n      \"role_new\": \"Mitglied des Verwaltungsrates\",\n      \"role_previous\": \"Mitglied des Verwaltungsrates\",\n      \"signature_new\": \"mit Einzelunterschrift\",\n      \"signature_previous\": \"mit Kollektivunterschrift zu zweien\",\n      \"nationality_new\": null,\n      \"nationality_previous\": null,\n      \"heimatort_new\": \"von Bremgarten (AG)\",\n      \"heimatort_previous\": \"von Bremgarten (AG)\",\n      \"stammanteile_new\": null,\n      \"stammanteile_previous\": null\n    }\n  ],\n  \"extras\": {}\n}\n```",
+  "warnings": []
+}

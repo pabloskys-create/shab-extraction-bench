@@ -1,0 +1,2144 @@
+doc_id,field,item,attribute,gold,prediction,outcome_exact,outcome_normalized
+0121,act_type,,,"""mutation""","""mutation""",correct,correct
+0121,act_subtypes,,,"[""statutenaenderung"", ""organaenderung"", ""sitzverlegung"", ""kantonswechsel""]","[""statutenaenderung"", ""organaenderung"", ""sitzverlegung""]",wrong,wrong
+0121,company_name_full,,,"""CSB Expansion AG""","""CSB Expansion AG""",correct,correct
+0121,company_name_base,,,"""CSB Expansion AG""","""CSB Expansion AG""",correct,correct
+0121,status_suffix,,,null,null,correct_null,correct_null
+0121,alternative_names,,,"[""CSB Expansion SA"", ""CSB Expansion Ltd""]","[""CSB Expansion SA"", ""CSB Expansion Ltd""]",correct,correct
+0121,company_name_new,,,null,null,correct_null,correct_null
+0121,company_name_previous,,,null,null,correct_null,correct_null
+0121,uid,,,"""CHE-442.360.185""","""CHE-442.360.185""",correct,correct
+0121,legal_form,,,"""AG""","""AG""",correct,correct
+0121,seat_municipality,,,"""Kestenholz""","""Kestenholz""",correct,correct
+0121,seat_canton,,,"""SO""","""SO""",correct,correct
+0121,address_care_of,,,null,null,correct_null,correct_null
+0121,address_street,,,"""Brown Boveri Strasse 7""","""Brown Boveri Strasse 7""",correct,correct
+0121,address_postcode,,,"""5400""","""5400""",correct,correct
+0121,address_municipality,,,"""Baden""","""Baden""",correct,correct
+0121,act_date,,,"""2026-08-31""","""2026-08-31""",correct,correct
+0121,tagesregister_nr,,,"""12665""","""12665""",correct,correct
+0121,tagesregister_date,,,"""2026-09-04""","""2026-09-04""",correct,correct
+0121,prior_publication_shab_nr,,,73,73,correct,correct
+0121,prior_publication_date,,,"""2025-04-15""","""2025-04-15""",correct,correct
+0121,prior_publication_id,,,"""1006309592""","""1006309592""",correct,correct
+0121,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Aargau""",correct,correct
+0121,canton_previous,,,"""SO""",null,omission,omission
+0121,canton_new,,,"""AG""",null,omission,omission
+0121,capital_new_chf,,,null,null,correct_null,correct_null
+0121,capital_previous_chf,,,null,null,correct_null,correct_null
+0121,domicile_new,,,"""Brown Boveri Strasse 7, 5400 Baden""","""Brown Boveri Strasse 7, 5400 Baden""",correct,correct
+0121,domicile_previous,,,"""Gäustrasse 52, 4703 Kestenholz""","""Gäustrasse 52, 4703 Kestenholz""",correct,correct
+0121,persons_changed,"Jorns, Hansjörg",,"""Jorns, Hansjörg""","""Jorns, Hansjörg""",matched,matched
+0121,persons_changed,"Jorns, Hansjörg",name_previous,null,null,correct_null,correct_null
+0121,persons_changed,"Jorns, Hansjörg",domicile_new,"""Locarno""","""Locarno""",correct,correct
+0121,persons_changed,"Jorns, Hansjörg",domicile_previous,"""Oensingen""","""Oensingen""",correct,correct
+0121,persons_changed,"Jorns, Hansjörg",role_new,"""Mitglied des Verwaltungsrates""","""Mitglied des Verwaltungsrates""",correct,correct
+0121,persons_changed,"Jorns, Hansjörg",role_previous,null,null,correct_null,correct_null
+0121,persons_changed,"Jorns, Hansjörg",signature_new,"""Kollektivunterschrift zu zweien""","""mit Kollektivunterschrift zu zweien""",wrong,wrong
+0121,persons_changed,"Jorns, Hansjörg",signature_previous,null,null,correct_null,correct_null
+0121,persons_changed,"Jorns, Hansjörg",nationality_new,null,null,correct_null,correct_null
+0121,persons_changed,"Jorns, Hansjörg",nationality_previous,null,null,correct_null,correct_null
+0121,persons_changed,"Jorns, Hansjörg",heimatort_new,"""Saanen""","""Saanen""",correct,correct
+0121,persons_changed,"Jorns, Hansjörg",heimatort_previous,null,null,correct_null,correct_null
+0121,persons_changed,"Jorns, Hansjörg",stammanteile_new,null,null,correct_null,correct_null
+0121,persons_changed,"Jorns, Hansjörg",stammanteile_previous,null,null,correct_null,correct_null
+0122,act_type,,,"""mutation""","""mutation""",correct,correct
+0122,act_subtypes,,,"[""organaenderung""]","[""organaenderung""]",correct,correct
+0122,company_name_full,,,"""Foodtower GmbH""","""Foodtower GmbH""",correct,correct
+0122,company_name_base,,,"""Foodtower GmbH""","""Foodtower GmbH""",correct,correct
+0122,status_suffix,,,null,null,correct_null,correct_null
+0122,alternative_names,,,[],[],correct_null,correct_null
+0122,company_name_new,,,null,null,correct_null,correct_null
+0122,company_name_previous,,,null,null,correct_null,correct_null
+0122,uid,,,"""CHE-234.990.986""","""CHE-234.990.986""",correct,correct
+0122,legal_form,,,"""GmbH""","""GmbH""",correct,correct
+0122,seat_municipality,,,"""Brugg""","""Brugg""",correct,correct
+0122,seat_canton,,,"""AG""","""AG""",correct,correct
+0122,address_care_of,,,null,null,correct_null,correct_null
+0122,address_street,,,"""Vorstadt 15""","""Vorstadt 15""",correct,correct
+0122,address_postcode,,,"""5200""","""5200""",correct,correct
+0122,address_municipality,,,"""Brugg AG""","""Brugg AG""",correct,correct
+0122,act_date,,,null,null,correct_null,correct_null
+0122,tagesregister_nr,,,"""12691""","""12691""",correct,correct
+0122,tagesregister_date,,,"""2026-09-04""","""2026-09-04""",correct,correct
+0122,prior_publication_shab_nr,,,153,153,correct,correct
+0122,prior_publication_date,,,"""2026-08-11""","""2026-08-11""",correct,correct
+0122,prior_publication_id,,,"""1006728721""","""1006728721""",correct,correct
+0122,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Aargau""",correct,correct
+0122,canton_previous,,,null,null,correct_null,correct_null
+0122,canton_new,,,null,null,correct_null,correct_null
+0122,capital_new_chf,,,null,null,correct_null,correct_null
+0122,capital_previous_chf,,,null,null,correct_null,correct_null
+0122,domicile_new,,,null,null,correct_null,correct_null
+0122,domicile_previous,,,null,null,correct_null,correct_null
+0122,persons_changed,"Alkan, Seyyid Bilal",,"""Alkan, Seyyid Bilal""","""Alkan, Seyyid Bilal""",matched,matched
+0122,persons_changed,"Alkan, Seyyid Bilal",name_previous,null,null,correct_null,correct_null
+0122,persons_changed,"Alkan, Seyyid Bilal",domicile_new,"""Brugg""","""Brugg""",correct,correct
+0122,persons_changed,"Alkan, Seyyid Bilal",domicile_previous,"""Neufahrn bei Freising (DE)""","""Neufahrn bei Freising (DE)""",correct,correct
+0122,persons_changed,"Alkan, Seyyid Bilal",role_new,"""Gesellschafter und Geschäftsführer""","""Gesellschafter und Geschäftsführer""",correct,correct
+0122,persons_changed,"Alkan, Seyyid Bilal",role_previous,null,null,correct_null,correct_null
+0122,persons_changed,"Alkan, Seyyid Bilal",signature_new,"""Einzelunterschrift""","""Einzelunterschrift""",correct,correct
+0122,persons_changed,"Alkan, Seyyid Bilal",signature_previous,null,null,correct_null,correct_null
+0122,persons_changed,"Alkan, Seyyid Bilal",nationality_new,"""deutsch""","""deutsch""",correct,correct
+0122,persons_changed,"Alkan, Seyyid Bilal",nationality_previous,null,null,correct_null,correct_null
+0122,persons_changed,"Alkan, Seyyid Bilal",heimatort_new,null,null,correct_null,correct_null
+0122,persons_changed,"Alkan, Seyyid Bilal",heimatort_previous,null,null,correct_null,correct_null
+0122,persons_changed,"Alkan, Seyyid Bilal",stammanteile_new,50,"""50""",wrong,correct
+0122,persons_changed,"Alkan, Seyyid Bilal",stammanteile_previous,null,null,correct_null,correct_null
+0122,persons_changed,"Alkan, Ömer Burak",,"""Alkan, Ömer Burak""","""Alkan, Ömer Burak""",matched,matched
+0122,persons_changed,"Alkan, Ömer Burak",name_previous,null,null,correct_null,correct_null
+0122,persons_changed,"Alkan, Ömer Burak",domicile_new,"""Neufahrn bei Freising (DE)""","""Neufahrn bei Freising (DE)""",correct,correct
+0122,persons_changed,"Alkan, Ömer Burak",domicile_previous,null,null,correct_null,correct_null
+0122,persons_changed,"Alkan, Ömer Burak",role_new,"""Gesellschafter""","""Gesellschafter""",correct,correct
+0122,persons_changed,"Alkan, Ömer Burak",role_previous,null,null,correct_null,correct_null
+0122,persons_changed,"Alkan, Ömer Burak",signature_new,"""Einzelunterschrift""","""Einzelunterschrift""",correct,correct
+0122,persons_changed,"Alkan, Ömer Burak",signature_previous,"""ohne Zeichnungsberechtigung""","""ohne Zeichnungsberechtigung""",correct,correct
+0122,persons_changed,"Alkan, Ömer Burak",nationality_new,"""deutsch""","""deutsch""",correct,correct
+0122,persons_changed,"Alkan, Ömer Burak",nationality_previous,null,null,correct_null,correct_null
+0122,persons_changed,"Alkan, Ömer Burak",heimatort_new,null,null,correct_null,correct_null
+0122,persons_changed,"Alkan, Ömer Burak",heimatort_previous,null,null,correct_null,correct_null
+0122,persons_changed,"Alkan, Ömer Burak",stammanteile_new,50,"""50""",wrong,correct
+0122,persons_changed,"Alkan, Ömer Burak",stammanteile_previous,null,null,correct_null,correct_null
+0122,persons_changed,"Mendi, Nürcan",,"""Mendi, Nürcan""","""Mendi, Nürcan""",matched,matched
+0122,persons_changed,"Mendi, Nürcan",name_previous,null,null,correct_null,correct_null
+0122,persons_changed,"Mendi, Nürcan",domicile_new,"""Neufahrn bei Freising (DE)""","""Neufahrn bei Freising (DE)""",correct,correct
+0122,persons_changed,"Mendi, Nürcan",domicile_previous,null,null,correct_null,correct_null
+0122,persons_changed,"Mendi, Nürcan",role_new,"""Gesellschafterin""","""Gesellschafterin""",correct,correct
+0122,persons_changed,"Mendi, Nürcan",role_previous,null,null,correct_null,correct_null
+0122,persons_changed,"Mendi, Nürcan",signature_new,"""Einzelunterschrift""","""Einzelunterschrift""",correct,correct
+0122,persons_changed,"Mendi, Nürcan",signature_previous,"""ohne Zeichnungsberechtigung""","""ohne Zeichnungsberechtigung""",correct,correct
+0122,persons_changed,"Mendi, Nürcan",nationality_new,"""deutsch""","""deutsch""",correct,correct
+0122,persons_changed,"Mendi, Nürcan",nationality_previous,null,null,correct_null,correct_null
+0122,persons_changed,"Mendi, Nürcan",heimatort_new,null,null,correct_null,correct_null
+0122,persons_changed,"Mendi, Nürcan",heimatort_previous,null,null,correct_null,correct_null
+0122,persons_changed,"Mendi, Nürcan",stammanteile_new,50,"""50""",wrong,correct
+0122,persons_changed,"Mendi, Nürcan",stammanteile_previous,null,null,correct_null,correct_null
+0122,persons_changed,"Sevimli, Adem",,"""Sevimli, Adem""","""Sevimli, Adem""",matched,matched
+0122,persons_changed,"Sevimli, Adem",name_previous,null,null,correct_null,correct_null
+0122,persons_changed,"Sevimli, Adem",domicile_new,"""Schaffhausen""","""Schaffhausen""",correct,correct
+0122,persons_changed,"Sevimli, Adem",domicile_previous,null,null,correct_null,correct_null
+0122,persons_changed,"Sevimli, Adem",role_new,"""Gesellschafter""","""Gesellschafter""",correct,correct
+0122,persons_changed,"Sevimli, Adem",role_previous,null,null,correct_null,correct_null
+0122,persons_changed,"Sevimli, Adem",signature_new,"""ohne Zeichnungsberechtigung""","""ohne Zeichnungsberechtigung""",correct,correct
+0122,persons_changed,"Sevimli, Adem",signature_previous,"""Einzelunterschrift""","""Einzelunterschrift""",correct,correct
+0122,persons_changed,"Sevimli, Adem",nationality_new,"""deutsch""","""deutsch""",correct,correct
+0122,persons_changed,"Sevimli, Adem",nationality_previous,null,null,correct_null,correct_null
+0122,persons_changed,"Sevimli, Adem",heimatort_new,null,null,correct_null,correct_null
+0122,persons_changed,"Sevimli, Adem",heimatort_previous,null,null,correct_null,correct_null
+0122,persons_changed,"Sevimli, Adem",stammanteile_new,50,"""50""",wrong,correct
+0122,persons_changed,"Sevimli, Adem",stammanteile_previous,null,null,correct_null,correct_null
+0122,extras,nominal_value_chf,,100.0,100.0,correct,correct
+0123,act_type,,,"""mutation""","""mutation""",correct,correct
+0123,act_subtypes,,,"[""organaenderung""]","[""organaenderung""]",correct,correct
+0123,company_name_full,,,"""Felix Stöckli AG""","""Felix Stöckli AG""",correct,correct
+0123,company_name_base,,,"""Felix Stöckli AG""","""Felix Stöckli AG""",correct,correct
+0123,status_suffix,,,null,null,correct_null,correct_null
+0123,alternative_names,,,[],[],correct_null,correct_null
+0123,company_name_new,,,null,null,correct_null,correct_null
+0123,company_name_previous,,,null,null,correct_null,correct_null
+0123,uid,,,"""CHE-105.722.940""","""CHE-105.722.940""",correct,correct
+0123,legal_form,,,"""AG""","""AG""",correct,correct
+0123,seat_municipality,,,"""Bremgarten (AG)""","""Bremgarten (AG)""",correct,correct
+0123,seat_canton,,,"""AG""","""AG""",correct,correct
+0123,address_care_of,,,null,null,correct_null,correct_null
+0123,address_street,,,"""Rüttenenstrasse 6""","""Rüttenenstrasse 6""",correct,correct
+0123,address_postcode,,,"""5620""","""5620""",correct,correct
+0123,address_municipality,,,"""Bremgarten AG""","""Bremgarten AG""",correct,correct
+0123,act_date,,,null,null,correct_null,correct_null
+0123,tagesregister_nr,,,"""12648""","""12648""",correct,correct
+0123,tagesregister_date,,,"""2026-09-04""","""2026-09-04""",correct,correct
+0123,prior_publication_shab_nr,,,135,135,correct,correct
+0123,prior_publication_date,,,"""2023-07-14""","""2023-07-14""",correct,correct
+0123,prior_publication_id,,,"""1005796031""","""1005796031""",correct,correct
+0123,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Aargau""",correct,correct
+0123,canton_previous,,,null,null,correct_null,correct_null
+0123,canton_new,,,null,null,correct_null,correct_null
+0123,capital_new_chf,,,null,null,correct_null,correct_null
+0123,capital_previous_chf,,,null,null,correct_null,correct_null
+0123,domicile_new,,,null,null,correct_null,correct_null
+0123,domicile_previous,,,null,null,correct_null,correct_null
+0123,persons_removed,"Stöckli, Felix",,"""Stöckli, Felix""","""Stöckli, Felix""",matched,matched
+0123,persons_removed,"Stöckli, Felix",nationality,null,null,correct_null,correct_null
+0123,persons_removed,"Stöckli, Felix",heimatort,"""Bremgarten AG""","""Bremgarten AG""",correct,correct
+0123,persons_removed,"Stöckli, Felix",domicile,"""Bremgarten AG""","""Bremgarten AG""",correct,correct
+0123,persons_removed,"Stöckli, Felix",role,"""Präsident des Verwaltungsrates""","""Präsident des Verwaltungsrates""",correct,correct
+0123,persons_removed,"Stöckli, Felix",signature,"""Einzelunterschrift""","""Einzelunterschrift""",correct,correct
+0123,persons_removed,"Stöckli, Felix",uid,null,null,correct_null,correct_null
+0123,persons_removed,"Stöckli, Felix",stammanteile,null,null,correct_null,correct_null
+0123,persons_removed,"Stöckli-Furrer, Maria",,"""Stöckli-Furrer, Maria""","""Stöckli-Furrer, Maria""",matched,matched
+0123,persons_removed,"Stöckli-Furrer, Maria",nationality,null,null,correct_null,correct_null
+0123,persons_removed,"Stöckli-Furrer, Maria",heimatort,"""Bremgarten (AG) und Schongau""","""Bremgarten (AG) und Schongau""",correct,correct
+0123,persons_removed,"Stöckli-Furrer, Maria",domicile,"""Bremgarten (AG)""","""Bremgarten (AG)""",correct,correct
+0123,persons_removed,"Stöckli-Furrer, Maria",role,"""Mitglied des Verwaltungsrates""","""Mitglied des Verwaltungsrates""",correct,correct
+0123,persons_removed,"Stöckli-Furrer, Maria",signature,"""Einzelunterschrift""","""Einzelunterschrift""",correct,correct
+0123,persons_removed,"Stöckli-Furrer, Maria",uid,null,null,correct_null,correct_null
+0123,persons_removed,"Stöckli-Furrer, Maria",stammanteile,null,null,correct_null,correct_null
+0123,persons_changed,"Stöckli, Michael",,"""Stöckli, Michael""","""Stöckli, Michael""",matched,matched
+0123,persons_changed,"Stöckli, Michael",name_previous,null,null,correct_null,correct_null
+0123,persons_changed,"Stöckli, Michael",domicile_new,"""Bremgarten (AG)""","""Bremgarten (AG)""",correct,correct
+0123,persons_changed,"Stöckli, Michael",domicile_previous,null,null,correct_null,correct_null
+0123,persons_changed,"Stöckli, Michael",role_new,"""Präsident des Verwaltungsrates""","""Präsident des Verwaltungsrates""",correct,correct
+0123,persons_changed,"Stöckli, Michael",role_previous,"""Mitglied des Verwaltungsrates""","""Mitglied des Verwaltungsrates""",correct,correct
+0123,persons_changed,"Stöckli, Michael",signature_new,"""Einzelunterschrift""","""Einzelunterschrift""",correct,correct
+0123,persons_changed,"Stöckli, Michael",signature_previous,"""Kollektivunterschrift zu zweien""","""Kollektivunterschrift zu zweien""",correct,correct
+0123,persons_changed,"Stöckli, Michael",nationality_new,null,null,correct_null,correct_null
+0123,persons_changed,"Stöckli, Michael",nationality_previous,null,null,correct_null,correct_null
+0123,persons_changed,"Stöckli, Michael",heimatort_new,"""Bremgarten (AG)""","""Bremgarten (AG)""",correct,correct
+0123,persons_changed,"Stöckli, Michael",heimatort_previous,null,null,correct_null,correct_null
+0123,persons_changed,"Stöckli, Michael",stammanteile_new,null,null,correct_null,correct_null
+0123,persons_changed,"Stöckli, Michael",stammanteile_previous,null,null,correct_null,correct_null
+0123,persons_changed,"Stöckli, Fabian",,"""Stöckli, Fabian""","""Stöckli, Fabian""",matched,matched
+0123,persons_changed,"Stöckli, Fabian",name_previous,null,null,correct_null,correct_null
+0123,persons_changed,"Stöckli, Fabian",domicile_new,"""Bremgarten (AG)""","""Bremgarten (AG)""",correct,correct
+0123,persons_changed,"Stöckli, Fabian",domicile_previous,null,null,correct_null,correct_null
+0123,persons_changed,"Stöckli, Fabian",role_new,"""Mitglied des Verwaltungsrates""","""Mitglied des Verwaltungsrates""",correct,correct
+0123,persons_changed,"Stöckli, Fabian",role_previous,null,"""Mitglied des Verwaltungsrates""",hallucination,hallucination
+0123,persons_changed,"Stöckli, Fabian",signature_new,"""Einzelunterschrift""","""Einzelunterschrift""",correct,correct
+0123,persons_changed,"Stöckli, Fabian",signature_previous,"""Kollektivunterschrift zu zweien""","""Kollektivunterschrift zu zweien""",correct,correct
+0123,persons_changed,"Stöckli, Fabian",nationality_new,null,null,correct_null,correct_null
+0123,persons_changed,"Stöckli, Fabian",nationality_previous,null,null,correct_null,correct_null
+0123,persons_changed,"Stöckli, Fabian",heimatort_new,"""Bremgarten (AG)""","""Bremgarten (AG)""",correct,correct
+0123,persons_changed,"Stöckli, Fabian",heimatort_previous,null,null,correct_null,correct_null
+0123,persons_changed,"Stöckli, Fabian",stammanteile_new,null,null,correct_null,correct_null
+0123,persons_changed,"Stöckli, Fabian",stammanteile_previous,null,null,correct_null,correct_null
+0124,act_type,,,"""mutation""","""mutation""",correct,correct
+0124,act_subtypes,,,"[""statutenaenderung"", ""organaenderung"", ""sitzverlegung"", ""kantonswechsel"", ""zweckaenderung""]","[""statutenaenderung"", ""organaenderung"", ""sitzverlegung"", ""kantonswechsel"", ""zweckaenderung""]",correct,correct
+0124,company_name_full,,,"""I+Konzeptbau GmbH""","""I+Konzeptbau GmbH""",correct,correct
+0124,company_name_base,,,"""I+Konzeptbau GmbH""","""I+Konzeptbau GmbH""",correct,correct
+0124,status_suffix,,,null,null,correct_null,correct_null
+0124,alternative_names,,,[],[],correct_null,correct_null
+0124,company_name_new,,,null,null,correct_null,correct_null
+0124,company_name_previous,,,null,null,correct_null,correct_null
+0124,uid,,,"""CHE-188.233.733""","""CHE-188.233.733""",correct,correct
+0124,legal_form,,,"""GmbH""","""GmbH""",correct,correct
+0124,seat_municipality,,,"""St. Gallen""","""St. Gallen""",correct,correct
+0124,seat_canton,,,"""SG""","""SG""",correct,correct
+0124,address_care_of,,,null,null,correct_null,correct_null
+0124,address_street,,,"""Neudorfstrasse 24""","""Neudorfstrasse 24""",correct,correct
+0124,address_postcode,,,"""5734""","""5734""",correct,correct
+0124,address_municipality,,,"""Reinach AG""","""Reinach AG""",correct,correct
+0124,act_date,,,"""2026-08-10""","""2026-08-10""",correct,correct
+0124,tagesregister_nr,,,"""12644""","""12644""",correct,correct
+0124,tagesregister_date,,,"""2026-09-04""","""2026-09-04""",correct,correct
+0124,prior_publication_shab_nr,,,16,16,correct,correct
+0124,prior_publication_date,,,"""2026-01-26""","""2026-01-26""",correct,correct
+0124,prior_publication_id,,,"""1006549813""","""1006549813""",correct,correct
+0124,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Aargau""",correct,correct
+0124,canton_previous,,,"""SG""","""SG""",correct,correct
+0124,canton_new,,,"""AG""","""AG""",correct,correct
+0124,capital_new_chf,,,null,null,correct_null,correct_null
+0124,capital_previous_chf,,,null,null,correct_null,correct_null
+0124,domicile_new,,,"""Neudorfstrasse 24, 5734 Reinach AG""","""Neudorfstrasse 24, 5734 Reinach AG""",correct,correct
+0124,domicile_previous,,,"""Linsebühlstrasse 18, 9000 St. Gallen""","""Linsebühlstrasse 18, 9000 St. Gallen""",correct,correct
+0124,persons_added,"Wella, Damir",,"""Wella, Damir""","""Wella, Damir""",matched,matched
+0124,persons_added,"Wella, Damir",nationality,"""österreichisch""","""österreichisch""",correct,correct
+0124,persons_added,"Wella, Damir",heimatort,null,null,correct_null,correct_null
+0124,persons_added,"Wella, Damir",domicile,"""Reinach (AG)""","""Reinach (AG)""",correct,correct
+0124,persons_added,"Wella, Damir",role,null,null,correct_null,correct_null
+0124,persons_added,"Wella, Damir",signature,"""Kollektivunterschrift zu zweien""","""Kollektivunterschrift zu zweien""",correct,correct
+0124,persons_added,"Wella, Damir",uid,null,null,correct_null,correct_null
+0124,persons_added,"Wella, Damir",stammanteile,null,null,correct_null,correct_null
+0124,persons_changed,"Wella, Ilda",,"""Wella, Ilda""","""Wella, Ilda""",matched,matched
+0124,persons_changed,"Wella, Ilda",name_previous,null,null,correct_null,correct_null
+0124,persons_changed,"Wella, Ilda",domicile_new,"""Reinach (AG)""","""Reinach (AG)""",correct,correct
+0124,persons_changed,"Wella, Ilda",domicile_previous,"""Zurzach""","""Zurzach""",correct,correct
+0124,persons_changed,"Wella, Ilda",role_new,"""Gesellschafterin und Geschäftsführerin""","""Gesellschafterin und Geschäftsführerin""",correct,correct
+0124,persons_changed,"Wella, Ilda",role_previous,null,null,correct_null,correct_null
+0124,persons_changed,"Wella, Ilda",signature_new,"""Einzelunterschrift""","""mit Einzelunterschrift""",wrong,wrong
+0124,persons_changed,"Wella, Ilda",signature_previous,null,null,correct_null,correct_null
+0124,persons_changed,"Wella, Ilda",nationality_new,null,null,correct_null,correct_null
+0124,persons_changed,"Wella, Ilda",nationality_previous,null,null,correct_null,correct_null
+0124,persons_changed,"Wella, Ilda",heimatort_new,"""Kriens""","""Kriens""",correct,correct
+0124,persons_changed,"Wella, Ilda",heimatort_previous,null,null,correct_null,correct_null
+0124,persons_changed,"Wella, Ilda",stammanteile_new,200,"""200""",wrong,correct
+0124,persons_changed,"Wella, Ilda",stammanteile_previous,null,null,correct_null,correct_null
+0124,extras,zweck,,"""Dienstleistungen im Bereich Immobilienunterhalt und -bewirtschaftung. Die Gesellschaft kann Zweigniederlassungen und Tochtergesellschaften im In- und Ausland errichten und sich an anderen Unternehmen …""","""Dienstleistungen im Bereich Immobilienunterhalt und -bewirtschaftung. Die Gesellschaft kann Zweigniederlassungen und Tochtergesellschaften im In- und Ausland errichten und sich an anderen Unternehmen im In- und Ausland beteiligen sowie alle Geschäfte tätigen, die direkt oder indirekt mit ihrem Zweck in Zusammenhang stehen. Die Gesellschaft kann im In- und Ausland Grundeigentum erwerben, belasten, veräussern und verwalten. Sie kann auch Finanzierungen für eigene oder fremde Rechnung vornehmen sowie Garantien und Bürgschaften für Tochtergesellschaften und Dritte eingehen.""",correct,correct
+0124,extras,nominal_value_chf,,100.0,100.0,correct,correct
+0125,act_type,,,"""mutation""","""mutation""",correct,correct
+0125,act_subtypes,,,"[""statutenaenderung"", ""sitzverlegung"", ""kantonswechsel""]","[""statutenaenderung"", ""sitzverlegung""]",wrong,wrong
+0125,company_name_full,,,"""Inveno AG""","""Inveno AG""",correct,correct
+0125,company_name_base,,,"""Inveno AG""","""Inveno AG""",correct,correct
+0125,status_suffix,,,null,null,correct_null,correct_null
+0125,alternative_names,,,"[""Inveno SA"", ""Inveno Ltd""]","[""Inveno SA"", ""Inveno Ltd""]",correct,correct
+0125,company_name_new,,,null,null,correct_null,correct_null
+0125,company_name_previous,,,null,null,correct_null,correct_null
+0125,uid,,,"""CHE-256.227.634""","""CHE-256.227.634""",correct,correct
+0125,legal_form,,,"""AG""","""AG""",correct,correct
+0125,seat_municipality,,,"""Sursee""","""Sursee""",correct,correct
+0125,seat_canton,,,"""LU""","""LU""",correct,correct
+0125,address_care_of,,,null,null,correct_null,correct_null
+0125,address_street,,,"""Hintermättlistrasse 3""","""Hintermättlistrasse 3""",correct,correct
+0125,address_postcode,,,"""5506""","""5506""",correct,correct
+0125,address_municipality,,,"""Mägenwil""","""Mägenwil""",correct,correct
+0125,act_date,,,"""2026-08-26""","""2026-08-26""",correct,correct
+0125,tagesregister_nr,,,"""12657""","""12657""",correct,correct
+0125,tagesregister_date,,,"""2026-09-04""","""2026-09-04""",correct,correct
+0125,prior_publication_shab_nr,,,223,223,correct,correct
+0125,prior_publication_date,,,"""2025-11-18""","""2025-11-18""",correct,correct
+0125,prior_publication_id,,,"""1006487316""","""1006487316""",correct,correct
+0125,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Aargau""",correct,correct
+0125,canton_previous,,,"""LU""",null,omission,omission
+0125,canton_new,,,"""AG""",null,omission,omission
+0125,capital_new_chf,,,null,null,correct_null,correct_null
+0125,capital_previous_chf,,,null,null,correct_null,correct_null
+0125,domicile_new,,,"""Hintermättlistrasse 3, 5506 Mägenwil""","""Hintermättlistrasse 3, 5506 Mägenwil""",correct,correct
+0125,domicile_previous,,,"""Bahnhofstrasse 6c, 6210 Sursee""","""Bahnhofstrasse 6c, 6210 Sursee""",correct,correct
+0126,act_type,,,"""mutation""","""mutation""",correct,correct
+0126,act_subtypes,,,"[""organaenderung""]","[""organaenderung""]",correct,correct
+0126,company_name_full,,,"""Sommerhalde Bau AG""","""Sommerhalde Bau AG""",correct,correct
+0126,company_name_base,,,"""Sommerhalde Bau AG""","""Sommerhalde Bau AG""",correct,correct
+0126,status_suffix,,,null,null,correct_null,correct_null
+0126,alternative_names,,,[],[],correct_null,correct_null
+0126,company_name_new,,,null,null,correct_null,correct_null
+0126,company_name_previous,,,null,null,correct_null,correct_null
+0126,uid,,,"""CHE-235.481.807""","""CHE-235.481.807""",correct,correct
+0126,legal_form,,,"""AG""","""AG""",correct,correct
+0126,seat_municipality,,,"""Uerkheim""","""Uerkheim""",correct,correct
+0126,seat_canton,,,"""AG""","""AG""",correct,correct
+0126,address_care_of,,,null,null,correct_null,correct_null
+0126,address_street,,,"""Grossmattenstrasse 2""","""Grossmattenstrasse 2""",correct,correct
+0126,address_postcode,,,"""4813""","""4813""",correct,correct
+0126,address_municipality,,,"""Uerkheim""","""Uerkheim""",correct,correct
+0126,act_date,,,null,null,correct_null,correct_null
+0126,tagesregister_nr,,,"""12663""","""12663""",correct,correct
+0126,tagesregister_date,,,"""2026-09-04""","""2026-09-04""",correct,correct
+0126,prior_publication_shab_nr,,,159,159,correct,correct
+0126,prior_publication_date,,,"""2024-08-19""","""2024-08-19""",correct,correct
+0126,prior_publication_id,,,"""1006109431""",1006109431,wrong,correct
+0126,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Aargau""",correct,correct
+0126,canton_previous,,,null,null,correct_null,correct_null
+0126,canton_new,,,null,null,correct_null,correct_null
+0126,capital_new_chf,,,null,null,correct_null,correct_null
+0126,capital_previous_chf,,,null,null,correct_null,correct_null
+0126,domicile_new,,,null,null,correct_null,correct_null
+0126,domicile_previous,,,null,null,correct_null,correct_null
+0126,persons_added,"Häfliger, Thomas",,"""Häfliger, Thomas""","""Häfliger, Thomas""",matched,matched
+0126,persons_added,"Häfliger, Thomas",nationality,null,null,correct_null,correct_null
+0126,persons_added,"Häfliger, Thomas",heimatort,"""Reitnau""","""Reitnau""",correct,correct
+0126,persons_added,"Häfliger, Thomas",domicile,"""Holziken""","""Holziken""",correct,correct
+0126,persons_added,"Häfliger, Thomas",role,"""Mitglied des Verwaltungsrates""","""Mitglied des Verwaltungsrates""",correct,correct
+0126,persons_added,"Häfliger, Thomas",signature,"""Kollektivunterschrift zu zweien""","""Kollektivunterschrift zu zweien""",correct,correct
+0126,persons_added,"Häfliger, Thomas",uid,null,null,correct_null,correct_null
+0126,persons_added,"Häfliger, Thomas",stammanteile,null,null,correct_null,correct_null
+0126,persons_removed,"Blättler, Josef",,"""Blättler, Josef""","""Blättler, Josef""",matched,matched
+0126,persons_removed,"Blättler, Josef",nationality,null,null,correct_null,correct_null
+0126,persons_removed,"Blättler, Josef",heimatort,"""Hergiswil (NW)""","""Hergiswil (NW)""",correct,correct
+0126,persons_removed,"Blättler, Josef",domicile,"""Zürich""","""Zürich""",correct,correct
+0126,persons_removed,"Blättler, Josef",role,"""Präsident des Verwaltungsrates""","""Präsident des Verwaltungsrates""",correct,correct
+0126,persons_removed,"Blättler, Josef",signature,"""Kollektivunterschrift zu zweien""","""Kollektivunterschrift zu zweien""",correct,correct
+0126,persons_removed,"Blättler, Josef",uid,null,null,correct_null,correct_null
+0126,persons_removed,"Blättler, Josef",stammanteile,null,null,correct_null,correct_null
+0126,persons_changed,"Heiniger, Hans",,"""Heiniger, Hans""","""Heiniger, Hans""",matched,matched
+0126,persons_changed,"Heiniger, Hans",name_previous,null,null,correct_null,correct_null
+0126,persons_changed,"Heiniger, Hans",domicile_new,"""Hirschthal""","""Hirschthal""",correct,correct
+0126,persons_changed,"Heiniger, Hans",domicile_previous,null,null,correct_null,correct_null
+0126,persons_changed,"Heiniger, Hans",role_new,"""Präsident des Verwaltungsrates""","""Präsident des Verwaltungsrates""",correct,correct
+0126,persons_changed,"Heiniger, Hans",role_previous,"""Mitglied des Verwaltungsrates""","""Mitglied des Verwaltungsrates""",correct,correct
+0126,persons_changed,"Heiniger, Hans",signature_new,"""Kollektivunterschrift zu zweien""","""Kollektivunterschrift zu zweien""",correct,correct
+0126,persons_changed,"Heiniger, Hans",signature_previous,null,null,correct_null,correct_null
+0126,persons_changed,"Heiniger, Hans",nationality_new,null,null,correct_null,correct_null
+0126,persons_changed,"Heiniger, Hans",nationality_previous,null,null,correct_null,correct_null
+0126,persons_changed,"Heiniger, Hans",heimatort_new,"""Eriswil""","""Eriswil""",correct,correct
+0126,persons_changed,"Heiniger, Hans",heimatort_previous,null,null,correct_null,correct_null
+0126,persons_changed,"Heiniger, Hans",stammanteile_new,null,null,correct_null,correct_null
+0126,persons_changed,"Heiniger, Hans",stammanteile_previous,null,null,correct_null,correct_null
+0127,act_type,,,"""mutation""","""mutation""",correct,correct
+0127,act_subtypes,,,[],[],excluded_uncertain,excluded_uncertain
+0127,company_name_full,,,"""Kafi-Shop Imhof KLG""","""Kafi-Shop Imhof KLG""",correct,correct
+0127,company_name_base,,,"""Kafi-Shop Imhof KLG""","""Kafi-Shop Imhof KLG""",correct,correct
+0127,status_suffix,,,null,null,correct_null,correct_null
+0127,alternative_names,,,[],[],correct_null,correct_null
+0127,company_name_new,,,null,null,correct_null,correct_null
+0127,company_name_previous,,,null,null,correct_null,correct_null
+0127,uid,,,"""CHE-109.943.339""","""CHE-109.943.339""",correct,correct
+0127,legal_form,,,"""Kollektivgesellschaft""","""Kollektivgesellschaft""",correct,correct
+0127,seat_municipality,,,"""Laufenburg""","""Laufenburg""",correct,correct
+0127,seat_canton,,,"""AG""","""AG""",correct,correct
+0127,address_care_of,,,null,null,correct_null,correct_null
+0127,address_street,,,"""Baslerstrasse 12""","""Baslerstrasse 12""",correct,correct
+0127,address_postcode,,,"""5080""","""5080""",correct,correct
+0127,address_municipality,,,"""Laufenburg""","""Laufenburg""",correct,correct
+0127,act_date,,,null,null,correct_null,correct_null
+0127,tagesregister_nr,,,"""12679""","""12679""",correct,correct
+0127,tagesregister_date,,,"""2026-09-04""","""2026-09-04""",correct,correct
+0127,prior_publication_shab_nr,,,49,49,correct,correct
+0127,prior_publication_date,,,"""2019-03-12""","""2019-03-12""",correct,correct
+0127,prior_publication_id,,,"""1004585765""","""1004585765""",correct,correct
+0127,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Aargau""",correct,correct
+0127,canton_previous,,,null,null,correct_null,correct_null
+0127,canton_new,,,null,null,correct_null,correct_null
+0127,capital_new_chf,,,null,null,correct_null,correct_null
+0127,capital_previous_chf,,,null,null,correct_null,correct_null
+0127,domicile_new,,,null,null,correct_null,correct_null
+0127,domicile_previous,,,null,null,correct_null,correct_null
+0127,extras,zweigniederlassung_new,,"""Chur (CHE-405.145.412)""","""Chur (CHE-405.145.412)""",correct,correct
+0128,act_type,,,"""mutation""","""mutation""",correct,correct
+0128,act_subtypes,,,"[""organaenderung""]","[""organaenderung""]",correct,correct
+0128,company_name_full,,,"""Nagra, Nationale Genossenschaft für die Lagerung radioaktiver Abfälle""","""Nagra, Nationale Genossenschaft für die Lagerung radioaktiver Abfälle""",correct,correct
+0128,company_name_base,,,"""Nagra, Nationale Genossenschaft für die Lagerung radioaktiver Abfälle""","""Nagra, Nationale Genossenschaft für die Lagerung radioaktiver Abfälle""",correct,correct
+0128,status_suffix,,,null,null,correct_null,correct_null
+0128,alternative_names,,,"[""Nagra, National Cooperative for the Disposal of Radioactive Waste"", ""Nagra, Société coopérative nationale pour le stockage des déchets radioactifs"", ""Nagra, Società cooperativa nazionale per lo smaltimento delle scorie radioattive""]","[""Nagra, National Cooperative for the Disposal of Radioactive Waste"", ""Nagra, Société coopérative nationale pour le stockage des déchets radioactifs"", ""Nagra, Società cooperativa nazionale per lo smaltimento delle scorie radioattive""]",correct,correct
+0128,company_name_new,,,null,null,correct_null,correct_null
+0128,company_name_previous,,,null,null,correct_null,correct_null
+0128,uid,,,"""CHE-105.877.519""","""CHE-105.877.519""",correct,correct
+0128,legal_form,,,"""Genossenschaft""","""Genossenschaft""",correct,correct
+0128,seat_municipality,,,"""Wettingen""","""Wettingen""",correct,correct
+0128,seat_canton,,,"""AG""","""AG""",correct,correct
+0128,address_care_of,,,null,null,correct_null,correct_null
+0128,address_street,,,"""Hardstrasse 73""","""Hardstrasse 73""",correct,correct
+0128,address_postcode,,,"""5430""","""5430""",correct,correct
+0128,address_municipality,,,"""Wettingen""","""Wettingen""",correct,correct
+0128,act_date,,,null,null,correct_null,correct_null
+0128,tagesregister_nr,,,"""12645""","""12645""",correct,correct
+0128,tagesregister_date,,,"""2026-09-04""","""2026-09-04""",correct,correct
+0128,prior_publication_shab_nr,,,96,96,correct,correct
+0128,prior_publication_date,,,"""2025-05-20""","""2025-05-20""",correct,correct
+0128,prior_publication_id,,,"""1006336354""","""1006336354""",correct,correct
+0128,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Aargau""",correct,correct
+0128,canton_previous,,,null,null,correct_null,correct_null
+0128,canton_new,,,null,null,correct_null,correct_null
+0128,capital_new_chf,,,null,null,correct_null,correct_null
+0128,capital_previous_chf,,,null,null,correct_null,correct_null
+0128,domicile_new,,,null,null,correct_null,correct_null
+0128,domicile_previous,,,null,null,correct_null,correct_null
+0128,persons_added,"Hammer-Rotzler, Bernadette",,"""Hammer-Rotzler, Bernadette""","""Hammer-Rotzler, Bernadette""",matched,matched
+0128,persons_added,"Hammer-Rotzler, Bernadette",nationality,"""österreichisch""","""österreichisch""",correct,correct
+0128,persons_added,"Hammer-Rotzler, Bernadette",heimatort,null,null,correct_null,correct_null
+0128,persons_added,"Hammer-Rotzler, Bernadette",domicile,"""Basel""","""Basel""",correct,correct
+0128,persons_added,"Hammer-Rotzler, Bernadette",role,"""Mitglied der Verwaltung""","""Mitglied der Verwaltung""",correct,correct
+0128,persons_added,"Hammer-Rotzler, Bernadette",signature,"""Kollektivunterschrift zu zweien""","""Kollektivunterschrift zu zweien""",correct,correct
+0128,persons_added,"Hammer-Rotzler, Bernadette",uid,null,null,correct_null,correct_null
+0128,persons_added,"Hammer-Rotzler, Bernadette",stammanteile,null,null,correct_null,correct_null
+0128,persons_removed,"Kohler, Thomas",,"""Kohler, Thomas""","""Kohler, Thomas""",matched,matched
+0128,persons_removed,"Kohler, Thomas",nationality,null,null,correct_null,correct_null
+0128,persons_removed,"Kohler, Thomas",heimatort,"""Lostorf und Olten""","""Lostorf und Olten""",correct,correct
+0128,persons_removed,"Kohler, Thomas",domicile,"""Lostorf""","""Lostorf""",correct,correct
+0128,persons_removed,"Kohler, Thomas",role,"""Mitglied der Verwaltung""","""Mitglied der Verwaltung""",correct,correct
+0128,persons_removed,"Kohler, Thomas",signature,"""Kollektivunterschrift zu zweien""","""Kollektivunterschrift zu zweien""",correct,correct
+0128,persons_removed,"Kohler, Thomas",uid,null,null,correct_null,correct_null
+0128,persons_removed,"Kohler, Thomas",stammanteile,null,null,correct_null,correct_null
+0128,persons_removed,"Beutler, Reto",,"""Beutler, Reto""","""Beutler, Reto""",matched,matched
+0128,persons_removed,"Beutler, Reto",nationality,null,null,correct_null,correct_null
+0128,persons_removed,"Beutler, Reto",heimatort,"""Willisau""","""Willisau""",correct,correct
+0128,persons_removed,"Beutler, Reto",domicile,"""Weiningen (ZH)""","""Weiningen (ZH)""",correct,correct
+0128,persons_removed,"Beutler, Reto",role,"""Mitglied der Geschäftsleitung""","""Mitglied der Geschäftsleitung""",correct,correct
+0128,persons_removed,"Beutler, Reto",signature,"""Kollektivunterschrift zu zweien""","""Kollektivunterschrift zu zweien""",correct,correct
+0128,persons_removed,"Beutler, Reto",uid,null,null,correct_null,correct_null
+0128,persons_removed,"Beutler, Reto",stammanteile,null,null,correct_null,correct_null
+0128,persons_removed,"Vietor, Dr. Tim",,"""Vietor, Dr. Tim""","""Vietor, Dr. Tim""",matched,matched
+0128,persons_removed,"Vietor, Dr. Tim",nationality,"""deutsch""","""deutsch""",correct,correct
+0128,persons_removed,"Vietor, Dr. Tim",heimatort,null,null,correct_null,correct_null
+0128,persons_removed,"Vietor, Dr. Tim",domicile,"""Konstanz (DE)""","""Konstanz (DE)""",correct,correct
+0128,persons_removed,"Vietor, Dr. Tim",role,"""Mitglied der Geschäftsleitung""","""Mitglied der Geschäftsleitung""",correct,correct
+0128,persons_removed,"Vietor, Dr. Tim",signature,"""Kollektivunterschrift zu zweien""","""Kollektivunterschrift zu zweien""",correct,correct
+0128,persons_removed,"Vietor, Dr. Tim",uid,null,null,correct_null,correct_null
+0128,persons_removed,"Vietor, Dr. Tim",stammanteile,null,null,correct_null,correct_null
+0128,persons_changed,"Blechschmidt, Dr. Ingo",,"""Blechschmidt, Dr. Ingo""","""Blechschmidt, Dr. Ingo""",matched,matched
+0128,persons_changed,"Blechschmidt, Dr. Ingo",name_previous,null,null,correct_null,correct_null
+0128,persons_changed,"Blechschmidt, Dr. Ingo",domicile_new,"""Oberrohrdorf""","""Oberrohrdorf""",correct,correct
+0128,persons_changed,"Blechschmidt, Dr. Ingo",domicile_previous,null,null,correct_null,correct_null
+0128,persons_changed,"Blechschmidt, Dr. Ingo",role_new,"""Mitglied der Geschäftsleitung""","""Mitglied der Geschäftsleitung""",correct,correct
+0128,persons_changed,"Blechschmidt, Dr. Ingo",role_previous,null,null,correct_null,correct_null
+0128,persons_changed,"Blechschmidt, Dr. Ingo",signature_new,"""Kollektivunterschrift zu zweien""","""Kollektivunterschrift zu zweien""",correct,correct
+0128,persons_changed,"Blechschmidt, Dr. Ingo",signature_previous,null,null,correct_null,correct_null
+0128,persons_changed,"Blechschmidt, Dr. Ingo",nationality_new,null,null,correct_null,correct_null
+0128,persons_changed,"Blechschmidt, Dr. Ingo",nationality_previous,"""deutsch""","""deutsch""",correct,correct
+0128,persons_changed,"Blechschmidt, Dr. Ingo",heimatort_new,"""Oberrohrdorf""","""Oberrohrdorf""",correct,correct
+0128,persons_changed,"Blechschmidt, Dr. Ingo",heimatort_previous,null,null,correct_null,correct_null
+0128,persons_changed,"Blechschmidt, Dr. Ingo",stammanteile_new,null,null,correct_null,correct_null
+0128,persons_changed,"Blechschmidt, Dr. Ingo",stammanteile_previous,null,null,correct_null,correct_null
+0129,act_type,,,"""mutation""","""mutation""",correct,correct
+0129,act_subtypes,,,"[""organaenderung""]","[""organaenderung""]",correct,correct
+0129,company_name_full,,,"""Eurofins Qualitech AG""","""Eurofins Qualitech AG""",correct,correct
+0129,company_name_base,,,"""Eurofins Qualitech AG""","""Eurofins Qualitech AG""",correct,correct
+0129,status_suffix,,,null,null,correct_null,correct_null
+0129,alternative_names,,,[],[],correct_null,correct_null
+0129,company_name_new,,,null,null,correct_null,correct_null
+0129,company_name_previous,,,null,null,correct_null,correct_null
+0129,uid,,,"""CHE-108.817.525""","""CHE-108.817.525""",correct,correct
+0129,legal_form,,,"""AG""","""AG""",correct,correct
+0129,seat_municipality,,,"""Mägenwil""","""Mägenwil""",correct,correct
+0129,seat_canton,,,"""AG""","""AG""",correct,correct
+0129,address_care_of,,,null,null,correct_null,correct_null
+0129,address_street,,,"""Almuesenacherstrasse 3""","""Almuesenacherstrasse 3""",correct,correct
+0129,address_postcode,,,"""5506""","""5506""",correct,correct
+0129,address_municipality,,,"""Mägenwil""","""Mägenwil""",correct,correct
+0129,act_date,,,null,null,correct_null,correct_null
+0129,tagesregister_nr,,,"""12633""","""12633""",correct,correct
+0129,tagesregister_date,,,"""2026-09-04""","""2026-09-04""",correct,correct
+0129,prior_publication_shab_nr,,,237,237,correct,correct
+0129,prior_publication_date,,,"""2025-12-08""","""2025-12-08""",correct,correct
+0129,prior_publication_id,,,"""1006506214""","""1006506214""",correct,correct
+0129,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Aargau""",correct,correct
+0129,canton_previous,,,null,null,correct_null,correct_null
+0129,canton_new,,,null,null,correct_null,correct_null
+0129,capital_new_chf,,,null,null,correct_null,correct_null
+0129,capital_previous_chf,,,null,null,correct_null,correct_null
+0129,domicile_new,,,null,null,correct_null,correct_null
+0129,domicile_previous,,,null,null,correct_null,correct_null
+0129,persons_added,"Ozdag, Recep",,"""Ozdag, Recep""","""Ozdag, Recep""",matched,matched
+0129,persons_added,"Ozdag, Recep",nationality,"""amerikanisch""","""amerikanisch""",correct,correct
+0129,persons_added,"Ozdag, Recep",heimatort,null,null,correct_null,correct_null
+0129,persons_added,"Ozdag, Recep",domicile,"""Los Angeles (US)""","""Los Angeles (US)""",correct,correct
+0129,persons_added,"Ozdag, Recep",role,"""Präsident des Verwaltungsrates""","""Präsident des Verwaltungsrates""",correct,correct
+0129,persons_added,"Ozdag, Recep",signature,"""Einzelunterschrift""","""Einzelunterschrift""",correct,correct
+0129,persons_added,"Ozdag, Recep",uid,null,null,correct_null,correct_null
+0129,persons_added,"Ozdag, Recep",stammanteile,null,null,correct_null,correct_null
+0129,persons_removed,"Batel, Mehdi",,"""Batel, Mehdi""","""Batel, Mehdi""",matched,matched
+0129,persons_removed,"Batel, Mehdi",nationality,"""französisch""","""französisch""",correct,correct
+0129,persons_removed,"Batel, Mehdi",heimatort,null,null,correct_null,correct_null
+0129,persons_removed,"Batel, Mehdi",domicile,"""Bussy-Saint-Georges (FR)""","""Bussy-Saint-Georges (FR)""",correct,correct
+0129,persons_removed,"Batel, Mehdi",role,"""Präsident des Verwaltungsrates""","""Präsident des Verwaltungsrates""",correct,correct
+0129,persons_removed,"Batel, Mehdi",signature,"""Einzelunterschrift""","""Einzelunterschrift""",correct,correct
+0129,persons_removed,"Batel, Mehdi",uid,null,null,correct_null,correct_null
+0129,persons_removed,"Batel, Mehdi",stammanteile,null,null,correct_null,correct_null
+0130,act_type,,,"""mutation""","""mutation""",correct,correct
+0130,act_subtypes,,,"[""organaenderung""]","[""organaenderung""]",correct,correct
+0130,company_name_full,,,"""Auto-Germann AG""","""Auto-Germann AG""",correct,correct
+0130,company_name_base,,,"""Auto-Germann AG""","""Auto-Germann AG""",correct,correct
+0130,status_suffix,,,null,null,correct_null,correct_null
+0130,alternative_names,,,[],[],correct_null,correct_null
+0130,company_name_new,,,null,null,correct_null,correct_null
+0130,company_name_previous,,,null,null,correct_null,correct_null
+0130,uid,,,"""CHE-105.976.647""","""CHE-105.976.647""",correct,correct
+0130,legal_form,,,"""AG""","""AG""",correct,correct
+0130,seat_municipality,,,"""Hunzenschwil""","""Hunzenschwil""",correct,correct
+0130,seat_canton,,,"""AG""","""AG""",correct,correct
+0130,address_care_of,,,null,null,correct_null,correct_null
+0130,address_street,,,"""Hauptstrasse 37""","""Hauptstrasse 37""",correct,correct
+0130,address_postcode,,,"""5502""","""5502""",correct,correct
+0130,address_municipality,,,"""Hunzenschwil""","""Hunzenschwil""",correct,correct
+0130,act_date,,,null,null,correct_null,correct_null
+0130,tagesregister_nr,,,"""12636""","""12636""",correct,correct
+0130,tagesregister_date,,,"""2026-09-04""","""2026-09-04""",correct,correct
+0130,prior_publication_shab_nr,,,67,67,correct,correct
+0130,prior_publication_date,,,"""2026-04-09""","""2026-04-09""",correct,correct
+0130,prior_publication_id,,,"""1006620204""",1006620204,wrong,correct
+0130,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Aargau""",correct,correct
+0130,canton_previous,,,null,null,correct_null,correct_null
+0130,canton_new,,,null,null,correct_null,correct_null
+0130,capital_new_chf,,,null,null,correct_null,correct_null
+0130,capital_previous_chf,,,null,null,correct_null,correct_null
+0130,domicile_new,,,null,null,correct_null,correct_null
+0130,domicile_previous,,,null,null,correct_null,correct_null
+0130,persons_added,"Germann, Karin",,"""Germann, Karin""","""Germann, Karin""",matched,matched
+0130,persons_added,"Germann, Karin",nationality,null,null,correct_null,correct_null
+0130,persons_added,"Germann, Karin",heimatort,"""Schaffhausen, Merishausen und Römerswil""","""Schaffhausen, Merishausen und Römerswil""",correct,correct
+0130,persons_added,"Germann, Karin",domicile,"""Hägglingen""","""Hägglingen""",correct,correct
+0130,persons_added,"Germann, Karin",role,null,null,correct_null,correct_null
+0130,persons_added,"Germann, Karin",signature,"""Kollektivunterschrift zu zweien""","""Kollektivunterschrift zu zweien""",correct,correct
+0130,persons_added,"Germann, Karin",uid,null,null,correct_null,correct_null
+0130,persons_added,"Germann, Karin",stammanteile,null,null,correct_null,correct_null
+0130,persons_removed,"Germann, Urs",,"""Germann, Urs""","""Germann, Urs""",matched,matched
+0130,persons_removed,"Germann, Urs",nationality,null,null,correct_null,correct_null
+0130,persons_removed,"Germann, Urs",heimatort,"""Merishausen und Schaffhausen""","""Merishausen und Schaffhausen""",correct,correct
+0130,persons_removed,"Germann, Urs",domicile,"""Hunzenschwil""","""Hunzenschwil""",correct,correct
+0130,persons_removed,"Germann, Urs",role,"""Mitglied des Verwaltungsrates""","""Mitglied des Verwaltungsrates""",correct,correct
+0130,persons_removed,"Germann, Urs",signature,"""Kollektivunterschrift zu zweien""","""Kollektivunterschrift zu zweien""",correct,correct
+0130,persons_removed,"Germann, Urs",uid,null,null,correct_null,correct_null
+0130,persons_removed,"Germann, Urs",stammanteile,null,null,correct_null,correct_null
+0130,persons_removed,"Germann, Rolf",,"""Germann, Rolf""","""Germann, Rolf""",matched,matched
+0130,persons_removed,"Germann, Rolf",nationality,null,null,correct_null,correct_null
+0130,persons_removed,"Germann, Rolf",heimatort,"""Merishausen und Schaffhausen""","""Merishausen und Schaffhausen""",correct,correct
+0130,persons_removed,"Germann, Rolf",domicile,"""Lenzburg""","""Lenzburg""",correct,correct
+0130,persons_removed,"Germann, Rolf",role,"""Mitglied des Verwaltungsrates""","""Mitglied des Verwaltungsrates""",correct,correct
+0130,persons_removed,"Germann, Rolf",signature,"""Kollektivunterschrift zu zweien""","""Kollektivunterschrift zu zweien""",correct,correct
+0130,persons_removed,"Germann, Rolf",uid,null,null,correct_null,correct_null
+0130,persons_removed,"Germann, Rolf",stammanteile,null,null,correct_null,correct_null
+0130,persons_changed,,,"[{""name_new"": ""Germann, Patrick"", ""name_previous"": null, ""domicile_new"": ""Hägglingen"", ""domicile_previous"": null, ""role_new"": ""Präsident des Verwaltungsrates"", ""role_previous"": null, ""signature_new"": ""Einzelunterschrift"", ""signature_previous"": ""Kollektivunterschrift zu zweien"", ""nationality_new"": null, ""nationality_previous"": null, ""heimatort_new"": ""Schaffhausen und Merishausen"", ""heimatort_previous"": null, ""stammanteile_new"": null, ""stammanteile_previous"": null}, {""name_new"": ""Wehrli, Martin"", ""name_previous"": null, ""domicile_new"": ""Gretzenbach"", ""domicile_previous"": null, ""role_new"": ""Mitglied des Verwaltungsrates"", ""role_previous"": ""ohne eingetragene Funktion"", ""signature_new"": ""Kollektivunterschrift zu zweien"", ""signature_previous"": null, ""nationality_new"": null, ""nationality_previous"": null, ""heimatort_new"": ""Küttigen"", ""heimatort_previous"": null, ""stammanteile_new"": null, ""stammanteile_previous"": null}]","[{""name_new"": ""Germann, Patrick"", ""name_previous"": null, ""domicile_new"": ""Hägglingen"", ""domicile_previous"": null, ""role_new"": ""Präsident des Verwaltungsrates"", ""role_previous"": null, ""signature_new"": ""Einzelunterschrift"", ""signature_previous"": ""Kollektivunterschrift zu zweien"", ""nationality_new"": null, ""nationality_previous"": null, ""heimatort_new"": ""Schaffhausen und Merishausen"", ""heimatort_previous"": null, ""stammanteile_new"": null, ""stammanteile_previous"": null}, {""name_new"": ""Wehrli, Martin"", ""name_previous"": null, ""domicile_new"": ""Gretzenbach"", ""domicile_previous"": null, ""role_new"": ""Mitglied des Verwaltungsrates"", ""role_previous"": ""ohne eingetragene Funktion"", ""signature_new"": ""Kollektivunterschrift zu zweien"", ""signature_previous"": null, ""nationality_new"": null, ""nationality_previous"": null, ""heimatort_new"": ""Küttigen"", ""heimatort_previous"": null, ""stammanteile_new"": null, ""stammanteile_previous"": null}]",excluded_uncertain,excluded_uncertain
+0131,act_type,,,"""mutation""","""mutation""",correct,correct
+0131,act_subtypes,,,"[""organaenderung""]","[""organaenderung"", ""kapitalerhoehung""]",wrong,wrong
+0131,company_name_full,,,"""Physiotherapie Lipa GmbH""","""Physiotherapie Lipa GmbH""",correct,correct
+0131,company_name_base,,,"""Physiotherapie Lipa GmbH""","""Physiotherapie Lipa GmbH""",correct,correct
+0131,status_suffix,,,null,null,correct_null,correct_null
+0131,alternative_names,,,[],[],correct_null,correct_null
+0131,company_name_new,,,null,null,correct_null,correct_null
+0131,company_name_previous,,,null,null,correct_null,correct_null
+0131,uid,,,"""CHE-265.726.209""","""CHE-265.726.209""",correct,correct
+0131,legal_form,,,"""GmbH""","""GmbH""",correct,correct
+0131,seat_municipality,,,"""Gebenstorf""","""Gebenstorf""",correct,correct
+0131,seat_canton,,,"""AG""","""AG""",correct,correct
+0131,address_care_of,,,null,null,correct_null,correct_null
+0131,address_street,,,"""Geeligstrasse 1""","""Geeligstrasse 1""",correct,correct
+0131,address_postcode,,,"""5412""","""5412""",correct,correct
+0131,address_municipality,,,"""Gebenstorf""","""Gebenstorf""",correct,correct
+0131,act_date,,,null,null,correct_null,correct_null
+0131,tagesregister_nr,,,"""12652""","""12652""",correct,correct
+0131,tagesregister_date,,,"""2026-09-04""","""2026-09-04""",correct,correct
+0131,prior_publication_shab_nr,,,149,149,correct,correct
+0131,prior_publication_date,,,"""2024-08-05""","""2024-08-05""",correct,correct
+0131,prior_publication_id,,,"""1006100000""","""1006100000""",correct,correct
+0131,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Aargau""",correct,correct
+0131,canton_previous,,,null,null,correct_null,correct_null
+0131,canton_new,,,null,null,correct_null,correct_null
+0131,capital_new_chf,,,null,null,correct_null,correct_null
+0131,capital_previous_chf,,,null,null,correct_null,correct_null
+0131,domicile_new,,,null,null,correct_null,correct_null
+0131,domicile_previous,,,null,null,correct_null,correct_null
+0131,persons_removed,"Birrer, Katica",,"""Birrer, Katica""","""Birrer, Katica""",matched,matched
+0131,persons_removed,"Birrer, Katica",nationality,null,null,correct_null,correct_null
+0131,persons_removed,"Birrer, Katica",heimatort,"""Luthern""","""Luthern""",correct,correct
+0131,persons_removed,"Birrer, Katica",domicile,"""Hendschiken""","""Hendschiken""",correct,correct
+0131,persons_removed,"Birrer, Katica",role,"""Gesellschafterin""","""Gesellschafterin""",correct,correct
+0131,persons_removed,"Birrer, Katica",signature,"""Einzelunterschrift""","""Einzelunterschrift""",correct,correct
+0131,persons_removed,"Birrer, Katica",uid,null,null,correct_null,correct_null
+0131,persons_removed,"Birrer, Katica",stammanteile,10,10,correct,correct
+0131,persons_changed,"Tropsch, Christian",,"""Tropsch, Christian""","""Tropsch, Christian""",matched,matched
+0131,persons_changed,"Tropsch, Christian",name_previous,null,null,correct_null,correct_null
+0131,persons_changed,"Tropsch, Christian",domicile_new,"""Dottikon""","""Dottikon""",correct,correct
+0131,persons_changed,"Tropsch, Christian",domicile_previous,"""Thalheim (AG)""","""Thalheim (AG)""",correct,correct
+0131,persons_changed,"Tropsch, Christian",role_new,"""Gesellschafter und Geschäftsführer""","""Gesellschafter und Geschäftsführer""",correct,correct
+0131,persons_changed,"Tropsch, Christian",role_previous,null,null,correct_null,correct_null
+0131,persons_changed,"Tropsch, Christian",signature_new,"""Einzelunterschrift""","""Einzelunterschrift""",correct,correct
+0131,persons_changed,"Tropsch, Christian",signature_previous,null,null,correct_null,correct_null
+0131,persons_changed,"Tropsch, Christian",nationality_new,"""deutsch""",null,omission,omission
+0131,persons_changed,"Tropsch, Christian",nationality_previous,null,null,correct_null,correct_null
+0131,persons_changed,"Tropsch, Christian",heimatort_new,null,null,correct_null,correct_null
+0131,persons_changed,"Tropsch, Christian",heimatort_previous,null,null,correct_null,correct_null
+0131,persons_changed,"Tropsch, Christian",stammanteile_new,20,20,correct,correct
+0131,persons_changed,"Tropsch, Christian",stammanteile_previous,10,10,correct,correct
+0131,extras,nominal_value_chf,,1000.0,1000.0,correct,correct
+0132,act_type,,,"""mutation""","""mutation""",correct,correct
+0132,act_subtypes,,,"[""statutenaenderung"", ""organaenderung"", ""sitzverlegung"", ""zweckaenderung""]","[""statutenaenderung"", ""organaenderung"", ""sitzverlegung"", ""zweckaenderung""]",correct,correct
+0132,company_name_full,,,"""SuH Holding AG""","""SuH Holding AG""",correct,correct
+0132,company_name_base,,,"""SuH Holding AG""","""SuH Holding AG""",correct,correct
+0132,status_suffix,,,null,null,correct_null,correct_null
+0132,alternative_names,,,[],[],correct_null,correct_null
+0132,company_name_new,,,null,null,correct_null,correct_null
+0132,company_name_previous,,,null,null,correct_null,correct_null
+0132,uid,,,"""CHE-391.791.992""","""CHE-391.791.992""",correct,correct
+0132,legal_form,,,"""AG""","""AG""",correct,correct
+0132,seat_municipality,,,"""Oftringen""","""Oftringen""",correct,correct
+0132,seat_canton,,,"""AG""","""AG""",correct,correct
+0132,address_care_of,,,null,null,correct_null,correct_null
+0132,address_street,,,"""Talrain 27b""","""Talrain 27b""",correct,correct
+0132,address_postcode,,,"""5037""","""5037""",correct,correct
+0132,address_municipality,,,"""Muhen""","""Muhen""",correct,correct
+0132,act_date,,,"""2026-08-24""","""2026-08-24""",correct,correct
+0132,tagesregister_nr,,,"""12634""","""12634""",correct,correct
+0132,tagesregister_date,,,"""2026-09-04""","""2026-09-04""",correct,correct
+0132,prior_publication_shab_nr,,,232,232,correct,correct
+0132,prior_publication_date,,,"""2024-11-28""","""2024-11-28""",correct,correct
+0132,prior_publication_id,,,"""1006190339""","""1006190339""",correct,correct
+0132,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Aargau""",correct,correct
+0132,canton_previous,,,null,null,correct_null,correct_null
+0132,canton_new,,,null,null,correct_null,correct_null
+0132,capital_new_chf,,,null,null,correct_null,correct_null
+0132,capital_previous_chf,,,null,null,correct_null,correct_null
+0132,domicile_new,,,"""Talrain 27b, 5037 Muhen""","""Talrain 27b, 5037 Muhen""",correct,correct
+0132,domicile_previous,,,"""Weichlerrain 7, 4665 Oftringen""","""Weichlerrain 7, 4665 Oftringen""",correct,correct
+0132,persons_changed,"Stankovski, Aleksandar",,"""Stankovski, Aleksandar""","""Stankovski, Aleksandar""",matched,matched
+0132,persons_changed,"Stankovski, Aleksandar",name_previous,null,null,correct_null,correct_null
+0132,persons_changed,"Stankovski, Aleksandar",domicile_new,"""Muhen""","""Muhen""",correct,correct
+0132,persons_changed,"Stankovski, Aleksandar",domicile_previous,"""Oftringen""","""Oftringen""",correct,correct
+0132,persons_changed,"Stankovski, Aleksandar",role_new,"""Mitglied des Verwaltungsrates""","""Mitglied des Verwaltungsrates""",correct,correct
+0132,persons_changed,"Stankovski, Aleksandar",role_previous,null,null,correct_null,correct_null
+0132,persons_changed,"Stankovski, Aleksandar",signature_new,"""Einzelunterschrift""","""mit Einzelunterschrift""",wrong,wrong
+0132,persons_changed,"Stankovski, Aleksandar",signature_previous,null,null,correct_null,correct_null
+0132,persons_changed,"Stankovski, Aleksandar",nationality_new,null,null,correct_null,correct_null
+0132,persons_changed,"Stankovski, Aleksandar",nationality_previous,null,null,correct_null,correct_null
+0132,persons_changed,"Stankovski, Aleksandar",heimatort_new,"""Schöftland""","""Schöftland""",correct,correct
+0132,persons_changed,"Stankovski, Aleksandar",heimatort_previous,null,null,correct_null,correct_null
+0132,persons_changed,"Stankovski, Aleksandar",stammanteile_new,null,null,correct_null,correct_null
+0132,persons_changed,"Stankovski, Aleksandar",stammanteile_previous,null,null,correct_null,correct_null
+0132,extras,zweck,,"""Die Gesellschaft bezweckt das Halten von Beteiligungen sowie den Kauf und Verkauf von Immobilien. Die Gesellschaft kann Zweigniederlassungen und Tochtergesellschaften im In- und Ausland errichten …""","""Die Gesellschaft bezweckt das Halten von Beteiligungen sowie den Kauf und Verkauf von Immobilien. Die Gesellschaft kann Zweigniederlassungen und Tochtergesellschaften im In- und Ausland errichten und sich an anderen Unternehmen im In- und Ausland beteiligen sowie alle Geschäfte tätigen, die direkt oder indirekt mit ihrem Zweck in Zusammenhang stehen. Die Gesellschaft kann im In- und Ausland Grundeigentum erwerben, belasten, veräussern und verwalten. Sie kann auch Finanzierungen für eigene oder fremde Rechnung vornehmen sowie Garantien und Bürgschaften für Tochtergesellschaften und Dritte eingehen.""",correct,correct
+0132,extras,mitteilungen,,"""durch Brief oder E-Mail an die im Aktienbuch verzeichneten Adressen""","""Die Mitteilungen an die Aktionäre erfolgen durch Brief oder E-Mail an die im Aktienbuch verzeichneten Adressen.""",wrong,wrong
+0133,act_type,,,"""mutation""","""mutation""",correct,correct
+0133,act_subtypes,,,"[""firmenaenderung"", ""konkurseroeffnung""]","[""firmenaenderung"", ""konkurseroeffnung"", ""liquidationseroeffnung""]",excluded_uncertain,excluded_uncertain
+0133,company_name_full,,,"""M&M Consulting GmbH, Zweigniederlassung Zofingen""","""M&M Consulting GmbH, Zweigniederlassung Zofingen""",correct,correct
+0133,company_name_base,,,"""M&M Consulting GmbH, Zweigniederlassung Zofingen""","""M&M Consulting GmbH, Zweigniederlassung Zofingen""",correct,correct
+0133,status_suffix,,,null,null,correct_null,correct_null
+0133,alternative_names,,,[],[],correct_null,correct_null
+0133,company_name_new,,,"""M&M Consulting GmbH, Zweigniederlassung Zofingen in Liquidation""","""M&M Consulting GmbH, Zweigniederlassung Zofingen in Liquidation""",correct,correct
+0133,company_name_previous,,,"""M&M Consulting GmbH, Zweigniederlassung Zofingen""","""M&M Consulting GmbH, Zweigniederlassung Zofingen""",correct,correct
+0133,uid,,,"""CHE-491.574.811""","""CHE-491.574.811""",correct,correct
+0133,legal_form,,,"""Zweigniederlassung""","""Zweigniederlassung""",correct,correct
+0133,seat_municipality,,,"""Zofingen""","""Zofingen""",correct,correct
+0133,seat_canton,,,"""AG""","""AG""",correct,correct
+0133,address_care_of,,,null,null,correct_null,correct_null
+0133,address_street,,,"""Untere Brühlstrasse 30""","""Untere Brühlstrasse 30""",correct,correct
+0133,address_postcode,,,"""4800""","""4800""",correct,correct
+0133,address_municipality,,,"""Zofingen""","""Zofingen""",correct,correct
+0133,act_date,,,"""2026-08-26""",null,excluded_uncertain,excluded_uncertain
+0133,tagesregister_nr,,,"""12680""","""12680""",correct,correct
+0133,tagesregister_date,,,"""2026-09-04""","""2026-09-04""",correct,correct
+0133,prior_publication_shab_nr,,,38,38,correct,correct
+0133,prior_publication_date,,,"""2022-02-23""","""2022-02-23""",correct,correct
+0133,prior_publication_id,,,"""1005412605""","""1005412605""",correct,correct
+0133,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Aargau""",correct,correct
+0133,canton_previous,,,null,null,correct_null,correct_null
+0133,canton_new,,,null,null,correct_null,correct_null
+0133,capital_new_chf,,,null,null,correct_null,correct_null
+0133,capital_previous_chf,,,null,null,correct_null,correct_null
+0133,domicile_new,,,null,null,correct_null,correct_null
+0133,domicile_previous,,,null,null,correct_null,correct_null
+0133,extras,hauptsitz,,"""Triengen""","""Triengen""",correct,correct
+0133,extras,konkurs_wirkung_ab,,"""2026-08-26 10:00""","""2026-08-26 10:00""",correct,correct
+0134,act_type,,,"""loeschung""","""loeschung""",correct,correct
+0134,act_subtypes,,,[],[],correct_null,correct_null
+0134,company_name_full,,,"""Bahnhoftaxi Wohlen Stutz AG""","""Bahnhoftaxi Wohlen Stutz AG""",correct,correct
+0134,company_name_base,,,"""Bahnhoftaxi Wohlen Stutz AG""","""Bahnhoftaxi Wohlen Stutz AG""",correct,correct
+0134,status_suffix,,,null,null,correct_null,correct_null
+0134,alternative_names,,,[],[],correct_null,correct_null
+0134,company_name_new,,,null,null,correct_null,correct_null
+0134,company_name_previous,,,null,null,correct_null,correct_null
+0134,uid,,,"""CHE-107.891.401""","""CHE-107.891.401""",correct,correct
+0134,legal_form,,,"""AG""","""AG""",correct,correct
+0134,seat_municipality,,,"""Wohlen (AG)""","""Wohlen (AG)""",correct,correct
+0134,seat_canton,,,"""AG""","""AG""",correct,correct
+0134,address_care_of,,,null,null,correct_null,correct_null
+0134,address_street,,,"""Dammweg 45""","""Dammweg 45""",correct,correct
+0134,address_postcode,,,"""5610""","""5610""",correct,correct
+0134,address_municipality,,,"""Wohlen AG""","""Wohlen AG""",correct,correct
+0134,act_date,,,"""2026-09-04""","""2026-09-04""",correct,correct
+0134,tagesregister_nr,,,"""12684""","""12684""",correct,correct
+0134,tagesregister_date,,,"""2026-09-04""","""2026-09-04""",correct,correct
+0134,prior_publication_shab_nr,,,116,116,correct,correct
+0134,prior_publication_date,,,"""2026-06-19""","""2026-06-19""",correct,correct
+0134,prior_publication_id,,,"""1006682841""","""1006682841""",correct,correct
+0134,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Aargau""",correct,correct
+0134,canton_previous,,,null,null,correct_null,correct_null
+0134,canton_new,,,null,null,correct_null,correct_null
+0134,capital_new_chf,,,null,null,correct_null,correct_null
+0134,capital_previous_chf,,,null,null,correct_null,correct_null
+0134,domicile_new,,,null,null,correct_null,correct_null
+0134,domicile_previous,,,null,null,correct_null,correct_null
+0134,extras,loeschung_reason,,"""infolge Fusion""","""Fusion auf die Auto AG Bus, in Rothenburg (CHE-266.726.643)""",wrong,wrong
+0135,act_type,,,"""loeschung""","""loeschung""",correct,correct
+0135,act_subtypes,,,[],[],correct_null,correct_null
+0135,company_name_full,,,"""Burger Tankrevisionen Frei GmbH in Liquidation""","""Burger Tankrevisionen Frei GmbH in Liquidation""",correct,correct
+0135,company_name_base,,,"""Burger Tankrevisionen Frei GmbH""","""Burger Tankrevisionen Frei GmbH""",correct,correct
+0135,status_suffix,,,"""in Liquidation""","""in Liquidation""",correct,correct
+0135,alternative_names,,,[],[],correct_null,correct_null
+0135,company_name_new,,,null,null,correct_null,correct_null
+0135,company_name_previous,,,null,null,correct_null,correct_null
+0135,uid,,,"""CHE-434.604.669""","""CHE-434.604.669""",correct,correct
+0135,legal_form,,,"""Zweigniederlassung""","""Zweigniederlassung""",correct,correct
+0135,seat_municipality,,,"""Würenlos""","""Würenlos""",correct,correct
+0135,seat_canton,,,"""AG""","""AG""",correct,correct
+0135,address_care_of,,,null,null,correct_null,correct_null
+0135,address_street,,,"""Bahnhofstrasse 10""","""Bahnhofstrasse 10""",correct,correct
+0135,address_postcode,,,"""5436""","""5436""",correct,correct
+0135,address_municipality,,,"""Würenlos""","""Würenlos""",correct,correct
+0135,act_date,,,"""2026-09-04""","""2026-09-04""",correct,correct
+0135,tagesregister_nr,,,"""12678""","""12678""",correct,correct
+0135,tagesregister_date,,,"""2026-09-04""","""2026-09-04""",correct,correct
+0135,prior_publication_shab_nr,,,144,144,correct,correct
+0135,prior_publication_date,,,"""2024-07-26""","""2024-07-26""",correct,correct
+0135,prior_publication_id,,,"""1006095060""","""1006095060""",correct,correct
+0135,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Aargau""",correct,correct
+0135,canton_previous,,,null,null,correct_null,correct_null
+0135,canton_new,,,null,null,correct_null,correct_null
+0135,capital_new_chf,,,null,null,correct_null,correct_null
+0135,capital_previous_chf,,,null,null,correct_null,correct_null
+0135,domicile_new,,,null,null,correct_null,correct_null
+0135,domicile_previous,,,null,null,correct_null,correct_null
+0135,extras,hauptsitz,,"""Zug""","""Zug""",correct,correct
+0135,extras,loeschung_reason,,"""infolge Löschung der Hauptniederlassung (SHAB vom 02.09.2026) im Sinne von Art. 111 Abs. 2 HRegV von Amtes wegen""","""Löschung der Hauptniederlassung""",correct,correct
+0136,act_type,,,"""mutation""","""mutation""",correct,correct
+0136,act_subtypes,,,"[""organaenderung"", ""firmenaenderung"", ""zweckaenderung""]","[""organaenderung"", ""firmenaenderung"", ""zweckaenderung""]",correct,correct
+0136,company_name_full,,,"""Jasmin Jud Cosmetics""","""Jasmin Jud Cosmetics""",correct,correct
+0136,company_name_base,,,"""Jasmin Jud Cosmetics""","""Jasmin Jud Cosmetics""",correct,correct
+0136,status_suffix,,,null,null,correct_null,correct_null
+0136,alternative_names,,,[],[],correct_null,correct_null
+0136,company_name_new,,,"""JASMIN COSMETICS RÜDISÜHLI""","""JASMIN COSMETICS RÜDISÜHLI""",correct,correct
+0136,company_name_previous,,,"""Jasmin Jud Cosmetics""","""Jasmin Jud Cosmetics""",correct,correct
+0136,uid,,,"""CHE-302.193.986""","""CHE-302.193.986""",correct,correct
+0136,legal_form,,,"""Einzelunternehmen""","""Einzelunternehmen""",correct,correct
+0136,seat_municipality,,,"""Brugg""","""Brugg""",correct,correct
+0136,seat_canton,,,"""AG""","""AG""",correct,correct
+0136,address_care_of,,,"""Bodyline medizinische Kosmetik GmbH""","""Bodyline medizinische Kosmetik GmbH""",correct,correct
+0136,address_street,,,"""Stahlrain 8""","""Stahlrain 8""",correct,correct
+0136,address_postcode,,,"""5200""","""5200""",correct,correct
+0136,address_municipality,,,"""Brugg AG""","""Brugg AG""",correct,correct
+0136,act_date,,,null,null,correct_null,correct_null
+0136,tagesregister_nr,,,"""12656""","""12656""",correct,correct
+0136,tagesregister_date,,,"""2026-09-04""","""2026-09-04""",correct,correct
+0136,prior_publication_shab_nr,,,85,85,correct,correct
+0136,prior_publication_date,,,"""2020-05-04""","""2020-05-04""",correct,correct
+0136,prior_publication_id,,,"""1004882341""",1004882341,wrong,correct
+0136,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Aargau""",correct,correct
+0136,canton_previous,,,null,null,correct_null,correct_null
+0136,canton_new,,,null,null,correct_null,correct_null
+0136,capital_new_chf,,,null,null,correct_null,correct_null
+0136,capital_previous_chf,,,null,null,correct_null,correct_null
+0136,domicile_new,,,null,null,correct_null,correct_null
+0136,domicile_previous,,,null,null,correct_null,correct_null
+0136,persons_changed,"Rüdisühli-Jud, Jasmin",,"""Rüdisühli-Jud, Jasmin""","""Rüdisühli-Jud, Jasmin""",matched,matched
+0136,persons_changed,"Rüdisühli-Jud, Jasmin",name_previous,"""Jud, Jasmin""","""Jud, Jasmin""",correct,correct
+0136,persons_changed,"Rüdisühli-Jud, Jasmin",domicile_new,"""Hausen (AG)""","""Hausen (AG)""",correct,correct
+0136,persons_changed,"Rüdisühli-Jud, Jasmin",domicile_previous,null,null,correct_null,correct_null
+0136,persons_changed,"Rüdisühli-Jud, Jasmin",role_new,"""Inhaberin""","""Inhaberin""",correct,correct
+0136,persons_changed,"Rüdisühli-Jud, Jasmin",role_previous,null,null,correct_null,correct_null
+0136,persons_changed,"Rüdisühli-Jud, Jasmin",signature_new,"""Einzelunterschrift""","""mit Einzelunterschrift""",wrong,wrong
+0136,persons_changed,"Rüdisühli-Jud, Jasmin",signature_previous,null,null,correct_null,correct_null
+0136,persons_changed,"Rüdisühli-Jud, Jasmin",nationality_new,null,null,correct_null,correct_null
+0136,persons_changed,"Rüdisühli-Jud, Jasmin",nationality_previous,null,null,correct_null,correct_null
+0136,persons_changed,"Rüdisühli-Jud, Jasmin",heimatort_new,"""Schongau""","""Schongau""",correct,correct
+0136,persons_changed,"Rüdisühli-Jud, Jasmin",heimatort_previous,null,null,correct_null,correct_null
+0136,persons_changed,"Rüdisühli-Jud, Jasmin",stammanteile_new,null,null,correct_null,correct_null
+0136,persons_changed,"Rüdisühli-Jud, Jasmin",stammanteile_previous,null,null,correct_null,correct_null
+0136,extras,zweck,,"""Kosmetikpraxis für kosmetische Behandlungen aller Art. Beratungen und Schulungen im kosmetischen Bereich sowie Vertrieb von Kosmetik- und Schönheitsprodukten.""","""Kosmetikpraxis für kosmetische Behandlungen aller Art. Beratungen und Schulungen im kosmetischen Bereich sowie Vertrieb von Kosmetik- und Schönheitsprodukten.""",correct,correct
+0137,act_type,,,"""mutation""","""mutation""",correct,correct
+0137,act_subtypes,,,"[""konkurseroeffnung""]","[""konkurseroeffnung""]",correct,correct
+0137,company_name_full,,,"""von Rotz Fahrzeugpflege & Montage""","""von Rotz Fahrzeugpflege & Montage""",correct,correct
+0137,company_name_base,,,"""von Rotz Fahrzeugpflege & Montage""","""von Rotz Fahrzeugpflege & Montage""",correct,correct
+0137,status_suffix,,,null,null,correct_null,correct_null
+0137,alternative_names,,,[],[],correct_null,correct_null
+0137,company_name_new,,,null,null,correct_null,correct_null
+0137,company_name_previous,,,null,null,correct_null,correct_null
+0137,uid,,,"""CHE-429.667.925""","""CHE-429.667.925""",correct,correct
+0137,legal_form,,,"""Einzelunternehmen""","""Einzelunternehmen""",correct,correct
+0137,seat_municipality,,,"""Leuggern""","""Leuggern""",correct,correct
+0137,seat_canton,,,"""AG""","""AG""",correct,correct
+0137,address_care_of,,,null,null,correct_null,correct_null
+0137,address_street,,,"""Wardstrasse 3""","""Wardstrasse 3""",correct,correct
+0137,address_postcode,,,"""5316""","""5316""",correct,correct
+0137,address_municipality,,,"""Leuggern""","""Leuggern""",correct,correct
+0137,act_date,,,"""2026-09-02""","""2026-09-02""",excluded_uncertain,excluded_uncertain
+0137,tagesregister_nr,,,"""12683""","""12683""",correct,correct
+0137,tagesregister_date,,,"""2026-09-04""","""2026-09-04""",correct,correct
+0137,prior_publication_shab_nr,,,58,58,correct,correct
+0137,prior_publication_date,,,"""2026-03-25""","""2026-03-25""",correct,correct
+0137,prior_publication_id,,,"""1006606317""","""1006606317""",correct,correct
+0137,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Aargau""",correct,correct
+0137,canton_previous,,,null,null,correct_null,correct_null
+0137,canton_new,,,null,null,correct_null,correct_null
+0137,capital_new_chf,,,null,null,correct_null,correct_null
+0137,capital_previous_chf,,,null,null,correct_null,correct_null
+0137,domicile_new,,,null,null,correct_null,correct_null
+0137,domicile_previous,,,null,null,correct_null,correct_null
+0137,extras,konkurs_wirkung_ab,,"""2026-09-02 10:45""","""2026-09-02 10:45""",correct,correct
+0138,act_type,,,"""neueintragung""","""neueintragung""",correct,correct
+0138,act_subtypes,,,[],[],correct_null,correct_null
+0138,company_name_full,,,"""Praxis-Sisseln AG""","""Praxis-Sisseln AG""",correct,correct
+0138,company_name_base,,,"""Praxis-Sisseln AG""","""Praxis-Sisseln AG""",correct,correct
+0138,status_suffix,,,null,null,correct_null,correct_null
+0138,alternative_names,,,[],[],correct_null,correct_null
+0138,company_name_new,,,null,null,correct_null,correct_null
+0138,company_name_previous,,,null,null,correct_null,correct_null
+0138,uid,,,"""CHE-290.073.729""","""CHE-290.073.729""",correct,correct
+0138,legal_form,,,"""AG""","""AG""",correct,correct
+0138,seat_municipality,,,"""Sisseln""","""Sisseln""",correct,correct
+0138,seat_canton,,,"""AG""","""AG""",correct,correct
+0138,address_care_of,,,null,null,correct_null,correct_null
+0138,address_street,,,"""Poststrasse 9""","""Poststrasse 9""",correct,correct
+0138,address_postcode,,,"""4334""","""4334""",correct,correct
+0138,address_municipality,,,"""Sisseln AG""","""Sisseln AG""",correct,correct
+0138,act_date,,,"""2026-08-27""","""2026-08-27""",correct,correct
+0138,tagesregister_nr,,,"""12662""","""12662""",correct,correct
+0138,tagesregister_date,,,"""2026-09-04""","""2026-09-04""",correct,correct
+0138,prior_publication_shab_nr,,,null,null,correct_null,correct_null
+0138,prior_publication_date,,,null,null,correct_null,correct_null
+0138,prior_publication_id,,,null,null,correct_null,correct_null
+0138,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Aargau""",correct,correct
+0138,canton_previous,,,null,null,correct_null,correct_null
+0138,canton_new,,,null,null,correct_null,correct_null
+0138,capital_new_chf,,,100000.0,100000.0,correct,correct
+0138,capital_previous_chf,,,null,null,correct_null,correct_null
+0138,domicile_new,,,null,null,correct_null,correct_null
+0138,domicile_previous,,,null,null,correct_null,correct_null
+0138,persons_added,"Bachmann, Philipp Andreas",,"""Bachmann, Philipp Andreas""","""Bachmann, Philipp Andreas""",matched,matched
+0138,persons_added,"Bachmann, Philipp Andreas",nationality,null,null,correct_null,correct_null
+0138,persons_added,"Bachmann, Philipp Andreas",heimatort,"""Hochdorf""","""Hochdorf""",correct,correct
+0138,persons_added,"Bachmann, Philipp Andreas",domicile,"""Sisseln""","""Sisseln""",correct,correct
+0138,persons_added,"Bachmann, Philipp Andreas",role,"""Präsident des Verwaltungsrates""","""Präsident des Verwaltungsrates""",correct,correct
+0138,persons_added,"Bachmann, Philipp Andreas",signature,"""Einzelunterschrift""","""Einzelunterschrift""",correct,correct
+0138,persons_added,"Bachmann, Philipp Andreas",uid,null,null,correct_null,correct_null
+0138,persons_added,"Bachmann, Philipp Andreas",stammanteile,null,null,correct_null,correct_null
+0138,persons_added,"Bachmann, Patrizia",,"""Bachmann, Patrizia""","""Bachmann, Patrizia""",matched,matched
+0138,persons_added,"Bachmann, Patrizia",nationality,null,null,correct_null,correct_null
+0138,persons_added,"Bachmann, Patrizia",heimatort,"""Hochdorf""","""Hochdorf""",correct,correct
+0138,persons_added,"Bachmann, Patrizia",domicile,"""Sisseln""","""Sisseln""",correct,correct
+0138,persons_added,"Bachmann, Patrizia",role,"""Mitglied des Verwaltungsrates""","""Mitglied des Verwaltungsrates""",correct,correct
+0138,persons_added,"Bachmann, Patrizia",signature,"""Einzelunterschrift""","""Einzelunterschrift""",correct,correct
+0138,persons_added,"Bachmann, Patrizia",uid,null,null,correct_null,correct_null
+0138,persons_added,"Bachmann, Patrizia",stammanteile,null,null,correct_null,correct_null
+0138,extras,zweck,,"""Die Gesellschaft bezweckt den Betrieb einer Arztpraxis und die Erbringung von Dienstleistungen im Gesundheitsbereich. Die Gesellschaft kann Zweigniederlassungen und Tochtergesellschaften im In- und Ausland …""","""Die Gesellschaft bezweckt den Betrieb einer Arztpraxis und die Erbringung von Dienstleistungen im Gesundheitsbereich. Die Gesellschaft kann Zweigniederlassungen und Tochtergesellschaften im In- und Ausland errichten und sich an anderen Unternehmen im In- und Ausland beteiligen sowie alle Geschäfte tätigen, die direkt oder indirekt mit ihrem Zweck in Zusammenhang stehen. Die Gesellschaft kann im In- und Ausland Grundeigentum erwerben, belasten, veräussern und verwalten. Sie kann auch Finanzierungen für eigene oder fremde Rechnung vornehmen sowie Garantien und Bürgschaften für Tochtergesellschaften und Dritte eingehen.""",correct,correct
+0138,extras,nominal_value_chf,,1000.0,1000.0,correct,correct
+0138,extras,aktien_new,,100,100,correct,correct
+0138,extras,share_classes,,"""Namenaktien""","[""Namenaktien""]",wrong,wrong
+0138,extras,liberierung_new_chf,,100000.0,100000.0,correct,correct
+0138,extras,vinkulierung,,true,true,correct,correct
+0138,extras,revision,,"""opting-out""","""opting-out""",correct,correct
+0138,extras,mitteilungen,,"""durch Brief oder E-Mail an die im Aktienbuch verzeichneten Adressen""","""Die Mitteilungen an die Aktionäre erfolgen durch Brief oder E-Mail an die im Aktienbuch verzeichneten Adressen.""",wrong,wrong
+0139,act_type,,,"""mutation""","""mutation""",correct,correct
+0139,act_subtypes,,,"[""sitzverlegung"", ""kantonswechsel""]","[""sitzverlegung"", ""kantonswechsel""]",correct,correct
+0139,company_name_full,,,"""Generation Living GmbH""","""Generation Living GmbH""",correct,correct
+0139,company_name_base,,,"""Generation Living GmbH""","""Generation Living GmbH""",correct,correct
+0139,status_suffix,,,null,null,correct_null,correct_null
+0139,alternative_names,,,[],[],correct_null,correct_null
+0139,company_name_new,,,null,null,correct_null,correct_null
+0139,company_name_previous,,,null,null,correct_null,correct_null
+0139,uid,,,"""CHE-438.589.922""","""CHE-438.589.922""",correct,correct
+0139,legal_form,,,"""GmbH""","""GmbH""",correct,correct
+0139,seat_municipality,,,"""Aarau""","""Aarau""",correct,correct
+0139,seat_canton,,,"""AG""","""AG""",correct,correct
+0139,address_care_of,,,null,null,correct_null,correct_null
+0139,address_street,,,"""Glashütte 89d""","""Glashütte 89d""",correct,correct
+0139,address_postcode,,,"""3807""","""3807""",correct,correct
+0139,address_municipality,,,"""Iseltwald""","""Iseltwald""",correct,correct
+0139,act_date,,,null,null,correct_null,correct_null
+0139,tagesregister_nr,,,"""12688""","""12688""",correct,correct
+0139,tagesregister_date,,,"""2026-09-04""","""2026-09-04""",correct,correct
+0139,prior_publication_shab_nr,,,160,160,correct,correct
+0139,prior_publication_date,,,"""2025-08-21""","""2025-08-21""",correct,correct
+0139,prior_publication_id,,,"""1006413685""","""1006413685""",correct,correct
+0139,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Aargau""",correct,correct
+0139,canton_previous,,,"""AG""","""AG""",correct,correct
+0139,canton_new,,,"""BE""","""BE""",correct,correct
+0139,capital_new_chf,,,null,null,correct_null,correct_null
+0139,capital_previous_chf,,,null,null,correct_null,correct_null
+0139,domicile_new,,,"""Glashütte 89d, 3807 Iseltwald""","""Glashütte 89d, 3807 Iseltwald""",correct,correct
+0139,domicile_previous,,,"""Buchserstrasse 4, 5000 Aarau""","""Buchserstrasse 4, 5000 Aarau""",correct,correct
+0140,act_type,,,"""neueintragung""","""neueintragung""",correct,correct
+0140,act_subtypes,,,[],[],correct_null,correct_null
+0140,company_name_full,,,"""Rostas Dachdecker und Zimmerei""","""Rostas Dachdecker und Zimmerei""",correct,correct
+0140,company_name_base,,,"""Rostas Dachdecker und Zimmerei""","""Rostas Dachdecker und Zimmerei""",correct,correct
+0140,status_suffix,,,null,null,correct_null,correct_null
+0140,alternative_names,,,[],[],correct_null,correct_null
+0140,company_name_new,,,null,null,correct_null,correct_null
+0140,company_name_previous,,,null,null,correct_null,correct_null
+0140,uid,,,"""CHE-143.620.861""","""CHE-143.620.861""",correct,correct
+0140,legal_form,,,"""Einzelunternehmen""","""Einzelunternehmen""",correct,correct
+0140,seat_municipality,,,"""Böztal""","""Böztal""",correct,correct
+0140,seat_canton,,,"""AG""","""AG""",correct,correct
+0140,address_care_of,,,null,null,correct_null,correct_null
+0140,address_street,,,"""Dorfstrasse 53""","""Dorfstrasse 53""",correct,correct
+0140,address_postcode,,,"""5078""","""5078""",correct,correct
+0140,address_municipality,,,"""Effingen""","""Effingen""",correct,correct
+0140,act_date,,,null,null,correct_null,correct_null
+0140,tagesregister_nr,,,"""12692""","""12692""",correct,correct
+0140,tagesregister_date,,,"""2026-09-04""","""2026-09-04""",correct,correct
+0140,prior_publication_shab_nr,,,null,null,correct_null,correct_null
+0140,prior_publication_date,,,null,null,correct_null,correct_null
+0140,prior_publication_id,,,null,null,correct_null,correct_null
+0140,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Aargau""",correct,correct
+0140,canton_previous,,,null,null,correct_null,correct_null
+0140,canton_new,,,null,null,correct_null,correct_null
+0140,capital_new_chf,,,null,null,correct_null,correct_null
+0140,capital_previous_chf,,,null,null,correct_null,correct_null
+0140,domicile_new,,,null,null,correct_null,correct_null
+0140,domicile_previous,,,null,null,correct_null,correct_null
+0140,persons_added,"Rostas, Ludovic",,"""Rostas, Ludovic""","""Rostas, Ludovic""",matched,matched
+0140,persons_added,"Rostas, Ludovic",nationality,"""rumänisch""","""rumänisch""",correct,correct
+0140,persons_added,"Rostas, Ludovic",heimatort,null,null,correct_null,correct_null
+0140,persons_added,"Rostas, Ludovic",domicile,"""Böztal""","""Böztal""",correct,correct
+0140,persons_added,"Rostas, Ludovic",role,"""Inhaber""","""Inhaber""",correct,correct
+0140,persons_added,"Rostas, Ludovic",signature,"""Einzelunterschrift""","""Einzelunterschrift""",correct,correct
+0140,persons_added,"Rostas, Ludovic",uid,null,null,correct_null,correct_null
+0140,persons_added,"Rostas, Ludovic",stammanteile,null,null,correct_null,correct_null
+0140,extras,zweck,,"""Betreiben einer Dachdeckerei und Spenglerei sowie Ausführen von Zimmermann- und Fassadenarbeiten.""","""Betreiben einer Dachdeckerei und Spenglerei sowie Ausführen von Zimmermann- und Fassadenarbeiten.""",correct,correct
+0141,act_type,,,"""mutation""","""mutation""",correct,correct
+0141,act_subtypes,,,"[""statutenaenderung"", ""organaenderung"", ""sitzverlegung"", ""kantonswechsel"", ""zweckaenderung""]","[""statutenaenderung"", ""kapitalerhoehung"", ""organaenderung"", ""sitzverlegung"", ""zweckaenderung""]",wrong,wrong
+0141,company_name_full,,,"""CSB System AG Schweiz""","""CSB System AG Schweiz""",correct,correct
+0141,company_name_base,,,"""CSB System AG Schweiz""","""CSB System AG Schweiz""",correct,correct
+0141,status_suffix,,,null,null,correct_null,correct_null
+0141,alternative_names,,,[],[],correct_null,correct_null
+0141,company_name_new,,,null,null,correct_null,correct_null
+0141,company_name_previous,,,null,null,correct_null,correct_null
+0141,uid,,,"""CHE-113.707.144""","""CHE-113.707.144""",correct,correct
+0141,legal_form,,,"""AG""","""AG""",correct,correct
+0141,seat_municipality,,,"""Kestenholz""","""Kestenholz""",correct,correct
+0141,seat_canton,,,"""SO""","""SO""",correct,correct
+0141,address_care_of,,,null,null,correct_null,correct_null
+0141,address_street,,,"""Brown Boveri Strasse 7""","""Brown Boveri Strasse 7""",correct,correct
+0141,address_postcode,,,"""5400""","""5400""",correct,correct
+0141,address_municipality,,,"""Baden""","""Baden""",correct,correct
+0141,act_date,,,"""2026-08-31""","""2026-08-31""",correct,correct
+0141,tagesregister_nr,,,"""12666""","""12666""",correct,correct
+0141,tagesregister_date,,,"""2026-09-04""","""2026-09-04""",correct,correct
+0141,prior_publication_shab_nr,,,161,161,correct,correct
+0141,prior_publication_date,,,"""2025-08-22""","""2025-08-22""",correct,correct
+0141,prior_publication_id,,,"""1006414693""","""1006414693""",correct,correct
+0141,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Aargau""",correct,correct
+0141,canton_previous,,,"""SO""",null,omission,omission
+0141,canton_new,,,"""AG""",null,omission,omission
+0141,capital_new_chf,,,null,100000.0,hallucination,hallucination
+0141,capital_previous_chf,,,null,100000.0,hallucination,hallucination
+0141,domicile_new,,,"""Brown Boveri Strasse 7, 5400 Baden""","""Brown Boveri Strasse 7, 5400 Baden""",correct,correct
+0141,domicile_previous,,,"""Gäustrasse 52, 4703 Kestenholz""","""Gäustrasse 52, 4703 Kestenholz""",correct,correct
+0141,persons_changed,"Kröner, Vanessa",,"""Kröner, Vanessa""","""Kröner, Vanessa""",matched,matched
+0141,persons_changed,"Kröner, Vanessa",name_previous,"""Kröner-Schimitzek, Vanessa""","""Kröner-Schimitzek, Vanessa""",correct,correct
+0141,persons_changed,"Kröner, Vanessa",domicile_new,"""Ennetbaden""","""Ennetbaden""",correct,correct
+0141,persons_changed,"Kröner, Vanessa",domicile_previous,null,null,correct_null,correct_null
+0141,persons_changed,"Kröner, Vanessa",role_new,"""Präsidentin des Verwaltungsrates""","""Präsidentin des Verwaltungsrates""",correct,correct
+0141,persons_changed,"Kröner, Vanessa",role_previous,null,null,correct_null,correct_null
+0141,persons_changed,"Kröner, Vanessa",signature_new,"""Kollektivunterschrift zu zweien""","""mit Kollektivunterschrift zu zweien""",wrong,wrong
+0141,persons_changed,"Kröner, Vanessa",signature_previous,null,null,correct_null,correct_null
+0141,persons_changed,"Kröner, Vanessa",nationality_new,null,null,correct_null,correct_null
+0141,persons_changed,"Kröner, Vanessa",nationality_previous,"""deutsch""","""deutsch""",correct,correct
+0141,persons_changed,"Kröner, Vanessa",heimatort_new,"""Ennetbaden""","""Ennetbaden""",correct,correct
+0141,persons_changed,"Kröner, Vanessa",heimatort_previous,null,null,correct_null,correct_null
+0141,persons_changed,"Kröner, Vanessa",stammanteile_new,null,null,correct_null,correct_null
+0141,persons_changed,"Kröner, Vanessa",stammanteile_previous,null,null,correct_null,correct_null
+0141,persons_changed,"Jorns, Hansjörg",,"""Jorns, Hansjörg""","""Jorns, Hansjörg""",matched,matched
+0141,persons_changed,"Jorns, Hansjörg",name_previous,null,null,correct_null,correct_null
+0141,persons_changed,"Jorns, Hansjörg",domicile_new,"""Locarno""","""Locarno""",correct,correct
+0141,persons_changed,"Jorns, Hansjörg",domicile_previous,"""Oensingen""","""Oensingen""",correct,correct
+0141,persons_changed,"Jorns, Hansjörg",role_new,"""Mitglied des Verwaltungsrates""","""Mitglied des Verwaltungsrates""",correct,correct
+0141,persons_changed,"Jorns, Hansjörg",role_previous,null,null,correct_null,correct_null
+0141,persons_changed,"Jorns, Hansjörg",signature_new,"""Kollektivunterschrift zu zweien""","""mit Kollektivunterschrift zu zweien""",wrong,wrong
+0141,persons_changed,"Jorns, Hansjörg",signature_previous,null,null,correct_null,correct_null
+0141,persons_changed,"Jorns, Hansjörg",nationality_new,null,null,correct_null,correct_null
+0141,persons_changed,"Jorns, Hansjörg",nationality_previous,null,null,correct_null,correct_null
+0141,persons_changed,"Jorns, Hansjörg",heimatort_new,"""Saanen""","""Saanen""",correct,correct
+0141,persons_changed,"Jorns, Hansjörg",heimatort_previous,null,null,correct_null,correct_null
+0141,persons_changed,"Jorns, Hansjörg",stammanteile_new,null,null,correct_null,correct_null
+0141,persons_changed,"Jorns, Hansjörg",stammanteile_previous,null,null,correct_null,correct_null
+0141,extras,zweck,,"""Die Gesellschaft bezweckt die betriebswirtschaftliche Beratung von Unternehmen aller Art, insbesondere die Erstellung von Kalkulationsgrundlagen und die entsprechende Betreuung, EDV-Einführung …""","""Die Gesellschaft bezweckt die betriebswirtschaftliche Beratung von Unternehmen aller Art, insbesondere die Erstellung von Kalkulationsgrundlagen und die entsprechende Betreuung, EDV-Einführung, die EDV Programmentwicklung, die Entwicklung und Herstellung von EDV-Geräten und Standortanalysen. Sie bezweckt ferner den Vertrieb von EDV-Programmen und -Geräten und erschliesst neue Absatzmärkte im In- und Ausland. Die Gesellschaft kann alle Geschäfte tätigen und Massnahmen ergreifen, die geeignet sind, den Gesellschaftszweck direkt oder indirekt zu fördern, wie beispielsweise im In- und Ausland Unternehmungen aller Art, Grundstücke und Immaterialgüterrechte erwerben, verwalten, nutzen, belasten und veräussern, Zweigniederlassungen und Agenturen begründen sowie Kredite gewähren, Kapitalien verwalten und Garantien zugunsten von verbundenen Gesellschaften stellen. Die Gesellschaft kann Dritten oder Gesellschaften, an denen sie direkt oder indirekt beteiligt ist, sowie direkten oder indirekten Aktionären oder Gesellschaften, an denen solche direkt oder indirekt beteiligt sind, direkte oder indirekte Finanzierungen gewähren, sei es mittels Darlehen und/oder anderen Finanzierungen, ob gegen Entgelt oder nicht. Die Gesellschaft kann für ihre eigenen Verbindlichkeiten oder die Verbindlichkeiten der vorgenannten Personen Sicherheiten jeglicher Art bestellen, einschliesslich mittels Pfandrechten, Abtretungen, fiduziarischen Übereignungen, Garantien jeglicher Art oder mittels Ausgleichsverpflichtungen, ob gegen Entgelt oder nicht, auch wenn solche Finanzierungen, Sicherheiten oder Garantien im ausschliesslichen Interesse von Dritten oder Gesellschaften, an denen sie direkt oder indirekt beteiligt ist, oder von direkten oder indirekten Aktionären oder Gesellschaften, an denen solche direkt oder indirekt beteiligt sind, liegen.""",correct,correct
+0141,extras,nominal_value_chf,,1.0,1.0,correct,correct
+0141,extras,aktien_new,,100000,100000,correct,correct
+0141,extras,aktien_previous,,100,100,correct,correct
+0141,extras,share_classes,,"""Namenaktien""","""Namenaktien""",correct,correct
+0141,extras,mitteilungen,,"""durch Briefe, E-Mail oder eine andere geeignete elektronische Kommunikationsplattform an die im Aktienbuch eingetragenen Aktionäre""","""Die Mitteilungen der Gesellschaft an die Aktionäre erfolgen durch Briefe, E-Mail oder eine andere geeignete elektronische Kommunikationsplattform an die im Aktienbuch eingetragenen Aktionäre.""",wrong,wrong
+0142,act_type,,,"""mutation""","""mutation""",correct,correct
+0142,act_subtypes,,,"[""fusion""]","[""fusion""]",correct,correct
+0142,company_name_full,,,"""Lobeck Chemie AG""","""Lobeck Chemie AG""",correct,correct
+0142,company_name_base,,,"""Lobeck Chemie AG""","""Lobeck Chemie AG""",correct,correct
+0142,status_suffix,,,null,null,correct_null,correct_null
+0142,alternative_names,,,[],[],correct_null,correct_null
+0142,company_name_new,,,null,null,correct_null,correct_null
+0142,company_name_previous,,,null,null,correct_null,correct_null
+0142,uid,,,"""CHE-102.723.707""","""CHE-102.723.707""",correct,correct
+0142,legal_form,,,"""AG""","""AG""",correct,correct
+0142,seat_municipality,,,"""Zurzach""","""Zurzach""",correct,correct
+0142,seat_canton,,,"""AG""","""AG""",correct,correct
+0142,address_care_of,,,null,null,correct_null,correct_null
+0142,address_street,,,"""Zürcherstrasse 42""","""Zürcherstrasse 42""",correct,correct
+0142,address_postcode,,,"""5330""","""5330""",correct,correct
+0142,address_municipality,,,"""Bad Zurzach""","""Bad Zurzach""",correct,correct
+0142,act_date,,,null,null,excluded_uncertain,excluded_uncertain
+0142,tagesregister_nr,,,"""12653""","""12653""",correct,correct
+0142,tagesregister_date,,,"""2026-09-04""","""2026-09-04""",correct,correct
+0142,prior_publication_shab_nr,,,5,5,correct,correct
+0142,prior_publication_date,,,"""2024-01-09""","""2024-01-09""",correct,correct
+0142,prior_publication_id,,,"""1005929388""",1005929388,wrong,correct
+0142,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Aargau""",correct,correct
+0142,canton_previous,,,null,null,correct_null,correct_null
+0142,canton_new,,,null,null,correct_null,correct_null
+0142,capital_new_chf,,,null,null,correct_null,correct_null
+0142,capital_previous_chf,,,null,null,correct_null,correct_null
+0142,domicile_new,,,null,null,correct_null,correct_null
+0142,domicile_previous,,,null,null,correct_null,correct_null
+0143,act_type,,,"""mutation""","""mutation""",correct,correct
+0143,act_subtypes,,,"[""organaenderung""]","[""organaenderung""]",correct,correct
+0143,company_name_full,,,"""Agrisano Prevos""","""Agrisano Prevos""",correct,correct
+0143,company_name_base,,,"""Agrisano Prevos""","""Agrisano Prevos""",correct,correct
+0143,status_suffix,,,null,null,correct_null,correct_null
+0143,alternative_names,,,[],[],correct_null,correct_null
+0143,company_name_new,,,null,null,correct_null,correct_null
+0143,company_name_previous,,,null,null,correct_null,correct_null
+0143,uid,,,"""CHE-109.706.532""","""CHE-109.706.532""",correct,correct
+0143,legal_form,,,"""Stiftung""","""Stiftung""",correct,correct
+0143,seat_municipality,,,"""Brugg""","""Brugg""",correct,correct
+0143,seat_canton,,,"""AG""","""AG""",correct,correct
+0143,address_care_of,,,"""Schweizerischer Bauernverband""","""Schweizerischer Bauernverband""",correct,correct
+0143,address_street,,,"""Laurstrasse 10""","""Laurstrasse 10""",correct,correct
+0143,address_postcode,,,"""5200""","""5200""",correct,correct
+0143,address_municipality,,,"""Brugg AG""","""Brugg AG""",correct,correct
+0143,act_date,,,null,null,correct_null,correct_null
+0143,tagesregister_nr,,,"""12677""","""12677""",correct,correct
+0143,tagesregister_date,,,"""2026-09-04""","""2026-09-04""",correct,correct
+0143,prior_publication_shab_nr,,,109,109,correct,correct
+0143,prior_publication_date,,,"""2026-06-10""","""2026-06-10""",correct,correct
+0143,prior_publication_id,,,"""1006672866""","""1006672866""",correct,correct
+0143,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Aargau""",correct,correct
+0143,canton_previous,,,null,null,correct_null,correct_null
+0143,canton_new,,,null,null,correct_null,correct_null
+0143,capital_new_chf,,,null,null,correct_null,correct_null
+0143,capital_previous_chf,,,null,null,correct_null,correct_null
+0143,domicile_new,,,null,null,correct_null,correct_null
+0143,domicile_previous,,,null,null,correct_null,correct_null
+0143,persons_removed,"Hächler, Sandra",,"""Hächler, Sandra""","""Hächler, Sandra""",matched,matched
+0143,persons_removed,"Hächler, Sandra",nationality,null,null,correct_null,correct_null
+0143,persons_removed,"Hächler, Sandra",heimatort,"""Densbüren""","""Densbüren""",correct,correct
+0143,persons_removed,"Hächler, Sandra",domicile,"""Densbüren""","""Densbüren""",correct,correct
+0143,persons_removed,"Hächler, Sandra",role,null,null,correct_null,correct_null
+0143,persons_removed,"Hächler, Sandra",signature,"""Kollektivunterschrift zu zweien""","""Kollektivunterschrift zu zweien""",correct,correct
+0143,persons_removed,"Hächler, Sandra",uid,null,null,correct_null,correct_null
+0143,persons_removed,"Hächler, Sandra",stammanteile,null,null,correct_null,correct_null
+0144,act_type,,,"""mutation""","""mutation""",correct,correct
+0144,act_subtypes,,,"[""organaenderung""]","[""organaenderung""]",correct,correct
+0144,company_name_full,,,"""Plüss-Staufer Immobilien AG""","""Plüss-Staufer Immobilien AG""",correct,correct
+0144,company_name_base,,,"""Plüss-Staufer Immobilien AG""","""Plüss-Staufer Immobilien AG""",correct,correct
+0144,status_suffix,,,null,null,correct_null,correct_null
+0144,alternative_names,,,[],[],correct_null,correct_null
+0144,company_name_new,,,null,null,correct_null,correct_null
+0144,company_name_previous,,,null,null,correct_null,correct_null
+0144,uid,,,"""CHE-464.573.016""","""CHE-464.573.016""",correct,correct
+0144,legal_form,,,"""AG""","""AG""",correct,correct
+0144,seat_municipality,,,"""Oftringen""","""Oftringen""",correct,correct
+0144,seat_canton,,,"""AG""","""AG""",correct,correct
+0144,address_care_of,,,null,null,correct_null,correct_null
+0144,address_street,,,"""Baslerstrasse 42""","""Baslerstrasse 42""",correct,correct
+0144,address_postcode,,,"""4665""","""4665""",correct,correct
+0144,address_municipality,,,"""Oftringen""","""Oftringen""",correct,correct
+0144,act_date,,,null,null,correct_null,correct_null
+0144,tagesregister_nr,,,"""12675""","""12675""",correct,correct
+0144,tagesregister_date,,,"""2026-09-04""","""2026-09-04""",correct,correct
+0144,prior_publication_shab_nr,,,66,66,correct,correct
+0144,prior_publication_date,,,"""2025-04-04""","""2025-04-04""",correct,correct
+0144,prior_publication_id,,,"""1006300836""","""1006300836""",correct,correct
+0144,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Aargau""",correct,correct
+0144,canton_previous,,,null,null,correct_null,correct_null
+0144,canton_new,,,null,null,correct_null,correct_null
+0144,capital_new_chf,,,null,null,correct_null,correct_null
+0144,capital_previous_chf,,,null,null,correct_null,correct_null
+0144,domicile_new,,,null,null,correct_null,correct_null
+0144,domicile_previous,,,null,null,correct_null,correct_null
+0144,persons_removed,"Wildner, Sven",,"""Wildner, Sven""","""Wildner, Sven""",matched,matched
+0144,persons_removed,"Wildner, Sven",nationality,"""deutsch""","""deutsch""",correct,correct
+0144,persons_removed,"Wildner, Sven",heimatort,null,null,correct_null,correct_null
+0144,persons_removed,"Wildner, Sven",domicile,"""Beinwil am See""","""Beinwil am See""",correct,correct
+0144,persons_removed,"Wildner, Sven",role,"""Mitglied des Verwaltungsrates""","""Mitglied des Verwaltungsrates""",correct,correct
+0144,persons_removed,"Wildner, Sven",signature,"""Kollektivunterschrift zu zweien""","""Kollektivunterschrift zu zweien""",correct,correct
+0144,persons_removed,"Wildner, Sven",uid,null,null,correct_null,correct_null
+0144,persons_removed,"Wildner, Sven",stammanteile,null,null,correct_null,correct_null
+0145,act_type,,,"""mutation""","""mutation""",correct,correct
+0145,act_subtypes,,,"[""organaenderung""]","[""organaenderung""]",correct,correct
+0145,company_name_full,,,"""Freundes-Dienst""","""Freundes-Dienst""",correct,correct
+0145,company_name_base,,,"""Freundes-Dienst""","""Freundes-Dienst""",correct,correct
+0145,status_suffix,,,null,null,correct_null,correct_null
+0145,alternative_names,,,"[""Service Amical"", ""Servicio Amichevole"", ""Friendship Vriendendienst Servicio de Amistad Servicos Amizade""]","[""Service Amical"", ""Servicio Amichevole"", ""Friendship Vriendendienst Servicio de Amistad Servicos Amizade""]",excluded_uncertain,excluded_uncertain
+0145,company_name_new,,,null,null,correct_null,correct_null
+0145,company_name_previous,,,null,null,correct_null,correct_null
+0145,uid,,,"""CHE-105.771.281""","""CHE-105.771.281""",correct,correct
+0145,legal_form,,,"""Stiftung""","""Stiftung""",correct,correct
+0145,seat_municipality,,,"""Biberstein""","""Biberstein""",correct,correct
+0145,seat_canton,,,"""AG""","""AG""",correct,correct
+0145,address_care_of,,,null,null,correct_null,correct_null
+0145,address_street,,,"""Quellmattweg 2""","""Quellmattweg 2""",correct,correct
+0145,address_postcode,,,"""5023""","""5023""",correct,correct
+0145,address_municipality,,,"""Biberstein""","""Biberstein""",correct,correct
+0145,act_date,,,null,null,correct_null,correct_null
+0145,tagesregister_nr,,,"""12654""","""12654""",correct,correct
+0145,tagesregister_date,,,"""2026-09-04""","""2026-09-04""",correct,correct
+0145,prior_publication_shab_nr,,,135,135,correct,correct
+0145,prior_publication_date,,,"""2026-07-16""","""2026-07-16""",correct,correct
+0145,prior_publication_id,,,"""1006708856""","""1006708856""",correct,correct
+0145,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Aargau""",correct,correct
+0145,canton_previous,,,null,null,correct_null,correct_null
+0145,canton_new,,,null,null,correct_null,correct_null
+0145,capital_new_chf,,,null,null,correct_null,correct_null
+0145,capital_previous_chf,,,null,null,correct_null,correct_null
+0145,domicile_new,,,null,null,correct_null,correct_null
+0145,domicile_previous,,,null,null,correct_null,correct_null
+0145,persons_added,"Heger, Andreas Ernst Wilhelm",,"""Heger, Andreas Ernst Wilhelm""","""Heger, Andreas Ernst Wilhelm""",matched,matched
+0145,persons_added,"Heger, Andreas Ernst Wilhelm",nationality,null,null,correct_null,correct_null
+0145,persons_added,"Heger, Andreas Ernst Wilhelm",heimatort,"""Blumenstein""","""Blumenstein""",correct,correct
+0145,persons_added,"Heger, Andreas Ernst Wilhelm",domicile,"""Oberdiessbach""","""Oberdiessbach""",correct,correct
+0145,persons_added,"Heger, Andreas Ernst Wilhelm",role,"""Mitglied des Stiftungsrates""","""Mitglied des Stiftungsrates""",correct,correct
+0145,persons_added,"Heger, Andreas Ernst Wilhelm",signature,"""Kollektivunterschrift zu zweien""","""Kollektivunterschrift zu zweien""",correct,correct
+0145,persons_added,"Heger, Andreas Ernst Wilhelm",uid,null,null,correct_null,correct_null
+0145,persons_added,"Heger, Andreas Ernst Wilhelm",stammanteile,null,null,correct_null,correct_null
+0146,act_type,,,"""neueintragung""","""neueintragung""",correct,correct
+0146,act_subtypes,,,[],[],correct_null,correct_null
+0146,company_name_full,,,"""WSUAS - Wilhelm Schweizer Umwelt und Abfallkontrolle Service, Inh. Wilhelm""","""WSUAS - Wilhelm Schweizer Umwelt und Abfallkontrolle Service, Inh. Wilhelm""",correct,correct
+0146,company_name_base,,,"""WSUAS - Wilhelm Schweizer Umwelt und Abfallkontrolle Service, Inh. Wilhelm""","""WSUAS - Wilhelm Schweizer Umwelt und Abfallkontrolle Service, Inh. Wilhelm""",correct,correct
+0146,status_suffix,,,null,null,correct_null,correct_null
+0146,alternative_names,,,[],[],correct_null,correct_null
+0146,company_name_new,,,null,null,correct_null,correct_null
+0146,company_name_previous,,,null,null,correct_null,correct_null
+0146,uid,,,"""CHE-463.686.037""","""CHE-463.686.037""",correct,correct
+0146,legal_form,,,"""Einzelunternehmen""","""Einzelunternehmen""",correct,correct
+0146,seat_municipality,,,"""Koblenz""","""Koblenz""",correct,correct
+0146,seat_canton,,,"""AG""","""AG""",correct,correct
+0146,address_care_of,,,null,null,correct_null,correct_null
+0146,address_street,,,"""Rhygasse 1""","""Rhygasse 1""",correct,correct
+0146,address_postcode,,,"""5322""","""5322""",correct,correct
+0146,address_municipality,,,"""Koblenz""","""Koblenz""",correct,correct
+0146,act_date,,,null,null,correct_null,correct_null
+0146,tagesregister_nr,,,"""12637""","""12637""",correct,correct
+0146,tagesregister_date,,,"""2026-09-04""","""2026-09-04""",correct,correct
+0146,prior_publication_shab_nr,,,null,null,correct_null,correct_null
+0146,prior_publication_date,,,null,null,correct_null,correct_null
+0146,prior_publication_id,,,null,null,correct_null,correct_null
+0146,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Aargau""",correct,correct
+0146,canton_previous,,,null,null,correct_null,correct_null
+0146,canton_new,,,null,null,correct_null,correct_null
+0146,capital_new_chf,,,null,null,correct_null,correct_null
+0146,capital_previous_chf,,,null,null,correct_null,correct_null
+0146,domicile_new,,,null,null,correct_null,correct_null
+0146,domicile_previous,,,null,null,correct_null,correct_null
+0146,persons_added,"Wilhelm, Paul",,"""Wilhelm, Paul""","""Wilhelm, Paul""",matched,matched
+0146,persons_added,"Wilhelm, Paul",nationality,"""deutsch""","""deutsch""",correct,correct
+0146,persons_added,"Wilhelm, Paul",heimatort,null,null,correct_null,correct_null
+0146,persons_added,"Wilhelm, Paul",domicile,"""Koblenz""","""Koblenz""",correct,correct
+0146,persons_added,"Wilhelm, Paul",role,"""Inhaber""","""Inhaber""",correct,correct
+0146,persons_added,"Wilhelm, Paul",signature,"""Einzelunterschrift""","""Einzelunterschrift""",correct,correct
+0146,persons_added,"Wilhelm, Paul",uid,null,null,correct_null,correct_null
+0146,persons_added,"Wilhelm, Paul",stammanteile,null,null,correct_null,correct_null
+0146,extras,zweck,,"""Erbringung von Dienstleistungen in den Bereichen Abfall und Recycling, Beratung, Dokumentation, Kontrollen und Nachhaltigkeit.""","""Erbringung von Dienstleistungen in den Bereichen Abfall und Recycling, Beratung, Dokumentation, Kontrollen und Nachhaltigkeit.""",correct,correct
+0147,act_type,,,"""mutation""","""mutation""",correct,correct
+0147,act_subtypes,,,"[""organaenderung""]","[""organaenderung""]",correct,correct
+0147,company_name_full,,,"""OHRafz Immobilien AG""","""OHRafz Immobilien AG""",correct,correct
+0147,company_name_base,,,"""OHRafz Immobilien AG""","""OHRafz Immobilien AG""",correct,correct
+0147,status_suffix,,,null,null,correct_null,correct_null
+0147,alternative_names,,,[],[],correct_null,correct_null
+0147,company_name_new,,,null,null,correct_null,correct_null
+0147,company_name_previous,,,null,null,correct_null,correct_null
+0147,uid,,,"""CHE-439.291.738""","""CHE-439.291.738""",correct,correct
+0147,legal_form,,,"""AG""","""AG""",correct,correct
+0147,seat_municipality,,,"""Oftringen""","""Oftringen""",correct,correct
+0147,seat_canton,,,"""AG""","""AG""",correct,correct
+0147,address_care_of,,,null,null,correct_null,correct_null
+0147,address_street,,,"""Baslerstrasse 42""","""Baslerstrasse 42""",correct,correct
+0147,address_postcode,,,"""4665""","""4665""",correct,correct
+0147,address_municipality,,,"""Oftringen""","""Oftringen""",correct,correct
+0147,act_date,,,null,null,correct_null,correct_null
+0147,tagesregister_nr,,,"""12674""","""12674""",correct,correct
+0147,tagesregister_date,,,"""2026-09-04""","""2026-09-04""",correct,correct
+0147,prior_publication_shab_nr,,,250,250,correct,correct
+0147,prior_publication_date,,,"""2024-12-24""","""2024-12-24""",correct,correct
+0147,prior_publication_id,,,"""1006215388""","""1006215388""",correct,correct
+0147,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Aargau""",correct,correct
+0147,canton_previous,,,null,null,correct_null,correct_null
+0147,canton_new,,,null,null,correct_null,correct_null
+0147,capital_new_chf,,,null,null,correct_null,correct_null
+0147,capital_previous_chf,,,null,null,correct_null,correct_null
+0147,domicile_new,,,null,null,correct_null,correct_null
+0147,domicile_previous,,,null,null,correct_null,correct_null
+0147,persons_removed,"Wildner, Sven Ottmar",,"""Wildner, Sven Ottmar""","""Wildner, Sven Ottmar""",matched,matched
+0147,persons_removed,"Wildner, Sven Ottmar",nationality,"""deutsch""","""deutsch""",correct,correct
+0147,persons_removed,"Wildner, Sven Ottmar",heimatort,null,null,correct_null,correct_null
+0147,persons_removed,"Wildner, Sven Ottmar",domicile,"""Beinwil am See""","""Beinwil am See""",correct,correct
+0147,persons_removed,"Wildner, Sven Ottmar",role,"""Mitglied des Verwaltungsrates""","""Mitglied des Verwaltungsrates""",correct,correct
+0147,persons_removed,"Wildner, Sven Ottmar",signature,"""Kollektivunterschrift zu zweien""","""Kollektivunterschrift zu zweien""",correct,correct
+0147,persons_removed,"Wildner, Sven Ottmar",uid,null,null,correct_null,correct_null
+0147,persons_removed,"Wildner, Sven Ottmar",stammanteile,null,null,correct_null,correct_null
+0148,act_type,,,"""mutation""","""mutation""",correct,correct
+0148,act_subtypes,,,"[""statutenaenderung"", ""organaenderung"", ""sitzverlegung"", ""kantonswechsel"", ""zweckaenderung""]","[""statutenaenderung"", ""organaenderung"", ""sitzverlegung"", ""zweckaenderung""]",wrong,wrong
+0148,company_name_full,,,"""CSB System AG""","""CSB System AG""",correct,correct
+0148,company_name_base,,,"""CSB System AG""","""CSB System AG""",correct,correct
+0148,status_suffix,,,null,null,correct_null,correct_null
+0148,alternative_names,,,[],[],correct_null,correct_null
+0148,company_name_new,,,null,null,correct_null,correct_null
+0148,company_name_previous,,,null,null,correct_null,correct_null
+0148,uid,,,"""CHE-106.668.289""","""CHE-106.668.289""",correct,correct
+0148,legal_form,,,"""AG""","""AG""",correct,correct
+0148,seat_municipality,,,"""Kestenholz""","""Kestenholz""",correct,correct
+0148,seat_canton,,,"""SO""","""SO""",correct,correct
+0148,address_care_of,,,null,null,correct_null,correct_null
+0148,address_street,,,"""Brown Boveri Strasse 7""","""Brown Boveri Strasse 7""",correct,correct
+0148,address_postcode,,,"""5400""","""5400""",correct,correct
+0148,address_municipality,,,"""Baden""","""Baden""",correct,correct
+0148,act_date,,,"""2026-08-31""","""2026-08-31""",correct,correct
+0148,tagesregister_nr,,,"""12667""","""12667""",correct,correct
+0148,tagesregister_date,,,"""2026-09-04""","""2026-09-04""",correct,correct
+0148,prior_publication_shab_nr,,,161,161,correct,correct
+0148,prior_publication_date,,,"""2025-08-22""","""2025-08-22""",correct,correct
+0148,prior_publication_id,,,"""1006414692""","""1006414692""",correct,correct
+0148,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Aargau""",correct,correct
+0148,canton_previous,,,"""SO""",null,omission,omission
+0148,canton_new,,,"""AG""",null,omission,omission
+0148,capital_new_chf,,,null,null,correct_null,correct_null
+0148,capital_previous_chf,,,null,null,correct_null,correct_null
+0148,domicile_new,,,"""Brown Boveri Strasse 7, 5400 Baden""","""Brown Boveri Strasse 7, 5400 Baden""",correct,correct
+0148,domicile_previous,,,"""Gäustrasse 52, 4703 Kestenholz""","""Gäustrasse 52, 4703 Kestenholz""",correct,correct
+0148,persons_changed,"Kröner, Vanessa",,"""Kröner, Vanessa""","""Kröner, Vanessa""",matched,matched
+0148,persons_changed,"Kröner, Vanessa",name_previous,"""Kröner-Schimitzek, Vanessa""","""Kröner-Schimitzek, Vanessa""",correct,correct
+0148,persons_changed,"Kröner, Vanessa",domicile_new,"""Ennetbaden""","""Ennetbaden""",correct,correct
+0148,persons_changed,"Kröner, Vanessa",domicile_previous,null,null,correct_null,correct_null
+0148,persons_changed,"Kröner, Vanessa",role_new,"""Präsidentin des Verwaltungsrates, Delegierte des Verwaltungsrates, Geschäftsführerin""","""Präsidentin des Verwaltungsrates, Delegierte des Verwaltungsrates, Geschäftsführerin""",correct,correct
+0148,persons_changed,"Kröner, Vanessa",role_previous,null,null,correct_null,correct_null
+0148,persons_changed,"Kröner, Vanessa",signature_new,"""Kollektivunterschrift zu zweien""","""Kollektivunterschrift zu zweien""",correct,correct
+0148,persons_changed,"Kröner, Vanessa",signature_previous,null,null,correct_null,correct_null
+0148,persons_changed,"Kröner, Vanessa",nationality_new,null,null,correct_null,correct_null
+0148,persons_changed,"Kröner, Vanessa",nationality_previous,"""deutsch""","""deutsch""",correct,correct
+0148,persons_changed,"Kröner, Vanessa",heimatort_new,"""Ennetbaden""","""Ennetbaden""",correct,correct
+0148,persons_changed,"Kröner, Vanessa",heimatort_previous,null,null,correct_null,correct_null
+0148,persons_changed,"Kröner, Vanessa",stammanteile_new,null,null,correct_null,correct_null
+0148,persons_changed,"Kröner, Vanessa",stammanteile_previous,null,null,correct_null,correct_null
+0148,persons_changed,"Jorns, Hansjörg",,"""Jorns, Hansjörg""","""Jorns, Hansjörg""",matched,matched
+0148,persons_changed,"Jorns, Hansjörg",name_previous,null,null,correct_null,correct_null
+0148,persons_changed,"Jorns, Hansjörg",domicile_new,"""Locarno""","""Locarno""",correct,correct
+0148,persons_changed,"Jorns, Hansjörg",domicile_previous,"""Oensingen""","""Oensingen""",correct,correct
+0148,persons_changed,"Jorns, Hansjörg",role_new,"""Mitglied des Verwaltungsrates""","""Mitglied des Verwaltungsrates""",correct,correct
+0148,persons_changed,"Jorns, Hansjörg",role_previous,null,null,correct_null,correct_null
+0148,persons_changed,"Jorns, Hansjörg",signature_new,"""Kollektivunterschrift zu zweien""","""Kollektivunterschrift zu zweien""",correct,correct
+0148,persons_changed,"Jorns, Hansjörg",signature_previous,null,null,correct_null,correct_null
+0148,persons_changed,"Jorns, Hansjörg",nationality_new,null,null,correct_null,correct_null
+0148,persons_changed,"Jorns, Hansjörg",nationality_previous,null,null,correct_null,correct_null
+0148,persons_changed,"Jorns, Hansjörg",heimatort_new,"""Saanen""","""Saanen""",correct,correct
+0148,persons_changed,"Jorns, Hansjörg",heimatort_previous,null,null,correct_null,correct_null
+0148,persons_changed,"Jorns, Hansjörg",stammanteile_new,null,null,correct_null,correct_null
+0148,persons_changed,"Jorns, Hansjörg",stammanteile_previous,null,null,correct_null,correct_null
+0148,extras,zweck,,"""Die Gesellschaft bezweckt den Erwerb, die Verwaltung und die Veräusserung von Beteiligungen an Unternehmen sowie den Erwerb und die Akquisition, die Verwertung, Vermarktung und Verwaltung von Patenten …""","""Die Gesellschaft bezweckt den Erwerb, die Verwaltung und die Veräusserung von Beteiligungen an Unternehmen sowie den Erwerb und die Akquisition, die Verwertung, Vermarktung und Verwaltung von Patenten, Lizenzen und Marken. Die Gesellschaft kann alle Geschäfte tätigen und Massnahmen ergreifen, die geeignet sind, den Gesellschaftszweck direkt oder indirekt zu fördern, wie beispielsweise im In- und Ausland Unternehmungen aller Art, Grundstücke und Immaterialgüterrechte erwerben, verwalten, nutzen, belasten und veräussern, Zweigniederlassungen und Agenturen begründen sowie Kredite gewähren, Kapitalien verwalten und Garantien zugunsten von verbundenen Gesellschaften stellen. Die Gesellschaft kann Dritten oder Gesellschaften, an denen sie direkt oder indirekt beteiligt ist, sowie direkten oder indirekten Aktionären oder Gesellschaften, an denen solche direkt oder indirekt beteiligt sind, direkte oder indirekte Finanzierungen gewähren, sei es mittels Darlehen und/oder anderen Finanzierungen, ob gegen Entgelt oder nicht. Die Gesellschaft kann für ihre eigenen Verbindlichkeiten oder die Verbindlichkeiten der vorgenannten Personen Sicherheiten jeglicher Art bestellen, einschliesslich mittels Pfandrechten, Abtretungen, fiduziarischen Übereignungen, Garantien jeglicher Art oder mittels Ausgleichsverpflichtungen, ob gegen Entgelt oder nicht, auch wenn solche Finanzierungen, Sicherheiten oder Garantien im ausschliesslichen Interesse von Dritten oder Gesellschaften, an denen sie direkt oder indirekt beteiligt ist, oder von direkten oder indirekten Aktionären oder Gesellschaften, an denen solche direkt oder indirekt beteiligt sind, liegen.""",correct,correct
+0148,extras,mitteilungen,,"""durch Briefe, E-Mail oder eine andere geeignete elektronische Kommunikationsplattform an die im Aktienbuch eingetragenen Aktionäre""","""Die Mitteilungen der Gesellschaft an die Aktionäre erfolgen durch Briefe, E-Mail oder eine andere geeignete elektronische Kommunikationsplattform an die im Aktienbuch eingetragenen Aktionäre.""",wrong,wrong
+0149,act_type,,,"""mutation""","""mutation""",correct,correct
+0149,act_subtypes,,,"[""firmenaenderung""]","[""konkurseroeffnung"", ""firmenaenderung""]",excluded_uncertain,excluded_uncertain
+0149,company_name_full,,,"""PartnerPack AG""","""PartnerPack AG""",correct,correct
+0149,company_name_base,,,"""PartnerPack AG""","""PartnerPack AG""",correct,correct
+0149,status_suffix,,,null,"""in Liquidation""",hallucination,hallucination
+0149,alternative_names,,,[],[],correct_null,correct_null
+0149,company_name_new,,,"""PartnerPack AG in Liquidation""","""PartnerPack AG in Liquidation""",correct,correct
+0149,company_name_previous,,,"""PartnerPack AG""","""PartnerPack AG""",correct,correct
+0149,uid,,,"""CHE-115.272.737""","""CHE-115.272.737""",correct,correct
+0149,legal_form,,,"""AG""","""AG""",correct,correct
+0149,seat_municipality,,,"""Rheinfelden""","""Rheinfelden""",correct,correct
+0149,seat_canton,,,"""AG""","""AG""",correct,correct
+0149,address_care_of,,,null,null,correct_null,correct_null
+0149,address_street,,,"""Theodorshofweg 22""","""Theodorshofweg 22""",correct,correct
+0149,address_postcode,,,"""4310""","""4310""",correct,correct
+0149,address_municipality,,,"""Rheinfelden""","""Rheinfelden""",correct,correct
+0149,act_date,,,"""2026-07-22""","""2026-07-22""",excluded_uncertain,excluded_uncertain
+0149,tagesregister_nr,,,"""12658""","""12658""",correct,correct
+0149,tagesregister_date,,,"""2026-09-04""","""2026-09-04""",correct,correct
+0149,prior_publication_shab_nr,,,102,102,correct,correct
+0149,prior_publication_date,,,"""2025-05-28""","""2025-05-28""",correct,correct
+0149,prior_publication_id,,,"""1006343443""","""1006343443""",correct,correct
+0149,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Aargau""",correct,correct
+0149,canton_previous,,,null,null,correct_null,correct_null
+0149,canton_new,,,null,null,correct_null,correct_null
+0149,capital_new_chf,,,null,null,correct_null,correct_null
+0149,capital_previous_chf,,,null,null,correct_null,correct_null
+0149,domicile_new,,,null,null,correct_null,correct_null
+0149,domicile_previous,,,null,null,correct_null,correct_null
+0149,extras,,,"{""konkurs_wirkung_ab"": ""2026-07-22 11:00""}","{""konkurs_wirkung_ab"": ""2026-07-22 11:00""}",excluded_uncertain,excluded_uncertain
+0150,act_type,,,"""mutation""","""mutation""",correct,correct
+0150,act_subtypes,,,"[""organaenderung""]","[""organaenderung""]",correct,correct
+0150,company_name_full,,,"""Accordo Montage AG""","""Accordo Montage AG""",correct,correct
+0150,company_name_base,,,"""Accordo Montage AG""","""Accordo Montage AG""",correct,correct
+0150,status_suffix,,,null,null,correct_null,correct_null
+0150,alternative_names,,,[],[],correct_null,correct_null
+0150,company_name_new,,,null,null,correct_null,correct_null
+0150,company_name_previous,,,null,null,correct_null,correct_null
+0150,uid,,,"""CHE-458.958.081""","""CHE-458.958.081""",correct,correct
+0150,legal_form,,,"""AG""","""AG""",correct,correct
+0150,seat_municipality,,,"""Zofingen""","""Zofingen""",correct,correct
+0150,seat_canton,,,"""AG""","""AG""",correct,correct
+0150,address_care_of,,,null,null,correct_null,correct_null
+0150,address_street,,,"""Junkerbifangstrasse 10""","""Junkerbifangstrasse 10""",correct,correct
+0150,address_postcode,,,"""4800""","""4800""",correct,correct
+0150,address_municipality,,,"""Zofingen""","""Zofingen""",correct,correct
+0150,act_date,,,null,null,correct_null,correct_null
+0150,tagesregister_nr,,,"""12635""","""12635""",correct,correct
+0150,tagesregister_date,,,"""2026-09-04""","""2026-09-04""",correct,correct
+0150,prior_publication_shab_nr,,,78,78,correct,correct
+0150,prior_publication_date,,,"""2026-04-24""","""2026-04-24""",correct,correct
+0150,prior_publication_id,,,"""1006634410""","""1006634410""",correct,correct
+0150,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Aargau""",correct,correct
+0150,canton_previous,,,null,null,correct_null,correct_null
+0150,canton_new,,,null,null,correct_null,correct_null
+0150,capital_new_chf,,,null,null,correct_null,correct_null
+0150,capital_previous_chf,,,null,null,correct_null,correct_null
+0150,domicile_new,,,null,null,correct_null,correct_null
+0150,domicile_previous,,,null,null,correct_null,correct_null
+0150,persons_removed,"Iannello, Domenico",,"""Iannello, Domenico""","""Iannello, Domenico""",matched,matched
+0150,persons_removed,"Iannello, Domenico",nationality,null,null,correct_null,correct_null
+0150,persons_removed,"Iannello, Domenico",heimatort,"""Reinach (AG)""","""Reinach (AG)""",correct,correct
+0150,persons_removed,"Iannello, Domenico",domicile,"""Muhen""","""Muhen""",correct,correct
+0150,persons_removed,"Iannello, Domenico",role,"""Präsident des Verwaltungsrates""","""Präsident des Verwaltungsrates""",correct,correct
+0150,persons_removed,"Iannello, Domenico",signature,"""Kollektivunterschrift zu zweien""","""Kollektivunterschrift zu zweien""",correct,correct
+0150,persons_removed,"Iannello, Domenico",uid,null,null,correct_null,correct_null
+0150,persons_removed,"Iannello, Domenico",stammanteile,null,null,correct_null,correct_null
+0150,persons_changed,"Ranauda, Donato",,"""Ranauda, Donato""","""Ranauda, Donato""",matched,matched
+0150,persons_changed,"Ranauda, Donato",name_previous,null,null,correct_null,correct_null
+0150,persons_changed,"Ranauda, Donato",domicile_new,"""Aarburg""","""Aarburg""",correct,correct
+0150,persons_changed,"Ranauda, Donato",domicile_previous,null,null,correct_null,correct_null
+0150,persons_changed,"Ranauda, Donato",role_new,"""Präsident des Verwaltungsrates""","""Präsident des Verwaltungsrates""",correct,correct
+0150,persons_changed,"Ranauda, Donato",role_previous,"""Mitglied des Verwaltungsrates""","""Mitglied des Verwaltungsrates""",correct,correct
+0150,persons_changed,"Ranauda, Donato",signature_new,"""Kollektivunterschrift zu zweien""","""Kollektivunterschrift zu zweien""",correct,correct
+0150,persons_changed,"Ranauda, Donato",signature_previous,null,null,correct_null,correct_null
+0150,persons_changed,"Ranauda, Donato",nationality_new,"""italienisch""","""italienisch""",correct,correct
+0150,persons_changed,"Ranauda, Donato",nationality_previous,null,null,correct_null,correct_null
+0150,persons_changed,"Ranauda, Donato",heimatort_new,null,null,correct_null,correct_null
+0150,persons_changed,"Ranauda, Donato",heimatort_previous,null,null,correct_null,correct_null
+0150,persons_changed,"Ranauda, Donato",stammanteile_new,null,null,correct_null,correct_null
+0150,persons_changed,"Ranauda, Donato",stammanteile_previous,null,null,correct_null,correct_null
+0151,act_type,,,"""mutation""","""mutation""",correct,correct
+0151,act_subtypes,,,"[""organaenderung"", ""firmenaenderung"", ""zweckaenderung""]","[""organaenderung"", ""firmenaenderung"", ""zweckaenderung""]",correct,correct
+0151,company_name_full,,,"""Grottinodellascarpa N. Wey""","""Grottinodellascarpa N. Wey""",correct,correct
+0151,company_name_base,,,"""Grottinodellascarpa N. Wey""","""Grottinodellascarpa N. Wey""",correct,correct
+0151,status_suffix,,,null,null,correct_null,correct_null
+0151,alternative_names,,,[],[],correct_null,correct_null
+0151,company_name_new,,,"""WEY. Wear it your wey!""","""WEY. Wear it your wey!""",excluded_uncertain,excluded_uncertain
+0151,company_name_previous,,,"""Grottinodellascarpa N. Wey""","""Grottinodellascarpa N. Wey""",correct,correct
+0151,uid,,,"""CHE-112.237.495""","""CHE-112.237.495""",correct,correct
+0151,legal_form,,,"""Einzelunternehmen""","""Einzelunternehmen""",correct,correct
+0151,seat_municipality,,,"""Wohlen (AG)""","""Wohlen (AG)""",correct,correct
+0151,seat_canton,,,"""AG""","""AG""",correct,correct
+0151,address_care_of,,,null,null,correct_null,correct_null
+0151,address_street,,,"""Zentralstrasse 2""","""Zentralstrasse 2""",correct,correct
+0151,address_postcode,,,"""5610""","""5610""",correct,correct
+0151,address_municipality,,,"""Wohlen AG""","""Wohlen AG""",correct,correct
+0151,act_date,,,null,null,correct_null,correct_null
+0151,tagesregister_nr,,,"""12647""","""12647""",correct,correct
+0151,tagesregister_date,,,"""2026-09-04""","""2026-09-04""",correct,correct
+0151,prior_publication_shab_nr,,,89,89,correct,correct
+0151,prior_publication_date,,,"""2024-05-08""","""2024-05-08""",correct,correct
+0151,prior_publication_id,,,"""1006027974""",1006027974,wrong,correct
+0151,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Aargau""",correct,correct
+0151,canton_previous,,,null,null,correct_null,correct_null
+0151,canton_new,,,null,null,correct_null,correct_null
+0151,capital_new_chf,,,null,null,correct_null,correct_null
+0151,capital_previous_chf,,,null,null,correct_null,correct_null
+0151,domicile_new,,,null,null,correct_null,correct_null
+0151,domicile_previous,,,null,null,correct_null,correct_null
+0151,persons_changed,"Marcucci, Julia Anna",,"""Marcucci, Julia Anna""","""Marcucci, Julia Anna""",matched,matched
+0151,persons_changed,"Marcucci, Julia Anna",name_previous,"""Sahli, Julia Anna""","""Sahli, Julia Anna""",correct,correct
+0151,persons_changed,"Marcucci, Julia Anna",domicile_new,"""Hägglingen""","""Hägglingen""",correct,correct
+0151,persons_changed,"Marcucci, Julia Anna",domicile_previous,null,null,correct_null,correct_null
+0151,persons_changed,"Marcucci, Julia Anna",role_new,null,null,correct_null,correct_null
+0151,persons_changed,"Marcucci, Julia Anna",role_previous,null,null,correct_null,correct_null
+0151,persons_changed,"Marcucci, Julia Anna",signature_new,"""Einzelunterschrift""","""Einzelunterschrift""",correct,correct
+0151,persons_changed,"Marcucci, Julia Anna",signature_previous,null,null,correct_null,correct_null
+0151,persons_changed,"Marcucci, Julia Anna",nationality_new,null,null,correct_null,correct_null
+0151,persons_changed,"Marcucci, Julia Anna",nationality_previous,null,null,correct_null,correct_null
+0151,persons_changed,"Marcucci, Julia Anna",heimatort_new,"""Wohlen bei Bern""","""Wohlen bei Bern""",correct,correct
+0151,persons_changed,"Marcucci, Julia Anna",heimatort_previous,null,null,correct_null,correct_null
+0151,persons_changed,"Marcucci, Julia Anna",stammanteile_new,null,null,correct_null,correct_null
+0151,persons_changed,"Marcucci, Julia Anna",stammanteile_previous,null,null,correct_null,correct_null
+0151,extras,zweck,,"""Verkauf von Damenmode, Damenschuhen, Accessoires und Wohnaccessoires.""","""Verkauf von Damenmode, Damenschuhen, Accessoires und Wohnaccessoires.""",correct,correct
+0152,act_type,,,"""mutation""","""mutation""",correct,correct
+0152,act_subtypes,,,"[""organaenderung""]","[""organaenderung""]",correct,correct
+0152,company_name_full,,,"""FFF Fresh & Frozen Food AG""","""FFF Fresh & Frozen Food AG""",correct,correct
+0152,company_name_base,,,"""FFF Fresh & Frozen Food AG""","""FFF Fresh & Frozen Food AG""",correct,correct
+0152,status_suffix,,,null,null,correct_null,correct_null
+0152,alternative_names,,,[],[],correct_null,correct_null
+0152,company_name_new,,,null,null,correct_null,correct_null
+0152,company_name_previous,,,null,null,correct_null,correct_null
+0152,uid,,,"""CHE-105.495.980""","""CHE-105.495.980""",correct,correct
+0152,legal_form,,,"""AG""","""AG""",correct,correct
+0152,seat_municipality,,,"""Wohlen (AG)""","""Wohlen (AG)""",correct,correct
+0152,seat_canton,,,"""AG""","""AG""",correct,correct
+0152,address_care_of,,,null,null,correct_null,correct_null
+0152,address_street,,,"""Industriestrasse 32""","""Industriestrasse 32""",correct,correct
+0152,address_postcode,,,"""5610""","""5610""",correct,correct
+0152,address_municipality,,,"""Wohlen AG""","""Wohlen AG""",correct,correct
+0152,act_date,,,null,null,correct_null,correct_null
+0152,tagesregister_nr,,,"""12671""","""12671""",correct,correct
+0152,tagesregister_date,,,"""2026-09-04""","""2026-09-04""",correct,correct
+0152,prior_publication_shab_nr,,,146,146,correct,correct
+0152,prior_publication_date,,,"""2026-07-31""","""2026-07-31""",correct,correct
+0152,prior_publication_id,,,"""1006721531""","""1006721531""",correct,correct
+0152,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Aargau""",correct,correct
+0152,canton_previous,,,null,null,correct_null,correct_null
+0152,canton_new,,,null,null,correct_null,correct_null
+0152,capital_new_chf,,,null,null,correct_null,correct_null
+0152,capital_previous_chf,,,null,null,correct_null,correct_null
+0152,domicile_new,,,null,null,correct_null,correct_null
+0152,domicile_previous,,,null,null,correct_null,correct_null
+0152,persons_removed,"Guion, Tabita",,"""Guion, Tabita""","""Guion, Tabita""",matched,matched
+0152,persons_removed,"Guion, Tabita",nationality,"""italienisch""","""italienisch""",correct,correct
+0152,persons_removed,"Guion, Tabita",heimatort,null,null,correct_null,correct_null
+0152,persons_removed,"Guion, Tabita",domicile,"""Wohlen (AG)""","""Wohlen (AG)""",correct,correct
+0152,persons_removed,"Guion, Tabita",role,"""Mitglied der Geschäftsleitung (CFO)""","""Mitglied der Geschäftsleitung (CFO)""",correct,correct
+0152,persons_removed,"Guion, Tabita",signature,"""Kollektivprokura zu zweien""","""Kollektivprokura zu zweien""",correct,correct
+0152,persons_removed,"Guion, Tabita",uid,null,null,correct_null,correct_null
+0152,persons_removed,"Guion, Tabita",stammanteile,null,null,correct_null,correct_null
+0153,act_type,,,"""mutation""","""mutation""",correct,correct
+0153,act_subtypes,,,"[""organaenderung""]","[""organaenderung""]",correct,correct
+0153,company_name_full,,,"""Stiftung zur Unterstützung des Pädiatrischen Therapiezentrums der Reha Rheinfelden""","""Stiftung zur Unterstützung des Pädiatrischen Therapiezentrums der Reha Rheinfelden""",correct,correct
+0153,company_name_base,,,"""Stiftung zur Unterstützung des Pädiatrischen Therapiezentrums der Reha Rheinfelden""","""Stiftung zur Unterstützung des Pädiatrischen Therapiezentrums der Reha Rheinfelden""",correct,correct
+0153,status_suffix,,,null,null,correct_null,correct_null
+0153,alternative_names,,,[],[],correct_null,correct_null
+0153,company_name_new,,,null,null,correct_null,correct_null
+0153,company_name_previous,,,null,null,correct_null,correct_null
+0153,uid,,,"""CHE-113.610.088""","""CHE-113.610.088""",correct,correct
+0153,legal_form,,,"""Stiftung""","""Stiftung""",correct,correct
+0153,seat_municipality,,,"""Rheinfelden""","""Rheinfelden""",correct,correct
+0153,seat_canton,,,"""AG""","""AG""",correct,correct
+0153,address_care_of,,,"""Reha Rheinfelden""","""Reha Rheinfelden""",correct,correct
+0153,address_street,,,"""Salinenstrasse 98""","""Salinenstrasse 98""",correct,correct
+0153,address_postcode,,,"""4310""","""4310""",correct,correct
+0153,address_municipality,,,"""Rheinfelden""","""Rheinfelden""",correct,correct
+0153,act_date,,,null,null,correct_null,correct_null
+0153,tagesregister_nr,,,"""12661""","""12661""",correct,correct
+0153,tagesregister_date,,,"""2026-09-04""","""2026-09-04""",correct,correct
+0153,prior_publication_shab_nr,,,157,157,correct,correct
+0153,prior_publication_date,,,"""2026-08-17""","""2026-08-17""",correct,correct
+0153,prior_publication_id,,,"""1006732708""","""1006732708""",correct,correct
+0153,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Aargau""",correct,correct
+0153,canton_previous,,,null,null,correct_null,correct_null
+0153,canton_new,,,null,null,correct_null,correct_null
+0153,capital_new_chf,,,null,null,correct_null,correct_null
+0153,capital_previous_chf,,,null,null,correct_null,correct_null
+0153,domicile_new,,,null,null,correct_null,correct_null
+0153,domicile_previous,,,null,null,correct_null,correct_null
+0153,persons_removed,"Mühlheim, Matthias",,"""Mühlheim, Matthias""","""Mühlheim, Matthias""",matched,matched
+0153,persons_removed,"Mühlheim, Matthias",nationality,null,null,correct_null,correct_null
+0153,persons_removed,"Mühlheim, Matthias",heimatort,"""Scheuren""","""Scheuren""",correct,correct
+0153,persons_removed,"Mühlheim, Matthias",domicile,"""Zollikerberg""","""Zollikerberg""",correct,correct
+0153,persons_removed,"Mühlheim, Matthias",role,"""Direktor""","""Direktor""",correct,correct
+0153,persons_removed,"Mühlheim, Matthias",signature,"""Kollektivunterschrift zu zweien""","""Kollektivunterschrift zu zweien""",correct,correct
+0153,persons_removed,"Mühlheim, Matthias",uid,null,null,correct_null,correct_null
+0153,persons_removed,"Mühlheim, Matthias",stammanteile,null,null,correct_null,correct_null
+0153,persons_changed,"Illi, Hanspeter",,"""Illi, Hanspeter""","""Illi, Hanspeter""",matched,matched
+0153,persons_changed,"Illi, Hanspeter",name_previous,"""Illi, Hanspeter Roland""","""Illi, Hanspeter Roland""",correct,correct
+0153,persons_changed,"Illi, Hanspeter",domicile_new,"""Erlinsbach (SO)""","""Erlinsbach (SO)""",correct,correct
+0153,persons_changed,"Illi, Hanspeter",domicile_previous,null,null,correct_null,correct_null
+0153,persons_changed,"Illi, Hanspeter",role_new,"""Direktor""","""Direktor""",correct,correct
+0153,persons_changed,"Illi, Hanspeter",role_previous,"""stellvertretender Direktor""","""stellvertretender Direktor""",correct,correct
+0153,persons_changed,"Illi, Hanspeter",signature_new,"""Kollektivunterschrift zu zweien""","""Kollektivunterschrift zu zweien""",correct,correct
+0153,persons_changed,"Illi, Hanspeter",signature_previous,null,null,correct_null,correct_null
+0153,persons_changed,"Illi, Hanspeter",nationality_new,null,null,correct_null,correct_null
+0153,persons_changed,"Illi, Hanspeter",nationality_previous,null,null,correct_null,correct_null
+0153,persons_changed,"Illi, Hanspeter",heimatort_new,"""Bonstetten""","""Bonstetten""",correct,correct
+0153,persons_changed,"Illi, Hanspeter",heimatort_previous,null,null,correct_null,correct_null
+0153,persons_changed,"Illi, Hanspeter",stammanteile_new,null,null,correct_null,correct_null
+0153,persons_changed,"Illi, Hanspeter",stammanteile_previous,null,null,correct_null,correct_null
+0154,act_type,,,"""mutation""","""mutation""",correct,correct
+0154,act_subtypes,,,"[""organaenderung""]","[""organaenderung""]",correct,correct
+0154,company_name_full,,,"""Agrisano Pencas""","""Agrisano Pencas""",correct,correct
+0154,company_name_base,,,"""Agrisano Pencas""","""Agrisano Pencas""",correct,correct
+0154,status_suffix,,,null,null,correct_null,correct_null
+0154,alternative_names,,,[],[],correct_null,correct_null
+0154,company_name_new,,,null,null,correct_null,correct_null
+0154,company_name_previous,,,null,null,correct_null,correct_null
+0154,uid,,,"""CHE-109.706.489""","""CHE-109.706.489""",correct,correct
+0154,legal_form,,,"""Stiftung""","""Stiftung""",correct,correct
+0154,seat_municipality,,,"""Brugg""","""Brugg""",correct,correct
+0154,seat_canton,,,"""AG""","""AG""",correct,correct
+0154,address_care_of,,,"""Schweizerischer, Bauernverband""","""Schweizerischer, Bauernverband""",excluded_uncertain,excluded_uncertain
+0154,address_street,,,"""Laurstrasse 10""","""Laurstrasse 10""",correct,correct
+0154,address_postcode,,,"""5200""","""5200""",correct,correct
+0154,address_municipality,,,"""Brugg AG""","""Brugg AG""",correct,correct
+0154,act_date,,,null,null,correct_null,correct_null
+0154,tagesregister_nr,,,"""12676""","""12676""",correct,correct
+0154,tagesregister_date,,,"""2026-09-04""","""2026-09-04""",correct,correct
+0154,prior_publication_shab_nr,,,235,235,correct,correct
+0154,prior_publication_date,,,"""2025-12-04""","""2025-12-04""",correct,correct
+0154,prior_publication_id,,,"""1006503248""","""1006503248""",correct,correct
+0154,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Aargau""",correct,correct
+0154,canton_previous,,,null,null,correct_null,correct_null
+0154,canton_new,,,null,null,correct_null,correct_null
+0154,capital_new_chf,,,null,null,correct_null,correct_null
+0154,capital_previous_chf,,,null,null,correct_null,correct_null
+0154,domicile_new,,,null,null,correct_null,correct_null
+0154,domicile_previous,,,null,null,correct_null,correct_null
+0154,persons_removed,"Hächler, Sandra",,"""Hächler, Sandra""","""Hächler, Sandra""",matched,matched
+0154,persons_removed,"Hächler, Sandra",nationality,null,null,correct_null,correct_null
+0154,persons_removed,"Hächler, Sandra",heimatort,"""Densbüren""","""Densbüren""",correct,correct
+0154,persons_removed,"Hächler, Sandra",domicile,"""Densbüren""","""Densbüren""",correct,correct
+0154,persons_removed,"Hächler, Sandra",role,null,null,correct_null,correct_null
+0154,persons_removed,"Hächler, Sandra",signature,"""Kollektivunterschrift zu zweien""","""Kollektivunterschrift zu zweien""",correct,correct
+0154,persons_removed,"Hächler, Sandra",uid,null,null,correct_null,correct_null
+0154,persons_removed,"Hächler, Sandra",stammanteile,null,null,correct_null,correct_null
+0155,act_type,,,"""mutation""","""mutation""",correct,correct
+0155,act_subtypes,,,[],[],correct_null,correct_null
+0155,company_name_full,,,"""mhc Swiss GmbH""","""mhc Swiss GmbH""",correct,correct
+0155,company_name_base,,,"""mhc Swiss GmbH""","""mhc Swiss GmbH""",correct,correct
+0155,status_suffix,,,null,null,correct_null,correct_null
+0155,alternative_names,,,[],[],correct_null,correct_null
+0155,company_name_new,,,null,null,correct_null,correct_null
+0155,company_name_previous,,,null,null,correct_null,correct_null
+0155,uid,,,"""CHE-340.870.003""","""CHE-340.870.003""",correct,correct
+0155,legal_form,,,"""GmbH""","""GmbH""",correct,correct
+0155,seat_municipality,,,"""Möhlin""","""Möhlin""",correct,correct
+0155,seat_canton,,,"""AG""","""AG""",correct,correct
+0155,address_care_of,,,null,null,correct_null,correct_null
+0155,address_street,,,"""Austrasse 14""","""Austrasse 14""",correct,correct
+0155,address_postcode,,,"""4313""","""4313""",correct,correct
+0155,address_municipality,,,"""Möhlin""","""Möhlin""",correct,correct
+0155,act_date,,,null,null,correct_null,correct_null
+0155,tagesregister_nr,,,"""12668""","""12668""",correct,correct
+0155,tagesregister_date,,,"""2026-09-04""","""2026-09-04""",correct,correct
+0155,prior_publication_shab_nr,,,72,72,correct,correct
+0155,prior_publication_date,,,"""2023-04-14""","""2023-04-14""",correct,correct
+0155,prior_publication_id,,,"""1005724207""",1005724207,wrong,correct
+0155,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Aargau""",correct,correct
+0155,canton_previous,,,null,null,correct_null,correct_null
+0155,canton_new,,,null,null,correct_null,correct_null
+0155,capital_new_chf,,,null,null,correct_null,correct_null
+0155,capital_previous_chf,,,null,null,correct_null,correct_null
+0155,domicile_new,,,"""Austrasse 14, 4313 Möhlin""","""Austrasse 14, 4313 Möhlin""",correct,correct
+0155,domicile_previous,,,"""Höllstenstrasse 20, 4313 Möhlin""","""Höllstenstrasse 20, 4313 Möhlin""",correct,correct
+0156,act_type,,,"""mutation""","""mutation""",correct,correct
+0156,act_subtypes,,,[],[],correct_null,correct_null
+0156,company_name_full,,,"""Eddy Kaufmann AG Buchs""","""Eddy Kaufmann AG Buchs""",correct,correct
+0156,company_name_base,,,"""Eddy Kaufmann AG Buchs""","""Eddy Kaufmann AG Buchs""",correct,correct
+0156,status_suffix,,,null,null,correct_null,correct_null
+0156,alternative_names,,,[],[],correct_null,correct_null
+0156,company_name_new,,,null,null,correct_null,correct_null
+0156,company_name_previous,,,null,null,correct_null,correct_null
+0156,uid,,,"""CHE-107.076.105""","""CHE-107.076.105""",correct,correct
+0156,legal_form,,,"""AG""","""AG""",correct,correct
+0156,seat_municipality,,,"""Buchs (AG)""","""Buchs (AG)""",correct,correct
+0156,seat_canton,,,"""AG""","""AG""",correct,correct
+0156,address_care_of,,,null,null,correct_null,correct_null
+0156,address_street,,,"""Neumattstrasse 42""","""Neumattstrasse 42""",correct,correct
+0156,address_postcode,,,"""5033""","""5033""",correct,correct
+0156,address_municipality,,,"""Buchs AG""","""Buchs AG""",correct,correct
+0156,act_date,,,null,null,correct_null,correct_null
+0156,tagesregister_nr,,,"""12646""","""12646""",correct,correct
+0156,tagesregister_date,,,"""2026-09-04""","""2026-09-04""",correct,correct
+0156,prior_publication_shab_nr,,,46,46,correct,correct
+0156,prior_publication_date,,,"""2022-03-07""","""2022-03-07""",correct,correct
+0156,prior_publication_id,,,"""1005421469""","""1005421469""",correct,correct
+0156,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Aargau""",correct,correct
+0156,canton_previous,,,null,null,correct_null,correct_null
+0156,canton_new,,,null,null,correct_null,correct_null
+0156,capital_new_chf,,,null,null,correct_null,correct_null
+0156,capital_previous_chf,,,null,null,correct_null,correct_null
+0156,domicile_new,,,"""Neumattstrasse 42, 5033 Buchs AG""","""Neumattstrasse 42, 5033 Buchs AG""",correct,correct
+0156,domicile_previous,,,"""Neumattstrasse 42, 5033 Buchs AG""","""Neumattstrasse 42, 5033 Buchs AG""",correct,correct
+0157,act_type,,,"""mutation""","""mutation""",correct,correct
+0157,act_subtypes,,,[],[],correct_null,correct_null
+0157,company_name_full,,,"""Innolutions AG""","""Innolutions AG""",correct,correct
+0157,company_name_base,,,"""Innolutions AG""","""Innolutions AG""",correct,correct
+0157,status_suffix,,,null,null,correct_null,correct_null
+0157,alternative_names,,,[],[],correct_null,correct_null
+0157,company_name_new,,,null,null,correct_null,correct_null
+0157,company_name_previous,,,null,null,correct_null,correct_null
+0157,uid,,,"""CHE-109.368.665""","""CHE-109.368.665""",correct,correct
+0157,legal_form,,,"""AG""","""AG""",correct,correct
+0157,seat_municipality,,,"""Möriken-Wildegg""","""Möriken-Wildegg""",correct,correct
+0157,seat_canton,,,"""AG""","""AG""",correct,correct
+0157,address_care_of,,,null,null,correct_null,correct_null
+0157,address_street,,,"""Hornimattstrasse 22b""","""Hornimattstrasse 22b""",correct,correct
+0157,address_postcode,,,"""5103""","""5103""",correct,correct
+0157,address_municipality,,,"""Wildegg""","""Wildegg""",correct,correct
+0157,act_date,,,null,null,correct_null,correct_null
+0157,tagesregister_nr,,,"""12643""","""12643""",correct,correct
+0157,tagesregister_date,,,"""2026-09-04""","""2026-09-04""",correct,correct
+0157,prior_publication_shab_nr,,,228,228,correct,correct
+0157,prior_publication_date,,,"""2023-11-23""","""2023-11-23""",correct,correct
+0157,prior_publication_id,,,"""1005892340""","""1005892340""",correct,correct
+0157,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Aargau""",correct,correct
+0157,canton_previous,,,null,null,correct_null,correct_null
+0157,canton_new,,,null,null,correct_null,correct_null
+0157,capital_new_chf,,,null,null,correct_null,correct_null
+0157,capital_previous_chf,,,null,null,correct_null,correct_null
+0157,domicile_new,,,"""Hornimattstrasse 22b, 5103 Wildegg""","""Hornimattstrasse 22b, 5103 Wildegg""",correct,correct
+0157,domicile_previous,,,"""Hornimattstrasse 22a, 5103 Wildegg""","""Hornimattstrasse 22a, 5103 Wildegg""",correct,correct
+0158,act_type,,,"""mutation""","""mutation""",correct,correct
+0158,act_subtypes,,,"[""statutenaenderung"", ""organaenderung"", ""zweckaenderung""]","[""statutenaenderung"", ""zweckaenderung"", ""organaenderung"", ""kapitalherabsetzung""]",wrong,wrong
+0158,company_name_full,,,"""Tyche Consulting GmbH""","""Tyche Consulting GmbH""",correct,correct
+0158,company_name_base,,,"""Tyche Consulting GmbH""","""Tyche Consulting GmbH""",correct,correct
+0158,status_suffix,,,null,null,correct_null,correct_null
+0158,alternative_names,,,[],[],correct_null,correct_null
+0158,company_name_new,,,null,null,correct_null,correct_null
+0158,company_name_previous,,,null,null,correct_null,correct_null
+0158,uid,,,"""CHE-351.849.013""","""CHE-351.849.013""",correct,correct
+0158,legal_form,,,"""GmbH""","""GmbH""",correct,correct
+0158,seat_municipality,,,"""Eggenwil""","""Eggenwil""",correct,correct
+0158,seat_canton,,,"""AG""","""AG""",correct,correct
+0158,address_care_of,,,null,null,correct_null,correct_null
+0158,address_street,,,"""Tobelstrasse 13""","""Tobelstrasse 13""",correct,correct
+0158,address_postcode,,,"""5445""","""5445""",correct,correct
+0158,address_municipality,,,"""Eggenwil""","""Eggenwil""",correct,correct
+0158,act_date,,,"""2026-08-25""","""2026-08-25""",correct,correct
+0158,tagesregister_nr,,,"""12664""","""12664""",correct,correct
+0158,tagesregister_date,,,"""2026-09-04""","""2026-09-04""",correct,correct
+0158,prior_publication_shab_nr,,,177,177,correct,correct
+0158,prior_publication_date,,,"""2025-09-15""","""2025-09-15""",correct,correct
+0158,prior_publication_id,,,"""1006433237""","""1006433237""",correct,correct
+0158,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Aargau""",correct,correct
+0158,canton_previous,,,null,null,correct_null,correct_null
+0158,canton_new,,,null,null,correct_null,correct_null
+0158,capital_new_chf,,,null,null,correct_null,correct_null
+0158,capital_previous_chf,,,null,null,correct_null,correct_null
+0158,domicile_new,,,null,null,correct_null,correct_null
+0158,domicile_previous,,,null,null,correct_null,correct_null
+0158,persons_added,"Popravka, Olena",,"""Popravka, Olena""","""Popravka, Olena""",matched,matched
+0158,persons_added,"Popravka, Olena",nationality,"""ukrainisch""","""ukrainisch""",correct,correct
+0158,persons_added,"Popravka, Olena",heimatort,null,null,correct_null,correct_null
+0158,persons_added,"Popravka, Olena",domicile,"""Danzig (PL)""","""Danzig (PL)""",correct,correct
+0158,persons_added,"Popravka, Olena",role,"""Gesellschafterin""","""Gesellschafterin""",correct,correct
+0158,persons_added,"Popravka, Olena",signature,"""ohne Zeichnungsberechtigung""","""ohne Zeichnungsberechtigung""",correct,correct
+0158,persons_added,"Popravka, Olena",uid,null,null,correct_null,correct_null
+0158,persons_added,"Popravka, Olena",stammanteile,50,"""50""",wrong,correct
+0158,persons_changed,"Häusler-Wintenbach, Nathalie Sophie",,"""Häusler-Wintenbach, Nathalie Sophie""","""Häusler-Wintenbach, Nathalie Sophie""",matched,matched
+0158,persons_changed,"Häusler-Wintenbach, Nathalie Sophie",name_previous,null,null,correct_null,correct_null
+0158,persons_changed,"Häusler-Wintenbach, Nathalie Sophie",domicile_new,"""Eggenwil""","""Eggenwil""",correct,correct
+0158,persons_changed,"Häusler-Wintenbach, Nathalie Sophie",domicile_previous,null,null,correct_null,correct_null
+0158,persons_changed,"Häusler-Wintenbach, Nathalie Sophie",role_new,"""Gesellschafterin und Geschäftsführerin""","""Gesellschafterin und Geschäftsführerin""",correct,correct
+0158,persons_changed,"Häusler-Wintenbach, Nathalie Sophie",role_previous,null,null,correct_null,correct_null
+0158,persons_changed,"Häusler-Wintenbach, Nathalie Sophie",signature_new,"""Einzelunterschrift""","""mit Einzelunterschrift""",wrong,wrong
+0158,persons_changed,"Häusler-Wintenbach, Nathalie Sophie",signature_previous,null,null,correct_null,correct_null
+0158,persons_changed,"Häusler-Wintenbach, Nathalie Sophie",nationality_new,"""deutsch""","""deutsch""",correct,correct
+0158,persons_changed,"Häusler-Wintenbach, Nathalie Sophie",nationality_previous,null,null,correct_null,correct_null
+0158,persons_changed,"Häusler-Wintenbach, Nathalie Sophie",heimatort_new,null,null,correct_null,correct_null
+0158,persons_changed,"Häusler-Wintenbach, Nathalie Sophie",heimatort_previous,null,null,correct_null,correct_null
+0158,persons_changed,"Häusler-Wintenbach, Nathalie Sophie",stammanteile_new,150,"""150""",wrong,correct
+0158,persons_changed,"Häusler-Wintenbach, Nathalie Sophie",stammanteile_previous,200,"""200""",wrong,correct
+0158,extras,zweck,,"""Die Gesellschaft bezweckt die Entwicklung, den Betrieb und die Vermarktung von digitalen Plattformen, Online-Marktplätzen, Community-, Vermittlungs- und Buchungssystemen sowie digitalen Dienstleistungen …""","""Die Gesellschaft bezweckt die Entwicklung, den Betrieb und die Vermarktung von digitalen Plattformen, Online-Marktplätzen, Community-, Vermittlungs- und Buchungssystemen sowie digitalen Dienstleistungen im In- und Ausland, insbesondere in den Bereichen Gesundheit, Technologie, digitale Ökosysteme und internationale Communitysysteme. Die Gesellschaft kann Tätigkeiten in den Bereichen Marketing, Online-Marketing, Werbung, Social Media, Branding, Medienproduktion, Content-Erstellung sowie die Entwicklung, den Betrieb und die Vermarktung von Software, mobilen Anwendungen (Apps), Webplattformen sowie digitalen und Kl-gestützten Systemen ausüben. Die Gesellschaft kann Marketplace-, Vermittlungs- und Buchungssysteme für Fachkräfte, Dienstleister und Unternehmen betreiben und vermarkten. Weiter bezweckt die Gesellschaft Investitionen in digitale Projekte, Unternehmen, Beteiligungen und internationale Geschäftsmodelle. Die Gesellschaft kann Patente, Marken, Lizenzen und andere immaterielle Schutzrechte erwerben, halten, verwalten, verwerten und veräussern. Die Gesellschaft kann ihren Gesellschaftern, Tochtergesellschaften oder Dritten Darlehen oder andere Finanzierungen gewähren sowie für Verbindlichkeiten solcher Gesellschaften Sicherheiten aller Art stellen. Die Gesellschaft kann im In- und Ausland Grundeigentum erwerben, belasten, halten, verwalten, vermieten, vermitteln und veräussern, unter Einhaltung der massgeblichen gesetzlichen Bestimmungen, insbesondere der Lex Koller. Die Gesellschaft kann Zweigniederlassungen und Tochtergesellschaften im In- und Ausland errichten, sich an anderen Unternehmen beteiligen sowie sämtliche Geschäfte tätigen, die direkt oder indirekt mit dem Gesellschaftszweck zusammenhängen.""",correct,correct
+0158,extras,nominal_value_chf,,100.0,100.0,correct,correct
+0159,act_type,,,"""mutation""","""mutation""",correct,correct
+0159,act_subtypes,,,"[""sitzverlegung"", ""kantonswechsel"", ""firmenaenderung""]","[""sitzverlegung"", ""kantonswechsel"", ""firmenaenderung""]",correct,correct
+0159,company_name_full,,,"""Hartl Consult GmbH""","""Hartl Consult GmbH""",correct,correct
+0159,company_name_base,,,"""Hartl Consult GmbH""","""Hartl Consult GmbH""",correct,correct
+0159,status_suffix,,,null,null,correct_null,correct_null
+0159,alternative_names,,,"[""Hartl Consult Sàrl"", ""Hartl Consult LLC""]","[""Hartl Consult Sàrl"", ""Hartl Consult LLC""]",excluded_uncertain,excluded_uncertain
+0159,company_name_new,,,"""Nachtfalter Film GmbH""","""Nachtfalter Film GmbH""",correct,correct
+0159,company_name_previous,,,"""Hartl Consult GmbH""","""Hartl Consult GmbH""",correct,correct
+0159,uid,,,"""CHE-360.293.391""","""CHE-360.293.391""",correct,correct
+0159,legal_form,,,"""GmbH""","""GmbH""",correct,correct
+0159,seat_municipality,,,"""Erlinsbach (AG)""","""Erlinsbach (AG)""",correct,correct
+0159,seat_canton,,,"""AG""","""AG""",correct,correct
+0159,address_care_of,,,"""Hug & Dorfmüller Design AG""","""Hug & Dorfmüller Design AG""",correct,correct
+0159,address_street,,,"""Hirschengraben 33b""","""Hirschengraben 33b""",correct,correct
+0159,address_postcode,,,"""6003""","""6003""",correct,correct
+0159,address_municipality,,,"""Luzern""","""Luzern""",correct,correct
+0159,act_date,,,null,null,correct_null,correct_null
+0159,tagesregister_nr,,,"""12687""","""12687""",correct,correct
+0159,tagesregister_date,,,"""2026-09-04""","""2026-09-04""",correct,correct
+0159,prior_publication_shab_nr,,,111,111,correct,correct
+0159,prior_publication_date,,,"""2021-06-11""","""2021-06-11""",correct,correct
+0159,prior_publication_id,,,"""1005214763""","""1005214763""",correct,correct
+0159,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Aargau""",correct,correct
+0159,canton_previous,,,"""AG""","""AG""",correct,correct
+0159,canton_new,,,"""LU""","""LU""",correct,correct
+0159,capital_new_chf,,,null,null,correct_null,correct_null
+0159,capital_previous_chf,,,null,null,correct_null,correct_null
+0159,domicile_new,,,"""Hirschengraben 33b, 6003 Luzern""","""Hirschengraben 33b, 6003 Luzern""",correct,correct
+0159,domicile_previous,,,"""Gehrenstrasse 13, 5018 Erlinsbach""","""Gehrenstrasse 13, 5018 Erlinsbach""",correct,correct
+0160,act_type,,,"""mutation""","""mutation""",correct,correct
+0160,act_subtypes,,,"[""organaenderung""]","[""organaenderung""]",correct,correct
+0160,company_name_full,,,"""Gastroenterologie Aarau AG""","""Gastroenterologie Aarau AG""",correct,correct
+0160,company_name_base,,,"""Gastroenterologie Aarau AG""","""Gastroenterologie Aarau AG""",correct,correct
+0160,status_suffix,,,null,null,correct_null,correct_null
+0160,alternative_names,,,[],[],correct_null,correct_null
+0160,company_name_new,,,null,null,correct_null,correct_null
+0160,company_name_previous,,,null,null,correct_null,correct_null
+0160,uid,,,"""CHE-259.475.045""","""CHE-259.475.045""",correct,correct
+0160,legal_form,,,"""AG""","""AG""",correct,correct
+0160,seat_municipality,,,"""Aarau""","""Aarau""",correct,correct
+0160,seat_canton,,,"""AG""","""AG""",correct,correct
+0160,address_care_of,,,null,null,correct_null,correct_null
+0160,address_street,,,"""Wiesenstrasse 25""","""Wiesenstrasse 25""",correct,correct
+0160,address_postcode,,,"""5000""","""5000""",correct,correct
+0160,address_municipality,,,"""Aarau""","""Aarau""",correct,correct
+0160,act_date,,,null,null,correct_null,correct_null
+0160,tagesregister_nr,,,"""12673""","""12673""",correct,correct
+0160,tagesregister_date,,,"""2026-09-04""","""2026-09-04""",correct,correct
+0160,prior_publication_shab_nr,,,168,168,correct,correct
+0160,prior_publication_date,,,"""2019-09-02""","""2019-09-02""",correct,correct
+0160,prior_publication_id,,,"""1004707215""","""1004707215""",correct,correct
+0160,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Aargau""",correct,correct
+0160,canton_previous,,,null,null,correct_null,correct_null
+0160,canton_new,,,null,null,correct_null,correct_null
+0160,capital_new_chf,,,null,null,correct_null,correct_null
+0160,capital_previous_chf,,,null,null,correct_null,correct_null
+0160,domicile_new,,,null,null,correct_null,correct_null
+0160,domicile_previous,,,null,null,correct_null,correct_null
+0160,persons_removed,"Riniker, Maja Regula",,"""Riniker, Maja Regula""","""Riniker, Maja Regula""",matched,matched
+0160,persons_removed,"Riniker, Maja Regula",nationality,null,null,correct_null,correct_null
+0160,persons_removed,"Riniker, Maja Regula",heimatort,"""Habsburg""","""Habsburg""",correct,correct
+0160,persons_removed,"Riniker, Maja Regula",domicile,"""Suhr""","""Suhr""",correct,correct
+0160,persons_removed,"Riniker, Maja Regula",role,"""Mitglied des Verwaltungsrates""","""Mitglied des Verwaltungsrates""",correct,correct
+0160,persons_removed,"Riniker, Maja Regula",signature,"""Einzelunterschrift""","""Einzelunterschrift""",correct,correct
+0160,persons_removed,"Riniker, Maja Regula",uid,null,null,correct_null,correct_null
+0160,persons_removed,"Riniker, Maja Regula",stammanteile,null,null,correct_null,correct_null
+0160,persons_changed,"Riniker, Florian Martin",,"""Riniker, Florian Martin""","""Riniker, Florian Martin""",matched,matched
+0160,persons_changed,"Riniker, Florian Martin",name_previous,null,null,correct_null,correct_null
+0160,persons_changed,"Riniker, Florian Martin",domicile_new,"""Aarau""","""Aarau""",correct,correct
+0160,persons_changed,"Riniker, Florian Martin",domicile_previous,"""Suhr""","""Suhr""",correct,correct
+0160,persons_changed,"Riniker, Florian Martin",role_new,"""Mitglied des Verwaltungsrates""","""Mitglied des Verwaltungsrates""",correct,correct
+0160,persons_changed,"Riniker, Florian Martin",role_previous,"""Präsident des Verwaltungsrates""","""Präsident des Verwaltungsrates""",correct,correct
+0160,persons_changed,"Riniker, Florian Martin",signature_new,"""Einzelunterschrift""","""Einzelunterschrift""",correct,correct
+0160,persons_changed,"Riniker, Florian Martin",signature_previous,null,null,correct_null,correct_null
+0160,persons_changed,"Riniker, Florian Martin",nationality_new,null,null,correct_null,correct_null
+0160,persons_changed,"Riniker, Florian Martin",nationality_previous,null,null,correct_null,correct_null
+0160,persons_changed,"Riniker, Florian Martin",heimatort_new,"""Habsburg""","""Habsburg""",correct,correct
+0160,persons_changed,"Riniker, Florian Martin",heimatort_previous,null,null,correct_null,correct_null
+0160,persons_changed,"Riniker, Florian Martin",stammanteile_new,null,null,correct_null,correct_null
+0160,persons_changed,"Riniker, Florian Martin",stammanteile_previous,null,null,correct_null,correct_null
+0161,act_type,,,"""loeschung""","""loeschung""",correct,correct
+0161,act_subtypes,,,[],[],correct_null,correct_null
+0161,company_name_full,,,"""Granato PizzaLab""","""Granato PizzaLab""",correct,correct
+0161,company_name_base,,,"""Granato PizzaLab""","""Granato PizzaLab""",correct,correct
+0161,status_suffix,,,null,null,correct_null,correct_null
+0161,alternative_names,,,[],[],correct_null,correct_null
+0161,company_name_new,,,null,null,correct_null,correct_null
+0161,company_name_previous,,,null,null,correct_null,correct_null
+0161,uid,,,"""CHE-232.453.855""","""CHE-232.453.855""",correct,correct
+0161,legal_form,,,"""Einzelunternehmen""","""Einzelunternehmen""",correct,correct
+0161,seat_municipality,,,"""Buchs (AG)""","""Buchs (AG)""",correct,correct
+0161,seat_canton,,,"""AG""","""AG""",correct,correct
+0161,address_care_of,,,null,null,correct_null,correct_null
+0161,address_street,,,"""Baumgartenweg 13b""","""Baumgartenweg 13b""",correct,correct
+0161,address_postcode,,,"""5033""","""5033""",correct,correct
+0161,address_municipality,,,"""Buchs AG""","""Buchs AG""",correct,correct
+0161,act_date,,,"""2026-09-04""","""2026-09-04""",correct,correct
+0161,tagesregister_nr,,,"""12690""","""12690""",correct,correct
+0161,tagesregister_date,,,"""2026-09-04""","""2026-09-04""",correct,correct
+0161,prior_publication_shab_nr,,,226,226,correct,correct
+0161,prior_publication_date,,,"""2025-11-21""","""2025-11-21""",correct,correct
+0161,prior_publication_id,,,"""1006491505""",1006491505,wrong,correct
+0161,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Aargau""",correct,correct
+0161,canton_previous,,,null,null,correct_null,correct_null
+0161,canton_new,,,null,null,correct_null,correct_null
+0161,capital_new_chf,,,null,null,correct_null,correct_null
+0161,capital_previous_chf,,,null,null,correct_null,correct_null
+0161,domicile_new,,,null,null,correct_null,correct_null
+0161,domicile_previous,,,null,null,correct_null,correct_null
+0161,extras,loeschung_reason,,"""infolge Geschäftsaufgabe""","""Geschäftsaufgabe""",correct,correct
+0162,act_type,,,"""mutation""","""mutation""",correct,correct
+0162,act_subtypes,,,"[""konkurseroeffnung""]","[""konkurseroeffnung""]",correct,correct
+0162,company_name_full,,,"""Thavanesan Food Delivery Service""","""Thavanesan Food Delivery Service""",correct,correct
+0162,company_name_base,,,"""Thavanesan Food Delivery Service""","""Thavanesan Food Delivery Service""",correct,correct
+0162,status_suffix,,,null,null,correct_null,correct_null
+0162,alternative_names,,,[],[],correct_null,correct_null
+0162,company_name_new,,,null,null,correct_null,correct_null
+0162,company_name_previous,,,null,null,correct_null,correct_null
+0162,uid,,,"""CHE-477.377.217""","""CHE-477.377.217""",correct,correct
+0162,legal_form,,,"""Einzelunternehmen""","""Einzelunternehmen""",correct,correct
+0162,seat_municipality,,,"""Mägenwil""","""Mägenwil""",correct,correct
+0162,seat_canton,,,"""AG""","""AG""",correct,correct
+0162,address_care_of,,,null,null,correct_null,correct_null
+0162,address_street,,,"""Wolfbodenstrasse 3""","""Wolfbodenstrasse 3""",correct,correct
+0162,address_postcode,,,"""5506""","""5506""",correct,correct
+0162,address_municipality,,,"""Mägenwil""","""Mägenwil""",correct,correct
+0162,act_date,,,"""2026-09-01""","""2026-09-01""",excluded_uncertain,excluded_uncertain
+0162,tagesregister_nr,,,"""12682""","""12682""",correct,correct
+0162,tagesregister_date,,,"""2026-09-04""","""2026-09-04""",correct,correct
+0162,prior_publication_shab_nr,,,222,222,correct,correct
+0162,prior_publication_date,,,"""2024-11-14""","""2024-11-14""",correct,correct
+0162,prior_publication_id,,,"""1006178628""","""1006178628""",correct,correct
+0162,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Aargau""",correct,correct
+0162,canton_previous,,,null,null,correct_null,correct_null
+0162,canton_new,,,null,null,correct_null,correct_null
+0162,capital_new_chf,,,null,null,correct_null,correct_null
+0162,capital_previous_chf,,,null,null,correct_null,correct_null
+0162,domicile_new,,,null,null,correct_null,correct_null
+0162,domicile_previous,,,null,null,correct_null,correct_null
+0162,extras,konkurs_wirkung_ab,,"""2026-09-01 10:00""","""2026-09-01 10:00""",correct,correct
+0163,act_type,,,"""mutation""","""mutation""",correct,correct
+0163,act_subtypes,,,[],[],correct_null,correct_null
+0163,company_name_full,,,"""Dr. R. Peuckert GmbH""","""Dr. R. Peuckert GmbH""",correct,correct
+0163,company_name_base,,,"""Dr. R. Peuckert GmbH""","""Dr. R. Peuckert GmbH""",correct,correct
+0163,status_suffix,,,null,null,correct_null,correct_null
+0163,alternative_names,,,[],[],correct_null,correct_null
+0163,company_name_new,,,null,null,correct_null,correct_null
+0163,company_name_previous,,,null,null,correct_null,correct_null
+0163,uid,,,"""CHE-109.505.324""","""CHE-109.505.324""",correct,correct
+0163,legal_form,,,"""GmbH""","""GmbH""",correct,correct
+0163,seat_municipality,,,"""Rheinfelden""","""Rheinfelden""",correct,correct
+0163,seat_canton,,,"""AG""","""AG""",correct,correct
+0163,address_care_of,,,null,null,correct_null,correct_null
+0163,address_street,,,"""Marktgasse 10b""","""Marktgasse 10b""",correct,correct
+0163,address_postcode,,,"""4310""","""4310""",correct,correct
+0163,address_municipality,,,"""Rheinfelden""","""Rheinfelden""",correct,correct
+0163,act_date,,,null,null,correct_null,correct_null
+0163,tagesregister_nr,,,"""12649""","""12649""",correct,correct
+0163,tagesregister_date,,,"""2026-09-04""","""2026-09-04""",correct,correct
+0163,prior_publication_shab_nr,,,4,4,correct,correct
+0163,prior_publication_date,,,"""2016-01-07""","""2016-01-07""",correct,correct
+0163,prior_publication_id,,,"""2581609""","""2581609""",correct,correct
+0163,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Aargau""",correct,correct
+0163,canton_previous,,,null,null,correct_null,correct_null
+0163,canton_new,,,null,null,correct_null,correct_null
+0163,capital_new_chf,,,null,null,correct_null,correct_null
+0163,capital_previous_chf,,,null,null,correct_null,correct_null
+0163,domicile_new,,,"""Marktgasse 10b, 4310 Rheinfelden""","""Marktgasse 10b, 4310 Rheinfelden""",correct,correct
+0163,domicile_previous,,,"""Marktgasse 10, 4310 Rheinfelden""","""Marktgasse 10, 4310 Rheinfelden""",correct,correct
+0164,act_type,,,"""mutation""","""mutation""",correct,correct
+0164,act_subtypes,,,"[""statutenaenderung"", ""organaenderung"", ""sitzverlegung""]","[""statutenaenderung"", ""organaenderung"", ""sitzverlegung""]",correct,correct
+0164,company_name_full,,,"""J.Partner GmbH""","""J.Partner GmbH""",correct,correct
+0164,company_name_base,,,"""J.Partner GmbH""","""J.Partner GmbH""",correct,correct
+0164,status_suffix,,,null,null,correct_null,correct_null
+0164,alternative_names,,,[],[],correct_null,correct_null
+0164,company_name_new,,,null,null,correct_null,correct_null
+0164,company_name_previous,,,null,null,correct_null,correct_null
+0164,uid,,,"""CHE-485.208.812""","""CHE-485.208.812""",correct,correct
+0164,legal_form,,,"""GmbH""","""GmbH""",correct,correct
+0164,seat_municipality,,,"""Obersiggenthal""","""Obersiggenthal""",correct,correct
+0164,seat_canton,,,"""AG""","""AG""",correct,correct
+0164,address_care_of,,,null,null,correct_null,correct_null
+0164,address_street,,,"""Weststrasse 14""","""Weststrasse 14""",correct,correct
+0164,address_postcode,,,"""5432""","""5432""",correct,correct
+0164,address_municipality,,,"""Neuenhof""","""Neuenhof""",correct,correct
+0164,act_date,,,"""2026-08-20""","""2026-08-20""",correct,correct
+0164,tagesregister_nr,,,"""12638""","""12638""",correct,correct
+0164,tagesregister_date,,,"""2026-09-04""","""2026-09-04""",correct,correct
+0164,prior_publication_shab_nr,,,217,217,correct,correct
+0164,prior_publication_date,,,"""2023-11-08""","""2023-11-08""",correct,correct
+0164,prior_publication_id,,,"""1005879880""","""1005879880""",correct,correct
+0164,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Aargau""",correct,correct
+0164,canton_previous,,,null,null,correct_null,correct_null
+0164,canton_new,,,null,null,correct_null,correct_null
+0164,capital_new_chf,,,null,null,correct_null,correct_null
+0164,capital_previous_chf,,,null,null,correct_null,correct_null
+0164,domicile_new,,,"""Weststrasse 14, 5432 Neuenhof""","""Weststrasse 14, 5432 Neuenhof""",correct,correct
+0164,domicile_previous,,,"""Flurstrasse 1, 5415 Nussbaumen AG""","""Flurstrasse 1, 5415 Nussbaumen AG""",correct,correct
+0164,persons_changed,"Mehmeti, Egzon",,"""Mehmeti, Egzon""","""Mehmeti, Egzon""",matched,matched
+0164,persons_changed,"Mehmeti, Egzon",name_previous,null,null,correct_null,correct_null
+0164,persons_changed,"Mehmeti, Egzon",domicile_new,"""Gossau (SG)""","""Gossau (SG)""",correct,correct
+0164,persons_changed,"Mehmeti, Egzon",domicile_previous,"""Dietikon""","""Dietikon""",correct,correct
+0164,persons_changed,"Mehmeti, Egzon",role_new,"""Gesellschafter und Geschäftsführer""","""Gesellschafter und Geschäftsführer""",correct,correct
+0164,persons_changed,"Mehmeti, Egzon",role_previous,null,null,correct_null,correct_null
+0164,persons_changed,"Mehmeti, Egzon",signature_new,"""Einzelunterschrift""","""mit Einzelunterschrift""",wrong,wrong
+0164,persons_changed,"Mehmeti, Egzon",signature_previous,null,null,correct_null,correct_null
+0164,persons_changed,"Mehmeti, Egzon",nationality_new,"""kosovarisch""","""kosovarisch""",correct,correct
+0164,persons_changed,"Mehmeti, Egzon",nationality_previous,null,null,correct_null,correct_null
+0164,persons_changed,"Mehmeti, Egzon",heimatort_new,null,null,correct_null,correct_null
+0164,persons_changed,"Mehmeti, Egzon",heimatort_previous,null,null,correct_null,correct_null
+0164,persons_changed,"Mehmeti, Egzon",stammanteile_new,200,"""200""",wrong,correct
+0164,persons_changed,"Mehmeti, Egzon",stammanteile_previous,null,null,correct_null,correct_null
+0164,extras,nominal_value_chf,,100.0,100.0,correct,correct
+0165,act_type,,,"""mutation""","""mutation""",correct,correct
+0165,act_subtypes,,,"[""organaenderung"", ""firmenaenderung"", ""liquidationseroeffnung""]","[""firmenaenderung"", ""liquidationseroeffnung"", ""organaenderung""]",correct,correct
+0165,company_name_full,,,"""Mayer Textilveredelung GmbH""","""Mayer Textilveredelung GmbH""",correct,correct
+0165,company_name_base,,,"""Mayer Textilveredelung GmbH""","""Mayer Textilveredelung GmbH""",correct,correct
+0165,status_suffix,,,null,"""in Liquidation""",hallucination,hallucination
+0165,alternative_names,,,[],[],correct_null,correct_null
+0165,company_name_new,,,"""Mayer Textilveredelung GmbH in Liquidation""","""Mayer Textilveredelung GmbH in Liquidation""",correct,correct
+0165,company_name_previous,,,"""Mayer Textilveredelung GmbH""","""Mayer Textilveredelung GmbH""",correct,correct
+0165,uid,,,"""CHE-389.695.698""","""CHE-389.695.698""",correct,correct
+0165,legal_form,,,"""GmbH""","""GmbH""",correct,correct
+0165,seat_municipality,,,"""Zurzach""","""Zurzach""",correct,correct
+0165,seat_canton,,,"""AG""","""AG""",correct,correct
+0165,address_care_of,,,null,null,correct_null,correct_null
+0165,address_street,,,"""Hauptstrasse 49""","""Hauptstrasse 49""",correct,correct
+0165,address_postcode,,,"""5330""","""5330""",correct,correct
+0165,address_municipality,,,"""Bad Zurzach""","""Bad Zurzach""",correct,correct
+0165,act_date,,,"""2026-08-11""","""2026-08-11""",correct,correct
+0165,tagesregister_nr,,,"""12641""","""12641""",correct,correct
+0165,tagesregister_date,,,"""2026-09-04""","""2026-09-04""",correct,correct
+0165,prior_publication_shab_nr,,,104,104,correct,correct
+0165,prior_publication_date,,,"""2024-05-31""","""2024-05-31""",correct,correct
+0165,prior_publication_id,,,"""1006045285""",1006045285,wrong,correct
+0165,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Aargau""",correct,correct
+0165,canton_previous,,,null,null,correct_null,correct_null
+0165,canton_new,,,null,null,correct_null,correct_null
+0165,capital_new_chf,,,null,null,correct_null,correct_null
+0165,capital_previous_chf,,,null,null,correct_null,correct_null
+0165,domicile_new,,,null,null,correct_null,correct_null
+0165,domicile_previous,,,null,null,correct_null,correct_null
+0165,persons_changed,"Mayer, Gian Claudio",,"""Mayer, Gian Claudio""","""Mayer, Gian Claudio""",matched,matched
+0165,persons_changed,"Mayer, Gian Claudio",name_previous,null,null,correct_null,correct_null
+0165,persons_changed,"Mayer, Gian Claudio",domicile_new,"""Zurzach""","""Zurzach""",correct,correct
+0165,persons_changed,"Mayer, Gian Claudio",domicile_previous,null,null,correct_null,correct_null
+0165,persons_changed,"Mayer, Gian Claudio",role_new,"""Gesellschafter und Vorsitzender der Geschäftsführung, Liquidator""","""Gesellschafter und Vorsitzender der Geschäftsführung, Liquidator""",correct,correct
+0165,persons_changed,"Mayer, Gian Claudio",role_previous,"""Gesellschafter und Vorsitzender der Geschäftsführung""","""Gesellschafter und Vorsitzender der Geschäftsführung""",correct,correct
+0165,persons_changed,"Mayer, Gian Claudio",signature_new,"""Einzelunterschrift als Liquidator""","""Einzelunterschrift als Liquidator""",correct,correct
+0165,persons_changed,"Mayer, Gian Claudio",signature_previous,"""Einzelunterschrift""","""Einzelunterschrift""",correct,correct
+0165,persons_changed,"Mayer, Gian Claudio",nationality_new,null,null,correct_null,correct_null
+0165,persons_changed,"Mayer, Gian Claudio",nationality_previous,null,null,correct_null,correct_null
+0165,persons_changed,"Mayer, Gian Claudio",heimatort_new,"""Valsot""","""Valsot""",correct,correct
+0165,persons_changed,"Mayer, Gian Claudio",heimatort_previous,null,null,correct_null,correct_null
+0165,persons_changed,"Mayer, Gian Claudio",stammanteile_new,100,"""100""",wrong,correct
+0165,persons_changed,"Mayer, Gian Claudio",stammanteile_previous,null,null,correct_null,correct_null
+0165,persons_changed,"Mayer, Birgit",,"""Mayer, Birgit""","""Mayer, Birgit""",matched,matched
+0165,persons_changed,"Mayer, Birgit",name_previous,null,null,correct_null,correct_null
+0165,persons_changed,"Mayer, Birgit",domicile_new,"""Zurzach""","""Zurzach""",correct,correct
+0165,persons_changed,"Mayer, Birgit",domicile_previous,null,null,correct_null,correct_null
+0165,persons_changed,"Mayer, Birgit",role_new,"""Gesellschafterin""","""Gesellschafterin""",correct,correct
+0165,persons_changed,"Mayer, Birgit",role_previous,"""Gesellschafterin und Geschäftsführerin""","""Gesellschafterin und Geschäftsführerin""",correct,correct
+0165,persons_changed,"Mayer, Birgit",signature_new,"""ohne Zeichnungsberechtigung""","""ohne Zeichnungsberechtigung""",correct,correct
+0165,persons_changed,"Mayer, Birgit",signature_previous,"""Einzelunterschrift""","""Einzelunterschrift""",correct,correct
+0165,persons_changed,"Mayer, Birgit",nationality_new,null,null,correct_null,correct_null
+0165,persons_changed,"Mayer, Birgit",nationality_previous,null,null,correct_null,correct_null
+0165,persons_changed,"Mayer, Birgit",heimatort_new,"""Valsot""","""Valsot""",correct,correct
+0165,persons_changed,"Mayer, Birgit",heimatort_previous,null,null,correct_null,correct_null
+0165,persons_changed,"Mayer, Birgit",stammanteile_new,100,"""100""",wrong,correct
+0165,persons_changed,"Mayer, Birgit",stammanteile_previous,null,null,correct_null,correct_null
+0165,extras,nominal_value_chf,,100.0,100.0,correct,correct
+0166,act_type,,,"""mutation""","""mutation""",correct,correct
+0166,act_subtypes,,,"[""organaenderung""]","[""organaenderung""]",correct,correct
+0166,company_name_full,,,"""Finalor AG""","""Finalor AG""",correct,correct
+0166,company_name_base,,,"""Finalor AG""","""Finalor AG""",correct,correct
+0166,status_suffix,,,null,null,correct_null,correct_null
+0166,alternative_names,,,"[""Finalor SA"", ""Finalor Ltd""]","[""Finalor SA"", ""Finalor Ltd""]",correct,correct
+0166,company_name_new,,,null,null,correct_null,correct_null
+0166,company_name_previous,,,null,null,correct_null,correct_null
+0166,uid,,,"""CHE-102.360.734""","""CHE-102.360.734""",correct,correct
+0166,legal_form,,,"""AG""","""AG""",correct,correct
+0166,seat_municipality,,,"""Kaiseraugst""","""Kaiseraugst""",correct,correct
+0166,seat_canton,,,"""AG""","""AG""",correct,correct
+0166,address_care_of,,,null,null,correct_null,correct_null
+0166,address_street,,,"""Wurmisweg 576""","""Wurmisweg 576""",correct,correct
+0166,address_postcode,,,"""4303""","""4303""",correct,correct
+0166,address_municipality,,,"""Kaiseraugst""","""Kaiseraugst""",correct,correct
+0166,act_date,,,null,null,correct_null,correct_null
+0166,tagesregister_nr,,,"""12669""","""12669""",correct,correct
+0166,tagesregister_date,,,"""2026-09-04""","""2026-09-04""",correct,correct
+0166,prior_publication_shab_nr,,,24,24,correct,correct
+0166,prior_publication_date,,,"""2026-02-05""","""2026-02-05""",correct,correct
+0166,prior_publication_id,,,"""1006561182""","""1006561182""",correct,correct
+0166,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Aargau""",correct,correct
+0166,canton_previous,,,null,null,correct_null,correct_null
+0166,canton_new,,,null,null,correct_null,correct_null
+0166,capital_new_chf,,,null,null,correct_null,correct_null
+0166,capital_previous_chf,,,null,null,correct_null,correct_null
+0166,domicile_new,,,null,null,correct_null,correct_null
+0166,domicile_previous,,,null,null,correct_null,correct_null
+0166,persons_added,"Verhagen, Lisanne",,"""Verhagen, Lisanne""","""Verhagen, Lisanne""",matched,matched
+0166,persons_added,"Verhagen, Lisanne",nationality,"""niederländisch""","""niederländisch""",correct,correct
+0166,persons_added,"Verhagen, Lisanne",heimatort,null,null,correct_null,correct_null
+0166,persons_added,"Verhagen, Lisanne",domicile,"""Rheinfelden""","""Rheinfelden""",correct,correct
+0166,persons_added,"Verhagen, Lisanne",role,"""Mitglied des Verwaltungsrates""","""Mitglied des Verwaltungsrates""",correct,correct
+0166,persons_added,"Verhagen, Lisanne",signature,"""Kollektivunterschrift zu zweien""","""Kollektivunterschrift zu zweien""",correct,correct
+0166,persons_added,"Verhagen, Lisanne",uid,null,null,correct_null,correct_null
+0166,persons_added,"Verhagen, Lisanne",stammanteile,null,null,correct_null,correct_null
+0166,persons_removed,,,"[{""name"": ""Wolters, Hendrik Jan, genannt Harry"", ""nationality"": ""niederländisch"", ""heimatort"": null, ""domicile"": ""Binningen"", ""role"": ""Präsident des Verwaltungsrates"", ""signature"": ""Kollektivunterschrift zu zweien"", ""uid"": null, ""stammanteile"": null}]","[{""name"": ""Wolters, Hendrik Jan, genannt Harry"", ""nationality"": ""niederländisch"", ""heimatort"": null, ""domicile"": ""Binningen"", ""role"": ""Präsident des Verwaltungsrates"", ""signature"": ""Kollektivunterschrift zu zweien"", ""uid"": null, ""stammanteile"": null}]",excluded_uncertain,excluded_uncertain
+0166,persons_changed,"Isler, Dominique",,"""Isler, Dominique""","""Isler, Dominique""",matched,matched
+0166,persons_changed,"Isler, Dominique",name_previous,null,null,correct_null,correct_null
+0166,persons_changed,"Isler, Dominique",domicile_new,"""Basel""","""Basel""",correct,correct
+0166,persons_changed,"Isler, Dominique",domicile_previous,null,null,correct_null,correct_null
+0166,persons_changed,"Isler, Dominique",role_new,"""Präsident des Verwaltungsrates""","""Präsident des Verwaltungsrates""",correct,correct
+0166,persons_changed,"Isler, Dominique",role_previous,"""Mitglied des Verwaltungsrates""","""Mitglied des Verwaltungsrates""",correct,correct
+0166,persons_changed,"Isler, Dominique",signature_new,"""Kollektivunterschrift zu zweien""","""Kollektivunterschrift zu zweien""",correct,correct
+0166,persons_changed,"Isler, Dominique",signature_previous,null,null,correct_null,correct_null
+0166,persons_changed,"Isler, Dominique",nationality_new,null,null,correct_null,correct_null
+0166,persons_changed,"Isler, Dominique",nationality_previous,null,null,correct_null,correct_null
+0166,persons_changed,"Isler, Dominique",heimatort_new,"""Basel""","""Basel""",correct,correct
+0166,persons_changed,"Isler, Dominique",heimatort_previous,null,null,correct_null,correct_null
+0166,persons_changed,"Isler, Dominique",stammanteile_new,null,null,correct_null,correct_null
+0166,persons_changed,"Isler, Dominique",stammanteile_previous,null,null,correct_null,correct_null
+0167,act_type,,,"""mutation""","""mutation""",correct,correct
+0167,act_subtypes,,,"[""organaenderung""]","[""organaenderung""]",correct,correct
+0167,company_name_full,,,"""Avadis Finanzpartner AG""","""Avadis Finanzpartner AG""",correct,correct
+0167,company_name_base,,,"""Avadis Finanzpartner AG""","""Avadis Finanzpartner AG""",correct,correct
+0167,status_suffix,,,null,null,correct_null,correct_null
+0167,alternative_names,,,[],[],correct_null,correct_null
+0167,company_name_new,,,null,null,correct_null,correct_null
+0167,company_name_previous,,,null,null,correct_null,correct_null
+0167,uid,,,"""CHE-109.832.639""","""CHE-109.832.639""",correct,correct
+0167,legal_form,,,"""AG""","""AG""",correct,correct
+0167,seat_municipality,,,"""Aarau""","""Aarau""",correct,correct
+0167,seat_canton,,,"""AG""","""AG""",correct,correct
+0167,address_care_of,,,null,null,correct_null,correct_null
+0167,address_street,,,"""Herzogstrasse 12""","""Herzogstrasse 12""",correct,correct
+0167,address_postcode,,,"""5000""","""5000""",correct,correct
+0167,address_municipality,,,"""Aarau""","""Aarau""",correct,correct
+0167,act_date,,,null,null,correct_null,correct_null
+0167,tagesregister_nr,,,"""12651""","""12651""",correct,correct
+0167,tagesregister_date,,,"""2026-09-04""","""2026-09-04""",correct,correct
+0167,prior_publication_shab_nr,,,42,42,correct,correct
+0167,prior_publication_date,,,"""2026-03-03""","""2026-03-03""",correct,correct
+0167,prior_publication_id,,,"""1006584994""","""1006584994""",correct,correct
+0167,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Aargau""",correct,correct
+0167,canton_previous,,,null,null,correct_null,correct_null
+0167,canton_new,,,null,null,correct_null,correct_null
+0167,capital_new_chf,,,null,null,correct_null,correct_null
+0167,capital_previous_chf,,,null,null,correct_null,correct_null
+0167,domicile_new,,,null,null,correct_null,correct_null
+0167,domicile_previous,,,null,null,correct_null,correct_null
+0167,persons_added,"Weber, Thomas Andreas",,"""Weber, Thomas Andreas""","""Weber, Thomas Andreas""",matched,matched
+0167,persons_added,"Weber, Thomas Andreas",nationality,null,null,correct_null,correct_null
+0167,persons_added,"Weber, Thomas Andreas",heimatort,"""Hauptwil-Gottshaus""","""Hauptwil-Gottshaus""",correct,correct
+0167,persons_added,"Weber, Thomas Andreas",domicile,"""Oftringen""","""Oftringen""",correct,correct
+0167,persons_added,"Weber, Thomas Andreas",role,"""Delegierter des Verwaltungsrates""","""Delegierter des Verwaltungsrates""",correct,correct
+0167,persons_added,"Weber, Thomas Andreas",signature,"""Kollektivunterschrift zu zweien""","""Kollektivunterschrift zu zweien""",correct,correct
+0167,persons_added,"Weber, Thomas Andreas",uid,null,null,correct_null,correct_null
+0167,persons_added,"Weber, Thomas Andreas",stammanteile,null,null,correct_null,correct_null
+0167,persons_removed,"Montagnolo, Costanza",,"""Montagnolo, Costanza""","""Montagnolo, Costanza""",matched,matched
+0167,persons_removed,"Montagnolo, Costanza",nationality,"""italienisch""","""italienisch""",correct,correct
+0167,persons_removed,"Montagnolo, Costanza",heimatort,null,null,correct_null,correct_null
+0167,persons_removed,"Montagnolo, Costanza",domicile,"""Oberentfelden""","""Oberentfelden""",correct,correct
+0167,persons_removed,"Montagnolo, Costanza",role,"""Delegierte des Verwaltungsrates""","""Delegierte des Verwaltungsrates""",correct,correct
+0167,persons_removed,"Montagnolo, Costanza",signature,"""Kollektivunterschrift zu zweien""","""Kollektivunterschrift zu zweien""",correct,correct
+0167,persons_removed,"Montagnolo, Costanza",uid,null,null,correct_null,correct_null
+0167,persons_removed,"Montagnolo, Costanza",stammanteile,null,null,correct_null,correct_null
+0168,act_type,,,"""mutation""","""mutation""",correct,correct
+0168,act_subtypes,,,"[""organaenderung""]","[""organaenderung""]",correct,correct
+0168,company_name_full,,,"""Aanova AG""","""Aanova AG""",correct,correct
+0168,company_name_base,,,"""Aanova AG""","""Aanova AG""",correct,correct
+0168,status_suffix,,,null,null,correct_null,correct_null
+0168,alternative_names,,,[],[],correct_null,correct_null
+0168,company_name_new,,,null,null,correct_null,correct_null
+0168,company_name_previous,,,null,null,correct_null,correct_null
+0168,uid,,,"""CHE-482.475.110""","""CHE-482.475.110""",correct,correct
+0168,legal_form,,,"""AG""","""AG""",correct,correct
+0168,seat_municipality,,,"""Muhen""","""Muhen""",correct,correct
+0168,seat_canton,,,"""AG""","""AG""",correct,correct
+0168,address_care_of,,,null,null,correct_null,correct_null
+0168,address_street,,,"""Köllikerstrasse 1""","""Köllikerstrasse 1""",correct,correct
+0168,address_postcode,,,"""5037""","""5037""",correct,correct
+0168,address_municipality,,,"""Muhen""","""Muhen""",correct,correct
+0168,act_date,,,null,null,correct_null,correct_null
+0168,tagesregister_nr,,,"""12672""","""12672""",correct,correct
+0168,tagesregister_date,,,"""2026-09-04""","""2026-09-04""",correct,correct
+0168,prior_publication_shab_nr,,,17,17,correct,correct
+0168,prior_publication_date,,,"""2025-01-27""","""2025-01-27""",correct,correct
+0168,prior_publication_id,,,"""1006239141""","""1006239141""",correct,correct
+0168,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Aargau""",correct,correct
+0168,canton_previous,,,null,null,correct_null,correct_null
+0168,canton_new,,,null,null,correct_null,correct_null
+0168,capital_new_chf,,,null,null,correct_null,correct_null
+0168,capital_previous_chf,,,null,null,correct_null,correct_null
+0168,domicile_new,,,null,null,correct_null,correct_null
+0168,domicile_previous,,,null,null,correct_null,correct_null
+0168,persons_removed,"Huber, Denise",,"""Huber, Denise""","""Huber, Denise""",matched,matched
+0168,persons_removed,"Huber, Denise",nationality,null,null,correct_null,correct_null
+0168,persons_removed,"Huber, Denise",heimatort,"""Eppenberg-Wöschnau""","""Eppenberg-Wöschnau""",correct,correct
+0168,persons_removed,"Huber, Denise",domicile,"""Muhen""","""Muhen""",correct,correct
+0168,persons_removed,"Huber, Denise",role,"""Mitglied des Verwaltungsrates""","""Mitglied des Verwaltungsrates""",correct,correct
+0168,persons_removed,"Huber, Denise",signature,"""Kollektivunterschrift zu zweien""","""Kollektivunterschrift zu zweien""",correct,correct
+0168,persons_removed,"Huber, Denise",uid,null,null,correct_null,correct_null
+0168,persons_removed,"Huber, Denise",stammanteile,null,null,correct_null,correct_null
+0168,persons_changed,"Huber, Evelyn",,"""Huber, Evelyn""","""Huber, Evelyn""",matched,matched
+0168,persons_changed,"Huber, Evelyn",name_previous,null,null,correct_null,correct_null
+0168,persons_changed,"Huber, Evelyn",domicile_new,"""Baden""","""Baden""",correct,correct
+0168,persons_changed,"Huber, Evelyn",domicile_previous,"""Untersiggenthal""","""Untersiggenthal""",correct,correct
+0168,persons_changed,"Huber, Evelyn",role_new,"""Mitglied des Verwaltungsrates""","""Mitglied des Verwaltungsrates""",correct,correct
+0168,persons_changed,"Huber, Evelyn",role_previous,null,null,correct_null,correct_null
+0168,persons_changed,"Huber, Evelyn",signature_new,"""Kollektivunterschrift zu zweien""","""Kollektivunterschrift zu zweien""",correct,correct
+0168,persons_changed,"Huber, Evelyn",signature_previous,null,null,correct_null,correct_null
+0168,persons_changed,"Huber, Evelyn",nationality_new,null,null,correct_null,correct_null
+0168,persons_changed,"Huber, Evelyn",nationality_previous,null,null,correct_null,correct_null
+0168,persons_changed,"Huber, Evelyn",heimatort_new,"""Eppenberg-Wöschnau""","""Eppenberg-Wöschnau""",correct,correct
+0168,persons_changed,"Huber, Evelyn",heimatort_previous,null,null,correct_null,correct_null
+0168,persons_changed,"Huber, Evelyn",stammanteile_new,null,null,correct_null,correct_null
+0168,persons_changed,"Huber, Evelyn",stammanteile_previous,null,null,correct_null,correct_null
+0169,act_type,,,"""mutation""","""mutation""",correct,correct
+0169,act_subtypes,,,"[""organaenderung"", ""revisionsstelle""]","[""organaenderung"", ""revisionsstelle""]",correct,correct
+0169,company_name_full,,,"""sensusplus AG""","""sensusplus AG""",correct,correct
+0169,company_name_base,,,"""sensusplus AG""","""sensusplus AG""",correct,correct
+0169,status_suffix,,,null,null,correct_null,correct_null
+0169,alternative_names,,,[],[],correct_null,correct_null
+0169,company_name_new,,,null,null,correct_null,correct_null
+0169,company_name_previous,,,null,null,correct_null,correct_null
+0169,uid,,,"""CHE-114.628.346""","""CHE-114.628.346""",correct,correct
+0169,legal_form,,,"""AG""","""AG""",correct,correct
+0169,seat_municipality,,,"""Menziken""","""Menziken""",correct,correct
+0169,seat_canton,,,"""AG""","""AG""",correct,correct
+0169,address_care_of,,,null,null,correct_null,correct_null
+0169,address_street,,,"""Hauptstrasse 2""","""Hauptstrasse 2""",correct,correct
+0169,address_postcode,,,"""5737""","""5737""",correct,correct
+0169,address_municipality,,,"""Menziken""","""Menziken""",correct,correct
+0169,act_date,,,null,null,correct_null,correct_null
+0169,tagesregister_nr,,,"""12639""","""12639""",correct,correct
+0169,tagesregister_date,,,"""2026-09-04""","""2026-09-04""",correct,correct
+0169,prior_publication_shab_nr,,,28,28,correct,correct
+0169,prior_publication_date,,,"""2025-02-11""","""2025-02-11""",correct,correct
+0169,prior_publication_id,,,"""1006253663""","""1006253663""",correct,correct
+0169,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Aargau""",correct,correct
+0169,canton_previous,,,null,null,correct_null,correct_null
+0169,canton_new,,,null,null,correct_null,correct_null
+0169,capital_new_chf,,,null,null,correct_null,correct_null
+0169,capital_previous_chf,,,null,null,correct_null,correct_null
+0169,domicile_new,,,null,null,correct_null,correct_null
+0169,domicile_previous,,,null,null,correct_null,correct_null
+0169,persons_added,,,"[{""name"": ""MBB Consulting GmbH"", ""nationality"": null, ""heimatort"": null, ""domicile"": ""Zug"", ""role"": ""Revisionsstelle"", ""signature"": null, ""uid"": ""CHE-163.382.239"", ""stammanteile"": null}]","[{""name"": ""MBB Consulting GmbH"", ""nationality"": null, ""heimatort"": null, ""domicile"": ""Zug"", ""role"": ""Revisionsstelle"", ""signature"": null, ""uid"": ""CHE-163.382.239"", ""stammanteile"": null}]",excluded_uncertain,excluded_uncertain
+0169,persons_removed,Elwe Audit & Consulting AG,,"""Elwe Audit & Consulting AG""","""Elwe Audit & Consulting AG""",matched,matched
+0169,persons_removed,Elwe Audit & Consulting AG,nationality,null,null,correct_null,correct_null
+0169,persons_removed,Elwe Audit & Consulting AG,heimatort,null,null,correct_null,correct_null
+0169,persons_removed,Elwe Audit & Consulting AG,domicile,"""Zug""","""Zug""",correct,correct
+0169,persons_removed,Elwe Audit & Consulting AG,role,"""Revisionsstelle""","""Revisionsstelle""",correct,correct
+0169,persons_removed,Elwe Audit & Consulting AG,signature,null,null,correct_null,correct_null
+0169,persons_removed,Elwe Audit & Consulting AG,uid,"""CHE-109.603.464""","""CHE-109.603.464""",correct,correct
+0169,persons_removed,Elwe Audit & Consulting AG,stammanteile,null,null,correct_null,correct_null
+0170,act_type,,,"""mutation""","""mutation""",correct,correct
+0170,act_subtypes,,,"[""statutenaenderung"", ""sitzverlegung""]","[""statutenaenderung"", ""sitzverlegung""]",correct,correct
+0170,company_name_full,,,"""Autocenter Vellaz GmbH""","""Autocenter Vellaz GmbH""",correct,correct
+0170,company_name_base,,,"""Autocenter Vellaz GmbH""","""Autocenter Vellaz GmbH""",correct,correct
+0170,status_suffix,,,null,null,correct_null,correct_null
+0170,alternative_names,,,[],[],correct_null,correct_null
+0170,company_name_new,,,null,null,correct_null,correct_null
+0170,company_name_previous,,,null,null,correct_null,correct_null
+0170,uid,,,"""CHE-491.625.615""","""CHE-491.625.615""",correct,correct
+0170,legal_form,,,"""GmbH""","""GmbH""",correct,correct
+0170,seat_municipality,,,"""Aarau""","""Aarau""",correct,correct
+0170,seat_canton,,,"""AG""","""AG""",correct,correct
+0170,address_care_of,,,null,null,correct_null,correct_null
+0170,address_street,,,"""Brüggerweg 5""","""Brüggerweg 5""",correct,correct
+0170,address_postcode,,,"""5018""","""5018""",correct,correct
+0170,address_municipality,,,"""Erlinsbach""","""Erlinsbach""",correct,correct
+0170,act_date,,,"""2026-07-27""","""2026-07-27""",correct,correct
+0170,tagesregister_nr,,,"""12640""","""12640""",correct,correct
+0170,tagesregister_date,,,"""2026-09-04""","""2026-09-04""",correct,correct
+0170,prior_publication_shab_nr,,,111,111,correct,correct
+0170,prior_publication_date,,,"""2025-06-12""","""2025-06-12""",correct,correct
+0170,prior_publication_id,,,"""1006354091""","""1006354091""",correct,correct
+0170,authority,,,"""Handelsregisteramt des Kantons Aargau""","""Handelsregisteramt des Kantons Aargau""",correct,correct
+0170,canton_previous,,,null,null,correct_null,correct_null
+0170,canton_new,,,null,null,correct_null,correct_null
+0170,capital_new_chf,,,null,null,correct_null,correct_null
+0170,capital_previous_chf,,,null,null,correct_null,correct_null
+0170,domicile_new,,,"""Brüggerweg 5, 5018 Erlinsbach""","""Brüggerweg 5, 5018 Erlinsbach""",correct,correct
+0170,domicile_previous,,,"""Metzgergasse 14, 5000 Aarau""","""Metzgergasse 14, 5000 Aarau""",correct,correct

@@ -1,0 +1,56 @@
+{
+  "doc_id": "0167",
+  "split": "holdout",
+  "model_requested": "mistralai/mistral-large-4-0",
+  "backend": "openrouter",
+  "timestamp": "2026-10-13T16:09:58.666128+00:00",
+  "latency_ms": 69454.00000002701,
+  "params": {
+    "temperature": 0,
+    "max_tokens": 32768,
+    "passes": 1,
+    "structured_output": false
+  },
+  "prompt_sha256": "964dec417be3b1c664627b2505ba64f3dc8c0249bfb1cb9430e82c9850e0d20c",
+  "git_commit": "8d5e195facf9d856c555105f976879e266b5468f",
+  "git_dirty": true,
+  "attempts": 1,
+  "status": "ok",
+  "error": null,
+  "model_served": "mistralai/mistral-large-4-0",
+  "provider_served": "Mistral",
+  "usage": {
+    "completion_tokens": 3590,
+    "prompt_tokens": 4949,
+    "total_tokens": 8539,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 2730,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.01086842,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.01086842,
+      "upstream_inference_prompt_cost": 0.00336532,
+      "upstream_inference_completions_cost": 0.0075031
+    }
+  },
+  "reasoning_tokens": 2730,
+  "cost_usd": 0.01086842,
+  "finish_reason": "stop",
+  "response_chars": 1627,
+  "response_text": "{\n  \"act_type\": \"mutation\",\n  \"act_subtypes\": [\"organaenderung\"],\n  \"company_name_full\": \"Avadis Finanzpartner AG\",\n  \"company_name_base\": \"Avadis Finanzpartner AG\",\n  \"status_suffix\": null,\n  \"alternative_names\": [],\n  \"company_name_new\": null,\n  \"company_name_previous\": null,\n  \"uid\": \"CHE-109.832.639\",\n  \"legal_form\": \"AG\",\n  \"seat_municipality\": \"Aarau\",\n  \"seat_canton\": \"AG\",\n  \"address_care_of\": null,\n  \"address_street\": \"Herzogstrasse 12\",\n  \"address_postcode\": \"5000\",\n  \"address_municipality\": \"Aarau\",\n  \"act_date\": null,\n  \"tagesregister_nr\": \"12651\",\n  \"tagesregister_date\": \"2026-09-04\",\n  \"prior_publication_shab_nr\": 42,\n  \"prior_publication_date\": \"2026-03-03\",\n  \"prior_publication_id\": 1006584994,\n  \"authority\": \"Handelsregisteramt des Kantons Aargau\",\n  \"canton_previous\": null,\n  \"canton_new\": null,\n  \"capital_new_chf\": null,\n  \"capital_previous_chf\": null,\n  \"domicile_new\": null,\n  \"domicile_previous\": null,\n  \"persons_added\": [\n    {\n      \"name\": \"Weber, Thomas Andreas\",\n      \"nationality\": null,\n      \"heimatort\": \"Hauptwil-Gottshaus\",\n      \"domicile\": \"Oftringen\",\n      \"role\": \"Delegierter des Verwaltungsrates\",\n      \"signature\": \"Kollektivunterschrift zu zweien\",\n      \"uid\": null,\n      \"stammanteile\": null\n    }\n  ],\n  \"persons_removed\": [\n    {\n      \"name\": \"Montagnolo, Costanza\",\n      \"nationality\": \"italienisch\",\n      \"heimatort\": null,\n      \"domicile\": \"Oberentfelden\",\n      \"role\": \"Delegierte des Verwaltungsrates\",\n      \"signature\": \"Kollektivunterschrift zu zweien\",\n      \"uid\": null,\n      \"stammanteile\": null\n    }\n  ],\n  \"persons_changed\": [],\n  \"extras\": {}\n}",
+  "warnings": []
+}

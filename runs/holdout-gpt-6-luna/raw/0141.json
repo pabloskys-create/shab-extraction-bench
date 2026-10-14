@@ -1,0 +1,56 @@
+{
+  "doc_id": "0141",
+  "split": "holdout",
+  "model_requested": "openai/gpt-6-luna",
+  "backend": "openrouter",
+  "timestamp": "2026-10-13T12:18:50.146742+00:00",
+  "latency_ms": 25983.99999999674,
+  "params": {
+    "temperature": 0,
+    "max_tokens": 32768,
+    "passes": 1,
+    "structured_output": false
+  },
+  "prompt_sha256": "964dec417be3b1c664627b2505ba64f3dc8c0249bfb1cb9430e82c9850e0d20c",
+  "git_commit": "6a6bd2e193f6f9b2d38f6030b0a722c8c36dae6c",
+  "git_dirty": true,
+  "attempts": 1,
+  "status": "ok",
+  "error": null,
+  "model_served": "openai/gpt-6-luna",
+  "provider_served": "OpenAI",
+  "usage": {
+    "completion_tokens": 2440,
+    "prompt_tokens": 5407,
+    "total_tokens": 7847,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 1616,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 5404,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.0018958,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.0018958,
+      "upstream_inference_prompt_cost": 0.0006758,
+      "upstream_inference_completions_cost": 0.00122
+    }
+  },
+  "reasoning_tokens": 1616,
+  "cost_usd": 0.0018958,
+  "finish_reason": "stop",
+  "response_chars": 2775,
+  "response_text": "{\n  \"act_type\": \"mutation\",\n  \"act_subtypes\": [\n    \"statutenaenderung\",\n    \"organaenderung\",\n    \"sitzverlegung\",\n    \"kantonswechsel\",\n    \"zweckaenderung\"\n  ],\n  \"company_name_full\": \"CSB System AG Schweiz\",\n  \"company_name_base\": \"CSB System AG Schweiz\",\n  \"status_suffix\": null,\n  \"alternative_names\": [],\n  \"company_name_new\": null,\n  \"company_name_previous\": null,\n  \"uid\": \"CHE-113.707.144\",\n  \"legal_form\": \"AG\",\n  \"seat_municipality\": \"Kestenholz\",\n  \"seat_canton\": \"SO\",\n  \"address_care_of\": null,\n  \"address_street\": \"Brown Boveri Strasse 7\",\n  \"address_postcode\": \"5400\",\n  \"address_municipality\": \"Baden\",\n  \"act_date\": \"2026-08-31\",\n  \"tagesregister_nr\": \"12666\",\n  \"tagesregister_date\": \"2026-09-04\",\n  \"prior_publication_shab_nr\": 161,\n  \"prior_publication_date\": \"2025-08-22\",\n  \"prior_publication_id\": 1006414693,\n  \"authority\": \"Handelsregisteramt des Kantons Aargau\",\n  \"canton_previous\": \"SO\",\n  \"canton_new\": \"AG\",\n  \"capital_new_chf\": null,\n  \"capital_previous_chf\": null,\n  \"domicile_new\": \"Brown Boveri Strasse 7, 5400 Baden\",\n  \"domicile_previous\": \"Gäustrasse 52, 4703 Kestenholz\",\n  \"persons_added\": [],\n  \"persons_removed\": [],\n  \"persons_changed\": [\n    {\n      \"name_new\": \"Kröner, Vanessa\",\n      \"name_previous\": \"Kröner-Schimitzek, Vanessa\",\n      \"domicile_new\": \"Ennetbaden\",\n      \"domicile_previous\": null,\n      \"role_new\": \"Präsidentin des Verwaltungsrates\",\n      \"role_previous\": null,\n      \"signature_new\": \"Kollektivunterschrift zu zweien\",\n      \"signature_previous\": null,\n      \"nationality_new\": null,\n      \"nationality_previous\": \"deutsch\",\n      \"heimatort_new\": \"Ennetbaden\",\n      \"heimatort_previous\": null,\n      \"stammanteile_new\": null,\n      \"stammanteile_previous\": null\n    },\n    {\n      \"name_new\": \"Jorns, Hansjörg\",\n      \"name_previous\": null,\n      \"domicile_new\": \"Locarno\",\n      \"domicile_previous\": \"Oensingen\",\n      \"role_new\": \"Mitglied des Verwaltungsrates\",\n      \"role_previous\": null,\n      \"signature_new\": \"Kollektivunterschrift zu zweien\",\n      \"signature_previous\": null,\n      \"nationality_new\": null,\n      \"nationality_previous\": null,\n      \"heimatort_new\": \"Saanen\",\n      \"heimatort_previous\": null,\n      \"stammanteile_new\": null,\n      \"stammanteile_previous\": null\n    }\n  ],\n  \"extras\": {\n    \"zweck\": \"Die Gesellschaft bezweckt die betriebswirtschaftliche Beratung von Unternehmen aller Art, insbesondere die Erstellung von Kalkulationsgrundlagen und die entsprechende Betreuung, EDV-Einführung, …\",\n    \"nominal_value_chf\": 1.0,\n    \"aktien_new\": 100000,\n    \"aktien_previous\": 100,\n    \"share_classes\": \"Namenaktien\",\n    \"mitteilungen\": \"durch Briefe, E-Mail oder eine andere geeignete elektronische Kommunikationsplattform an die im Aktienbuch eingetragenen Aktionäre.\"\n  }\n}",
+  "warnings": []
+}
