@@ -49,7 +49,7 @@
     }
   ],
   "persons_changed": [],
-  "extras": {"mitteilungen": "Mitteilungen an die Gesellschafter: per Brief oder E-Mail."},
+  "extras": {"mitteilungen": "per Brief oder E-Mail"},
   "uncertain": [],
   "notes": null,
   "_verified": true

@@ -34,7 +34,7 @@
   "persons_added": [],
   "persons_removed": [],
   "persons_changed": [],
-  "extras": {},
+  "extras": {"prior_publication_page": 5},
   "uncertain": [],
   "notes": null,
   "_verified": true

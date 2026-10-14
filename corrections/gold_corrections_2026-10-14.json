@@ -1,0 +1,180 @@
+[
+  {
+    "split": "dev",
+    "doc_id": "0004",
+    "path": "extras.nominal_value_chf",
+    "expected_old": null,
+    "new": 100.0,
+    "reason": "Frozen prompt, extras: nominal_value_chf is the 'nominal value per share or participation, as a number' (zu je CHF 100.00)."
+  },
+  {
+    "split": "dev",
+    "doc_id": "0005",
+    "path": "extras.revision",
+    "expected_old": null,
+    "new": "opting-out",
+    "reason": "Frozen prompt, extras: revision is 'opting-out' when the notice states that a limited audit is waived."
+  },
+  {
+    "split": "dev",
+    "doc_id": "0006",
+    "path": "extras.prior_publication_page",
+    "expected_old": null,
+    "new": 0,
+    "reason": "Frozen prompt, Dates and register references: old citations carry a page number (S.n); 'put the number in extras.prior_publication_page'. Citation gives S.0."
+  },
+  {
+    "split": "dev",
+    "doc_id": "0008",
+    "path": "domicile_new",
+    "expected_old": "Rubigenstrasse 66",
+    "new": "Rubigenstrasse 66, 3123 Belp",
+    "reason": "Frozen prompt, Seat and address: domicile_new/domicile_previous are filled when the notice shows a Bisher block with an address; 'Fill both as printed, even when street and town are the same on both sides'; format '<street>, <postcode> <town>'."
+  },
+  {
+    "split": "dev",
+    "doc_id": "0008",
+    "path": "domicile_previous",
+    "expected_old": "Waisenhausstrasse 8, 3600 Thun",
+    "new": "Rubigenstrasse 66, 3123 Belp",
+    "reason": "Frozen prompt, Seat and address: domicile_new/domicile_previous are filled when the notice shows a Bisher block with an address; 'Fill both as printed, even when street and town are the same on both sides'; format '<street>, <postcode> <town>'. domicile_previous is the address in the Bisher block; Waisenhausstrasse 8, 3600 Thun is the previous secondary address (Weitere Adressen), already in extras.weitere_adressen_previous."
+  },
+  {
+    "split": "dev",
+    "doc_id": "0009",
+    "path": "extras.mitteilungen",
+    "expected_old": "Mitteilungen an die Gesellschafter: per Brief oder E-Mail.",
+    "new": "per Brief oder E-Mail",
+    "reason": "Frozen prompt, extras: mitteilungen 'as written, without the leading subject'."
+  },
+  {
+    "split": "dev",
+    "doc_id": "0017",
+    "path": "act_subtypes",
+    "expected_old": [
+      "sitzverlegung"
+    ],
+    "new": [],
+    "reason": "Frozen prompt, act_subtypes: sitzverlegung needs 'Sitz neu:' or 'Verlegung des Sitzes'; 'Domizil neu: alone (new street, same municipality) is not a Sitzverlegung'."
+  },
+  {
+    "split": "dev",
+    "doc_id": "0024",
+    "path": "extras.prior_publication_page",
+    "expected_old": null,
+    "new": 5,
+    "reason": "Frozen prompt, Dates and register references: old citations carry a page number (S.n); 'put the number in extras.prior_publication_page'. Citation gives S.5."
+  },
+  {
+    "split": "dev",
+    "doc_id": "0025",
+    "path": "extras.nominal_value_chf",
+    "expected_old": null,
+    "new": 100.0,
+    "reason": "Frozen prompt, extras: nominal_value_chf is the 'nominal value per share or participation, as a number' (zu je CHF 100.00)."
+  },
+  {
+    "split": "dev",
+    "doc_id": "0027",
+    "path": "persons_changed[name=Eftodii, Valeriu].nationality_new",
+    "expected_old": null,
+    "new": "rumänisch",
+    "reason": "Frozen prompt, People/persons_changed: values outside the [bisher: ...] are the _new halves; an attribute the bracket does not mention did not change: fill _new. Nationality normalised to the base adjective."
+  },
+  {
+    "split": "dev",
+    "doc_id": "0030",
+    "path": "persons_changed[name=Frey, Heiko].nationality_new",
+    "expected_old": "deutscher",
+    "new": "deutsch",
+    "reason": "Frozen prompt, People: nationality is normalised to the base adjective (italienischer -> italienisch)."
+  },
+  {
+    "split": "dev",
+    "doc_id": "0063",
+    "path": "domicile_new",
+    "expected_old": null,
+    "new": "Gerechtigkeitsgasse 81, 3011 Bern",
+    "reason": "Frozen prompt, Seat and address: domicile_new/domicile_previous are filled when the notice shows a Bisher block with an address; 'Fill both as printed, even when street and town are the same on both sides'; format '<street>, <postcode> <town>'."
+  },
+  {
+    "split": "dev",
+    "doc_id": "0063",
+    "path": "domicile_previous",
+    "expected_old": null,
+    "new": "Gerechtigkeitsgasse 81, 3011 Bern",
+    "reason": "Frozen prompt, Seat and address: domicile_new/domicile_previous are filled when the notice shows a Bisher block with an address; 'Fill both as printed, even when street and town are the same on both sides'; format '<street>, <postcode> <town>'."
+  },
+  {
+    "split": "dev",
+    "doc_id": "0068",
+    "path": "extras.loeschung_reason",
+    "expected_old": "Liquidation durchgeführt",
+    "new": "Die Liquidation ist durchgeführt",
+    "reason": "Frozen prompt, extras: loeschung_reason is the stated reason 'as written'; the gold paraphrased it. Whether this sentence is a reason at all is left open (ambiguous); the annotator keeps it."
+  },
+  {
+    "split": "dev",
+    "doc_id": "0072",
+    "path": "domicile_new",
+    "expected_old": null,
+    "new": "Brown-Boveri-Strasse 5, 8050 Zürich",
+    "reason": "Frozen prompt, Seat and address: domicile_new/domicile_previous are filled when the notice shows a Bisher block with an address; 'Fill both as printed, even when street and town are the same on both sides'; format '<street>, <postcode> <town>'."
+  },
+  {
+    "split": "dev",
+    "doc_id": "0072",
+    "path": "domicile_previous",
+    "expected_old": null,
+    "new": "Brown-Boveri-Strasse 5, 8050 Zürich",
+    "reason": "Frozen prompt, Seat and address: domicile_new/domicile_previous are filled when the notice shows a Bisher block with an address; 'Fill both as printed, even when street and town are the same on both sides'; format '<street>, <postcode> <town>'."
+  },
+  {
+    "split": "dev",
+    "doc_id": "0119",
+    "path": "domicile_new",
+    "expected_old": null,
+    "new": "Rosengartenstrasse 3, 8037 Zürich",
+    "reason": "Frozen prompt, Seat and address: domicile_new/domicile_previous are filled when the notice shows a Bisher block with an address; 'Fill both as printed, even when street and town are the same on both sides'; format '<street>, <postcode> <town>'."
+  },
+  {
+    "split": "dev",
+    "doc_id": "0119",
+    "path": "domicile_previous",
+    "expected_old": null,
+    "new": "Rosengartenstrasse 3, 8037 Zürich",
+    "reason": "Frozen prompt, Seat and address: domicile_new/domicile_previous are filled when the notice shows a Bisher block with an address; 'Fill both as printed, even when street and town are the same on both sides'; format '<street>, <postcode> <town>'."
+  },
+  {
+    "split": "dev",
+    "doc_id": "0120",
+    "path": "extras.loeschung_reason",
+    "expected_old": "Geschäftsbetrieb aufgehört",
+    "new": "Der Geschäftsbetrieb hat aufgehört",
+    "reason": "Frozen prompt, extras: loeschung_reason is the stated reason 'as written'; the gold paraphrased it."
+  },
+  {
+    "split": "holdout",
+    "doc_id": "0134",
+    "path": "extras.loeschung_reason",
+    "expected_old": "infolge Fusion",
+    "new": "Fusion",
+    "reason": "Frozen prompt, extras: loeschung_reason is written 'without a leading preposition such as infolge or wegen: Geschäftsaufgabe, not infolge Geschäftsaufgabe'."
+  },
+  {
+    "split": "holdout",
+    "doc_id": "0135",
+    "path": "extras.loeschung_reason",
+    "expected_old": "infolge Löschung der Hauptniederlassung (SHAB vom 02.09.2026) im Sinne von Art. 111 Abs. 2 HRegV von Amtes wegen",
+    "new": "Löschung der Hauptniederlassung (SHAB vom 02.09.2026) im Sinne von Art. 111 Abs. 2 HRegV von Amtes wegen",
+    "reason": "Frozen prompt, extras: loeschung_reason is written 'without a leading preposition such as infolge or wegen: Geschäftsaufgabe, not infolge Geschäftsaufgabe'."
+  },
+  {
+    "split": "holdout",
+    "doc_id": "0161",
+    "path": "extras.loeschung_reason",
+    "expected_old": "infolge Geschäftsaufgabe",
+    "new": "Geschäftsaufgabe",
+    "reason": "Frozen prompt, extras: loeschung_reason is written 'without a leading preposition such as infolge or wegen: Geschäftsaufgabe, not infolge Geschäftsaufgabe'."
+  }
+]

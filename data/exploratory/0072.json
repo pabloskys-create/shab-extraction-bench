@@ -31,8 +31,8 @@
   "canton_new": null,
   "capital_new_chf": null,
   "capital_previous_chf": null,
-  "domicile_new": null,
-  "domicile_previous": null,
+  "domicile_new": "Brown-Boveri-Strasse 5, 8050 Zürich",
+  "domicile_previous": "Brown-Boveri-Strasse 5, 8050 Zürich",
   "persons_added": [
     {
       "name": "Menti, Samuel",

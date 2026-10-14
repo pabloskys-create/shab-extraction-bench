@@ -34,7 +34,7 @@
   "persons_added": [],
   "persons_removed": [],
   "persons_changed": [],
-  "extras": {"loeschung_reason": "infolge Fusion"},
+  "extras": {"loeschung_reason": "Fusion"},
   "uncertain": [],
   "notes": "Deletion by merger: the 'fusion' subtype cannot be used because act_subtypes is always [] on a loeschung. The absorbing company (Auto AG Bus, in Rothenburg, CHE-266.726.643) has no field.",
   "_verified": true

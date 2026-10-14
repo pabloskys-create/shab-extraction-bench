@@ -114,7 +114,7 @@
       "stammanteile_previous": null
     }
   ],
-  "extras": {},
+  "extras": {"prior_publication_page": 0},
   "uncertain": [
     "persons_changed"
   ],

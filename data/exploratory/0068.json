@@ -35,7 +35,7 @@
   "persons_removed": [],
   "persons_changed": [],
   "extras": {
-    "loeschung_reason": "Liquidation durchgeführt",
+    "loeschung_reason": "Die Liquidation ist durchgeführt",
     "steuerzustimmung": true
   },
   "uncertain": [],

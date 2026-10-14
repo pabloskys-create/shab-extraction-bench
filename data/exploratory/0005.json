@@ -37,7 +37,7 @@
   "persons_added": [],
   "persons_removed": [],
   "persons_changed": [],
-  "extras": {},
+  "extras": {"revision": "opting-out"},
   "uncertain": [],
   "notes": "Die Gesellschaft verzichtet ab dem Geschäftsjahr, das am 2027-01-01 beginnt, auf eine eingeschränkte Revision.",
   "_verified": true

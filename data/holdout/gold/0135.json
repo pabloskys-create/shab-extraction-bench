@@ -36,7 +36,7 @@
   "persons_changed": [],
   "extras": {
     "hauptsitz": "Zug",
-    "loeschung_reason": "infolge Löschung der Hauptniederlassung (SHAB vom 02.09.2026) im Sinne von Art. 111 Abs. 2 HRegV von Amtes wegen"
+    "loeschung_reason": "Löschung der Hauptniederlassung (SHAB vom 02.09.2026) im Sinne von Art. 111 Abs. 2 HRegV von Amtes wegen"
   },
   "uncertain": [],
   "notes": "Branch name carries no 'Zweigniederlassung' wording, unlike 0133. The SHAB date of the parent's deletion has no field; kept inside loeschung_reason.",

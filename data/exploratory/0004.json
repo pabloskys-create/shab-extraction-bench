@@ -77,7 +77,7 @@
       "stammanteile_previous": null
     }
   ],
-  "extras": {},
+  "extras": {"nominal_value_chf": 100.0},
   "uncertain": [
     "persons_added"
   ],

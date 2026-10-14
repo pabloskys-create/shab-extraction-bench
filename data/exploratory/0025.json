@@ -48,7 +48,8 @@
   "extras": {
     "zweck": "Die Gesellschaft bezweckt den Betrieb von Coiffeur- und Barbershops sowie die Erbringung von Dienstleistungen in den Bereichen Haar-, Bart- und Schönheitspflege. Sie kann Produkte der Beauty- ...",
     "mitteilungen": "per Brief oder E-Mail",
-    "revision": "opting-out"
+    "revision": "opting-out",
+    "nominal_value_chf": 100.0
   },
   "uncertain": [],
   "notes": null,
