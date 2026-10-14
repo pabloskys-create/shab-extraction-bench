@@ -12,9 +12,9 @@
     },
     "n_docs": 50,
     "gold_dir": "data/holdout/gold",
-    "gold_sha256": "7aab9fd98d9c9f20cadd8856fb1af7885c9b78fe933ea1d205ef6fbf1bbbac56",
-    "evaluator_git_commit": "8d5e195facf9d856c555105f976879e266b5468f",
-    "evaluator_git_dirty": true
+    "gold_sha256": "83a3cc73a91014128d3dfab015bd069b79858861400547fb77eb22230b2e4677",
+    "evaluator_git_commit": "9de7ab8480b1f4df25b7663796f5befef9683da2",
+    "evaluator_git_dirty": false
   },
   "bootstrap": {
     "iterations": 10000,

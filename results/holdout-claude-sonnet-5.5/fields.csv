@@ -703,7 +703,7 @@ doc_id,field,item,attribute,gold,prediction,outcome_exact,outcome_normalized
 0134,capital_previous_chf,,,null,null,correct_null,correct_null
 0134,domicile_new,,,null,null,correct_null,correct_null
 0134,domicile_previous,,,null,null,correct_null,correct_null
-0134,extras,loeschung_reason,,"""infolge Fusion""","""Fusion""",correct,correct
+0134,extras,loeschung_reason,,"""Fusion""","""Fusion""",correct,correct
 0135,act_type,,,"""loeschung""","""loeschung""",correct,correct
 0135,act_subtypes,,,[],[],correct_null,correct_null
 0135,company_name_full,,,"""Burger Tankrevisionen Frei GmbH in Liquidation""","""Burger Tankrevisionen Frei GmbH in Liquidation""",correct,correct
@@ -734,7 +734,7 @@ doc_id,field,item,attribute,gold,prediction,outcome_exact,outcome_normalized
 0135,domicile_new,,,null,null,correct_null,correct_null
 0135,domicile_previous,,,null,null,correct_null,correct_null
 0135,extras,hauptsitz,,"""Zug""","""Zug""",correct,correct
-0135,extras,loeschung_reason,,"""infolge Löschung der Hauptniederlassung (SHAB vom 02.09.2026) im Sinne von Art. 111 Abs. 2 HRegV von Amtes wegen""","""Löschung der Hauptniederlassung (SHAB vom 02.09.2026) im Sinne von Art. 111 Abs. 2 HRegV von Amtes wegen""",correct,correct
+0135,extras,loeschung_reason,,"""Löschung der Hauptniederlassung (SHAB vom 02.09.2026) im Sinne von Art. 111 Abs. 2 HRegV von Amtes wegen""","""Löschung der Hauptniederlassung (SHAB vom 02.09.2026) im Sinne von Art. 111 Abs. 2 HRegV von Amtes wegen""",correct,correct
 0136,act_type,,,"""mutation""","""mutation""",correct,correct
 0136,act_subtypes,,,"[""organaenderung"", ""firmenaenderung"", ""zweckaenderung""]","[""firmenaenderung"", ""zweckaenderung"", ""organaenderung""]",correct,correct
 0136,company_name_full,,,"""Jasmin Jud Cosmetics""","""Jasmin Jud Cosmetics""",correct,correct
@@ -1765,7 +1765,7 @@ doc_id,field,item,attribute,gold,prediction,outcome_exact,outcome_normalized
 0161,capital_previous_chf,,,null,null,correct_null,correct_null
 0161,domicile_new,,,null,null,correct_null,correct_null
 0161,domicile_previous,,,null,null,correct_null,correct_null
-0161,extras,loeschung_reason,,"""infolge Geschäftsaufgabe""","""Geschäftsaufgabe""",correct,correct
+0161,extras,loeschung_reason,,"""Geschäftsaufgabe""","""Geschäftsaufgabe""",correct,correct
 0162,act_type,,,"""mutation""","""mutation""",correct,correct
 0162,act_subtypes,,,"[""konkurseroeffnung""]","[""konkurseroeffnung""]",correct,correct
 0162,company_name_full,,,"""Thavanesan Food Delivery Service""","""Thavanesan Food Delivery Service""",correct,correct

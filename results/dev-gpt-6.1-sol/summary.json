@@ -12,9 +12,9 @@
     },
     "n_docs": 120,
     "gold_dir": "data/exploratory",
-    "gold_sha256": "7b3b57faa8ef69051e2ef09d8cf286592de0e2a6963f4b0a3e3142fec71d6b9f",
-    "evaluator_git_commit": "3ee8317ccaf34f4f62f5e00b8847867829bc26e1",
-    "evaluator_git_dirty": true
+    "gold_sha256": "7d741953a8e11b950c3ae16f065df714215ad9e50e0bcab8624647556665a0fa",
+    "evaluator_git_commit": "9de7ab8480b1f4df25b7663796f5befef9683da2",
+    "evaluator_git_dirty": false
   },
   "bootstrap": {
     "iterations": 10000,
@@ -23,44 +23,44 @@
   },
   "headline": {
     "core_accuracy_exact": {
-      "value": 0.9962503605422556,
-      "ci_low": 0.9936562860438294,
-      "ci_high": 0.9985574148874784,
+      "value": 0.9988462647822325,
+      "ci_low": 0.9976911976911976,
+      "ci_high": 0.9997120644975526,
       "n_valid": 10000,
-      "numerator": 3454,
+      "numerator": 3463,
       "denominator": 3467
     },
     "core_accuracy_normalized": {
-      "value": 0.9971156619555812,
-      "ci_low": 0.994530800230282,
-      "ci_high": 0.999135446685879,
+      "value": 0.9997115661955581,
+      "ci_low": 0.9991331984975442,
+      "ci_high": 1.0,
       "n_valid": 10000,
-      "numerator": 3457,
+      "numerator": 3466,
       "denominator": 3467
     },
     "group_accuracy_normalized:comprehension": {
-      "value": 0.9915966386554622,
-      "ci_low": 0.984126984126984,
-      "ci_high": 0.997485331098072,
+      "value": 0.9991596638655462,
+      "ci_low": 0.9974640743871515,
+      "ci_high": 1.0,
       "n_valid": 10000,
-      "numerator": 1180,
+      "numerator": 1189,
       "denominator": 1190
     },
     "group_value_accuracy_normalized:comprehension": {
-      "value": 0.9798994974874372,
-      "ci_low": 0.9523809523809522,
+      "value": 0.9950980392156863,
+      "ci_low": 0.983957219251337,
       "ci_high": 1.0,
       "n_valid": 10000,
-      "numerator": 195,
-      "denominator": 199
+      "numerator": 203,
+      "denominator": 204
     },
     "group_null_accuracy_normalized:comprehension": {
-      "value": 0.9939455095862765,
-      "ci_low": 0.9861248761149654,
+      "value": 1.0,
+      "ci_low": 1.0,
       "ci_high": 1.0,
       "n_valid": 10000,
-      "numerator": 985,
-      "denominator": 991
+      "numerator": 986,
+      "denominator": 986
     },
     "group_accuracy_normalized:header": {
       "value": 1.0,
@@ -111,28 +111,28 @@
       "denominator": 0
     },
     "field_accuracy_normalized:act_subtypes": {
-      "value": 0.9831932773109243,
-      "ci_low": 0.9576271186440678,
+      "value": 0.9915966386554622,
+      "ci_low": 0.9745762711864406,
       "ci_high": 1.0,
       "n_valid": 10000,
-      "numerator": 117,
+      "numerator": 118,
       "denominator": 119
     },
     "value_accuracy_normalized:act_subtypes": {
-      "value": 0.9736842105263158,
-      "ci_low": 0.9324324324324325,
+      "value": 0.9866666666666667,
+      "ci_low": 0.9565057544757034,
       "ci_high": 1.0,
       "n_valid": 10000,
       "numerator": 74,
-      "denominator": 76
+      "denominator": 75
     },
     "null_accuracy_normalized:act_subtypes": {
       "value": 1.0,
       "ci_low": 1.0,
       "ci_high": 1.0,
       "n_valid": 10000,
-      "numerator": 43,
-      "denominator": 43
+      "numerator": 44,
+      "denominator": 44
     },
     "field_accuracy_normalized:company_name_full": {
       "value": 1.0,
@@ -735,52 +735,52 @@
       "denominator": 119
     },
     "field_accuracy_normalized:domicile_new": {
-      "value": 0.9658119658119658,
-      "ci_low": 0.9310344827586207,
-      "ci_high": 0.9915966386554622,
+      "value": 1.0,
+      "ci_low": 1.0,
+      "ci_high": 1.0,
       "n_valid": 10000,
-      "numerator": 113,
+      "numerator": 117,
       "denominator": 117
     },
     "value_accuracy_normalized:domicile_new": {
-      "value": 0.9565217391304348,
-      "ci_low": 0.8518518518518519,
+      "value": 1.0,
+      "ci_low": 1.0,
       "ci_high": 1.0,
       "n_valid": 10000,
-      "numerator": 22,
-      "denominator": 23
+      "numerator": 26,
+      "denominator": 26
     },
     "null_accuracy_normalized:domicile_new": {
-      "value": 0.9680851063829787,
-      "ci_low": 0.9292748917748919,
+      "value": 1.0,
+      "ci_low": 1.0,
       "ci_high": 1.0,
       "n_valid": 10000,
       "numerator": 91,
-      "denominator": 94
+      "denominator": 91
     },
     "field_accuracy_normalized:domicile_previous": {
-      "value": 0.9655172413793104,
-      "ci_low": 0.9304347826086955,
-      "ci_high": 0.9915254237288137,
+      "value": 1.0,
+      "ci_low": 1.0,
+      "ci_high": 1.0,
       "n_valid": 10000,
-      "numerator": 112,
+      "numerator": 116,
       "denominator": 116
     },
     "value_accuracy_normalized:domicile_previous": {
-      "value": 0.9545454545454546,
-      "ci_low": 0.8461538461538461,
+      "value": 1.0,
+      "ci_low": 1.0,
       "ci_high": 1.0,
       "n_valid": 10000,
-      "numerator": 21,
-      "denominator": 22
+      "numerator": 25,
+      "denominator": 25
     },
     "null_accuracy_normalized:domicile_previous": {
-      "value": 0.9680851063829787,
-      "ci_low": 0.9292748917748919,
+      "value": 1.0,
+      "ci_low": 1.0,
       "ci_high": 1.0,
       "n_valid": 10000,
       "numerator": 91,
-      "denominator": 94
+      "denominator": 91
     },
     "persons_found_f1:persons_added": {
       "value": 1.0,
@@ -823,36 +823,36 @@
       "denominator": 64
     },
     "persons_attribute_accuracy_normalized:persons_changed": {
-      "value": 0.9951923076923077,
-      "ci_low": 0.9874701848539059,
+      "value": 1.0,
+      "ci_low": 1.0,
       "ci_high": 1.0,
       "n_valid": 10000,
-      "numerator": 414,
+      "numerator": 416,
       "denominator": 416
     },
     "act_subtypes_micro_f1": {
-      "value": 0.9914529914529915,
-      "ci_low": 0.9775784753363229,
+      "value": 0.9957081545064378,
+      "ci_low": 0.985608904181003,
       "ci_high": 1.0,
       "n_valid": 10000,
       "numerator": 232,
-      "denominator": 234
+      "denominator": 233
     },
     "extras_key_f1": {
-      "value": 0.9769230769230769,
-      "ci_low": 0.9531914893617021,
-      "ci_high": 0.9927536231884059,
+      "value": 0.9962264150943396,
+      "ci_low": 0.9867834116171194,
+      "ci_high": 1.0,
       "n_valid": 10000,
-      "numerator": 254,
-      "denominator": 260
+      "numerator": 264,
+      "denominator": 265
     },
     "extras_value_accuracy_normalized": {
-      "value": 0.8582677165354331,
-      "ci_low": 0.8130841121495328,
-      "ci_high": 0.8993288590604027,
+      "value": 0.8863636363636364,
+      "ci_low": 0.8504672897196262,
+      "ci_high": 0.9217425271739131,
       "n_valid": 10000,
-      "numerator": 109,
-      "denominator": 127
+      "numerator": 117,
+      "denominator": 132
     },
     "parse_failure_rate": {
       "value": 0.0,
@@ -878,14 +878,14 @@
         "domicile_previous"
       ],
       "exact": {
-        "accuracy": 0.9890756302521009,
-        "value_accuracy": 0.964824120603015,
-        "null_accuracy": 0.9939455095862765
+        "accuracy": 0.9966386554621849,
+        "value_accuracy": 0.9803921568627451,
+        "null_accuracy": 1.0
       },
       "normalized": {
-        "accuracy": 0.9915966386554622,
-        "value_accuracy": 0.9798994974874372,
-        "null_accuracy": 0.9939455095862765
+        "accuracy": 0.9991596638655462,
+        "value_accuracy": 0.9950980392156863,
+        "null_accuracy": 1.0
       }
     },
     "header": {
@@ -954,24 +954,24 @@
       "excluded_uncertain": 1,
       "exact": {
         "correct": 74,
-        "correct_null": 43,
-        "omission": 1,
+        "correct_null": 44,
+        "omission": 0,
         "hallucination": 0,
         "wrong": 1,
         "no_output": 0,
-        "accuracy": 0.9831932773109243,
-        "value_accuracy": 0.9736842105263158,
+        "accuracy": 0.9915966386554622,
+        "value_accuracy": 0.9866666666666667,
         "null_accuracy": 1.0
       },
       "normalized": {
         "correct": 74,
-        "correct_null": 43,
-        "omission": 1,
+        "correct_null": 44,
+        "omission": 0,
         "hallucination": 0,
         "wrong": 1,
         "no_output": 0,
-        "accuracy": 0.9831932773109243,
-        "value_accuracy": 0.9736842105263158,
+        "accuracy": 0.9915966386554622,
+        "value_accuracy": 0.9866666666666667,
         "null_accuracy": 1.0
       }
     },
@@ -1629,52 +1629,52 @@
       "group": "comprehension",
       "excluded_uncertain": 3,
       "exact": {
-        "correct": 22,
+        "correct": 26,
         "correct_null": 91,
         "omission": 0,
-        "hallucination": 3,
-        "wrong": 1,
+        "hallucination": 0,
+        "wrong": 0,
         "no_output": 0,
-        "accuracy": 0.9658119658119658,
-        "value_accuracy": 0.9565217391304348,
-        "null_accuracy": 0.9680851063829787
+        "accuracy": 1.0,
+        "value_accuracy": 1.0,
+        "null_accuracy": 1.0
       },
       "normalized": {
-        "correct": 22,
+        "correct": 26,
         "correct_null": 91,
         "omission": 0,
-        "hallucination": 3,
-        "wrong": 1,
+        "hallucination": 0,
+        "wrong": 0,
         "no_output": 0,
-        "accuracy": 0.9658119658119658,
-        "value_accuracy": 0.9565217391304348,
-        "null_accuracy": 0.9680851063829787
+        "accuracy": 1.0,
+        "value_accuracy": 1.0,
+        "null_accuracy": 1.0
       }
     },
     "domicile_previous": {
       "group": "comprehension",
       "excluded_uncertain": 4,
       "exact": {
-        "correct": 21,
+        "correct": 25,
         "correct_null": 91,
         "omission": 0,
-        "hallucination": 3,
-        "wrong": 1,
+        "hallucination": 0,
+        "wrong": 0,
         "no_output": 0,
-        "accuracy": 0.9655172413793104,
-        "value_accuracy": 0.9545454545454546,
-        "null_accuracy": 0.9680851063829787
+        "accuracy": 1.0,
+        "value_accuracy": 1.0,
+        "null_accuracy": 1.0
       },
       "normalized": {
-        "correct": 21,
+        "correct": 25,
         "correct_null": 91,
         "omission": 0,
-        "hallucination": 3,
-        "wrong": 1,
+        "hallucination": 0,
+        "wrong": 0,
         "no_output": 0,
-        "accuracy": 0.9655172413793104,
-        "value_accuracy": 0.9545454545454546,
-        "null_accuracy": 0.9680851063829787
+        "accuracy": 1.0,
+        "value_accuracy": 1.0,
+        "null_accuracy": 1.0
       }
     }
   },
@@ -1683,16 +1683,16 @@
     "micro": {
       "tp": 116,
       "fp": 0,
-      "fn": 2,
+      "fn": 1,
       "precision": 1.0,
-      "recall": 0.9830508474576272,
-      "f1": 0.9914529914529915
+      "recall": 0.9914529914529915,
+      "f1": 0.9957081545064378
     },
     "macro": {
       "labels": 12,
       "precision": 0.9166666666666666,
-      "recall": 0.9090909090909091,
-      "f1": 0.9126984126984127
+      "recall": 0.9166666666666666,
+      "f1": 0.9166666666666666
     },
     "per_label": {
       "firmenaenderung": {
@@ -1770,10 +1770,10 @@
       "sitzverlegung": {
         "tp": 10,
         "fp": 0,
-        "fn": 1,
+        "fn": 0,
         "precision": 1.0,
-        "recall": 0.9090909090909091,
-        "f1": 0.9523809523809523
+        "recall": 1.0,
+        "f1": 1.0
       },
       "statutenaenderung": {
         "tp": 11,
@@ -2119,8 +2119,8 @@
         "f1": 1.0
       },
       "attribute_accuracy": {
-        "exact": 0.9951923076923077,
-        "normalized": 0.9951923076923077
+        "exact": 1.0,
+        "normalized": 1.0
       },
       "attributes": {
         "name_previous": {
@@ -2265,22 +2265,22 @@
         },
         "nationality_new": {
           "exact": {
-            "correct": 4,
+            "correct": 6,
             "correct_null": 26,
             "omission": 0,
-            "hallucination": 1,
-            "wrong": 1,
+            "hallucination": 0,
+            "wrong": 0,
             "no_output": 0,
-            "accuracy": 0.9375
+            "accuracy": 1.0
           },
           "normalized": {
-            "correct": 4,
+            "correct": 6,
             "correct_null": 26,
             "omission": 0,
-            "hallucination": 1,
-            "wrong": 1,
+            "hallucination": 0,
+            "wrong": 0,
             "no_output": 0,
-            "accuracy": 0.9375
+            "accuracy": 1.0
           }
         },
         "nationality_previous": {
@@ -2389,18 +2389,18 @@
   "extras": {
     "excluded_uncertain": 3,
     "keys": {
-      "tp": 127,
-      "fp": 6,
+      "tp": 132,
+      "fp": 1,
       "fn": 0,
-      "precision": 0.9548872180451128,
+      "precision": 0.9924812030075187,
       "recall": 1.0,
-      "f1": 0.9769230769230769,
+      "f1": 0.9962264150943396,
       "fp_unregistered": 0
     },
     "values": {
       "accuracy": {
-        "exact": 0.8031496062992126,
-        "normalized": 0.8582677165354331
+        "exact": 0.8333333333333334,
+        "normalized": 0.8863636363636364
       },
       "per_key": {
         "aktien_new": {
@@ -2525,51 +2525,51 @@
         },
         "loeschung_reason": {
           "exact": {
-            "correct": 4,
-            "wrong": 2
+            "correct": 6,
+            "wrong": 0
           },
           "normalized": {
-            "correct": 4,
-            "wrong": 2
+            "correct": 6,
+            "wrong": 0
           }
         },
         "mitteilungen": {
           "exact": {
-            "correct": 0,
-            "wrong": 14
+            "correct": 1,
+            "wrong": 13
           },
           "normalized": {
-            "correct": 0,
-            "wrong": 14
+            "correct": 1,
+            "wrong": 13
           }
         },
         "nominal_value_chf": {
           "exact": {
-            "correct": 10,
+            "correct": 12,
             "wrong": 4
           },
           "normalized": {
-            "correct": 14,
+            "correct": 16,
             "wrong": 0
           }
         },
         "prior_publication_page": {
           "exact": {
-            "correct": 1,
+            "correct": 3,
             "wrong": 1
           },
           "normalized": {
-            "correct": 2,
+            "correct": 4,
             "wrong": 0
           }
         },
         "revision": {
           "exact": {
-            "correct": 10,
+            "correct": 11,
             "wrong": 0
           },
           "normalized": {
-            "correct": 10,
+            "correct": 11,
             "wrong": 0
           }
         },

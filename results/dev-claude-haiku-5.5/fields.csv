@@ -167,7 +167,7 @@ doc_id,field,item,attribute,gold,prediction,outcome_exact,outcome_normalized
 0004,persons_changed,"Souza Valeriano, Caio Felipe",heimatort_previous,null,null,correct_null,correct_null
 0004,persons_changed,"Souza Valeriano, Caio Felipe",stammanteile_new,170,170,correct,correct
 0004,persons_changed,"Souza Valeriano, Caio Felipe",stammanteile_previous,null,null,correct_null,correct_null
-0004,extras,nominal_value_chf,,null,100.0,spurious,spurious
+0004,extras,nominal_value_chf,,100.0,100.0,correct,correct
 0005,act_type,,,"""mutation""","""mutation""",correct,correct
 0005,act_subtypes,,,[],[],correct_null,correct_null
 0005,company_name_full,,,"""BLUE-art Roggegratbad AG""","""BLUE-art Roggegratbad AG""",correct,correct
@@ -197,7 +197,7 @@ doc_id,field,item,attribute,gold,prediction,outcome_exact,outcome_normalized
 0005,capital_previous_chf,,,null,null,correct_null,correct_null
 0005,domicile_new,,,null,null,correct_null,correct_null
 0005,domicile_previous,,,null,null,correct_null,correct_null
-0005,extras,revision,,null,"""opting-out""",spurious,spurious
+0005,extras,revision,,"""opting-out""","""opting-out""",correct,correct
 0006,act_type,,,"""mutation""","""mutation""",correct,correct
 0006,act_subtypes,,,"[""organaenderung""]","[""organaenderung""]",correct,correct
 0006,company_name_full,,,"""Stiftung Vinetum""","""Stiftung Vinetum""",correct,correct
@@ -236,7 +236,7 @@ doc_id,field,item,attribute,gold,prediction,outcome_exact,outcome_normalized
 0006,persons_added,"Winzenried, Jasmin Beatrice",uid,null,null,correct_null,correct_null
 0006,persons_added,"Winzenried, Jasmin Beatrice",stammanteile,null,null,correct_null,correct_null
 0006,persons_changed,,,"[{""name_new"": ""Böckli, Peter Prof. Dr."", ""name_previous"": null, ""domicile_new"": ""Binningen"", ""domicile_previous"": null, ""role_new"": ""Vizepräsident des Stiftungsrates"", ""role_previous"": ""Vizepräsident"", ""signature_new"": ""Kollektivunterschrift zu zweien"", ""signature_previous"": null, ""nationality_new"": null, ""nationality_previous"": null, ""heimatort_new"": ""Frauenfeld"", ""heimatort_previous"": null, ""stammanteile_new"": null, ""stammanteile_previous"": null}, {""name_new"": ""Borer Winzenried, Franziska Marlis"", ""name_previous"": null, ""domicile_new"": ""Lyss"", ""domicile_previous"": null, ""role_new"": ""Präsidentin des Stiftungsrates"", ""role_previous"": ""Präsidentin"", ""signature_new"": ""Kollektivunterschrift zu zweien"", ""signature_previous"": null, ""nationality_new"": null, ""nationality_previous"": null, ""heimatort_new"": ""Grindel und Burgdorf"", ""heimatort_previous"": null, ""stammanteile_new"": null, ""stammanteile_previous"": null}, {""name_new"": ""Borer, Daniel Emil Charles"", ""name_previous"": null, ""domicile_new"": ""Biel/Bienne"", ""domicile_previous"": null, ""role_new"": ""Mitglied des Stiftungsrates"", ""role_previous"": ""Mitglied"", ""signature_new"": ""Kollektivunterschrift zu zweien"", ""signature_previous"": null, ""nationality_new"": null, ""nationality_previous"": null, ""heimatort_new"": ""Grindel"", ""heimatort_previous"": null, ""stammanteile_new"": null, ""stammanteile_previous"": null}, {""name_new"": ""Borer-Christen, Rosmarie"", ""name_previous"": null, ""domicile_new"": ""Biel/Bienne"", ""domicile_previous"": null, ""role_new"": ""Mitglied des Stiftungsrates"", ""role_previous"": ""Mitglied"", ""signature_new"": ""Kollektivunterschrift zu zweien"", ""signature_previous"": null, ""nationality_new"": null, ""nationality_previous"": null, ""heimatort_new"": ""Grindel"", ""heimatort_previous"": null, ""stammanteile_new"": null, ""stammanteile_previous"": null}]","[{""name_new"": ""Borer Winzenried, Franziska Marlis"", ""name_previous"": null, ""domicile_new"": ""Lyss"", ""domicile_previous"": null, ""role_new"": ""Präsidentin des Stiftungsrates"", ""role_previous"": ""Präsidentin"", ""signature_new"": ""Kollektivunterschrift zu zweien"", ""signature_previous"": null, ""nationality_new"": null, ""nationality_previous"": null, ""heimatort_new"": ""Grindel und Burgdorf"", ""heimatort_previous"": null, ""stammanteile_new"": null, ""stammanteile_previous"": null}, {""name_new"": ""Böckli, Peter Prof. Dr."", ""name_previous"": null, ""domicile_new"": ""Binningen"", ""domicile_previous"": null, ""role_new"": ""Vizepräsident des Stiftungsrates"", ""role_previous"": ""Vizepräsident"", ""signature_new"": ""Kollektivunterschrift zu zweien"", ""signature_previous"": null, ""nationality_new"": null, ""nationality_previous"": null, ""heimatort_new"": ""Frauenfeld"", ""heimatort_previous"": null, ""stammanteile_new"": null, ""stammanteile_previous"": null}, {""name_new"": ""Borer, Daniel Emil Charles"", ""name_previous"": null, ""domicile_new"": ""Biel/Bienne"", ""domicile_previous"": null, ""role_new"": ""Mitglied des Stiftungsrates"", ""role_previous"": ""Mitglied"", ""signature_new"": ""Kollektivunterschrift zu zweien"", ""signature_previous"": null, ""nationality_new"": null, ""nationality_previous"": null, ""heimatort_new"": ""Grindel"", ""heimatort_previous"": null, ""stammanteile_new"": null, ""stammanteile_previous"": null}, {""name_new"": ""Borer-Christen, Rosmarie"", ""name_previous"": null, ""domicile_new"": ""Biel/Bienne"", ""domicile_previous"": null, ""role_new"": ""Mitglied des Stiftungsrates"", ""role_previous"": ""Mitglied"", ""signature_new"": ""Kollektivunterschrift zu zweien"", ""signature_previous"": null, ""nationality_new"": null, ""nationality_previous"": null, ""heimatort_new"": ""Grindel"", ""heimatort_previous"": null, ""stammanteile_new"": null, ""stammanteile_previous"": null}]",excluded_uncertain,excluded_uncertain
-0006,extras,prior_publication_page,,null,"""0""",spurious,spurious
+0006,extras,prior_publication_page,,0,"""0""",wrong,correct
 0007,act_type,,,"""mutation""","""mutation""",correct,correct
 0007,act_subtypes,,,"[""organaenderung""]","[""organaenderung""]",correct,correct
 0007,company_name_full,,,"""Fontaris AG""","""Fontaris AG""",correct,correct
@@ -301,8 +301,8 @@ doc_id,field,item,attribute,gold,prediction,outcome_exact,outcome_normalized
 0008,canton_new,,,null,null,correct_null,correct_null
 0008,capital_new_chf,,,null,null,correct_null,correct_null
 0008,capital_previous_chf,,,null,null,correct_null,correct_null
-0008,domicile_new,,,"""Rubigenstrasse 66""","""Rubigenstrasse 66, 3123 Belp""",wrong,wrong
-0008,domicile_previous,,,"""Waisenhausstrasse 8, 3600 Thun""","""Rubigenstrasse 66, 3123 Belp""",wrong,wrong
+0008,domicile_new,,,"""Rubigenstrasse 66, 3123 Belp""","""Rubigenstrasse 66, 3123 Belp""",correct,correct
+0008,domicile_previous,,,"""Rubigenstrasse 66, 3123 Belp""","""Rubigenstrasse 66, 3123 Belp""",correct,correct
 0008,extras,,,"{""weitere_adressen_new"": ""Oberdorfstrasse 35, 3612 Steffisburg"", ""weitere_adressen_previous"": ""Waisenhausstrasse 8, 3600 Thun""}","{""weitere_adressen_new"": ""Oberdorfstrasse 35, 3612 Steffisburg"", ""weitere_adressen_previous"": ""Waisenhausstrasse 8, 3600 Thun""}",excluded_uncertain,excluded_uncertain
 0009,act_type,,,"""mutation""","""mutation""",correct,correct
 0009,act_subtypes,,,"[""organaenderung"", ""statutenaenderung"", ""sitzverlegung""]","[""statutenaenderung"", ""sitzverlegung"", ""organaenderung""]",correct,correct
@@ -341,7 +341,7 @@ doc_id,field,item,attribute,gold,prediction,outcome_exact,outcome_normalized
 0009,persons_removed,"Bindal, Edip",signature,"""Einzelunterschrift""","""Einzelunterschrift""",correct,correct
 0009,persons_removed,"Bindal, Edip",uid,null,null,correct_null,correct_null
 0009,persons_removed,"Bindal, Edip",stammanteile,null,null,correct_null,correct_null
-0009,extras,mitteilungen,,"""Mitteilungen an die Gesellschafter: per Brief oder E-Mail.""","""per Brief oder E-Mail""",wrong,wrong
+0009,extras,mitteilungen,,"""per Brief oder E-Mail""","""per Brief oder E-Mail""",correct,correct
 0010,act_type,,,"""mutation""","""mutation""",correct,correct
 0010,act_subtypes,,,[],[],correct_null,correct_null
 0010,company_name_full,,,"""Wiesener Design Manufaktur""","""Wiesener Design Manufaktur""",correct,correct
@@ -628,7 +628,7 @@ doc_id,field,item,attribute,gold,prediction,outcome_exact,outcome_normalized
 0016,domicile_previous,,,"""Heimstrasse 54, 3422 Alchenflüh""","""Heimstrasse 54, 3422 Alchenflüh""",correct,correct
 0016,extras,hauptsitz,,"""Muttenz""","""Muttenz""",correct,correct
 0017,act_type,,,"""mutation""","""mutation""",correct,correct
-0017,act_subtypes,,,"[""sitzverlegung""]",[],omission,omission
+0017,act_subtypes,,,[],[],correct_null,correct_null
 0017,company_name_full,,,"""acoalex GmbH""","""acoalex GmbH""",correct,correct
 0017,company_name_base,,,"""acoalex GmbH""","""acoalex GmbH""",correct,correct
 0017,status_suffix,,,null,null,correct_null,correct_null
@@ -1000,7 +1000,7 @@ doc_id,field,item,attribute,gold,prediction,outcome_exact,outcome_normalized
 0024,capital_previous_chf,,,null,null,correct_null,correct_null
 0024,domicile_new,,,"""Haslikehrweg 5, 3627 Heimberg""","""Haslikehrweg 5, 3627 Heimberg""",correct,correct
 0024,domicile_previous,,,"""Bäumbergweg 40, 3627 Heimberg""","""Bäumbergweg 40, 3627 Heimberg""",correct,correct
-0024,extras,prior_publication_page,,null,5,spurious,spurious
+0024,extras,prior_publication_page,,5,5,correct,correct
 0025,act_type,,,"""neueintragung""","""neueintragung""",correct,correct
 0025,act_subtypes,,,[],[],correct_null,correct_null
 0025,company_name_full,,,"""Baker Coiffeur GmbH""","""Baker Coiffeur GmbH""",correct,correct
@@ -1041,6 +1041,7 @@ doc_id,field,item,attribute,gold,prediction,outcome_exact,outcome_normalized
 0025,extras,zweck,,"""Die Gesellschaft bezweckt den Betrieb von Coiffeur- und Barbershops sowie die Erbringung von Dienstleistungen in den Bereichen Haar-, Bart- und Schönheitspflege. Sie kann Produkte der Beauty- ...""","""Die Gesellschaft bezweckt den Betrieb von Coiffeur- und Barbershops sowie die Erbringung von Dienstleistungen in den Bereichen Haar-, Bart- und Schönheitspflege. Sie kann Produkte der…""",correct,correct
 0025,extras,mitteilungen,,"""per Brief oder E-Mail""","""per Brief oder E-Mail""",correct,correct
 0025,extras,revision,,"""opting-out""","""opting-out""",correct,correct
+0025,extras,nominal_value_chf,,100.0,null,missed,missed
 0026,act_type,,,"""neueintragung""","""neueintragung""",correct,correct
 0026,act_subtypes,,,[],[],correct_null,correct_null
 0026,company_name_full,,,"""modellbau-seeland Weber""","""modellbau-seeland Weber""",correct,correct
@@ -1124,7 +1125,7 @@ doc_id,field,item,attribute,gold,prediction,outcome_exact,outcome_normalized
 0027,persons_changed,"Eftodii, Valeriu",role_previous,"""Gesellschafter und Geschäftsführer""","""Gesellschafter und Geschäftsführer""",correct,correct
 0027,persons_changed,"Eftodii, Valeriu",signature_new,"""Einzelunterschrift""","""Einzelunterschrift""",correct,correct
 0027,persons_changed,"Eftodii, Valeriu",signature_previous,null,null,correct_null,correct_null
-0027,persons_changed,"Eftodii, Valeriu",nationality_new,null,"""rumänisch""",hallucination,hallucination
+0027,persons_changed,"Eftodii, Valeriu",nationality_new,"""rumänisch""","""rumänisch""",correct,correct
 0027,persons_changed,"Eftodii, Valeriu",nationality_previous,null,null,correct_null,correct_null
 0027,persons_changed,"Eftodii, Valeriu",heimatort_new,null,null,correct_null,correct_null
 0027,persons_changed,"Eftodii, Valeriu",heimatort_previous,null,null,correct_null,correct_null
@@ -1242,7 +1243,7 @@ doc_id,field,item,attribute,gold,prediction,outcome_exact,outcome_normalized
 0030,persons_changed,"Frey, Heiko",role_previous,null,null,correct_null,correct_null
 0030,persons_changed,"Frey, Heiko",signature_new,"""Einzelunterschrift""","""Einzelunterschrift""",correct,correct
 0030,persons_changed,"Frey, Heiko",signature_previous,null,null,correct_null,correct_null
-0030,persons_changed,"Frey, Heiko",nationality_new,"""deutscher""","""deutsch""",wrong,wrong
+0030,persons_changed,"Frey, Heiko",nationality_new,"""deutsch""","""deutsch""",correct,correct
 0030,persons_changed,"Frey, Heiko",nationality_previous,null,null,correct_null,correct_null
 0030,persons_changed,"Frey, Heiko",heimatort_new,null,null,correct_null,correct_null
 0030,persons_changed,"Frey, Heiko",heimatort_previous,null,null,correct_null,correct_null
@@ -2567,8 +2568,8 @@ doc_id,field,item,attribute,gold,prediction,outcome_exact,outcome_normalized
 0063,canton_new,,,null,null,correct_null,correct_null
 0063,capital_new_chf,,,null,null,correct_null,correct_null
 0063,capital_previous_chf,,,null,null,correct_null,correct_null
-0063,domicile_new,,,null,"""Gerechtigkeitsgasse 81, 3011 Bern""",hallucination,hallucination
-0063,domicile_previous,,,null,"""Gerechtigkeitsgasse 81, 3011 Bern""",hallucination,hallucination
+0063,domicile_new,,,"""Gerechtigkeitsgasse 81, 3011 Bern""","""Gerechtigkeitsgasse 81, 3011 Bern""",correct,correct
+0063,domicile_previous,,,"""Gerechtigkeitsgasse 81, 3011 Bern""","""Gerechtigkeitsgasse 81, 3011 Bern""",correct,correct
 0063,persons_changed,"Dauwalder, David",,"""Dauwalder, David""","""Dauwalder, David""",matched,matched
 0063,persons_changed,"Dauwalder, David",name_previous,null,null,correct_null,correct_null
 0063,persons_changed,"Dauwalder, David",domicile_new,"""Niederwangen b. Bern (Köniz)""","""Niederwangen b. Bern (Köniz)""",correct,correct
@@ -2768,7 +2769,7 @@ doc_id,field,item,attribute,gold,prediction,outcome_exact,outcome_normalized
 0068,capital_previous_chf,,,null,null,correct_null,correct_null
 0068,domicile_new,,,null,null,correct_null,correct_null
 0068,domicile_previous,,,null,null,correct_null,correct_null
-0068,extras,loeschung_reason,,"""Liquidation durchgeführt""",null,missed,missed
+0068,extras,loeschung_reason,,"""Die Liquidation ist durchgeführt""",null,missed,missed
 0068,extras,steuerzustimmung,,true,true,correct,correct
 0069,act_type,,,"""mutation""","""mutation""",correct,correct
 0069,act_subtypes,,,"[""organaenderung""]","[""organaenderung""]",correct,correct
@@ -2957,8 +2958,8 @@ doc_id,field,item,attribute,gold,prediction,outcome_exact,outcome_normalized
 0072,canton_new,,,null,null,correct_null,correct_null
 0072,capital_new_chf,,,null,null,correct_null,correct_null
 0072,capital_previous_chf,,,null,null,correct_null,correct_null
-0072,domicile_new,,,null,"""Brown-Boveri-Strasse 5, 8050 Zürich""",hallucination,hallucination
-0072,domicile_previous,,,null,"""Brown-Boveri-Strasse 5, 8050 Zürich""",hallucination,hallucination
+0072,domicile_new,,,"""Brown-Boveri-Strasse 5, 8050 Zürich""","""Brown-Boveri-Strasse 5, 8050 Zürich""",correct,correct
+0072,domicile_previous,,,"""Brown-Boveri-Strasse 5, 8050 Zürich""","""Brown-Boveri-Strasse 5, 8050 Zürich""",correct,correct
 0072,persons_added,"Menti, Samuel",,"""Menti, Samuel""","""Menti, Samuel""",matched,matched
 0072,persons_added,"Menti, Samuel",nationality,null,null,correct_null,correct_null
 0072,persons_added,"Menti, Samuel",heimatort,"""Meggen""","""Meggen""",correct,correct
@@ -4895,8 +4896,8 @@ doc_id,field,item,attribute,gold,prediction,outcome_exact,outcome_normalized
 0119,canton_new,,,null,null,correct_null,correct_null
 0119,capital_new_chf,,,null,null,correct_null,correct_null
 0119,capital_previous_chf,,,null,null,correct_null,correct_null
-0119,domicile_new,,,null,"""Rosengartenstrasse 3, 8037 Zürich""",hallucination,hallucination
-0119,domicile_previous,,,null,"""Rosengartenstrasse 3, 8037 Zürich""",hallucination,hallucination
+0119,domicile_new,,,"""Rosengartenstrasse 3, 8037 Zürich""","""Rosengartenstrasse 3, 8037 Zürich""",correct,correct
+0119,domicile_previous,,,"""Rosengartenstrasse 3, 8037 Zürich""","""Rosengartenstrasse 3, 8037 Zürich""",correct,correct
 0119,extras,weitere_adressen_previous,,"""Usterstrasse 16, 8620 Wetzikon ZH""","[""Usterstrasse 16, 8620 Wetzikon ZH""]",wrong,wrong
 0120,act_type,,,"""loeschung""","""loeschung""",correct,correct
 0120,act_subtypes,,,[],[],correct_null,correct_null
@@ -4927,4 +4928,4 @@ doc_id,field,item,attribute,gold,prediction,outcome_exact,outcome_normalized
 0120,capital_previous_chf,,,null,null,correct_null,correct_null
 0120,domicile_new,,,null,null,correct_null,correct_null
 0120,domicile_previous,,,null,null,correct_null,correct_null
-0120,extras,loeschung_reason,,"""Geschäftsbetrieb aufgehört""","""Der Geschäftsbetrieb hat aufgehört""",wrong,wrong
+0120,extras,loeschung_reason,,"""Der Geschäftsbetrieb hat aufgehört""","""Der Geschäftsbetrieb hat aufgehört""",correct,correct

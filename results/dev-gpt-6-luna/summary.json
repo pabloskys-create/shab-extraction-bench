@@ -12,9 +12,9 @@
     },
     "n_docs": 120,
     "gold_dir": "data/exploratory",
-    "gold_sha256": "7b3b57faa8ef69051e2ef09d8cf286592de0e2a6963f4b0a3e3142fec71d6b9f",
-    "evaluator_git_commit": "3ee8317ccaf34f4f62f5e00b8847867829bc26e1",
-    "evaluator_git_dirty": true
+    "gold_sha256": "7d741953a8e11b950c3ae16f065df714215ad9e50e0bcab8624647556665a0fa",
+    "evaluator_git_commit": "9de7ab8480b1f4df25b7663796f5befef9683da2",
+    "evaluator_git_dirty": false
   },
   "bootstrap": {
     "iterations": 10000,
@@ -23,44 +23,44 @@
   },
   "headline": {
     "core_accuracy_exact": {
-      "value": 0.9731756561869052,
-      "ci_low": 0.9696969696969697,
-      "ci_high": 0.9766368618402076,
+      "value": 0.973464089991347,
+      "ci_low": 0.9700288184438041,
+      "ci_high": 0.9768852932678417,
       "n_valid": 10000,
-      "numerator": 3374,
+      "numerator": 3375,
       "denominator": 3467
     },
     "core_accuracy_normalized": {
-      "value": 0.9971156619555812,
-      "ci_low": 0.9948111847794753,
-      "ci_high": 0.9988485895221645,
+      "value": 0.9974040957600231,
+      "ci_low": 0.9948126801152737,
+      "ci_high": 0.9994231323911162,
       "n_valid": 10000,
-      "numerator": 3457,
+      "numerator": 3458,
       "denominator": 3467
     },
     "group_accuracy_normalized:comprehension": {
-      "value": 0.9949579831932773,
-      "ci_low": 0.9890845733759498,
-      "ci_high": 0.9991624790619766,
+      "value": 0.9957983193277311,
+      "ci_low": 0.9899749373433583,
+      "ci_high": 1.0,
       "n_valid": 10000,
-      "numerator": 1184,
+      "numerator": 1185,
       "denominator": 1190
     },
     "group_value_accuracy_normalized:comprehension": {
-      "value": 0.9798994974874372,
-      "ci_low": 0.9518716577540107,
+      "value": 0.9754901960784313,
+      "ci_low": 0.9430051813471504,
       "ci_high": 1.0,
       "n_valid": 10000,
-      "numerator": 195,
-      "denominator": 199
+      "numerator": 199,
+      "denominator": 204
     },
     "group_null_accuracy_normalized:comprehension": {
-      "value": 0.9979818365287588,
-      "ci_low": 0.9938080495356036,
+      "value": 1.0,
+      "ci_low": 1.0,
       "ci_high": 1.0,
       "n_valid": 10000,
-      "numerator": 989,
-      "denominator": 991
+      "numerator": 986,
+      "denominator": 986
     },
     "group_accuracy_normalized:header": {
       "value": 0.9982433025911287,
@@ -111,28 +111,28 @@
       "denominator": 0
     },
     "field_accuracy_normalized:act_subtypes": {
-      "value": 0.9831932773109243,
-      "ci_low": 0.9579831932773109,
+      "value": 0.9915966386554622,
+      "ci_low": 0.9743589743589742,
       "ci_high": 1.0,
       "n_valid": 10000,
-      "numerator": 117,
+      "numerator": 118,
       "denominator": 119
     },
     "value_accuracy_normalized:act_subtypes": {
-      "value": 0.9736842105263158,
-      "ci_low": 0.9324324324324325,
+      "value": 0.9866666666666667,
+      "ci_low": 0.9558823529411764,
       "ci_high": 1.0,
       "n_valid": 10000,
       "numerator": 74,
-      "denominator": 76
+      "denominator": 75
     },
     "null_accuracy_normalized:act_subtypes": {
       "value": 1.0,
       "ci_low": 1.0,
       "ci_high": 1.0,
       "n_valid": 10000,
-      "numerator": 43,
-      "denominator": 43
+      "numerator": 44,
+      "denominator": 44
     },
     "field_accuracy_normalized:company_name_full": {
       "value": 1.0,
@@ -736,27 +736,27 @@
     },
     "field_accuracy_normalized:domicile_new": {
       "value": 0.9829059829059829,
-      "ci_low": 0.9568965517241379,
+      "ci_low": 0.9572649572649572,
       "ci_high": 1.0,
       "n_valid": 10000,
       "numerator": 115,
       "denominator": 117
     },
     "value_accuracy_normalized:domicile_new": {
-      "value": 0.9565217391304348,
-      "ci_low": 0.8518518518518519,
+      "value": 0.9230769230769231,
+      "ci_low": 0.8,
       "ci_high": 1.0,
       "n_valid": 10000,
-      "numerator": 22,
-      "denominator": 23
+      "numerator": 24,
+      "denominator": 26
     },
     "null_accuracy_normalized:domicile_new": {
-      "value": 0.9893617021276596,
-      "ci_low": 0.965909090909091,
+      "value": 1.0,
+      "ci_low": 1.0,
       "ci_high": 1.0,
       "n_valid": 10000,
-      "numerator": 93,
-      "denominator": 94
+      "numerator": 91,
+      "denominator": 91
     },
     "field_accuracy_normalized:domicile_previous": {
       "value": 0.9827586206896551,
@@ -767,20 +767,20 @@
       "denominator": 116
     },
     "value_accuracy_normalized:domicile_previous": {
-      "value": 0.9545454545454546,
-      "ci_low": 0.8461538461538461,
+      "value": 0.92,
+      "ci_low": 0.8,
       "ci_high": 1.0,
       "n_valid": 10000,
-      "numerator": 21,
-      "denominator": 22
+      "numerator": 23,
+      "denominator": 25
     },
     "null_accuracy_normalized:domicile_previous": {
-      "value": 0.9893617021276596,
-      "ci_low": 0.965909090909091,
+      "value": 1.0,
+      "ci_low": 1.0,
       "ci_high": 1.0,
       "n_valid": 10000,
-      "numerator": 93,
-      "denominator": 94
+      "numerator": 91,
+      "denominator": 91
     },
     "persons_found_f1:persons_added": {
       "value": 1.0,
@@ -823,36 +823,36 @@
       "denominator": 64
     },
     "persons_attribute_accuracy_normalized:persons_changed": {
-      "value": 0.9951923076923077,
-      "ci_low": 0.9874701848539059,
+      "value": 1.0,
+      "ci_low": 1.0,
       "ci_high": 1.0,
       "n_valid": 10000,
-      "numerator": 414,
+      "numerator": 416,
       "denominator": 416
     },
     "act_subtypes_micro_f1": {
-      "value": 0.9914529914529915,
-      "ci_low": 0.9772701328352014,
+      "value": 0.9957081545064378,
+      "ci_low": 0.9852216748768473,
       "ci_high": 1.0,
       "n_valid": 10000,
       "numerator": 232,
-      "denominator": 234
+      "denominator": 233
     },
     "extras_key_f1": {
-      "value": 0.9523809523809523,
-      "ci_low": 0.9139784946236558,
-      "ci_high": 0.9784623655913979,
+      "value": 0.9649805447470817,
+      "ci_low": 0.93161853188929,
+      "ci_high": 0.9870974664266925,
       "n_valid": 10000,
-      "numerator": 240,
-      "denominator": 252
+      "numerator": 248,
+      "denominator": 257
     },
     "extras_value_accuracy_normalized": {
-      "value": 0.9166666666666666,
-      "ci_low": 0.8653846153846153,
-      "ci_high": 0.9595959595959596,
+      "value": 0.9354838709677419,
+      "ci_low": 0.8932020306825763,
+      "ci_high": 0.9716981132075471,
       "n_valid": 10000,
-      "numerator": 110,
-      "denominator": 120
+      "numerator": 116,
+      "denominator": 124
     },
     "parse_failure_rate": {
       "value": 0.0,
@@ -878,14 +878,14 @@
         "domicile_previous"
       ],
       "exact": {
-        "accuracy": 0.992436974789916,
-        "value_accuracy": 0.964824120603015,
-        "null_accuracy": 0.9979818365287588
+        "accuracy": 0.9932773109243698,
+        "value_accuracy": 0.9607843137254902,
+        "null_accuracy": 1.0
       },
       "normalized": {
-        "accuracy": 0.9949579831932773,
-        "value_accuracy": 0.9798994974874372,
-        "null_accuracy": 0.9979818365287588
+        "accuracy": 0.9957983193277311,
+        "value_accuracy": 0.9754901960784313,
+        "null_accuracy": 1.0
       }
     },
     "header": {
@@ -954,24 +954,24 @@
       "excluded_uncertain": 1,
       "exact": {
         "correct": 74,
-        "correct_null": 43,
-        "omission": 2,
+        "correct_null": 44,
+        "omission": 1,
         "hallucination": 0,
         "wrong": 0,
         "no_output": 0,
-        "accuracy": 0.9831932773109243,
-        "value_accuracy": 0.9736842105263158,
+        "accuracy": 0.9915966386554622,
+        "value_accuracy": 0.9866666666666667,
         "null_accuracy": 1.0
       },
       "normalized": {
         "correct": 74,
-        "correct_null": 43,
-        "omission": 2,
+        "correct_null": 44,
+        "omission": 1,
         "hallucination": 0,
         "wrong": 0,
         "no_output": 0,
-        "accuracy": 0.9831932773109243,
-        "value_accuracy": 0.9736842105263158,
+        "accuracy": 0.9915966386554622,
+        "value_accuracy": 0.9866666666666667,
         "null_accuracy": 1.0
       }
     },
@@ -1629,52 +1629,52 @@
       "group": "comprehension",
       "excluded_uncertain": 3,
       "exact": {
-        "correct": 22,
-        "correct_null": 93,
-        "omission": 0,
-        "hallucination": 1,
-        "wrong": 1,
+        "correct": 24,
+        "correct_null": 91,
+        "omission": 2,
+        "hallucination": 0,
+        "wrong": 0,
         "no_output": 0,
         "accuracy": 0.9829059829059829,
-        "value_accuracy": 0.9565217391304348,
-        "null_accuracy": 0.9893617021276596
+        "value_accuracy": 0.9230769230769231,
+        "null_accuracy": 1.0
       },
       "normalized": {
-        "correct": 22,
-        "correct_null": 93,
-        "omission": 0,
-        "hallucination": 1,
-        "wrong": 1,
+        "correct": 24,
+        "correct_null": 91,
+        "omission": 2,
+        "hallucination": 0,
+        "wrong": 0,
         "no_output": 0,
         "accuracy": 0.9829059829059829,
-        "value_accuracy": 0.9565217391304348,
-        "null_accuracy": 0.9893617021276596
+        "value_accuracy": 0.9230769230769231,
+        "null_accuracy": 1.0
       }
     },
     "domicile_previous": {
       "group": "comprehension",
       "excluded_uncertain": 4,
       "exact": {
-        "correct": 21,
-        "correct_null": 93,
-        "omission": 0,
-        "hallucination": 1,
-        "wrong": 1,
+        "correct": 23,
+        "correct_null": 91,
+        "omission": 2,
+        "hallucination": 0,
+        "wrong": 0,
         "no_output": 0,
         "accuracy": 0.9827586206896551,
-        "value_accuracy": 0.9545454545454546,
-        "null_accuracy": 0.9893617021276596
+        "value_accuracy": 0.92,
+        "null_accuracy": 1.0
       },
       "normalized": {
-        "correct": 21,
-        "correct_null": 93,
-        "omission": 0,
-        "hallucination": 1,
-        "wrong": 1,
+        "correct": 23,
+        "correct_null": 91,
+        "omission": 2,
+        "hallucination": 0,
+        "wrong": 0,
         "no_output": 0,
         "accuracy": 0.9827586206896551,
-        "value_accuracy": 0.9545454545454546,
-        "null_accuracy": 0.9893617021276596
+        "value_accuracy": 0.92,
+        "null_accuracy": 1.0
       }
     }
   },
@@ -1683,16 +1683,16 @@
     "micro": {
       "tp": 116,
       "fp": 0,
-      "fn": 2,
+      "fn": 1,
       "precision": 1.0,
-      "recall": 0.9830508474576272,
-      "f1": 0.9914529914529915
+      "recall": 0.9914529914529915,
+      "f1": 0.9957081545064378
     },
     "macro": {
       "labels": 12,
       "precision": 1.0,
-      "recall": 0.9910353535353535,
-      "f1": 0.9953314659197012
+      "recall": 0.998611111111111,
+      "f1": 0.9992997198879552
     },
     "per_label": {
       "firmenaenderung": {
@@ -1770,10 +1770,10 @@
       "sitzverlegung": {
         "tp": 10,
         "fp": 0,
-        "fn": 1,
+        "fn": 0,
         "precision": 1.0,
-        "recall": 0.9090909090909091,
-        "f1": 0.9523809523809523
+        "recall": 1.0,
+        "f1": 1.0
       },
       "statutenaenderung": {
         "tp": 11,
@@ -2119,8 +2119,8 @@
         "f1": 1.0
       },
       "attribute_accuracy": {
-        "exact": 0.9951923076923077,
-        "normalized": 0.9951923076923077
+        "exact": 1.0,
+        "normalized": 1.0
       },
       "attributes": {
         "name_previous": {
@@ -2265,22 +2265,22 @@
         },
         "nationality_new": {
           "exact": {
-            "correct": 4,
+            "correct": 6,
             "correct_null": 26,
             "omission": 0,
-            "hallucination": 1,
-            "wrong": 1,
+            "hallucination": 0,
+            "wrong": 0,
             "no_output": 0,
-            "accuracy": 0.9375
+            "accuracy": 1.0
           },
           "normalized": {
-            "correct": 4,
+            "correct": 6,
             "correct_null": 26,
             "omission": 0,
-            "hallucination": 1,
-            "wrong": 1,
+            "hallucination": 0,
+            "wrong": 0,
             "no_output": 0,
-            "accuracy": 0.9375
+            "accuracy": 1.0
           }
         },
         "nationality_previous": {
@@ -2389,18 +2389,18 @@
   "extras": {
     "excluded_uncertain": 3,
     "keys": {
-      "tp": 120,
-      "fp": 5,
-      "fn": 7,
-      "precision": 0.96,
-      "recall": 0.9448818897637795,
-      "f1": 0.9523809523809523,
+      "tp": 124,
+      "fp": 1,
+      "fn": 8,
+      "precision": 0.992,
+      "recall": 0.9393939393939394,
+      "f1": 0.9649805447470817,
       "fp_unregistered": 0
     },
     "values": {
       "accuracy": {
-        "exact": 0.8666666666666667,
-        "normalized": 0.9166666666666666
+        "exact": 0.8870967741935484,
+        "normalized": 0.9354838709677419
       },
       "per_key": {
         "aktien_new": {
@@ -2525,51 +2525,51 @@
         },
         "loeschung_reason": {
           "exact": {
-            "correct": 4,
-            "wrong": 1
+            "correct": 5,
+            "wrong": 0
           },
           "normalized": {
-            "correct": 4,
-            "wrong": 1
+            "correct": 5,
+            "wrong": 0
           }
         },
         "mitteilungen": {
           "exact": {
-            "correct": 6,
-            "wrong": 8
+            "correct": 7,
+            "wrong": 7
           },
           "normalized": {
-            "correct": 6,
-            "wrong": 8
+            "correct": 7,
+            "wrong": 7
           }
         },
         "nominal_value_chf": {
           "exact": {
-            "correct": 6,
+            "correct": 7,
             "wrong": 3
           },
           "normalized": {
-            "correct": 9,
+            "correct": 10,
             "wrong": 0
           }
         },
         "prior_publication_page": {
           "exact": {
-            "correct": 0,
+            "correct": 2,
             "wrong": 1
           },
           "normalized": {
-            "correct": 1,
+            "correct": 3,
             "wrong": 0
           }
         },
         "revision": {
           "exact": {
-            "correct": 10,
+            "correct": 11,
             "wrong": 0
           },
           "normalized": {
-            "correct": 10,
+            "correct": 11,
             "wrong": 0
           }
         },

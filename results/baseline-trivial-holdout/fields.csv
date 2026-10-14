@@ -442,7 +442,7 @@ doc_id,field,item,attribute,gold,prediction,outcome_exact,outcome_normalized
 0134,capital_previous_chf,,,null,null,correct_null,correct_null
 0134,domicile_new,,,null,null,correct_null,correct_null
 0134,domicile_previous,,,null,null,correct_null,correct_null
-0134,extras,loeschung_reason,,"""infolge Fusion""",null,missed,missed
+0134,extras,loeschung_reason,,"""Fusion""",null,missed,missed
 0135,act_type,,,"""loeschung""","""mutation""",wrong,wrong
 0135,act_subtypes,,,[],[],correct_null,correct_null
 0135,company_name_full,,,"""Burger Tankrevisionen Frei GmbH in Liquidation""",null,omission,omission
@@ -473,7 +473,7 @@ doc_id,field,item,attribute,gold,prediction,outcome_exact,outcome_normalized
 0135,domicile_new,,,null,null,correct_null,correct_null
 0135,domicile_previous,,,null,null,correct_null,correct_null
 0135,extras,hauptsitz,,"""Zug""",null,missed,missed
-0135,extras,loeschung_reason,,"""infolge Löschung der Hauptniederlassung (SHAB vom 02.09.2026) im Sinne von Art. 111 Abs. 2 HRegV von Amtes wegen""",null,missed,missed
+0135,extras,loeschung_reason,,"""Löschung der Hauptniederlassung (SHAB vom 02.09.2026) im Sinne von Art. 111 Abs. 2 HRegV von Amtes wegen""",null,missed,missed
 0136,act_type,,,"""mutation""","""mutation""",correct,correct
 0136,act_subtypes,,,"[""organaenderung"", ""firmenaenderung"", ""zweckaenderung""]",[],omission,omission
 0136,company_name_full,,,"""Jasmin Jud Cosmetics""",null,omission,omission
@@ -1276,7 +1276,7 @@ doc_id,field,item,attribute,gold,prediction,outcome_exact,outcome_normalized
 0161,capital_previous_chf,,,null,null,correct_null,correct_null
 0161,domicile_new,,,null,null,correct_null,correct_null
 0161,domicile_previous,,,null,null,correct_null,correct_null
-0161,extras,loeschung_reason,,"""infolge Geschäftsaufgabe""",null,missed,missed
+0161,extras,loeschung_reason,,"""Geschäftsaufgabe""",null,missed,missed
 0162,act_type,,,"""mutation""","""mutation""",correct,correct
 0162,act_subtypes,,,"[""konkurseroeffnung""]",[],omission,omission
 0162,company_name_full,,,"""Thavanesan Food Delivery Service""",null,omission,omission

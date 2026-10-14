@@ -7,9 +7,9 @@
     "params": null,
     "n_docs": 120,
     "gold_dir": "data/exploratory",
-    "gold_sha256": "7b3b57faa8ef69051e2ef09d8cf286592de0e2a6963f4b0a3e3142fec71d6b9f",
-    "evaluator_git_commit": "3ee8317ccaf34f4f62f5e00b8847867829bc26e1",
-    "evaluator_git_dirty": true
+    "gold_sha256": "7d741953a8e11b950c3ae16f065df714215ad9e50e0bcab8624647556665a0fa",
+    "evaluator_git_commit": "9de7ab8480b1f4df25b7663796f5befef9683da2",
+    "evaluator_git_dirty": false
   },
   "bootstrap": {
     "iterations": 10000,
@@ -18,27 +18,27 @@
   },
   "headline": {
     "core_accuracy_exact": {
-      "value": 0.4981251802711278,
-      "ci_low": 0.4774817022348018,
-      "ci_high": 0.518743874632478,
+      "value": 0.4966830112489184,
+      "ci_low": 0.4763412626650977,
+      "ci_high": 0.5171425284301747,
       "n_valid": 10000,
-      "numerator": 1727,
+      "numerator": 1722,
       "denominator": 3467
     },
     "core_accuracy_normalized": {
-      "value": 0.4981251802711278,
-      "ci_low": 0.4774817022348018,
-      "ci_high": 0.518743874632478,
+      "value": 0.4966830112489184,
+      "ci_low": 0.4763412626650977,
+      "ci_high": 0.5171425284301747,
       "n_valid": 10000,
-      "numerator": 1727,
+      "numerator": 1722,
       "denominator": 3467
     },
     "group_accuracy_normalized:comprehension": {
-      "value": 0.8327731092436975,
-      "ci_low": 0.8083676840612147,
-      "ci_high": 0.856543624161074,
+      "value": 0.8285714285714286,
+      "ci_low": 0.8040370058873002,
+      "ci_high": 0.8517587939698492,
       "n_valid": 10000,
-      "numerator": 991,
+      "numerator": 986,
       "denominator": 1190
     },
     "group_value_accuracy_normalized:comprehension": {
@@ -47,15 +47,15 @@
       "ci_high": 0.0,
       "n_valid": 10000,
       "numerator": 0,
-      "denominator": 199
+      "denominator": 204
     },
     "group_null_accuracy_normalized:comprehension": {
       "value": 1.0,
       "ci_low": 1.0,
       "ci_high": 1.0,
       "n_valid": 10000,
-      "numerator": 991,
-      "denominator": 991
+      "numerator": 986,
+      "denominator": 986
     },
     "group_accuracy_normalized:header": {
       "value": 0.32323232323232326,
@@ -106,11 +106,11 @@
       "denominator": 0
     },
     "field_accuracy_normalized:act_subtypes": {
-      "value": 0.36134453781512604,
-      "ci_low": 0.275,
-      "ci_high": 0.4491525423728814,
+      "value": 0.3697478991596639,
+      "ci_low": 0.2833333333333333,
+      "ci_high": 0.4583333333333333,
       "n_valid": 10000,
-      "numerator": 43,
+      "numerator": 44,
       "denominator": 119
     },
     "value_accuracy_normalized:act_subtypes": {
@@ -119,15 +119,15 @@
       "ci_high": 0.0,
       "n_valid": 10000,
       "numerator": 0,
-      "denominator": 76
+      "denominator": 75
     },
     "null_accuracy_normalized:act_subtypes": {
       "value": 1.0,
       "ci_low": 1.0,
       "ci_high": 1.0,
       "n_valid": 10000,
-      "numerator": 43,
-      "denominator": 43
+      "numerator": 44,
+      "denominator": 44
     },
     "field_accuracy_normalized:company_name_full": {
       "value": 0.0,
@@ -730,11 +730,11 @@
       "denominator": 119
     },
     "field_accuracy_normalized:domicile_new": {
-      "value": 0.8034188034188035,
-      "ci_low": 0.7288135593220338,
-      "ci_high": 0.8728813559322033,
+      "value": 0.7777777777777778,
+      "ci_low": 0.6991150442477876,
+      "ci_high": 0.8521739130434783,
       "n_valid": 10000,
-      "numerator": 94,
+      "numerator": 91,
       "denominator": 117
     },
     "value_accuracy_normalized:domicile_new": {
@@ -743,22 +743,22 @@
       "ci_high": 0.0,
       "n_valid": 10000,
       "numerator": 0,
-      "denominator": 23
+      "denominator": 26
     },
     "null_accuracy_normalized:domicile_new": {
       "value": 1.0,
       "ci_low": 1.0,
       "ci_high": 1.0,
       "n_valid": 10000,
-      "numerator": 94,
-      "denominator": 94
+      "numerator": 91,
+      "denominator": 91
     },
     "field_accuracy_normalized:domicile_previous": {
-      "value": 0.8103448275862069,
-      "ci_low": 0.7372881355932204,
-      "ci_high": 0.8793103448275863,
+      "value": 0.7844827586206896,
+      "ci_low": 0.7058692226890757,
+      "ci_high": 0.857142857142857,
       "n_valid": 10000,
-      "numerator": 94,
+      "numerator": 91,
       "denominator": 116
     },
     "value_accuracy_normalized:domicile_previous": {
@@ -767,15 +767,15 @@
       "ci_high": 0.0,
       "n_valid": 10000,
       "numerator": 0,
-      "denominator": 22
+      "denominator": 25
     },
     "null_accuracy_normalized:domicile_previous": {
       "value": 1.0,
       "ci_low": 1.0,
       "ci_high": 1.0,
       "n_valid": 10000,
-      "numerator": 94,
-      "denominator": 94
+      "numerator": 91,
+      "denominator": 91
     },
     "persons_found_f1:persons_added": {
       "value": 0.0,
@@ -831,7 +831,7 @@
       "ci_high": 0.0,
       "n_valid": 10000,
       "numerator": 0,
-      "denominator": 118
+      "denominator": 117
     },
     "extras_key_f1": {
       "value": 0.0,
@@ -839,7 +839,7 @@
       "ci_high": 0.0,
       "n_valid": 10000,
       "numerator": 0,
-      "denominator": 127
+      "denominator": 132
     },
     "extras_value_accuracy_normalized": {
       "value": null,
@@ -873,12 +873,12 @@
         "domicile_previous"
       ],
       "exact": {
-        "accuracy": 0.8327731092436975,
+        "accuracy": 0.8285714285714286,
         "value_accuracy": 0.0,
         "null_accuracy": 1.0
       },
       "normalized": {
-        "accuracy": 0.8327731092436975,
+        "accuracy": 0.8285714285714286,
         "value_accuracy": 0.0,
         "null_accuracy": 1.0
       }
@@ -949,23 +949,23 @@
       "excluded_uncertain": 1,
       "exact": {
         "correct": 0,
-        "correct_null": 43,
-        "omission": 76,
+        "correct_null": 44,
+        "omission": 75,
         "hallucination": 0,
         "wrong": 0,
         "no_output": 0,
-        "accuracy": 0.36134453781512604,
+        "accuracy": 0.3697478991596639,
         "value_accuracy": 0.0,
         "null_accuracy": 1.0
       },
       "normalized": {
         "correct": 0,
-        "correct_null": 43,
-        "omission": 76,
+        "correct_null": 44,
+        "omission": 75,
         "hallucination": 0,
         "wrong": 0,
         "no_output": 0,
-        "accuracy": 0.36134453781512604,
+        "accuracy": 0.3697478991596639,
         "value_accuracy": 0.0,
         "null_accuracy": 1.0
       }
@@ -1625,23 +1625,23 @@
       "excluded_uncertain": 3,
       "exact": {
         "correct": 0,
-        "correct_null": 94,
-        "omission": 23,
+        "correct_null": 91,
+        "omission": 26,
         "hallucination": 0,
         "wrong": 0,
         "no_output": 0,
-        "accuracy": 0.8034188034188035,
+        "accuracy": 0.7777777777777778,
         "value_accuracy": 0.0,
         "null_accuracy": 1.0
       },
       "normalized": {
         "correct": 0,
-        "correct_null": 94,
-        "omission": 23,
+        "correct_null": 91,
+        "omission": 26,
         "hallucination": 0,
         "wrong": 0,
         "no_output": 0,
-        "accuracy": 0.8034188034188035,
+        "accuracy": 0.7777777777777778,
         "value_accuracy": 0.0,
         "null_accuracy": 1.0
       }
@@ -1651,23 +1651,23 @@
       "excluded_uncertain": 4,
       "exact": {
         "correct": 0,
-        "correct_null": 94,
-        "omission": 22,
+        "correct_null": 91,
+        "omission": 25,
         "hallucination": 0,
         "wrong": 0,
         "no_output": 0,
-        "accuracy": 0.8103448275862069,
+        "accuracy": 0.7844827586206896,
         "value_accuracy": 0.0,
         "null_accuracy": 1.0
       },
       "normalized": {
         "correct": 0,
-        "correct_null": 94,
-        "omission": 22,
+        "correct_null": 91,
+        "omission": 25,
         "hallucination": 0,
         "wrong": 0,
         "no_output": 0,
-        "accuracy": 0.8103448275862069,
+        "accuracy": 0.7844827586206896,
         "value_accuracy": 0.0,
         "null_accuracy": 1.0
       }
@@ -1678,7 +1678,7 @@
     "micro": {
       "tp": 0,
       "fp": 0,
-      "fn": 118,
+      "fn": 117,
       "precision": null,
       "recall": 0.0,
       "f1": 0.0
@@ -1765,7 +1765,7 @@
       "sitzverlegung": {
         "tp": 0,
         "fp": 0,
-        "fn": 11,
+        "fn": 10,
         "precision": null,
         "recall": 0.0,
         "f1": 0.0
@@ -2386,7 +2386,7 @@
     "keys": {
       "tp": 0,
       "fp": 0,
-      "fn": 127,
+      "fn": 132,
       "precision": null,
       "recall": 0.0,
       "f1": 0.0,
