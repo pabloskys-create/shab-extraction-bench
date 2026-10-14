@@ -47,6 +47,11 @@ tooling, never set `_verified`, never annotate.**
 **8. No model output may be generated for any holdout document until all
 holdout gold files are `_verified` and committed.**
 
+**Exception to rules 1 and 7:** `src/apply_gold_corrections.py` may write to
+`data/exploratory/` and `data/holdout/gold/` only when run by the human
+annotator with `--apply` and a reviewed corrections file; every applied
+correction is recorded in `annotation_log.md`.
+
 ## Stack
 
 - Python 3.11+, standard library where possible
@@ -74,6 +79,8 @@ src/prefill.py           deterministic field prefill (no LLM)
 src/validate.py          schema + coherence validation
 src/baselines/rules.py   rule-based extractor (benchmark baseline)
 src/run_eval.py          the harness
+src/apply_gold_corrections.py  applies a reviewed corrections file (human only, --apply)
+corrections/             reviewed gold corrections, one JSON file per batch
 results/                 generated outputs — never hand-edited
 SCHEMA.md                field definitions and annotation decisions
 GLOSSARY.md              German legal-registry vocabulary
