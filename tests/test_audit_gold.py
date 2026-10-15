@@ -371,3 +371,54 @@ def test_default_run_ids_follow_split(tmp_path, monkeypatch):
 @pytest.mark.parametrize("value", [True, None, {"a": 1}])
 def test_search_terms_ignore_non_text_values(value):
     assert audit_gold.search_terms(value) == []
+
+
+def test_extend_sample_keeps_rows_and_adds_distinct_cells(tmp_path, capsys):
+    dirs = _setup(tmp_path)
+    assert _main(dirs, "--random-sample", "3") == 0
+    path = dirs["out"] / "dev" / "random_sample.csv"
+    rows = _read_csv(path)
+    rows[0]["verdict"], rows[0]["note"] = "gold_error", "checked by hand"
+    audit_gold.write_csv(path, audit_gold.csv_columns(RUNS), rows)
+    candidates_before = (dirs["out"] / "dev" / "candidates.csv").read_bytes()
+    capsys.readouterr()
+
+    assert _main(dirs, "--extend-sample", "7") == 0
+    extended = _read_csv(path)
+    assert len(extended) == 7
+    assert extended[:3] == rows
+    keys = [audit_gold.row_key(r) for r in extended]
+    assert len(set(keys)) == 7
+    assert all(r["gold_value"] == r["consensus_value"] and r["n_agree"] == "5" for r in extended[3:])
+    assert (dirs["out"] / "dev" / "candidates.csv").read_bytes() == candidates_before
+
+    out = capsys.readouterr().out
+    assert "3 rows kept, 4 added" in out
+    for row in extended[3:]:
+        assert " | ".join(row[c] for c in ("doc_id", "field", "item", "attribute", "gold_value")) in out
+
+
+def test_extend_sample_is_deterministic(tmp_path):
+    results = []
+    for name in ("one", "two"):
+        dirs = _setup(tmp_path / name)
+        assert _main(dirs, "--random-sample", "3") == 0
+        assert _main(dirs, "--extend-sample", "6") == 0
+        results.append(_read_csv(dirs["out"] / "dev" / "random_sample.csv"))
+    assert results[0] == results[1]
+
+
+def test_extend_sample_refuses_a_pool_too_small(tmp_path, capsys):
+    dirs = _setup(tmp_path)
+    assert _main(dirs, "--random-sample", "3") == 0
+    path = dirs["out"] / "dev" / "random_sample.csv"
+    before = path.read_bytes()
+    assert _main(dirs, "--extend-sample", "100000") == 2
+    assert path.read_bytes() == before
+    assert "nothing was written" in capsys.readouterr().err
+
+
+def test_extend_sample_needs_an_existing_sample(tmp_path, capsys):
+    dirs = _setup(tmp_path)
+    assert _main(dirs, "--extend-sample", "5") == 2
+    assert "nothing to extend" in capsys.readouterr().err

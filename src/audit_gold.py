@@ -11,6 +11,11 @@ two CSVs under `results/gold_audit/<split>/`:
                        every model agrees with the gold — for estimating the
                        gold's error rate where nothing flags a problem
 
+With --extend-sample TOTAL, only random_sample.csv is touched: its existing
+rows (and any verdicts in them) are kept as they are, and new cells, drawn
+with --extend-seed from the same pool minus the cells already listed, are
+appended until the file holds TOTAL rows. candidates.csv is not rewritten.
+
 A "cell" is one comparable value of one document:
 
 * a scalar or set field (every field evaluate.py scores at document level);
@@ -68,6 +73,7 @@ DEFAULT_MODELS = (
 DEFAULT_MIN_AGREE = 3
 DEFAULT_RANDOM_SAMPLE = 30
 DEFAULT_SEED = 20261013
+DEFAULT_EXTEND_SEED = 20261015
 
 SNIPPET_RADIUS = 200
 # A long value (a zweck) is searched for by its first characters only: the
@@ -292,6 +298,30 @@ def audit(
     extras_registry: set[str] | None = None,
 ) -> tuple[list[dict], list[dict]]:
     """(candidate rows, random-sample rows). Reads only."""
+    candidates, agreed = collect(
+        split=split,
+        run_ids=run_ids,
+        runs_dir=runs_dir,
+        gold_dir=gold_dir,
+        raw_dir=raw_dir,
+        min_agree=min_agree,
+        extras_registry=extras_registry,
+    )
+    return candidates, draw_sample(agreed, run_ids, sample_size, seed)
+
+
+def collect(
+    *,
+    split: str,
+    run_ids: list[str],
+    runs_dir: Path,
+    gold_dir: Path,
+    raw_dir: Path,
+    min_agree: int,
+    extras_registry: set[str] | None = None,
+) -> tuple[list[dict], list[tuple[Cell, str]]]:
+    """(candidate rows, every cell where all models agree with the gold,
+    with its notice text). Reads only."""
     if extras_registry is None:
         extras_registry = parse_responses._load_extras_registry()
     doc_ids = load_runs(runs_dir, run_ids, split)
@@ -319,14 +349,36 @@ def audit(
                 candidates.append(_csv_row(cell, run_ids, value, n_agree, snippet(text, cell.gold, value)))
             elif all_agree_with_gold(cell, run_ids):
                 agreed.append((cell, text))
+    return candidates, agreed
 
+
+def draw_sample(agreed: list[tuple[Cell, str]], run_ids: list[str], sample_size: int, seed: int) -> list[dict]:
+    """sample_size cells drawn from `agreed` with a fixed seed, in pool order."""
     rng = random.Random(seed)
     drawn = sorted(rng.sample(range(len(agreed)), min(sample_size, len(agreed))))
-    sample = [
+    return [
         _csv_row(cell, run_ids, cell.gold, len(cell.votes), snippet(text, cell.gold))
         for cell, text in (agreed[i] for i in drawn)
     ]
-    return candidates, sample
+
+
+def row_key(row: dict) -> tuple[str, str, str, str]:
+    return (row["doc_id"], row["field"], row["item"], row["attribute"])
+
+
+def extend_sample(
+    existing: list[dict], agreed: list[tuple[Cell, str]], run_ids: list[str], total: int, seed: int
+) -> list[dict]:
+    """New rows that bring `existing` up to `total`, none of them a cell
+    already listed. Raises AuditError if the pool is too small."""
+    listed = {row_key(row) for row in existing}
+    pool = [(cell, text) for cell, text in agreed if (cell.doc_id, cell.field, cell.item, cell.attribute) not in listed]
+    needed = total - len(existing)
+    if needed < 0:
+        raise AuditError(f"the sample already holds {len(existing)} rows, more than {total}")
+    if needed > len(pool):
+        raise AuditError(f"only {len(pool)} unlisted cells agree with the gold; {needed} needed")
+    return draw_sample(pool, run_ids, needed, seed)
 
 
 # --- output ---
@@ -395,6 +447,14 @@ def parse_args(argv: list[str] | None) -> argparse.Namespace:
     parser.add_argument("--min-agree", type=int, default=DEFAULT_MIN_AGREE)
     parser.add_argument("--random-sample", type=int, default=DEFAULT_RANDOM_SAMPLE)
     parser.add_argument("--seed", type=int, default=DEFAULT_SEED)
+    parser.add_argument(
+        "--extend-sample",
+        type=int,
+        default=None,
+        metavar="TOTAL",
+        help="Keep random_sample.csv and append new cells until it holds TOTAL rows; candidates.csv is left alone",
+    )
+    parser.add_argument("--extend-seed", type=int, default=DEFAULT_EXTEND_SEED)
     parser.add_argument("--runs-dir", type=Path, default=evaluate.DEFAULT_RUNS_DIR)
     parser.add_argument("--out-dir", type=Path, default=DEFAULT_OUT_DIR, help="CSVs go to <out-dir>/<split>/")
     parser.add_argument("--gold-dir", type=Path, default=None, help="Override the split's gold directory (tests only)")
@@ -414,6 +474,8 @@ def main(argv: list[str] | None = None) -> int:
     if _is_inside(out_dir, DATA_DIR):
         print(f"error: refusing to write under {DATA_DIR}", file=sys.stderr)
         return 2
+    if args.extend_sample is not None:
+        return _extend(args, run_ids, out_dir / RANDOM_SAMPLE_CSV)
     paths = [out_dir / CANDIDATES_CSV, out_dir / RANDOM_SAMPLE_CSV]
     existing = [p for p in paths if p.exists()]
     # An existing CSV most likely holds verdicts written by hand;
@@ -447,6 +509,40 @@ def main(argv: list[str] | None = None) -> int:
     print(f"{len(candidates)} candidates (>= {args.min_agree} of {len(run_ids)} models agree against the gold)")
     print(f"{len(sample)} random cells where all models agree with the gold")
     print(f"wrote {paths[0]} and {paths[1]}")
+    return 0
+
+
+def _extend(args: argparse.Namespace, run_ids: list[str], path: Path) -> int:
+    columns = csv_columns(run_ids)
+    if not path.is_file():
+        print(f"error: {path} does not exist; nothing to extend", file=sys.stderr)
+        return 2
+    with path.open(encoding="utf-8", newline="") as handle:
+        reader = csv.DictReader(handle)
+        existing = list(reader)
+        if reader.fieldnames != columns:
+            print(f"error: {path} has other columns than these runs produce; nothing was written", file=sys.stderr)
+            return 2
+
+    try:
+        _, agreed = collect(
+            split=args.split,
+            run_ids=run_ids,
+            runs_dir=args.runs_dir,
+            gold_dir=args.gold_dir or evaluate.gold_dir_for_split(args.split),
+            raw_dir=args.raw_dir or RAW_DIRS[args.split],
+            min_agree=args.min_agree,
+        )
+        added = extend_sample(existing, agreed, run_ids, args.extend_sample, args.extend_seed)
+    except (AuditError, evaluate.EvaluationError) as exc:
+        print(f"error: {exc}; nothing was written", file=sys.stderr)
+        return 2
+
+    write_csv(path, columns, existing + added)
+    print(f"{len(existing)} rows kept, {len(added)} added (seed {args.extend_seed}) from a pool of {len(agreed)}")
+    for row in added:
+        print("  " + " | ".join(row[c] for c in ("doc_id", "field", "item", "attribute", "gold_value")))
+    print(f"wrote {path}")
     return 0
 
 
