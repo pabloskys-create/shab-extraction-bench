@@ -1,3 +1,8 @@
 pytest>=8.0
 ruff>=0.6
 openai>=3.24,<4
+# analysis notebook (notebooks/analysis.ipynb)
+pandas>=3.0
+matplotlib>=3.11
+statsmodels>=0.15
+jupyter>=1.1
