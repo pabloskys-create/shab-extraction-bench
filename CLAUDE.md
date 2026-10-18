@@ -132,7 +132,10 @@ CHANGELOG.md             schema version history
   provider and allow_fallbacks=false, so results measure the model and not
   a provider. gemma-3-12b-it → DeepInfra (NextBit returned empty
   completions with 1 output token on 62/120 dev docs). mistral-large →
-  Mistral. Empty completions and finish_reason=error are retried as
+  Mistral on holdout; the dev run was not pinned but was served by
+  Mistral on all 120 documents (checked in
+  runs/dev-mistral-large-4-0/raw). Empty completions and
+  finish_reason=error are retried as
   transient and, if they persist, scored as no_output.
 - Retry policy: transient errors and unusable completions are retried
   in-call (--max-retries). After a run completes, at most ONE resume pass

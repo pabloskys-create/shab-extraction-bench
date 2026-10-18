@@ -306,7 +306,7 @@ the same listing, seed 43. Equivalent to a simple random sample of 50 of 59.
   the holdout, where prefill.py was never tuned, gives its honest figure.
   Scores are reported per field group, so header fields (where regex does
   well) are not averaged with fields that need reading.
-  
+
 ## Schema candidates for v1.0 — resolved
 
 All eight entered schema v1.0 and are closed. The first five became fields
@@ -353,3 +353,7 @@ incierto / notas         → uncertain / notes
 Done: applied across the repository. `extras` keys were left untouched at
 the time and renamed separately later — see the rename note under
 Method notes. The `act_subtypes` vocabulary stays German by design.
+
+## Run notes
+
+- 2026-10-13: holdout Mistral run interrupted by the operator after 0147 and continued from 0148; no failed documents were retried. No resume pass was used on the holdout.
