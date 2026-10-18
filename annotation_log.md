@@ -357,3 +357,5 @@ Method notes. The `act_subtypes` vocabulary stays German by design.
 ## Run notes
 
 - 2026-10-13: holdout Mistral run interrupted by the operator after 0147 and continued from 0148; no failed documents were retried. No resume pass was used on the holdout.
+
+- 2026-10-18: holdout exclusions — 50 notices sampled, 50 annotated, none excluded.
